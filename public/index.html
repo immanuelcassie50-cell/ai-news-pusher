@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI News | 每日AI资讯</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #FAFAF9;
+      --bg-secondary: #F5F5F4;
+      --bg-card: #FFFFFF;
+      --text-primary: #1C1917;
+      --text-secondary: #57534E;
+      --text-tertiary: #A8A29E;
+      --accent: #78716C;
+      --accent-light: #E7E5E4;
+      --border: #E7E5E4;
+      --shadow: 0 1px 3px rgba(0,0,0,0.04), 0 4px 12px rgba(0,0,0,0.03);
+      --shadow-hover: 0 4px 12px rgba(0,0,0,0.08), 0 8px 24px rgba(0,0,0,0.06);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg-primary);
+      color: var(--text-primary);
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* 背景装饰 */
+    .bg-pattern {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(120, 113, 108, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(120, 113, 108, 0.03) 0%, transparent 50%);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* 头部 */
+    header {
+      text-align: center;
+      margin-bottom: 64px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .logo {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--text-tertiary);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 42px;
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: -0.5px;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 15px;
+      color: var(--text-secondary);
+      font-weight: 300;
+    }
+
+    .date {
+      margin-top: 20px;
+      font-size: 13px;
+      color: var(--text-tertiary);
+      letter-spacing: 1px;
+    }
+
+    /* 刷新按钮 */
+    .refresh-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 24px;
+      padding: 10px 20px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .refresh-btn:hover {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow);
+    }
+
+    .refresh-btn svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .refresh-btn.loading svg {
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    /* 新闻列表 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .news-item {
+      background: var(--bg-card);
+      border-radius: 12px;
+      padding: 28px 32px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      border: 1px solid transparent;
+    }
+
+    .news-item:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border);
+    }
+
+    .news-rank {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background: var(--accent-light);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 16px;
+    }
+
+    .news-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
+    .news-title-original {
+      font-size: 13px;
+      color: var(--text-tertiary);
+      margin-bottom: 8px;
+      font-weight: 400;
+    }
+
+    .news-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 16px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+
+    .news-score {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 12px;
+      color: var(--accent);
+    }
+
+    .news-score svg {
+      width: 14px;
+      height: 14px;
+    }
+
+    .news-link {
+      margin-left: auto;
+      font-size: 12px;
+      color: var(--text-tertiary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .news-link:hover {
+      color: var(--text-primary);
+    }
+
+    /* 加载状态 */
+    .loading {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    .loading-spinner {
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    .loading-text {
+      color: var(--text-tertiary);
+      font-size: 14px;
+    }
+
+    /* 错误状态 */
+    .error {
+      text-align: center;
+      padding: 60px 0;
+    }
+
+    .error-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .error-text {
+      color: var(--text-secondary);
+      font-size: 15px;
+    }
+
+    /* 页脚 */
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid var(--border);
+      color: var(--text-tertiary);
+      font-size: 12px;
+    }
+
+    /* 响应式 */
+    @media (max-width: 640px) {
+      .container {
+        padding: 40px 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .news-item {
+        padding: 20px 24px;
+      }
+
+      .news-title {
+        font-size: 16px;
+      }
+    }
+
+    /* 淡入动画 */
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .news-item:nth-child(1) { animation-delay: 0.05s; }
+    .news-item:nth-child(2) { animation-delay: 0.1s; }
+    .news-item:nth-child(3) { animation-delay: 0.15s; }
+    .news-item:nth-child(4) { animation-delay: 0.2s; }
+    .news-item:nth-child(5) { animation-delay: 0.25s; }
+    .news-item:nth-child(6) { animation-delay: 0.3s; }
+    .news-item:nth-child(7) { animation-delay: 0.35s; }
+    .news-item:nth-child(8) { animation-delay: 0.4s; }
+    .news-item:nth-child(9) { animation-delay: 0.45s; }
+    .news-item:nth-child(10) { animation-delay: 0.5s; }
+  </style>
+</head>
+<body>
+  <div class="bg-pattern"></div>
+
+  <div class="container">
+    <header>
+      <div class="logo">AI News</div>
+      <h1>每日AI资讯</h1>
+      <p class="subtitle">精选全球科技与人工智能新闻</p>
+      <div class="date" id="currentDate"></div>
+      <button class="refresh-btn" id="refreshBtn" onclick="loadNews()">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M23 4v6h-6M1 20v-6h6"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+        <span>刷新资讯</span>
+      </button>
+    </header>
+
+    <main id="newsContainer">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">正在加载今日资讯...</div>
+      </div>
+    </main>
+
+    <footer>
+      <p>数据来源：HackerNews · 每日自动更新</p>
+    </footer>
+  </div>
+
+  <script>
+    // 设置日期
+    document.getElementById('currentDate').textContent = new Date().toLocaleDateString('zh-CN', {
+      weekday: 'long',
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
+
+    // 加载新闻
+    async function loadNews() {
+      const btn = document.getElementById('refreshBtn');
+      const container = document.getElementById('newsContainer');
+
+      btn.classList.add('loading');
+      btn.querySelector('span').textContent = '加载中...';
+
+      try {
+        const response = await fetch('/api/news');
+        const data = await response.json();
+
+        if (!data.news || data.news.length === 0) {
+          container.innerHTML = `
+            <div class="error">
+              <div class="error-icon">📭</div>
+              <div class="error-text">暂无新闻，请稍后再试</div>
+            </div>
+          `;
+          return;
+        }
+
+        // 渲染新闻列表
+        container.innerHTML = `
+          <div class="news-list">
+            ${data.news.map((news, index) => `
+              <article class="news-item fade-in">
+                <div class="news-rank">${index + 1}</div>
+                <h2 class="news-title">${escapeHtml(news.translation)}</h2>
+                <p class="news-title-original">${escapeHtml(news.title)}</p>
+                <div class="news-meta">
+                  <span class="news-score">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    ${news.score} 票
+                  </span>
+                  <a href="${escapeHtml(news.url)}" target="_blank" class="news-link">查看原文 →</a>
+                </div>
+              </article>
+            `).join('')}
+          </div>
+        `;
+
+      } catch (error) {
+        console.error('加载失败:', error);
+        container.innerHTML = `
+          <div class="error">
+            <div class="error-icon">⚠️</div>
+            <div class="error-text">加载失败，请检查网络后重试</div>
+          </div>
+        `;
+      } finally {
+        btn.classList.remove('loading');
+        btn.querySelector('span').textContent = '刷新资讯';
+      }
+    }
+
+    // HTML转义
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // 页面加载时获取新闻
+    loadNews();
+  </script>
+</body>
+</html>

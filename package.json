@@ -1,0 +1,11 @@
+{
+  "name": "ai-news-pusher",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'No build needed'",
+    "start": "npx vercel dev"
+  },
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}

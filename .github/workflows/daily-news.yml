@@ -1,0 +1,17 @@
+name: 每日AI新闻推送
+
+on:
+  schedule:
+    # 每天早上8点运行（北京时间）
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  push-news:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 触发新闻推送
+        run: |
+          curl -X POST "${{ secrets.VERCEL_API_URL }}"
+        env:
+          VERCEL_API_URL: ${{ secrets.VERCEL_API_URL }}
