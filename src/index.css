@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* 背景 - 深紫色渐变 */
+    --background: 260 30% 8%;
+    --foreground: 0 0% 98%;
+
+    /* 主色 - 活泼的紫色 */
+    --primary: 270 80% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    /* 次色 - 粉色 */
+    --secondary: 330 70% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* 强调色 - 橙色 */
+    --accent: 30 90% 60%;
+    --accent-foreground: 0 0% 10%;
+
+    /* 柔和色 */
+    --muted: 260 20% 20%;
+    --muted-foreground: 260 10% 60%;
+
+    /* 卡片 */
+    --card: 260 25% 12%;
+    --card-foreground: 0 0% 98%;
+
+    /* 边框 */
+    --border: 260 20% 25%;
+    --ring: 270 80% 65%;
+
+    /* 危险色 */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* 圆角 */
+    --radius: 1rem;
+
+    /* 转盘颜色 - 彩虹色 */
+    --wheel-1: 0 75% 60%;      /* 红 */
+    --wheel-2: 25 85% 55%;     /* 橙 */
+    --wheel-3: 45 90% 55%;     /* 黄 */
+    --wheel-4: 140 60% 50%;    /* 绿 */
+    --wheel-5: 180 65% 50%;    /* 青 */
+    --wheel-6: 210 80% 60%;    /* 蓝 */
+    --wheel-7: 260 75% 65%;    /* 紫 */
+    --wheel-8: 290 70% 60%;    /* 紫红 */
+    --wheel-9: 330 75% 60%;    /* 粉 */
+    --wheel-10: 15 80% 55%;    /* 深橙 */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 
+           bg-primary text-primary-foreground font-semibold rounded-lg
+           transition-all duration-300 ease-out
+           hover:scale-105 hover:shadow-glow
+           active:scale-95
+           disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2
+           bg-secondary/20 text-secondary border border-secondary/30
+           font-medium rounded-lg
+           transition-all duration-300 ease-out
+           hover:bg-secondary/30 hover:border-secondary/50
+           active:scale-95;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-3 py-2
+           text-muted-foreground font-medium rounded-lg
+           transition-all duration-200
+           hover:text-foreground hover:bg-muted/50
+           active:scale-95;
+  }
+
+  .btn-icon {
+    @apply inline-flex items-center justify-center
+           w-10 h-10 rounded-full
+           transition-all duration-200
+           hover:bg-muted/50
+           active:scale-90;
+  }
+
+  .card {
+    @apply bg-card rounded-2xl border border-border/50
+           shadow-card backdrop-blur-sm
+           transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply hover:shadow-card-hover hover:border-primary/30 hover:-translate-y-1;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 
+           bg-muted/50 border border-border rounded-lg
+           text-foreground placeholder:text-muted-foreground
+           transition-all duration-200
+           focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary;
+  }
+
+  .glass {
+    @apply bg-card/80 backdrop-blur-xl border border-border/50;
+  }
+}
+
+/* 转盘容器 */
+.wheel-container {
+  position: relative;
+  filter: drop-shadow(0 0 30px hsl(var(--primary) / 0.3));
+}
+
+/* 转盘指针 */
+.wheel-pointer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+/* 转盘旋转动画 */
+.wheel-spinning {
+  animation: spin-wheel var(--spin-duration, 4s) cubic-bezier(0.17, 0.67, 0.12, 0.99) forwards;
+}
+
+/* 庆祝背景 */
+.celebration-bg {
+  background: radial-gradient(
+    ellipse at center,
+    hsl(var(--primary) / 0.2) 0%,
+    transparent 70%
+  );
+}
+
+/* 渐变文字 */
+.gradient-text {
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* 发光边框 */
+.glow-border {
+  position: relative;
+}
+
+.glow-border::before {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--secondary)));
+  z-index: -1;
+  opacity: 0.5;
+  filter: blur(8px);
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground));
+}
