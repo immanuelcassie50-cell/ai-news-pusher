@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+  xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac">
+  <sheetViews>
+    <sheetView tabSelected="0" workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"/>
+  <cols>
+    <col min="1" max="1" width="5" customWidth="1"/>
+    <col min="2" max="2" width="12" customWidth="1"/>
+    <col min="3" max="3" width="18" customWidth="1"/>
+    <col min="4" max="4" width="10" customWidth="1"/>
+    <col min="5" max="5" width="10" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="22" customHeight="1">
+      <c r="A1" t="s" s="4"><v>17</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="4"><v>7</v></c>
+      <c r="B2" t="s" s="4"><v>8</v></c>
+      <c r="C2" t="s" s="4"><v>9</v></c>
+      <c r="D2" t="s" s="4"><v>10</v></c>
+      <c r="E2" t="s" s="4"><v>11</v></c>
+    </row>
+    <!-- Rows 3-9: 7 policy items -->
+    <row r="3">
+      <c r="A3" t="s" s="1"><v></v></c>
+      <c r="B3" t="s" s="1"><v></v></c>
+      <c r="C3" t="s" s="1"><v></v></c>
+      <c r="D3" s="7"><v></v></c>
+      <c r="E3" t="s" s="1"><v></v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="1"><v></v></c>
+      <c r="B4" t="s" s="1"><v></v></c>
+      <c r="C4" t="s" s="1"><v></v></c>
+      <c r="D4" s="7"><v></v></c>
+      <c r="E4" t="s" s="1"><v></v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="1"><v></v></c>
+      <c r="B5" t="s" s="1"><v></v></c>
+      <c r="C5" t="s" s="1"><v></v></c>
+      <c r="D5" s="7"><v></v></c>
+      <c r="E5" t="s" s="1"><v></v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="1"><v></v></c>
+      <c r="B6" t="s" s="1"><v></v></c>
+      <c r="C6" t="s" s="1"><v></v></c>
+      <c r="D6" s="7"><v></v></c>
+      <c r="E6" t="s" s="1"><v></v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="1"><v></v></c>
+      <c r="B7" t="s" s="1"><v></v></c>
+      <c r="C7" t="s" s="1"><v></v></c>
+      <c r="D7" s="7"><v></v></c>
+      <c r="E7" t="s" s="1"><v></v></c>
+    </row>
+    <row r="8">
+      <c r="A8" t="s" s="1"><v></v></c>
+      <c r="B8" t="s" s="1"><v></v></c>
+      <c r="C8" t="s" s="1"><v></v></c>
+      <c r="D8" s="7"><v></v></c>
+      <c r="E8" t="s" s="1"><v></v></c>
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="1"><v></v></c>
+      <c r="B9" t="s" s="1"><v></v></c>
+      <c r="C9" t="s" s="1"><v></v></c>
+      <c r="D9" s="7"><v></v></c>
+      <c r="E9" t="s" s="1"><v></v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

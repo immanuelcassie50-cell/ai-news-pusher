@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="36" customWidth="1"/>
+    <col min="3" max="3" width="40" customWidth="1"/>
+    <col min="4" max="4" width="28" customWidth="1"/>
+    <col min="5" max="7" width="10" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1">
+    <c r="A1" t="s" s="4"><v>故事质检清单</v></c>
+    <c r="B1" t="s" s="1"><v>课程/模块名称：</v></c>
+    <c r="C1" s="1"><v></v></c>
+    <c r="D1" t="s" s="1"><v>姓名：</v></c>
+    <c r="E1" s="1"><v></v></c>
+    <c r="F1" t="s" s="1"><v>日期：</v></c>
+    <c r="G1" s="1"><v></v></c>
+  </row>
+  <row r="2">
+    <c r="A2" t="s" s="4"><v>上台前三问自检表</v></c>
+    <c r="B2" t="s" s="4"><v>问题</v></c>
+    <c r="C2" t="s" s="4"><v>选项</v></c>
+    <c r="D2" t="s" s="4"><v>备注</v></c>
+  </row>
+  <row r="3" ht="28" customHeight="1">
+    <c r="A3" t="s" s="1"><v>问题一</v></c>
+    <c r="B3" s="1"><v></v></c>
+    <c r="C3" t="s" s="1"><v>□ 是    □ 否——建议换一个</v></c>
+    <c r="D3" s="1"><v></v></c>
+  </row>
+  <row r="4" ht="28" customHeight="1">
+    <c r="A4" t="s" s="1"><v>问题二</v></c>
+    <c r="B4" s="1"><v></v></c>
+    <c r="C4" t="s" s="1"><v>□ 是    □ 否——需要补充</v></c>
+    <c r="D4" s="1"><v></v></c>
+  </row>
+  <row r="5" ht="28" customHeight="1">
+    <c r="A5" t="s" s="1"><v>问题三</v></c>
+    <c r="B5" s="1"><v></v></c>
+    <c r="C5" t="s" s="1"><v>□ 是    □ 否——需要重新对焦</v></c>
+    <c r="D5" s="1"><v></v></c>
+  </row>
+  <row r="6">
+    <c r="A6" t="s" s="4"><v>三维度定制化检查表</v></c>
+    <c r="B6" t="s" s="4"><v>维度</v></c>
+    <c r="C6" t="s" s="4"><v>检查项</v></c>
+    <c r="D6" t="s" s="4"><v>评估</v></c>
+  </row>
+  <row r="7" ht="28" customHeight="1">
+    <c r="A7" s="1"><v></v></c>
+    <c r="B7" t="s" s="1"><v>行业/职能背景</v></c>
+    <c r="C7" s="1"><v></v></c>
+    <c r="D7" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="8" ht="28" customHeight="1">
+    <c r="A8" s="1"><v></v></c>
+    <c r="B8" t="s" s="1"><v>行业/职能背景</v></c>
+    <c r="C8" s="1"><v></v></c>
+    <c r="D8" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="9" ht="28" customHeight="1">
+    <c r="A9" s="1"><v></v></c>
+    <c r="B9" t="s" s="1"><v>年资/经验层次</v></c>
+    <c r="C9" s="1"><v></v></c>
+    <c r="D9" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="10" ht="28" customHeight="1">
+    <c r="A10" s="1"><v></v></c>
+    <c r="B10" t="s" s="1"><v>年资/经验层次</v></c>
+    <c r="C10" s="1"><v></v></c>
+    <c r="D10" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="11" ht="28" customHeight="1">
+    <c r="A11" s="1"><v></v></c>
+    <c r="B11" t="s" s="1"><v>当下关切/痛点</v></c>
+    <c r="C11" s="1"><v></v></c>
+    <c r="D11" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="12" ht="28" customHeight="1">
+    <c r="A12" s="1"><v></v></c>
+    <c r="B12" t="s" s="1"><v>当下关切/痛点</v></c>
+    <c r="C12" s="1"><v></v></c>
+    <c r="D12" t="s" s="1"><v>□ 匹配  □ 部分匹配  □ 不匹配</v></c>
+  </row>
+  <row r="13">
+    <c r="A13" t="s" s="4"><v>故事逻辑方向检查表</v></c>
+    <c r="B13" t="s" s="4"><v>检查项</v></c>
+    <c r="C13" t="s" s="4"><v>说明</v></c>
+    <c r="D13" t="s" s="4"><v>结论</v></c>
+  </row>
+  <row r="14" ht="25" customHeight="1">
+    <c r="A14" s="1"><v></v></c>
+    <c r="B14" s="1"><v></v></c>
+    <c r="C14" s="1"><v></v></c>
+    <c r="D14" t="s" s="1"><v>□ 是  □ 否</v></c>
+  </row>
+  <row r="15" ht="25" customHeight="1">
+    <c r="A15" s="1"><v></v></c>
+    <c r="B15" s="1"><v></v></c>
+    <c r="C15" s="1"><v></v></c>
+    <c r="D15" t="s" s="1"><v>□ 是  □ 否</v></c>
+  </row>
+  <row r="16" ht="25" customHeight="1">
+    <c r="A16" s="1"><v></v></c>
+    <c r="B16" s="1"><v></v></c>
+    <c r="C16" s="1"><v></v></c>
+    <c r="D16" t="s" s="1"><v>□ 是  □ 否</v></c>
+  </row>
+  <row r="17" ht="25" customHeight="1">
+    <c r="A17" s="1"><v></v></c>
+    <c r="B17" s="1"><v></v></c>
+    <c r="C17" s="1"><v></v></c>
+    <c r="D17" t="s" s="1"><v>□ 是  □ 否</v></c>
+  </row>
+  <row r="18" ht="25" customHeight="1">
+    <c r="A18" s="1"><v></v></c>
+    <c r="B18" s="1"><v></v></c>
+    <c r="C18" s="1"><v></v></c>
+    <c r="D18" t="s" s="1"><v>□ 是  □ 否</v></c>
+  </row>
+  <row r="19">
+    <c r="A19" t="s" s="4"><v>脱敏处理检查表</v></c>
+    <c r="B19" t="s" s="4"><v>检查项</v></c>
+    <c r="C19" t="s" s="4"><v>说明</v></c>
+    <c r="D19" t="s" s="4"><v>是否通过</v></c>
+  </row>
+  <row r="20" ht="25" customHeight="1">
+    <c r="A20" s="1"><v></v></c>
+    <c r="B20" s="1"><v></v></c>
+    <c r="C20" s="1"><v></v></c>
+    <c r="D20" t="s" s="1"><v>□ 通过  □ 需修改</v></c>
+  </row>
+  <row r="21" ht="25" customHeight="1">
+    <c r="A21" s="1"><v></v></c>
+    <c r="B21" s="1"><v></v></c>
+    <c r="C21" s="1"><v></v></c>
+    <c r="D21" t="s" s="1"><v>□ 通过  □ 需修改</v></c>
+  </row>
+  <row r="22" ht="25" customHeight="1">
+    <c r="A22" s="1"><v></v></c>
+    <c r="B22" s="1"><v></v></c>
+    <c r="C22" s="1"><v></v></c>
+    <c r="D22" t="s" s="1"><v>□ 通过  □ 需修改</v></c>
+  </row>
+  <row r="23" ht="25" customHeight="1">
+    <c r="A23" s="1"><v></v></c>
+    <c r="B23" s="1"><v></v></c>
+    <c r="C23" s="1"><v></v></c>
+    <c r="D23" t="s" s="1"><v>□ 通过  □ 需修改</v></c>
+  </row>
+  <row r="24">
+    <c r="A24" t="s" s="4"><v>综合结论</v></c>
+    <c r="B24" t="s" s="1"><v>□ 全部通过，可以使用</v></c>
+    <c r="C24" s="1"><v></v></c>
+    <c r="D24" s="1"><v></v></c>
+  </row>
+  </sheetData>
+    <mergeCells count="5">
+    <mergeCell ref="A1:G1"/>
+    <mergeCell ref="A2:D2"/>
+    <mergeCell ref="A6:D6"/>
+    <mergeCell ref="A13:D13"/>
+    <mergeCell ref="A19:D19"/>
+  </mergeCells>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

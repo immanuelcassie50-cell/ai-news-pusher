@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>组织统筹能力 · 数字工具包</title>
+<style>
+:root {
+  --primary: #1A5F7A;
+  --primary-dark: #134A5F;
+  --primary-light: #E8F4F8;
+  --accent: #D4763B;
+  --accent-light: #FAF0E6;
+  --ink: #2B2B2B;
+  --gray: #6E6E6E;
+  --gray-light: #E8E6E3;
+  --bg: #FBFAF8;
+  --card-bg: #FFFFFF;
+}
+* { box-sizing: border-box; }
+html, body {
+  margin: 0; padding: 0;
+  font-family: -apple-system, "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  -webkit-text-size-adjust: 100%;
+}
+.app { display: flex; min-height: 100vh; }
+
+/* ---------- 侧栏 ---------- */
+.sidebar {
+  width: 230px;
+  flex-shrink: 0;
+  background: var(--ink);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+}
+.sidebar .brand {
+  padding: 18px 16px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.sidebar .brand .series {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.5);
+  text-transform: uppercase;
+}
+.sidebar .brand h1 {
+  font-size: 16px;
+  margin: 4px 0 0;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.sidebar .brand .sub {
+  font-size: 11px;
+  color: rgba(255,255,255,0.55);
+  margin-top: 4px;
+}
+.search-box {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.search-box input {
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 6px;
+  color: #fff;
+  padding: 7px 10px;
+  font-size: 13px;
+  outline: none;
+}
+.search-box input::placeholder { color: rgba(255,255,255,0.4); }
+.search-box input:focus { border-color: var(--primary); }
+
+nav { flex: 1; padding: 6px 0; }
+nav .group-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.35);
+  padding: 12px 16px 4px;
+  text-transform: uppercase;
+}
+nav button.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color: rgba(255,255,255,0.78);
+  padding: 9px 16px;
+  font-size: 13.5px;
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  font-family: inherit;
+}
+nav button.nav-item .badge {
+  flex-shrink: 0;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.85);
+  font-size: 10.5px;
+  font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+}
+nav button.nav-item:hover { background: rgba(255,255,255,0.06); color: #fff; }
+nav button.nav-item.active {
+  background: rgba(26,95,122,0.25);
+  border-left-color: var(--primary);
+  color: #fff;
+}
+nav button.nav-item.active .badge { background: var(--primary); color: #fff; }
+nav button.nav-item.hidden { display: none; }
+
+.sidebar-footer {
+  padding: 10px 16px 14px;
+  font-size: 10px;
+  color: rgba(255,255,255,0.35);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ---------- 主内容 ---------- */
+main {
+  flex: 1;
+  min-width: 0;
+  padding: 28px 36px 60px;
+  max-width: 880px;
+}
+.section { display: none; }
+.section.active { display: block; }
+
+.page-header {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 8px;
+  padding: 18px 24px;
+  margin-bottom: 18px;
+}
+.page-header .series { font-size: 10px; letter-spacing: 3px; opacity: 0.8; text-transform: uppercase; }
+.page-header h2 { font-size: 22px; margin: 4px 0 0; font-weight: 700; }
+.page-header .sub { font-size: 13px; opacity: 0.9; margin-top: 4px; }
+
+h3.section-title {
+  color: var(--primary);
+  font-size: 15px;
+  font-weight: 700;
+  border-bottom: 1.5px solid var(--primary);
+  padding-bottom: 6px;
+  margin: 22px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+h3.section-title .num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: #fff;
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  font-size: 11px;
+  flex-shrink: 0;
+}
+h4 { font-size: 13.5px; color: var(--ink); margin: 14px 0 6px; }
+p { line-height: 1.7; font-size: 14px; color: #444; }
+
+table { width: 100%; border-collapse: collapse; margin: 8px 0 14px; font-size: 13px; }
+th { background: var(--primary); color: #fff; text-align: left; padding: 8px 10px; font-weight: 600; }
+td { padding: 8px 10px; border-bottom: 1px solid var(--gray-light); vertical-align: top; line-height: 1.6; }
+tr:nth-child(even) td { background: #F8F6F4; }
+
+.callout {
+  background: var(--primary-light);
+  border-left: 4px solid var(--primary);
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 13.5px;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.7;
+}
+.callout b { color: var(--primary); }
+.tip {
+  background: #EFEFEE;
+  border-left: 4px solid var(--gray);
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 13px;
+  color: #555;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.7;
+}
+.tip b { color: var(--gray); }
+
+.template-sentence {
+  background: #F8F6F4;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 13px;
+  margin: 5px 0;
+  line-height: 1.7;
+}
+.fill { color: var(--primary); font-weight: 700; }
+
+/* 工具卡 */
+.tool-card {
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.tool-card summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+  list-style: none;
+  background: #fff;
+}
+.tool-card summary::-webkit-details-marker { display: none; }
+.tool-card summary .m-badge {
+  width: 24px; height: 24px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+.tool-card summary .m-sub {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.tool-card .m-body {
+  padding: 4px 14px 14px 48px;
+  border-top: 1px solid var(--gray-light);
+}
+.tool-card[open] summary { background: var(--primary-light); }
+.duration {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+/* 流程图 */
+.flow-box {
+  border: 1px solid var(--primary);
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 13px;
+  background: #fff;
+  text-align: center;
+}
+.flow-box.q { border-style: dashed; color: #666; }
+.flow-arrow { text-align: center; color: var(--primary); font-size: 14px; margin: 2px 0; }
+.flow-branch { display: flex; gap: 10px; margin: 4px 0; }
+.flow-branch > div { flex: 1; }
+.flow-result {
+  background: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+  padding: 6px 10px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+.branch-label { text-align: center; font-size: 11px; color: var(--gray); margin-bottom: 2px; }
+
+/* 链接卡 */
+.link-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-top: 12px; }
+.link-card {
+  background: #fff;
+  border: 1px solid var(--gray-light);
+  border-radius: 6px;
+  padding: 14px;
+  text-decoration: none;
+  color: var(--ink);
+  transition: border-color .2s, box-shadow .2s;
+}
+.link-card:hover {
+  border-color: var(--primary);
+  box-shadow: 0 2px 8px rgba(26,95,122,0.1);
+}
+.link-card .link-title { font-weight: 700; font-size: 13.5px; margin-bottom: 4px; }
+.link-card .link-desc { font-size: 11.5px; color: var(--gray); line-height: 1.5; }
+.link-card .link-tag {
+  display: inline-block;
+  background: var(--primary-light);
+  color: var(--primary);
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-top: 6px;
+}
+
+/* 资源列表 */
+.resource-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-light);
+}
+.resource-icon {
+  width: 40px; height: 40px;
+  background: var(--primary-light);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.resource-icon svg { width: 20px; height: 20px; fill: var(--primary); }
+.resource-body { flex: 1; }
+.resource-title { font-weight: 700; font-size: 14px; margin-bottom: 2px; }
+.resource-desc { font-size: 12.5px; color: var(--gray); }
+
+/* 自测 */
+.quiz-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--gray-light);
+  font-size: 13.5px;
+}
+.quiz-row .q-num { color: var(--primary); font-weight: 700; flex-shrink: 0; }
+.quiz-row .q-toggle {
+  flex-shrink: 0;
+  background: var(--primary-light);
+  color: var(--primary);
+  border: none;
+  border-radius: 12px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+.quiz-answer {
+  display: none;
+  background: #F8F6F4;
+  border-radius: 5px;
+  padding: 8px 12px;
+  margin: 4px 0 8px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+}
+.quiz-answer.show { display: block; }
+.verdict { font-weight: 700; color: var(--primary); }
+
+/* 移动端 */
+.mobile-bar {
+  display: none;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--ink);
+  color: #fff;
+  padding: 10px 14px;
+  align-items: center;
+  justify-content: space-between;
+}
+.mobile-bar .title { font-size: 14px; font-weight: 700; }
+.mobile-bar button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-family: inherit;
+}
+
+@media (max-width: 860px) {
+  .app { flex-direction: column; }
+  .sidebar {
+    position: fixed;
+    inset: 0;
+    width: 80%;
+    max-width: 300px;
+    z-index: 30;
+    transform: translateX(-105%);
+    transition: transform 0.2s ease;
+  }
+  .sidebar.open { transform: translateX(0); }
+  .mobile-bar { display: flex; }
+  main { padding: 16px 16px 50px; max-width: 100%; }
+  .overlay {
+    display: none;
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 25;
+  }
+  .overlay.show { display: block; }
+  .link-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<div class="mobile-bar">
+  <div class="title">组织统筹能力 · 工具包</div>
+  <button id="menuBtn">目录</button>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<div class="app">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <div class="series">企业文化模块第七课</div>
+      <h1>组织统筹能力<br>数字工具包</h1>
+      <div class="sub">离线版 · 课堂随用随查</div>
+    </div>
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="搜索：如"语境""任务分配""信任"…">
+    </div>
+    <nav id="navList">
+      <div class="group-label">课程导航</div>
+      <button class="nav-item" data-target="overview" data-keywords="总览 课程地图 产出链路"><span class="badge">·</span>课程总览 / 产出链路</button>
+
+      <div class="group-label">核心工具</div>
+      <button class="nav-item" data-target="diagnosis" data-keywords="诊断 评估 现状"><span class="badge">1</span>组织诊断工具</button>
+      <button class="nav-item" data-target="context" data-keywords="语境 共同语境 对齐"><span class="badge">2</span>语境建立工具</button>
+      <button class="nav-item" data-target="task" data-keywords="任务分配 决策 人机"><span class="badge">3</span>任务分配决策卡</button>
+      <button class="nav-item" data-target="trust" data-keywords="信任 机制 透明"><span class="badge">4</span>信任机制图谱</button>
+
+      <div class="group-label">延伸资源</div>
+      <button class="nav-item" data-target="resources" data-keywords="视频 文章 推荐"><span class="badge">·</span>自学资源推荐</button>
+      <button class="nav-item" data-target="selfcheck" data-keywords="自测 认知"><span class="badge">·</span>课前认知自测</button>
+      <button class="nav-item" data-target="action" data-keywords="行动 计划 实践"><span class="badge">·</span>个人行动计划</button>
+    </nav>
+    <div class="sidebar-footer">企业文化模块 · 组织统筹能力</div>
+  </aside>
+
+  <main id="content">
+
+    <!-- ============ 总览 ============ -->
+    <section class="section active" id="sec-overview">
+      <div class="page-header">
+        <div class="series">课程总览</div>
+        <h2>组织统筹能力 · 产出链路</h2>
+        <div class="sub">从诊断到行动，建立人机协同领导力</div>
+      </div>
+
+      <p>这套数字工具包，把课程中用到的核心工具整理成手机可查的版本。左侧每一项，都对应一个实用的管理工具，建议<b>课堂上配合实际演练使用</b>——数字版方便你在课后、实际工作中随时翻看。</p>
+
+      <h3 class="section-title"><span class="num">·</span>学习产出链路</h3>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">起点：组织诊断</b> → 评估团队智能化程度与统筹能力现状
+      </div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-branch">
+        <div>
+          <div class="flow-result">语境建立方案</div>
+          <div style="text-align:center; font-size:11px; color:var(--gray);">模块二产出</div>
+        </div>
+        <div>
+          <div class="flow-result">任务分配决策</div>
+          <div style="text-align:center; font-size:11px; color:var(--gray);">模块三产出</div>
+        </div>
+        <div>
+          <div class="flow-result">信任机制设计</div>
+          <div style="text-align:center; font-size:11px; color:var(--gray);">模块四产出</div>
+        </div>
+      </div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">终点：个人行动计划</b> → 基于课程方法的个人实践路径
+      </div>
+
+      <div class="callout"><b>怎么用这个工具包：</b>不需要按顺序通读——遇到具体问题时，直接用左侧搜索框查找（例如备课时卡在"任务分配"，搜索即可跳转）。</div>
+    </section>
+
+    <!-- ============ 组织诊断工具 ============ -->
+    <section class="section" id="sec-diagnosis">
+      <div class="page-header">
+        <div class="series">工具 01</div>
+        <h2>组织诊断工具</h2>
+        <div class="sub">评估团队智能化程度与统筹能力现状</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>团队智能化程度评估</h3>
+      <p>请根据实际情况选择最符合的选项，计算你的团队智能化成熟度。</p>
+
+      <table>
+        <tr><th>维度</th><th>评估问题</th><th>选项</th></tr>
+        <tr>
+          <td><b>智能体使用深度</b></td>
+          <td>团队中使用AI智能体的频率？</td>
+          <td>
+            <select style="width:100%;padding:4px;">
+              <option value="1">偶尔实验性使用</option>
+              <option value="2">部分流程常规使用</option>
+              <option value="3">核心业务全面使用</option>
+              <option value="4">人机协同成为主要工作模式</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b>统筹机制成熟度</b></td>
+          <td>团队是否有明确的人机任务分配规则？</td>
+          <td>
+            <select style="width:100%;padding:4px;">
+              <option value="1">无明文规定，靠默契</option>
+              <option value="2">有简单约定，但不系统</option>
+              <option value="3">有正式流程，偶有调整</option>
+              <option value="4">动态优化，持续迭代</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b>信任建立程度</b></td>
+          <td>团队成员对智能体产出的信任度？</td>
+          <td>
+            <select style="width:100%;padding:4px;">
+              <option value="1">存疑，需要大量人工复核</option>
+              <option value="2">部分信任，关键环节复核</option>
+              <option value="3">基本信任，仅异常时复核</option>
+              <option value="4">高度信任，仅战略性决策参与</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><b>沟通范式</b></td>
+          <td>人与智能体的沟通方式？</td>
+          <td>
+            <select style="width:100%;padding:4px;">
+              <option value="1">下达指令式</option>
+              <option value="2">指令+反馈混合</option>
+              <option value="3">语境提供+产出接收</option>
+              <option value="4">双向对话+迭代优化</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+
+      <h3 class="section-title"><span class="num">2</span>统筹能力雷达图</h3>
+      <p>评估你在以下六个维度的能力现状（1-5分）：</p>
+
+      <div class="tip">
+        <table style="margin:0;">
+          <tr><td style="width:40%;border:none;"><b>1. 智能体认知</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+          <tr><td style="width:40%;border:none;"><b>2. 语境建立</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+          <tr><td style="width:40%;border:none;"><b>3. 任务分配</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+          <tr><td style="width:40%;border:none;"><b>4. 信任机制</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+          <tr><td style="width:40%;border:none;"><b>5. 冲突处理</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+          <tr><td style="width:40%;border:none;"><b>6. 绩效评估</b></td><td style="border:none;"><input type="range" min="1" max="5" value="3" style="width:100%;"></td></tr>
+        </table>
+      </div>
+
+      <h3 class="section-title"><span class="num">3</span>诊断结果与行动建议</h3>
+      <table>
+        <tr><th>分数区间</th><th>阶段</th><th>优先行动</th></tr>
+        <tr><td><b>6-12分</b></td><td>初始阶段</td><td>从模块一开始，重点建立对智能体的正确认知</td></tr>
+        <tr><td><b>13-20分</b></td><td>发展中期</td><td>从模块二开始，重点建立共同语境和任务分配机制</td></tr>
+        <tr><td><b>21-25分</b></td><td>成熟阶段</td><td>从模块四开始，重点优化信任机制和统筹进阶</td></tr>
+        <tr><td><b>26-30分</b></td><td>领先阶段</td><td>直接进入模块六综合演练，带动团队共同提升</td></tr>
+      </table>
+    </section>
+
+    <!-- ============ 语境建立工具 ============ -->
+    <section class="section" id="sec-context">
+      <div class="page-header">
+        <div class="series">工具 02</div>
+        <h2>语境建立工具</h2>
+        <div class="sub">围绕共同业务语境对齐团队</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>语境的三层结构</h3>
+      <div class="flow-box" style="text-align:left; border-style:solid; display:flex; justify-content:space-between;">
+        <span><b style="color:var(--primary)">业务语境</b><br><span style="font-size:12px;">战略目标、市场环境、竞争格局</span></span>
+        <span style="color:var(--gray);">→</span>
+        <span><b style="color:var(--primary)">任务语境</b><br><span style="font-size:12px;">具体目标、交付物、时间约束</span></span>
+        <span style="color:var(--gray);">→</span>
+        <span><b style="color:var(--primary)">关系语境</b><br><span style="font-size:12px;">角色分工、权责边界、协作方式</span></span>
+      </div>
+
+      <h3 class="section-title"><span class="num">2</span>四大工具模板</h3>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">A</span>
+          结果看板
+          <span class="m-sub">明确预期，透明追踪</span>
+        </summary>
+        <div class="m-body">
+          <h4>模板结构</h4>
+          <table>
+            <tr><th>项目</th><th>内容</th></tr>
+            <tr><td>业务目标</td><td><input type="text" placeholder="这项工作对业务的最终价值是什么？" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td></tr>
+            <tr><td>成功标准</td><td><input type="text" placeholder="如何衡量这项工作完成了？" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td></tr>
+            <tr><td>关键里程碑</td><td><input type="text" placeholder="有哪些重要节点需要关注？" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td></tr>
+            <tr><td>风险预警</td><td><input type="text" placeholder="哪些情况需要人工介入？" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">B</span>
+          角色矩阵
+          <span class="m-sub">清晰分工，减少模糊地带</span>
+        </summary>
+        <div class="m-body">
+          <h4>人机角色分配表</h4>
+          <table>
+            <tr><th>任务环节</th><th>主要执行者</th><th>监督者</th><th>最终决策者</th><th>备注</th></tr>
+            <tr>
+              <td><input type="text" placeholder="环节名称" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option><option>协同</option></select></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option><option>自动化</option></select></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option></select></td>
+              <td><input type="text" placeholder="" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+            <tr>
+              <td><input type="text" placeholder="环节名称" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option><option>协同</option></select></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option><option>自动化</option></select></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI智能体</option></select></td>
+              <td><input type="text" placeholder="" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">C</span>
+          对话协议
+          <span class="m-sub">标准化沟通，减少误解</span>
+        </summary>
+        <div class="m-body">
+          <h4>人机对话规范</h4>
+          <div class="template-sentence">
+            <b>人类→智能体：</b>提供<span class="fill">语境背景</span> + <span class="fill">具体任务</span> + <span class="fill">约束条件</span> + <span class="fill">输出格式</span>
+          </div>
+          <div class="template-sentence">
+            <b>智能体→人类：</b>陈述<span class="fill">已完成内容</span> + <span class="fill">发现的问题</span> + <span class="fill">需要确认事项</span> + <span class="fill">备选方案</span>
+          </div>
+          <div class="template-sentence">
+            <b>异常升级：</b>当<span class="fill">置信度&lt;阈值</span>或遇到<span class="fill">边界情况</span>时，自动<span class="fill">暂停并提示</span>人类介入
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">D</span>
+          反馈回路
+          <span class="m-sub">持续优化，形成闭环</span>
+        </summary>
+        <div class="m-body">
+          <h4>反馈机制设计</h4>
+          <table>
+            <tr><th>反馈类型</th><th>触发条件</th><th>反馈渠道</th><th>响应时间</th></tr>
+            <tr>
+              <td>结果确认</td>
+              <td>智能体完成交付物</td>
+              <td><input type="text" placeholder="确认方式" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="如：24小时内" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+            <tr>
+              <td>过程检查</td>
+              <td>任务进行中</td>
+              <td><input type="text" placeholder="检查方式" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="如：每日" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+            <tr>
+              <td>问题上报</td>
+              <td>出现异常/偏差</td>
+              <td><input type="text" placeholder="上报方式" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="如：即时" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="callout"><b>关键认知：</b>语境建立不是"一次性的"，而是<b>持续迭代的过程</b>——每次人机协作后，复盘语境是否足够清晰，持续优化。</div>
+    </section>
+
+    <!-- ============ 任务分配决策卡 ============ -->
+    <section class="section" id="sec-task">
+      <div class="page-header">
+        <div class="series">工具 03</div>
+        <h2>任务分配决策卡</h2>
+        <div class="sub">5维评估模型，判断人机最优分工</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>5维评估模型</h3>
+      <p>对每个任务环节，从以下5个维度评估，确定最优执行者：</p>
+
+      <table>
+        <tr><th>维度</th><th>评估问题</th><th>人类优先</th><th>智能体优先</th></tr>
+        <tr>
+          <td><b>数据依赖</b></td>
+          <td>该任务对结构化数据的依赖程度？</td>
+          <td>依赖非结构化、情境化数据</td>
+          <td>高度依赖结构化数据</td>
+        </tr>
+        <tr>
+          <td><b>变化频率</b></td>
+          <td>该任务的规则/环境变化频率？</td>
+          <td>高频变化，需要即时判断</td>
+          <td>相对稳定，规则明确</td>
+        </tr>
+        <tr>
+          <td><b>错误容忍</b></td>
+          <td>该任务出错的容忍度？</td>
+          <td>低容忍，需要高精准度</td>
+          <td>中等容忍，有纠错机制</td>
+        </tr>
+        <tr>
+          <td><b>利益相关者影响</b></td>
+          <td>该任务对利益相关者的影响？</td>
+          <td>高影响，需要情感智能</td>
+          <td>低影响，可自动化处理</td>
+        </tr>
+        <tr>
+          <td><b>可解释性</b></td>
+          <td>该任务的决策需要可解释性？</td>
+          <td>强监管要求，需要透明</td>
+          <td>内部决策，可黑盒</td>
+        </tr>
+      </table>
+
+      <h3 class="section-title"><span class="num">2</span>决策流程图</h3>
+      <div class="flow-box q">这项任务需要多少人工判断/情感智能/创意？</div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-branch">
+        <div>
+          <div class="branch-label">高（人类优先）</div>
+          <div class="flow-result" style="background:var(--accent);">人类主导<br>智能体辅助</div>
+        </div>
+        <div>
+          <div class="branch-label">低（可自动化）</div>
+          <div class="flow-box q" style="font-size:12px;">需要高可解释性吗？</div>
+          <div class="flow-arrow">▼</div>
+          <div class="flow-branch">
+            <div>
+              <div class="branch-label">是</div>
+              <div class="flow-result">人机协同<br>+决策记录</div>
+            </div>
+            <div>
+              <div class="branch-label">否</div>
+              <div class="flow-result">智能体主导<br>+定期审核</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">3</span>动态分配策略</h3>
+      <div class="tip">
+        <b>初始分配：</b>基于5维评估结果，确定初始执行者<br><br>
+        <b>监测：</b>实时监控任务进展和产出质量<br><br>
+        <b>调整：</b>当出现预期偏差时，触发重新评估流程<br><br>
+        <b>优化：</b>基于历史数据，持续优化分配规则
+      </div>
+
+      <h3 class="section-title"><span class="num">4</span>常见误区自检</h3>
+      <table>
+        <tr><th>误区类型</th><th>表现</th><th>正确做法</th></tr>
+        <tr>
+          <td><b>人类偏见</b></td>
+          <td>认为人类做的永远比智能体好</td>
+          <td>基于任务特征客观评估，不带预设</td>
+        </tr>
+        <tr>
+          <td><b>智能体依赖</b></td>
+          <td>过度依赖智能体，忽视人类独特价值</td>
+          <td>识别需要人类判断的关键环节</td>
+        </tr>
+        <tr>
+          <td><b>静态分配</b></td>
+          <td>一次分配定终身，不随任务演进调整</td>
+          <td>建立动态调整机制</td>
+        </tr>
+        <tr>
+          <td><b>模糊边界</b></td>
+          <td>人机职责边界不清晰，出现空白或重叠</td>
+          <td>使用角色矩阵明确定义</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ============ 信任机制图谱 ============ -->
+    <section class="section" id="sec-trust">
+      <div class="page-header">
+        <div class="series">工具 04</div>
+        <h2>信任机制图谱</h2>
+        <div class="sub">四维信任模型，建立人机间的真正信任</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>信任的四个维度</h3>
+      <div class="flow-branch">
+        <div>
+          <div class="flow-box" style="border-color:var(--primary);">
+            <b style="color:var(--primary);">能力信任</b><br>
+            <span style="font-size:11px;color:var(--gray);">智能体能否正确、专业地完成任务</span>
+          </div>
+        </div>
+        <div>
+          <div class="flow-box" style="border-color:var(--primary);">
+            <b style="color:var(--primary);">意图信任</b><br>
+            <span style="font-size:11px;color:var(--gray);">智能体的目标是否与人类一致</span>
+          </div>
+        </div>
+        <div>
+          <div class="flow-box" style="border-color:var(--primary);">
+            <b style="color:var(--primary);">机制信任</b><br>
+            <span style="font-size:11px;color:var(--gray);">规则和流程是否保障公平透明</span>
+          </div>
+        </div>
+        <div>
+          <div class="flow-box" style="border-color:var(--primary);">
+            <b style="color:var(--primary);">关系信任</b><br>
+            <span style="font-size:11px;color:var(--gray);">长期协作中积累的信任感</span>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">2</span>建立透明度的三种方法</h3>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">1</span>
+          决策日志
+          <span class="m-sub">全程可追溯</span>
+        </summary>
+        <div class="m-body">
+          <h4>决策日志模板</h4>
+          <table>
+            <tr><th>时间</th><th>任务</th><th>决策依据</th><th>执行者</th><th>结果</th><th>复盘</th></tr>
+            <tr>
+              <td><input type="text" placeholder="时间戳" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="任务描述" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="依据" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><select style="width:100%;padding:4px;"><option>人类</option><option>AI</option></select></td>
+              <td><input type="text" placeholder="结果" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+              <td><input type="text" placeholder="复盘" style="width:100%;padding:4px;border:1px solid var(--gray-light);border-radius:4px;"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">2</span>
+          过程可见
+          <span class="m-sub">关键步骤透明</span>
+        </summary>
+        <div class="m-body">
+          <h4>过程可见性检查清单</h4>
+          <div style="display:flex;flex-direction:column;gap:6px;">
+            <label style="display:flex;align-items:center;gap:8px;font-size:13px;">
+              <input type="checkbox" style="width:16px;height:16px;accent-color:var(--primary);">
+              任务开始前，双方对目标和预期达成一致
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;font-size:13px;">
+              <input type="checkbox" style="width:16px;height:16px;accent-color:var(--primary);">
+              关键节点有明确的检查点和确认机制
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;font-size:13px;">
+              <input type="checkbox" style="width:16px;height:16px;accent-color:var(--primary);">
+              智能体的思考过程/依据对相关人员可见
+            </label>
+            <label style="display:flex;align-items:center;gap:8px;font-size:13px;">
+              <input type="checkbox" style="width:16px;height:16px;accent-color:var(--primary);">
+              任何重大决策或偏差有记录和说明
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <summary>
+          <span class="m-badge">3</span>
+          结果可溯
+          <span class="m-sub">产出可查证</span>
+        </summary>
+        <div class="m-body">
+          <h4>结果可溯性设计</h4>
+          <div class="template-sentence">
+            <b>版本管理：</b>所有产出物有明确版本号，支持历史追溯
+          </div>
+          <div class="template-sentence">
+            <b>来源标注：</b>明确标注每个产出物的来源（人类/AI/协同）
+          </div>
+          <div class="template-sentence">
+            <b>质量标记：</b>根据验证状态标注（如：已验证/待复核/有问题）
+          </div>
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">3</span>从监督到放权的信任进阶</h3>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">Level 1：监督</b> — 所有产出需要人工审核<br>
+        <span style="font-size:12px;color:var(--gray);">→ 适用于：初期引入、不确定性高的任务</span>
+      </div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">Level 2：抽检</b> — 关键节点审核，非关键抽查<br>
+        <span style="font-size:12px;color:var(--gray);">→ 适用于：已建立信任的常规任务</span>
+      </div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">Level 3：放权</b> — 智能体自主执行，定期复盘<br>
+        <span style="font-size:12px;color:var(--gray);">→ 适用于：成熟流程、高度可预测任务</span>
+      </div>
+      <div class="flow-arrow">▼</div>
+      <div class="flow-box" style="text-align:left; border-style:solid;">
+        <b style="color:var(--primary)">Level 4：委托</b> — 战略性授权，成果导向<br>
+        <span style="font-size:12px;color:var(--gray);">→ 适用于：高度信任、复杂决策能力已验证</span>
+      </div>
+
+      <div class="callout"><b>关键认知：</b>信任不是一次建立的，而是<b>通过一次次成功的协作积累</b>。信任进阶需要时间，也需要机制保障——不是盲目信任，而是有基础的信任。</div>
+    </section>
+
+    <!-- ============ 自学资源推荐 ============ -->
+    <section class="section" id="sec-resources">
+      <div class="page-header">
+        <div class="series">延伸资源</div>
+        <h2>自学资源推荐</h2>
+        <div class="sub">视频、文章、工具，持续深化学习</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>视频课程</h3>
+      <div class="resource-item">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="resource-body">
+          <div class="resource-title">德勤2026年全球人力资本趋势报告解读</div>
+          <div class="resource-desc">官方报告深度解读，重点关注人机协同章节</div>
+          <span class="link-tag">报告解读</span>
+        </div>
+      </div>
+      <div class="resource-item">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="resource-body">
+          <div class="resource-title">麦肯锡：智能体型组织的领导力转型</div>
+          <div class="resource-desc">从传统管理到人机协同的范式转变</div>
+          <span class="link-tag">领导力</span>
+        </div>
+      </div>
+      <div class="resource-item">
+        <div class="resource-icon">
+          <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </div>
+        <div class="resource-body">
+          <div class="resource-title">IBM人机混合团队管理实践</div>
+          <div class="resource-desc">真实企业案例，分享最佳实践和避坑指南</div>
+          <span class="link-tag">案例</span>
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">2</span>推荐阅读</h3>
+      <div class="link-grid">
+        <div class="link-card">
+          <div class="link-title">《重新定义团队》</div>
+          <div class="link-desc">谷歌人力运营总监分享数据驱动的人才管理</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">《人类的终极问题》</div>
+          <div class="link-desc">探索人类独特能力，在AI时代找准定位</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">《AI极简经济学》</div>
+          <div class="link-desc">理解AI的能力边界和商业应用逻辑</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">《MIT人机协作评论》</div>
+          <div class="link-desc">最新人机交互研究和实践案例</div>
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">3</span>实用工具</h3>
+      <div class="link-grid">
+        <div class="link-card">
+          <div class="link-title">AI任务分配决策助手</div>
+          <div class="link-desc">输入任务特征，获取分配建议</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">团队智能化成熟度评估</div>
+          <div class="link-desc">在线测评，生成团队雷达图</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">人机协作效率追踪模板</div>
+          <div class="link-desc">Notion/Airtable模板，追踪协作效果</div>
+        </div>
+        <div class="link-card">
+          <div class="link-title">智能体Prompt库</div>
+          <div class="link-desc">常见任务的最优Prompt模板</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 课前认知自测 ============ -->
+    <section class="section" id="sec-selfcheck">
+      <div class="page-header">
+        <div class="series">工具 ·</div>
+        <h2>课前认知自测</h2>
+        <div class="sub">关于"人机协同"，你的直觉判断，哪些可能需要更新？</div>
+      </div>
+
+      <p>点击每条说法右侧的"看解析"——这8句话覆盖了人机协同管理中最常见的认知误区。</p>
+
+      <div class="quiz-row">
+        <span><span class="q-num">1.</span> AI智能体可以完全替代人类做决策</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>AI擅长处理结构化、可量化的任务</b>，但涉及情感判断、伦理选择、利益平衡的决策，人类仍有不可替代的优势。正确认知是：<b>人机协同 = 各自做最擅长的事</b>。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">2.</span> 给人机团队开会和给纯人类团队开会一样</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>人机团队需要不同的沟通范式</b>：给人类开会可以用"要点+讨论"，给智能体则需要"明确语境+具体任务+输出格式"。混在一起时，需要分别为人、机准备沟通内容。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">3.</span> 信任智能体就是让它自主决策，不用监督</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>信任是建立在透明和问责机制基础上的</b>。真正的信任意味着"你可以在既定框架内自主决策"，而不是"爱怎么干怎么干"。没有透明度和问责制的"信任"是盲目的。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">4.</span> 人机任务分配是一次性的决定</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>任务分配应该是动态的</b>。随着任务演进、团队能力提升、环境变化，初始分配可能需要调整。静态分配会导致"人类过度介入"或"智能体能力浪费"。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">5.</span> 有了AI智能体，人类员工会变得多余</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>AI会改变人类的工作内容，而非消灭人类工作</b>。人类的独特价值在于：创造力、情感智能、伦理判断、复杂情境应变。当AI承担了重复性工作，人类可以聚焦于更高价值的工作。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">6.</span> 建立共同语境只是沟通的事</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>语境建立需要工具和机制支撑</b>。它不只是"说清楚"，还包括：结果看板（明确预期）、角色矩阵（清晰分工）、对话协议（标准化沟通）、反馈回路（持续优化）。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">7.</span> 人机协作效果很难衡量</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>人机协作效果是可以衡量的</b>，维度包括：效率提升、质量稳定性、创新产出、学习速度、团队满意度。关键是建立合适的衡量指标，并持续追踪。</div>
+
+      <div class="quiz-row">
+        <span><span class="q-num">8.</span> 人机统筹能力是天赋，后天很难培养</span>
+        <button class="q-toggle">看解析</button>
+      </div>
+      <div class="quiz-answer">错。<b>人机统筹是系统化的方法论</b>，可以通过学习和实践提升。本课程正是要帮助学员掌握：语境建立工具、任务分配决策卡、信任机制图谱等实用方法。</div>
+    </section>
+
+    <!-- ============ 个人行动计划 ============ -->
+    <section class="section" id="sec-action">
+      <div class="page-header">
+        <div class="series">工具 ·</div>
+        <h2>个人行动计划</h2>
+        <div class="sub">基于课程方法，制定个人实践路径</div>
+      </div>
+
+      <h3 class="section-title"><span class="num">1</span>我的现状评估</h3>
+      <div class="fill-field" style="margin-bottom:12px;">
+        <label style="display:block;font-size:13px;font-weight:600;color:#555;margin-bottom:4px;">当前最需要解决的问题</label>
+        <textarea rows="3" placeholder="描述你目前在人机协同中遇到的最大挑战…" style="width:100%;border:1px solid var(--gray-light);border-radius:5px;padding:8px 10px;font-size:13px;font-family:inherit;resize:vertical;"></textarea>
+      </div>
+
+      <h3 class="section-title"><span class="num">2</span>我的行动承诺</h3>
+      <div class="callout">从今天学到的内容中，选择<b>一项</b>你承诺在接下来两周内开始实践的方法：</div>
+
+      <div class="track-row" style="border:1px solid var(--gray-light);border-radius:5px;padding:12px;margin-bottom:8px;">
+        <input type="checkbox" id="chk-1" style="width:18px;height:18px;accent-color:var(--primary);margin-top:2px;">
+        <div style="flex:1;">
+          <label for="chk-1" style="font-weight:700;font-size:14px;cursor:pointer;">语境建立：使用结果看板</label>
+          <p style="font-size:12px;color:var(--gray);margin:4px 0 0;">选择一个现有任务，建立结果看板，明确与智能体的共同语境</p>
+          <input type="text" placeholder="你的具体计划：" style="width:100%;margin-top:8px;padding:6px 8px;border:1px solid var(--gray-light);border-radius:4px;font-size:12px;">
+        </div>
+      </div>
+
+      <div class="track-row" style="border:1px solid var(--gray-light);border-radius:5px;padding:12px;margin-bottom:8px;">
+        <input type="checkbox" id="chk-2" style="width:18px;height:18px;accent-color:var(--primary);margin-top:2px;">
+        <div style="flex:1;">
+          <label for="chk-2" style="font-weight:700;font-size:14px;cursor:pointer;">任务分配：使用5维评估模型</label>
+          <p style="font-size:12px;color:var(--gray);margin:4px 0 0;">对现有任务用5维模型评估，优化人机分工决策</p>
+          <input type="text" placeholder="你的具体计划：" style="width:100%;margin-top:8px;padding:6px 8px;border:1px solid var(--gray-light);border-radius:4px;font-size:12px;">
+        </div>
+      </div>
+
+      <div class="track-row" style="border:1px solid var(--gray-light);border-radius:5px;padding:12px;margin-bottom:8px;">
+        <input type="checkbox" id="chk-3" style="width:18px;height:18px;accent-color:var(--primary);margin-top:2px;">
+        <div style="flex:1;">
+          <label for="chk-3" style="font-weight:700;font-size:14px;cursor:pointer;">信任机制：建立决策日志</label>
+          <p style="font-size:12px;color:var(--gray);margin:4px 0 0;">为人机协作建立透明文档，让关键决策可追溯</p>
+          <input type="text" placeholder="你的具体计划：" style="width:100%;margin-top:8px;padding:6px 8px;border:1px solid var(--gray-light);border-radius:4px;font-size:12px;">
+        </div>
+      </div>
+
+      <div class="track-row" style="border:1px solid var(--gray-light);border-radius:5px;padding:12px;margin-bottom:8px;">
+        <input type="checkbox" id="chk-4" style="width:18px;height:18px;accent-color:var(--primary);margin-top:2px;">
+        <div style="flex:1;">
+          <label for="chk-4" style="font-weight:700;font-size:14px;cursor:pointer;">统筹实践：设计角色矩阵</label>
+          <p style="font-size:12px;color:var(--gray);margin:4px 0 0;">明确团队中各任务环节的人机角色分工</p>
+          <input type="text" placeholder="你的具体计划：" style="width:100%;margin-top:8px;padding:6px 8px;border:1px solid var(--gray-light);border-radius:4px;font-size:12px;">
+        </div>
+      </div>
+
+      <h3 class="section-title"><span class="num">3</span>两周后的复盘问题</h3>
+      <div class="tip">
+        <b>复盘问题：</b><br>
+        1. 你实践了哪个方法？效果如何？<br>
+        2. 遇到了什么挑战？如何解决？<br>
+        3. 这个方法对你的团队有什么改变？<br>
+        4. 下一步你打算继续深化什么？
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script>
+// ---------- 导航 ----------
+const navButtons = document.querySelectorAll('.nav-item');
+const sections = document.querySelectorAll('.section');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('overlay');
+const menuBtn = document.getElementById('menuBtn');
+
+navButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    navButtons.forEach(b => b.classList.remove('active'));
+    sections.forEach(s => s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('sec-' + target).classList.add('active');
+    sidebar.classList.remove('open');
+    overlay.classList.remove('show');
+    document.getElementById('content').scrollTop = 0;
+    window.scrollTo(0,0);
+  });
+});
+
+menuBtn.addEventListener('click', () => {
+  sidebar.classList.toggle('open');
+  overlay.classList.toggle('show');
+});
+overlay.addEventListener('click', () => {
+  sidebar.classList.remove('open');
+  overlay.classList.remove('show');
+});
+
+// ---------- 搜索 ----------
+document.getElementById('searchInput').addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  navButtons.forEach(btn => {
+    const text = (btn.textContent + ' ' + (btn.dataset.keywords||'')).toLowerCase();
+    btn.classList.toggle('hidden', q && !text.includes(q));
+  });
+});
+
+// ---------- 自测交互 ----------
+document.querySelectorAll('.q-toggle').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const answer = this.closest('.quiz-row').nextElementSibling;
+    if (answer && answer.classList.contains('quiz-answer')) {
+      answer.classList.toggle('show');
+    }
+  });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<numFmts count="0"/>
+<fonts count="7">
+  <font><name val="Calibri"/><sz val="11"/><color rgb="00404040"/></font>
+  <font><b val="1"/><name val="Calibri"/><sz val="14"/><color rgb="00FFFFFF"/></font>
+  <font><b val="1"/><name val="Calibri"/><sz val="11"/><color rgb="00404040"/></font>
+  <font><name val="Calibri"/><sz val="10"/><color rgb="00666666"/></font>
+  <font><b val="1"/><name val="Calibri"/><sz val="11"/><color rgb="00FFFFFF"/></font>
+  <font><name val="Calibri"/><sz val="11"/><color rgb="000000FF"/></font>
+  <font><name val="Calibri"/><sz val="11"/><color rgb="00FF0000"/></font>
+</fonts>
+<fills count="5">
+  <fill><patternFill patternType="none"/></fill>
+  <fill><patternFill patternType="gray125"/></fill>
+  <fill><patternFill patternType="solid"><fgColor rgb="00C05050"/><bgColor rgb="00C05050"/></patternFill></fill>
+  <fill><patternFill patternType="solid"><fgColor rgb="00F2F2F2"/><bgColor rgb="00F2F2F2"/></patternFill></fill>
+  <fill><patternFill patternType="solid"><fgColor rgb="00E0E0E0"/><bgColor rgb="00E0E0E0"/></patternFill></fill>
+</fills>
+<borders count="2">
+  <border><left/><right/><top/><bottom/><diagonal/></border>
+  <border><left style="thin"/><right style="thin"/><top style="thin"/><bottom style="thin"/></border>
+</borders>
+<cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+<cellXfs count="16">
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>
+  <xf numFmtId="0" fontId="1" fillId="2" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="2" fillId="3" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="2" fillId="0" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="3" fillId="0" borderId="0" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="4" fillId="3" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="4" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="0" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="3" borderId="0" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="5" fillId="0" borderId="0" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="6" fillId="0" borderId="0" applyAlignment="1" xfId="0"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="2" fillId="4" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="0" fillId="0" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+  <xf numFmtId="0" fontId="3" fillId="0" borderId="1" applyAlignment="1" xfId="0"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+</cellXfs>
+</styleSheet>

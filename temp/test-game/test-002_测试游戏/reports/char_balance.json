@@ -1,0 +1,42 @@
+{
+  "passed": false,
+  "stage": "4_characters",
+  "issues": [
+    {
+      "type": "missing_vc",
+      "character": "char_001",
+      "severity": "blocker",
+      "message": "角色 char_001 缺少胜利条件"
+    },
+    {
+      "type": "missing_vc",
+      "character": "char_002",
+      "severity": "blocker",
+      "message": "角色 char_002 缺少胜利条件"
+    },
+    {
+      "type": "missing_vc",
+      "character": "char_003",
+      "severity": "blocker",
+      "message": "角色 char_003 缺少胜利条件"
+    },
+    {
+      "type": "missing_vc",
+      "character": "char_004",
+      "severity": "blocker",
+      "message": "角色 char_004 缺少胜利条件"
+    },
+    {
+      "type": "missing_vc",
+      "character": "char_005",
+      "severity": "blocker",
+      "message": "角色 char_005 缺少胜利条件"
+    },
+    {
+      "type": "missing_vc",
+      "character": "char_006",
+      "severity": "blocker",
+      "message": "角色 char_006 缺少胜利条件"
+    }
+  ]
+}

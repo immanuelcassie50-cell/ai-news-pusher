@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="12" customWidth="1"/>
+    <col min="2" max="2" width="40" customWidth="1"/>
+    <col min="3" max="3" width="40" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>H2开户检查清单使用指南</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>编号：H2 | 用途：券商开户准备与流程确认</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="22" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>项目</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>内容</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>说明</t></is></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" s="9" t="inlineStr"><is><t>适用场景</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>模块二：账户开通 | 学员课后完成开户任务</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>在讲师演示后，学员按清单完成自己的开户流程</t></is></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" s="9" t="inlineStr"><is><t>填写范例</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>步骤1：选择券商 - 已勾选「中信证券」</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>学员根据评分表选出适合自己的券商</t></is></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" s="6"/>
+      <c r="B7" s="6" t="inlineStr"><is><t>步骤2：准备材料 - 已勾选「身份证+银行卡」</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>身份证需在有效期内，银行卡需为借记卡</t></is></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" s="6"/>
+      <c r="B8" s="6" t="inlineStr"><is><t>步骤3：风险测评 - 完成，评估结果：稳健型</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>如实填写，影响可购买的产品范围</t></is></c>
+    </row>
+    <row r="9" ht="10"/>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="8" t="inlineStr"><is><t>常见错误</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>错误1：风险测评填写过于保守或激进</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>正确：按实际情况填写，真实评估自己的风险承受能力</t></is></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" s="6"/>
+      <c r="B11" s="6" t="inlineStr"><is><t>错误2：忽视费用结构，只看开户礼金</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>正确：重点关注佣金费率、ETF最低佣金、平台使用费</t></is></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" s="6"/>
+      <c r="B12" s="6" t="inlineStr"><is><t>错误3：未确认银行卡功能是否完整</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>正确：确认银行卡支持银证转账，无转账限额</t></is></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" s="6"/>
+      <c r="B13" s="6" t="inlineStr"><is><t>错误4：开户后不使用，账号长期闲置</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>正确：完成首笔交易激活账号，避免成为休眠账户</t></is></c>
+    </row>
+    <row r="14" ht="10"/>
+    <row r="15" ht="22" customHeight="1">
+      <c r="A15" s="8" t="inlineStr"><is><t>课堂使用建议</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t>讲师演示环节：在电脑上投屏演示完整开户流程</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>学员同步在自己的电脑上操作</t></is></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" s="6"/>
+      <c r="B16" s="6" t="inlineStr"><is><t>引导话术："现在大家打开H2清单，对照着跟我一步一步操作，有问题随时举手"</t></is></c>
+      <c r="C16" s="6" t="inlineStr"><is><t>每个步骤完成后让学员在清单上打勾确认</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

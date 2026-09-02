@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" xSplit="0" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="16" customWidth="1"/>
+    <col min="2" max="2" width="24" customWidth="1"/>
+    <col min="3" max="3" width="12" customWidth="1"/>
+    <col min="4" max="4" width="30" customWidth="1"/>
+    <col min="5" max="5" width="24" customWidth="1"/>
+  </cols>
+
+  <sheetData>
+<row r="1"><c r="A1" t="s" s="4"><v>88</v></c></row>
+<row r="3"><c r="A3" t="s" s="4"><v>89</v></c><c r="B3" t="s" s="4"><v>90</v></c><c r="C3" t="s" s="4"><v>91</v></c><c r="D3" t="s" s="4"><v>92</v></c><c r="E3" t="s" s="4"><v>93</v></c></row>
+<row r="4"><c r="A4" t="s" s="4"><v>94</v></c><c r="B4" s="0"></c><c r="C4" s="0"><v></v></c><c r="D4" s="0"></c><c r="E4" s="0"></c></row>
+<row r="5"><c r="A5" t="s" s="4"><v>95</v></c><c r="B5" s="0"></c><c r="C5" s="0"><v></v></c><c r="D5" s="0"></c><c r="E5" s="0"></c></row>
+<row r="6"><c r="A6" t="s" s="4"><v>96</v></c><c r="B6" s="0"></c><c r="C6" s="0"><v></v></c><c r="D6" s="0"></c><c r="E6" s="0"></c></row>
+<row r="7"><c r="A7" t="s" s="4"><v>97</v></c><c r="B7" s="0"></c><c r="C7" s="0"><v></v></c><c r="D7" s="0"></c><c r="E7" s="0"></c></row>
+<row r="8"><c r="A8" t="s" s="4"><v>98</v></c><c r="B8" s="0"></c><c r="C8" s="0"><v></v></c><c r="D8" s="0"></c><c r="E8" s="0"></c></row>
+<row r="9"><c r="A9" t="s" s="4"><v>99</v></c><c r="B9" s="0"></c><c r="C9" s="0"><v></v></c><c r="D9" s="0"></c><c r="E9" s="0"></c></row>
+<row r="10"><c r="A10" t="s" s="4"><v>100</v></c><c r="B10" s="0"></c><c r="C10" s="0"><v></v></c><c r="D10" s="0"></c><c r="E10" s="0"></c></row>
+<row r="11"><c r="A11" t="s" s="4"><v>101</v></c><c r="B11" s="0"></c><c r="C11" s="0"><v></v></c><c r="D11" s="0"></c><c r="E11" s="0"></c></row>
+<row r="12"><c r="A12" t="s" s="4"><v>102</v></c><c r="B12" s="0"></c><c r="C12" s="0"><v></v></c><c r="D12" s="0"></c><c r="E12" s="0"></c></row>
+<row r="13"><c r="A13" t="s" s="4"><v>103</v></c><c r="B13" s="0"></c><c r="C13" s="0"><v></v></c><c r="D13" s="0"></c><c r="E13" s="0"></c></row>
+<row r="14"><c r="A14" t="s" s="4"><v>104</v></c><c r="B14" s="0"></c><c r="C14" s="0"><v></v></c><c r="D14" s="0"></c><c r="E14" s="0"></c></row>
+<row r="15"><c r="A15" t="s" s="4"><v>105</v></c><c r="B15" s="0"></c><c r="C15" s="0"><v></v></c><c r="D15" s="0"></c><c r="E15" s="0"></c></row>
+  </sheetData>
+  
+  <conditionalFormatting sqref="C4:C15">
+  <cfRule type="cellIs" operator="between" priority="1" dxfId="0"><formula>90</formula><formula>100</formula></cfRule>
+  <cfRule type="cellIs" operator="between" priority="2" dxfId="1"><formula>70</formula><formula>89</formula></cfRule>
+  <cfRule type="cellIs" operator="between" priority="3" dxfId="2"><formula>0</formula><formula>69</formula></cfRule>
+</conditionalFormatting>
+</worksheet>

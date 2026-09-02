@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动机的定义</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const scaleX = window.innerWidth / 960;
+  const scaleY = window.innerHeight / 540;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = '960px';
+  slide.style.height = '540px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#fefae0;">
+  <div style="position:absolute; top:40px; left:80px; right:80px;">
+    <h2 style="margin:0; font-family:'Times New Roman', serif; font-size:32px; font-weight:700; color:#264653;">什么是动机？</h2>
+    <svg width="60" height="3" style="margin-top:8px;">
+      <rect width="60" height="3" fill="#e9c46a"/>
+    </svg>
+  </div>
+  <div style="position:absolute; top:130px; left:80px; width:520px;">
+    <div style="background:#264653; border-radius:12px; padding:24px; margin-bottom:20px;">
+      <p style="margin:0; font-family:'Times New Roman', serif; font-size:16px; color:#ffffff; line-height:1.8;">
+        动机是推动个体从事某种活动，并使该活动朝向某一目标的内部心理过程或内在动力。
+      </p>
+    </div>
+    <p style="margin:0 0 16px 0; font-family:'Times New Roman', serif; font-size:14px; color:#264653; opacity:0.8;">
+      核心要素包括：
+    </p>
+    <ul style="margin:0; padding-left:20px; font-family:'Times New Roman', serif; font-size:15px; color:#264653; line-height:2;">
+      <li>激活作用 — 激发个体行为</li>
+      <li>指向作用 — 引导行为朝向目标</li>
+      <li>维持作用 — 保持行为持续进行</li>
+      <li>调节作用 — 决定行为强度与形式</li>
+    </ul>
+  </div>
+  <div style="position:absolute; top:130px; right:80px; width:280px;">
+    <svg width="280" height="280" aria-hidden="true">
+      <circle cx="140" cy="140" r="120" fill="#2a9d8f" opacity="0.15"/>
+      <circle cx="140" cy="140" r="90" fill="#2a9d8f" opacity="0.2"/>
+      <circle cx="140" cy="140" r="60" fill="#e9c46a" opacity="0.3"/>
+      <text x="140" y="130" text-anchor="middle" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#264653">激活</text>
+      <text x="140" y="150" text-anchor="middle" font-family:"Times New Roman" font-size="12" fill="#264653" opacity="0.7">Activation</text>
+      <text x="80" y="200" text-anchor="middle" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#264653">指向</text>
+      <text x="80" y="220" text-anchor="middle" font-family:"Times New Roman" font-size="12" fill="#264653" opacity="0.7">Direction</text>
+      <text x="200" y="200" text-anchor="middle" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#264653">维持</text>
+      <text x="200" y="220" text-anchor="middle" font-family:"Times New Roman" font-size="12" fill="#264653" opacity="0.7">Maintenance</text>
+      <text x="140" y="240" text-anchor="middle" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#264653">调节</text>
+      <text x="140" y="260" text-anchor="middle" font-family:"Times New Roman" font-size="12" fill="#264653" opacity="0.7">Regulation</text>
+    </svg>
+  </div>
+  <div style="position:absolute; bottom:60px; left:80px; right:80px;">
+    <div style="display:flex; gap:16px;">
+      <div style="flex:1; background:#264653; border-radius:8px; padding:16px;">
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#e9c46a; font-weight:600;">心理学定义</p>
+        <p style="margin:8px 0 0 0; font-family:'Times New Roman', serif; font-size:12px; color:#ffffff; opacity:0.8; line-height:1.6;">
+          动机是由目标或对象引导、激发和维持个体行为的内在心理过程。
+        </p>
+      </div>
+      <div style="flex:1; background:#2a9d8f; border-radius:8px; padding:16px;">
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#ffffff; font-weight:600;">行为主义观点</p>
+        <p style="margin:8px 0 0 0; font-family:'Times New Roman', serif; font-size:12px; color:#ffffff; opacity:0.8; line-height:1.6;">
+          动机是对环境刺激的条件反射，是驱力与强化的产物。
+        </p>
+      </div>
+      <div style="flex:1; background:#f4a261; border-radius:8px; padding:16px;">
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#264653; font-weight:600;">认知观点</p>
+        <p style="margin:8px 0 0 0; font-family:'Times New Roman', serif; font-size:12px; color:#264653; opacity:0.8; line-height:1.6;">
+          动机是个体对环境信息的认知加工，是期望与价值的乘积。
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">4</text>
+  </svg>
+</div>
+</body>
+</html>

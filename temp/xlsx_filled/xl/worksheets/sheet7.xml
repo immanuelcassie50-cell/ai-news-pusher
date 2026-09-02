@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="2" xSplit="0" topLeftCell="A3" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="10" customWidth="1"/>
+    <col min="2" max="2" width="28" customWidth="1"/>
+    <col min="3" max="3" width="12" customWidth="1"/>
+    <col min="4" max="4" width="12" customWidth="1"/>
+    <col min="5" max="5" width="12" customWidth="1"/>
+    <col min="6" max="6" width="10" customWidth="1"/>
+    <col min="7" max="7" width="20" customWidth="1"/>
+    <col min="8" max="8" width="8" customWidth="1"/>
+  </cols>
+
+  <sheetData>
+<row r="1"><c r="A1" t="s" s="4"><v>76</v></c></row>
+<row r="2"><c r="A2" t="s" s="4"><v>77</v></c><c r="B2" t="s" s="4"><v>78</v></c><c r="C2" t="s" s="4"><v>79</v></c><c r="D2" t="s" s="4"><v>80</v></c><c r="E2" t="s" s="4"><v>81</v></c><c r="F2" t="s" s="4"><v>82</v></c><c r="G2" t="s" s="4"><v>83</v></c><c r="H2" t="s" s="4"><v>84</v></c></row>
+<row r="3"><c r="A3" t="s" s="0"><v>207</v></c><c r="B3" t="s" s="0"><v>208</v></c><c r="C3" t="s" s="0"><v>209</v></c><c r="D3" t="s" s="0"><v>210</v></c><c r="E3" t="s" s="0"><v>211</v></c><c r="F3" t="s" s="0"><v>247</v></c><c r="G3" t="s" s="0"><v>213</v></c><c r="H3" t="s" s="0"><v>85</v></c></row>
+<row r="4"><c r="A4" t="s" s="0"><v>214</v></c><c r="B4" t="s" s="0"><v>215</v></c><c r="C4" t="s" s="0"><v>216</v></c><c r="D4" t="s" s="0"><v>217</v></c><c r="E4" t="s" s="0"><v>218</v></c><c r="F4" t="s" s="0"><v>247</v></c><c r="G4" t="s" s="0"><v>220</v></c><c r="H4" t="s" s="0"><v>85</v></c></row>
+<row r="5"><c r="A5" t="s" s="0"><v>221</v></c><c r="B5" t="s" s="0"><v>222</v></c><c r="C5" t="s" s="0"><v>223</v></c><c r="D5" t="s" s="0"><v>224</v></c><c r="E5" t="s" s="0"><v>225</v></c><c r="F5" t="s" s="0"><v>240</v></c><c r="G5" t="s" s="0"><v>227</v></c><c r="H5" t="s" s="0"><v>85</v></c></row>
+<row r="6"><c r="A6" t="s" s="0"><v>228</v></c><c r="B6" t="s" s="0"><v>229</v></c><c r="C6" t="s" s="0"><v>230</v></c><c r="D6" t="s" s="0"><v>231</v></c><c r="E6" t="s" s="0"><v>232</v></c><c r="F6" t="s" s="0"><v>240</v></c><c r="G6" t="s" s="0"><v>234</v></c><c r="H6" t="s" s="0"><v>86</v></c></row>
+<row r="7"><c r="A7" t="s" s="0"><v>235</v></c><c r="B7" t="s" s="0"><v>236</v></c><c r="C7" t="s" s="0"><v>258</v></c><c r="D7" t="s" s="0"><v>238</v></c><c r="E7" t="s" s="0"><v>253</v></c><c r="F7" t="s" s="0"><v>240</v></c><c r="G7" t="s" s="0"><v>241</v></c><c r="H7" t="s" s="0"><v>86</v></c></row>
+<row r="8"><c r="A8" t="s" s="0"><v>242</v></c><c r="B8" t="s" s="0"><v>243</v></c><c r="C8" t="s" s="0"><v>244</v></c><c r="D8" t="s" s="0"><v>245</v></c><c r="E8" t="s" s="0"><v>246</v></c><c r="F8" t="s" s="0"><v>247</v></c><c r="G8" t="s" s="0"><v>248</v></c><c r="H8" t="s" s="0"><v>86</v></c></row>
+<row r="9"><c r="A9" t="s" s="0"><v>249</v></c><c r="B9" t="s" s="0"><v>250</v></c><c r="C9" t="s" s="0"><v>251</v></c><c r="D9" t="s" s="0"><v>259</v></c><c r="E9" t="s" s="0"><v>253</v></c><c r="F9" t="s" s="0"><v>261</v></c><c r="G9" t="s" s="0"><v>255</v></c><c r="H9" t="s" s="0"><v>87</v></c></row>
+<row r="10"><c r="A10" t="s" s="0"><v>256</v></c><c r="B10" t="s" s="0"><v>257</v></c><c r="C10" t="s" s="0"><v>258</v></c><c r="D10" t="s" s="0"><v>259</v></c><c r="E10" t="s" s="0"><v>260</v></c><c r="F10" t="s" s="0"><v>261</v></c><c r="G10" t="s" s="0"><v>262</v></c><c r="H10" t="s" s="0"><v>87</v></c></row>
+  </sheetData>
+  <dataValidations>
+  <dataValidation type="list" sqref="F3:F17"><formula1>"未开始,进行中,已完成,已搁置"</formula1></dataValidation>
+</dataValidations>
+<dataValidations>
+  <dataValidation type="list" sqref="H3:H17"><formula1>"高,中,低"</formula1></dataValidation>
+</dataValidations>
+  
+</worksheet>

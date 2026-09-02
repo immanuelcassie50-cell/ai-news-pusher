@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "score": 22,
+  "blockers": [],
+  "warnings": [
+    {
+      "type": "missing_time",
+      "severity": "warning",
+      "message": "只有 0/6 个角色有明确的时间记录"
+    }
+  ]
+}

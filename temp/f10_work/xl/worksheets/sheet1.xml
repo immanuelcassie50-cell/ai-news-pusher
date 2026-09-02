@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<sheetViews><sheetView workbookViewId="0"><selection activeCell="A1" sqref="A1"/></sheetView></sheetViews>
+<sheetFormatPr baseColWidth="8" defaultRowHeight="15"/>
+<cols><col min="1" max="1" width="12" customWidth="1"/><col min="2" max="2" width="30" customWidth="1"/><col min="3" max="3" width="12" customWidth="1"/><col min="4" max="4" width="12" customWidth="1"/><col min="5" max="5" width="15" customWidth="1"/><col min="6" max="6" width="12" customWidth="1"/><col min="7" max="7" width="15" customWidth="1"/><col min="8" max="8" width="15" customWidth="1"/><col min="9" max="9" width="15" customWidth="1"/><col min="10" max="10" width="10" customWidth="1"/></cols>
+<sheetData>
+<row r="1">
+  <c r="A1" s="1" t="inlineStr"><is><t>团队问题台账</t></is></c>
+  <c r="B1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="C1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="D1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="E1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="F1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="G1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="H1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="I1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="J1" s="1" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>问题编号</t></is></c>
+  <c r="B2" s="2" t="inlineStr"><is><t>问题描述</t></is></c>
+  <c r="C2" s="2" t="inlineStr"><is><t>类型</t></is></c>
+  <c r="D2" s="2" t="inlineStr"><is><t>责任人</t></is></c>
+  <c r="E2" s="2" t="inlineStr"><is><t>创建日期</t></is></c>
+  <c r="F2" s="2" t="inlineStr"><is><t>状态</t></is></c>
+  <c r="G2" s="2" t="inlineStr"><is><t>计划解决日期</t></is></c>
+  <c r="H2" s="2" t="inlineStr"><is><t>实际解决日期</t></is></c>
+  <c r="I2" s="2" t="inlineStr"><is><t>30天追踪</t></is></c>
+  <c r="J2" s="2" t="inlineStr"><is><t>操作</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="6" t="inlineStr"><is><t>P001</t></is></c>
+  <c r="B3" s="4" t="inlineStr"><is><t>设备故障导致生产线停产</t></is></c>
+  <c r="C3" s="6" t="inlineStr"><is><t>突发型</t></is></c>
+  <c r="D3" s="6" t="inlineStr"><is><t>张明</t></is></c>
+  <c r="E3" s="6" t="inlineStr"><is><t>2024/01/15</t></is></c>
+  <c r="F3" s="6" t="inlineStr"><is><t>开放</t></is></c>
+  <c r="G3" s="4" t="inlineStr"><is><t>2024/01/20</t></is></c>
+  <c r="H3" s="4" t="inlineStr"><is><t></t></is></c>
+  <c r="I3" s="6" t="inlineStr"><is><t>否</t></is></c>
+  <c r="J3" s="6" t="inlineStr"><is><t>编辑</t></is></c>
+</row>
+<row r="4">
+  <c r="A4" s="6" t="inlineStr"><is><t>P002</t></is></c>
+  <c r="B4" s="4" t="inlineStr"><is><t>订单处理流程效率低下</t></is></c>
+  <c r="C4" s="6" t="inlineStr"><is><t>重复型</t></is></c>
+  <c r="D4" s="6" t="inlineStr"><is><t>李华</t></is></c>
+  <c r="E4" s="6" t="inlineStr"><is><t>2024/01/10</t></is></c>
+  <c r="F4" s="6" t="inlineStr"><is><t>解决中</t></is></c>
+  <c r="G4" s="4" t="inlineStr"><is><t>2024/01/25</t></is></c>
+  <c r="H4" s="4" t="inlineStr"><is><t></t></is></c>
+  <c r="I4" s="6" t="inlineStr"><is><t>否</t></is></c>
+  <c r="J4" s="6" t="inlineStr"><is><t>编辑</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="6" t="inlineStr"><is><t>P003</t></is></c>
+  <c r="B5" s="4" t="inlineStr"><is><t>客户投诉频发</t></is></c>
+  <c r="C5" s="6" t="inlineStr"><is><t>跨部门型</t></is></c>
+  <c r="D5" s="6" t="inlineStr"><is><t>王芳</t></is></c>
+  <c r="E5" s="6" t="inlineStr"><is><t>2024/01/08</t></is></c>
+  <c r="F5" s="6" t="inlineStr"><is><t>关闭</t></is></c>
+  <c r="G5" s="4" t="inlineStr"><is><t>2024/01/15</t></is></c>
+  <c r="H5" s="4" t="inlineStr"><is><t>2024/01/14</t></is></c>
+  <c r="I5" s="6" t="inlineStr"><is><t>是</t></is></c>
+  <c r="J5" s="6" t="inlineStr"><is><t>编辑</t></is></c>
+</row>
+<row r="4">
+  <c r="A4" s="6"/>
+  <c r="B4" s="4"/>
+  <c r="C4" s="6"/>
+  <c r="D4" s="6"/>
+  <c r="E4" s="4"/>
+  <c r="F4" s="6"/>
+  <c r="G4" s="4"/>
+  <c r="H4" s="4"/>
+  <c r="I4" s="6"/>
+  <c r="J4" s="6"/>
+</row>
+<row r="5">
+  <c r="A5" s="6"/>
+  <c r="B5" s="4"/>
+  <c r="C5" s="6"/>
+  <c r="D5" s="6"/>
+  <c r="E5" s="4"/>
+  <c r="F5" s="6"/>
+  <c r="G5" s="4"/>
+  <c r="H5" s="4"/>
+  <c r="I5" s="6"/>
+  <c r="J5" s="6"/>
+</row>
+<row r="6">
+  <c r="A6" s="6"/>
+  <c r="B6" s="4"/>
+  <c r="C6" s="6"/>
+  <c r="D6" s="6"/>
+  <c r="E6" s="4"/>
+  <c r="F6" s="6"/>
+  <c r="G6" s="4"/>
+  <c r="H6" s="4"/>
+  <c r="I6" s="6"/>
+  <c r="J6" s="6"/>
+</row>
+<row r="7">
+  <c r="A7" s="6"/>
+  <c r="B7" s="4"/>
+  <c r="C7" s="6"/>
+  <c r="D7" s="6"/>
+  <c r="E7" s="4"/>
+  <c r="F7" s="6"/>
+  <c r="G7" s="4"/>
+  <c r="H7" s="4"/>
+  <c r="I7" s="6"/>
+  <c r="J7" s="6"/>
+</row>
+<row r="8">
+  <c r="A8" s="6"/>
+  <c r="B8" s="4"/>
+  <c r="C8" s="6"/>
+  <c r="D8" s="6"/>
+  <c r="E8" s="4"/>
+  <c r="F8" s="6"/>
+  <c r="G8" s="4"/>
+  <c r="H8" s="4"/>
+  <c r="I8" s="6"/>
+  <c r="J8" s="6"/>
+</row>
+<row r="9">
+  <c r="A9" s="6"/>
+  <c r="B9" s="4"/>
+  <c r="C9" s="6"/>
+  <c r="D9" s="6"/>
+  <c r="E9" s="4"/>
+  <c r="F9" s="6"/>
+  <c r="G9" s="4"/>
+  <c r="H9" s="4"/>
+  <c r="I9" s="6"/>
+  <c r="J9" s="6"/>
+</row>
+<row r="10">
+  <c r="A10" s="6"/>
+  <c r="B10" s="4"/>
+  <c r="C10" s="6"/>
+  <c r="D10" s="6"/>
+  <c r="E10" s="4"/>
+  <c r="F10" s="6"/>
+  <c r="G10" s="4"/>
+  <c r="H10" s="4"/>
+  <c r="I10" s="6"/>
+  <c r="J10" s="6"/>
+</row>
+<row r="11">
+  <c r="A11" s="6"/>
+  <c r="B11" s="4"/>
+  <c r="C11" s="6"/>
+  <c r="D11" s="6"/>
+  <c r="E11" s="4"/>
+  <c r="F11" s="6"/>
+  <c r="G11" s="4"/>
+  <c r="H11" s="4"/>
+  <c r="I11" s="6"/>
+  <c r="J11" s="6"/>
+</row>
+<row r="12">
+  <c r="A12" s="6"/>
+  <c r="B12" s="4"/>
+  <c r="C12" s="6"/>
+  <c r="D12" s="6"/>
+  <c r="E12" s="4"/>
+  <c r="F12" s="6"/>
+  <c r="G12" s="4"/>
+  <c r="H12" s="4"/>
+  <c r="I12" s="6"/>
+  <c r="J12" s="6"/>
+</row>
+<row r="13">
+  <c r="A13" s="6"/>
+  <c r="B13" s="4"/>
+  <c r="C13" s="6"/>
+  <c r="D13" s="6"/>
+  <c r="E13" s="4"/>
+  <c r="F13" s="6"/>
+  <c r="G13" s="4"/>
+  <c r="H13" s="4"/>
+  <c r="I13" s="6"/>
+  <c r="J13" s="6"/>
+</row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

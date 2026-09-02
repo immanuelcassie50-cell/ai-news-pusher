@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <fileVersion appName="xl" lastEdited="7" lowestEdited="7"/>
+  <workbookPr defaultThemeVersion="166925"/>
+  <bookViews><workbookView xWindow="0" yWindow="0" windowWidth="20140" windowHeight="10960"/></bookViews>
+  <sheets>
+    <sheet name="使用说明" sheetId="1" r:id="rId1"/>
+    <sheet name="面谈对象信息" sheetId="2" r:id="rId4"/>
+    <sheet name="第一区_事实与归因" sheetId="3" r:id="rId5"/>
+    <sheet name="第二区_预估难点" sheetId="4" r:id="rId6"/>
+    <sheet name="第三区_发展对话" sheetId="5" r:id="rId7"/>
+    <sheet name="第四区_四步预演" sheetId="6" r:id="rId8"/>
+    <sheet name="问责伙伴与30天" sheetId="7" r:id="rId9"/>
+  </sheets>
+  <calcPr calcId="191029"/>
+</workbook>

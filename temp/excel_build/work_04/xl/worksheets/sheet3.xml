@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="22" customWidth="1"/><col min="2" max="2" width="80" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>5个完整场景示例 — F9 决策树的标准应用范本</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表是 F9 原文&quot;5个完整场景&quot;的展开版。每个场景展示：事实→四步判定→发展对话草稿。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="24" customHeight="1">
+  <c r="A4" s="9" t="inlineStr"><is><t>示例1：不会写PPT（技能缺口）</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="0" t="inlineStr"><is><t>员工</t></is></c>
+  <c r="B5" s="0" t="inlineStr"><is><t>小王</t></is></c>
+  <c r="C5" s="0" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D5" s="0" t="inlineStr"><is><t>小王是工作 2 年的运营，不会写汇报PPT，每次自己熬夜做。</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="4" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B6" s="4" t="inlineStr"><is><t>判定</t></is></c>
+  <c r="C6" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="B7" s="14" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>对应&quot;会不会做&quot;的判断</t></is></c>
+</row>
+<row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="B8" s="14" t="inlineStr"><is><t>AI可补</t></is></c>
+  <c r="C8" s="14" t="inlineStr"><is><t>走 AI 协作力轨</t></is></c>
+</row>
+<row r="9">
+  <c r="A9" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="B9" s="14" t="inlineStr"><is><t>学+练（AI生成初稿+自己改）</t></is></c>
+  <c r="C9" s="14" t="inlineStr"><is><t>F9 第三步的具体落点</t></is></c>
+</row>
+<row r="10">
+  <c r="A10" s="14" t="inlineStr"><is><t>④ 启动问题</t></is></c>
+  <c r="B10" s="14" t="inlineStr"><is><t>F7 启动二</t></is></c>
+  <c r="C10" s="14" t="inlineStr"><is><t>“在你用AI最多的那类工作里，你觉得自己做了什么？你希望在AI帮你之后，把精力放在哪里？”</t></is></c>
+</row>
+<row r="11" ht="22" customHeight="1">
+  <c r="A11" s="4" t="inlineStr"><is><t>发展对话草稿（管理者开场用）</t></is></c>
+</row>
+<row r="12" ht="42" customHeight="1">
+  <c r="A12" s="13" t="inlineStr"><is><t>“小王，这次想和你聊聊PPT这件事。你试过用AI帮你生成初稿吗？……如果有AI帮你做了基础框架，你打算把精力放在哪里——是打磨逻辑，还是设计呈现？”</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="0"/>
+</row>
+<row r="14" ht="24" customHeight="1">
+  <c r="A14" s="9" t="inlineStr"><is><t>示例2：客户关系处理不专业（认知缺口）</t></is></c>
+</row>
+<row r="15">
+  <c r="A15" s="0" t="inlineStr"><is><t>员工</t></is></c>
+  <c r="B15" s="0" t="inlineStr"><is><t>小陈</t></is></c>
+  <c r="C15" s="0" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D15" s="0" t="inlineStr"><is><t>小陈是工作 3 年的销售，沟通很技术化，客户评价&quot;太硬&quot;。</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="4" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B16" s="4" t="inlineStr"><is><t>判定</t></is></c>
+  <c r="C16" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="B17" s="14" t="inlineStr"><is><t>认知</t></is></c>
+  <c r="C17" s="14" t="inlineStr"><is><t>对应&quot;理解偏了&quot;</t></is></c>
+</row>
+<row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="B18" s="14" t="inlineStr"><is><t>必须人发展</t></is></c>
+  <c r="C18" s="14" t="inlineStr"><is><t>走 人类深度轨</t></is></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="B19" s="14" t="inlineStr"><is><t>对齐+反馈（先对齐&quot;什么是好&quot;）</t></is></c>
+  <c r="C19" s="14" t="inlineStr"><is><t>F9 第三步的具体落点</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>④ 启动问题</t></is></c>
+  <c r="B20" s="14" t="inlineStr"><is><t>F7 启动一</t></is></c>
+  <c r="C20" s="14" t="inlineStr"><is><t>“这个周期结束，如果让你自己来说，你最满意的成长是什么？你觉得还有哪里值得再提升？”</t></is></c>
+</row>
+<row r="21" ht="22" customHeight="1">
+  <c r="A21" s="4" t="inlineStr"><is><t>发展对话草稿（管理者开场用）</t></is></c>
+</row>
+<row r="22" ht="42" customHeight="1">
+  <c r="A22" s="13" t="inlineStr"><is><t>“小陈，这季度你最满意的成长是什么？……客户关系这块，你自己觉得还可以做哪些不一样？”</t></is></c>
+</row>
+<row r="23">
+  <c r="A23" s="0"/>
+</row>
+<row r="24" ht="24" customHeight="1">
+  <c r="A24" s="9" t="inlineStr"><is><t>示例3：判断力退化（行为缺口·漂移型）</t></is></c>
+</row>
+<row r="25">
+  <c r="A25" s="0" t="inlineStr"><is><t>员工</t></is></c>
+  <c r="B25" s="0" t="inlineStr"><is><t>小马</t></is></c>
+  <c r="C25" s="0" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D25" s="0" t="inlineStr"><is><t>小马的产品决策力这半年明显下降，归因到&quot;AI做的&quot;</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="4" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B26" s="4" t="inlineStr"><is><t>判定</t></is></c>
+  <c r="C26" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="B27" s="14" t="inlineStr"><is><t>行为</t></is></c>
+  <c r="C27" s="14" t="inlineStr"><is><t>对应&quot;会但没做&quot;或&quot;过去会现在不会&quot;</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="B28" s="14" t="inlineStr"><is><t>必须人发展</t></is></c>
+  <c r="C28" s="14" t="inlineStr"><is><t>走 人类深度轨</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="B29" s="14" t="inlineStr"><is><t>实战+反馈（更难任务+复盘）</t></is></c>
+  <c r="C29" s="14" t="inlineStr"><is><t>F9 第三步的具体落点</t></is></c>
+</row>
+<row r="30">
+  <c r="A30" s="14" t="inlineStr"><is><t>④ 启动问题</t></is></c>
+  <c r="B30" s="14" t="inlineStr"><is><t>F7 启动二</t></is></c>
+  <c r="C30" s="14" t="inlineStr"><is><t>“在你用AI最多的那类工作里，你觉得自己做了什么？你希望在AI承接了一部分之后，把精力放在更有深度的那部分？”</t></is></c>
+</row>
+<row r="31" ht="22" customHeight="1">
+  <c r="A31" s="4" t="inlineStr"><is><t>发展对话草稿（管理者开场用）</t></is></c>
+</row>
+<row r="32" ht="42" customHeight="1">
+  <c r="A32" s="13" t="inlineStr"><is><t>“小马，你最近用AI做的工作很多。我想听你说说——在这些工作里，你做了什么？……你希望下次把精力放在哪？”</t></is></c>
+</row>
+<row r="33">
+  <c r="A33" s="0"/>
+</row>
+<row r="34" ht="24" customHeight="1">
+  <c r="A34" s="9" t="inlineStr"><is><t>示例4：AI工具用得浅</t></is></c>
+</row>
+<row r="35">
+  <c r="A35" s="0" t="inlineStr"><is><t>员工</t></is></c>
+  <c r="B35" s="0" t="inlineStr"><is><t>小周</t></is></c>
+  <c r="C35" s="0" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D35" s="0" t="inlineStr"><is><t>小周听说过AI但只用来写周报，潜力未释放。</t></is></c>
+</row>
+<row r="36">
+  <c r="A36" s="4" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B36" s="4" t="inlineStr"><is><t>判定</t></is></c>
+  <c r="C36" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="37">
+  <c r="A37" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="B37" s="14" t="inlineStr"><is><t>AI工具</t></is></c>
+  <c r="C37" s="14" t="inlineStr"><is><t>对应&quot;没用好AI&quot;</t></is></c>
+</row>
+<row r="38">
+  <c r="A38" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="B38" s="14" t="inlineStr"><is><t>AI可补</t></is></c>
+  <c r="C38" s="14" t="inlineStr"><is><t>走 AI 协作力轨</t></is></c>
+</row>
+<row r="39">
+  <c r="A39" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="B39" s="14" t="inlineStr"><is><t>练（一个月内3个核心任务用AI重做）</t></is></c>
+  <c r="C39" s="14" t="inlineStr"><is><t>F9 第三步的具体落点</t></is></c>
+</row>
+<row r="40">
+  <c r="A40" s="14" t="inlineStr"><is><t>④ 启动问题</t></is></c>
+  <c r="B40" s="14" t="inlineStr"><is><t>F7 启动二</t></is></c>
+  <c r="C40" s="14" t="inlineStr"><is><t>“在你用AI最多的那类工作里……“</t></is></c>
+</row>
+<row r="41" ht="22" customHeight="1">
+  <c r="A41" s="4" t="inlineStr"><is><t>发展对话草稿（管理者开场用）</t></is></c>
+</row>
+<row r="42" ht="42" customHeight="1">
+  <c r="A42" s="13" t="inlineStr"><is><t>“小周，AI这块你目前主要用在哪？……如果你把这个能力扩展到产品分析和客户沟通上，你觉得自己会有什么不同？”</t></is></c>
+</row>
+<row r="43">
+  <c r="A43" s="0"/>
+</row>
+<row r="44" ht="24" customHeight="1">
+  <c r="A44" s="9" t="inlineStr"><is><t>示例5：跨情境判断力弱（数据分析师·双轨）</t></is></c>
+</row>
+<row r="45">
+  <c r="A45" s="0" t="inlineStr"><is><t>员工</t></is></c>
+  <c r="B45" s="0" t="inlineStr"><is><t>小李</t></is></c>
+  <c r="C45" s="0" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D45" s="0" t="inlineStr"><is><t>数据整理用AI很快，但业务判断上不去</t></is></c>
+</row>
+<row r="46">
+  <c r="A46" s="4" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B46" s="4" t="inlineStr"><is><t>判定</t></is></c>
+  <c r="C46" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="47">
+  <c r="A47" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="B47" s="14" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="C47" s="14" t="inlineStr"><is><t>对应&quot;会不会做&quot;的判断</t></is></c>
+</row>
+<row r="48">
+  <c r="A48" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="B48" s="14" t="inlineStr"><is><t>两者都有</t></is></c>
+  <c r="C48" s="14" t="inlineStr"><is><t>走双轨，先发展更紧迫的</t></is></c>
+</row>
+<row r="49">
+  <c r="A49" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="B49" s="14" t="inlineStr"><is><t>先发展业务判断</t></is></c>
+  <c r="C49" s="14" t="inlineStr"><is><t>F9 第三步的具体落点</t></is></c>
+</row>
+<row r="50">
+  <c r="A50" s="14" t="inlineStr"><is><t>④ 启动问题</t></is></c>
+  <c r="B50" s="14" t="inlineStr"><is><t>F7 启动一+二</t></is></c>
+  <c r="C50" s="14" t="inlineStr"><is><t>先启动一稳一下，再启动二展开双轨</t></is></c>
+</row>
+<row r="51" ht="22" customHeight="1">
+  <c r="A51" s="4" t="inlineStr"><is><t>发展对话草稿（管理者开场用）</t></is></c>
+</row>
+<row r="52" ht="42" customHeight="1">
+  <c r="A52" s="13" t="inlineStr"><is><t>“小李，这季度你最满意的成长是什么？……在你的工作里，AI帮你做了很多数据整理——你希望把精力放在哪部分？”</t></is></c>
+</row>
+<row r="53">
+  <c r="A53" s="0"/>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

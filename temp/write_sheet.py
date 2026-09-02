@@ -1,0 +1,63 @@
+content = '''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="1" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="6" customWidth="1"/>
+    <col min="2" max="2" width="34" customWidth="1"/>
+    <col min="3" max="3" width="16" customWidth="1"/>
+    <col min="4" max="4" width="16" customWidth="1"/>
+    <col min="5" max="5" width="12" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="16" customWidth="1"/>
+    <col min="8" max="8" width="12" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="26" customHeight="1"><c r="A1" t="s" s="4"><v>0</v></c></row>
+    <row r="2"/>
+    <row r="3" ht="22" customHeight="1"><c r="A3" t="s" s="4"><v>11</v></c></row>
+    <row r="4"><c r="A4" t="s" s="4"><v>1</v></c><c r="B4" t="s" s="4"><v>2</v></c><c r="C4" t="s" s="4"><v>3</v></c><c r="D4" t="s" s="4"><v>4</v></c><c r="E4" t="s" s="4"><v>5</v></c><c r="F4" t="s" s="4"><v>6</v></c></row>
+    <row r="5"><c r="A5"><v>1</v></c><c r="B5" t="s" s="1"><v>福利方案设计定稿</v></c><c r="C5" s="11"><v>2026-01-15</v></c><c r="D5" s="1"><v></v></c><c r="E5" t="s" s="1"><v>9</v></c><c r="F5" t="s" s="1"><v></v></c></row>
+    <row r="6"><c r="A6"><v>2</v></c><c r="B6" t="s" s="1"><v>弹性福利平台上线</v></c><c r="C6" s="11"><v>2026-02-01</v></c><c r="D6" s="1"><v></v></c><c r="E6" t="s" s="1"><v>9</v></c><c r="F6" t="s" s="1"><v></v></c></row>
+    <row r="7"><c r="A7"><v>3</v></c><c r="B7" t="s" s="1"><v>员工沟通与培训完成</v></c><c r="C7" s="11"><v>2026-02-15</v></c><c r="D7" s="1"><v></v></c><c r="E7" t="s" s="1"><v>9</v></c><c r="F7" t="s" s="1"><v></v></c></row>
+    <row r="8"><c r="A8"><v>4</v></c><c r="B8" t="s" s="1"><v>首期福利选择开放</v></c><c r="C8" s="11"><v>2026-03-01</v></c><c r="D8" s="1"><v></v></c><c r="E8" t="s" s="1"><v>9</v></c><c r="F8" t="s" s="1"><v></v></c></row>
+    <row r="9"><c r="A9"><v>5</v></c><c r="B9" t="s" s="1"><v>福利使用率达50%</v></c><c r="C9" s="11"><v>2026-06-30</v></c><c r="D9" s="1"><v></v></c><c r="E9" t="s" s="1"><v>9</v></c><c r="F9" t="s" s="1"><v></v></c></row>
+    <row r="10"><c r="A10"><v>6</v></c><c r="B10" t="s" s="1"><v>Q2效果评估报告</v></c><c r="C10" s="11"><v>2026-07-15</v></c><c r="D10" s="1"><v></v></c><c r="E10" t="s" s="1"><v>9</v></c><c r="F10" t="s" s="1"><v></v></c></row>
+    <row r="11"><c r="A11"><v>7</v></c><c r="B11" t="s" s="1"><v>下半年优化方案确定</v></c><c r="C11" s="11"><v>2026-08-01</v></c><c r="D11" s="1"><v></v></c><c r="E11" t="s" s="1"><v>9</v></c><c r="F11" t="s" s="1"><v></v></c></row>
+    <row r="12"/>
+    <row r="13" ht="22" customHeight="1"><c r="A13" t="s" s="4"><v>12</v></c></row>
+    <row r="14"><c r="A14" t="s" s="4"><v>13</v></c><c r="B14" t="s" s="4"><v>14</v></c><c r="C14" t="s" s="4"><v>15</v></c><c r="D14" t="s" s="4"><v>16</v></c><c r="E14" t="s" s="4"><v>17</v></c><c r="F14" t="s" s="4"><v>18</v></c></row>
+    <row r="15"><c r="A15" t="s" s="1"><v>19</v></c><c r="B15" t="s" s="2"><v>参与人数/总员工数</v></c><c r="C15" s="7"><v>0.85</v></c><c r="D15" s="1"><v></v></c><c r="E15" s="8"><f>IF(C15=0,0,D15/C15)</f><v></v></c><c r="F15" s="2"><f>IF(E15&gt;=1,&quot;达标&quot;,IF(E15&gt;=0.8,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="16"><c r="A16" t="s" s="1"><v>22</v></c><c r="B16" t="s" s="2"><v>(非常满意x4+满意x3+一般x2+不满意x1)/参与人数</v></c><c r="C16" s="7"><v>3.5</v></c><c r="D16" s="1"><v></v></c><c r="E16" s="8"><f>IF(C16=0,0,D16/C16)</f><v></v></c><c r="F16" s="2"><f>IF(E16&gt;=1,&quot;达标&quot;,IF(E16&gt;=0.9,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="17"><c r="A17" t="s" s="1"><v>27</v></c><c r="B17" t="s" s="2"><v>人均效益提升/总投入成本</v></c><c r="C17" s="6"><v>2000</v></c><c r="D17" s="1"><v></v></c><c r="E17" s="8"><f>IF(C17=0,0,D17/C17)</f><v></v></c><c r="F17" s="2"><f>IF(E17&gt;=1,&quot;达标&quot;,IF(E17&gt;=0.8,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="18"><c r="A18" t="s" s="1"><v>30</v></c><c r="B18" t="s" s="2"><v>留存核心人才数/期初核心人才数</v></c><c r="C18" s="7"><v>0.95</v></c><c r="D18" s="1"><v></v></c><c r="E18" s="8"><f>IF(C18=0,0,D18/C18)</f><v></v></c><c r="F18" s="2"><f>IF(E18&gt;=1,&quot;达标&quot;,IF(E18&gt;=0.9,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="19"><c r="A19" t="s" s="1"><v>33</v></c><c r="B19" t="s" s="2"><v>公司薪酬值/市场75分位值</v></c><c r="C19" s="7"><v>0.9</v></c><c r="D19" s="1"><v></v></c><c r="E19" s="8"><f>IF(C19=0,0,D19/C19)</f><v></v></c><c r="F19" s="2"><f>IF(E19&gt;=1,&quot;达标&quot;,IF(E19&gt;=0.85,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="20"><c r="A20" t="s" s="1"><v>65</v></c><c r="B20" t="s" s="2"><v>已选择福利人数/总员工数</v></c><c r="C20" s="7"><v>0.6</v></c><c r="D20" s="1"><v></v></c><c r="E20" s="8"><f>IF(C20=0,0,D20/C20)</f><v></v></c><c r="F20" s="2"><f>IF(E20&gt;=1,&quot;达标&quot;,IF(E20&gt;=0.8,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="21"><c r="A21" t="s" s="1"><v>66</v></c><c r="B21" t="s" s="2"><v>享受非物质回报人数/总员工数</v></c><c r="C21" s="7"><v>0.8</v></c><c r="D21" s="1"><v></v></c><c r="E21" s="8"><f>IF(C21=0,0,D21/C21)</f><v></v></c><c r="F21" s="2"><f>IF(E21&gt;=1,&quot;达标&quot;,IF(E21&gt;=0.85,&quot;接近&quot;,&quot;待改进&quot;))</f><v></v></c></row>
+    <row r="22"><c r="A22" t="s" s="4"><v>62</v></c><c r="E22" s="8"><f>AVERAGE(E15:E21)</f><v></v></c><c r="F22" s="2"><f>IF(E22&gt;=1,&quot;优秀&quot;,IF(E22&gt;=0.85,&quot;良好&quot;,IF(E22&gt;=0.7,&quot;合格&quot;,&quot;待改进&quot;)))</f><v></v></c></row>
+    <row r="23"/>
+    <row r="24" ht="22" customHeight="1"><c r="A24" t="s" s="4"><v>36</v></c></row>
+    <row r="25"><c r="A25" t="s" s="4"><v>37</v></c><c r="B25" t="s" s="4"><v>38</v></c><c r="C25" t="s" s="4"><v>39</v></c><c r="D25" t="s" s="4"><v>40</v></c><c r="E25" t="s" s="4"><v>41</v></c></row>
+    <row r="26"><c r="A26" t="s" s="1"><v>42</v></c><c r="B26" s="1"><v></v></c><c r="C26" s="1"><v></v></c><c r="D26" s="1"><v></v></c><c r="E26" s="8"><f>IFERROR(B26*D26/SUMPRODUCT((B26:B30&gt;0)*D26:D30),&quot;&quot;)</f><v></v></c></row>
+    <row r="27"><c r="A27" t="s" s="1"><v>43</v></c><c r="B27" s="1"><v></v></c><c r="C27" s="1"><v></v></c><c r="D27" s="1"><v></v></c><c r="E27" s="8"><f>IFERROR(B27*D27/SUMPRODUCT((B26:B30&gt;0)*D26:D30),&quot;&quot;)</f><v></v></c></row>
+    <row r="28"><c r="A28" t="s" s="1"><v>44</v></c><c r="B28" s="1"><v></v></c><c r="C28" s="1"><v></v></c><c r="D28" s="1"><v></v></c><c r="E28" s="8"><f>IFERROR(B28*D28/SUMPRODUCT((B26:B30&gt;0)*D26:D30),&quot;&quot;)</f><v></v></c></row>
+    <row r="29"><c r="A29" t="s" s="1"><v>63</v></c><c r="B29" s="1"><v></v></c><c r="C29" s="1"><v></v></c><c r="D29" s="1"><v></v></c><c r="E29" s="8"><f>IFERROR(B29*D29/SUMPRODUCT((B26:B30&gt;0)*D26:D30),&quot;&quot;)</f><v></v></c></row>
+    <row r="30"><c r="A30" t="s" s="1"><v>64</v></c><c r="B30" s="1"><v></v></c><c r="C30" s="1"><v></v></c><c r="D30" s="1"><v></v></c><c r="E30" s="8"><f>IFERROR(B30*D30/SUMPRODUCT((B26:B30&gt;0)*D26:D30),&quot;&quot;)</f><v></v></c></row>
+    <row r="31"><c r="A31" t="s" s="4"><v>41</v></c><c r="E31" s="8"><f>IFERROR(SUMPRODUCT((D26:D30&gt;0)*(B26:B30)*(D26:D30))/SUMPRODUCT((D26:D30&gt;0)*(D26:D30)),&quot;&quot;)</f><v></v></c></row>
+    <row r="32"/>
+    <row r="33" ht="22" customHeight="1"><c r="A33" t="s" s="4"><v>45</v></c></row>
+    <row r="34"><c r="A34" t="s" s="4"><v>60</v></c><c r="B34" t="s" s="4"><v>46</v></c><c r="C34" t="s" s="4"><v>47</v></c><c r="D34" t="s" s="4"><v>48</v></c><c r="E34" t="s" s="4"><v>49</v></c><c r="F34" t="s" s="4"><v>50</v></c><c r="G34" t="s" s="4"><v>54</v></c><c r="H34" t="s" s="4"><v>55</v></c></row>
+    <row r="35"><c r="A35"><v>1</v></c><c r="B35" t="s" s="1"><v></v></c><c r="C35" s="11"><v></v></c><c r="D35" s="11"><v></v></c><c r="E35" s="2"><f>IF(OR(C35=&quot;&quot;,D35=&quot;&quot;),&quot;&quot;,IF(D35&gt;=C35,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F35" t="s" s="1"><v></v></c><c r="G35" s="1"><v></v></c><c r="H35" s="1"><v></v></c></row>
+    <row r="36"><c r="A36"><v>2</v></c><c r="B36" t="s" s="1"><v></v></c><c r="C36" s="11"><v></v></c><c r="D36" s="11"><v></v></c><c r="E36" s="2"><f>IF(OR(C36=&quot;&quot;,D36=&quot;&quot;),&quot;&quot;,IF(D36&gt;=C36,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F36" t="s" s="1"><v></v></c><c r="G36" s="1"><v></v></c><c r="H36" s="1"><v></v></c></row>
+    <row r="37"><c r="A37"><v>3</v></c><c r="B37" t="s" s="1"><v></v></c><c r="C37" s="11"><v></v></c><c r="D37" s="11"><v></v></c><c r="E37" s="2"><f>IF(OR(C37=&quot;&quot;,D37=&quot;&quot;),&quot;&quot;,IF(D37&gt;=C37,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F37" t="s" s="1"><v></v></c><c r="G37" s="1"><v></v></c><c r="H37" s="1"><v></v></c></row>
+    <row r="38"><c r="A38"><v>4</v></c><c r="B38" t="s" s="1"><v></v></c><c r="C38" s="11"><v></v></c><c r="D38" s="11"><v></v></c><c r="E38" s="2"><f>IF(OR(C38=&quot;&quot;,D38=&quot;&quot;),&quot;&quot;,IF(D38&gt;=C38,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F38" t="s" s="1"><v></v></c><c r="G38" s="1"><v></v></c><c r="H38" s="1"><v></v></c></row>
+    <row r="39"><c r="A39"><v>5</v></c><c r="B39" t="s" s="1"><v></v></c><c r="C39" s="11"><v></v></c><c r="D39" s="11"><v></v></c><c r="E39" s="2"><f>IF(OR(C39=&quot;&quot;,D39=&quot;&quot;),&quot;&quot;,IF(D39&gt;=C39,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F39" t="s" s="1"><v></v></c><c r="G39" s="1"><v></v></c><c r="H39" s="1"><v></v></c></row>
+    <row r="40"><c r="A40"><v>6</v></c><c r="B40" t="s" s="1"><v></v></c><c r="C40" s="11"><v></v></c><c r="D40" s="11"><v></v></c><c r="E40" s="2"><f>IF(OR(C40=&quot;&quot;,D40=&quot;&quot;),&quot;&quot;,IF(D40&gt;=C40,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F40" t="s" s="1"><v></v></c><c r="G40" s="1"><v></v></c><c r="H40" s="1"><v></v></c></row>
+    <row r="41"><c r="A41"><v>7</v></c><c r="B41" t="s" s="1"><v></v></c><c r="C41" s="11"><v></v></c><c r="D41" s="11"><v></v></c><c r="E41" s="2"><f>IF(OR(C41=&quot;&quot;,D41=&quot;&quot;),&quot;&quot;,IF(D41&gt;=C41,&quot;按时&quot;,&quot;延期&quot;))</f><v></v></c><c r="F41" t="s" s="1"><v></v></c><c r="G41" s="1"><v></v></c><c r="H41" s="1"><v></v></c></row>
+    <row r="42"><c r="A42" t="s" s="4"><v>优化措施总数</v></c><c r="B42" s="10"><f>COUNTA(B35:B41)</f><v></v></c><c r="E42" t="s" s="4"><v>61</v></c><c r="F42" s="8"><f>(E22+IF(ISNUMBER(E31),E31/5,0))/2</f><v></v></c></row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>'''
+with open('/tmp/xlsx_work/F6_work/xl/worksheets/sheet1.xml', 'w', encoding='utf-8') as f:
+    f.write(content)
+print('Written', len(content), 'chars')

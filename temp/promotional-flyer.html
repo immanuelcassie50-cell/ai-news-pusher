@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>销售复杂决策链地图与导航 - 课程介绍</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #ed8936;
+      --light: #bee3f8;
+      --bg: #f7fafc;
+      --text: #1a202c;
+      --text-light: #4a5568;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page { size: A4; margin: 0; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: #e2e8f0;
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flyer {
+      width: 210mm;
+      height: 297mm;
+      background: white;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .flyer { box-shadow: none; }
+    }
+
+    /* Header Section */
+    .header {
+      background: linear-gradient(135deg, var(--primary) 0%, #234876 100%);
+      color: white;
+      padding: 30px 40px 25px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -30%;
+      right: -10%;
+      width: 50%;
+      height: 150%;
+      background: radial-gradient(ellipse, rgba(237, 137, 54, 0.2) 0%, transparent 70%);
+    }
+
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .course-badge {
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 4px 12px;
+    }
+
+    .course-duration {
+      font-size: 12px;
+      opacity: 0.9;
+    }
+
+    .course-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .course-subtitle {
+      font-size: 14px;
+      font-weight: 300;
+      opacity: 0.9;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Core Message */
+    .core-message {
+      background: var(--accent);
+      color: white;
+      padding: 14px 20px;
+      margin: 0 40px;
+      border-radius: 6px;
+      position: relative;
+      margin-top: -15px;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(237, 137, 54, 0.3);
+    }
+
+    .core-message p {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 14px;
+      font-weight: 600;
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 25px 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Value Props */
+    .value-props {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+    }
+
+    .value-prop {
+      text-align: center;
+      padding: 16px 12px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .value-prop h4 {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .value-prop p {
+      font-size: 10px;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
+    /* Target Audience & Outcomes */
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    .column-section h3 {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .column-section h3::before {
+      content: '';
+      width: 3px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .audience-list {
+      list-style: none;
+    }
+
+    .audience-list li {
+      font-size: 11px;
+      color: var(--text);
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .audience-list li::before {
+      content: '✓';
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .outcome-list {
+      list-style: none;
+    }
+
+    .outcome-list li {
+      font-size: 11px;
+      color: var(--text);
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .outcome-list li::before {
+      content: '→';
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* Course Structure Preview */
+    .structure-preview {
+      background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .structure-preview h3 {
+      font-size: 12px;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .structure-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .structure-part {
+      background: white;
+      border-radius: 6px;
+      padding: 12px;
+      border-left: 3px solid var(--primary);
+    }
+
+    .structure-part.part-2 {
+      border-left-color: var(--secondary);
+    }
+
+    .structure-part h4 {
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .structure-part.part-2 h4 {
+      color: var(--secondary);
+    }
+
+    .structure-part p {
+      font-size: 9px;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
+    /* Author Section */
+    .author-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      padding: 14px;
+      background: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .author-info h4 {
+      font-size: 14px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .author-info p {
+      font-size: 10px;
+      color: var(--text-light);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--primary);
+      color: white;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-cta {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .footer-contact {
+      text-align: right;
+      font-size: 10px;
+      opacity: 0.9;
+    }
+
+    .footer-contact p {
+      margin: 2px 0;
+    }
+
+    /* Decorative Elements */
+    .corner-accent {
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border: 2px solid var(--accent);
+      opacity: 0.3;
+    }
+
+    .corner-accent.top-right {
+      top: 20px;
+      right: 20px;
+      border-left: none;
+      border-bottom: none;
+    }
+
+    .corner-accent.bottom-left {
+      bottom: 80px;
+      left: 20px;
+      border-right: none;
+      border-top: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="flyer">
+    <div class="corner-accent top-right"></div>
+    <div class="corner-accent bottom-left"></div>
+
+    <header class="header">
+      <div class="header-top">
+        <span class="course-badge">B2B Sales Method</span>
+        <span class="course-duration">2天 / 12小时</span>
+      </div>
+      <h1 class="course-title">销售复杂决策链<br>地图与导航</h1>
+      <p class="course-subtitle">从"找关键人"到"看清权力结构"的认知升级</p>
+    </header>
+
+    <div class="core-message">
+      <p>"复杂决策链里没有'决策人'，只有在不同阶段轮流掌握否决权的人。"</p>
+    </div>
+
+    <div class="main-content">
+      <div class="value-props">
+        <div class="value-prop">
+          <h4>原创四层框架</h4>
+          <p>谁买单 · 谁拍板 · 谁把关 · 谁使绊子</p>
+        </div>
+        <div class="value-prop">
+          <h4>反直觉洞察</h4>
+          <p>关系好 ≠ 进展顺利<br>沉默的人往往权力最大</p>
+        </div>
+        <div class="value-prop">
+          <h4>系统化工具</h4>
+          <p>地图绘制 · 话术手册<br>复盘模板 · 关系维护</p>
+        </div>
+      </div>
+
+      <div class="two-column">
+        <div class="column-section">
+          <h3>目标学员</h3>
+          <ul class="audience-list">
+            <li>项目型销售从业者</li>
+            <li>复杂B2B销售从业者</li>
+            <li>销售管理者</li>
+            <li>希望提升大客户把握度的销售精英</li>
+          </ul>
+        </div>
+        <div class="column-section">
+          <h3>学员收获</h3>
+          <ul class="outcome-list">
+            <li>理解复杂决策链的核心运作机制</li>
+            <li>识别真正握有否决权的角色</li>
+            <li>绘制完整的决策链地图</li>
+            <li>掌握差异化沟通策略</li>
+            <li>建立结构化复盘习惯</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="structure-preview">
+        <h3>课程结构</h3>
+        <div class="structure-grid">
+          <div class="structure-part">
+            <h4>PART 1 认知层（7小时）</h4>
+            <p>复杂决策链的本质、关系陷阱、假地图、四层框架、沉默权力人、预算河、技术评估、差异化叙述、节奏把控、推荐人、高层汇报</p>
+          </div>
+          <div class="structure-part part-2">
+            <h4>PART 2 心态层（4小时）</h4>
+            <p>复盘方法、地图更新、长期关系、失误应对、权力认知</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="author-section">
+        <div class="author-avatar">罗</div>
+        <div class="author-info">
+          <h4>罗宏伟</h4>
+          <p>原创开发者 | B2B销售方法论研究者<br>专注于复杂决策链分析与销售认知升级</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-cta">开启你的决策链认知升级之旅</div>
+      <div class="footer-contact">
+        <p>© 罗宏伟 版权所有</p>
+        <p>内部培训资料 · 仅供学员使用</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

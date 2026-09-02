@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="18" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+<cols><col min="1" max="1" width="22" customWidth="1"/><col min="2" max="2" width="48" customWidth="1"/><col min="3" max="3" width="30" customWidth="1"/><col min="4" max="4" width="22" customWidth="1"/></cols>
+<sheetData>
+<row r="1" ht="28" customHeight="1"><c r="A1" t="s" s="5"><v>30</v></c><c r="B1" t="s" s="5"><v>30</v></c><c r="C1" t="s" s="5"><v>30</v></c></row>
+<row r="2" ht="24" customHeight="1"><c r="A2" t="inlineStr" s="4"><is><t xml:space="preserve">【第一区】事实与归因准备</t></is></c></row>
+<row r="3" ht="22" customHeight="1"><c r="A3" t="s" s="6"><v>31</v></c></row>
+<row r="4" ht="22" customHeight="1"><c r="A4" t="s" s="11"><v>33</v></c></row>
+<row r="5" ht="24" customHeight="1"><c r="A5" t="inlineStr" s="11"><is><t xml:space="preserve">时间/情境</t></is></c><c r="B5" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C5" t="inlineStr" s="6"><is><t xml:space="preserve">例：2025/9/15 项目上线</t></is></c></row>
+<row r="6" ht="44" customHeight="1"><c r="A6" t="inlineStr" s="11"><is><t xml:space="preserve">具体行为</t></is></c><c r="B6" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C6" t="inlineStr" s="6"><is><t xml:space="preserve">列 3-5 条可观察的行为</t></is></c></row>
+<row r="7" ht="44" customHeight="1"><c r="A7" t="inlineStr" s="11"><is><t xml:space="preserve">结果/影响</t></is></c><c r="B7" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C7" t="inlineStr" s="6"><is><t xml:space="preserve">对业务/团队/客户的影响</t></is></c></row>
+<row r="8" ht="22" customHeight="1"><c r="A8" t="s" s="11"><v>36</v></c></row>
+<row r="9" ht="44" customHeight="1"><c r="A9" t="s" s="11"><v>36</v></c><c r="B9" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="10" ht="22" customHeight="1"><c r="A10" t="s" s="11"><v>37</v></c></row>
+<row r="11" ht="24" customHeight="1"><c r="A11" t="s" s="10"><v>38</v></c><c r="B11" t="s" s="10"><v>39</v></c></row>
+<row r="12" ht="22" customHeight="1"><c r="A12" t="s" s="11"><v>40</v></c></row>
+<row r="13" ht="22" customHeight="1"><c r="A13" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B13" t="s" s="2"><v>41</v></c></row>
+<row r="14" ht="22" customHeight="1"><c r="A14" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B14" t="s" s="2"><v>42</v></c></row>
+<row r="15" ht="22" customHeight="1"><c r="A15" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B15" t="s" s="2"><v>43</v></c></row>
+<row r="16" ht="22" customHeight="1"><c r="A16" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B16" t="s" s="2"><v>44</v></c></row>
+<row r="17" ht="22" customHeight="1"><c r="A17" t="s" s="11"><v>45</v></c></row>
+<row r="18" ht="44" customHeight="1"><c r="A18" t="s" s="11"><v>45</v></c><c r="B18" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="20" ht="22" customHeight="1"><c r="A20" t="s" s="11"><v>46</v></c></row>
+<row r="21" ht="24" customHeight="1"><c r="A21" t="inlineStr" s="11"><is><t xml:space="preserve">时间/情境</t></is></c><c r="B21" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="22" ht="24" customHeight="1"><c r="A22" t="inlineStr" s="11"><is><t xml:space="preserve">具体行为</t></is></c><c r="B22" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="23" ht="24" customHeight="1"><c r="A23" t="inlineStr" s="11"><is><t xml:space="preserve">结果/影响</t></is></c><c r="B23" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="24" ht="22" customHeight="1"><c r="A24" t="s" s="11"><v>47</v></c></row>
+<row r="25" ht="44" customHeight="1"><c r="A25" t="s" s="11"><v>47</v></c><c r="B25" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="26" ht="22" customHeight="1"><c r="A26" t="s" s="11"><v>48</v></c></row>
+<row r="27" ht="24" customHeight="1"><c r="A27" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B27" t="s" s="2"><v>49</v></c><c r="C27" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="D27" t="s" s="2"><v>50</v></c></row>
+<row r="29" ht="22" customHeight="1"><c r="A29" t="s" s="11"><v>51</v></c></row>
+<row r="30" ht="24" customHeight="1"><c r="A30" t="inlineStr" s="11"><is><t xml:space="preserve">时间/情境</t></is></c><c r="B30" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="31" ht="24" customHeight="1"><c r="A31" t="inlineStr" s="11"><is><t xml:space="preserve">具体行为</t></is></c><c r="B31" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="32" ht="24" customHeight="1"><c r="A32" t="inlineStr" s="11"><is><t xml:space="preserve">结果/影响</t></is></c><c r="B32" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="33" ht="22" customHeight="1"><c r="A33" t="s" s="6"><v>52</v></c></row>
+<row r="35" ht="22" customHeight="1"><c r="A35" t="inlineStr" s="4"><is><t xml:space="preserve">校验公式示例（仅参考）</t></is></c></row>
+<row r="36" ht="24" customHeight="1"><c r="A36" t="inlineStr" s="11"><is><t xml:space="preserve">事实1时间长度（≥10字）</t></is></c><c r="B36" s="2"><f>IF(LEN(B5)&gt;=10,"OK","至少填10字")</f><v></v></c><c r="C36" t="inlineStr" s="11"><is><t xml:space="preserve">事实2 长度（≥10字）</t></is></c><c r="D36" s="2"><f>IF(LEN(B21)&gt;=10,"OK","至少填10字")</f><v></v></c></row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

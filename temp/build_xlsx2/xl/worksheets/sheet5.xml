@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="8" customWidth="1"/>
+    <col min="2" max="2" width="18" customWidth="1"/>
+    <col min="3" max="3" width="45" customWidth="1"/>
+    <col min="4" max="4" width="35" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>H4-H10使用指南</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>各表单用途说明速览</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="26" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>编号</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>表单名称</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>用途说明</t></is></c>
+      <c r="D4" s="8" t="inlineStr"><is><t>使用方法</t></is></c>
+    </row>
+    <row r="5" ht="22" customHeight="1">
+      <c r="A5" s="5" t="inlineStr"><is><t>H4</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>基本面分析工作表</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>分析公司的盈利能力、偿债能力、运营能力，输入财报数据自动计算各项财务比率</t></is></c>
+      <c r="D5" s="6" t="inlineStr"><is><t>从年报/季报获取数据，填入对应单元格，比率自动计算</t></is></c>
+    </row>
+    <row r="6" ht="22" customHeight="1">
+      <c r="A6" s="5" t="inlineStr"><is><t>H5</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>估值分析工作表</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>计算PE、PB、PS等相对估值指标，以及DCF绝对估值，输入假设条件自动生成估值区间</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>修改假设参数（增长率、折现率等），查看估值结果变化</t></is></c>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" s="5" t="inlineStr"><is><t>H6</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t>交易策略回测表</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>对均线策略、突破策略等进行历史数据回测，输入策略参数和股票数据，自动计算收益率、最大回撤等指标</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>选取历史数据，设定策略参数（均线周期、止盈止损），运行回测</t></is></c>
+    </row>
+    <row r="8" ht="22" customHeight="1">
+      <c r="A8" s="5" t="inlineStr"><is><t>H7</t></is></c>
+      <c r="B8" s="6" t="inlineStr"><is><t>仓位管理计算器</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>基于凯利公式计算最优仓位，输入胜率、盈亏比，自动计算单次交易最大仓位</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>根据自己历史交易统计数据填入参数，得出建议仓位</t></is></c>
+    </row>
+    <row r="9" ht="22" customHeight="1">
+      <c r="A9" s="5" t="inlineStr"><is><t>H8</t></is></c>
+      <c r="B9" s="6" t="inlineStr"><is><t>投资组合监控表</t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>记录多只股票的持仓、成本、定期监控组合表现，设置阈值提醒再平衡</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>每周或每月更新持仓数据，设置单一仓位上限提醒</t></is></c>
+    </row>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="5" t="inlineStr"><is><t>H9</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>年度投资复盘表</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>年度投资总结模板，记录全年交易、收益、教训，制定下年度改进计划</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>每年1月填写上年度数据，分析收益来源和错误</t></is></c>
+    </row>
+    <row r="11" ht="22" customHeight="1">
+      <c r="A11" s="5" t="inlineStr"><is><t>H10</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t>心理偏差自检表</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>识别常见投资心理偏差：过度自信、锚定效应、损失厌恶等，通过案例引导反思自身偏差</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>阅读每个偏差的描述，对照自己的投资行为打勾自测</t></is></c>
+    </row>
+    <row r="12" ht="10"/>
+    <row r="13" ht="22" customHeight="1">
+      <c r="A13" s="9" t="inlineStr"><is><t>使用顺序建议</t></is></c>
+      <c r="B13" s="6" t="inlineStr"><is><t>H4→H5→H3→H6→H7→H8→H9→H10</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>从分析到交易到复盘，形成完整闭环</t></is></c>
+      <c r="D13" s="6" t="inlineStr"><is><t>H10心理建设贯穿始终</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

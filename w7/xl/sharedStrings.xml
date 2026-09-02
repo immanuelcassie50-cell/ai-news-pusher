@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="41" uniqueCount="41">
+  <si><t>F7 人机协作节奏把控卡</t></si>
+  <si><t>不同阶段的AI使用边界表</t></si>
+  <si><t>阶段</t></si>
+  <si><t>AI可以做什么</t></si>
+  <si><t>AI不应做什么</t></si>
+  <si><t>引导师角色</t></si>
+  <si><t>开场破冰</t></si>
+  <si><t>生成暖场问题、介绍AI角色</t></si>
+  <si><t>代替引导师与参与者互动</t></si>
+  <si><t>掌控氛围、建立信任</t></si>
+  <si><t>议题讨论</t></si>
+  <si><t>记录要点、提炼分歧、生成选项</t></si>
+  <si><t>主导讨论方向、替引导师做判断</t></si>
+  <si><t>推动共识、处理分歧</t></si>
+  <si><t>总结收尾</t></si>
+  <si><t>生成总结框架、列出行动项</t></si>
+  <si><t>做最终决策、代替引导师总结</t></si>
+  <si><t>确认共识、推动承诺</t></si>
+  <si><t>现场信号识别表</t></si>
+  <si><t>信号类型</t></si>
+  <si><t>表现</t></si>
+  <si><t>应对策略</t></si>
+  <si><t>过度依赖信号</t></si>
+  <si><t>频繁查看AI建议、等待AI提示</t></si>
+  <si><t>暂停AI、让参与者自己思考</t></si>
+  <si><t>参与度下降</t></si>
+  <si><t>参与者开始沉默、依赖AI输出</t></si>
+  <si><t>引入互动环节、减少AI介入</t></si>
+  <si><t>人机冲突</t></si>
+  <si><t>AI建议与引导师判断不一致</t></si>
+  <si><t>以引导师判断为准、标记待讨论</t></si>
+  <si><t>应急情况处理表</t></si>
+  <si><t>情况</t></si>
+  <si><t>处理方式</t></si>
+  <si><t>AI故障或无法使用</t></si>
+  <si><t>暂停使用、切换到纯人工引导模式</t></si>
+  <si><t>AI建议明显错误</t></si>
+  <si><t>感谢AI、忽略建议、继续引导</t></si>
+  <si><t>参与者对AI有抵触</t></si>
+  <si><t>暂停AI展示、以人工为主</t></si>
+  <si><t></t></si>
+</sst>

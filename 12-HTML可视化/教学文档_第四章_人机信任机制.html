@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第四章：人机信任机制 · 组织统筹能力</title>
+<style>
+:root {
+  --primary: #1A5F7A;
+  --primary-light: #2A7A9A;
+  --primary-dark: #0F4A5F;
+  --accent: #C45C3E;
+  --warm: #F6F3EF;
+  --bg: #FBFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --gray-70: #4A4748;
+  --gray-50: #7A7678;
+  --gray-30: #B8B4B5;
+  --gray-10: #EAE6E4;
+  --font-serif: 'Didot','Bodoni MT','Bodoni 72','Times New Roman',Georgia,serif;
+  --font-body: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--warm);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.eyebrow {
+  font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
+  font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before {
+  content: ''; display: block; width: 24px; height: 1.5px; background: var(--primary);
+}
+.serif { font-family: var(--font-serif); }
+
+/* HERO */
+.hero {
+  background: var(--surface);
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid var(--gray-10);
+}
+.hero-stripe {
+  position: absolute; top: 0; left: 0;
+  width: 5px; height: 100%; background: var(--primary);
+}
+.hero-inner {
+  padding: 64px 48px 72px;
+  max-width: 1100px; margin: 0 auto;
+}
+.hero-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-10);
+}
+.brand-badge { display: flex; align-items: center; gap: 0; }
+.brand-rect {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 7px 16px; line-height: 1;
+}
+.brand-en {
+  font-size: 10px; letter-spacing: .12em; color: var(--gray-50);
+  text-transform: uppercase; padding-left: 14px;
+  border-left: 1px solid var(--gray-10); margin-left: 14px;
+  line-height: 1.5;
+}
+.hero-tag {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .08em;
+  border: 1px solid var(--gray-10); padding: 6px 14px; border-radius: 2px;
+}
+.hero-body {
+  display: grid; grid-template-columns: 1fr auto; gap: 64px; align-items: end;
+}
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: 42px; font-weight: 400; line-height: 1.25;
+  color: var(--ink); margin-bottom: 18px; letter-spacing: -.01em;
+}
+.hero-h1 em { font-style: normal; color: var(--primary); }
+.hero-lead {
+  font-size: 15px; color: var(--gray-50); max-width: 560px; line-height: 1.85;
+}
+.hero-metrics {
+  display: flex; flex-direction: column; gap: 0;
+  align-self: stretch; justify-content: flex-end;
+  border-left: 1px solid var(--gray-10); padding-left: 48px;
+}
+.metric {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray-10);
+  text-align: right;
+}
+.metric:last-child { border-bottom: none; }
+.metric-val {
+  font-family: var(--font-serif);
+  font-size: 52px; font-weight: 400; color: var(--primary);
+  line-height: 1; display: block; letter-spacing: -.02em;
+}
+.metric-lbl {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .06em; margin-top: 4px; display: block;
+}
+
+/* INSIGHT */
+.insight {
+  background: var(--primary-dark); color: #fff;
+  padding: 88px 0;
+  position: relative; overflow: hidden;
+}
+.insight::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+}
+.insight-grid {
+  display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: center;
+}
+.insight-quote {
+  font-family: var(--font-serif);
+  font-size: 26px; line-height: 1.55; color: #fff;
+  font-weight: 400;
+  position: relative; padding-left: 28px;
+}
+.insight-quote::before {
+  content: '';
+  position: absolute; left: 0; top: 4px; bottom: 4px;
+  width: 3px; background: var(--accent);
+}
+.insight-list { display: flex; flex-direction: column; gap: 28px; }
+.insight-item { display: flex; gap: 18px; }
+.insight-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0; margin-top: 10px;
+}
+.insight-text { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.85; }
+.insight-text strong { color: rgba(255,255,255,.92); }
+
+/* SECTIONS */
+.section { padding: 88px 0; }
+.section-alt { background: var(--surface); }
+.section-warm { background: var(--warm); }
+.section-head { margin-bottom: 48px; }
+.section-head h2 {
+  font-family: var(--font-serif); font-size: 30px; font-weight: 400;
+  color: var(--ink); margin: 14px 0 10px; line-height: 1.35;
+}
+.section-head p { font-size: 14px; color: var(--gray-50); }
+
+/* TRUST DIMENSIONS */
+.trust-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px;
+}
+.trust-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 28px 24px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+.trust-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+.trust-card::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--primary);
+}
+.trust-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(26,95,122,.1); display: flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.trust-icon svg { width: 22px; height: 22px; fill: var(--primary); }
+.trust-name {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+.trust-desc {
+  font-size: 12px; color: var(--gray-50); line-height: 1.7;
+  margin-bottom: 12px;
+}
+.trust-example {
+  background: var(--warm); border-radius: 4px;
+  padding: 10px 12px; font-size: 11px; color: var(--gray-70);
+  line-height: 1.6;
+}
+.trust-example strong { color: var(--primary); display: block; margin-bottom: 2px; }
+
+/* TRANSPARENCY METHODS */
+.methods-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.method-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 32px 28px;
+  border: 1px solid var(--gray-10);
+  text-align: center;
+  transition: border-color .3s var(--ease), transform .3s var(--ease);
+}
+.method-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.method-num {
+  font-family: var(--font-serif); font-size: 48px; font-weight: 400;
+  color: var(--gray-10); line-height: 1; margin-bottom: 12px;
+  display: block;
+}
+.method-title {
+  font-size: 15px; font-weight: 700; color: var(--ink);
+  margin-bottom: 10px;
+}
+.method-desc {
+  font-size: 12.5px; color: var(--gray-50); line-height: 1.75;
+  margin-bottom: 16px;
+}
+.method-example {
+  background: var(--warm); border-radius: 4px;
+  padding: 12px 14px; font-size: 11px; color: var(--gray-70);
+  text-align: left; line-height: 1.6;
+}
+.method-example strong { color: var(--primary); }
+
+/* ACCOUNTABILITY DESIGN */
+.account-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;
+}
+.account-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 28px 24px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+}
+.account-card::after {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--accent);
+  border-radius: 4px 4px 0 0;
+}
+.account-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(196,92,62,.1); display: flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.account-icon svg { width: 22px; height: 22px; fill: var(--accent); }
+.account-name {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+.account-desc {
+  font-size: 12px; color: var(--gray-50); line-height: 1.7;
+  margin-bottom: 12px;
+}
+.account-list {
+  font-size: 11px; color: var(--gray-70);
+  padding-left: 16px;
+}
+.account-list li { margin-bottom: 4px; }
+
+/* TRUST PROGRESSION */
+.progression-container {
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--gray-10);
+  padding: 40px;
+}
+.progression-flow {
+  display: flex; align-items: stretch; justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+.progression-step {
+  flex: 1; text-align: center;
+  padding: 24px 16px;
+  background: var(--warm);
+  border-radius: 4px;
+  position: relative;
+}
+.progression-step::after {
+  content: '→'; position: absolute;
+  right: -18px; top: 50%; transform: translateY(-50%);
+  font-size: 20px; color: var(--gray-30);
+}
+.progression-step:last-child::after { display: none; }
+.progression-level {
+  font-family: var(--font-serif); font-size: 36px;
+  color: var(--primary); margin-bottom: 8px;
+}
+.progression-name {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin-bottom: 6px;
+}
+.progression-desc {
+  font-size: 11px; color: var(--gray-50); line-height: 1.6;
+}
+.progression-arrow { display: none; }
+
+.progression-table {
+  background: var(--warm);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.progression-row {
+  display: grid; grid-template-columns: 100px 1fr 1fr 1fr;
+  border-bottom: 1px solid var(--gray-10);
+}
+.progression-row:last-child { border-bottom: none; }
+.progression-row span {
+  padding: 14px 16px;
+  font-size: 12px;
+  display: flex; align-items: center;
+}
+.progression-row span:first-child {
+  font-weight: 700; color: var(--ink);
+  background: rgba(26,95,122,.08);
+}
+.progression-row span:not(:first-child) {
+  color: var(--gray-70);
+  border-left: 1px solid var(--gray-10);
+}
+
+/* LOG EXAMPLE */
+.log-example {
+  background: var(--ink); color: #fff;
+  border-radius: 4px;
+  padding: 28px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 11px;
+  line-height: 1.8;
+  overflow-x: auto;
+}
+.log-line { margin-bottom: 8px; }
+.log-time { color: rgba(255,255,255,.4); margin-right: 12px; }
+.log-action { color: var(--primary-light); }
+.log-result { color: rgba(255,255,255,.7); }
+.log-comment { color: rgba(255,255,255,.35); font-style: italic; }
+
+/* KEY POINT */
+.key-point {
+  background: var(--primary); color: #fff;
+  border-radius: 4px;
+  padding: 36px 32px;
+}
+.key-point-lbl {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,.55); margin-bottom: 16px; font-weight: 700;
+}
+.key-point-text {
+  font-family: var(--font-serif); font-size: 22px; line-height: 1.5;
+  color: #fff; font-weight: 400;
+}
+
+/* EXPANDABLE */
+.expand-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.expand-header:hover { background: var(--warm); }
+.expand-header h3 {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  display: flex; align-items: center; gap: 12px;
+}
+.expand-icon {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--primary); display: flex;
+  align-items: center; justify-content: center;
+  transition: transform .3s var(--ease);
+}
+.expand-icon svg { width: 12px; height: 12px; fill: #fff; }
+.expand-icon.open { transform: rotate(45deg); }
+.expand-content {
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s var(--ease);
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.expand-content.open { max-height: 600px; }
+.expand-inner { padding: 24px; }
+.expand-inner p { font-size: 13.5px; color: var(--gray-70); line-height: 1.8; margin-bottom: 12px; }
+.expand-inner p:last-child { margin-bottom: 0; }
+.expand-inner ul { margin: 12px 0; padding-left: 20px; }
+.expand-inner li { font-size: 13px; color: var(--gray-70); margin-bottom: 8px; }
+
+/* FOOTER */
+.foot {
+  background: var(--ink); padding: 56px 0;
+}
+.foot-inner {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.foot-left { display: flex; align-items: center; gap: 20px; }
+.foot-mark {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 8px 18px; border-radius: 2px;
+}
+.foot-title { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.85); margin-bottom: 3px; }
+.foot-sub { font-size: 12px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+.foot-note {
+  text-align: right; font-size: 11.5px; color: rgba(255,255,255,.28); line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .container, .hero-inner { padding-left: 24px; padding-right: 24px; }
+  .hero-body { grid-template-columns: 1fr; }
+  .hero-metrics { flex-direction: row; border-left: none; padding-left: 0; border-top: 1px solid var(--gray-10); padding-top: 32px; margin-top: 32px; }
+  .metric { padding: 0 24px 0 0; border-bottom: none; text-align: left; }
+  .insight-grid { grid-template-columns: 1fr; gap: 48px; }
+  .trust-grid { grid-template-columns: repeat(2, 1fr); }
+  .methods-grid { grid-template-columns: 1fr; }
+  .account-grid { grid-template-columns: 1fr; }
+  .progression-flow { flex-wrap: wrap; }
+  .progression-step::after { display: none; }
+  .progression-row { grid-template-columns: 80px 1fr 1fr; }
+  .progression-row span:nth-child(3) { display: none; }
+  .foot-inner { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .foot-note { text-align: left; }
+}
+
+/* PRINT */
+@media print {
+  @page { size: A3 landscape; margin: 15mm; }
+  body { background: #fff; font-size: 11pt; }
+  .hero { border: none; box-shadow: none; }
+  .insight { background: #f5f5f5; color: #000; }
+  .insight-text { color: #333; }
+  .foot { background: #333; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .progression-table { background: #f5f5f5 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .trust-card:hover, .method-card:hover { transform: none; box-shadow: none; }
+  .key-point { background: var(--primary) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .log-example { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="brand-badge">
+        <div class="brand-rect">组织统筹</div>
+        <div class="brand-en">课7 · 企业文化<br>人机信任机制</div>
+      </div>
+      <div class="hero-tag">第四章</div>
+    </div>
+    <div class="hero-body">
+      <div>
+        <p class="eyebrow">人机信任机制</p>
+        <h1 class="hero-h1 serif">
+          从<span style="color: var(--accent)">"监督"</span>到<span style="color: var(--primary)">"放权"</span><br>信任的进阶路径
+        </h1>
+        <p class="hero-lead">信任是人机协作的基石——没有信任，就没有真正的协同；没有机制，信任就无法建立</p>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">信任维度</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">3</span>
+          <span class="metric-lbl">透明度方法</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">放权阶段</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- INSIGHT -->
+<section class="insight">
+  <div class="container">
+    <div class="insight-grid">
+      <blockquote class="insight-quote serif">
+        信任不是"相信机器不会犯错"，<br>而是"有了机制，犯错也能被及时发现和修正"
+      </blockquote>
+      <div class="insight-list">
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>IBM研究：</strong>高效人机团队的信任建立周期平均为3-4周，通过透明的机制而非"考察期"</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>麦肯锡发现：</strong>过早放权（信任不足）和过度监督（信任过度）都会导致效率损失</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>关键洞察：</strong>信任的核心是"可预测性"——建立机制比建立信念更重要</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST DIMENSIONS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">信任结构</p>
+      <h2 class="serif">信任的四个维度</h2>
+      <p>全面理解信任，才能全面建立信任</p>
+    </div>
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3 class="trust-name">能力信任</h3>
+        <p class="trust-desc">相信对方有能力完成任务的信任</p>
+        <div class="trust-example">
+          <strong>在人机关系中的表现</strong>
+          智能体能否稳定完成这类任务？准确率如何？
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+        </div>
+        <h3 class="trust-name">意图信任</h3>
+        <p class="trust-desc">相信对方会按照预期目标行事的信任</p>
+        <div class="trust-example">
+          <strong>在人机关系中的表现</strong>
+          智能体会不会被错误引导？是否会被 Prompt 注入攻击？
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3 class="trust-name">机制信任</h3>
+        <p class="trust-desc">相信机制能够保障预期结果实现的信任</p>
+        <div class="trust-example">
+          <strong>在人机关系中的表现</strong>
+          有没有纠错机制？产出有没有审核流程？
+        </div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3 class="trust-name">关系信任</h3>
+        <p class="trust-desc">相信对方会考虑整体利益和长期关系的信任</p>
+        <div class="trust-example">
+          <strong>在人机关系中的表现</strong>
+          智能体能否理解业务整体目标？会不会"只见树木不见森林"？
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPARENCY METHODS -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">透明度建设</p>
+      <h2 class="serif">建立透明度的三种方法</h2>
+      <p>透明度是信任的基础——让协作过程可见、可追溯、可理解</p>
+    </div>
+    <div class="methods-grid">
+      <div class="method-card">
+        <span class="method-num serif">01</span>
+        <h3 class="method-title">决策日志</h3>
+        <p class="method-desc">记录智能体每次决策的依据、输入、输出，形成完整的决策链条</p>
+        <div class="method-example">
+          <strong>实施方式：</strong>使用结构化日志格式<br>
+          [时间] [任务] [输入摘要] [决策依据] [产出] [置信度]
+        </div>
+      </div>
+      <div class="method-card">
+        <span class="method-num serif">02</span>
+        <h3 class="method-title">过程可见</h3>
+        <p class="method-desc">让人类能够看到智能体的工作进度、当前状态、预计完成时间</p>
+        <div class="method-example">
+          <strong>实施方式：</strong>建立实时状态看板<br>
+          任务进度 | 当前步骤 | 遇到的问题 | 预计完成时间
+        </div>
+      </div>
+      <div class="method-card">
+        <span class="method-num serif">03</span>
+        <h3 class="method-title">结果可溯</h3>
+        <p class="method-desc">任何产出都能追溯到原始输入和决策逻辑，出了问题能够定位原因</p>
+        <div class="method-example">
+          <strong>实施方式：</strong>建立版本化和溯源机制<br>
+          每个产出有版本号 → 可回滚 → 可对比 → 可分析
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECISION LOG EXAMPLE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">实操示例</p>
+      <h2 class="serif">决策日志示例</h2>
+      <p>结构化的日志记录，让协作过程透明可追溯</p>
+    </div>
+    <div class="log-example">
+      <div class="log-line"><span class="log-time">2026-08-13 09:15:32</span><span class="log-action">[决策]</span><span class="log-result">任务：市场分析报告 - 竞品对比部分</span></div>
+      <div class="log-line"><span class="log-comment"># 输入：3份竞品文档 + 去年Q2数据 + 客户画像</span></div>
+      <div class="log-line"><span class="log-comment"># 决策依据：基于结构化分析框架（5维度评分），权重来自历史数据验证</span></div>
+      <div class="log-line"><span class="log-comment"># 置信度：0.87（基于数据完整度和模型匹配度）</span></div>
+      <div class="log-line"><span class="log-time">09:15:45</span><span class="log-action">[产出]</span><span class="log-result">完成初稿，包含3个主要发现 + 2个行动建议</span></div>
+      <div class="log-line"><span class="log-time">09:16:02</span><span class="log-action">[人工审核]</span><span class="log-result">发现数据口径不一致，触发修正流程</span></div>
+      <div class="log-line"><span class="log-comment"># 修正：重新对齐数据口径，输出修订版</span></div>
+      <div class="log-line"><span class="log-time">09:16:28</span><span class="log-action">[最终产出]</span><span class="log-result">通过审核，进入下一环节</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ACCOUNTABILITY DESIGN -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">问责设计</p>
+      <h2 class="serif">问责制的三个支柱</h2>
+      <p>清晰的角色、边界、纠错机制，是问责制的基础</p>
+    </div>
+    <div class="account-grid">
+      <div class="account-card">
+        <div class="account-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3 class="account-name">角色明确</h3>
+        <p class="account-desc">每个参与者（人/智能体）有明确的任务和责任</p>
+        <ul class="account-list">
+          <li>决策者：最终决策权归属</li>
+          <li>执行者：具体任务执行</li>
+          <li>审核者：质量把关</li>
+          <li>问责者：问题追溯</li>
+        </ul>
+      </div>
+      <div class="account-card">
+        <div class="account-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3 class="account-name">边界清晰</h3>
+        <p class="account-desc">明确什么事能做、什么事不能做、什么事需要上报</p>
+        <ul class="account-list">
+          <li>正面清单：智能体可以独立处理</li>
+          <li>负面清单：必须人工介入</li>
+          <li>上报清单：超出权限必须上报</li>
+          <li>边界动态调整机制</li>
+        </ul>
+      </div>
+      <div class="account-card">
+        <div class="account-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+        </div>
+        <h3 class="account-name">纠错机制</h3>
+        <p class="account-desc">出了问题能够及时发现、定位原因、修复并预防再发</p>
+        <ul class="account-list">
+          <li>实时监控：异常及时发现</li>
+          <li>根因分析：定位真正原因</li>
+          <li>修复流程：快速响应</li>
+          <li>复盘机制：持续优化</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST PROGRESSION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">信任进阶</p>
+      <h2 class="serif">从"监督"到"放权"的四个阶段</h2>
+      <p>信任的建立是一个渐进过程，不能一蹴而就</p>
+    </div>
+    <div class="progression-container">
+      <div class="progression-flow">
+        <div class="progression-step">
+          <span class="progression-level">L1</span>
+          <h4 class="progression-name">监督执行</h4>
+          <p class="progression-desc">智能体执行，人类全程监督，每步确认</p>
+        </div>
+        <div class="progression-step">
+          <span class="progression-level">L2</span>
+          <h4 class="progression-name">审核放权</h4>
+          <p class="progression-desc">智能体执行，人类审核结果，定期抽检</p>
+        </div>
+        <div class="progression-step">
+          <span class="progression-level">L3</span>
+          <h4 class="progression-name">条件信任</h4>
+          <p class="progression-desc">智能体独立执行，触发特定条件时上报</p>
+        </div>
+        <div class="progression-step">
+          <span class="progression-level">L4</span>
+          <h4 class="progression-name">充分授权</h4>
+          <p class="progression-desc">智能体全权负责，人类只做战略层决策</p>
+        </div>
+      </div>
+      <div class="progression-table">
+        <div class="progression-row">
+          <span>阶段</span>
+          <span>典型任务</span>
+          <span>人类投入度</span>
+          <span>进阶条件</span>
+        </div>
+        <div class="progression-row">
+          <span>L1 监督执行</span>
+          <span>高风险任务、新类型任务</span>
+          <span>80-100%</span>
+          <span>连续10次无重大失误</span>
+        </div>
+        <div class="progression-row">
+          <span>L2 审核放权</span>
+          <span>中等风险、模式清晰任务</span>
+          <span>30-50%</span>
+          <span>审核通过率>95%</span>
+        </div>
+        <div class="progression-row">
+          <span>L3 条件信任</span>
+          <span>低风险、有明确边界任务</span>
+          <span>10-20%</span>
+          <span>触发上报准确率>90%</span>
+        </div>
+        <div class="progression-row">
+          <span>L4 充分授权</span>
+          <span>routine任务、高频重复任务</span>
+          <span>5%以下</span>
+          <span>组织级信任体系建立</span>
+        </div>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top: 40px;">
+      <p class="key-point-lbl">核心观点</p>
+      <p class="key-point-text">信任的建立不是"相信机器不会犯错"，而是"有了机制，犯错也能被及时发现和修正"——机制越完善，信任越稳固</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">章节小结</p>
+      <h2 class="serif">本章要点</h2>
+    </div>
+    <div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">1</span>
+          信任的四个维度
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>能力信任（能完成任务）+ 意图信任（会按目标行事）+ 机制信任（有机制保障）+ 关系信任（会考虑整体）= 完整的人机信任体系</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">2</span>
+          透明度三方法
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>决策日志（记录决策链条）+ 过程可见（实时状态同步）+ 结果可溯（版本化溯源）= 完整的透明度体系</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">3</span>
+          信任进阶路径
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>L1监督执行 → L2审核放权 → L3条件信任 → L4充分授权。每一阶段的进阶都基于前一个阶段的稳定表现和数据验证。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-left">
+        <div class="foot-mark">组织统筹</div>
+        <div>
+          <p class="foot-title">第四章：人机信任机制</p>
+          <p class="foot-sub">课7 · 企业文化模块 · 组织统筹能力</p>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>从"监督"到"放权"的信任进阶路径</p>
+        <p>基于IBM人机信任研究 · 麦肯锡智能体领导力报告</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleExpand(header) {
+  const content = header.nextElementSibling;
+  const icon = header.querySelector('.expand-icon');
+  content.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+</script>
+</body>
+</html>

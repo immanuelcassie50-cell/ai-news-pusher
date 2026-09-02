@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="14" customWidth="1"/><col min="2" max="2" width="14" customWidth="1"/><col min="3" max="3" width="14" customWidth="1"/><col min="4" max="4" width="14" customWidth="1"/><col min="5" max="5" width="14" customWidth="1"/><col min="6" max="6" width="40" customWidth="1"/><col min="7" max="7" width="14" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>维度汇总 - 公式自动统计（基于原始数据）</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表的所有数据都是公式自动从&quot;原始数据&quot;表读取——你只要在&quot;原始数据&quot;表录入真实数据，本表自动更新。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="22" customHeight="1">
+  <c r="A4" s="5" t="inlineStr"><is><t>一、4 维度得分汇总（公式自动）</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="B5" s="14" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="C5" s="14" t="inlineStr"><is><t>满分</t></is></c>
+  <c r="D5" s="14" t="inlineStr"><is><t>实际平均分</t></is></c>
+  <c r="E5" s="14" t="inlineStr"><is><t>得分率</t></is></c>
+  <c r="F5" s="14" t="inlineStr"><is><t>≥4分占比</t></is></c>
+  <c r="G5" s="14" t="inlineStr"><is><t>评价</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="14" t="inlineStr"><is><t>课程内容</t></is></c>
+  <c r="B6" s="14" t="inlineStr"><is><t>E-L</t></is></c>
+  <c r="C6" s="14" t="inlineStr"><is><t>40</t></is></c>
+  <c r="D6" s="19"><f>AVERAGE(E5:E28)+AVERAGE(F5:F28)+AVERAGE(G5:G28)+AVERAGE(H5:H28)+AVERAGE(I5:I28)+AVERAGE(J5:J28)+AVERAGE(K5:K28)+AVERAGE(L5:L28)</f><v></v></c>
+  <c r="E6" s="19"><f>D6/40</f><v></v></c>
+  <c r="F6" s="19"><f>(COUNTIF(E5:E28,"&amp;gt;=4")+COUNTIF(F5:F28,"&amp;gt;=4")+COUNTIF(G5:G28,"&amp;gt;=4")+COUNTIF(H5:H28,"&amp;gt;=4")+COUNTIF(I5:I28,"&amp;gt;=4")+COUNTIF(J5:J28,"&amp;gt;=4")+COUNTIF(K5:K28,"&amp;gt;=4")+COUNTIF(L5:L28,"&amp;gt;=4"))/(24*8)</f><v></v></c>
+  <c r="G6" s="19"><f>IF(D6&gt;=40*0.9,"优秀",IF(D6&gt;=40*0.8,"良好",IF(D6&gt;=40*0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>讲师表现</t></is></c>
+  <c r="B7" s="14" t="inlineStr"><is><t>M-R</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>30</t></is></c>
+  <c r="D7" s="19"><f>AVERAGE(M5:M28)+AVERAGE(N5:N28)+AVERAGE(O5:O28)+AVERAGE(P5:P28)+AVERAGE(Q5:Q28)+AVERAGE(R5:R28)</f><v></v></c>
+  <c r="E7" s="19"><f>D7/30</f><v></v></c>
+  <c r="F7" s="19"><f>(COUNTIF(M5:M28,"&amp;gt;=4")+COUNTIF(N5:N28,"&amp;gt;=4")+COUNTIF(O5:O28,"&amp;gt;=4")+COUNTIF(P5:P28,"&amp;gt;=4")+COUNTIF(Q5:Q28,"&amp;gt;=4")+COUNTIF(R5:R28,"&amp;gt;=4"))/(24*6)</f><v></v></c>
+  <c r="G7" s="19"><f>IF(D7&gt;=30*0.9,"优秀",IF(D7&gt;=30*0.8,"良好",IF(D7&gt;=30*0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>课程形式</t></is></c>
+  <c r="B8" s="14" t="inlineStr"><is><t>S-X</t></is></c>
+  <c r="C8" s="14" t="inlineStr"><is><t>30</t></is></c>
+  <c r="D8" s="19"><f>AVERAGE(S5:S28)+AVERAGE(T5:T28)+AVERAGE(U5:U28)+AVERAGE(V5:V28)+AVERAGE(W5:W28)+AVERAGE(X5:X28)</f><v></v></c>
+  <c r="E8" s="19"><f>D8/30</f><v></v></c>
+  <c r="F8" s="19"><f>(COUNTIF(S5:S28,"&amp;gt;=4")+COUNTIF(T5:T28,"&amp;gt;=4")+COUNTIF(U5:U28,"&amp;gt;=4")+COUNTIF(V5:V28,"&amp;gt;=4")+COUNTIF(W5:W28,"&amp;gt;=4")+COUNTIF(X5:X28,"&amp;gt;=4"))/(24*6)</f><v></v></c>
+  <c r="G8" s="19"><f>IF(D8&gt;=30*0.9,"优秀",IF(D8&gt;=30*0.8,"良好",IF(D8&gt;=30*0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="9">
+  <c r="A9" s="14" t="inlineStr"><is><t>组织工作</t></is></c>
+  <c r="B9" s="14" t="inlineStr"><is><t>Y-AB</t></is></c>
+  <c r="C9" s="14" t="inlineStr"><is><t>20</t></is></c>
+  <c r="D9" s="19"><f>AVERAGE(Y5:Y28)+AVERAGE(Z5:Z28)+AVERAGE(AA5:AA28)+AVERAGE(AB5:AB28)</f><v></v></c>
+  <c r="E9" s="19"><f>D9/20</f><v></v></c>
+  <c r="F9" s="19"><f>(COUNTIF(Y5:Y28,"&amp;gt;=4")+COUNTIF(Z5:Z28,"&amp;gt;=4")+COUNTIF(AA5:AA28,"&amp;gt;=4")+COUNTIF(AB5:AB28,"&amp;gt;=4"))/(24*4)</f><v></v></c>
+  <c r="G9" s="19"><f>IF(D9&gt;=20*0.9,"优秀",IF(D9&gt;=20*0.8,"良好",IF(D9&gt;=20*0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="6">
+  <c r="A6" s="14" t="inlineStr"><is><t>课程内容</t></is></c>
+  <c r="B6" s="14" t="inlineStr"><is><t>E-L</t></is></c>
+  <c r="C6" s="14" t="inlineStr"><is><t>40</t></is></c>
+  <c r="D6" s="19"><f>AVERAGE(E5:E28)+AVERAGE(F5:F28)+AVERAGE(G5:G28)+AVERAGE(H5:H28)+AVERAGE(I5:I28)+AVERAGE(J5:J28)+AVERAGE(K5:K28)+AVERAGE(L5:L28)</f><v></v></c>
+  <c r="E6" s="19"><f>D10/40</f><v></v></c>
+  <c r="F6" s="19"><f>(COUNTIF(E5:E28,"&amp;gt;=4")+COUNTIF(F5:F28,"&amp;gt;=4")+COUNTIF(G5:G28,"&amp;gt;=4")+COUNTIF(H5:H28,"&amp;gt;=4")+COUNTIF(I5:I28,"&amp;gt;=4")+COUNTIF(J5:J28,"&amp;gt;=4")+COUNTIF(K5:K28,"&amp;gt;=4")+COUNTIF(L5:L28,"&amp;gt;=4"))/(24*8)</f><v></v></c>
+  <c r="G6" s="19"><f>IF(D10/40&gt;=0.9,"优秀",IF(D10/40&gt;=0.8,"良好",IF(D10/40&gt;=0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>讲师表现</t></is></c>
+  <c r="B7" s="14" t="inlineStr"><is><t>M-R</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>30</t></is></c>
+  <c r="D7" s="19"><f>AVERAGE(M5:M28)+AVERAGE(N5:N28)+AVERAGE(O5:O28)+AVERAGE(P5:P28)+AVERAGE(Q5:Q28)+AVERAGE(R5:R28)</f><v></v></c>
+  <c r="E7" s="19"><f>D9/30</f><v></v></c>
+  <c r="F7" s="19"><f>(COUNTIF(M5:M28,"&amp;gt;=4")+COUNTIF(N5:N28,"&amp;gt;=4")+COUNTIF(O5:O28,"&amp;gt;=4")+COUNTIF(P5:P28,"&amp;gt;=4")+COUNTIF(Q5:Q28,"&amp;gt;=4")+COUNTIF(R5:R28,"&amp;gt;=4"))/(24*6)</f><v></v></c>
+  <c r="G7" s="19"><f>IF(D9/30&gt;=0.9,"优秀",IF(D9/30&gt;=0.8,"良好",IF(D9/30&gt;=0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>课程形式</t></is></c>
+  <c r="B8" s="14" t="inlineStr"><is><t>S-X</t></is></c>
+  <c r="C8" s="14" t="inlineStr"><is><t>30</t></is></c>
+  <c r="D8" s="19"><f>AVERAGE(S5:S28)+AVERAGE(T5:T28)+AVERAGE(U5:U28)+AVERAGE(V5:V28)+AVERAGE(W5:W28)+AVERAGE(X5:X28)</f><v></v></c>
+  <c r="E8" s="19"><f>D8/30</f><v></v></c>
+  <c r="F8" s="19"><f>(COUNTIF(S5:S28,"&amp;gt;=4")+COUNTIF(T5:T28,"&amp;gt;=4")+COUNTIF(U5:U28,"&amp;gt;=4")+COUNTIF(V5:V28,"&amp;gt;=4")+COUNTIF(W5:W28,"&amp;gt;=4")+COUNTIF(X5:X28,"&amp;gt;=4"))/(24*6)</f><v></v></c>
+  <c r="G8" s="19"><f>IF(D8/30&gt;=0.9,"优秀",IF(D8/30&gt;=0.8,"良好",IF(D8/30&gt;=0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="9">
+  <c r="A9" s="14" t="inlineStr"><is><t>组织工作</t></is></c>
+  <c r="B9" s="14" t="inlineStr"><is><t>Y-AB</t></is></c>
+  <c r="C9" s="14" t="inlineStr"><is><t>20</t></is></c>
+  <c r="D9" s="19"><f>AVERAGE(Y5:Y28)+AVERAGE(Z5:Z28)+AVERAGE(AA5:AA28)+AVERAGE(AB5:AB28)</f><v></v></c>
+  <c r="E9" s="19"><f>D7/20</f><v></v></c>
+  <c r="F9" s="19"><f>(COUNTIF(Y5:Y28,"&amp;gt;=4")+COUNTIF(Z5:Z28,"&amp;gt;=4")+COUNTIF(AA5:AA28,"&amp;gt;=4")+COUNTIF(AB5:AB28,"&amp;gt;=4"))/(24*4)</f><v></v></c>
+  <c r="G9" s="19"><f>IF(D7/20&gt;=0.9,"优秀",IF(D7/20&gt;=0.8,"良好",IF(D7/20&gt;=0.7,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="11">
+  <c r="A11" s="0"/>
+</row>
+<row r="12" ht="22" customHeight="1">
+  <c r="A12" s="5" t="inlineStr"><is><t>二、各项得分排名（公式自动）</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="14" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="B13" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="C13" s="14" t="inlineStr"><is><t>平均分</t></is></c>
+  <c r="D13" s="14" t="inlineStr"><is><t>排名</t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="14" t="inlineStr"><is><t>Q1</t></is></c>
+  <c r="B14" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C14" s="19"><f>AVERAGE(E5:E28)</f><v></v></c>
+  <c r="D14" s="19"><f>RANK(C14,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="15">
+  <c r="A15" s="14" t="inlineStr"><is><t>Q2</t></is></c>
+  <c r="B15" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C15" s="19"><f>AVERAGE(F5:F28)</f><v></v></c>
+  <c r="D15" s="19"><f>RANK(C15,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="16">
+  <c r="A16" s="14" t="inlineStr"><is><t>Q3</t></is></c>
+  <c r="B16" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C16" s="19"><f>AVERAGE(G5:G28)</f><v></v></c>
+  <c r="D16" s="19"><f>RANK(C16,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="17">
+  <c r="A17" s="14" t="inlineStr"><is><t>Q4</t></is></c>
+  <c r="B17" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C17" s="19"><f>AVERAGE(H5:H28)</f><v></v></c>
+  <c r="D17" s="19"><f>RANK(C17,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>Q5</t></is></c>
+  <c r="B18" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C18" s="19"><f>AVERAGE(I5:I28)</f><v></v></c>
+  <c r="D18" s="19"><f>RANK(C18,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>Q6</t></is></c>
+  <c r="B19" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C19" s="19"><f>AVERAGE(J5:J28)</f><v></v></c>
+  <c r="D19" s="19"><f>RANK(C19,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>Q7</t></is></c>
+  <c r="B20" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C20" s="19"><f>AVERAGE(K5:K28)</f><v></v></c>
+  <c r="D20" s="19"><f>RANK(C20,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>Q8</t></is></c>
+  <c r="B21" s="14" t="inlineStr"><is><t>内容</t></is></c>
+  <c r="C21" s="19"><f>AVERAGE(L5:L28)</f><v></v></c>
+  <c r="D21" s="19"><f>RANK(C21,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>Q9</t></is></c>
+  <c r="B22" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C22" s="19"><f>AVERAGE(M5:M28)</f><v></v></c>
+  <c r="D22" s="19"><f>RANK(C22,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>Q10</t></is></c>
+  <c r="B23" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C23" s="19"><f>AVERAGE(N5:N28)</f><v></v></c>
+  <c r="D23" s="19"><f>RANK(C23,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="24">
+  <c r="A24" s="14" t="inlineStr"><is><t>Q11</t></is></c>
+  <c r="B24" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C24" s="19"><f>AVERAGE(O5:O28)</f><v></v></c>
+  <c r="D24" s="19"><f>RANK(C24,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="25">
+  <c r="A25" s="14" t="inlineStr"><is><t>Q12</t></is></c>
+  <c r="B25" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C25" s="19"><f>AVERAGE(P5:P28)</f><v></v></c>
+  <c r="D25" s="19"><f>RANK(C25,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="26">
+  <c r="A26" s="14" t="inlineStr"><is><t>Q13</t></is></c>
+  <c r="B26" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C26" s="19"><f>AVERAGE(Q5:Q28)</f><v></v></c>
+  <c r="D26" s="19"><f>RANK(C26,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="27">
+  <c r="A27" s="14" t="inlineStr"><is><t>Q14</t></is></c>
+  <c r="B27" s="14" t="inlineStr"><is><t>讲师</t></is></c>
+  <c r="C27" s="19"><f>AVERAGE(R5:R28)</f><v></v></c>
+  <c r="D27" s="19"><f>RANK(C27,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="28">
+  <c r="A28" s="14" t="inlineStr"><is><t>Q15</t></is></c>
+  <c r="B28" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C28" s="19"><f>AVERAGE(S5:S28)</f><v></v></c>
+  <c r="D28" s="19"><f>RANK(C28,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="29">
+  <c r="A29" s="14" t="inlineStr"><is><t>Q16</t></is></c>
+  <c r="B29" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C29" s="19"><f>AVERAGE(T5:T28)</f><v></v></c>
+  <c r="D29" s="19"><f>RANK(C29,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="30">
+  <c r="A30" s="14" t="inlineStr"><is><t>Q17</t></is></c>
+  <c r="B30" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C30" s="19"><f>AVERAGE(U5:U28)</f><v></v></c>
+  <c r="D30" s="19"><f>RANK(C30,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="31">
+  <c r="A31" s="14" t="inlineStr"><is><t>Q18</t></is></c>
+  <c r="B31" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C31" s="19"><f>AVERAGE(V5:V28)</f><v></v></c>
+  <c r="D31" s="19"><f>RANK(C31,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="32">
+  <c r="A32" s="14" t="inlineStr"><is><t>Q19</t></is></c>
+  <c r="B32" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C32" s="19"><f>AVERAGE(W5:W28)</f><v></v></c>
+  <c r="D32" s="19"><f>RANK(C32,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="33">
+  <c r="A33" s="14" t="inlineStr"><is><t>Q20</t></is></c>
+  <c r="B33" s="14" t="inlineStr"><is><t>形式</t></is></c>
+  <c r="C33" s="19"><f>AVERAGE(X5:X28)</f><v></v></c>
+  <c r="D33" s="19"><f>RANK(C33,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="34">
+  <c r="A34" s="14" t="inlineStr"><is><t>Q21</t></is></c>
+  <c r="B34" s="14" t="inlineStr"><is><t>组织</t></is></c>
+  <c r="C34" s="19"><f>AVERAGE(Y5:Y28)</f><v></v></c>
+  <c r="D34" s="19"><f>RANK(C34,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="35">
+  <c r="A35" s="14" t="inlineStr"><is><t>Q22</t></is></c>
+  <c r="B35" s="14" t="inlineStr"><is><t>组织</t></is></c>
+  <c r="C35" s="19"><f>AVERAGE(Z5:Z28)</f><v></v></c>
+  <c r="D35" s="19"><f>RANK(C35,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="36">
+  <c r="A36" s="14" t="inlineStr"><is><t>Q23</t></is></c>
+  <c r="B36" s="14" t="inlineStr"><is><t>组织</t></is></c>
+  <c r="C36" s="19"><f>AVERAGE(AA5:AA28)</f><v></v></c>
+  <c r="D36" s="19"><f>RANK(C36,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="37">
+  <c r="A37" s="14" t="inlineStr"><is><t>Q24</t></is></c>
+  <c r="B37" s="14" t="inlineStr"><is><t>组织</t></is></c>
+  <c r="C37" s="19"><f>AVERAGE(AB5:AB28)</f><v></v></c>
+  <c r="D37" s="19"><f>RANK(C37,$C$14:$C$37,0)</f><v></v></c>
+</row>
+<row r="38">
+  <c r="A38" s="0"/>
+</row>
+<row r="39" ht="22" customHeight="1">
+  <c r="A39" s="5" t="inlineStr"><is><t>三、Top 5（得分最高） — 公式自动从上方表抽取</t></is></c>
+</row>
+<row r="40">
+  <c r="A40" s="14" t="inlineStr"><is><t>排名</t></is></c>
+  <c r="B40" s="14" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="C40" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="D40" s="14" t="inlineStr"><is><t>平均分</t></is></c>
+</row>
+<row r="41">
+  <c r="A41" s="17" t="inlineStr"><is><t>1</t></is></c>
+  <c r="B41" s="19"><f>INDEX($A$14:$A$37,MATCH(1,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C41" s="19"><f>INDEX($B$14:$B$37,MATCH(1,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D41" s="19"><f>INDEX($C$14:$C$37,MATCH(1,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="42">
+  <c r="A42" s="17" t="inlineStr"><is><t>2</t></is></c>
+  <c r="B42" s="19"><f>INDEX($A$14:$A$37,MATCH(2,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C42" s="19"><f>INDEX($B$14:$B$37,MATCH(2,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D42" s="19"><f>INDEX($C$14:$C$37,MATCH(2,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="43">
+  <c r="A43" s="17" t="inlineStr"><is><t>3</t></is></c>
+  <c r="B43" s="19"><f>INDEX($A$14:$A$37,MATCH(3,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C43" s="19"><f>INDEX($B$14:$B$37,MATCH(3,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D43" s="19"><f>INDEX($C$14:$C$37,MATCH(3,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="44">
+  <c r="A44" s="17" t="inlineStr"><is><t>4</t></is></c>
+  <c r="B44" s="19"><f>INDEX($A$14:$A$37,MATCH(4,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C44" s="19"><f>INDEX($B$14:$B$37,MATCH(4,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D44" s="19"><f>INDEX($C$14:$C$37,MATCH(4,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="45">
+  <c r="A45" s="17" t="inlineStr"><is><t>5</t></is></c>
+  <c r="B45" s="19"><f>INDEX($A$14:$A$37,MATCH(5,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C45" s="19"><f>INDEX($B$14:$B$37,MATCH(5,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D45" s="19"><f>INDEX($C$14:$C$37,MATCH(5,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="46">
+  <c r="A46" s="0"/>
+</row>
+<row r="47" ht="22" customHeight="1">
+  <c r="A47" s="5" t="inlineStr"><is><t>四、Bottom 5（得分最低 - 需重点改进） - 公式自动</t></is></c>
+</row>
+<row r="48">
+  <c r="A48" s="14" t="inlineStr"><is><t>排名</t></is></c>
+  <c r="B48" s="14" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="C48" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="D48" s="14" t="inlineStr"><is><t>平均分</t></is></c>
+</row>
+<row r="49">
+  <c r="A49" s="17" t="inlineStr"><is><t>5</t></is></c>
+  <c r="B49" s="19"><f>INDEX($A$14:$A$37,MATCH(20,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C49" s="19"><f>INDEX($B$14:$B$37,MATCH(20,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D49" s="19"><f>INDEX($C$14:$C$37,MATCH(20,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="50">
+  <c r="A50" s="17" t="inlineStr"><is><t>4</t></is></c>
+  <c r="B50" s="19"><f>INDEX($A$14:$A$37,MATCH(21,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C50" s="19"><f>INDEX($B$14:$B$37,MATCH(21,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D50" s="19"><f>INDEX($C$14:$C$37,MATCH(21,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="51">
+  <c r="A51" s="17" t="inlineStr"><is><t>3</t></is></c>
+  <c r="B51" s="19"><f>INDEX($A$14:$A$37,MATCH(22,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C51" s="19"><f>INDEX($B$14:$B$37,MATCH(22,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D51" s="19"><f>INDEX($C$14:$C$37,MATCH(22,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="52">
+  <c r="A52" s="17" t="inlineStr"><is><t>2</t></is></c>
+  <c r="B52" s="19"><f>INDEX($A$14:$A$37,MATCH(23,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C52" s="19"><f>INDEX($B$14:$B$37,MATCH(23,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D52" s="19"><f>INDEX($C$14:$C$37,MATCH(23,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="53">
+  <c r="A53" s="17" t="inlineStr"><is><t>1</t></is></c>
+  <c r="B53" s="19"><f>INDEX($A$14:$A$37,MATCH(24,$D$14:$D$37,0))</f><v></v></c>
+  <c r="C53" s="19"><f>INDEX($B$14:$B$37,MATCH(24,$D$14:$D$37,0))</f><v></v></c>
+  <c r="D53" s="19"><f>INDEX($C$14:$C$37,MATCH(24,$D$14:$D$37,0))</f><v></v></c>
+</row>
+<row r="54">
+  <c r="A54" s="0"/>
+</row>
+<row r="55" ht="22" customHeight="1">
+  <c r="A55" s="5" t="inlineStr"><is><t>五、NPS 分布（基于原始数据 AC5:AC28） - 公式自动</t></is></c>
+</row>
+<row r="56">
+  <c r="A56" s="14" t="inlineStr"><is><t>区间</t></is></c>
+  <c r="B56" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C56" s="14" t="inlineStr"><is><t>占比</t></is></c>
+  <c r="D56" s="14" t="inlineStr"><is><t>类型</t></is></c>
+</row>
+<row r="57">
+  <c r="A57" s="14" t="inlineStr"><is><t>推荐者 (9-10)</t></is></c>
+  <c r="B57" s="19"><f>COUNTIF(AC5:AC28,"&amp;gt;=9")-COUNTIF(AC5:AC28,"&amp;gt;10")</f><v></v></c>
+  <c r="C57" s="19"><f>B57/24</f><v></v></c>
+  <c r="D57" s="14" t="inlineStr"><is><t>推荐者</t></is></c>
+</row>
+<row r="58">
+  <c r="A58" s="14" t="inlineStr"><is><t>被动满意 (7-8)</t></is></c>
+  <c r="B58" s="19"><f>COUNTIF(AC5:AC28,"&amp;gt;=7")-COUNTIF(AC5:AC28,"&amp;gt;8")</f><v></v></c>
+  <c r="C58" s="19"><f>B58/24</f><v></v></c>
+  <c r="D58" s="14" t="inlineStr"><is><t>被动满意</t></is></c>
+</row>
+<row r="59">
+  <c r="A59" s="14" t="inlineStr"><is><t>贬损者 (0-6)</t></is></c>
+  <c r="B59" s="19"><f>COUNTIF(AC5:AC28,"&amp;gt;=0")-COUNTIF(AC5:AC28,"&amp;gt;6")</f><v></v></c>
+  <c r="C59" s="19"><f>B59/24</f><v></v></c>
+  <c r="D59" s="14" t="inlineStr"><is><t>贬损者</t></is></c>
+</row>
+<row r="60">
+  <c r="A60" s="14" t="inlineStr"><is><t>NPS 总人数</t></is></c>
+  <c r="B60" s="19"><f>SUM(B57:B59)</f><v></v></c>
+  <c r="C60" s="19"><f>SUM(C57:C59)</f><v></v></c>
+</row>
+<row r="61">
+  <c r="A61" s="4" t="inlineStr"><is><t>NPS = 推荐者% - 贬损者%</t></is></c>
+  <c r="B61" s="19"><f>C57-C59</f><v></v></c>
+  <c r="C61" s="19"><f>IF(B61&gt;=0.5,"强",IF(B61&gt;=0,"良好",IF(B61&gt;=-0.3,"待改善","需重大调整")))</f><v></v></c>
+</row>
+<row r="62">
+  <c r="A62" s="0"/>
+</row>
+<row r="63" ht="22" customHeight="1">
+  <c r="A63" s="5" t="inlineStr"><is><t>六、岗位类型分布（基于原始数据 C5:C28）</t></is></c>
+</row>
+<row r="64">
+  <c r="A64" s="14" t="inlineStr"><is><t>岗位类型</t></is></c>
+  <c r="B64" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C64" s="14" t="inlineStr"><is><t>占比</t></is></c>
+  <c r="D64" s="14" t="inlineStr"><is><t>平均总分(24题)</t></is></c>
+</row>
+<row r="65">
+  <c r="A65" s="14" t="inlineStr"><is><t>业务管理者</t></is></c>
+  <c r="B65" s="19"><f>COUNTIF(C5:C28,"业务管理者")</f><v></v></c>
+  <c r="C65" s="19"><f>B65/24</f><v></v></c>
+  <c r="D65" s="19"><f>IFERROR(SUMIF(C5:C28,"业务管理者",E5:AB28)/B65,"")</f><v></v></c>
+</row>
+<row r="66">
+  <c r="A66" s="14" t="inlineStr"><is><t>HR/人才发展</t></is></c>
+  <c r="B66" s="19"><f>COUNTIF(C5:C28,"HR/人才发展")</f><v></v></c>
+  <c r="C66" s="19"><f>B66/24</f><v></v></c>
+  <c r="D66" s="19"><f>IFERROR(SUMIF(C5:C28,"HR/人才发展",E5:AB28)/B66,"")</f><v></v></c>
+</row>
+<row r="67">
+  <c r="A67" s="14" t="inlineStr"><is><t>技术人员</t></is></c>
+  <c r="B67" s="19"><f>COUNTIF(C5:C28,"技术人员")</f><v></v></c>
+  <c r="C67" s="19"><f>B67/24</f><v></v></c>
+  <c r="D67" s="19"><f>IFERROR(SUMIF(C5:C28,"技术人员",E5:AB28)/B67,"")</f><v></v></c>
+</row>
+<row r="68">
+  <c r="A68" s="14" t="inlineStr"><is><t>其他</t></is></c>
+  <c r="B68" s="19"><f>COUNTIF(C5:C28,"其他")</f><v></v></c>
+  <c r="C68" s="19"><f>B68/24</f><v></v></c>
+  <c r="D68" s="19"><f>IFERROR(SUMIF(C5:C28,"其他",E5:AB28)/B68,"")</f><v></v></c>
+</row>
+<row r="69">
+  <c r="A69" s="0"/>
+</row>
+<row r="70" ht="22" customHeight="1">
+  <c r="A70" s="5" t="inlineStr"><is><t>七、下属规模分布（基于原始数据 D5:D28）</t></is></c>
+</row>
+<row r="71">
+  <c r="A71" s="14" t="inlineStr"><is><t>下属规模</t></is></c>
+  <c r="B71" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C71" s="14" t="inlineStr"><is><t>占比</t></is></c>
+  <c r="D71" s="14" t="inlineStr"><is><t>平均总分(24题)</t></is></c>
+</row>
+<row r="72">
+  <c r="A72" s="14" t="inlineStr"><is><t>0-3</t></is></c>
+  <c r="B72" s="19"><f>COUNTIF(D5:D28,"0-3")</f><v></v></c>
+  <c r="C72" s="19"><f>B72/24</f><v></v></c>
+  <c r="D72" s="19"><f>IFERROR(SUMIF(D5:D28,"0-3",E5:AB28)/B72,"")</f><v></v></c>
+</row>
+<row r="73">
+  <c r="A73" s="14" t="inlineStr"><is><t>4-8</t></is></c>
+  <c r="B73" s="19"><f>COUNTIF(D5:D28,"4-8")</f><v></v></c>
+  <c r="C73" s="19"><f>B73/24</f><v></v></c>
+  <c r="D73" s="19"><f>IFERROR(SUMIF(D5:D28,"4-8",E5:AB28)/B73,"")</f><v></v></c>
+</row>
+<row r="74">
+  <c r="A74" s="14" t="inlineStr"><is><t>9-15</t></is></c>
+  <c r="B74" s="19"><f>COUNTIF(D5:D28,"9-15")</f><v></v></c>
+  <c r="C74" s="19"><f>B74/24</f><v></v></c>
+  <c r="D74" s="19"><f>IFERROR(SUMIF(D5:D28,"9-15",E5:AB28)/B74,"")</f><v></v></c>
+</row>
+<row r="75">
+  <c r="A75" s="14" t="inlineStr"><is><t>15以上</t></is></c>
+  <c r="B75" s="19"><f>COUNTIF(D5:D28,"15以上")</f><v></v></c>
+  <c r="C75" s="19"><f>B75/24</f><v></v></c>
+  <c r="D75" s="19"><f>IFERROR(SUMIF(D5:D28,"15以上",E5:AB28)/B75,"")</f><v></v></c>
+</row>
+<row r="76">
+  <c r="A76" s="0"/>
+</row>
+<row r="77" ht="22" customHeight="1">
+  <c r="A77" s="5" t="inlineStr"><is><t>八、&quot;下周第一个动作&quot;覆盖数（基于 AF5:AF28）</t></is></c>
+</row>
+<row r="78">
+  <c r="A78" s="14" t="inlineStr"><is><t>动作类型</t></is></c>
+  <c r="B78" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C78" s="14" t="inlineStr"><is><t>占比</t></is></c>
+</row>
+<row r="79">
+  <c r="A79" s="14" t="inlineStr"><is><t>产品决策判断记录</t></is></c>
+  <c r="B79" s="19"><f>COUNTIF(AF5:AF28,"*产品决策判断记录*")</f><v></v></c>
+  <c r="C79" s="19"><f>B79/24</f><v></v></c>
+</row>
+<row r="80">
+  <c r="A80" s="14" t="inlineStr"><is><t>F3四步</t></is></c>
+  <c r="B80" s="19"><f>COUNTIF(AF5:AF28,"*F3四步*")</f><v></v></c>
+  <c r="C80" s="19"><f>B80/24</f><v></v></c>
+</row>
+<row r="81">
+  <c r="A81" s="14" t="inlineStr"><is><t>双轨评估</t></is></c>
+  <c r="B81" s="19"><f>COUNTIF(AF5:AF28,"*双轨评估*")</f><v></v></c>
+  <c r="C81" s="19"><f>B81/24</f><v></v></c>
+</row>
+<row r="82">
+  <c r="A82" s="14" t="inlineStr"><is><t>启动问题</t></is></c>
+  <c r="B82" s="19"><f>COUNTIF(AF5:AF28,"*启动问题*")</f><v></v></c>
+  <c r="C82" s="19"><f>B82/24</f><v></v></c>
+</row>
+<row r="83">
+  <c r="A83" s="14" t="inlineStr"><is><t>F9决策树</t></is></c>
+  <c r="B83" s="19"><f>COUNTIF(AF5:AF28,"*F9决策树*")</f><v></v></c>
+  <c r="C83" s="19"><f>B83/24</f><v></v></c>
+</row>
+<row r="84">
+  <c r="A84" s="14" t="inlineStr"><is><t>F5四原则</t></is></c>
+  <c r="B84" s="19"><f>COUNTIF(AF5:AF28,"*F5四原则*")</f><v></v></c>
+  <c r="C84" s="19"><f>B84/24</f><v></v></c>
+</row>
+<row r="85">
+  <c r="A85" s="14" t="inlineStr"><is><t>面谈共研</t></is></c>
+  <c r="B85" s="19"><f>COUNTIF(AF5:AF28,"*面谈共研*")</f><v></v></c>
+  <c r="C85" s="19"><f>B85/24</f><v></v></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

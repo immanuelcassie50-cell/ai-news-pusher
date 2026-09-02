@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="30" uniqueCount="30">
+  <si><t>个人学习路径规划表</t></si>
+  <si><t>阶段</t></si>
+  <si><t>学习目标</t></si>
+  <si><t>学习内容</t></si>
+  <si><t>开始日期</t></si>
+  <si><t>结束日期</t></si>
+  <si><t>资源推荐</t></si>
+  <si><t>完成状态</t></si>
+  <si><t>入门期（1-2月）</t></si>
+  <si><t>掌握AI基础概念和工具使用方法</t></si>
+  <si><t>学习ChatGPT、Midjourney等AI工具基础操作</t></si>
+  <si><t>成长期（3-6月）</t></si>
+  <si><t>深入学习专业领域AI应用，能够使用AI辅助工作</t></si>
+  <si><t>学习Prompt工程、数据分析AI应用、专业软件AI集成</t></si>
+  <si><t>进阶期（7-11月）</t></si>
+  <si><t>具备独立使用AI解决问题的能力，能够创新应用</t></si>
+  <si><t>学习AI工作流设计、跨工具组合应用</t></si>
+  <si><t>巩固期（12月）</t></si>
+  <si><t>深化专业技能，形成个人AI应用体系</t></si>
+  <si><t>完成个人知识库建设，复盘与输出</t></si>
+  <si><t>已完成</t></si>
+  <si><t>进行中</t></si>
+  <si><t>未开始</t></si>
+  <si><t>汇总统计</t></si>
+  <si><t>总阶段数</t></si>
+  <si><t>已完成阶段数</t></si>
+  <si><t>总体进度</t></si>
+  <si><t>持续时间(天)</t></si>
+  <si><t>网易云课堂、极客时间</t></si>
+  <si><t>行业报告、专业社群、LinkedIn Learning</t></si>
+  <si><t>GitHub开源项目、技术博客、知乎专栏</t></si>
+  <si><t>论文、播客、行业会议演讲</t></si>
+</sst>

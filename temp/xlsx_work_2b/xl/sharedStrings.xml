@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+     count="35" uniqueCount="35">
+  <si><t>四步故事结构工作表</t></si>
+  <si><t>课程/模块名称</t></si>
+  <si><t>姓名</t></si>
+  <si><t>日期</t></si>
+  <si><t>第一步：时空锚定</t></si>
+  <si><t>时间（When）</t></si>
+  <si><t>地点（Where）</t></si>
+  <si><t>人物（Who）</t></si>
+  <si><t>我当时的角色</t></si>
+  <si><t>关键背景</t></si>
+  <si><t>第二步：张力触发</t></si>
+  <si><t>那个&quot;不对劲&quot;的时刻是什么</t></si>
+  <si><t>我当时内心的感受</t></si>
+  <si><t>关键动作或反应</t></si>
+  <si><t>第三步：行动转化</t></si>
+  <si><t>有人做了什么吗？</t></si>
+  <si><t>变化是怎样发生的</t></si>
+  <si><t>关键的转折点是什么</t></si>
+  <si><t>第四步：意义落点</t></si>
+  <si><t>这个故事说明了一个什么道理</t></si>
+  <si><t>它和课程知识点的关系是什么</t></si>
+  <si><t>学员能带走什么</t></si>
+  <si><t>三句话测试</t></si>
+  <si><t>第一句（时空+张力）</t></si>
+  <si><t>第二句（行动+转化）</t></si>
+  <si><t>第三句（意义落点）</t></si>
+  <si><t>测试结果</t></si>
+  <si><t>□ 清楚，可以继续</t></si>
+  <si><t>□ 需要调整，调整步骤：第____步</t></si>
+  <si><t>扩展两步（可选）</t></si>
+  <si><t>感官细节补充</t></si>
+  <si><t>环境氛围描写</t></si>
+  <si><t>后续追踪</t></si>
+  <si><t>计划使用场景</t></si>
+  <si><t>更新时间</t></si>
+</sst>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView workbookViewId="0">
+    <pane xSplit="1" topLeftCell="B1" activePane="topRight" state="frozen"/>
+  </sheetView></sheetViews>
+  <sheetFormatPr defaultRowHeight="15"/>
+  <cols>
+    <col min="1" max="1" width="24" customWidth="1"/>
+    <col min="2" max="2" width="65" customWidth="1"/>
+  </cols>
+  <sheetData>
+<row r="1"><c r="A1" t="s" s="4"><v>82</v></c><c r="B1" t="s" s="4"><v>83</v></c></row>
+<row r="2"><c r="A2" t="s" s="0"><v>24</v></c><c r="B2" t="s" s="0"><v>25</v></c></row>
+<row r="3"><c r="A3" t="s" s="0"><v>26</v></c><c r="B3" t="s" s="0"><v>27</v></c></row>
+<row r="4"><c r="A4" t="s" s="0"><v>28</v></c><c r="B4" t="s" s="0"><v>29</v></c></row>
+<row r="5"><c r="A5" t="s" s="0"><v>31</v></c><c r="B5" t="s" s="0"><v>32</v></c></row>
+<row r="6"><c r="A6" t="s" s="0"><v>33</v></c><c r="B6" t="s" s="0"><v>34</v></c></row>
+<row r="7"><c r="A7" t="s" s="0"><v>36</v></c><c r="B7" t="s" s="0"><v>37</v></c></row>
+<row r="8"><c r="A8" t="s" s="0"><v>39</v></c><c r="B8" t="s" s="0"><v>40</v></c></row>
+<row r="9"><c r="A9" t="s" s="0"><v>41</v></c><c r="B9" t="s" s="0"><v>42</v></c></row>
+<row r="10"><c r="A10" t="s" s="0"><v>44</v></c><c r="B10" t="s" s="0"><v>45</v></c></row>
+<row r="11"><c r="A11" t="s" s="0"><v>47</v></c><c r="B11" t="s" s="0"><v>48</v></c></row>
+<row r="12"><c r="A12" t="s" s="0"><v>49</v></c><c r="B12" t="s" s="0"><v>50</v></c></row>
+<row r="13"><c r="A13" t="s" s="0"><v>52</v></c><c r="B13" t="s" s="0"><v>53</v></c></row>
+<row r="14"><c r="A14" t="s" s="0"><v>55</v></c><c r="B14" t="s" s="0"><v>56</v></c></row>
+  </sheetData>
+</worksheet>

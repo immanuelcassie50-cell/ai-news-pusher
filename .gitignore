@@ -53,3 +53,6 @@ yarn-error.log*
 # IDEs
 .idea/
 *.iml
+
+# 本地设置文件
+GITHUB_SETUP.md

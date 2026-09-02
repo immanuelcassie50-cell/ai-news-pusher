@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <numFmts count="5">
+    <numFmt numFmtId="164" formatCode="$#,##0;($#,##0);&quot;-&quot;"/>
+    <numFmt numFmtId="165" formatCode="0.0%"/>
+    <numFmt numFmtId="166" formatCode="0.0x"/>
+    <numFmt numFmtId="167" formatCode="#,##0"/>
+    <numFmt numFmtId="168" formatCode="@"/>
+  </numFmts>
+  <fonts count="8">
+    <font><sz val="11"/><name val="Calibri"/></font>
+    <font><sz val="11"/><name val="Calibri"/><color rgb="000000FF"/></font>
+    <font><sz val="11"/><name val="Calibri"/><color rgb="00000000"/></font>
+    <font><sz val="11"/><name val="Calibri"/><color rgb="00008000"/></font>
+    <font><b/><sz val="11"/><name val="Calibri"/><color rgb="00000000"/></font>
+    <font><b/><sz val="14"/><name val="Calibri"/><color rgb="FFFFFFFF"/></font>
+    <font><sz val="11"/><name val="Calibri"/><color rgb="00000000"/><i/></font>
+    <font><sz val="11"/><name val="Calibri"/><color rgb="00800000"/></font>
+  </fonts>
+  <fills count="5">
+    <fill><patternFill patternType="none"/></fill>
+    <fill><patternFill patternType="gray125"/></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00FF0000"/></patternFill></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00D9D9D9"/></patternFill></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00FFFF00"/></patternFill></fill>
+  </fills>
+  <borders count="1"><border><left/><right/><top/><bottom/><diagonal/></border></borders>
+  <cellXfs count="16">
+    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>
+    <xf numFmtId="0" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+    <xf numFmtId="0" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+    <xf numFmtId="0" fontId="3" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+    <xf numFmtId="0" fontId="4" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+    <xf numFmtId="164" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="164" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="165" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="165" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="167" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="167" fontId="2" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="1" fontId="1" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="0" fontId="5" fillId="2" borderId="0" xfId="0" applyFont="1" applyFill="1"/>
+    <xf numFmtId="0" fontId="4" fillId="3" borderId="0" xfId="0" applyFont="1" applyFill="1"/>
+    <xf numFmtId="168" fontId="6" fillId="0" borderId="0" xfId="0" applyFont="1" applyNumberFormat="1"/>
+    <xf numFmtId="0" fontId="7" fillId="0" borderId="0" xfId="0" applyFont="1"/>
+  </cellXfs>
+</styleSheet>

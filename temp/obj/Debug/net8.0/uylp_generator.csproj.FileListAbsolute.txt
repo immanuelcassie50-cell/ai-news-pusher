@@ -1,0 +1,6 @@
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.csproj.AssemblyReference.cache
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.AssemblyInfoInputs.cache
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.AssemblyInfo.cs
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.csproj.CoreCompileInputs.cache
+D:\CC\temp\obj\Debug\net8.0\uylp_generator.sourcelink.json

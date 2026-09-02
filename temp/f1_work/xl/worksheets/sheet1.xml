@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<sheetViews><sheetView workbookViewId="0"><selection activeCell="A1" sqref="A1"/></sheetView></sheetViews>
+<sheetFormatPr baseColWidth="8" defaultRowHeight="15"/>
+<cols><col min="1" max="1" width="5" customWidth="1"/><col min="2" max="2" width="35" customWidth="1"/><col min="3" max="3" width="10" customWidth="1"/><col min="4" max="4" width="10" customWidth="1"/><col min="5" max="5" width="10" customWidth="1"/><col min="6" max="6" width="10" customWidth="1"/><col min="7" max="7" width="12" customWidth="1"/></cols>
+<sheetData>
+<row r="1">
+  <c r="A1" s="1" t="inlineStr"><is><t>信任现状自测表</t></is></c>
+  <c r="B1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="C1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="D1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="E1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="F1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="G1" s="1" t="inlineStr"><is><t>得分</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="B2" s="2" t="inlineStr"><is><t>题目</t></is></c>
+  <c r="C2" s="2" t="inlineStr"><is><t>从不(1)</t></is></c>
+  <c r="D2" s="2" t="inlineStr"><is><t>偶尔(2)</t></is></c>
+  <c r="E2" s="2" t="inlineStr"><is><t>有时(3)</t></is></c>
+  <c r="F2" s="2" t="inlineStr"><is><t>经常(4)</t></is></c>
+  <c r="G2" s="2" t="inlineStr"><is><t>总是(5)</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="5" t="inlineStr"><is><t>1</t></is></c>
+  <c r="B3" s="4" t="inlineStr"><is><t>1. 我在团队中主动分享信息和资源</t></is></c>
+  <c r="C3" s="7"/>
+  <c r="D3" s="7"/>
+  <c r="E3" s="7"/>
+  <c r="F3" s="7"/>
+  <c r="G3" s="7"/>
+</row>
+<row r="4">
+  <c r="A4" s="5" t="inlineStr"><is><t>2</t></is></c>
+  <c r="B4" s="4" t="inlineStr"><is><t>2. 我遵守对同事和客户的承诺</t></is></c>
+  <c r="C4" s="7"/>
+  <c r="D4" s="7"/>
+  <c r="E4" s="7"/>
+  <c r="F4" s="7"/>
+  <c r="G4" s="7"/>
+</row>
+<row r="5">
+  <c r="A5" s="5" t="inlineStr"><is><t>3</t></is></c>
+  <c r="B5" s="4" t="inlineStr"><is><t>3. 我承认自己的错误并及时修正</t></is></c>
+  <c r="C5" s="7"/>
+  <c r="D5" s="7"/>
+  <c r="E5" s="7"/>
+  <c r="F5" s="7"/>
+  <c r="G5" s="7"/>
+</row>
+<row r="6">
+  <c r="A6" s="5" t="inlineStr"><is><t>4</t></is></c>
+  <c r="B6" s="4" t="inlineStr"><is><t>4. 我对团队成员的工作能力有信心</t></is></c>
+  <c r="C6" s="7"/>
+  <c r="D6" s="7"/>
+  <c r="E6" s="7"/>
+  <c r="F6" s="7"/>
+  <c r="G6" s="7"/>
+</row>
+<row r="7">
+  <c r="A7" s="5" t="inlineStr"><is><t>5</t></is></c>
+  <c r="B7" s="4" t="inlineStr"><is><t>5. 我在困难时期支持团队成员</t></is></c>
+  <c r="C7" s="7"/>
+  <c r="D7" s="7"/>
+  <c r="E7" s="7"/>
+  <c r="F7" s="7"/>
+  <c r="G7" s="7"/>
+</row>
+<row r="8">
+  <c r="A8" s="5" t="inlineStr"><is><t>6</t></is></c>
+  <c r="B8" s="4" t="inlineStr"><is><t>6. 我坦诚表达不同意见</t></is></c>
+  <c r="C8" s="7"/>
+  <c r="D8" s="7"/>
+  <c r="E8" s="7"/>
+  <c r="F8" s="7"/>
+  <c r="G8" s="7"/>
+</row>
+<row r="9">
+  <c r="A9" s="5" t="inlineStr"><is><t>7</t></is></c>
+  <c r="B9" s="4" t="inlineStr"><is><t>7. 我信守保密责任</t></is></c>
+  <c r="C9" s="7"/>
+  <c r="D9" s="7"/>
+  <c r="E9" s="7"/>
+  <c r="F9" s="7"/>
+  <c r="G9" s="7"/>
+</row>
+<row r="10">
+  <c r="A10" s="5" t="inlineStr"><is><t>8</t></is></c>
+  <c r="B10" s="4" t="inlineStr"><is><t>8. 我按时完成任务并保证质量</t></is></c>
+  <c r="C10" s="7"/>
+  <c r="D10" s="7"/>
+  <c r="E10" s="7"/>
+  <c r="F10" s="7"/>
+  <c r="G10" s="7"/>
+</row>
+<row r="11">
+  <c r="A11" s="5" t="inlineStr"><is><t>9</t></is></c>
+  <c r="B11" s="4" t="inlineStr"><is><t>9. 我对他人表示真诚的赞赏和感谢</t></is></c>
+  <c r="C11" s="7"/>
+  <c r="D11" s="7"/>
+  <c r="E11" s="7"/>
+  <c r="F11" s="7"/>
+  <c r="G11" s="7"/>
+</row>
+<row r="12">
+  <c r="A12" s="5" t="inlineStr"><is><t>10</t></is></c>
+  <c r="B12" s="4" t="inlineStr"><is><t>10. 我主动帮助团队成员解决问题</t></is></c>
+  <c r="C12" s="7"/>
+  <c r="D12" s="7"/>
+  <c r="E12" s="7"/>
+  <c r="F12" s="7"/>
+  <c r="G12" s="7"/>
+</row>
+<row r="13">
+  <c r="A13" s="2" t="inlineStr"><is><t>得分解读:</t></is></c>
+  <c r="B13" s="4" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="4" t="inlineStr"><is><t>40-50分: 高度信任</t></is></c>
+  <c r="B14" s="4" t="inlineStr"><is><t>人际关系稳固，值得信赖</t></is></c>
+</row>
+<row r="15">
+  <c r="A15" s="4" t="inlineStr"><is><t>30-39分: 良好信任</t></is></c>
+  <c r="B15" s="4" t="inlineStr"><is><t>信任基础良好，有提升空间</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="4" t="inlineStr"><is><t>20-29分: 信任危机</t></is></c>
+  <c r="B16" s="4" t="inlineStr"><is><t>存在信任问题，需要修复</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="4" t="inlineStr"><is><t>10-19分: 信任崩塌</t></is></c>
+  <c r="B17" s="4" t="inlineStr"><is><t>严重信任问题，需要紧急重建</t></is></c>
+</row>
+<row r="18">
+  <c r="A18" s="2" t="inlineStr"><is><t>改进建议:</t></is></c>
+  <c r="B18" s="9" t="inlineStr"><is><t></t></is></c>
+</row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

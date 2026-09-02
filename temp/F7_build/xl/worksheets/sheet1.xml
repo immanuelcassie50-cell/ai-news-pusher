@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="14" customWidth="1"/>
+    <col min="2" max="2" width="35" customWidth="1"/>
+    <col min="3" max="3" width="18" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+    <col min="5" max="5" width="16" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1">
+      <c r="A1" t="s" s="9"><v>0</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>44</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="1"><v>1</v></c>
+      <c r="B3" t="s" s="1"><v>2</v></c>
+      <c r="C3" t="s" s="1"><v>3</v></c>
+      <c r="D3" t="s" s="1"><v>4</v></c>
+      <c r="E3" t="s" s="1"><v>5</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="3"><v>6</v></c>
+      <c r="B4" t="s" s="2"><v>7</v></c>
+      <c r="C4" t="s" s="2"><v>12</v></c>
+      <c r="D4" t="s" s="3"><v>32</v></c>
+      <c r="E4" s="2"><v>0</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="4"><v>8</v></c>
+      <c r="B5" t="s" s="2"><v>9</v></c>
+      <c r="C5" t="s" s="2"><v>13</v></c>
+      <c r="D5" t="s" s="3"><v>33</v></c>
+      <c r="E5" s="2"><v>0</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="3"><v>10</v></c>
+      <c r="B6" t="s" s="2"><v>11</v></c>
+      <c r="C6" t="s" s="2"><v>14</v></c>
+      <c r="D6" t="s" s="3"><v>34</v></c>
+      <c r="E6" s="2"><v>0</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="4"><v>15</v></c>
+      <c r="B7" t="s" s="2"><v>16</v></c>
+      <c r="C7" t="s" s="2"><v>17</v></c>
+      <c r="D7" t="s" s="3"><v>35</v></c>
+      <c r="E7" s="2"><v>0</v></c>
+    </row>
+    <row r="8">
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="1"><v>40</v></c>
+      <c r="B9" t="s" s="1"><v>41</v></c>
+      <c r="C9" t="s" s="1"><v>42</v></c>
+    </row>
+    <row r="10">
+      <c r="A10" s="10"><v>0</v></c>
+      <c r="B10" s="6"><f>IF(A10="","",A10-TODAY())</f><v></v></c>
+      <c r="C10" s="6"><f>IF(A10="","未认证",IF(A10&lt;TODAY(),"已过期",IF(A10-TODAY()&lt;=30,"即将到期（30天内）","有效")))</f><v></v></c>
+    </row>
+    <row r="11">
+      <c r="A11" s="10"><v>0</v></c>
+      <c r="B11" s="6"><f>IF(A11="","",A11-TODAY())</f><v></v></c>
+      <c r="C11" s="6"><f>IF(A11="","未认证",IF(A11&lt;TODAY(),"已过期",IF(A11-TODAY()&lt;=30,"即将到期（30天内）","有效")))</f><v></v></c>
+    </row>
+    <row r="12">
+      <c r="A12" s="10"><v>0</v></c>
+      <c r="B12" s="6"><f>IF(A12="","",A12-TODAY())</f><v></v></c>
+      <c r="C12" s="6"><f>IF(A12="","未认证",IF(A12&lt;TODAY(),"已过期",IF(A12-TODAY()&lt;=30,"即将到期（30天内）","有效")))</f><v></v></c>
+    </row>
+    <row r="13">
+      <c r="A13" s="10"><v>0</v></c>
+      <c r="B13" s="6"><f>IF(A13="","",A13-TODAY())</f><v></v></c>
+      <c r="C13" s="6"><f>IF(A13="","未认证",IF(A13&lt;TODAY(),"已过期",IF(A13-TODAY()&lt;=30,"即将到期（30天内）","有效")))</f><v></v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75"/>
+</worksheet>

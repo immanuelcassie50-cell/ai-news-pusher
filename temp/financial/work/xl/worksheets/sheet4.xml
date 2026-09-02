@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="14" customWidth="1"/>
+    <col min="2" max="2" width="28" customWidth="1"/>
+    <col min="3" max="3" width="10" customWidth="1"/>
+    <col min="4" max="4" width="12" customWidth="1"/>
+    <col min="5" max="5" width="28" customWidth="1"/>
+    <col min="6" max="6" width="30" customWidth="1"/>
+  </cols>
+  <autoFilter ref="A2:F15"/>
+  <sheetData>
+    <row r="1" ht="22" customHeight="1">
+      <c r="A1" t="s" s="4"><v>86</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="4"><v>87</v></c>
+      <c r="B2" t="s" s="4"><v>88</v></c>
+      <c r="C2" t="s" s="4"><v>89</v></c>
+      <c r="D2" t="s" s="4"><v>90</v></c>
+      <c r="E2" t="s" s="4"><v>91</v></c>
+      <c r="F2" t="s" s="4"><v>92</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="1"><v>93</v></c>
+      <c r="B3" t="s" s="1"><v>经营性现金流持续为负但净利润为正</v></c>
+      <c r="C3" t="s" s="1"><v>高</v></c>
+      <c r="D3" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E3" t="s" s="1"><v>可能存在虚构收入、提前确认或关联交易</v></c>
+      <c r="F3" t="s" s="1"><v>深入核对现金流量表与利润表的匹配性</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="1"><v>94</v></c>
+      <c r="B4" t="s" s="1"><v>经营现金流与净利润严重背离</v></c>
+      <c r="C4" t="s" s="1"><v>高</v></c>
+      <c r="D4" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E4" t="s" s="1"><v>盈利质量差，可能存在盈余管理</v></c>
+      <c r="F4" t="s" s="1"><v>分析经营现金流与净利润的连续年度差异</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="1"><v>95</v></c>
+      <c r="B5" t="s" s="1"><v>存货增速远超营收增速</v></c>
+      <c r="C5" t="s" s="1"><v>中</v></c>
+      <c r="D5" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E5" t="s" s="1"><v>产品滞销或成本归集不当</v></c>
+      <c r="F5" t="s" s="1"><v>分析存货结构，检查跌价准备计提</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="1"><v>96</v></c>
+      <c r="B6" t="s" s="1"><v>应收账款增速远超营收增速</v></c>
+      <c r="C6" t="s" s="1"><v>高</v></c>
+      <c r="D6" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E6" t="s" s="1"><v>放宽信用政策或虚构收入</v></c>
+      <c r="F6" t="s" s="1"><v>分析应收账龄结构，检查大客户变化</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="1"><v>97</v></c>
+      <c r="B7" t="s" s="1"><v>毛利率明显低于行业平均</v></c>
+      <c r="C7" t="s" s="1"><v>中</v></c>
+      <c r="D7" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E7" t="s" s="1"><v>成本管控问题或定价权丧失</v></c>
+      <c r="F7" t="s" s="1"><v>对比同业毛利率，分析成本结构</v></c>
+    </row>
+    <row r="8">
+      <c r="A8" t="s" s="1"><v>98</v></c>
+      <c r="B8" t="s" s="1"><v>存货周转天数明显增加</v></c>
+      <c r="C8" t="s" s="1"><v>中</v></c>
+      <c r="D8" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E8" t="s" s="1"><v>产品竞争力下降或需求放缓</v></c>
+      <c r="F8" t="s" s="1"><v>分析存货周转变化趋势及原因</v></c>
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="1"><v>99</v></c>
+      <c r="B9" t="s" s="1"><v>单一客户占比超过50%</v></c>
+      <c r="C9" t="s" s="1"><v>中</v></c>
+      <c r="D9" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E9" t="s" s="1"><v>客户高度集中，经营风险大</v></c>
+      <c r="F9" t="s" s="1"><v>关注大客户稳定性及业务可持续性</v></c>
+    </row>
+    <row r="10">
+      <c r="A10" t="s" s="1"><v>100</v></c>
+      <c r="B10" t="s" s="1"><v>商誉占净资产超过30%</v></c>
+      <c r="C10" t="s" s="1"><v>高</v></c>
+      <c r="D10" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E10" t="s" s="1"><v>高溢价并购潜含商誉爆雷风险</v></c>
+      <c r="F10" t="s" s="1"><v>关注商誉减值测试及被并购方业绩</v></c>
+    </row>
+    <row r="11">
+      <c r="A11" t="s" s="1"><v>101</v></c>
+      <c r="B11" t="s" s="1"><v>资产负债率超过70%</v></c>
+      <c r="C11" t="s" s="1"><v>高</v></c>
+      <c r="D11" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E11" t="s" s="1"><v>财务杠杆过高，偿债风险大</v></c>
+      <c r="F11" t="s" s="1"><v>分析负债结构，关注到期债务</v></c>
+    </row>
+    <row r="12">
+      <c r="A12" t="s" s="1"><v>102</v></c>
+      <c r="B12" t="s" s="1"><v>被出具非标准审计意见</v></c>
+      <c r="C12" t="s" s="1"><v>高</v></c>
+      <c r="D12" t="s" s="1"><v>检查/未检查</v></c>
+      <c r="E12" t="s" s="1"><v>财务信息质量存疑，风险高</v></c>
+      <c r="F12" t="s" s="1"><v>仔细阅读审计报告，充分评估风险</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

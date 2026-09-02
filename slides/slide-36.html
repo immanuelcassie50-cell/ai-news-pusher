@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>六格模型环境侧详解</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#2b2d42; font-family:'Microsoft YaHei','Times New Roman',serif;">
+
+<!-- Top accent bar -->
+<svg style="position:absolute; top:0; left:0;" width="960" height="8" viewBox="0 0 960 8">
+  <rect width="960" height="8" fill="#ef233c"/>
+</svg>
+
+<!-- Section number badge -->
+<svg style="position:absolute; top:60px; left:60px;" width="60" height="60" viewBox="0 0 60 60">
+  <circle cx="30" cy="30" r="28" fill="#ef233c"/>
+  <text x="30" y="30" text-anchor="middle" dominant-baseline="central" font-size="28" font-weight="700" fill="#ffffff">36</text>
+</svg>
+
+<!-- Main title -->
+<p style="position:absolute; top:60px; left:140px; margin:0; font-size:40px; font-weight:700; color:#edf2f4; letter-spacing:4px;">六格模型环境侧详解</p>
+
+<!-- Subtitle -->
+<p style="position:absolute; top:115px; left:140px; margin:0; font-size:18px; font-weight:400; color:#8d99ae; letter-spacing:2px;">学习只是过程，学以致用才是目的</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:150px; left:140px;" width="200" height="3" aria-hidden="true">
+  <rect width="200" height="3" fill="#ef233c"/>
+</svg>
+
+<!-- Two-column card layout -->
+<!-- Card 1: 工具1练习 -->
+<svg style="position:absolute; top:190px; left:60px;" width="400" height="280" viewBox="0 0 400 280">
+  <rect width="400" height="280" rx="12" fill="#8d99ae" opacity="0.15"/>
+  <rect x="0" y="0" width="400" height="50" rx="12" fill="#ef233c"/>
+  <rect x="0" y="40" width="400" height="10" fill="#ef233c"/>
+  <text x="200" y="30" text-anchor="middle" dominant-baseline="central" font-size="20" font-weight="700" fill="#ffffff">工具1练习</text>
+  <text x="200" y="80" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">反思学习过程</text>
+  <text x="200" y="110" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">将知识转化为行动</text>
+  <text x="200" y="140" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">实践出真知</text>
+  <!-- Checkmark icons -->
+  <svg style="position:absolute; top:170px; left:80px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef233c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+  <text x="115" y="182" text-anchor="start" dominant-baseline="central" font-size="13" fill="#8d99ae">完成练习1</text>
+  <svg style="position:absolute; top:210px; left:80px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ef233c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+  <text x="115" y="222" text-anchor="start" dominant-baseline="central" font-size="13" fill="#8d99ae">记录心得体会</text>
+</svg>
+
+<!-- Card 2: 工具2练习 -->
+<svg style="position:absolute; top:190px; left:500px;" width="400" height="280" viewBox="0 0 400 280">
+  <rect width="400" height="280" rx="12" fill="#8d99ae" opacity="0.15"/>
+  <rect x="0" y="0" width="400" height="50" rx="12" fill="#d90429"/>
+  <rect x="0" y="40" width="400" height="10" fill="#d90429"/>
+  <text x="200" y="30" text-anchor="middle" dominant-baseline="central" font-size="20" font-weight="700" fill="#ffffff">工具2练习</text>
+  <text x="200" y="80" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">落地与转化</text>
+  <text x="200" y="110" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">让我们一起反思、成长、进步</text>
+  <text x="200" y="140" text-anchor="middle" dominant-baseline="central" font-size="14" fill="#edf2f4" opacity="0.8">持续迭代优化</text>
+  <!-- Checkmark icons -->
+  <svg style="position:absolute; top:170px; left:520px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d90429" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+  <text x="555" y="182" text-anchor="start" dominant-baseline="central" font-size="13" fill="#8d99ae">完成练习2</text>
+  <svg style="position:absolute; top:210px; left:520px;" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#d90429" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+  <text x="555" y="222" text-anchor="start" dominant-baseline="central" font-size="13" fill="#8d99ae">制定行动计划</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#ef233c"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#ffffff">36</text>
+</svg>
+
+<!-- Bottom accent bar -->
+<svg style="position:absolute; bottom:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+  <rect width="960" height="6" fill="#ef233c"/>
+</svg>
+
+</div>
+</body>
+</html>

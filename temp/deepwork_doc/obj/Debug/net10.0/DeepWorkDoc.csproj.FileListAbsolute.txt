@@ -1,0 +1,6 @@
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.csproj.AssemblyReference.cache
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.AssemblyInfoInputs.cache
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.AssemblyInfo.cs
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.csproj.CoreCompileInputs.cache
+D:\CC\temp\deepwork_doc\obj\Debug\net10.0\DeepWorkDoc.sourcelink.json

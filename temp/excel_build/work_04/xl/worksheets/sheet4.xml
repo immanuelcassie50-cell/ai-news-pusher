@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="6" customWidth="1"/><col min="2" max="2" width="18" customWidth="1"/><col min="3" max="3" width="22" customWidth="1"/><col min="4" max="4" width="32" customWidth="1"/><col min="5" max="5" width="32" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>缺口类型与发展路径速查 — 按&quot;缺口+轨道&quot;找&quot;路径+启动问题&quot;</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表是纯查询表：在面谈中临时忘了&quot;这种缺口该走哪条路&quot;，翻这一页就能找到。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="24" customHeight="1">
+  <c r="A4" s="6" t="inlineStr"><is><t>【走 AI 协作力轨】— 适合：技能缺口（AI可补）+ AI工具缺口 + 部分行为缺口</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>缺口类型</t></is></c>
+  <c r="B5" s="14" t="inlineStr"><is><t>推荐路径</t></is></c>
+  <c r="C5" s="14" t="inlineStr"><is><t>具体动作</t></is></c>
+  <c r="D5" s="14" t="inlineStr"><is><t>启动问题</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="7" t="inlineStr"><is><t>AI工具缺口（没用过）</t></is></c>
+  <c r="B6" s="7" t="inlineStr"><is><t>学</t></is></c>
+  <c r="C6" s="14" t="inlineStr"><is><t>选1-2个高频任务开始用——让员工下周用AI写一份周报</t></is></c>
+  <c r="D6" s="7" t="inlineStr"><is><t>F7 启动二</t></is></c>
+</row>
+<row r="7">
+  <c r="A7" s="7" t="inlineStr"><is><t>AI工具缺口（用得浅）</t></is></c>
+  <c r="B7" s="7" t="inlineStr"><is><t>练</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>设&quot;AI使用挑战&quot;——一个月内把3个核心任务用AI重做</t></is></c>
+  <c r="D7" s="7" t="inlineStr"><is><t>F7 启动二</t></is></c>
+</row>
+<row r="8">
+  <c r="A8" s="7" t="inlineStr"><is><t>技能缺口（AI可补）</t></is></c>
+  <c r="B8" s="7" t="inlineStr"><is><t>学+练</t></is></c>
+  <c r="C8" s="14" t="inlineStr"><is><t>先学提示词基础，再用一个真实任务练</t></is></c>
+  <c r="D8" s="7" t="inlineStr"><is><t>F7 启动二</t></is></c>
+</row>
+<row r="9">
+  <c r="A9" s="7" t="inlineStr"><is><t>行为缺口（AI使用不稳定）</t></is></c>
+  <c r="B9" s="7" t="inlineStr"><is><t>反馈+流程</t></is></c>
+  <c r="C9" s="14" t="inlineStr"><is><t>把AI使用流程化——在SOP里加入&quot;AI使用环节&quot;</t></is></c>
+  <c r="D9" s="7" t="inlineStr"><is><t>F7 启动二</t></is></c>
+</row>
+<row r="11" ht="24" customHeight="1">
+  <c r="A11" s="5" t="inlineStr"><is><t>【走 人类深度轨】— 适合：大部分认知缺口 + 部分行为缺口 + 复杂判断/关系力</t></is></c>
+</row>
+<row r="12">
+  <c r="A12" s="14" t="inlineStr"><is><t>缺口类型</t></is></c>
+  <c r="B12" s="14" t="inlineStr"><is><t>推荐路径</t></is></c>
+  <c r="C12" s="14" t="inlineStr"><is><t>具体动作</t></is></c>
+  <c r="D12" s="14" t="inlineStr"><is><t>启动问题</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="7" t="inlineStr"><is><t>判断力缺口</t></is></c>
+  <c r="B13" s="7" t="inlineStr"><is><t>实战+反馈</t></is></c>
+  <c r="C13" s="14" t="inlineStr"><is><t>让员工独立处理一次跨部门问题，复盘决策</t></is></c>
+  <c r="D13" s="7" t="inlineStr"><is><t>F7 启动三</t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="7" t="inlineStr"><is><t>关系力缺口</t></is></c>
+  <c r="B14" s="7" t="inlineStr"><is><t>带教+演练</t></is></c>
+  <c r="C14" s="14" t="inlineStr"><is><t>配导师+角色扮演；让员工参加F4这类对话演练</t></is></c>
+  <c r="D14" s="7" t="inlineStr"><is><t>F7 启动一</t></is></c>
+</row>
+<row r="15">
+  <c r="A15" s="7" t="inlineStr"><is><t>领域深度缺口</t></is></c>
+  <c r="B15" s="7" t="inlineStr"><is><t>深学+输出</t></is></c>
+  <c r="C15" s="14" t="inlineStr"><is><t>选一个细分领域深入；针对该领域做一份分析输出</t></is></c>
+  <c r="D15" s="7" t="inlineStr"><is><t>F7 启动三</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="7" t="inlineStr"><is><t>认知缺口（理解偏了）</t></is></c>
+  <c r="B16" s="7" t="inlineStr"><is><t>对齐+反馈</t></is></c>
+  <c r="C16" s="14" t="inlineStr"><is><t>先对齐&quot;什么是好&quot;——和员工一起看3个范例，明确标准</t></is></c>
+  <c r="D16" s="7" t="inlineStr"><is><t>F7 启动一</t></is></c>
+</row>
+<row r="18" ht="24" customHeight="1">
+  <c r="A18" s="6" t="inlineStr"><is><t>【走 双轨】— 适合：缺口里“AI可补+人发展”两部分都有</t></is></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>判断标准</t></is></c>
+  <c r="B19" s="14" t="inlineStr"><is><t>具体动作</t></is></c>
+  <c r="C19" s="14" t="inlineStr"><is><t>示例</t></is></c>
+  <c r="D19" s="14" t="inlineStr"><is><t>启动问题</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="7" t="inlineStr"><is><t>业务影响</t></is></c>
+  <c r="B20" s="7" t="inlineStr"><is><t>缺了这块业务卡在哪——优先级最高</t></is></c>
+  <c r="C20" s="14" t="inlineStr"><is><t>客户开发做不出来→先发展客户关系（人轨）</t></is></c>
+  <c r="D20" s="7" t="inlineStr"><is><t>F7 启动一+二</t></is></c>
+</row>
+<row r="21">
+  <c r="A21" s="7" t="inlineStr"><is><t>员工自驱</t></is></c>
+  <c r="B21" s="7" t="inlineStr"><is><t>员工自己更想提升哪边——自驱效率高</t></is></c>
+  <c r="C21" s="14" t="inlineStr"><is><t>员工主动学AI→先发展AI轨（人轨后做）</t></is></c>
+  <c r="D21" s="7" t="inlineStr"><is><t>F7 启动一+二</t></is></c>
+</row>
+<row r="22">
+  <c r="A22" s="7" t="inlineStr"><is><t>时间窗口</t></is></c>
+  <c r="B22" s="7" t="inlineStr"><is><t>三个月内能见效的优先</t></is></c>
+  <c r="C22" s="14" t="inlineStr"><is><t>业务判断 3 个月可建框架→先人轨；AI使用 1 周可上手→先AI轨</t></is></c>
+  <c r="D22" s="7" t="inlineStr"><is><t>F7 启动一+二</t></is></c>
+</row>
+<row r="24" ht="22" customHeight="1">
+  <c r="A24" s="4" t="inlineStr"><is><t>【附】第一步&quot;缺口类型&quot;速查（与 F9 原文一致）</t></is></c>
+</row>
+<row r="25">
+  <c r="A25" s="14" t="inlineStr"><is><t>缺口类型</t></is></c>
+  <c r="B25" s="14" t="inlineStr"><is><t>核心信号</t></is></c>
+  <c r="C25" s="14" t="inlineStr"><is><t>一句话判断</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="7" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="B26" s="7" t="inlineStr"><is><t>不会做</t></is></c>
+  <c r="C26" s="14" t="inlineStr"><is><t>“我不太会”</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="7" t="inlineStr"><is><t>行为</t></is></c>
+  <c r="B27" s="7" t="inlineStr"><is><t>会但没做</t></is></c>
+  <c r="C27" s="14" t="inlineStr"><is><t>“我知道但没做到”</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="7" t="inlineStr"><is><t>认知</t></is></c>
+  <c r="B28" s="7" t="inlineStr"><is><t>理解偏了</t></is></c>
+  <c r="C28" s="14" t="inlineStr"><is><t>“我以为是这样”</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="7" t="inlineStr"><is><t>AI工具</t></is></c>
+  <c r="B29" s="7" t="inlineStr"><is><t>没用好AI</t></is></c>
+  <c r="C29" s="14" t="inlineStr"><is><t>“我用AI但效果一般”</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

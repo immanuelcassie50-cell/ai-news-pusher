@@ -1,0 +1,6 @@
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.csproj.AssemblyReference.cache
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.AssemblyInfoInputs.cache
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.AssemblyInfo.cs
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.csproj.CoreCompileInputs.cache
+D:\CC\temp\DocxCreator\obj\Release\net10.0\DocxCreator.sourcelink.json

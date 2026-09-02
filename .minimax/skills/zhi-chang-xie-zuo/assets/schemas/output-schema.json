@@ -1,0 +1,49 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WorkplaceWritingOutput",
+  "type": "object",
+  "properties": {
+    "document_type": {
+      "type": "string",
+      "description": "文档类型：周报/会议纪要/申请报告等"
+    },
+    "title": {
+      "type": "string",
+      "description": "文档标题"
+    },
+    "content": {
+      "type": "string",
+      "description": "文档完整内容（Markdown格式）"
+    },
+    "word_count": {
+      "type": "integer",
+      "description": "文档字数"
+    },
+    "target_audience": {
+      "type": "string",
+      "description": "目标受众"
+    },
+    "next_action": {
+      "type": "string",
+      "description": "文档指向的下一步行动"
+    },
+    "compliance_check": {
+      "type": "object",
+      "description": "合规检查结果",
+      "properties": {
+        "action_oriented": {
+          "type": "boolean",
+          "description": "是否导向行动"
+        },
+        "user_aware": {
+          "type": "boolean",
+          "description": "是否有用户意识"
+        },
+        "public_ready": {
+          "type": "boolean",
+          "description": "是否默认公开（禁得起检验）"
+        }
+      }
+    }
+  }
+}

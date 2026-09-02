@@ -1,0 +1,6 @@
+Loading: D:\鏂拌�惧紑鍙慭鍐呰��甯堝拰琛ㄨ揪\绯诲垪杩涢樁璇綷12-鍐呰��椤圭洰杩愯惀锛氶�夊笀銆佸缓璇俱�佽�よ瘉銆佸簲鐢ㄤ笌婵�鍔辨満鍒惰�捐��\鎺堣�綪PT\slides\slide-98.js
+Read OK, length: 3136
+vm.Script ERROR: Invalid or unexpected token
+require ERROR: Invalid or unexpected token
+
+STDERR:

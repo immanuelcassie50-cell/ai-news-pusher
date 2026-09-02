@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>控制维度评估</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Times New Roman", Georgia, serif;
+      background: #ffffff;
+      color: #2b2d42;
+      padding: 40px 60px;
+      width: 800px;
+      height: 500px;
+    }
+
+    .chart-container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chart-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2b2d42;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    .chart-subtitle {
+      font-size: 14px;
+      color: #8d99ae;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .bar-group {
+      display: flex;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .bar-label {
+      width: 140px;
+      font-size: 16px;
+      color: #2b2d42;
+      text-align: right;
+      padding-right: 20px;
+      flex-shrink: 0;
+    }
+
+    .bar-track {
+      flex: 1;
+      height: 32px;
+      background: #8d99ae;
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .bar-fill {
+      height: 100%;
+      background: #2b2d42;
+      border-radius: 4px;
+      position: relative;
+      transition: width 0.3s ease;
+    }
+
+    .bar-value {
+      width: 60px;
+      text-align: left;
+      padding-left: 16px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #2b2d42;
+      flex-shrink: 0;
+    }
+
+    .bar-value span {
+      font-size: 14px;
+      color: #8d99ae;
+    }
+
+    .accent-bar .bar-fill {
+      background: #ef233c;
+    }
+
+    .legend {
+      display: flex;
+      gap: 30px;
+      margin-top: auto;
+      padding-top: 20px;
+      border-top: 1px solid #edf2f4;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      color: #8d99ae;
+    }
+
+    .legend-color {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+    }
+
+    .legend-color.primary {
+      background: #2b2d42;
+    }
+
+    .legend-color.accent {
+      background: #ef233c;
+    }
+  </style>
+</head>
+<body>
+  <div class="chart-container">
+    <div class="chart-title">控制维度评估</div>
+    <div class="chart-subtitle">Control Dimension Assessment</div>
+
+    <div class="bar-group">
+      <div class="bar-label">信息透明度</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: 85%;"></div>
+      </div>
+      <div class="bar-value">85<span>%</span></div>
+    </div>
+
+    <div class="bar-group">
+      <div class="bar-label">决策影响力</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: 72%;"></div>
+      </div>
+      <div class="bar-value">72<span>%</span></div>
+    </div>
+
+    <div class="bar-group accent-bar">
+      <div class="bar-label">标准覆盖率</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: 90%;"></div>
+      </div>
+      <div class="bar-value">90<span>%</span></div>
+    </div>
+
+    <div class="bar-group">
+      <div class="bar-label">监管有效性</div>
+      <div class="bar-track">
+        <div class="bar-fill" style="width: 68%;"></div>
+      </div>
+      <div class="bar-value">68<span>%</span></div>
+    </div>
+
+    <div class="legend">
+      <div class="legend-item">
+        <div class="legend-color primary"></div>
+        <span>核心指标</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color accent"></div>
+        <span>重点关注</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

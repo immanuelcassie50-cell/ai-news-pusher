@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>目录</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Title -->
+<p style="position:absolute; top:40px; left:60px; margin:0; font-size:36px; font-weight:700; color:#2b2d42; letter-spacing:4px;">目录</p>
+
+<!-- Decorative line under title -->
+<svg style="position:absolute; top:90px; left:60px;" width="80" height="4" aria-hidden="true">
+  <rect width="80" height="4" fill="#ef233c"/>
+</svg>
+
+<!-- Section 1 -->
+<svg style="position:absolute; top:140px; left:60px;" width="380" height="80" viewBox="0 0 380 80">
+  <rect width="380" height="80" rx="8" fill="#2b2d42"/>
+  <text x="30" y="35" font-size="14" font-weight="600" fill="#ef233c">01</text>
+  <text x="30" y="58" font-size="18" font-weight="500" fill="#edf2f4">模块一：认知重塑</text>
+  <text x="160" y="58" font-size="14" font-weight="400" fill="#8d99ae">(第1-6章)</text>
+</svg>
+
+<!-- Section 2 -->
+<svg style="position:absolute; top:235px; left:60px;" width="380" height="80" viewBox="0 0 380 80">
+  <rect width="380" height="80" rx="8" fill="#2b2d42"/>
+  <text x="30" y="35" font-size="14" font-weight="600" fill="#ef233c">02</text>
+  <text x="30" y="58" font-size="18" font-weight="500" fill="#edf2f4">模块二：协作与沟通</text>
+  <text x="195" y="58" font-size="14" font-weight="400" fill="#8d99ae">(第7-11章)</text>
+</svg>
+
+<!-- Section 3 -->
+<svg style="position:absolute; top:330px; left:60px;" width="380" height="80" viewBox="0 0 380 80">
+  <rect width="380" height="80" rx="8" fill="#2b2d42"/>
+  <text x="30" y="35" font-size="14" font-weight="600" fill="#ef233c">03</text>
+  <text x="30" y="58" font-size="18" font-weight="500" fill="#edf2f4">模块三：职业心态</text>
+  <text x="175" y="58" font-size="14" font-weight="400" fill="#8d99ae">(第12-15章)</text>
+</svg>
+
+<!-- Section 4 -->
+<svg style="position:absolute; top:425px; left:60px;" width="380" height="70" viewBox="0 0 380 70">
+  <rect width="380" height="70" rx="8" fill="#8d99ae" opacity="0.3"/>
+  <text x="30" y="42" font-size="16" font-weight="500" fill="#2b2d42">Q&A与总结</text>
+</svg>
+
+<!-- Right side decorative elements -->
+<svg style="position:absolute; top:140px; right:60px;" width="400" height="360" viewBox="0 0 400 360" aria-hidden="true">
+  <circle cx="350" cy="50" r="30" fill="#ef233c" opacity="0.1"/>
+  <circle cx="380" cy="100" r="20" fill="#ef233c" opacity="0.15"/>
+  <rect x="300" y="200" width="60" height="60" fill="#2b2d42" opacity="0.1"/>
+  <rect x="320" y="280" width="40" height="40" fill="#ef233c" opacity="0.08"/>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#2b2d42"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#edf2f4">2</text>
+</svg>
+
+</div>
+</body>
+</html>

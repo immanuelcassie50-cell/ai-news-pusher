@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="18" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+<cols><col min="1" max="1" width="28" customWidth="1"/><col min="2" max="2" width="60" customWidth="1"/></cols>
+<sheetData>
+<row r="1" ht="28" customHeight="1"><c r="A1" t="s" s="5"><v>100</v></c><c r="B1" t="s" s="5"><v>100</v></c></row>
+<row r="2" ht="24" customHeight="1"><c r="A2" t="inlineStr" s="4"><is><t xml:space="preserve">【第三区】发展对话规划</t></is></c></row>
+<row r="3" ht="22" customHeight="1"><c r="A3" t="s" s="6"><v>101</v></c></row>
+<row r="4" ht="22" customHeight="1"><c r="A4" t="s" s="11"><v>102</v></c></row>
+<row r="5" ht="24" customHeight="1"><c r="A5" t="s" s="11"><v>103</v></c><c r="B5" t="inlineStr" s="1"><is><t xml:space="preserve">不足</t></is></c><c r="C5" t="inlineStr" s="1"><is><t xml:space="preserve">够用</t></is></c><c r="D5" t="inlineStr" s="1"><is><t xml:space="preserve">较强</t></is></c></row>
+<row r="6" ht="24" customHeight="1"><c r="A6" t="s" s="11"><v>106</v></c><c r="B6" t="inlineStr" s="1"><is><t xml:space="preserve">不足</t></is></c><c r="C6" t="inlineStr" s="1"><is><t xml:space="preserve">够用</t></is></c><c r="D6" t="inlineStr" s="1"><is><t xml:space="preserve">较强</t></is></c></row>
+<row r="8" ht="22" customHeight="1"><c r="A8" t="s" s="11"><v>107</v></c></row>
+<row r="9" ht="24" customHeight="1"><c r="A9" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B9" t="s" s="2"><v>108</v></c><c r="C9" t="inlineStr" s="4"><is><t xml:space="preserve">理由</t></is></c><c r="D9" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="10" ht="24" customHeight="1"><c r="A10" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B10" t="s" s="2"><v>109</v></c><c r="C10" t="inlineStr" s="4"><is><t xml:space="preserve">理由</t></is></c><c r="D10" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="11" ht="24" customHeight="1"><c r="A11" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B11" t="s" s="2"><v>110</v></c><c r="C11" t="inlineStr" s="4"><is><t xml:space="preserve">理由</t></is></c><c r="D11" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="13" ht="22" customHeight="1"><c r="A13" t="s" s="11"><v>111</v></c></row>
+<row r="14" ht="44" customHeight="1"><c r="A14" t="s" s="11"><v>111</v></c><c r="B14" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="16" ht="22" customHeight="1"><c r="A16" t="s" s="11"><v>112</v></c></row>
+<row r="17" ht="44" customHeight="1"><c r="A17" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B17" t="s" s="2"><v>113</v></c></row>
+<row r="18" ht="44" customHeight="1"><c r="A18" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B18" t="s" s="2"><v>114</v></c></row>
+<row r="19" ht="44" customHeight="1"><c r="A19" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B19" t="s" s="2"><v>115</v></c></row>
+<row r="21" ht="22" customHeight="1"><c r="A21" t="s" s="11"><v>116</v></c></row>
+<row r="22" ht="44" customHeight="1"><c r="A22" t="s" s="11"><v>116</v></c><c r="B22" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="24" ht="22" customHeight="1"><c r="A24" t="s" s="11"><v>117</v></c></row>
+<row r="25" ht="24" customHeight="1"><c r="A25" t="s" s="11"><v>118</v></c><c r="B25" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="26" ht="24" customHeight="1"><c r="A26" t="s" s="11"><v>119</v></c><c r="B26" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="27" ht="8" customHeight="1"><c r="A27" s="0"/></row>
+<row r="28" ht="24" customHeight="1"><c r="A28" t="s" s="11"><v>120</v></c><c r="B28" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="29" ht="24" customHeight="1"><c r="A29" t="s" s="11"><v>121</v></c><c r="B29" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="30" ht="8" customHeight="1"><c r="A30" s="0"/></row>
+<row r="31" ht="24" customHeight="1"><c r="A31" t="s" s="11"><v>122</v></c><c r="B31" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="32" ht="24" customHeight="1"><c r="A32" t="s" s="11"><v>123</v></c><c r="B32" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="33" ht="8" customHeight="1"><c r="A33" s="0"/></row>
+<row r="35" ht="22" customHeight="1"><c r="A35" t="s" s="11"><v>124</v></c></row>
+<row r="36" ht="22" customHeight="1"><c r="A36" t="s" s="6"><v>125</v></c></row>
+<row r="37" ht="60" customHeight="1"><c r="A37" t="s" s="11"><v>124</v></c><c r="B37" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="39" ht="22" customHeight="1"><c r="A39" t="inlineStr" s="4"><is><t xml:space="preserve">校验：启动问题已选数</t></is></c></row>
+<row r="40" ht="24" customHeight="1"><c r="A40" t="inlineStr" s="11"><is><t xml:space="preserve">启动问题已选数（≥1 才算填完）</t></is></c><c r="B40" s="2"><f>COUNTIF(A17:A19,"□")</f><v></v></c></row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="10" customWidth="1"/>
+    <col min="2" max="2" width="18" customWidth="1"/>
+    <col min="3" max="3" width="38" customWidth="1"/>
+    <col min="4" max="4" width="38" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>讲师操作提示</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>每个表单在课堂上的使用时机和引导话术</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="26" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>模块</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>表单</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>使用时机</t></is></c>
+      <c r="D4" s="8" t="inlineStr"><is><t>引导话术</t></is></c>
+    </row>
+    <row r="5" ht="30" customHeight="1">
+      <c r="A5" s="9" t="inlineStr"><is><t>模块一</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>H1术语速查卡</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>课程开始前5分钟 | 讲到专业术语时暂停 | 课后答疑环节</t></is></c>
+      <c r="D5" s="6" t="inlineStr"><is><t>"在继续之前，大家先用H1查一下这个词，确保理解一致"</t></is></c>
+    </row>
+    <row r="6" ht="30" customHeight="1">
+      <c r="A6" s="9" t="inlineStr"><is><t>模块二</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>H2开户检查清单</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>开户演示环节 | 学员同步操作时间 | 课程结束前检查完成度</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>"现在就打开H2清单，对照着跟我一步一步操作，有问题随时举手"</t></is></c>
+    </row>
+    <row r="7" ht="30" customHeight="1">
+      <c r="A7" s="9" t="inlineStr"><is><t>模块三</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t>H3技术分析工作表</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>技术分析讲解后 | 学员独立练习时间 | 小组分享环节</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>"现在就打开H3，用刚才教的方法分析你自选股里的一只，15分钟后分享"</t></is></c>
+    </row>
+    <row r="8" ht="30" customHeight="1">
+      <c r="A8" s="9" t="inlineStr"><is><t>模块四</t></is></c>
+      <c r="B8" s="6" t="inlineStr"><is><t>H4基本面分析 + H5估值分析</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>基本面分析讲解后 | 结合实际年报演示 | 课后作业布置</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>"找到一家你感兴趣的公司，用H4分析它的财务数据，用H5给它估个值"</t></is></c>
+    </row>
+    <row r="9" ht="30" customHeight="1">
+      <c r="A9" s="9" t="inlineStr"><is><t>模块五</t></is></c>
+      <c r="B9" s="6" t="inlineStr"><is><t>H6交易策略回测 + H7仓位管理</t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>交易策略讲解后 | 演示回测过程 | 强调风险控制</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>"先在H6里回测你的策略看看历史表现，再用H7算一下该用多少仓位"</t></is></c>
+    </row>
+    <row r="10" ht="30" customHeight="1">
+      <c r="A10" s="9" t="inlineStr"><is><t>模块六</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>H8投资组合监控表</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>组合管理讲解后 | 学员建立自己组合 | 定期跟踪提醒</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>"把自己的持仓录入H8，以后每周来更新，我会定期抽查"</t></is></c>
+    </row>
+    <row r="11" ht="30" customHeight="1">
+      <c r="A11" s="9" t="inlineStr"><is><t>模块七</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t>H9年度投资复盘表</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>年度复盘时间节点 | 课程最后一次课 | 个人成长记录</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>"翻开H9，我们一起回顾这一年你学到了什么，做得好的和需要改进的"</t></is></c>
+    </row>
+    <row r="12" ht="30" customHeight="1">
+      <c r="A12" s="9" t="inlineStr"><is><t>模块八</t></is></c>
+      <c r="B12" s="6" t="inlineStr"><is><t>H10心理偏差自检表</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>心理学章节 | 结合实际亏损案例 | 自我反思环节</t></is></c>
+      <c r="D12" s="6" t="inlineStr"><is><t>"大家翻到H10，回忆你上一次亏损的交易，当时是什么心理状态？"</t></is></c>
+    </row>
+    <row r="13" ht="10"/>
+    <row r="14" ht="26" customHeight="1">
+      <c r="A14" s="8" t="inlineStr"><is><t>通用原则</t></is></c>
+      <c r="B14" s="6" t="inlineStr"><is><t>表单使用总原则</t></is></c>
+      <c r="C14" s="6" t="inlineStr"><is><t>1. 先讲后用：先演示操作方法，再让学员使用</t></is></c>
+      <c r="D14" s="6" t="inlineStr"><is><t>2. 边讲边用：复杂表单分步骤讲解，每步完成后操作</t></is></c>
+    </row>
+    <row r="15" ht="20" customHeight="1">
+      <c r="A15" s="6"/>
+      <c r="B15" s="6"/>
+      <c r="C15" s="6" t="inlineStr"><is><t>3. 用完即查：操作完成后检查完成质量</t></is></c>
+      <c r="D15" s="6" t="inlineStr"><is><t>4. 课后跟进：记录未完成学员，课后单独督促</t></is></c>
+    </row>
+  </sheetData>
+  <autoFilter ref="A4:D15"/>
+</worksheet>

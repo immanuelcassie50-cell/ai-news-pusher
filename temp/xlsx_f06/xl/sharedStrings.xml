@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="26" uniqueCount="26">
+  <si><t>汇报叙事自检清单</t></si>
+  <si><t>检查维度</t></si>
+  <si><t>检查项</t></si>
+  <si><t>是/否</t></si>
+  <si><t>备注</t></si>
+  <si><t>受众匹配</t></si>
+  <si><t>语言是否与高层决策风格匹配</t></si>
+  <si><t>重点是否与高层核心关切匹配</t></si>
+  <si><t>数据是否经过高层能理解的翻译</t></si>
+  <si><t>逻辑完整</t></si>
+  <si><t>开场是否有明确的核心信息</t></si>
+  <si><t>论证是否有足够支撑数据</t></si>
+  <si><t>结尾是否有明确的行动请求</t></si>
+  <si><t>风险透明</t></si>
+  <si><t>是否主动坦诚已知风险</t></si>
+  <si><t>风险是否有应对预案</t></si>
+  <si><t>止损边界是否已明确</t></si>
+  <si><t>信任建立</t></si>
+  <si><t>数据来源是否可验证</t></si>
+  <si><t>承诺是否有把握兑现</t></si>
+  <si><t>不确定事项是否已说明</t></si>
+  <si><t>授权明确</t></si>
+  <si><t>请求的授权范围是否清晰</t></si>
+  <si><t>最小授权是否已说明</t></si>
+  <si><t>汇报频率和节点是否已约定</t></si>
+</sst>

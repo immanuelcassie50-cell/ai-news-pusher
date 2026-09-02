@@ -1,0 +1,33 @@
+{
+  "title": "场景卡",
+  "type": "minimal",
+  "author": "课程开发组",
+  "date": "2026",
+  "accent": "#C41E3A",
+  "content": [
+    {"type": "h1", "text": "五类教学场景速查"},
+    {"type": "callout", "text": "不同场景需要不同的带教策略，请根据实际情况选择对应的带教方法"},
+    {"type": "h2", "text": "场景1：新员工入职带教"},
+    {"type": "bullet", "text": "重点：文化融入 + 基础技能"},
+    {"type": "bullet", "text": "方法：导师制 + 标准化手册"},
+    {"type": "bullet", "text": "周期：1-3个月"},
+    {"type": "h2", "text": "场景2：岗位技能转型"},
+    {"type": "bullet", "text": "重点：技能迁移 + 实践练习"},
+    {"type": "bullet", "text": "方法：实操演练 + 反馈修正"},
+    {"type": "bullet", "text": "周期：2-4周"},
+    {"type": "h2", "text": "场景3：问题员工辅导"},
+    {"type": "bullet", "text": "重点：态度转变 + 行为规范"},
+    {"type": "bullet", "text": "方法：一对一沟通 + 目标设定"},
+    {"type": "bullet", "text": "周期：持续跟进"},
+    {"type": "h2", "text": "场景4：跨部门知识传递"},
+    {"type": "bullet", "text": "重点：经验萃取 + 系统整理"},
+    {"type": "bullet", "text": "方法：工作坊 + 案例教学"},
+    {"type": "bullet", "text": "周期：1-2周集中"},
+    {"type": "h2", "text": "场景5：标准化流程复制"},
+    {"type": "bullet", "text": "重点：流程固化 + 一致执行"},
+    {"type": "bullet", "text": "方法：SOP + 实操考核"},
+    {"type": "bullet", "text": "周期：1个月"},
+    {"type": "divider"},
+    {"type": "body", "text": "背面使用说明：本卡片列出五种常见带教场景速查。每个场景包含重点、方法、周期三个要素，便于在实际带教工作中快速参考使用。"}
+  ]
+}

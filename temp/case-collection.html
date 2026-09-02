@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>销售复杂决策链地图与导航 - 案例集</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #ed8936;
+      --light: #bee3f8;
+      --bg: #f7fafc;
+      --text: #1a202c;
+      --text-light: #4a5568;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page { size: A4; margin: 0; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .page { box-shadow: none; }
+    }
+
+    /* Cover Page */
+    .cover {
+      height: 297mm;
+      background: linear-gradient(135deg, var(--primary) 0%, #234876 100%);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 60px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cover::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -20%;
+      width: 80%;
+      height: 200%;
+      background: radial-gradient(ellipse, rgba(237, 137, 54, 0.15) 0%, transparent 70%);
+    }
+
+    .cover-label {
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 30px;
+      border: 1px solid rgba(255,255,255,0.3);
+      padding: 8px 20px;
+    }
+
+    .cover-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 42px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 20px;
+      letter-spacing: 4px;
+    }
+
+    .cover-subtitle {
+      font-size: 18px;
+      font-weight: 300;
+      opacity: 0.9;
+      margin-bottom: 40px;
+    }
+
+    .cover-divider {
+      width: 80px;
+      height: 2px;
+      background: var(--accent);
+      margin: 30px auto;
+    }
+
+    .cover-quote {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 500px;
+      opacity: 0.9;
+      font-style: italic;
+    }
+
+    .cover-footer {
+      position: absolute;
+      bottom: 40px;
+      left: 0;
+      right: 0;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 60px;
+      font-size: 12px;
+      opacity: 0.7;
+    }
+
+    /* Index Page */
+    .index-page {
+      padding: 50px 60px;
+    }
+
+    .index-header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .index-header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .index-header h2 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 28px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .index-header p {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 8px;
+    }
+
+    .chapter-section {
+      margin-bottom: 30px;
+    }
+
+    .chapter-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .chapter-num {
+      width: 32px;
+      height: 32px;
+      background: var(--primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .chapter-name {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+
+    .case-list {
+      list-style: none;
+      padding-left: 44px;
+    }
+
+    .case-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .case-item:last-child {
+      border-bottom: none;
+    }
+
+    .case-marker {
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+      margin-top: 6px;
+      flex-shrink: 0;
+    }
+
+    .case-content h4 {
+      font-size: 13px;
+      color: var(--text);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .case-content p {
+      font-size: 11px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .case-ref {
+      font-size: 10px;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 4px;
+    }
+
+    .section-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--light), transparent);
+      margin: 30px 0;
+    }
+
+    /* Footer */
+    .page-footer {
+      position: absolute;
+      bottom: 30px;
+      left: 60px;
+      right: 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-light);
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cover Page -->
+  <div class="page">
+    <div class="cover">
+      <div class="cover-label">Case Collection</div>
+      <h1 class="cover-title">销售复杂决策链<br>地图与导航</h1>
+      <p class="cover-subtitle">案例集</p>
+
+      <div class="cover-divider"></div>
+
+      <p class="cover-quote">
+        "复杂决策链里没有'决策人'，<br>
+        只有在不同阶段轮流掌握否决权的人。"
+      </p>
+
+      <div class="cover-footer">
+        <span>© 罗宏伟 版权所有</span>
+        <span>内部培训资料 · 仅供学员使用</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Index Page -->
+  <div class="page">
+    <div class="index-page">
+      <header class="index-header">
+        <h2>案例索引</h2>
+        <p>课程中使用的核心案例及对应章节</p>
+      </header>
+
+      <section class="chapter-section">
+        <div class="chapter-title">
+          <span class="chapter-num">1</span>
+          <span class="chapter-name">PART 1 认知层</span>
+        </div>
+        <ul class="case-list">
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>八个月丢单：那个从没露面的信息安全负责人</h4>
+              <p>商务经理、预算负责人、IT经理都表态后，合同评审会上信息安全负责人一句"数据出境方案没评估过"让项目重新回到起点。</p>
+              <p class="case-ref">→ 第一章：复杂决策链里没有"决策人"</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>业务负责人以为自己能拍板</h4>
+              <p>十年销售经验者签单后，采购总监坦言"你早该来找我"——业务部门一直表现得像最终拍板人，实际只是"技术上认可"这一环。</p>
+              <p class="case-ref">→ 第一章：复杂决策链里没有"决策人"</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>愿意见你和能拦住你不是同一批人</h4>
+              <p>销售内部那些跟你聊得投缘、愿意透露内部信息的人，往往是因为手里权力不大而有闲功夫；真正握着否决权的人通常忙得没空跟供应商建立私交。</p>
+              <p class="case-ref">→ 第二章：你交的朋友，是否决权已经过期的那批人</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>CRM名单上的假地图</h4>
+              <p>联系人名单只覆盖了愿意主动露面的那部分人，真实的财务、法务、集团采购部门从未出现在会议邀请名单里。</p>
+              <p class="case-ref">→ 第三章：你手里的联系人名单，是一张假地图</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>角落里最沉默的人</h4>
+              <p>会议室里那个没怎么说话的中年人，只在方案讲到数据接口时问了一句技术细节。会后被认为"打酱油"，三周后正是他卡住了数据接口安全评估。</p>
+              <p class="case-ref">→ 第五章：找到那个不承认自己有权力的人</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>预算批了，流程还没完</h4>
+              <p>客户业务部门明确表态预算已批，书面确认也有了。两个月后才知道"预算已批"只是业务部门预算池有这笔钱，真正拨付还需走财务付款审批和集团比价流程。</p>
+              <p class="case-ref">→ 第六章：预算审批不是一道关卡，是一条河</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>技术评审前的那句话</h4>
+              <p>资深解决方案顾问在进技术评估会前，总会先问："如果这个方案出了问题，是您的团队来处理，还是要走供应商的应急响应？"——帮评审人想清楚风险责任划分。</p>
+              <p class="case-ref">→ 第七章：技术评估节点否决的不是方案，是风险</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>同一份方案，讲给不同的人听</h4>
+              <p>一份从头到尾只讲功能优势和技术领先性的方案，财务负责人从头到尾没提问，会后反馈"没听懂跟我们有什么关系"——讲错对象，再好的方案也白讲。</p>
+              <p class="case-ref">→ 第八章：同一件事，对不同的人要讲不同的故事</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>催出来的额外审查</h4>
+              <p>项目进入法务评审阶段，销售因担心节奏拖太久连续三天打电话催问，法务反而在评审意见里加了"建议进一步核实供应商资质"，流程多绕了一圈。</p>
+              <p class="case-ref">→ 第九章：该等的时候别推，该推的时候别等</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>"整体反馈不错，再等等消息"的真相</h4>
+              <p>评审会后客户说"整体反馈不错，再等等消息"，听起来进展顺利。实际上有人提了担忧但碍于场合没说，需要主动补充材料回应，而不是傻等。</p>
+              <p class="case-ref">→ 第十章：内部推荐人不是你的盟友，是你的翻译官</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>给高层汇报的是"决策链已经跑通"</h4>
+              <p>销售总监准备高层汇报材料时，刻意压缩产品优势篇幅，把更多篇幅放在"技术评估已经通过、安全合规已经确认、实施团队已经就位"——呈现整条决策链已跑通的确定感。</p>
+              <p class="case-ref">→ 第十一章：向决策链顶端汇报时，你卖的不是方案</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <section class="chapter-section">
+        <div class="chapter-title">
+          <span class="chapter-num" style="background: var(--secondary);">2</span>
+          <span class="chapter-name">PART 2 心态层</span>
+        </div>
+        <ul class="case-list">
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>赢了但赢得侥幸</h4>
+              <p>团队复盘总结"提前建立了良好的客户关系"为成功原因，实际是合规评审负责人当时正在休产假，代理审批的人相对宽松。这个运气被误记成了方法论。</p>
+              <p class="case-ref">→ 第一章：复盘不是写你为什么赢了</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>架构调整后的决策链变化</h4>
+              <p>客户公司架构调整，采购职能从分散在各业务部门收归集团采购中心。销售没及时意识到变化，继续跟已失去部分权力的业务部门保持密集沟通，直到集团采购中心介入要求重新走比价流程。</p>
+              <p class="case-ref">→ 第二章：丢单不是因为不够努力，是因为地图没有更新</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>前辈的长期关系维护习惯</h4>
+              <p>一位多年大客户销售前辈，不管单子是否签成，都会在项目结束后半年到一年里保持跟关键推荐人低频但持续的联系——可能只是逢年过节问候一句，或者分享一篇相关文章。</p>
+              <p class="case-ref">→ 第三章：那个帮你说话的人，值得比这一单活得更久的关系</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>判断失误后的两种反应</h4>
+              <p>第一种：每次失误都找外部原因，"客户内部太复杂了，谁也没法提前判断"——团队逐渐形成"这个人不愿意正视自己判断问题"的印象。第二种：主动说清楚判断失误的具体环节——团队更信任。</p>
+              <p class="case-ref">→ 第四章：你把否决人判断错了，团队会怎么看你</p>
+            </div>
+          </li>
+          <li class="case-item">
+            <span class="case-marker"></span>
+            <div class="case-content">
+              <h4>擅长处关系 vs 习惯研究权力结构</h4>
+              <p>非常擅长处关系的销售，业绩并不稳定，因为关系网络覆盖的往往是愿意主动亲近他们的人，而不是真正握着否决权的人。看起来不太会来事的销售，因习惯研究权力结构，业绩反而更稳定。</p>
+              <p class="case-ref">→ 第五章：这份工作练的是看清权力，不是讨好人</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <footer class="page-footer">
+        <span>销售复杂决策链地图与导航 · 案例集</span>
+        <span>© 罗宏伟 版权所有</span>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>

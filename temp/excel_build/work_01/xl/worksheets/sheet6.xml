@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="18" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+<cols><col min="1" max="1" width="30" customWidth="1"/><col min="2" max="2" width="60" customWidth="1"/></cols>
+<sheetData>
+<row r="1" ht="28" customHeight="1"><c r="A1" t="s" s="5"><v>140</v></c><c r="B1" t="s" s="5"><v>140</v></c></row>
+<row r="2" ht="24" customHeight="1"><c r="A2" t="inlineStr" s="4"><is><t xml:space="preserve">【第四区】四步面谈预演（关键词版）</t></is></c></row>
+<row r="3" ht="22" customHeight="1"><c r="A3" t="s" s="6"><v>141</v></c></row>
+<row r="4" ht="22" customHeight="1"><c r="A4" t="s" s="11"><v>142</v></c></row>
+<row r="5" ht="44" customHeight="1"><c r="A5" t="s" s="11"><v>143</v></c><c r="B5" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="6" ht="44" customHeight="1"><c r="A6" t="s" s="11"><v>144</v></c><c r="B6" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="8" ht="22" customHeight="1"><c r="A8" t="s" s="11"><v>145</v></c></row>
+<row r="9" ht="44" customHeight="1"><c r="A9" t="s" s="11"><v>146</v></c><c r="B9" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="10" ht="44" customHeight="1"><c r="A10" t="s" s="11"><v>147</v></c><c r="B10" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="11" ht="44" customHeight="1"><c r="A11" t="s" s="11"><v>148</v></c><c r="B11" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="13" ht="22" customHeight="1"><c r="A13" t="s" s="11"><v>149</v></c></row>
+<row r="14" ht="22" customHeight="1"><c r="A14" t="s" s="11"><v>150</v></c></row>
+<row r="15" ht="44" customHeight="1"><c r="A15" t="s" s="11"><v>151</v></c><c r="B15" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="16" ht="44" customHeight="1"><c r="A16" t="s" s="11"><v>152</v></c><c r="B16" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="17" ht="44" customHeight="1"><c r="A17" t="s" s="11"><v>153</v></c><c r="B17" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="19" ht="22" customHeight="1"><c r="A19" t="s" s="11"><v>154</v></c></row>
+<row r="20" ht="44" customHeight="1"><c r="A20" t="s" s="11"><v>155</v></c><c r="B20" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="21" ht="44" customHeight="1"><c r="A21" t="s" s="11"><v>156</v></c><c r="B21" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="23" ht="22" customHeight="1"><c r="A23" t="s" s="11"><v>157</v></c></row>
+<row r="24" ht="60" customHeight="1"><c r="A24" t="s" s="11"><v>157</v></c><c r="B24" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="26" ht="22" customHeight="1"><c r="A26" t="inlineStr" s="4"><is><t xml:space="preserve">字数校验</t></is></c></row>
+<row r="27" ht="24" customHeight="1"><c r="A27" t="inlineStr" s="11"><is><t xml:space="preserve">开场语字数（不超过 30 字）</t></is></c><c r="B27" s="2"><f>IF(LEN(B5)&lt;=30,"OK","过长,改用关键词")</f><v></v></c></row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

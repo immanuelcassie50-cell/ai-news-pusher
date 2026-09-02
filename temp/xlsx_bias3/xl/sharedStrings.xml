@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="9" uniqueCount="9">
+  <si><t>偏差类型</t></si>
+  <si><t>可信度评分(0-10)</t></si>
+  <si><t>主要证据</t></si>
+  <si><t>优先级</t></si>
+  <si><t>数据偏差</t></si>
+  <si><t>特征偏差</t></si>
+  <si><t>模型偏差</t></si>
+  <si><t>反馈偏差</t></si>
+  <si><t>高</t></si>
+</sst>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="34" uniqueCount="34">
+  <si><t>变革投资回报评估表</t></si>
+  <si><t>维度</t></si>
+  <si><t>指标</t></si>
+  <si><t>数据</t></si>
+  <si><t>计算依据</t></si>
+  <si><t>一、变革投入</t></si>
+  <si><t>直接投入</t></si>
+  <si><t>系统/工具投资（万元）</t></si>
+  <si><t>实施费用（万元）</t></si>
+  <si><t>培训费用（万元）</t></si>
+  <si><t>间接投入</t></si>
+  <si><t>人力占用成本（万元）</t></si>
+  <si><t>机会成本（万元）</t></si>
+  <si><t>总投入</t></si>
+  <si><t>二、变革收益</t></si>
+  <si><t>效率提升</t></si>
+  <si><t>效率提升收益（万元/年）</t></si>
+  <si><t>质量改善</t></si>
+  <si><t>质量改善收益（万元/年）</t></si>
+  <si><t>战略价值</t></si>
+  <si><t>竞争力提升价值（万元）</t></si>
+  <si><t>总收益</t></si>
+  <si><t>三、回报分析</t></si>
+  <si><t>投资回收期</t></si>
+  <si><t>ROI</t></si>
+  <si><t>净现值（NPV）</t></si>
+  <si><t>四、风险调整</t></si>
+  <si><t>失败概率（%）</t></si>
+  <si><t>风险调整后收益</t></si>
+  <si><t>风险调整后ROI</t></si>
+</sst>

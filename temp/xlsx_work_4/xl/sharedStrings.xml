@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="51" uniqueCount="51">
+  <si><t>个人行动清单</t></si>
+  <si><t>周期监测日历</t></si>
+  <si><t>学习复盘表</t></si>
+  <si><t>序号</t></si>
+  <si><t>目标/行动项</t></si>
+  <si><t>类别</t></si>
+  <si><t>开始日期</t></si>
+  <si><t>截止日期</t></si>
+  <si><t>完成状态</t></si>
+  <si><t>优先级</t></si>
+  <si><t>备注</t></si>
+  <si><t>目标设定</t></si>
+  <si><t>风险监控</t></si>
+  <si><t>资产配置</t></si>
+  <si><t>应急准备</t></si>
+  <si><t>学习计划</t></si>
+  <si><t>未开始</t></si>
+  <si><t>进行中</t></si>
+  <si><t>已完成</t></si>
+  <si><t>已延期</t></si>
+  <si><t>高</t></si>
+  <si><t>中</t></si>
+  <si><t>低</t></si>
+  <si><t>月度监测</t></si>
+  <si><t>季度监测</t></si>
+  <si><t>监测项目</t></si>
+  <si><t>当前状态</t></si>
+  <si><t>评估</t></si>
+  <si><t>建议行动</t></si>
+  <si><t>GDP增速</t></si>
+  <si><t>CPI同比</t></si>
+  <si><t>M2增速</t></si>
+  <si><t>社融增速</t></si>
+  <si><t>股票市场</t></si>
+  <si><t>债券市场</t></si>
+  <si><t>房地产市场</t></si>
+  <si><t>就业市场</t></si>
+  <si><t>学习主题</t></si>
+  <si><t>学习内容摘要</t></si>
+  <si><t>实践应用</t></si>
+  <si><t>下一步计划</t></si>
+  <si><t>完成日期</t></si>
+  <si><t>效果评估</t></si>
+  <si><t>本周期学习要点</t></si>
+  <si><t>已应用到实际决策的内容</t></si>
+  <si><t>待进一步深化的问题</t></si>
+  <si><t>使用说明：</t></si>
+  <si><t>请根据课程内容和个人情况填写本表</t></si>
+  <si><t>完成一项勾选一项</t></si>
+  <si><t>状态说明：未开始/进行中/已完成/已延期</t></si>
+  <si><t>优先级说明：高=立即行动 中=本周内 低=本月内</t></si>
+</sst>

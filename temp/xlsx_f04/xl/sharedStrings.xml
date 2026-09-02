@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="20" uniqueCount="20">
+  <si><t>高频问题预备应答卡</t></si>
+  <si><t>高频问题</t></si>
+  <si><t>问题本质</t></si>
+  <si><t>应答框架</t></si>
+  <si><t>参考话术</t></si>
+  <si><t>问题一：失败了你负责吗？</t></si>
+  <si><t>高层在问：谁承担执行责任？谁承担决策责任？</t></si>
+  <si><t>责任分层：执行层vs决策层，不要说"我负全责"</t></si>
+  <si><t>问题二：凭什么你觉得能成？</t></si>
+  <si><t>高层在问：成功要素是什么？有什么证据？</t></si>
+  <si><t>列出3个关键成功要素，每个要有验证数据/证据</t></si>
+  <si><t>问题三：如果不成功呢？</t></si>
+  <si><t>高层在问：止损标准是什么？最坏情况可控吗？</t></si>
+  <si><t>设定明确的止损标准，说明止损后的处理方式</t></si>
+</sst>

@@ -1,0 +1,29 @@
+{
+  "title": "表达技巧卡",
+  "type": "minimal",
+  "author": "课程开发组",
+  "date": "2026",
+  "accent": "#C41E3A",
+  "content": [
+    {"type": "h1", "text": "讲师表达技巧"},
+    {"type": "callout", "text": "好的表达让带教效果事半功倍，这些技巧需要反复练习"},
+    {"type": "h2", "text": "语言表达技巧"},
+    {"type": "bullet", "text": "语速：重要内容放慢，重点处停顿"},
+    {"type": "bullet", "text": "语调：关键点用重音，疑问处上扬"},
+    {"type": "bullet", "text": "用词：专业术语要解释，口头禅要避免"},
+    {"type": "h2", "text": "肢体语言技巧"},
+    {"type": "bullet", "text": "眼神：环视全场，与学员保持眼神接触"},
+    {"type": "bullet", "text": "表情：自然微笑，传递热情和自信"},
+    {"type": "bullet", "text": "手势：自然大方，重点处加强手势"},
+    {"type": "h2", "text": "板书/PPT技巧"},
+    {"type": "bullet", "text": "版面：简洁清晰，重点突出"},
+    {"type": "bullet", "text": "图文：图片为主，文字为辅"},
+    {"type": "bullet", "text": "动画：少用动画，重点处适当使用"},
+    {"type": "h2", "text": "时间控制技巧"},
+    {"type": "bullet", "text": "备课：每个环节设定时间上限"},
+    {"type": "bullet", "text": "现场：注意观察学员反应，灵活调整"},
+    {"type": "bullet", "text": "留白：每个模块预留5分钟缓冲时间"},
+    {"type": "divider"},
+    {"type": "body", "text": "背面使用说明：本卡片涵盖四类表达技巧。建议每次带教前重点练习1-2个技巧，带教后复盘不足之处，持续提升表达能力。"}
+  ]
+}

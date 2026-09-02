@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>抄写式笔记 vs 正确笔记方法</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2b2d42;
+            --secondary: #8d99ae;
+            --bg: #edf2f4;
+            --accent: #ef233c;
+            --accent-dark: #d90429;
+            --success: #06d6a0;
+            --success-dark: #05a882;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans SC', sans-serif;
+            background: var(--bg);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 1200px;
+            height: 630px;
+            background: var(--bg);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Center divider */
+        .divider {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, var(--secondary), transparent);
+            transform: translateX(-50%);
+        }
+
+        /* Panel styles */
+        .panel {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* WRONG panel */
+        .panel.wrong {
+            background: linear-gradient(135deg, #fff5f5 0%, #fff 100%);
+        }
+
+        /* RIGHT panel */
+        .panel.right {
+            background: linear-gradient(135deg, #f0fff5 0%, #fff 100%);
+        }
+
+        /* Labels */
+        .label {
+            position: absolute;
+            top: 30px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 8px 20px;
+            border-radius: 4px;
+        }
+
+        .panel.wrong .label {
+            left: 40px;
+            background: var(--accent);
+            color: white;
+        }
+
+        .panel.right .label {
+            right: 40px;
+            background: var(--success);
+            color: white;
+        }
+
+        /* Title */
+        .title {
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .panel.wrong .title {
+            color: var(--accent);
+        }
+
+        .panel.right .title {
+            color: var(--success-dark);
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 16px;
+            color: var(--secondary);
+            text-align: center;
+            margin-top: 8px;
+            font-weight: 300;
+        }
+
+        /* Illustration area */
+        .illustration {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Person SVG container */
+        .person-container {
+            width: 200px;
+            height: 280px;
+            position: relative;
+        }
+
+        /* Brain visualization */
+        .brain {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel.wrong .brain {
+            background: radial-gradient(circle, #ddd 0%, #bbb 100%);
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .panel.right .brain {
+            background: radial-gradient(circle, var(--success) 0%, var(--success-dark) 100%);
+            box-shadow: 0 0 30px rgba(6, 214, 160, 0.4);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 30px rgba(6, 214, 160, 0.4); }
+            50% { box-shadow: 0 0 50px rgba(6, 214, 160, 0.6); }
+        }
+
+        .brain-icon {
+            font-size: 36px;
+            color: white;
+        }
+
+        .panel.wrong .brain-icon {
+            color: #888;
+        }
+
+        /* Head */
+        .head {
+            width: 70px;
+            height: 85px;
+            background: #ffeaa7;
+            border-radius: 50% 50% 45% 45%;
+            position: absolute;
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+
+        /* Eyes */
+        .eyes {
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+        }
+
+        .eye {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary);
+        }
+
+        .panel.wrong .eye {
+            opacity: 0.3;
+        }
+
+        .panel.right .eye {
+            animation: blink 3s ease-in-out infinite;
+        }
+
+        @keyframes blink {
+            0%, 90%, 100% { transform: scaleY(1); }
+            95% { transform: scaleY(0.1); }
+        }
+
+        /* Body/Torso */
+        .body {
+            width: 100px;
+            height: 120px;
+            background: var(--primary);
+            border-radius: 20px 20px 10px 10px;
+            position: absolute;
+            top: 110px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Arms */
+        .arm {
+            width: 25px;
+            height: 80px;
+            background: var(--primary);
+            border-radius: 12px;
+            position: absolute;
+            top: 120px;
+        }
+
+        .arm.left {
+            left: 25px;
+        }
+
+        .arm.right {
+            right: 25px;
+        }
+
+        /* Hands */
+        .hand {
+            width: 30px;
+            height: 30px;
+            background: #ffeaa7;
+            border-radius: 50%;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Desk */
+        .desk {
+            width: 180px;
+            height: 15px;
+            background: #b2bec3;
+            border-radius: 3px;
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* Paper */
+        .paper {
+            width: 120px;
+            height: 80px;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            position: absolute;
+            bottom: 75px;
+            left: 50%;
+            transform: translateX(-50%);
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .paper-lines {
+            padding: 10px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .line {
+            height: 3px;
+            background: #e0e0e0;
+            border-radius: 1px;
+        }
+
+        .panel.wrong .line:nth-child(1) { width: 80%; }
+        .panel.wrong .line:nth-child(2) { width: 90%; }
+        .panel.wrong .line:nth-child(3) { width: 70%; }
+        .panel.wrong .line:nth-child(4) { width: 85%; }
+
+        .panel.right .line:nth-child(1) { width: 60%; }
+        .panel.right .line:nth-child(2) { width: 75%; }
+        .panel.right .line:nth-child(3) { width: 50%; }
+        .panel.right .line:nth-child(4) { width: 80%; }
+
+        /* Pen */
+        .pen {
+            width: 8px;
+            height: 50px;
+            background: linear-gradient(to bottom, var(--accent) 0%, var(--accent-dark) 100%);
+            border-radius: 2px 2px 4px 4px;
+            position: absolute;
+            bottom: 130px;
+            transform: rotate(-30deg);
+            transform-origin: bottom center;
+        }
+
+        .panel.right .pen {
+            background: linear-gradient(to bottom, var(--success) 0%, var(--success-dark) 100%);
+        }
+
+        /* Motion lines for wrong method */
+        .motion-lines {
+            position: absolute;
+            right: 30px;
+            top: 140px;
+            opacity: 0.4;
+        }
+
+        .motion-line {
+            width: 30px;
+            height: 3px;
+            background: var(--accent);
+            margin: 8px 0;
+            border-radius: 2px;
+            animation: moveRight 0.8s ease-in-out infinite;
+        }
+
+        .motion-line:nth-child(2) { animation-delay: 0.1s; width: 25px; }
+        .motion-line:nth-child(3) { animation-delay: 0.2s; width: 20px; }
+
+        @keyframes moveRight {
+            0%, 100% { transform: translateX(0); opacity: 0.4; }
+            50% { transform: translateX(10px); opacity: 0.8; }
+        }
+
+        /* Thought bubbles for right method */
+        .thought-bubble {
+            position: absolute;
+            right: 20px;
+            top: 10px;
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .thought-bubble::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 15px;
+            width: 15px;
+            height: 15px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .thought-bubble::before {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 5px;
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .thought-icon {
+            font-size: 24px;
+        }
+
+        /* X mark for wrong */
+        .x-mark {
+            position: absolute;
+            left: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            opacity: 0.15;
+        }
+
+        .x-mark::before,
+        .x-mark::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 60px;
+            height: 8px;
+            background: var(--accent);
+            border-radius: 4px;
+        }
+
+        .x-mark::before { transform: translate(-50%, -50%) rotate(45deg); }
+        .x-mark::after { transform: translate(-50%, -50%) rotate(-45deg); }
+
+        /* Check mark for right */
+        .check-mark {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            opacity: 0.15;
+        }
+
+        .check-mark::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 25px;
+            height: 40px;
+            border: solid var(--success);
+            border-width: 0 8px 8px 0;
+            transform: translate(-50%, -60%) rotate(45deg);
+        }
+
+        /* Description text */
+        .description {
+            text-align: center;
+            margin-top: auto;
+            padding-bottom: 10px;
+        }
+
+        .description p {
+            font-size: 15px;
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .panel.wrong .description p {
+            color: var(--accent);
+            opacity: 0.8;
+        }
+
+        /* Status indicator */
+        .status {
+            position: absolute;
+            bottom: 140px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 12px;
+            font-weight: 500;
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        .panel.wrong .status {
+            background: rgba(239, 35, 60, 0.1);
+            color: var(--accent);
+        }
+
+        .panel.right .status {
+            background: rgba(6, 214, 160, 0.1);
+            color: var(--success-dark);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .panel.wrong .status-dot {
+            background: var(--accent);
+            animation: flash 1s ease-in-out infinite;
+        }
+
+        .panel.right .status-dot {
+            background: var(--success);
+            animation: flash 1s ease-in-out infinite;
+        }
+
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="divider"></div>
+
+        <!-- WRONG Panel -->
+        <div class="panel wrong">
+            <div class="label">错误</div>
+            <div class="x-mark"></div>
+            <h2 class="title">抄写式笔记</h2>
+            <p class="subtitle">边看边抄，手在动脑子不动</p>
+
+            <div class="illustration">
+                <div class="person-container">
+                    <!-- Brain - inactive -->
+                    <div class="brain">
+                        <span class="brain-icon">🧠</span>
+                    </div>
+
+                    <!-- Head -->
+                    <div class="head">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="body"></div>
+
+                    <!-- Arms -->
+                    <div class="arm left">
+                        <div class="hand"></div>
+                    </div>
+                    <div class="arm right">
+                        <div class="hand"></div>
+                    </div>
+
+                    <!-- Desk -->
+                    <div class="desk"></div>
+
+                    <!-- Paper -->
+                    <div class="paper">
+                        <div class="paper-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pen with motion -->
+                    <div class="pen"></div>
+
+                    <!-- Motion lines -->
+                    <div class="motion-lines">
+                        <div class="motion-line"></div>
+                        <div class="motion-line"></div>
+                        <div class="motion-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>手部机械运动</span>
+            </div>
+
+            <div class="description">
+                <p>手在机械地移动<br>大脑处于休眠状态</p>
+            </div>
+        </div>
+
+        <!-- RIGHT Panel -->
+        <div class="panel right">
+            <div class="label">正确</div>
+            <div class="check-mark"></div>
+            <h2 class="title">记忆式笔记</h2>
+            <p class="subtitle">读完后凭记忆写笔记</p>
+
+            <div class="illustration">
+                <div class="person-container">
+                    <!-- Brain - active -->
+                    <div class="brain">
+                        <span class="brain-icon">🧠</span>
+                    </div>
+
+                    <!-- Thought bubble -->
+                    <div class="thought-bubble">
+                        <span class="thought-icon">💡</span>
+                    </div>
+
+                    <!-- Head -->
+                    <div class="head">
+                        <div class="eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                        </div>
+                    </div>
+
+                    <!-- Body -->
+                    <div class="body"></div>
+
+                    <!-- Arms -->
+                    <div class="arm left">
+                        <div class="hand"></div>
+                    </div>
+                    <div class="arm right">
+                        <div class="hand"></div>
+                    </div>
+
+                    <!-- Desk -->
+                    <div class="desk"></div>
+
+                    <!-- Paper -->
+                    <div class="paper">
+                        <div class="paper-lines">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </div>
+
+                    <!-- Pen -->
+                    <div class="pen"></div>
+                </div>
+            </div>
+
+            <div class="status">
+                <span class="status-dot"></span>
+                <span>大脑主动回忆</span>
+            </div>
+
+            <div class="description">
+                <p>大脑积极参与<br>加深记忆效果</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

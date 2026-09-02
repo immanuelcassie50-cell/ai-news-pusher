@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第二部分：心理安全感</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const scaleX = window.innerWidth / 960;
+  const scaleY = window.innerHeight / 540;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = '960px';
+  slide.style.height = '540px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#2a9d8f;">
+  <svg style="position:absolute; left:0; top:0; width:400px; height:540px;" aria-hidden="true">
+    <rect width="8" height="540" fill="#e9c46a"/>
+  </svg>
+  <div style="position:absolute; top:180px; left:80px;">
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:120px; font-weight:700; color:#ffffff; opacity:0.3; line-height:1;">02</p>
+  </div>
+  <div style="position:absolute; top:200px; left:200px;">
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:16px; color:#e9c46a; letter-spacing:4px;">PART TWO</p>
+    <h2 style="margin:16px 0 0 0; font-family:'Times New Roman', serif; font-size:44px; font-weight:700; color:#ffffff;">心理安全感</h2>
+    <p style="margin:12px 0 0 0; font-family:'Times New Roman', serif; font-size:18px; color:#ffffff; opacity:0.8;">Psychological Safety</p>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">6</text>
+  </svg>
+</div>
+</body>
+</html>

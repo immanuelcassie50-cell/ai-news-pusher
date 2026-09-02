@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "23qlDI8vsd0=",
+  "success": true,
+  "projectFilePath": "D:\\CC\\temp\\word-gen\\Inspect\\Inspect.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\documentformat.openxml\\3.5.1\\documentformat.openxml.3.5.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\documentformat.openxml.framework\\3.5.1\\documentformat.openxml.framework.3.5.1.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\system.io.packaging\\10.0.2\\system.io.packaging.10.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

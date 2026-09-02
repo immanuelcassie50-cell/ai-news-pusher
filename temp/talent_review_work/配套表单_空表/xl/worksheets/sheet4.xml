@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="1" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="14" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+    <col min="5" max="5" width="14" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="20" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="32" customHeight="1">
+      <c r="A1" t="s" s="4"><v>100</v></c>
+    </row>
+    <row r="2" ht="24" customHeight="1">
+      <c r="A2" t="s" s="4"><v>101</v></c>
+    </row>
+    <row r="3" ht="20" customHeight="1">
+      <c r="A3" t="s" s="1"><v>102</v></c>
+      <c r="B3" t="s" s="1"><v>李明</v></c>
+      <c r="C3" t="s" s="1"><v>103</v></c>
+      <c r="D3" t="s" s="1"><v>男</v></c>
+      <c r="E3" t="s" s="1"><v>104</v></c>
+      <c r="F3" s="9"><v>32</v></c>
+    </row>
+    <row r="4" ht="20" customHeight="1">
+      <c r="A4" t="s" s="1"><v>105</v></c>
+      <c r="B4" t="s" s="1"><v>硕士</v></c>
+      <c r="C4" t="s" s="1"><v>106</v></c>
+      <c r="D4" s="11"><v>2019-06-15</v></c>
+      <c r="E4" t="s" s="1"><v>107</v></c>
+      <c r="F4" t="s" s="1"><v>高级工程师</v></c>
+    </row>
+    <row r="6" ht="24" customHeight="1">
+      <c r="A6" t="s" s="4"><v>108</v></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" t="s" s="4"><v>109</v></c>
+      <c r="B7" t="s" s="4"><v>110</v></c>
+      <c r="C7" t="s" s="4"><v>111</v></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" t="s" s="2"><v>112</v></c>
+      <c r="B8" s="9"><v>5</v></c>
+      <c r="C8" t="s" s="1"><v>加强行业分析能力</v></c>
+    </row>
+    <row r="9" ht="20" customHeight="1">
+      <c r="A9" t="s" s="2"><v>113</v></c>
+      <c r="B9" s="9"><v>4</v></c>
+      <c r="C9" t="s" s="1"><v>提升团队管理技巧</v></c>
+    </row>
+    <row r="10" ht="20" customHeight="1">
+      <c r="A10" t="s" s="2"><v>114</v></c>
+      <c r="B10" s="9"><v>5</v></c>
+      <c r="C10" t="s" s="1"><v>保持学习热情</v></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" t="s" s="2"><v>115</v></c>
+      <c r="B11" s="9"><v>4</v></c>
+      <c r="C11" t="s" s="1"><v>更多参与变革项目</v></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" t="s" s="2"><v>116</v></c>
+      <c r="B12" s="9"><v>4</v></c>
+      <c r="C12" t="s" s="1"><v>加深业务理解</v></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" t="s" s="4"><v>平均分</v></c>
+      <c r="B13" s="8"><f>AVERAGE(B8:B12)</f><v></v></c>
+    </row>
+    <row r="15" ht="24" customHeight="1">
+      <c r="A15" t="s" s="4"><v>121</v></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" t="s" s="4"><v>122</v></c>
+      <c r="B16" t="s" s="4"><v>123</v></c>
+      <c r="C16" t="s" s="4"><v>124</v></c>
+      <c r="D16" t="s" s="4"><v>125</v></c>
+      <c r="E16" t="s" s="4"><v>126</v></c>
+      <c r="F16" t="s" s="4"><v>127</v></c>
+    </row>
+    <row r="17" ht="40" customHeight="1">
+      <c r="A17" t="s" s="1"><v>12个月内晋升为技术专家</v></c>
+      <c r="B17" t="s" s="1"><v>主导2个核心项目</v></c>
+      <c r="C17" t="s" s="1"><v>KPI达到A级</v></c>
+      <c r="D17" t="s" s="1"><v>能力评估达标</v></c>
+      <c r="E17" t="s" s="1"><v>与业务战略对齐</v></c>
+      <c r="F17" s="11"><v>2027-08-30</v></c>
+    </row>
+    <row r="19" ht="24" customHeight="1">
+      <c r="A19" t="s" s="4"><v>128</v></c>
+    </row>
+    <row r="20" ht="20" customHeight="1">
+      <c r="A20" t="s" s="4"><v>发展方式</v></c>
+      <c r="B20" t="s" s="4"><v>具体计划</v></c>
+      <c r="C20" t="s" s="4"><v>时间节点</v></c>
+      <c r="D20" t="s" s="4"><v>136</v></c>
+    </row>
+    <row r="21" ht="20" customHeight="1">
+      <c r="A21" t="s" s="2"><v>129</v></c>
+      <c r="B21" t="s" s="1"><v>主导智慧工厂数字化转型项目</v></c>
+      <c r="C21" t="s" s="1"><v>2026-Q3</v></c>
+      <c r="D21" t="s" s="1"><v>项目成果评估</v></c>
+    </row>
+    <row r="22" ht="20" customHeight="1">
+      <c r="A22" t="s" s="2"><v>130</v></c>
+      <c r="B22" t="s" s="1"><v>产品部轮岗3个月</v></c>
+      <c r="C22" t="s" s="1"><v>2026-Q4</v></c>
+      <c r="D22" t="s" s="1"><v>轮岗考核</v></c>
+    </row>
+    <row r="23" ht="20" customHeight="1">
+      <c r="A23" t="s" s="2"><v>131</v></c>
+      <c r="B23" t="s" s="1"><v>参加领导力培训课程</v></c>
+      <c r="C23" t="s" s="1"><v>2026-Q4</v></c>
+      <c r="D23" t="s" s="1"><v>培训结业证书</v></c>
+    </row>
+    <row r="24" ht="20" customHeight="1">
+      <c r="A24" t="s" s="2"><v>132</v></c>
+      <c r="B24" t="s" s="1"><v>张总作为导师一对一辅导</v></c>
+      <c r="C24" t="s" s="1"><v>持续进行</v></c>
+      <c r="D24" t="s" s="1"><v>季度回顾</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

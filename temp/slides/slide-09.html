@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>模块一 - 认知与实操</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+  background: #8B0000;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+  <!-- Left accent bar -->
+  <svg style="position:absolute; left:0; top:0;" width="8" height="540" viewBox="0 0 8 540">
+    <rect width="8" height="540" fill="#C41E3A"/>
+  </svg>
+
+  <!-- Section number -->
+  <svg style="position:absolute; left:60px; top:120px;" width="200" height="120" viewBox="0 0 200 120">
+    <text x="0" y="100" font-size="100" font-weight="700" fill="#FFFFFF" opacity="0.3">01</text>
+  </svg>
+
+  <!-- Main title -->
+  <p style="position:absolute; left:60px; top:160px; margin:0; font-size:72px; font-weight:700; color:#FFFFFF; font-family:'Microsoft YaHei', Arial;">模块一</p>
+
+  <!-- Subtitle -->
+  <p style="position:absolute; left:60px; top:260px; margin:0; font-size:36px; font-weight:400; color:#F5F5F5; font-family:'Microsoft YaHei', Arial;">认知与实操</p>
+
+  <!-- Divider line -->
+  <svg style="position:absolute; left:60px; top:320px;" width="200" height="3" aria-hidden="true">
+    <rect width="200" height="3" fill="#C41E3A"/>
+  </svg>
+
+  <!-- Content description -->
+  <p style="position:absolute; left:60px; top:350px; margin:0; font-size:18px; font-weight:400; color:#F5F5F5; font-family:'Microsoft YaHei', Arial; opacity:0.9;">8章内容</p>
+  <p style="position:absolute; left:60px; top:380px; margin:0; font-size:16px; font-weight:400; color:#999999; font-family:'Microsoft YaHei', Arial;">涵盖冲稳保本质、分数定位、信息收集、<br>产业判断、倒推规划等</p>
+
+  <!-- Decorative shapes -->
+  <svg style="position:absolute; right:60px; bottom:60px;" width="300" height="200" viewBox="0 0 300 200" aria-hidden="true">
+    <circle cx="250" cy="150" r="80" fill="#C41E3A" opacity="0.2"/>
+    <circle cx="280" cy="100" r="50" fill="#FFFFFF" opacity="0.1"/>
+    <rect x="0" y="180" width="100" height="4" fill="#C41E3A" opacity="0.5"/>
+  </svg>
+
+  <!-- Page number badge -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#C41E3A"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">09</text>
+  </svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<styleSheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <numFmts count="0"/>
+  <fonts>
+    <font><name val="Arial"/><sz val="11"/></font>
+    <font><name val="Arial"/><b/><sz val="14"/><color rgb="00FFFFFF"/></font>
+    <font><name val="Arial"/><b/><sz val="11"/><color rgb="00FFFFFF"/></font>
+    <font><name val="Arial"/><b/><sz val="11"/><color rgb="001B4F9B"/></font>
+    <font><name val="Arial"/><sz val="10"/></font>
+    <font><name val="Arial"/><i/><sz val="9"/><color rgb="00706060"/></font>
+    <font><name val="Arial"/><sz val="9"/><color rgb="00C00000"/></font>
+  </fonts>
+  <fills>
+    <fill><patternFill patternType="none"/></fill>
+    <fill><patternFill patternType="gray125"/></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="001B4F9B"/></patternFill></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00DEEAF1"/></patternFill></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00F2F2F2"/></patternFill></fill>
+    <fill><patternFill patternType="solid"><fgColor rgb="00FFFFC0"/></patternFill></fill>
+  </fills>
+  <borders>
+    <border><left/><right/><top/><bottom/><diagonal/></border>
+    <border>
+      <left style="thin"><color rgb="00AAAAAA"/></left>
+      <right style="thin"><color rgb="00AAAAAA"/></right>
+      <top style="thin"><color rgb="00AAAAAA"/></top>
+      <bottom style="thin"><color rgb="00AAAAAA"/></bottom>
+    </border>
+  </borders>
+  <cellStyleXfs count="1"><xf numFmtId="0" fontId="0" fillId="0" borderId="0"/></cellStyleXfs>
+  <cellXfs>
+    <xf numFmtId="0" fontId="0" fillId="0" borderId="0" xfId="0"/>
+    <xf numFmtId="0" fontId="1" fillId="2" borderId="0" xfId="0" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="2" fillId="2" borderId="1" xfId="0" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="3" fillId="3" borderId="1" xfId="0" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="4" fillId="4" borderId="0" xfId="0" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="0" fillId="5" borderId="1" xfId="0" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="0" fillId="0" borderId="1" xfId="0" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="5" fillId="4" borderId="0" xfId="0" applyAlignment="1"><alignment horizontal="left" vertical="center" wrapText="1"/></xf>
+    <xf numFmtId="0" fontId="2" fillId="2" borderId="1" xfId="0" applyAlignment="1"><alignment horizontal="center" vertical="center" wrapText="1"/></xf>
+  </cellXfs>
+</styleSheet>

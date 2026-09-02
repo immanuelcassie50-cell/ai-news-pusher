@@ -1,0 +1,53 @@
+[
+  {
+    "description": "单一 Excel 包含 5 个项目，批量生成财务通知邮件",
+    "input": {
+      "bc_file": "test_data/projects.xlsx",
+      "template": "test_data/template.txt",
+      "config": "test_data/config.json",
+      "pm_file": "test_data/pm_list.xlsx",
+      "output": "test_output"
+    },
+    "expected": {
+      "success_count": 5,
+      "files_generated": [
+        "P001_项目A_财务通知.txt",
+        "P002_项目B_财务通知.txt",
+        "P003_项目C_财务通知.txt",
+        "P004_项目D_财务通知.txt",
+        "P005_项目E_财务通知.txt"
+      ],
+      "summary_file": "test_output/生成摘要.txt"
+    }
+  },
+  {
+    "description": "部分项目超预算，自动添加预警提示",
+    "input": {
+      "bc_file": "test_data/projects_overbudget.xlsx",
+      "template": "test_data/template.txt",
+      "config": "test_data/config.json",
+      "output": "test_output_alert"
+    },
+    "expected": {
+      "success_count": 3,
+      "alert_count": 2,
+      "alert_projects": ["P002", "P003"],
+      "warnings_in_email": ["⚠️【预算已超支】", "⚡【预算接近上限】"]
+    }
+  },
+  {
+    "description": "仅处理指定项目范围（scope 参数）",
+    "input": {
+      "bc_file": "test_data/projects.xlsx",
+      "template": "test_data/template.txt",
+      "config": "test_data/config.json",
+      "output": "test_output_scope",
+      "scope": "P001,P003,P005"
+    },
+    "expected": {
+      "success_count": 3,
+      "processed_projects": ["P001", "P003", "P005"],
+      "skipped_count": 2
+    }
+  }
+]

@@ -1,0 +1,6 @@
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.csproj.AssemblyReference.cache
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.AssemblyInfoInputs.cache
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.AssemblyInfo.cs
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.csproj.CoreCompileInputs.cache
+D:\CC\temp\obj\Debug\net8.0\SalesHandbook.sourcelink.json

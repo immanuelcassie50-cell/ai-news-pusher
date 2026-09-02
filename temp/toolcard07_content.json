@@ -1,0 +1,192 @@
+{
+  "title": "确认话术工具卡",
+  "type": "general",
+  "author": "关键时刻：以服务建立企业竞争优势",
+  "date": "2026",
+  "accent": "#2D6A4F",
+  "cover_pattern": "minimal",
+  "content": [
+    {
+      "type": "h1",
+      "text": "确认话术工具卡"
+    },
+    {
+      "type": "spacer",
+      "pt": 16
+    },
+    {
+      "type": "h2",
+      "text": "进度确认"
+    },
+    {
+      "type": "bullet",
+      "text": "\"我来确认一下目前的进展……\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"您对目前的进度满意吗？\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"接下来我们需要做的是……\""
+    },
+    {
+      "type": "spacer",
+      "pt": 12
+    },
+    {
+      "type": "h2",
+      "text": "方案确认"
+    },
+    {
+      "type": "bullet",
+      "text": "\"我们达成的共识是……\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"您看这个方案还有需要调整的地方吗？\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"我来做个总结，请您确认……\""
+    },
+    {
+      "type": "spacer",
+      "pt": 12
+    },
+    {
+      "type": "h2",
+      "text": "感受确认"
+    },
+    {
+      "type": "bullet",
+      "text": "\"您对这次服务的感受如何？\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"有没有什么让您不太满意的地方？\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"我们还能为您做些什么？\""
+    },
+    {
+      "type": "spacer",
+      "pt": 12
+    },
+    {
+      "type": "h2",
+      "text": "承诺确认"
+    },
+    {
+      "type": "bullet",
+      "text": "\"我承诺在XX日前完成……\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"您可以期待在XX时收到……\""
+    },
+    {
+      "type": "bullet",
+      "text": "\"如果有任何问题，您可以联系……\""
+    },
+    {
+      "type": "pagebreak"
+    },
+    {
+      "type": "h1",
+      "text": "确认的时机"
+    },
+    {
+      "type": "spacer",
+      "pt": 8
+    },
+    {
+      "type": "bullet",
+      "text": "服务过程中每个关键节点"
+    },
+    {
+      "type": "bullet",
+      "text": "方案或计划达成时"
+    },
+    {
+      "type": "bullet",
+      "text": "承诺做出时"
+    },
+    {
+      "type": "bullet",
+      "text": "服务结束时"
+    },
+    {
+      "type": "bullet",
+      "text": "客户离开前"
+    },
+    {
+      "type": "spacer",
+      "pt": 20
+    },
+    {
+      "type": "h1",
+      "text": "确认的作用"
+    },
+    {
+      "type": "spacer",
+      "pt": 8
+    },
+    {
+      "type": "bullet",
+      "text": "确保信息准确传递"
+    },
+    {
+      "type": "bullet",
+      "text": "避免误解和遗漏"
+    },
+    {
+      "type": "bullet",
+      "text": "让客户感到被重视"
+    },
+    {
+      "type": "bullet",
+      "text": "为后续跟进提供依据"
+    },
+    {
+      "type": "spacer",
+      "pt": 20
+    },
+    {
+      "type": "h1",
+      "text": "最佳实践"
+    },
+    {
+      "type": "spacer",
+      "pt": 8
+    },
+    {
+      "type": "bullet",
+      "text": "使用客户的语言"
+    },
+    {
+      "type": "bullet",
+      "text": "总结而非复述"
+    },
+    {
+      "type": "bullet",
+      "text": "书面记录重要承诺"
+    },
+    {
+      "type": "bullet",
+      "text": "主动确认而非被动等待"
+    },
+    {
+      "type": "spacer",
+      "pt": 32
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "caption",
+      "text": "关键时刻：以服务建立企业竞争优势 | 工具卡 07"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+# Systematic Resilience
+
+## Design Philosophy
+
+**Form as Architecture**: Information crystallizes into precise geometric columns—three monolithic pillars standing as equals, each representing a fundamental system boundary. The vertical orientation evokes structural integrity and hierarchical defense lines. Forms are sharp-edged, unapologetic, communicating the certainty required of底线 (bottom lines). Every proportion derives from systematic ratios, the work of countless refinements by a master craftsman who understands that precision communicates authority.
+
+**Chromatic Hierarchy**: Color serves as silent language. The primary dark anchors each header, commanding attention through weight rather than saturation. The accent red appears sparingly—reserved for moments requiring urgency, marking the critical threshold where systems cross from stable to critical. Secondary grays recede, supporting without competing. Light backgrounds provide breathing room, each card floating on white space with the confidence of work that needs no justification. This chromatic restraint is painstakingly calibrated.
+
+**Spatial Grammar**: Three columns divide the canvas into equal measures, each containing its own internal logic: header above, content below, connected through visual alignment that suggests inevitability. The negative space between elements follows the same proportional relationships as the positive forms—this meticulous attention to spatial rhythm separates master-level execution from competent design. Nothing crowds; nothing drifts.
+
+**Typographic Precision**: Typography functions as architectural element, not mere text. Headers sit with quiet authority, sized to lead without shouting. Bullet points follow in measured rhythm, each phrase a complete thought held in tension with its neighbors. The typeface selection prioritizes geometric clarity—this is data as design, information rendered with the same respect one gives to structural engineering. Every character placed with painstaking care.
+
+**Visual Systematization**: The composition reads as a single system despite multiple parts. Shared border treatments, consistent padding, unified corner radii—all speak to unified authorship under deep expertise. The three columns mirror each other like a well-engineered framework: distinct roles, identical grammar. This is work that took countless hours to achieve such apparent effortlessness, the product of refined sensibility at the absolute top of the field.

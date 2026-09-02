@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第三章：人机任务分配 · 组织统筹能力</title>
+<style>
+:root {
+  --primary: #1A5F7A;
+  --primary-light: #2A7A9A;
+  --primary-dark: #0F4A5F;
+  --accent: #C45C3E;
+  --warm: #F6F3EF;
+  --bg: #FBFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --gray-70: #4A4748;
+  --gray-50: #7A7678;
+  --gray-30: #B8B4B5;
+  --gray-10: #EAE6E4;
+  --font-serif: 'Didot','Bodoni MT','Bodoni 72','Times New Roman',Georgia,serif;
+  --font-body: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--warm);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.eyebrow {
+  font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
+  font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before {
+  content: ''; display: block; width: 24px; height: 1.5px; background: var(--primary);
+}
+.serif { font-family: var(--font-serif); }
+
+/* HERO */
+.hero {
+  background: var(--surface);
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid var(--gray-10);
+}
+.hero-stripe {
+  position: absolute; top: 0; left: 0;
+  width: 5px; height: 100%; background: var(--primary);
+}
+.hero-inner {
+  padding: 64px 48px 72px;
+  max-width: 1100px; margin: 0 auto;
+}
+.hero-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-10);
+}
+.brand-badge { display: flex; align-items: center; gap: 0; }
+.brand-rect {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 7px 16px; line-height: 1;
+}
+.brand-en {
+  font-size: 10px; letter-spacing: .12em; color: var(--gray-50);
+  text-transform: uppercase; padding-left: 14px;
+  border-left: 1px solid var(--gray-10); margin-left: 14px;
+  line-height: 1.5;
+}
+.hero-tag {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .08em;
+  border: 1px solid var(--gray-10); padding: 6px 14px; border-radius: 2px;
+}
+.hero-body {
+  display: grid; grid-template-columns: 1fr auto; gap: 64px; align-items: end;
+}
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: 42px; font-weight: 400; line-height: 1.25;
+  color: var(--ink); margin-bottom: 18px; letter-spacing: -.01em;
+}
+.hero-h1 em { font-style: normal; color: var(--primary); }
+.hero-lead {
+  font-size: 15px; color: var(--gray-50); max-width: 560px; line-height: 1.85;
+}
+.hero-metrics {
+  display: flex; flex-direction: column; gap: 0;
+  align-self: stretch; justify-content: flex-end;
+  border-left: 1px solid var(--gray-10); padding-left: 48px;
+}
+.metric {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray-10);
+  text-align: right;
+}
+.metric:last-child { border-bottom: none; }
+.metric-val {
+  font-family: var(--font-serif);
+  font-size: 52px; font-weight: 400; color: var(--primary);
+  line-height: 1; display: block; letter-spacing: -.02em;
+}
+.metric-lbl {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .06em; margin-top: 4px; display: block;
+}
+
+/* INSIGHT */
+.insight {
+  background: var(--primary-dark); color: #fff;
+  padding: 88px 0;
+  position: relative; overflow: hidden;
+}
+.insight::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+}
+.insight-grid {
+  display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: center;
+}
+.insight-quote {
+  font-family: var(--font-serif);
+  font-size: 26px; line-height: 1.55; color: #fff;
+  font-weight: 400;
+  position: relative; padding-left: 28px;
+}
+.insight-quote::before {
+  content: '';
+  position: absolute; left: 0; top: 4px; bottom: 4px;
+  width: 3px; background: var(--accent);
+}
+.insight-list { display: flex; flex-direction: column; gap: 28px; }
+.insight-item { display: flex; gap: 18px; }
+.insight-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0; margin-top: 10px;
+}
+.insight-text { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.85; }
+.insight-text strong { color: rgba(255,255,255,.92); }
+
+/* SECTIONS */
+.section { padding: 88px 0; }
+.section-alt { background: var(--surface); }
+.section-warm { background: var(--warm); }
+.section-head { margin-bottom: 48px; }
+.section-head h2 {
+  font-family: var(--font-serif); font-size: 30px; font-weight: 400;
+  color: var(--ink); margin: 14px 0 10px; line-height: 1.35;
+}
+.section-head p { font-size: 14px; color: var(--gray-50); }
+
+/* TASK TRAITS */
+.trait-grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px;
+}
+.trait-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 24px 20px;
+  border: 1px solid var(--gray-10);
+  text-align: center;
+  transition: border-color .3s var(--ease), transform .3s var(--ease);
+}
+.trait-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.trait-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(26,95,122,.1);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 14px;
+}
+.trait-icon svg { width: 22px; height: 22px; fill: var(--primary); }
+.trait-name {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin-bottom: 6px;
+}
+.trait-desc {
+  font-size: 11px; color: var(--gray-50); line-height: 1.6;
+}
+
+/* 5D MODEL */
+.model-container {
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--gray-10);
+  padding: 40px;
+}
+.model-header {
+  display: grid; grid-template-columns: 160px repeat(5, 1fr);
+  background: var(--ink); color: #fff;
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 4px 4px 0 0;
+}
+.model-header span {
+  padding: 14px 12px;
+  text-align: center;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.model-header span:last-child { border-right: none; }
+.model-row {
+  display: grid; grid-template-columns: 160px repeat(5, 1fr);
+  border-bottom: 1px solid var(--gray-10);
+  transition: background .25s var(--ease);
+}
+.model-row:last-child { border-bottom: none; }
+.model-row:hover { background: rgba(26,95,122,.03); }
+.model-row span {
+  padding: 14px 12px;
+  font-size: 12px;
+  text-align: center;
+  border-right: 1px solid var(--gray-10);
+  display: flex; align-items: center; justify-content: center;
+}
+.model-row span:last-child { border-right: none; }
+.model-row span:first-child {
+  font-weight: 700; color: var(--ink);
+  background: var(--warm);
+  font-size: 11px;
+}
+.score { display: flex; gap: 3px; justify-content: center; }
+.score-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--gray-10);
+}
+.score-dot.active { background: var(--primary); }
+.score-dot.high { background: var(--accent); }
+
+.model-legend {
+  display: flex; gap: 24px; margin-top: 20px; justify-content: center;
+}
+.legend-item {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 11px; color: var(--gray-50);
+}
+.legend-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+}
+.legend-dot.low { background: var(--gray-10); }
+.legend-dot.mid { background: var(--primary); }
+.legend-dot.high { background: var(--accent); }
+
+/* DYNAMIC ALLOCATION */
+.process-flow {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.process-step {
+  flex: 1; text-align: center;
+  position: relative;
+}
+.process-step::after {
+  content: ''; position: absolute;
+  right: -16px; top: 24px;
+  width: 0; height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid var(--gray-30);
+}
+.process-step:last-child::after { display: none; }
+.process-icon {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: var(--primary); display: flex;
+  align-items: center; justify-content: center;
+  margin: 0 auto 12px;
+}
+.process-icon svg { width: 22px; height: 22px; fill: #fff; }
+.process-num {
+  font-family: var(--font-serif); font-size: 32px;
+  color: var(--gray-10); margin-bottom: 4px;
+}
+.process-title {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin-bottom: 4px;
+}
+.process-desc { font-size: 11px; color: var(--gray-50); }
+
+.cycle-note {
+  background: var(--warm);
+  border-radius: 4px;
+  padding: 20px 24px;
+  border-left: 4px solid var(--primary);
+  font-size: 13px; color: var(--gray-70); line-height: 1.8;
+}
+.cycle-note strong { color: var(--primary); }
+
+/* TRAPS */
+.trap-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+.trap-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 28px 24px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+  overflow: hidden;
+}
+.trap-card::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 4px;
+  background: var(--accent);
+}
+.trap-name {
+  font-size: 14px; font-weight: 700; color: var(--accent);
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.trap-name::before {
+  content: '!'; width: 20px; height: 20px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 12px; font-weight: 700;
+}
+.trap-desc {
+  font-size: 12.5px; color: var(--gray-70); line-height: 1.75;
+  margin-bottom: 14px;
+}
+.trap-solution {
+  background: var(--warm); border-radius: 4px;
+  padding: 12px 14px; font-size: 12px; color: var(--gray-70);
+}
+.trap-solution strong { color: var(--primary); }
+
+/* DECISION TREE */
+.decision-tree {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 36px;
+  border: 1px solid var(--gray-10);
+}
+.tree-node {
+  display: flex; flex-direction: column; align-items: center;
+  margin-bottom: 24px;
+}
+.tree-question {
+  background: var(--primary); color: #fff;
+  padding: 14px 24px; border-radius: 4px;
+  font-size: 13px; font-weight: 700;
+  text-align: center;
+  max-width: 320px;
+}
+.tree-branches {
+  display: flex; gap: 32px; margin-top: 16px;
+}
+.tree-branch {
+  display: flex; flex-direction: column; align-items: center;
+}
+.tree-label {
+  font-size: 11px; font-weight: 700; padding: 6px 14px;
+  border-radius: 12px; margin-bottom: 8px;
+}
+.tree-label.human { background: rgba(196,92,62,.15); color: var(--accent); }
+.tree-label.agent { background: rgba(26,95,122,.15); color: var(--primary); }
+.tree-arrow {
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid var(--gray-30);
+  margin-bottom: 8px;
+}
+.tree-result {
+  padding: 10px 16px; border-radius: 4px;
+  font-size: 11px; font-weight: 700;
+}
+.tree-result.human { background: rgba(196,92,62,.1); color: var(--accent); }
+.tree-result.agent { background: rgba(26,95,122,.1); color: var(--primary); }
+
+/* KEY POINT */
+.key-point {
+  background: var(--primary); color: #fff;
+  border-radius: 4px;
+  padding: 36px 32px;
+}
+.key-point-lbl {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,.55); margin-bottom: 16px; font-weight: 700;
+}
+.key-point-text {
+  font-family: var(--font-serif); font-size: 22px; line-height: 1.5;
+  color: #fff; font-weight: 400;
+}
+
+/* EXPANDABLE */
+.expand-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.expand-header:hover { background: var(--warm); }
+.expand-header h3 {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  display: flex; align-items: center; gap: 12px;
+}
+.expand-icon {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--primary); display: flex;
+  align-items: center; justify-content: center;
+  transition: transform .3s var(--ease);
+}
+.expand-icon svg { width: 12px; height: 12px; fill: #fff; }
+.expand-icon.open { transform: rotate(45deg); }
+.expand-content {
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s var(--ease);
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.expand-content.open { max-height: 600px; }
+.expand-inner { padding: 24px; }
+.expand-inner p { font-size: 13.5px; color: var(--gray-70); line-height: 1.8; margin-bottom: 12px; }
+.expand-inner p:last-child { margin-bottom: 0; }
+.expand-inner ul { margin: 12px 0; padding-left: 20px; }
+.expand-inner li { font-size: 13px; color: var(--gray-70); margin-bottom: 8px; }
+
+/* FOOTER */
+.foot {
+  background: var(--ink); padding: 56px 0;
+}
+.foot-inner {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.foot-left { display: flex; align-items: center; gap: 20px; }
+.foot-mark {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 8px 18px; border-radius: 2px;
+}
+.foot-title { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.85); margin-bottom: 3px; }
+.foot-sub { font-size: 12px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+.foot-note {
+  text-align: right; font-size: 11.5px; color: rgba(255,255,255,.28); line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .container, .hero-inner { padding-left: 24px; padding-right: 24px; }
+  .hero-body { grid-template-columns: 1fr; }
+  .hero-metrics { flex-direction: row; border-left: none; padding-left: 0; border-top: 1px solid var(--gray-10); padding-top: 32px; margin-top: 32px; }
+  .metric { padding: 0 24px 0 0; border-bottom: none; text-align: left; }
+  .insight-grid { grid-template-columns: 1fr; gap: 48px; }
+  .trait-grid { grid-template-columns: repeat(2, 1fr); }
+  .model-header, .model-row { grid-template-columns: 100px repeat(5, 1fr); }
+  .trap-grid { grid-template-columns: 1fr; }
+  .process-flow { flex-wrap: wrap; }
+  .process-step::after { display: none; }
+  .tree-branches { flex-direction: column; gap: 16px; }
+  .foot-inner { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .foot-note { text-align: left; }
+}
+
+/* PRINT */
+@media print {
+  @page { size: A3 landscape; margin: 15mm; }
+  body { background: #fff; font-size: 11pt; }
+  .hero { border: none; box-shadow: none; }
+  .insight { background: #f5f5f5; color: #000; }
+  .insight-text { color: #333; }
+  .foot { background: #333; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .model-header { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .model-row:hover { background: rgba(26,95,122,.05) !important; }
+  .trait-card:hover, .trap-card:hover { transform: none; box-shadow: none; }
+  .key-point { background: var(--primary) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .trap-card::before { background: var(--accent) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="brand-badge">
+        <div class="brand-rect">组织统筹</div>
+        <div class="brand-en">课7 · 企业文化<br>人机任务分配</div>
+      </div>
+      <div class="hero-tag">第三章</div>
+    </div>
+    <div class="hero-body">
+      <div>
+        <p class="eyebrow">人机任务分配</p>
+        <h1 class="hero-h1 serif">
+          让<span style="color: var(--accent)">合适</span>的人做合适的事<br>让<span style="color: var(--primary)">合适的机器</span>做合适的事
+        </h1>
+        <p class="hero-lead">不是"人能做的给机器做"，而是"什么任务应该交给谁"——这是统筹能力的核心</p>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-val serif">5</span>
+          <span class="metric-lbl">任务特征</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">5</span>
+          <span class="metric-lbl">评估维度</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">分配阶段</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- INSIGHT -->
+<section class="insight">
+  <div class="container">
+    <div class="insight-grid">
+      <blockquote class="insight-quote serif">
+        任务分配不是"人vs机器"的竞争，<br>而是"人机协同"的价值最大化
+      </blockquote>
+      <div class="insight-list">
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>麦肯锡研究：</strong>有效的任务分配可使人机团队效率提升40%，错误率降低55%</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>德勤数据：</strong>67%的企业在任务分配上存在"人类偏见"——倾向于给人分配复杂任务，即使机器更擅长</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>关键洞察：</strong>最常见的错误不是"用机器替代人"，而是"用人替代机器"——机器能做但没让机器做</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TASK TRAITS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">任务特征</p>
+      <h2 class="serif">评估任务的五个维度</h2>
+      <p>在分配任务前，先评估任务特征</p>
+    </div>
+    <div class="trait-grid">
+      <div class="trait-card">
+        <div class="trait-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3 class="trait-name">复杂度</h3>
+        <p class="trait-desc">需要多少步推理？涉及多少知识领域？</p>
+      </div>
+      <div class="trait-card">
+        <div class="trait-icon">
+          <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+        </div>
+        <h3 class="trait-name">创造性</h3>
+        <p class="trait-desc">需要原创内容还是模式重组？边界清晰吗？</p>
+      </div>
+      <div class="trait-card">
+        <div class="trait-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        </div>
+        <h3 class="trait-name">风险性</h3>
+        <p class="trait-desc">错误的后果严重吗？容错空间有多大？</p>
+      </div>
+      <div class="trait-card">
+        <div class="trait-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3 class="trait-name">情感性</h3>
+        <p class="trait-desc">需要情感共鸣吗？涉及人际敏感度吗？</p>
+      </div>
+      <div class="trait-card">
+        <div class="trait-icon">
+          <svg viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+        </div>
+        <h3 class="trait-name">时间敏感性</h3>
+        <p class="trait-desc">需要即时响应吗？窗口期有多短？</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5D MODEL -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">决策框架</p>
+      <h2 class="serif">5维评估模型</h2>
+      <p>结构化评估工具，快速判断任务分配</p>
+    </div>
+    <div class="model-container">
+      <div class="model-header">
+        <span>评估维度</span>
+        <span>数据依赖</span>
+        <span>变化频率</span>
+        <span>错误容忍</span>
+        <span>利益相关者影响</span>
+        <span>可解释性需求</span>
+      </div>
+      <div class="model-row">
+        <span>高→机器</span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+      </div>
+      <div class="model-row">
+        <span>中等</span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot active"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+      </div>
+      <div class="model-row">
+        <span>高→人类</span>
+        <span>
+          <div class="score">
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+          </div>
+        </span>
+        <span>
+          <div class="score">
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+            <span class="score-dot active high"></span>
+          </div>
+        </span>
+      </div>
+      <div class="model-legend">
+        <div class="legend-item">
+          <span class="legend-dot low"></span>
+          <span>低分 → 适合机器</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot mid"></span>
+          <span>中等 → 协同处理</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-dot high"></span>
+          <span>高分 → 人类主导</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DYNAMIC ALLOCATION -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">动态分配</p>
+      <h2 class="serif">四阶段分配策略</h2>
+      <p>任务分配是持续优化的过程，而非一次性决策</p>
+    </div>
+    <div class="process-flow">
+      <div class="process-step">
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <span class="process-num serif">1</span>
+        <h4 class="process-title">初始分配</h4>
+        <p class="process-desc">基于5维评估模型，做出初步分配决策</p>
+      </div>
+      <div class="process-step">
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+        </div>
+        <span class="process-num serif">2</span>
+        <h4 class="process-title">监测执行</h4>
+        <p class="process-desc">跟踪执行过程，收集效率和质量数据</p>
+      </div>
+      <div class="process-step">
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <span class="process-num serif">3</span>
+        <h4 class="process-title">评估调整</h4>
+        <p class="process-desc">与预期对比，识别偏差和优化点</p>
+      </div>
+      <div class="process-step">
+        <div class="process-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z"/></svg>
+        </div>
+        <span class="process-num serif">4</span>
+        <h4 class="process-title">持续优化</h4>
+        <p class="process-desc">更新分配规则，形成组织级知识沉淀</p>
+      </div>
+    </div>
+    <div class="cycle-note">
+      <strong>循环原则：</strong>任务分配不是"一次定终身"，而是持续优化的循环过程。建议每个任务周期结束后进行复盘，更新分配规则库。<br><br>
+      <strong>触发调整的信号：</strong><br>
+      • 机器连续2次产出不符合预期 → 重新评估任务特征<br>
+      • 人类在"机器擅长"任务上花费过多时间 → 重新分配<br>
+      • 任务特征发生变化 → 动态调整分配比例
+    </div>
+  </div>
+</section>
+
+<!-- COMMON TRAPS -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">常见误区</p>
+      <h2 class="serif">双重陷阱：人类偏见与智能体依赖</h2>
+      <p>识别误区，才能避免误区</p>
+    </div>
+    <div class="trap-grid">
+      <div class="trap-card">
+        <h3 class="trap-name">人类偏见</h3>
+        <p class="trap-desc">倾向于给人分配复杂任务，即使机器更擅长；或认为"只有人做的才靠谱"，忽视机器的精确性和稳定性</p>
+        <div class="trap-solution">
+          <strong>解决方案：</strong>用5维评估模型客观评估，不凭直觉。用数据验证分配是否最优。
+        </div>
+      </div>
+      <div class="trap-card">
+        <h3 class="trap-name">智能体依赖</h3>
+        <p class="trap-desc">过度依赖智能体，把需要人类判断的任务也交给机器；或忽视智能体的局限性，在边界外使用</p>
+        <div class="trap-solution">
+          <strong>解决方案：</strong>明确智能体的能力边界，建立负面清单（这类任务不交给机器）。
+        </div>
+      </div>
+      <div class="trap-card">
+        <h3 class="trap-name">过度分割</h3>
+        <p class="trap-desc">把完整任务切得太碎，人机之间切换频繁，导致上下文丢失和效率损失</p>
+        <div class="trap-solution">
+          <strong>解决方案：</strong>保持任务的完整性，给智能体足够大的任务单元，减少切换次数。
+        </div>
+      </div>
+      <div class="trap-card">
+        <h3 class="trap-name">忽视反馈</h3>
+        <p class="trap-desc">分配后不跟踪效果，不收集反馈，无法持续优化分配策略</p>
+        <div class="trap-solution">
+          <strong>解决方案：</strong>建立反馈回路，每次分配后记录效果，形成组织级知识积累。
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DECISION TREE EXAMPLE -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">决策树示例</p>
+      <h2 class="serif">简化版任务分配决策树</h2>
+      <p>快速判断：这项任务该交给谁？</p>
+    </div>
+    <div class="decision-tree">
+      <div class="tree-node">
+        <div class="tree-question">这个任务的数据是否充分、格式是否规范？</div>
+        <div class="tree-branches">
+          <div class="tree-branch">
+            <span class="tree-label agent">是 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result agent">考虑机器执行</div>
+          </div>
+          <div class="tree-branch">
+            <span class="tree-label human">否 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result human">需要人类处理</div>
+          </div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <div class="tree-question">出错的容忍度是否较低（后果严重）？</div>
+        <div class="tree-branches">
+          <div class="tree-branch">
+            <span class="tree-label human">高风险 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result human">人类主导+机器辅助</div>
+          </div>
+          <div class="tree-branch">
+            <span class="tree-label agent">可接受 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result agent">机器可以独立执行</div>
+          </div>
+        </div>
+      </div>
+      <div class="tree-node">
+        <div class="tree-question">任务是否需要理解模糊的商业语境或人际情感？</div>
+        <div class="tree-branches">
+          <div class="tree-branch">
+            <span class="tree-label human">是 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result human">人类主导</div>
+          </div>
+          <div class="tree-branch">
+            <span class="tree-label agent">否 →</span>
+            <div class="tree-arrow"></div>
+            <div class="tree-result agent">可考虑机器执行</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top: 40px;">
+      <p class="key-point-lbl">核心观点</p>
+      <p class="key-point-text">任务分配的核心不是"谁能做"，而是"谁更适合"——用结构化评估代替直觉判断</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">章节小结</p>
+      <h2 class="serif">本章要点</h2>
+    </div>
+    <div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">1</span>
+          任务特征评估
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>五个维度评估任务：复杂度（需要多少推理）→ 创造性（需要原创还是模式重组）→ 风险性（错误后果严重程度）→ 情感性（需要情感共鸣吗）→ 时间敏感性（需要即时响应吗）</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">2</span>
+          5维评估模型
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>数据依赖↑ → 机器更擅长 | 变化频率↑ → 人类更擅长 | 错误容忍↓ → 人类更擅长 | 利益相关者影响↑ → 人类更擅长 | 可解释性需求↑ → 人类更擅长</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">3</span>
+          双重陷阱
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>人类偏见：给人分配机器更擅长的任务 | 智能体依赖：把人类更擅长的任务交给机器。用结构化评估代替直觉判断。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-left">
+        <div class="foot-mark">组织统筹</div>
+        <div>
+          <p class="foot-title">第三章：人机任务分配</p>
+          <p class="foot-sub">课7 · 企业文化模块 · 组织统筹能力</p>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>让合适的人做合适的事，让合适的机器做合适的事</p>
+        <p>基于麦肯锡任务分配研究 · 德勤人机协作报告</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleExpand(header) {
+  const content = header.nextElementSibling;
+  const icon = header.querySelector('.expand-icon');
+  content.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+</script>
+</body>
+</html>

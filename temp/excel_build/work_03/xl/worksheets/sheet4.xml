@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="50" customWidth="1"/>
+    <col min="4" max="4" width="35" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="28" customHeight="1">
+  <c r="A1" s="4" t="inlineStr"><is><t>四象限分布与下一步建议</t></is></c>
+</row>
+  <row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>基于“团队评估汇总”自动统计四种状态的人数。配F8的四象限定位。</t></is></c>
+</row>
+  <row r="4" ht="22" customHeight="1">
+  <c r="A4" s="5" t="inlineStr"><is><t>一、四象限人数分布（公式自动统计）</t></is></c>
+</row>
+  <row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>象限</t></is></c>
+  <c r="B5" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C5" s="14" t="inlineStr"><is><t>占比</t></is></c>
+  <c r="D5" s="14" t="inlineStr"><is><t>团队占比参考标准</t></is></c>
+</row>
+  <row r="6">
+  <c r="A6" s="14" t="inlineStr"><is><t>领先型</t></is></c>
+  <c r="B6" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"领先型")</f><v></v></c>
+  <c r="C6" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"领先型")/12</f><v></v></c>
+  <c r="D6" s="16" t="inlineStr"><is><t>20-30%（团队核心力量）</t></is></c>
+</row>
+  <row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>漂移型</t></is></c>
+  <c r="B7" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"漂移型")</f><v></v></c>
+  <c r="C7" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"漂移型")/12</f><v></v></c>
+  <c r="D7" s="16" t="inlineStr"><is><t>&lt;15%（越少越好）</t></is></c>
+</row>
+  <row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>保守型</t></is></c>
+  <c r="B8" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"保守型")</f><v></v></c>
+  <c r="C8" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"保守型")/12</f><v></v></c>
+  <c r="D8" s="16" t="inlineStr"><is><t>30-40%（AI普惠度指标）</t></is></c>
+</row>
+  <row r="9">
+  <c r="A9" s="14" t="inlineStr"><is><t>困境型</t></is></c>
+  <c r="B9" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"困境型")</f><v></v></c>
+  <c r="C9" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"困境型")/12</f><v></v></c>
+  <c r="D9" s="16" t="inlineStr"><is><t>&lt;10%（越少越好）</t></is></c>
+</row>
+  <row r="11" ht="22" customHeight="1">
+  <c r="A11" s="5" t="inlineStr"><is><t>二、四种状态的解读与下一步</t></is></c>
+</row>
+  <row r="12" ht="22" customHeight="1">
+  <c r="A12" s="9" t="inlineStr"><is><t>【领先型】AI高 + 人类深度高</t></is></c>
+</row>
+  <row r="13">
+  <c r="A13" s="14" t="inlineStr"><is><t>特征</t></is></c>
+  <c r="B13" s="16" t="inlineStr"><is><t>特征：在两条轨道上都强；这是AI时代的理想状态。</t></is></c>
+</row>
+  <row r="14">
+  <c r="A14" s="14" t="inlineStr"><is><t>风险</t></is></c>
+  <c r="B14" s="16" t="inlineStr"><is><t>风险：可能“已经够好”，缺少继续投入的紧迫感。</t></is></c>
+</row>
+  <row r="15">
+  <c r="A15" s="14" t="inlineStr"><is><t>下一步</t></is></c>
+  <c r="B15" s="16" t="inlineStr"><is><t>下一步：①挑战型发展——给更难的任务 ②横向带教——让他带团队其他人 ③F7启动一——“你最满意的成长是什么？还有哪里可以不一样？”</t></is></c>
+</row>
+  <row r="17" ht="22" customHeight="1">
+  <c r="A17" s="9" t="inlineStr"><is><t>【漂移型】AI高 + 人类深度低</t></is></c>
+</row>
+  <row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>特征</t></is></c>
+  <c r="B18" s="16" t="inlineStr"><is><t>特征：AI协作力强，但判断力/关系力/领域深度出现退化——典型的“工具依赖”。</t></is></c>
+</row>
+  <row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>风险</t></is></c>
+  <c r="B19" s="16" t="inlineStr"><is><t>风险：一旦AI工具变化或失效，员工能力迅速塌方。</t></is></c>
+</row>
+  <row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>下一步</t></is></c>
+  <c r="B20" s="16" t="inlineStr"><is><t>下一步：①重点发展人类深度——这是漂移的核心 ②F6类型C/D的处理——把漂移问题转化为发展问题 ③设置“无AI日”——每周固定时间让员工独立完成核心工作</t></is></c>
+</row>
+  <row r="22" ht="22" customHeight="1">
+  <c r="A22" s="9" t="inlineStr"><is><t>【保守型】AI低 + 人类深度高</t></is></c>
+</row>
+  <row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>特征</t></is></c>
+  <c r="B23" s="16" t="inlineStr"><is><t>特征：员工能力强但不愿/不会用AI工具；产出效率上不去。</t></is></c>
+</row>
+  <row r="24">
+  <c r="A24" s="14" t="inlineStr"><is><t>风险</t></is></c>
+  <c r="B24" s="16" t="inlineStr"><is><t>风险：长期被同行拉开差距；也可能是抵制AI的工作品行问题（F6类型E的变体）。</t></is></c>
+</row>
+  <row r="25">
+  <c r="A25" s="14" t="inlineStr"><is><t>下一步</t></is></c>
+  <c r="B25" s="16" t="inlineStr"><is><t>下一步：①优先发展AI协作力——这轨最容易短期提升 ②从具体任务开始——选1-2个高频任务让员工先用AI ③配对带教——找领先型员工带他 ④判断动机——是真的不会用，还是抵制？</t></is></c>
+</row>
+  <row r="27" ht="22" customHeight="1">
+  <c r="A27" s="9" t="inlineStr"><is><t>【困境型】AI低 + 人类深度低</t></is></c>
+</row>
+  <row r="28">
+  <c r="A28" s="14" t="inlineStr"><is><t>特征</t></is></c>
+  <c r="B28" s="16" t="inlineStr"><is><t>特征：两条轨道都弱；需要更系统的诊断。</t></is></c>
+</row>
+  <row r="29">
+  <c r="A29" s="14" t="inlineStr"><is><t>风险</t></is></c>
+  <c r="B29" s="16" t="inlineStr"><is><t>风险：绩效整体低下；员工自身可能已陷入F6类型B方向迷失。</t></is></c>
+</row>
+  <row r="30">
+  <c r="A30" s="14" t="inlineStr"><is><t>下一步</t></is></c>
+  <c r="B30" s="16" t="inlineStr"><is><t>下一步：①优先接F6类型B——先承认他的处境，再开始 ②F9决策树——判断哪类缺口最紧迫 ③重新评估岗位匹配——可能在根本的岗位适配上出问题 ④增加沟通频率——从季度面谈到月度简短沟通</t></is></c>
+</row>
+  <row r="33" ht="22" customHeight="1">
+  <c r="A33" s="5" t="inlineStr"><is><t>三、团队健康度检查清单</t></is></c>
+</row>
+  <row r="34">
+  <c r="A34" s="14" t="inlineStr"><is><t>①领先型比例 = </t></is></c>
+  <c r="B34" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"领先型")/12</f><v></v></c>
+  <c r="C34" s="16" t="inlineStr"><is><t>团队核心力量（理想20-30%）</t></is></c>
+</row>
+  <row r="35">
+  <c r="A35" s="14" t="inlineStr"><is><t>②漂移型比例 = </t></is></c>
+  <c r="B35" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"漂移型")/12</f><v></v></c>
+  <c r="C35" s="16" t="inlineStr"><is><t>风险信号（应&lt;15%）</t></is></c>
+</row>
+  <row r="36">
+  <c r="A36" s="14" t="inlineStr"><is><t>③保守型比例 = </t></is></c>
+  <c r="B36" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"保守型")/12</f><v></v></c>
+  <c r="C36" s="16" t="inlineStr"><is><t>AI普惠度（30-40%表示正常过渡）</t></is></c>
+</row>
+  <row r="37">
+  <c r="A37" s="14" t="inlineStr"><is><t>④困境型比例 = </t></is></c>
+  <c r="B37" s="23"><f>COUNTIF(团队评估汇总!Q5:Q16,"困境型")/12</f><v></v></c>
+  <c r="C37" s="16" t="inlineStr"><is><t>高风险（应&lt;10%）</t></is></c>
+</row>
+  <row r="38">
+  <c r="A38" s="14" t="inlineStr"><is><t>⑤AI协作力团队均值 = </t></is></c>
+  <c r="B38" s="23"><f>AVERAGE(团队评估汇总!K5:K16)</f><v></v></c>
+  <c r="C38" s="16" t="inlineStr"><is><t>4.0+ 为优秀，3.0-4.0 正常，&lt;3.0 需加强AI培训</t></is></c>
+</row>
+  <row r="39">
+  <c r="A39" s="14" t="inlineStr"><is><t>⑥人类深度团队均值 = </t></is></c>
+  <c r="B39" s="23"><f>AVERAGE(团队评估汇总!P5:P16)</f><v></v></c>
+  <c r="C39" s="16" t="inlineStr"><is><t>4.0+ 为优秀，3.0-4.0 正常，&lt;3.0 需关注判断力/关系力退化</t></is></c>
+</row>
+  <row r="41">
+  <c r="A41" s="6" t="inlineStr"><is><t>金句</t></is></c>
+  <c r="B41" s="6" t="inlineStr"><is><t>缺一就失衡——AI时代评估胜任度，看两条轨道。</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

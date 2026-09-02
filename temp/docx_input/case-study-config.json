@@ -1,0 +1,17 @@
+{
+  "type": "report",
+  "title": "破局・重启：用CEO思维重塑职业生涯",
+  "subtitle": "案例集",
+  "author": "罗宏伟",
+  "pageSize": "A4",
+  "margins": { "top": 1440, "right": 1440, "bottom": 1440, "left": 1440 },
+  "sections": [
+    {
+      "heading": "案例集说明",
+      "level": 1,
+      "content": [
+        { "type": "paragraph", "text": "本案例集是「破局・重启：用CEO思维重塑职业生涯」课程的核心教学材料之一。案例以虚构人物林晓的职业生涯经历为主线，贯穿课程四大模块，帮助学员在真实情境中理解并应用CEO思维框架。" }
+      ]
+    }
+  ]
+}

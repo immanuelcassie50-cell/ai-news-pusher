@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>IC倾向强</v></c>
+      <c r="B2" t="s" s="0"><v>您更适合独立贡献者(IC)的技术发展路径。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>管理倾向强</v></c>
+      <c r="B3" t="s" s="0"><v>您具备向技术管理方向发展的潜力。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>均衡发展</v></c>
+      <c r="B4" t="s" s="0"><v>您在IC和管理方向都有一定基础，选择空间较大。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>深度工作型</v></c>
+      <c r="B5" t="s" s="0"><v>您偏好独立完成复杂任务，适合专家路线。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>人际影响型</v></c>
+      <c r="B6" t="s" s="0"><v>您喜欢影响和带动他人，适合管理路线。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

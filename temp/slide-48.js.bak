@@ -1,0 +1,82 @@
+// slide-48.js: 第1问：谁来学？
+const pptxgen = require("pptxgenjs");
+
+function createSlide(pres, theme) {
+  const slide = pres.addSlide();
+  slide.background = { color: theme.bg };
+
+  // 顶部红色条
+  slide.addShape(pres.ShapeType.rect, {
+    x: 0, y: 0, w: 10, h: 0.55,
+    fill: { color: theme.primary }
+  });
+  slide.addText("第1问  谁来学？", {
+    x: 0.5, y: 0.1, w: 9, h: 0.35,
+    fontSize: 20, fontFace: "Microsoft YaHei",
+    color: theme.bg, bold: true, margin: 0
+  });
+
+  // 三个模块
+  const modules = [
+    {
+      title: "核心目的",
+      content: "确定培训对象\n不同对象需要完全不同的设计",
+      bgColor: "FEF2F2",
+      borderColor: theme.primary
+    },
+    {
+      title: "标准问法",
+      content: "\"这次培训主要面向哪些人？\"\n\"他们的岗位是什么？\"\n\"大概多少人？\"",
+      bgColor: "F8FAFC",
+      borderColor: theme.secondary
+    },
+    {
+      title: "追问情况",
+      content: "对象太宽泛 -> \"最核心的是哪一群人？\"\n有多个层级 -> \"谁最需要先学？\"\n跨部门 -> \"他们的工作有什么不同？\"",
+      bgColor: "F8FAFC",
+      borderColor: theme.secondary
+    }
+  ];
+
+  modules.forEach((mod, i) => {
+    const x = 0.5 + i * 3.1;
+
+    // 卡片
+    slide.addShape(pres.ShapeType.rect, {
+      x: x, y: 0.75, w: 2.95, h: 4.1,
+      fill: { color: mod.bgColor },
+      line: { color: mod.borderColor, width: 1 }
+    });
+
+    // 标题栏
+    slide.addShape(pres.ShapeType.rect, {
+      x: x, y: 0.75, w: 2.95, h: 0.5,
+      fill: { color: mod.borderColor }
+    });
+    slide.addText(mod.title, {
+      x: x, y: 0.75, w: 2.95, h: 0.5,
+      fontSize: 14, fontFace: "Microsoft YaHei",
+      color: theme.bg, bold: true, align: "center", valign: "middle"
+    });
+
+    // 内容
+    slide.addText(mod.content, {
+      x: x + 0.15, y: 1.4, w: 2.65, h: 3.3,
+      fontSize: 12, fontFace: "Microsoft YaHei",
+      color: theme.secondary, valign: "top"
+    });
+  });
+
+  // 页码徽章
+  slide.addShape(pres.ShapeType.ellipse, {
+    x: 9.3, y: 5.1, w: 0.4, h: 0.4,
+    fill: { color: theme.accent }
+  });
+  slide.addText("48", {
+    x: 9.3, y: 5.1, w: 0.4, h: 0.4,
+    fontSize: 11, fontFace: "Arial",
+    color: theme.bg, align: "center", valign: "middle"
+  });
+}
+
+module.exports = { createSlide };

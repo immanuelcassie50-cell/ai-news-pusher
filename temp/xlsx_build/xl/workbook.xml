@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheets>
+    <sheet name="F1_平台类型识别卡" sheetId="1" r:id="rId1"/>
+    <sheet name="F2_五步风险识别检查表" sheetId="2" r:id="rId4"/>
+    <sheet name="F3_高风险平台特征卡" sheetId="3" r:id="rId5"/>
+    <sheet name="F4_金融科技产品甄别卡" sheetId="4" r:id="rId6"/>
+    <sheet name="F5_防骗三黄金法则卡" sheetId="5" r:id="rId7"/>
+    <sheet name="F6_维权路径指引卡" sheetId="6" r:id="rId8"/>
+    <sheet name="F7_我的避坑承诺书" sheetId="7" r:id="rId9"/>
+  </sheets>
+  <calcPr calcId="0"/>
+</workbook>

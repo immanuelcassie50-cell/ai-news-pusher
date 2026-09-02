@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>销售复杂决策链地图与导航 - 教学成果展示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #ed8936;
+      --light: #bee3f8;
+      --bg: #f7fafc;
+      --text: #1a202c;
+      --text-light: #4a5568;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    @page { size: A3 landscape; margin: 0; }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 30px;
+    }
+
+    .page {
+      width: 297mm;
+      min-height: 210mm;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 30px 40px;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .page { box-shadow: none; }
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .header-left h1 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 26px;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .header-left p {
+      font-size: 12px;
+      color: var(--text-light);
+      margin-top: 4px;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 11px;
+      color: var(--text-light);
+    }
+
+    .header-right .author {
+      font-size: 13px;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    /* Section Title */
+    .section-title {
+      font-size: 14px;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .section-title::before {
+      content: '';
+      width: 4px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* Sample Grid */
+    .samples-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .sample-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sample-header {
+      padding: 12px 16px;
+      background: var(--primary);
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sample-icon {
+      width: 28px;
+      height: 28px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+
+    .sample-header h3 {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .sample-body {
+      padding: 16px;
+    }
+
+    /* Decision Map Sample */
+    .decision-map-sample {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 10px;
+    }
+
+    .map-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #cbd5e0;
+    }
+
+    .map-title {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .map-date {
+      color: var(--text-light);
+    }
+
+    .map-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .map-layer {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 4px;
+      padding: 8px;
+    }
+
+    .map-layer h5 {
+      font-size: 9px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .map-layer p {
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .map-layer .name {
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* Script Sample */
+    .script-sample {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 10px;
+    }
+
+    .script-role {
+      display: inline-block;
+      background: var(--light);
+      color: var(--primary);
+      font-size: 9px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .script-text {
+      font-style: italic;
+      color: var(--text);
+      line-height: 1.6;
+      padding-left: 10px;
+      border-left: 2px solid var(--accent);
+    }
+
+    /* Review Sample */
+    .review-sample {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px;
+      font-size: 10px;
+    }
+
+    .review-item {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px dashed #e2e8f0;
+    }
+
+    .review-item:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    .review-label {
+      font-weight: 700;
+      color: var(--secondary);
+      min-width: 80px;
+    }
+
+    .review-value {
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    /* Outcomes Section */
+    .outcomes-section {
+      margin-top: 20px;
+    }
+
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .outcome-card {
+      background: linear-gradient(180deg, var(--primary) 0%, #234876 100%);
+      color: white;
+      padding: 14px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    .outcome-card h4 {
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .outcome-card p {
+      font-size: 10px;
+      opacity: 0.85;
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 20px;
+      padding-top: 12px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 10px;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header-left">
+        <h1>销售复杂决策链地图与导航 · 教学成果展示</h1>
+        <p>学员学习成果样本 / Learning Outcomes Samples</p>
+      </div>
+      <div class="header-right">
+        <div class="author">罗宏伟</div>
+        <div>© 版权所有</div>
+      </div>
+    </header>
+
+    <div class="section-title">学员成果样本</div>
+
+    <div class="samples-grid">
+      <!-- Sample 1: Decision Chain Map -->
+      <div class="sample-card">
+        <div class="sample-header">
+          <div class="sample-icon">🗺️</div>
+          <h3>决策链地图样本</h3>
+        </div>
+        <div class="sample-body">
+          <div class="decision-map-sample">
+            <div class="map-header">
+              <span class="map-title">客户名称：XX集团数字化转型项目</span>
+              <span class="map-date">2024.03.15</span>
+            </div>
+            <div class="map-grid">
+              <div class="map-layer">
+                <h5>第一层：谁买单</h5>
+                <p><span class="name">李总</span>（业务副总裁）</p>
+                <p>关注点：业务效率提升、供应商资质</p>
+              </div>
+              <div class="map-layer">
+                <h5>第二层：谁拍板</h5>
+                <p><span class="name">王总监</span>（IT总监）</p>
+                <p>关注点：技术可行性、集成能力</p>
+              </div>
+              <div class="map-layer">
+                <h5>第三层：谁把关</h5>
+                <p><span class="name">张法务</span>（合规部）+ <span class="name">刘安全</span>（信息安全）</p>
+                <p>关注点：数据合规、供应商资质审查</p>
+              </div>
+              <div class="map-layer">
+                <h5>第四层：谁使绊子</h5>
+                <p><span class="name">竞品关系</span>：竞争对手与采购经理旧识</p>
+                <p>可能的顾虑：供应商锁定风险</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample 2: Script Template -->
+      <div class="sample-card">
+        <div class="sample-header">
+          <div class="sample-icon">💬</div>
+          <h3>话术模板样本</h3>
+        </div>
+        <div class="sample-body">
+          <div class="script-sample">
+            <div style="margin-bottom: 10px;">
+              <span class="script-role">技术评估前 · 风险责任划分</span>
+              <div class="script-text">
+                "王总，我想跟您确认一件事。如果这个方案将来在实施过程中遇到问题，是我们双方的联合团队一起来处理，还是以我们为主？这个确认清楚了，我心里也有底，评审会上也好跟各位老师汇报清楚。"
+              </div>
+            </div>
+            <div>
+              <span class="script-role">高层汇报 · 开场白</span>
+              <div class="script-text">
+                "张总，感谢您抽出时间。我今天不是来重新讲一遍方案的——方案的具体内容，我们的业务部门和技术团队已经跟您汇报过了。我今天主要想跟您同步一下，到您这里之前，这条流程已经跑了多久、各个环节的结论是什么，以及我们为可能的风险准备了什么样的保障措施。"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sample 3: Review Report -->
+      <div class="sample-card">
+        <div class="sample-header">
+          <div class="sample-icon">📋</div>
+          <h3>复盘报告样本</h3>
+        </div>
+        <div class="sample-body">
+          <div class="review-sample">
+            <div class="review-item">
+              <span class="review-label">项目名称</span>
+              <span class="review-value">XX集团ERP实施项目</span>
+            </div>
+            <div class="review-item">
+              <span class="review-label">决策链地图<br>最后更新</span>
+              <span class="review-value">2024.01.20（签约前2周）</span>
+            </div>
+            <div class="review-item">
+              <span class="review-label">未预判到的<br>角色</span>
+              <span class="review-value">集团采购中心的比价环节（原以为业务部门可直接拍板）</span>
+            </div>
+            <div class="review-item">
+              <span class="review-label">教训总结</span>
+              <span class="review-value">客户内部架构调整信息获取滞后，应更早询问"上一个类似项目走了多久"</span>
+            </div>
+            <div class="review-item">
+              <span class="review-label">改进措施</span>
+              <span class="review-value">下次项目启动时，同步了解客户近期是否有组织架构调整</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="outcomes-section">
+      <div class="section-title">学员带走成果</div>
+      <div class="outcomes-grid">
+        <div class="outcome-card">
+          <h4>决策链地图绘制工具包</h4>
+          <p>四层框架模板<br>动态更新检查表</p>
+        </div>
+        <div class="outcome-card">
+          <h4>全流程话术手册</h4>
+          <p>技术评估话术<br>高层汇报话术<br>差异化叙述指南</p>
+        </div>
+        <div class="outcome-card">
+          <h4>复盘模板</h4>
+          <p>赢单复盘检查表<br>侥幸胜利识别法<br>地图更新追踪表</p>
+        </div>
+        <div class="outcome-card">
+          <h4>长期关系维护计划</h4>
+          <p>推荐人分类管理<br>联系频率计划<br>关系健康度诊断</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div>销售复杂决策链地图与导航 · 教学成果展示</div>
+      <div>© 罗宏伟 版权所有</div>
+    </footer>
+  </div>
+</body>
+</html>

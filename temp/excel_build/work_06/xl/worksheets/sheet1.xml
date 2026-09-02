@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView tabSelected="1" workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>课程效果评估数据汇总 - 班级整体报告模板</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表是《课程效果评估问卷》填答后的&quot;班级整体报告&quot;模板——把每份匿名问卷的分数录入&quot;原始数据&quot;表，公式自动算出维度汇总、NPS分布、满意度排名等。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4">
+  <c r="A4" s="5" t="inlineStr"><is><t>一、四个工作表的功能</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="0" t="inlineStr"><is><t>工作表</t></is></c>
+  <c r="B5" s="0" t="inlineStr"><is><t>功能</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="13" t="inlineStr"><is><t>使用说明（本表）</t></is></c>
+  <c r="B6" s="13" t="inlineStr"><is><t>使用方法 + 评估项说明 + 解读规则</t></is></c>
+</row>
+<row r="7">
+  <c r="A7" s="13" t="inlineStr"><is><t>原始数据(匿名)</t></is></c>
+  <c r="B7" s="13" t="inlineStr"><is><t>24份匿名问卷的4个维度+24项得分+NPS+开放题简要</t></is></c>
+</row>
+<row r="8">
+  <c r="A8" s="13" t="inlineStr"><is><t>维度汇总与公式</t></is></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>按维度算平均分、标准差、≥4分占比、Top/Bottom 5项</t></is></c>
+</row>
+<row r="9">
+  <c r="A9" s="13" t="inlineStr"><is><t>图表与解读</t></is></c>
+  <c r="B9" s="13" t="inlineStr"><is><t>4维度平均分对比 + NPS分布柱图（条形数据） + 关键发现与改进建议</t></is></c>
+</row>
+<row r="10">
+  <c r="A10" s="0"/>
+</row>
+<row r="11">
+  <c r="A11" s="5" t="inlineStr"><is><t>二、评估项与维度对应（与课程评估问卷一致）</t></is></c>
+</row>
+<row r="12">
+  <c r="A12" s="0" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="B12" s="0" t="inlineStr"><is><t>题号</t></is></c>
+  <c r="C12" s="0" t="inlineStr"><is><t>满分</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="14" t="inlineStr"><is><t>课程内容</t></is></c>
+  <c r="B13" s="14" t="inlineStr"><is><t>1-8</t></is></c>
+  <c r="C13" s="14" t="inlineStr"><is><t>40</t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="14" t="inlineStr"><is><t>讲师表现</t></is></c>
+  <c r="B14" s="14" t="inlineStr"><is><t>9-14</t></is></c>
+  <c r="C14" s="14" t="inlineStr"><is><t>30</t></is></c>
+</row>
+<row r="15">
+  <c r="A15" s="14" t="inlineStr"><is><t>课程形式</t></is></c>
+  <c r="B15" s="14" t="inlineStr"><is><t>15-20</t></is></c>
+  <c r="C15" s="14" t="inlineStr"><is><t>30</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="14" t="inlineStr"><is><t>组织工作</t></is></c>
+  <c r="B16" s="14" t="inlineStr"><is><t>21-24</t></is></c>
+  <c r="C16" s="14" t="inlineStr"><is><t>20</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="14" t="inlineStr"><is><t>合计</t></is></c>
+  <c r="B17" s="14" t="inlineStr"><is><t>1-24</t></is></c>
+  <c r="C17" s="14" t="inlineStr"><is><t>120</t></is></c>
+</row>
+<row r="18">
+  <c r="A18" s="0"/>
+</row>
+<row r="19">
+  <c r="A19" s="5" t="inlineStr"><is><t>三、关键指标解读规则</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>维度平均分</t></is></c>
+  <c r="B20" s="14" t="inlineStr"><is><t>≥4.5 优秀 / 4.0-4.5 良好 / 3.5-4.0 合格 / &lt;3.5 待改善</t></is></c>
+</row>
+<row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>≥4分占比</t></is></c>
+  <c r="B21" s="14" t="inlineStr"><is><t>≥85% 强满意 / 70-85% 满意 / 50-70% 一般 / &lt;50% 弱满意</t></is></c>
+</row>
+<row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>NPS</t></is></c>
+  <c r="B22" s="14" t="inlineStr"><is><t>推荐者(9-10) % - 贬损者(0-6) %；≥50 强 / 0-50 良好 / &lt;0 待改善</t></is></c>
+</row>
+<row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>低分项</t></is></c>
+  <c r="B23" s="14" t="inlineStr"><is><t>平均分 &lt; 4.0 视为&quot;需重点改进项&quot;</t></is></c>
+</row>
+<row r="24">
+  <c r="A24" s="0"/>
+</row>
+<row r="25">
+  <c r="A25" s="5" t="inlineStr"><is><t>四、使用流程</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="13" t="inlineStr"><is><t>① 打开&quot;原始数据&quot;表，把每份匿名问卷的分数按列填入（蓝字为输入）</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="13" t="inlineStr"><is><t>② &quot;维度汇总&quot;表的所有指标都是公式自动算的——不需手算</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="13" t="inlineStr"><is><t>③ &quot;图表与解读&quot;表用条形图（不是真正图表，是字符条）展示对比——可直接读出来</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="13" t="inlineStr"><is><t>④ 根据&quot;低分项&quot;和&quot;NPS&quot;找改进重点</t></is></c>
+</row>
+<row r="30">
+  <c r="A30" s="0"/>
+</row>
+<row r="31">
+  <c r="A31" s="5" t="inlineStr"><is><t>五、本表配套使用</t></is></c>
+</row>
+<row r="32">
+  <c r="A32" s="13" t="inlineStr"><is><t>上接：课程评估问卷（学员填答版）</t></is></c>
+</row>
+<row r="33">
+  <c r="A33" s="13" t="inlineStr"><is><t>下接：班级整体报告（讲师/组织方对内发布版）</t></is></c>
+</row>
+<row r="34">
+  <c r="A34" s="13" t="inlineStr"><is><t>配套：09_评估工具包 中的 04_行为观察量表（讲师版）</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

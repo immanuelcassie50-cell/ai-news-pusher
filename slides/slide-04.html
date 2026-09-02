@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>核心价值主张</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Title -->
+<p style="position:absolute; top:35px; left:60px; margin:0; font-size:36px; font-weight:700; color:#2b2d42; letter-spacing:3px;">核心价值主张</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:85px; left:60px;" width="60" height="4" aria-hidden="true">
+  <rect width="60" height="4" fill="#ef233c"/>
+</svg>
+
+<!-- Three Cards -->
+<!-- Card 1 -->
+<svg style="position:absolute; top:120px; left:60px;" width="260" height="260" viewBox="0 0 260 260">
+  <rect width="260" height="260" rx="12" fill="#2b2d42"/>
+  <!-- Accent bar at top -->
+  <rect width="260" height="8" rx="4" fill="#ef233c"/>
+  <!-- Number -->
+  <text x="30" y="60" font-size="48" font-weight="700" fill="#ef233c">01</text>
+  <!-- Title -->
+  <text x="30" y="100" font-size="18" font-weight="600" fill="#edf2f4">信息收集与过滤</text>
+  <!-- Description -->
+  <text x="30" y="135" font-size="13" font-weight="400" fill="#8d99ae">不是查数据，</text>
+  <text x="30" y="155" font-size="13" font-weight="400" fill="#8d99ae">是替人过滤噪音</text>
+  <!-- Decorative icon area -->
+  <circle cx="200" cy="200" r="30" fill="#ef233c" opacity="0.15"/>
+  <path d="M185 200 L195 210 L215 190" stroke="#ef233c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<!-- Card 2 -->
+<svg style="position:absolute; top:120px; left:350px;" width="260" height="260" viewBox="0 0 260 260">
+  <rect width="260" height="260" rx="12" fill="#2b2d42"/>
+  <!-- Accent bar at top -->
+  <rect width="260" height="8" rx="4" fill="#ef233c"/>
+  <!-- Number -->
+  <text x="30" y="60" font-size="48" font-weight="700" fill="#ef233c">02</text>
+  <!-- Title -->
+  <text x="30" y="100" font-size="18" font-weight="600" fill="#edf2f4">产业判断力</text>
+  <!-- Description -->
+  <text x="30" y="135" font-size="13" font-weight="400" fill="#8d99ae">判断五年后</text>
+  <text x="30" y="155" font-size="13" font-weight="400" fill="#8d99ae">这行还在不在</text>
+  <!-- Decorative icon area -->
+  <circle cx="200" cy="200" r="30" fill="#ef233c" opacity="0.15"/>
+  <path d="M185 195 L200 195 L200 215 M200 195 L215 195" stroke="#ef233c" stroke-width="3" fill="none" stroke-linecap="round"/>
+</svg>
+
+<!-- Card 3 -->
+<svg style="position:absolute; top:120px; left:640px;" width="260" height="260" viewBox="0 0 260 260">
+  <rect width="260" height="260" rx="12" fill="#2b2d42"/>
+  <!-- Accent bar at top -->
+  <rect width="260" height="8" rx="4" fill="#ef233c"/>
+  <!-- Number -->
+  <text x="30" y="60" font-size="48" font-weight="700" fill="#ef233c">03</text>
+  <!-- Title -->
+  <text x="30" y="100" font-size="18" font-weight="600" fill="#edf2f4">倒推规划法</text>
+  <!-- Description -->
+  <text x="30" y="135" font-size="13" font-weight="400" fill="#8d99ae">先问十年后</text>
+  <text x="30" y="155" font-size="13" font-weight="400" fill="#8d99ae">想过什么日子</text>
+  <!-- Decorative icon area -->
+  <circle cx="200" cy="200" r="30" fill="#ef233c" opacity="0.15"/>
+  <path d="M200 175 L200 225 M200 175 L180 195 M200 175 L220 195" stroke="#ef233c" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+<!-- Bottom emphasis text -->
+<svg style="position:absolute; bottom:60px; left:60px; right:60px;" width="840" height="60" viewBox="0 0 840 60">
+  <rect width="840" height="60" rx="6" fill="#ef233c"/>
+  <text x="420" y="38" text-anchor="middle" font-size="18" font-weight="600" fill="#edf2f4">AI能算冲稳保，算不出这个人该往哪走</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#2b2d42"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#edf2f4">4</text>
+</svg>
+
+</div>
+</body>
+</html>

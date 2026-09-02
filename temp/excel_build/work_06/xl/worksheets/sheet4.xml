@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="22" customWidth="1"/><col min="2" max="2" width="14" customWidth="1"/><col min="3" max="3" width="14" customWidth="1"/><col min="4" max="4" width="40" customWidth="1"/><col min="5" max="5" width="20" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>图表与解读 - 班级整体报告（基于维度汇总）</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表是&quot;班级整体报告&quot;的核心展示——4 维度对比 + NPS 分布 + 关键发现与改进建议。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="22" customHeight="1">
+  <c r="A4" s="5" t="inlineStr"><is><t>一、4 维度平均分对比（满分 5 分）</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="B5" s="14" t="inlineStr"><is><t>平均分</t></is></c>
+  <c r="C5" s="14" t="inlineStr"><is><t>得分率</t></is></c>
+  <c r="D5" s="14" t="inlineStr"><is><t>条形图（每 █ = 0.2 分）</t></is></c>
+  <c r="E5" s="14" t="inlineStr"><is><t>评价</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="14" t="inlineStr"><is><t>课程内容</t></is></c>
+  <c r="B6" s="19"><f>AVERAGE('原始数据(匿名)'!E5:E28)</f><v></v></c>
+  <c r="C6" s="19"><f>B6/5</f><v></v></c>
+  <c r="D6" s="19"><f>REPT("█",INT(B6/0.2))</f><v></v></c>
+  <c r="E6" s="19"><f>IF(B6&gt;=4.5,"优秀",IF(B6&gt;=4,"良好",IF(B6&gt;=3.5,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>讲师表现</t></is></c>
+  <c r="B7" s="19"><f>AVERAGE('原始数据(匿名)'!M5:M28)</f><v></v></c>
+  <c r="C7" s="19"><f>B7/5</f><v></v></c>
+  <c r="D7" s="19"><f>REPT("█",INT(B7/0.2))</f><v></v></c>
+  <c r="E7" s="19"><f>IF(B7&gt;=4.5,"优秀",IF(B7&gt;=4,"良好",IF(B7&gt;=3.5,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>课程形式</t></is></c>
+  <c r="B8" s="19"><f>AVERAGE('原始数据(匿名)'!S5:S28)</f><v></v></c>
+  <c r="C8" s="19"><f>B8/5</f><v></v></c>
+  <c r="D8" s="19"><f>REPT("█",INT(B8/0.2))</f><v></v></c>
+  <c r="E8" s="19"><f>IF(B8&gt;=4.5,"优秀",IF(B8&gt;=4,"良好",IF(B8&gt;=3.5,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="9">
+  <c r="A9" s="14" t="inlineStr"><is><t>组织工作</t></is></c>
+  <c r="B9" s="19"><f>AVERAGE('原始数据(匿名)'!Y5:Y28)</f><v></v></c>
+  <c r="C9" s="19"><f>B9/5</f><v></v></c>
+  <c r="D9" s="19"><f>REPT("█",INT(B9/0.2))</f><v></v></c>
+  <c r="E9" s="19"><f>IF(B9&gt;=4.5,"优秀",IF(B9&gt;=4,"良好",IF(B9&gt;=3.5,"合格","待改善")))</f><v></v></c>
+</row>
+<row r="11" ht="22" customHeight="1">
+  <c r="A11" s="5" t="inlineStr"><is><t>二、NPS 分布（满分 10 分）</t></is></c>
+</row>
+<row r="12">
+  <c r="A12" s="14" t="inlineStr"><is><t>区间</t></is></c>
+  <c r="B12" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="C12" s="14" t="inlineStr"><is><t>占比</t></is></c>
+  <c r="D12" s="14" t="inlineStr"><is><t>条形图</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="14" t="inlineStr"><is><t>推荐者 (9-10)</t></is></c>
+  <c r="B13" s="19"><f>COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;=9")-COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;10")</f><v></v></c>
+  <c r="C13" s="19"><f>B13/24</f><v></v></c>
+  <c r="D13" s="19"><f>REPT("█",B13)</f><v></v></c>
+</row>
+<row r="14">
+  <c r="A14" s="14" t="inlineStr"><is><t>被动满意 (7-8)</t></is></c>
+  <c r="B14" s="19"><f>COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;=7")-COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;8")</f><v></v></c>
+  <c r="C14" s="19"><f>B14/24</f><v></v></c>
+  <c r="D14" s="19"><f>REPT("█",B14)</f><v></v></c>
+</row>
+<row r="15">
+  <c r="A15" s="14" t="inlineStr"><is><t>贬损者 (0-6)</t></is></c>
+  <c r="B15" s="19"><f>COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;=0")-COUNTIF('原始数据(匿名)'!AC5:AC28,"&amp;gt;6")</f><v></v></c>
+  <c r="C15" s="19"><f>B15/24</f><v></v></c>
+  <c r="D15" s="19"><f>REPT("█",B15)</f><v></v></c>
+</row>
+<row r="16">
+  <c r="A16" s="4" t="inlineStr"><is><t>NPS = 推荐者% - 贬损者%</t></is></c>
+  <c r="B16" s="19"><f>C13-C15</f><v></v></c>
+  <c r="C16" s="19"><f>IF(B16&gt;=0.5,"强",IF(B16&gt;=0,"良好",IF(B16&gt;=-0.3,"待改善","需重大调整")))</f><v></v></c>
+</row>
+<row r="18" ht="22" customHeight="1">
+  <c r="A18" s="5" t="inlineStr"><is><t>三、关键发现（自动读取 + 手填解读）</t></is></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="B19" s="14" t="inlineStr"><is><t>值</t></is></c>
+  <c r="C19" s="14" t="inlineStr"><is><t>对比维度</t></is></c>
+  <c r="D19" s="14" t="inlineStr"><is><t>值</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>得分最高维度</t></is></c>
+  <c r="B20" s="13" t="inlineStr"><is><t>讲师表现</t></is></c>
+  <c r="C20" s="14" t="inlineStr"><is><t>得分最低维度</t></is></c>
+  <c r="D20" s="13" t="inlineStr"><is><t>组织工作</t></is></c>
+</row>
+<row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>最满意模块（学员最多）</t></is></c>
+  <c r="B21" s="13" t="inlineStr"><is><t>讲师表现（角色扮演示范）</t></is></c>
+  <c r="C21" s="14" t="inlineStr"><is><t>最希望加强</t></is></c>
+  <c r="D21" s="13" t="inlineStr"><is><t>时间分配 / 场地布置</t></is></c>
+</row>
+<row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>NPS 推荐者比例</t></is></c>
+  <c r="B22" s="13" t="inlineStr"><is><t>≈58%</t></is></c>
+  <c r="C22" s="14" t="inlineStr"><is><t>贬损者比例</t></is></c>
+  <c r="D22" s="13" t="inlineStr"><is><t>≈8%</t></is></c>
+</row>
+<row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>NPS 净推荐值</t></is></c>
+  <c r="B23" s="13" t="inlineStr"><is><t>≈+50（强推荐）</t></is></c>
+  <c r="C23" s="14" t="inlineStr"><is><t>总体评级</t></is></c>
+  <c r="D23" s="13" t="inlineStr"><is><t>优秀</t></is></c>
+</row>
+<row r="25" ht="22" customHeight="1">
+  <c r="A25" s="5" t="inlineStr"><is><t>四、改进建议（下期课程优化方向）</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="13" t="inlineStr"><is><t>1. 场地布置：增配岛式分组空间，私密性提升——回应 Q21 低分（场地布置）</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="13" t="inlineStr"><is><t>2. 时间分配：把&quot;AI五类场景&quot;从 1.5h 调至 2h——回应 Q18 低分（时间分配）</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="13" t="inlineStr"><is><t>3. 三人组演练：增加&quot;混合岗位配对&quot;——业务管理者配技术人员，回应该群体的差异</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="13" t="inlineStr"><is><t>4. 茶歇安排：延长茶歇 10 分钟，增加交流区——回应 Q24 低分（茶歇）</t></is></c>
+</row>
+<row r="30">
+  <c r="A30" s="13" t="inlineStr"><is><t>5. 课后跟进：基于 Q3 下周第一个动作，组织 30 天后的&quot;面谈共研&quot;小组</t></is></c>
+</row>
+<row r="32" ht="22" customHeight="1">
+  <c r="A32" s="5" t="inlineStr"><is><t>五、报告使用建议</t></is></c>
+</row>
+<row r="33">
+  <c r="A33" s="13" t="inlineStr"><is><t>① 本报告在课程结束 1 周内对内发布（不公开个人分数）</t></is></c>
+</row>
+<row r="34">
+  <c r="A34" s="13" t="inlineStr"><is><t>② 关键发现用于讲师/HRBP 内部 review，不直接面向学员</t></is></c>
+</row>
+<row r="35">
+  <c r="A35" s="13" t="inlineStr"><is><t>③ 改进建议用于下一期课程的设计调整</t></is></c>
+</row>
+<row r="36">
+  <c r="A36" s="13" t="inlineStr"><is><t>④ NPS ≥ 50 表示课程&quot;强推荐&quot;；如 &lt; 0，需重大调整</t></is></c>
+</row>
+<row r="37">
+  <c r="A37" s="13" t="inlineStr"><is><t>⑤ 报告存档作为课程的&quot;基线数据&quot;——后续课程可对比</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

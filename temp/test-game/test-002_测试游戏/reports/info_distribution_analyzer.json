@@ -1,0 +1,42 @@
+{
+  "passed": true,
+  "score": 25,
+  "distribution": {
+    "张老爷": {
+      "key_clues": 0,
+      "total_clues": 2,
+      "chain_references": 0,
+      "key_percentage": 0.0
+    },
+    "长子张一": {
+      "key_clues": 1,
+      "total_clues": 2,
+      "chain_references": 0,
+      "key_percentage": 25.0
+    },
+    "次子张三": {
+      "key_clues": 1,
+      "total_clues": 2,
+      "chain_references": 0,
+      "key_percentage": 25.0
+    },
+    "三姨太": {
+      "key_clues": 1,
+      "total_clues": 2,
+      "chain_references": 1,
+      "key_percentage": 25.0
+    },
+    "管家": {
+      "key_clues": 1,
+      "total_clues": 2,
+      "chain_references": 0,
+      "key_percentage": 25.0
+    },
+    "大嫂": {
+      "key_clues": 0,
+      "total_clues": 1,
+      "chain_references": 0,
+      "key_percentage": 0.0
+    }
+  }
+}

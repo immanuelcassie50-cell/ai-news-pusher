@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <fileVersion appName="xl" lastEdited="7" lowestEdited="7"/>
+  <workbookPr defaultThemeVersion="166925"/>
+  <bookViews><workbookView xWindow="0" yWindow="0" windowWidth="20140" windowHeight="10960"/></bookViews>
+  <sheets>
+    <sheet name="九宫格人才评估表" sheetId="1" r:id="rId1"/>
+    <sheet name="人才盘点会议记录表" sheetId="2" r:id="rId2"/>
+    <sheet name="关键岗位继任地图" sheetId="3" r:id="rId3"/>
+    <sheet name="高潜人才发展计划表" sheetId="4" r:id="rId4"/>
+    <sheet name="人才盘点年度日历" sheetId="5" r:id="rId5"/>
+    <sheet name="梯队建设进度追踪表" sheetId="6" r:id="rId6"/>
+  </sheets>
+  <calcPr calcId="191029"/>
+</workbook>

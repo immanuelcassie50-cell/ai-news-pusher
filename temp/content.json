@@ -1,0 +1,125 @@
+[
+    {
+      "type": "h1",
+      "text": "时间叙述框架"
+    },
+    {
+      "type": "bullet",
+      "text": "开端：...标志着..."
+    },
+    {
+      "type": "bullet",
+      "text": "发展：...经历了...阶段"
+    },
+    {
+      "type": "bullet",
+      "text": "高潮：...达到顶峰"
+    },
+    {
+      "type": "bullet",
+      "text": "结局：...最终导致..."
+    },
+    {
+      "type": "spacer",
+      "pt": 16
+    },
+    {
+      "type": "h1",
+      "text": "因果分析框架"
+    },
+    {
+      "type": "h2",
+      "text": "原因层次"
+    },
+    {
+      "type": "bullet",
+      "text": "直接原因 → 深层原因 → 根本原因"
+    },
+    {
+      "type": "h2",
+      "text": "影响层次"
+    },
+    {
+      "type": "bullet",
+      "text": "短期影响 → 长期影响 → 深远影响"
+    },
+    {
+      "type": "spacer",
+      "pt": 16
+    },
+    {
+      "type": "h1",
+      "text": "对比论证框架"
+    },
+    {
+      "type": "h2",
+      "text": "差异分析"
+    },
+    {
+      "type": "bullet",
+      "text": "表面差异 → 深层原因 → 本质区别"
+    },
+    {
+      "type": "h2",
+      "text": "共性分析"
+    },
+    {
+      "type": "bullet",
+      "text": "共同特征 → 共同规律 → 历史启示"
+    },
+    {
+      "type": "spacer",
+      "pt": 16
+    },
+    {
+      "type": "h1",
+      "text": "人物评价格式"
+    },
+    {
+      "type": "numbered",
+      "text": "所处时代背景"
+    },
+    {
+      "type": "numbered",
+      "text": "主要经济思想/政策"
+    },
+    {
+      "type": "numbered",
+      "text": "历史功过评述"
+    },
+    {
+      "type": "numbered",
+      "text": "对后世的启示"
+    },
+    {
+      "type": "spacer",
+      "pt": 16
+    },
+    {
+      "type": "h1",
+      "text": "表达金句"
+    },
+    {
+      "type": "callout",
+      "text": "「历史不会重演，但总会押韵」"
+    },
+    {
+      "type": "callout",
+      "text": "「透过现象看本质，从经济看历史」"
+    },
+    {
+      "type": "callout",
+      "text": "「以史为鉴，可以知兴替」"
+    },
+    {
+      "type": "spacer",
+      "pt": 20
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "caption",
+      "text": "课程编号 31 | 中国经济史"
+    }
+]

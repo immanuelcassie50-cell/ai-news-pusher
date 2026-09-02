@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="14" customWidth="1"/>
+    <col min="2" max="2" width="22" customWidth="1"/>
+    <col min="3" max="3" width="35" customWidth="1"/>
+    <col min="4" max="4" width="28" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>财报分析框架</t></is></c>
+    </row>
+    <row r="2" ht="24" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>三大报表核心科目速查</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="26" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>报表类型</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>科目类别</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>科目名称</t></is></c>
+      <c r="D4" s="8" t="inlineStr"><is><t>说明</t></is></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" s="6" t="inlineStr"><is><t>资产负债表</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>流动资产</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>货币资金</t></is></c>
+      <c r="D5" s="6" t="inlineStr"><is><t>企业持有的现金及银行存款</t></is></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="C6" s="6" t="inlineStr"><is><t>交易性金融资产</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>为交易目的持有的股票债券基金</t></is></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="C7" s="6" t="inlineStr"><is><t>应收账款</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>销售商品服务应收款项</t></is></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="C8" s="6" t="inlineStr"><is><t>预付款项</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>预付供应商款项</t></is></c>
+    </row>
+    <row r="9" ht="20" customHeight="1">
+      <c r="C9" s="6" t="inlineStr"><is><t>存货</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>库存商品原材料</t></is></c>
+    </row>
+    <row r="10" ht="20" customHeight="1">
+      <c r="B10" s="6" t="inlineStr"><is><t>非流动资产</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>固定资产</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>房屋设备建筑物</t></is></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="C11" s="6" t="inlineStr"><is><t>无形资产</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>专利商标土地使用权</t></is></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="C12" s="6" t="inlineStr"><is><t>长期股权投资</t></is></c>
+      <c r="D12" s="6" t="inlineStr"><is><t>对子公司联营企业投资</t></is></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="B13" s="6" t="inlineStr"><is><t>流动负债</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>应付账款</t></is></c>
+      <c r="D13" s="6" t="inlineStr"><is><t>应付供应商款项</t></is></c>
+    </row>
+    <row r="14" ht="20" customHeight="1">
+      <c r="C14" s="6" t="inlineStr"><is><t>短期借款</t></is></c>
+      <c r="D14" s="6" t="inlineStr"><is><t>一年内需偿还的借款</t></is></c>
+    </row>
+    <row r="15" ht="20" customHeight="1">
+      <c r="B15" s="6" t="inlineStr"><is><t>非流动负债</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>长期借款</t></is></c>
+      <c r="D15" s="6" t="inlineStr"><is><t>一年以上借款</t></is></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="C16" s="6" t="inlineStr"><is><t>应付债券</t></is></c>
+      <c r="D16" s="6" t="inlineStr"><is><t>公开发行的企业债券</t></is></c>
+    </row>
+    <row r="17" ht="20" customHeight="1">
+      <c r="B17" s="6" t="inlineStr"><is><t>所有者权益</t></is></c>
+      <c r="C17" s="6" t="inlineStr"><is><t>实收资本</t></is></c>
+      <c r="D17" s="6" t="inlineStr"><is><t>股东投入的资本</t></is></c>
+    </row>
+    <row r="18" ht="20" customHeight="1">
+      <c r="C18" s="6" t="inlineStr"><is><t>未分配利润</t></is></c>
+      <c r="D18" s="6" t="inlineStr"><is><t>累计净利润减已分红</t></is></c>
+    </row>
+    <row r="19" ht="20" customHeight="1">
+    </row>
+    <row r="20" ht="20" customHeight="1">
+      <c r="A20" s="6" t="inlineStr"><is><t>利润表</t></is></c>
+      <c r="B20" s="6" t="inlineStr"><is><t>营业收入</t></is></c>
+      <c r="D20" s="6" t="inlineStr"><is><t>销售商品提供服务收入</t></is></c>
+    </row>
+    <row r="21" ht="20" customHeight="1">
+      <c r="B21" s="6" t="inlineStr"><is><t>营业成本</t></is></c>
+      <c r="D21" s="6" t="inlineStr"><is><t>直接生产成本</t></is></c>
+    </row>
+    <row r="22" ht="20" customHeight="1">
+      <c r="B22" s="6" t="inlineStr"><is><t>销售费用</t></is></c>
+      <c r="D22" s="6" t="inlineStr"><is><t>广告促销渠道费用</t></is></c>
+    </row>
+    <row r="23" ht="20" customHeight="1">
+      <c r="B23" s="6" t="inlineStr"><is><t>管理费用</t></is></c>
+      <c r="D23" s="6" t="inlineStr"><is><t>管理人员工资行政开支</t></is></c>
+    </row>
+    <row r="24" ht="20" customHeight="1">
+      <c r="B24" s="6" t="inlineStr"><is><t>财务费用</t></is></c>
+      <c r="D24" s="6" t="inlineStr"><is><t>利息支出汇兑损益</t></is></c>
+    </row>
+    <row r="25" ht="20" customHeight="1">
+      <c r="B25" s="6" t="inlineStr"><is><t>投资收益</t></is></c>
+      <c r="D25" s="6" t="inlineStr"><is><t>投资实现的收益</t></is></c>
+    </row>
+    <row r="26" ht="20" customHeight="1">
+      <c r="B26" s="6" t="inlineStr"><is><t>营业利润</t></is></c>
+      <c r="D26" s="6" t="inlineStr"><is><t>主营业务利润</t></is></c>
+    </row>
+    <row r="27" ht="20" customHeight="1">
+      <c r="B27" s="6" t="inlineStr"><is><t>利润总额</t></is></c>
+      <c r="D27" s="6" t="inlineStr"><is><t>所得税前利润</t></is></c>
+    </row>
+    <row r="28" ht="20" customHeight="1">
+      <c r="B28" s="6" t="inlineStr"><is><t>所得税费用</t></is></c>
+      <c r="D28" s="6" t="inlineStr"><is><t>企业所得税</t></is></c>
+    </row>
+    <row r="29" ht="20" customHeight="1">
+      <c r="B29" s="6" t="inlineStr"><is><t>净利润</t></is></c>
+      <c r="D29" s="6" t="inlineStr"><is><t>归属于股东的净利润</t></is></c>
+    </row>
+    <row r="30" ht="20" customHeight="1">
+    </row>
+    <row r="31" ht="20" customHeight="1">
+      <c r="A31" s="6" t="inlineStr"><is><t>现金流量表</t></is></c>
+      <c r="B31" s="6" t="inlineStr"><is><t>经营活动现金流</t></is></c>
+      <c r="C31" s="6" t="inlineStr"><is><t>销售商品、提供劳务收到的现金</t></is></c>
+      <c r="D31" s="6" t="inlineStr"><is><t>主营业务现金流入</t></is></c>
+    </row>
+    <row r="32" ht="20" customHeight="1">
+      <c r="C32" s="6" t="inlineStr"><is><t>购买商品、接受劳务支付的现金</t></is></c>
+      <c r="D32" s="6" t="inlineStr"><is><t>采购现金流出</t></is></c>
+    </row>
+    <row r="33" ht="20" customHeight="1">
+      <c r="C33" s="6" t="inlineStr"><is><t>支付给职工以及为职工支付的现金</t></is></c>
+      <c r="D33" s="6" t="inlineStr"><is><t>员工薪酬支出</t></is></c>
+    </row>
+    <row r="34" ht="20" customHeight="1">
+      <c r="C34" s="6" t="inlineStr"><is><t>支付的各项税费</t></is></c>
+      <c r="D34" s="6" t="inlineStr"><is><t>税金支出</t></is></c>
+    </row>
+    <row r="35" ht="20" customHeight="1">
+      <c r="B35" s="6" t="inlineStr"><is><t>投资活动现金流</t></is></c>
+      <c r="C35" s="6" t="inlineStr"><is><t>收回投资所收到的现金</t></is></c>
+      <c r="D35" s="6" t="inlineStr"><is><t>收回投资本金</t></is></c>
+    </row>
+    <row r="36" ht="20" customHeight="1">
+      <c r="C36" s="6" t="inlineStr"><is><t>取得投资收益所收到的现金</t></is></c>
+      <c r="D36" s="6" t="inlineStr"><is><t>投资回报</t></is></c>
+    </row>
+    <row r="37" ht="20" customHeight="1">
+      <c r="C37" s="6" t="inlineStr"><is><t>购建固定资产、无形资产和其他长期资产所支付的现金</t></is></c>
+      <c r="D37" s="6" t="inlineStr"><is><t>资本支出</t></is></c>
+    </row>
+    <row r="38" ht="20" customHeight="1">
+      <c r="C38" s="6" t="inlineStr"><is><t>投资支付的现金</t></is></c>
+      <c r="D38" s="6" t="inlineStr"><is><t>对外投资支出</t></is></c>
+    </row>
+    <row r="39" ht="20" customHeight="1">
+      <c r="B39" s="6" t="inlineStr"><is><t>筹资活动现金流</t></is></c>
+      <c r="C39" s="6" t="inlineStr"><is><t>吸收投资收到的现金</t></is></c>
+      <c r="D39" s="6" t="inlineStr"><is><t>股权融资</t></is></c>
+    </row>
+    <row r="40" ht="20" customHeight="1">
+      <c r="C40" s="6" t="inlineStr"><is><t>取得借款收到的现金</t></is></c>
+      <c r="D40" s="6" t="inlineStr"><is><t>债务融资</t></is></c>
+    </row>
+    <row r="41" ht="20" customHeight="1">
+      <c r="C41" s="6" t="inlineStr"><is><t>偿还债务支付的现金</t></is></c>
+      <c r="D41" s="6" t="inlineStr"><is><t>还本支出</t></is></c>
+    </row>
+    <row r="42" ht="20" customHeight="1">
+      <c r="C42" s="6" t="inlineStr"><is><t>分配股利、利润或偿付利息支付的现金</t></is></c>
+      <c r="D42" s="6" t="inlineStr"><is><t>分红利息</t></is></c>
+    </row>
+    <row r="43" ht="20" customHeight="1">
+      <c r="C43" s="6" t="inlineStr"><is><t>现金及现金等价物净增加额</t></is></c>
+      <c r="D43" s="6" t="inlineStr"><is><t>期末减期初</t></is></c>
+    </row>
+    <row r="44" ht="20" customHeight="1">
+      <c r="C44" s="6" t="inlineStr"><is><t>期末现金及现金等价物余额</t></is></c>
+      <c r="D44" s="6" t="inlineStr"><is><t>现金储备</t></is></c>
+    </row>
+  </sheetData>
+  <autoFilter ref="A4:D44"/>
+</worksheet>

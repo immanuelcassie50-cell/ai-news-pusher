@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>倒推十年 - 高考志愿填报师工作手册</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#2b2d42; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Decorative accent bar at top -->
+<svg style="position:absolute; top:0; left:0;" width="960" height="8" viewBox="0 0 960 8">
+  <rect width="960" height="8" fill="#ef233c"/>
+</svg>
+
+<!-- Left decorative geometric shapes -->
+<svg style="position:absolute; top:80px; left:60px;" width="120" height="120" viewBox="0 0 120 120" aria-hidden="true">
+  <circle cx="60" cy="60" r="55" fill="none" stroke="#ef233c" stroke-width="2" opacity="0.3"/>
+  <circle cx="60" cy="60" r="40" fill="none" stroke="#ef233c" stroke-width="2" opacity="0.5"/>
+  <circle cx="60" cy="60" r="25" fill="#ef233c" opacity="0.2"/>
+</svg>
+
+<!-- Small accent squares -->
+<svg style="position:absolute; top:320px; left:80px;" width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+  <rect width="40" height="40" fill="#ef233c" opacity="0.15"/>
+</svg>
+<svg style="position:absolute; top:370px; left:90px;" width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+  <rect width="24" height="24" fill="#ef233c" opacity="0.25"/>
+</svg>
+
+<!-- Main title -->
+<p style="position:absolute; top:160px; left:220px; margin:0; font-size:72px; font-weight:700; color:#edf2f4; letter-spacing:8px;">倒推十年</p>
+
+<!-- Subtitle -->
+<p style="position:absolute; top:250px; left:220px; margin:0; font-size:28px; font-weight:400; color:#8d99ae; letter-spacing:4px;">高考志愿填报师工作手册</p>
+
+<!-- Decorative line under subtitle -->
+<svg style="position:absolute; top:300px; left:220px;" width="200" height="3" aria-hidden="true">
+  <rect width="200" height="3" fill="#ef233c"/>
+</svg>
+
+<!-- Author -->
+<p style="position:absolute; top:340px; left:220px; margin:0; font-size:20px; font-weight:500; color:#edf2f4; letter-spacing:2px;">罗宏伟</p>
+
+<!-- Bottom text -->
+<p style="position:absolute; bottom:40px; left:0; right:0; text-align:center; margin:0; font-size:16px; font-weight:400; color:#8d99ae; letter-spacing:6px;">学员手册</p>
+
+<!-- Bottom accent bar -->
+<svg style="position:absolute; bottom:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+  <rect width="960" height="6" fill="#ef233c"/>
+</svg>
+
+</div>
+</body>
+</html>

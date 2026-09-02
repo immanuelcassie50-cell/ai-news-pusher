@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="20" customWidth="1"/>
+    <col min="2" max="2" width="12" customWidth="1"/>
+    <col min="3" max="3" width="50" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="26" customHeight="1">
+      <c r="A1" t="s" s="4"><v>31</v></c>
+    </row>
+    <row r="2" ht="18" customHeight="1">
+      <c r="A2" t="s" s="0"><v>32</v></c>
+    </row>
+    <row r="3"><c r="A3"/></row>
+    <row r="4" ht="18" customHeight="1">
+      <c r="A4" t="s" s="4"><v>18</v></c>
+    </row>
+    <row r="5" ht="18" customHeight="1">
+      <c r="A5" t="s" s="4"><v>5</v></c>
+      <c r="B5" t="s" s="4"><v>6</v></c>
+      <c r="C5" t="s" s="4"><v>7</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>22</v></c>
+      <c r="B6" s="8"><f>AVERAGE(填答!D5:D18)</f><v></v></c>
+      <c r="C6" t="s" s="0"><v>38</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="0"><v>23</v></c>
+      <c r="B7" s="8"><f>(AVERAGE(填答!D19:D20)+AVERAGE(填答!D21:D22)+AVERAGE(填答!D23:D24)+AVERAGE(填答!D25:D26)+AVERAGE(填答!D27:D28)+AVERAGE(填答!D29:D30)+AVERAGE(填答!D31:D32))/7</f><v></v></c>
+      <c r="C7" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="8">
+      <c r="A8" t="s" s="0"><v>24</v></c>
+      <c r="B8" s="8"><f>AVERAGE(填答!D19:D20)</f><v></v></c>
+      <c r="C8" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="0"><v>25</v></c>
+      <c r="B9" s="8"><f>AVERAGE(填答!D21:D22)</f><v></v></c>
+      <c r="C9" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="10">
+      <c r="A10" t="s" s="0"><v>26</v></c>
+      <c r="B10" s="8"><f>AVERAGE(填答!D23:D24)</f><v></v></c>
+      <c r="C10" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="11">
+      <c r="A11" t="s" s="0"><v>27</v></c>
+      <c r="B11" s="8"><f>AVERAGE(填答!D25:D26)</f><v></v></c>
+      <c r="C11" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="12">
+      <c r="A12" t="s" s="0"><v>28</v></c>
+      <c r="B12" s="8"><f>AVERAGE(填答!D27:D28)</f><v></v></c>
+      <c r="C12" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="13">
+      <c r="A13" t="s" s="0"><v>29</v></c>
+      <c r="B13" s="8"><f>AVERAGE(填答!D29:D30)</f><v></v></c>
+      <c r="C13" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="14">
+      <c r="A14" t="s" s="0"><v>30</v></c>
+      <c r="B14" s="8"><f>AVERAGE(填答!D31:D32)</f><v></v></c>
+      <c r="C14" t="s" s="0"><v>39</v></c>
+    </row>
+    <row r="15"><c r="A15"/></row>
+    <row r="16" ht="18" customHeight="1">
+      <c r="A16" t="s" s="4"><v>20</v></c>
+    </row>
+    <row r="17">
+      <c r="A17" s="2"><f>IF(B6&lt;3,"纵轴偏低",IF(AND(B6&gt;=3,B6&lt;4,B7&lt;3),"严重失衡",IF(AND(B6&gt;=4,B7&lt;3),"深井型",IF(AND(B6&lt;3,B7&gt;=3.5),"宽浅型",IF(AND(B6&gt;=3,B6&lt;4,B7&gt;=3,B7&lt;4),"均衡发展中","T型健康态"))))</f><v></v></c>
+    </row>
+    <row r="18"><c r="A18"/></row>
+    <row r="19" ht="18" customHeight="1">
+      <c r="A19" t="s" s="4"><v>33</v></c>
+    </row>
+    <row r="20">
+      <c r="A20" s="0"><f>IF(A17="深井型",INDEX(解读库!B:B,MATCH("深井型",解读库!A:A,0)),IF(A17="宽浅型",INDEX(解读库!B:B,MATCH("宽浅型",解读库!A:A,0)),IF(A17="均衡发展中",INDEX(解读库!B:B,MATCH("均衡发展中",解读库!A:A,0)),IF(A17="T型健康态",INDEX(解读库!B:B,MATCH("T型健康态",解读库!A:A,0)),IF(A17="纵轴偏低",INDEX(解读库!B:B,MATCH("纵轴偏低",解读库!A:A,0)),IF(A17="横轴偏窄",INDEX(解读库!B:B,MATCH("横轴偏窄",解读库!A:A,0)),IF(A17="严重失衡",INDEX(解读库!B:B,MATCH("严重失衡",解读库!A:A,0)),INDEX(解读库!B:B,MATCH("发展期",解读库!A:A,0)))))))))</f><v></v></c>
+    </row>
+  </sheetData>
+</worksheet>

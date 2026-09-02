@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="50" customWidth="1"/>
+    <col min="3" max="3" width="22" customWidth="1"/>
+    <col min="4" max="4" width="40" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="28" customHeight="1">
+  <c r="A1" s="4" t="inlineStr"><is><t>范例学习要点对照</t></is></c>
+  <c r="B1" s="4"/>
+  <c r="C1" s="4"/>
+  <c r="D1" s="4"/>
+</row>
+  <row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>把课程工具转化为面谈准备的关键，是“在每个空格后都有一段思考”。下表是范例中最值得借鉴的几个“思考深度”。</t></is></c>
+</row>
+  <row r="4">
+  <c r="A4" s="14" t="inlineStr"><is><t>学习维度</t></is></c>
+  <c r="B4" s="14" t="inlineStr"><is><t>范例中怎么写的</t></is></c>
+  <c r="C4" s="14" t="inlineStr"><is><t>对应的F系列工具</t></is></c>
+  <c r="D4" s="14" t="inlineStr"><is><t>你能借鉴什么</t></is></c>
+</row>
+  <row r="5">
+  <c r="A5" s="13" t="inlineStr"><is><t>事实归因区分</t></is></c>
+  <c r="B5" s="16" t="inlineStr"><is><t>“事实1”明确标注“归因模糊”——这意味着面谈第二步需要重点探寻归因</t></is></c>
+  <c r="C5" s="16" t="inlineStr"><is><t>F4 探寻归因</t></is></c>
+  <c r="D5" s="16" t="inlineStr"><is><t>不要“填完事实就直接跳到分析缺口”</t></is></c>
+</row>
+  <row r="6">
+  <c r="A6" s="13" t="inlineStr"><is><t>AI场景类型识别</t></is></c>
+  <c r="B6" s="16" t="inlineStr"><is><t>“预估难点”中精确识别B类型（方向迷失）+D类型（美化成果）</t></is></c>
+  <c r="C6" s="16" t="inlineStr"><is><t>F6 五类场景</t></is></c>
+  <c r="D6" s="16" t="inlineStr"><is><t>不要写“员工可能不接受”这种笼统判断</t></is></c>
+</row>
+  <row r="7">
+  <c r="A7" s="13" t="inlineStr"><is><t>双轨分析</t></is></c>
+  <c r="B7" s="16" t="inlineStr"><is><t>AI协作力“够用但有边界不清”、人类深度“够用但在产品决策中体现不足”</t></is></c>
+  <c r="C7" s="16" t="inlineStr"><is><t>F8 双轨评估</t></is></c>
+  <c r="D7" s="16" t="inlineStr"><is><t>不要“贴标签”——要具体到情境</t></is></c>
+</row>
+  <row r="8">
+  <c r="A8" s="13" t="inlineStr"><is><t>启动问题选择理由</t></is></c>
+  <c r="B8" s="16" t="inlineStr"><is><t>选启动二（AI时代），理由是员工最近有“方向迷失”倾向</t></is></c>
+  <c r="C8" s="16" t="inlineStr"><is><t>F7 启动问题</t></is></c>
+  <c r="D8" s="16" t="inlineStr"><is><t>不要随机选——要说明“为什么选这个”</t></is></c>
+</row>
+  <row r="9">
+  <c r="A9" s="13" t="inlineStr"><is><t>备用话术分支</t></is></c>
+  <c r="B9" s="16" t="inlineStr"><is><t>准备3类回应：员工说“AI的局限”、员工沉默、员工说“我状态不好”</t></is></c>
+  <c r="C9" s="16" t="inlineStr"><is><t>F5 四原则 + F6 场景</t></is></c>
+  <c r="D9" s="16" t="inlineStr"><is><t>不要只准备“主线对话”——要准备分支</t></is></c>
+</row>
+  <row r="10">
+  <c r="A10" s="13" t="inlineStr"><is><t>关键词版预演</t></is></c>
+  <c r="B10" s="16" t="inlineStr"><is><t>开场语不超过30字，每步只写关键问题（不写整段话）</t></is></c>
+  <c r="C10" s="16" t="inlineStr"><is><t>F3 四步法</t></is></c>
+  <c r="D10" s="16" t="inlineStr"><is><t>不要写“念稿稿”——关键词版自然度更高</t></is></c>
+</row>
+  <row r="11">
+  <c r="A11" s="13" t="inlineStr"><is><t>方向感具体化</t></is></c>
+  <c r="B11" s="16" t="inlineStr"><is><t>“我的判断力是真实的”——具体到感受层，不是行动清单</t></is></c>
+  <c r="C11" s="16" t="inlineStr"><is><t>F7 发展对话</t></is></c>
+  <c r="D11" s="16" t="inlineStr"><is><t>不要停在“做哪些事”——要给“方向感”</t></is></c>
+</row>
+  <row r="12">
+  <c r="A12" s="13" t="inlineStr"><is><t>问责机制可验证</t></is></c>
+  <c r="B12" s="16" t="inlineStr"><is><t>30天内“做产品决策判断记录”练习 + 张磊3周后问小马验证</t></is></c>
+  <c r="C12" s="16" t="inlineStr"><is><t>F10 问责机制</t></is></c>
+  <c r="D12" s="16" t="inlineStr"><is><t>不要写“加强沟通”——要可观察、可验证</t></is></c>
+</row>
+  <row r="14">
+  <c r="A14" s="6" t="inlineStr"><is><t>核心价值</t></is></c>
+  <c r="B14" s="6" t="inlineStr"><is><t>这份范例的核心价值不在“具体的字句”——在“思考的深度”。一份好的清单不是“填完所有空格”，是“在每个空格后都有一段思考”。</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

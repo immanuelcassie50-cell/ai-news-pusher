@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="12" customWidth="1"/>
+    <col min="2" max="2" width="40" customWidth="1"/>
+    <col min="3" max="3" width="40" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>H1术语速查卡使用指南</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>编号：H1 | 用途：快速查询股票投资专业术语</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="22" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>项目</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>内容</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>说明</t></is></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" s="9" t="inlineStr"><is><t>适用场景</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>课前预习 | 课堂讲解 | 课后复习</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>学员可在任何时候打开查询专业术语含义</t></is></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" s="9" t="inlineStr"><is><t>填写范例</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>查找术语：PE（市盈率）</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>显示：PE=股价/每股收益，反映投资回本周期</t></is></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" s="6"/>
+      <c r="B7" s="6" t="inlineStr"><is><t>查找术语：K线</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>显示：K线由开盘价、收盘价、最高价、最低价组成，反映股价走势</t></is></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" s="6"/>
+      <c r="B8" s="6" t="inlineStr"><is><t>查找术语：换手率</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>显示：当日成交股数/总流通股数，反映股票流动性</t></is></c>
+    </row>
+    <row r="9" ht="10"/>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="8" t="inlineStr"><is><t>注意事项</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>1. 术语按拼音字母排序，可用筛选功能快速定位</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>建议学员先通读一遍，建立术语体系认知</t></is></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" s="6"/>
+      <c r="B11" s="6" t="inlineStr"><is><t>2. 术语含义已简化，具体应用需结合案例理解</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>每个术语都标注了课程内对应章节，方便精确定位</t></is></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" s="6"/>
+      <c r="B12" s="6" t="inlineStr"><is><t>3. 部分术语有多种含义，以课程讲解的定义为准</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>如："牛市"在技术分析课和情绪管理课中侧重点不同</t></is></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" s="6"/>
+      <c r="B13" s="6" t="inlineStr"><is><t>4. 可在备注栏添加个人理解或老师补充的案例</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>形成个人化的术语笔记</t></is></c>
+    </row>
+    <row r="14" ht="10"/>
+    <row r="15" ht="22" customHeight="1">
+      <c r="A15" s="8" t="inlineStr"><is><t>课堂使用建议</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t>讲师讲到专业术语时，暂停让学员查表确认理解</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>避免学员只听到音而不知道含义</t></is></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" s="6"/>
+      <c r="B16" s="6" t="inlineStr"><is><t>引导话术："大家翻到H1术语速查卡，查一下刚才讲的XXX是什么意思"</t></is></c>
+      <c r="C16" s="6" t="inlineStr"><is><t>强化术语记忆，建立查阅习惯</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

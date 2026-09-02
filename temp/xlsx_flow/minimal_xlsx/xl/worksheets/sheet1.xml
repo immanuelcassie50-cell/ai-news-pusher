@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView tabSelected="1" workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="32" customWidth="1"/>
+    <col min="3" max="3" width="36" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+    <col min="5" max="5" width="14" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="28" customWidth="1"/>
+    <col min="8" max="8" width="12" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <!-- Row 1: Title -->
+    <row r="1" ht="28" customHeight="1">
+      <c r="A1" t="s" s="4"><v>0</v></c>
+    </row>
+
+    <!-- Row 2: Column Headers -->
+    <row r="2" ht="20" customHeight="1">
+      <c r="A2" t="s" s="4"><v>1</v></c>
+      <c r="B2" t="s" s="4"><v>2</v></c>
+      <c r="C2" t="s" s="4"><v>3</v></c>
+      <c r="D2" t="s" s="4"><v>4</v></c>
+      <c r="E2" t="s" s="4"><v>5</v></c>
+      <c r="F2" t="s" s="4"><v>6</v></c>
+      <c r="G2" t="s" s="4"><v>7</v></c>
+    </row>
+
+    <!-- Row 3: Phase 1 - 入门期 -->
+    <row r="3">
+      <c r="A3" t="s" s="4"><v>8</v></c>
+      <c r="B3" t="s" s="2"><v>9</v></c>
+      <c r="C3" t="s" s="1"><v>10</v></c>
+      <c r="D3" s="11"><v>45691</v></c>
+      <c r="E3" s="11"><v>45781</v></c>
+      <c r="F3" s="10"><f>E3-D3</f><v></v></c>
+      <c r="G3" t="s" s="1"><v>27</v></c>
+      <c r="H3" t="s" s="1"><v>22</v></c>
+    </row>
+
+    <!-- Row 4: Phase 2 - 成长期 -->
+    <row r="4">
+      <c r="A4" t="s" s="4"><v>11</v></c>
+      <c r="B4" t="s" s="2"><v>12</v></c>
+      <c r="C4" t="s" s="1"><v>13</v></c>
+      <c r="D4" s="11"><v>45782</v></c>
+      <c r="E4" s="11"><v>45932</v></c>
+      <c r="F4" s="10"><f>E4-D4</f><v></v></c>
+      <c r="G4" t="s" s="1"><v>28</v></c>
+      <c r="H4" t="s" s="1"><v>22</v></c>
+    </row>
+
+    <!-- Row 5: Phase 3 - 进阶期 -->
+    <row r="5">
+      <c r="A5" t="s" s="4"><v>14</v></c>
+      <c r="B5" t="s" s="2"><v>15</v></c>
+      <c r="C5" t="s" s="1"><v>16</v></c>
+      <c r="D5" s="11"><v>45933</v></c>
+      <c r="E5" s="11"><v>46227</v></c>
+      <c r="F5" s="10"><f>E5-D5</f><v></v></c>
+      <c r="G5" t="s" s="1"><v>29</v></c>
+      <c r="H5" t="s" s="1"><v>22</v></c>
+    </row>
+
+    <!-- Row 6: Phase 4 - 巩固期 -->
+    <row r="6">
+      <c r="A6" t="s" s="4"><v>17</v></c>
+      <c r="B6" t="s" s="2"><v>18</v></c>
+      <c r="C6" t="s" s="1"><v>19</v></c>
+      <c r="D6" s="11"><v>46228</v></c>
+      <c r="E6" s="11"><v>46289</v></c>
+      <c r="F6" s="10"><f>E6-D6</f><v></v></c>
+      <c r="G6" t="s" s="1"><v>30</v></c>
+      <c r="H6" t="s" s="1"><v>22</v></c>
+    </row>
+
+    <!-- Row 7: Summary Section Header -->
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" t="s" s="4"><v>23</v></c>
+    </row>
+
+    <!-- Row 8: Summary Stats -->
+    <row r="8">
+      <c r="A8" t="s" s="2"><v>24</v></c>
+      <c r="B8" s="9"><f>COUNTA(A3:A6)</f><v></v></c>
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="2"><v>25</v></c>
+      <c r="B9" s="9"><f>COUNTIF(H3:H6,"已完成")</f><v></v></c>
+    </row>
+    <row r="10">
+      <c r="A10" t="s" s="2"><v>26</v></c>
+      <c r="B10" s="8"><f>B9/B8</f><v></v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

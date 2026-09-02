@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第二章：共同语境建立 · 组织统筹能力</title>
+<style>
+:root {
+  --primary: #1A5F7A;
+  --primary-light: #2A7A9A;
+  --primary-dark: #0F4A5F;
+  --accent: #C45C3E;
+  --warm: #F6F3EF;
+  --bg: #FBFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --gray-70: #4A4748;
+  --gray-50: #7A7678;
+  --gray-30: #B8B4B5;
+  --gray-10: #EAE6E4;
+  --font-serif: 'Didot','Bodoni MT','Bodoni 72','Times New Roman',Georgia,serif;
+  --font-body: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--warm);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.eyebrow {
+  font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
+  font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before {
+  content: ''; display: block; width: 24px; height: 1.5px; background: var(--primary);
+}
+.serif { font-family: var(--font-serif); }
+
+/* HERO */
+.hero {
+  background: var(--surface);
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid var(--gray-10);
+}
+.hero-stripe {
+  position: absolute; top: 0; left: 0;
+  width: 5px; height: 100%; background: var(--primary);
+}
+.hero-inner {
+  padding: 64px 48px 72px;
+  max-width: 1100px; margin: 0 auto;
+}
+.hero-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-10);
+}
+.brand-badge { display: flex; align-items: center; gap: 0; }
+.brand-rect {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 7px 16px; line-height: 1;
+}
+.brand-en {
+  font-size: 10px; letter-spacing: .12em; color: var(--gray-50);
+  text-transform: uppercase; padding-left: 14px;
+  border-left: 1px solid var(--gray-10); margin-left: 14px;
+  line-height: 1.5;
+}
+.hero-tag {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .08em;
+  border: 1px solid var(--gray-10); padding: 6px 14px; border-radius: 2px;
+}
+.hero-body {
+  display: grid; grid-template-columns: 1fr auto; gap: 64px; align-items: end;
+}
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: 42px; font-weight: 400; line-height: 1.25;
+  color: var(--ink); margin-bottom: 18px; letter-spacing: -.01em;
+}
+.hero-h1 em { font-style: normal; color: var(--primary); }
+.hero-lead {
+  font-size: 15px; color: var(--gray-50); max-width: 560px; line-height: 1.85;
+}
+.hero-metrics {
+  display: flex; flex-direction: column; gap: 0;
+  align-self: stretch; justify-content: flex-end;
+  border-left: 1px solid var(--gray-10); padding-left: 48px;
+}
+.metric {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray-10);
+  text-align: right;
+}
+.metric:last-child { border-bottom: none; }
+.metric-val {
+  font-family: var(--font-serif);
+  font-size: 52px; font-weight: 400; color: var(--primary);
+  line-height: 1; display: block; letter-spacing: -.02em;
+}
+.metric-lbl {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .06em; margin-top: 4px; display: block;
+}
+
+/* INSIGHT */
+.insight {
+  background: var(--primary-dark); color: #fff;
+  padding: 88px 0;
+  position: relative; overflow: hidden;
+}
+.insight::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+}
+.insight-grid {
+  display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: center;
+}
+.insight-quote {
+  font-family: var(--font-serif);
+  font-size: 26px; line-height: 1.55; color: #fff;
+  font-weight: 400;
+  position: relative; padding-left: 28px;
+}
+.insight-quote::before {
+  content: '';
+  position: absolute; left: 0; top: 4px; bottom: 4px;
+  width: 3px; background: var(--accent);
+}
+.insight-list { display: flex; flex-direction: column; gap: 28px; }
+.insight-item { display: flex; gap: 18px; }
+.insight-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0; margin-top: 10px;
+}
+.insight-text { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.85; }
+.insight-text strong { color: rgba(255,255,255,.92); }
+
+/* SECTIONS */
+.section { padding: 88px 0; }
+.section-alt { background: var(--surface); }
+.section-warm { background: var(--warm); }
+.section-head { margin-bottom: 48px; }
+.section-head h2 {
+  font-family: var(--font-serif); font-size: 30px; font-weight: 400;
+  color: var(--ink); margin: 14px 0 10px; line-height: 1.35;
+}
+.section-head p { font-size: 14px; color: var(--gray-50); }
+
+/* CONTEXT LAYERS */
+.layer-diagram {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+}
+.layer-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 32px 28px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+  transition: box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+.layer-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+.layer-num {
+  font-family: var(--font-serif); font-size: 56px; font-weight: 400;
+  color: var(--gray-10); line-height: 1; margin-bottom: 12px;
+  display: block;
+}
+.layer-title {
+  font-size: 16px; font-weight: 700; color: var(--ink);
+  margin-bottom: 12px;
+}
+.layer-desc {
+  font-size: 13px; color: var(--gray-50); line-height: 1.75;
+  margin-bottom: 16px;
+}
+.layer-example {
+  background: var(--warm);
+  border-radius: 4px;
+  padding: 14px 16px;
+  font-size: 12px; color: var(--gray-70);
+  border-left: 3px solid var(--primary);
+}
+.layer-example strong { color: var(--primary); display: block; margin-bottom: 4px; }
+
+/* TOOLS GRID */
+.tools-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+.tool-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 28px 24px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s var(--ease), transform .3s var(--ease);
+}
+.tool-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+.tool-card::before {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s var(--ease);
+}
+.tool-card:hover::before { transform: scaleX(1); }
+.tool-icon {
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(26,95,122,.1); display: flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 16px;
+}
+.tool-icon svg { width: 22px; height: 22px; fill: var(--primary); }
+.tool-name {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+.tool-desc {
+  font-size: 12.5px; color: var(--gray-50); line-height: 1.7;
+  margin-bottom: 14px;
+}
+.tool-example {
+  font-size: 11.5px; color: var(--gray-70);
+  background: var(--warm); padding: 10px 12px;
+  border-radius: 4px; line-height: 1.6;
+}
+.tool-example strong { color: var(--primary); }
+
+/* DIAGNOSIS MATRIX */
+.diagnosis-matrix {
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--gray-10);
+  overflow: hidden;
+}
+.diagnosis-header {
+  display: grid; grid-template-columns: 140px 1fr 1fr;
+  background: var(--ink); color: #fff;
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 700;
+}
+.diagnosis-header span {
+  padding: 14px 18px;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.diagnosis-header span:last-child { border-right: none; }
+.diagnosis-row {
+  display: grid; grid-template-columns: 140px 1fr 1fr;
+  border-bottom: 1px solid var(--gray-10);
+  transition: background .25s var(--ease);
+}
+.diagnosis-row:last-child { border-bottom: none; }
+.diagnosis-row:hover { background: rgba(26,95,122,.03); }
+.diagnosis-row span {
+  padding: 16px 18px;
+  font-size: 12.5px;
+  border-right: 1px solid var(--gray-10);
+  display: flex; align-items: center;
+}
+.diagnosis-row span:last-child { border-right: none; }
+.diagnosis-row span:first-child {
+  font-weight: 700; color: var(--ink);
+  background: var(--warm);
+}
+.diff-icon { margin-right: 8px; color: var(--accent); }
+
+/* CASE STUDY */
+.case-study {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 40px 36px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+}
+.case-badge {
+  position: absolute; top: -1px; left: 36px;
+  background: var(--accent); color: #fff;
+  font-size: 10px; font-weight: 700; letter-spacing: .1em;
+  padding: 6px 14px; border-radius: 0 0 4px 4px;
+}
+.case-title {
+  font-family: var(--font-serif); font-size: 22px;
+  color: var(--ink); margin-bottom: 16px; margin-top: 8px;
+}
+.case-context {
+  background: var(--warm); border-radius: 4px;
+  padding: 16px 20px; margin-bottom: 24px;
+  font-size: 13px; color: var(--gray-70); line-height: 1.8;
+}
+.case-context strong { color: var(--primary); }
+.case-steps { display: flex; flex-direction: column; gap: 16px; }
+.case-step {
+  display: flex; gap: 16px; align-items: flex-start;
+}
+.case-step-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.case-step-content h4 {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin-bottom: 4px;
+}
+.case-step-content p {
+  font-size: 12px; color: var(--gray-50); line-height: 1.7;
+}
+
+/* KEY POINT */
+.key-point {
+  background: var(--primary); color: #fff;
+  border-radius: 4px;
+  padding: 36px 32px;
+}
+.key-point-lbl {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,.55); margin-bottom: 16px; font-weight: 700;
+}
+.key-point-text {
+  font-family: var(--font-serif); font-size: 22px; line-height: 1.5;
+  color: #fff; font-weight: 400;
+}
+
+/* EXPANDABLE */
+.expand-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.expand-header:hover { background: var(--warm); }
+.expand-header h3 {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  display: flex; align-items: center; gap: 12px;
+}
+.expand-icon {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--primary); display: flex;
+  align-items: center; justify-content: center;
+  transition: transform .3s var(--ease);
+}
+.expand-icon svg { width: 12px; height: 12px; fill: #fff; }
+.expand-icon.open { transform: rotate(45deg); }
+.expand-content {
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s var(--ease);
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.expand-content.open { max-height: 600px; }
+.expand-inner { padding: 24px; }
+.expand-inner p { font-size: 13.5px; color: var(--gray-70); line-height: 1.8; margin-bottom: 12px; }
+.expand-inner p:last-child { margin-bottom: 0; }
+.expand-inner ul { margin: 12px 0; padding-left: 20px; }
+.expand-inner li { font-size: 13px; color: var(--gray-70); margin-bottom: 8px; }
+
+/* FOOTER */
+.foot {
+  background: var(--ink); padding: 56px 0;
+}
+.foot-inner {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.foot-left { display: flex; align-items: center; gap: 20px; }
+.foot-mark {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 8px 18px; border-radius: 2px;
+}
+.foot-title { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.85); margin-bottom: 3px; }
+.foot-sub { font-size: 12px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+.foot-note {
+  text-align: right; font-size: 11.5px; color: rgba(255,255,255,.28); line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .container, .hero-inner { padding-left: 24px; padding-right: 24px; }
+  .hero-body { grid-template-columns: 1fr; }
+  .hero-metrics { flex-direction: row; border-left: none; padding-left: 0; border-top: 1px solid var(--gray-10); padding-top: 32px; margin-top: 32px; }
+  .metric { padding: 0 24px 0 0; border-bottom: none; text-align: left; }
+  .insight-grid { grid-template-columns: 1fr; gap: 48px; }
+  .layer-diagram { grid-template-columns: 1fr; }
+  .tools-grid { grid-template-columns: 1fr; }
+  .diagnosis-header, .diagnosis-row { grid-template-columns: 100px 1fr 1fr; }
+  .foot-inner { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .foot-note { text-align: left; }
+}
+
+/* PRINT */
+@media print {
+  @page { size: A3 landscape; margin: 15mm; }
+  body { background: #fff; font-size: 11pt; }
+  .hero { border: none; box-shadow: none; }
+  .insight { background: #f5f5f5; color: #000; }
+  .insight-text { color: #333; }
+  .foot { background: #333; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .diagnosis-header { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .diagnosis-row:hover { background: rgba(26,95,122,.05) !important; }
+  .tool-card:hover, .layer-card:hover { transform: none; box-shadow: none; }
+  .key-point { background: var(--primary) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="brand-badge">
+        <div class="brand-rect">组织统筹</div>
+        <div class="brand-en">课7 · 企业文化<br>共同语境建立</div>
+      </div>
+      <div class="hero-tag">第二章</div>
+    </div>
+    <div class="hero-body">
+      <div>
+        <p class="eyebrow">共同语境建立</p>
+        <h1 class="hero-h1 serif">
+          让人类与智能体<span style="color: var(--accent)">"说到一块去"</span>
+        </h1>
+        <p class="hero-lead">语境是人和智能体协同的基础——没有共同语境，就没有真正的协作</p>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-val serif">3</span>
+          <span class="metric-lbl">语境层次</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">建立工具</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">1</span>
+          <span class="metric-lbl">实操案例</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- INSIGHT -->
+<section class="insight">
+  <div class="container">
+    <div class="insight-grid">
+      <blockquote class="insight-quote serif">
+        语境不对，智能体再强也是对牛弹琴——<br>建立共同语境是人机协作的第一步，也是最重要的一步
+      </blockquote>
+      <div class="insight-list">
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>麦肯锡研究：</strong>在人机协作中，超过60%的效率损失源于语境不清晰</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>IBM发现：</strong>高效人机团队的领导者，90%的时间用于建立和传递语境，只有10%用于具体指挥</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>关键洞察：</strong>智能体需要的语境比人类更具体、更结构化、更有边界</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTEXT LAYERS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">语境结构</p>
+      <h2 class="serif">语境的三层结构</h2>
+      <p>从宏观到微观，层层递进</p>
+    </div>
+    <div class="layer-diagram">
+      <div class="layer-card">
+        <span class="layer-num serif">01</span>
+        <h3 class="layer-title">业务语境</h3>
+        <p class="layer-desc">为什么做这件事？目标是什么？成功的标准是什么？</p>
+        <div class="layer-example">
+          <strong>示例</strong>
+          "我们正在开发一款面向年轻妈妈的风险投资理财App，目标是3个月内获取10万注册用户"
+        </div>
+      </div>
+      <div class="layer-card">
+        <span class="layer-num serif">02</span>
+        <h3 class="layer-title">任务语境</h3>
+        <p class="layer-desc">具体要做什么？有什么约束条件？需要遵循什么规范？</p>
+        <div class="layer-example">
+          <strong>示例</strong>
+          "请写一篇获客文案：语气要温暖有信任感，不能用'保证''最高'等绝对化词汇，控制在800字以内"
+        </div>
+      </div>
+      <div class="layer-card">
+        <span class="layer-num serif">03</span>
+        <h3 class="layer-title">关系语境</h3>
+        <p class="layer-desc">谁与谁协作？各自扮演什么角色？决策权限如何划分？</p>
+        <div class="layer-example">
+          <strong>示例</strong>
+          "我负责人工审核和最终决策，你负责初稿和修改建议，最终版本需要我确认后才能对外发布"
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR TOOLS -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">建立工具</p>
+      <h2 class="serif">建立共同语境的四大工具</h2>
+      <p>实操方法，直接可用</p>
+    </div>
+    <div class="tools-grid">
+      <div class="tool-card">
+        <div class="tool-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z"/></svg>
+        </div>
+        <h3 class="tool-name">结果看板</h3>
+        <p class="tool-desc">清晰展示目标、进度、产出的可视化工具，让所有人机成员对"成功"有统一认知</p>
+        <div class="tool-example">
+          <strong>用法：</strong>创建一个共享文档，包含：目标描述 / 成功指标 / 当前进度 / 关键里程碑
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+        </div>
+        <h3 class="tool-name">角色矩阵</h3>
+        <p class="tool-desc">明确人类和智能体各自的角色、职责边界、决策权限</p>
+        <div class="tool-example">
+          <strong>用法：</strong>用表格列出：任务类型 / 负责人（人/智能体）/ 协作方式 / 决策权归属
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-7 12h-2v-2h2v2zm0-4h-2V6h2v4z"/></svg>
+        </div>
+        <h3 class="tool-name">对话协议</h3>
+        <p class="tool-desc">约定人机对话的格式、频率、反馈机制</p>
+        <div class="tool-example">
+          <strong>用法：</strong>制定标准开场白、追问格式、确认流程，例如："请先确认你理解了我的需求"
+        </div>
+      </div>
+      <div class="tool-card">
+        <div class="tool-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3 class="tool-name">反馈回路</h3>
+        <p class="tool-desc">建立"输出→反馈→修正→确认"的闭环机制</p>
+        <div class="tool-example">
+          <strong>用法：</strong>每次智能体产出后，明确告知：哪里符合预期 / 哪里需要调整 / 下次如何改进
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIAGNOSIS -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">诊断与弥合</p>
+      <h2 class="serif">人机语境差异的诊断与弥合</h2>
+      <p>识别问题，才能解决问题</p>
+    </div>
+    <div class="diagnosis-matrix">
+      <div class="diagnosis-header">
+        <span>差异类型</span>
+        <span>表现特征</span>
+        <span>弥合方法</span>
+      </div>
+      <div class="diagnosis-row">
+        <span><span class="diff-icon">◆</span>目标理解偏差</span>
+        <span>智能体按自己的理解执行，产出与预期不符</span>
+        <span>使用"结果看板"明确目标，用"确认式提问"验证理解</span>
+      </div>
+      <div class="diagnosis-row">
+        <span><span class="diff-icon">◆</span>边界意识模糊</span>
+        <span>智能体超出授权范围行动，或过度保守</span>
+        <span>使用"角色矩阵"明确权限，列出负面清单（不能做）</span>
+      </div>
+      <div class="diagnosis-row">
+        <span><span class="diff-icon">◆</span>细节层次不匹配</span>
+        <span>人类说得太抽象，智能体理解太具体；或反之</span>
+        <span>调整语境层次：先给业务语境，再给任务语境，最后给细节</span>
+      </div>
+      <div class="diagnosis-row">
+        <span><span class="diff-icon">◆</span>反馈解读差异</span>
+        <span>智能体对人类反馈的理解与预期不一致</span>
+        <span>建立"对话协议"，使用结构化反馈格式，避免模糊表达</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDY -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">实操案例</p>
+      <h2 class="serif">某科技公司如何用"语境卡片"让人机对齐</h2>
+    </div>
+    <div class="case-study">
+      <span class="case-badge">案例</span>
+      <h3 class="case-title">"语境卡片"工作法</h3>
+      <div class="case-context">
+        <strong>背景：</strong>某互联网公司的产品团队在引入AI智能体后，发现智能体产出的方案总是"差点意思"——方向对，但细节不符合业务实际。团队尝试直接给更多指令，但智能体反而更加束手束脚。<br><br>
+        <strong>解决方案：</strong>团队设计了一套"语境卡片"模板，每次与智能体协作前，先填写卡片，建立完整语境。
+      </div>
+      <div class="case-steps">
+        <div class="case-step">
+          <span class="case-step-num">1</span>
+          <div class="case-step-content">
+            <h4>卡片正面：业务语境</h4>
+            <p>用3句话描述：我们在做什么业务？目标用户是谁？当前最大的挑战是什么？</p>
+          </div>
+        </div>
+        <div class="case-step">
+          <span class="case-step-num">2</span>
+          <div class="case-step-content">
+            <h4>卡片背面：任务语境</h4>
+            <p>用结构化格式描述任务：背景 / 任务描述 / 约束条件 / 成功标准 / 参考案例</p>
+          </div>
+        </div>
+        <div class="case-step">
+          <span class="case-step-num">3</span>
+          <div class="case-step-content">
+            <h4>侧边栏：关系语境</h4>
+            <p>明确：谁来决策？谁能修改？出现分歧怎么办？</p>
+          </div>
+        </div>
+        <div class="case-step">
+          <span class="case-step-num">4</span>
+          <div class="case-step-content">
+            <h4>使用效果</h4>
+            <p>智能体产出的一次通过率从35%提升到78%，返工次数减少60%。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top: 48px;">
+      <p class="key-point-lbl">核心观点</p>
+      <p class="key-point-text">建立共同语境不是"说得更详细"，而是"说得更结构化"——把模糊的业务判断转化为清晰的语境要素</p>
+    </div>
+  </div>
+</section>
+
+<!-- SUMMARY -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">章节小结</p>
+      <h2 class="serif">本章要点</h2>
+    </div>
+    <div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">1</span>
+          语境的三层结构
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>业务语境：为什么做（目标、意义）→ 任务语境：做什么（具体任务、约束）→ 关系语境：谁来做（角色、权限、决策流程）</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">2</span>
+          四大工具
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>结果看板（统一目标认知）→ 角色矩阵（明确职责边界）→ 对话协议（规范交互方式）→ 反馈回路（建立持续改进）</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">3</span>
+          关键心法
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>语境不是"说得更多"，而是"说得更结构化"。智能体需要的不是更详细的指令，而是更清晰的语境要素。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-left">
+        <div class="foot-mark">组织统筹</div>
+        <div>
+          <p class="foot-title">第二章：共同语境建立</p>
+          <p class="foot-sub">课7 · 企业文化模块 · 组织统筹能力</p>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>让人类与智能体"说到一块去"</p>
+        <p>基于麦肯锡人机协作研究 · IBM智能体领导力报告</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleExpand(header) {
+  const content = header.nextElementSibling;
+  const icon = header.querySelector('.expand-icon');
+  content.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+</script>
+</body>
+</html>

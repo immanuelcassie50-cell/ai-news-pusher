@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<sheetViews><sheetView workbookViewId="0"><selection activeCell="A1" sqref="A1"/></sheetView></sheetViews>
+<sheetFormatPr baseColWidth="8" defaultRowHeight="15"/>
+<cols><col min="1" max="1" width="20" customWidth="1"/><col min="2" max="2" width="50" customWidth="1"/></cols>
+<sheetData>
+<row r="1">
+  <c r="A1" s="1" t="inlineStr"><is><t>我的问题终结报告</t></is></c>
+  <c r="B1" s="1" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="5" t="inlineStr"><is><t>【问题定义】</t></is></c>
+  <c r="B3" s="9"/>
+</row>
+<row r="4">
+  <c r="A4" s="2" t="inlineStr"><is><t>问题描述:</t></is></c>
+  <c r="B4" s="9"/>
+</row>
+<row r="5">
+  <c r="A5" s="2" t="inlineStr"><is><t>问题类型:</t></is></c>
+  <c r="B5" s="4" t="inlineStr"><is><t>□突发型  □重复型  □预期型  □跨部门型</t></is></c>
+</row>
+<row r="7">
+  <c r="A7" s="5" t="inlineStr"><is><t>【解决方案】</t></is></c>
+  <c r="B7" s="9"/>
+</row>
+<row r="8">
+  <c r="A8" s="2" t="inlineStr"><is><t>解决方案:</t></is></c>
+  <c r="B8" s="9"/>
+</row>
+<row r="9">
+  <c r="A9" s="2" t="inlineStr"><is><t>实施步骤:</t></is></c>
+  <c r="B9" s="9"/>
+</row>
+<row r="10">
+  <c r="B10" s="9"/>
+</row>
+<row r="12">
+  <c r="A12" s="5" t="inlineStr"><is><t>【结果验证】</t></is></c>
+  <c r="B12" s="9"/>
+</row>
+<row r="13">
+  <c r="A13" s="2" t="inlineStr"><is><t>验证时间:</t></is></c>
+  <c r="B13" s="4"/>
+  <c r="C13" s="2" t="inlineStr"><is><t>验证结果:</t></is></c>
+  <c r="D13" s="4"/>
+</row>
+<row r="14">
+  <c r="A14" s="2" t="inlineStr"><is><t>问题是否真正解决:</t></is></c>
+  <c r="B14" s="4" t="inlineStr"><is><t>□解决  □复发</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="2" t="inlineStr"><is><t>报告人:</t></is></c>
+  <c r="B16" s="4"/>
+  <c r="C16" s="2" t="inlineStr"><is><t>日期:</t></is></c>
+  <c r="D16" s="4"/>
+</row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

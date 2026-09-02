@@ -1,0 +1,172 @@
+{
+  "meta": {
+    "title": "组织信任管理",
+    "eyebrow": "内训版权课程",
+    "subtitle": "组织版",
+    "tagline": "信任是可以被管理的",
+    "authorLine": "主讲人 · 版权：罗宏伟",
+    "footerCredit": "罗宏伟老师 版权所有",
+    "courseTag": "组织信任管理"
+  },
+  "nodeModel": {
+    "enabled": true,
+    "nodes": [
+      { "char": "需", "label": "能力可靠", "colorRole": "gold" },
+      { "char": "萃", "label": "程序公平", "colorRole": "teal" },
+      { "char": "取", "label": "信息透明", "colorRole": "rust" },
+      { "char": "选", "label": "承诺一致", "colorRole": "indigo" },
+      { "char": "用", "label": "责任承担", "colorRole": "rose" }
+    ]
+  },
+  "slides": [
+    {
+      "layout": "module_divider",
+      "badgeChar": "收",
+      "colorRole": "rose",
+      "tag": "收尾",
+      "title": "给内训师和管理者的应用指南",
+      "subtitle": "方法迁移：从课堂到组织",
+      "bulletsHeading": "本模块你将能做到",
+      "bullets": [
+        "把课程工具迁移到实际管理场景",
+        "识别组织内的四类信任塌陷",
+        "在现场触发可落地的行动计划"
+      ]
+    },
+    {
+      "layout": "three_card_row",
+      "title": "课程全景：三个模块的收成",
+      "cards": [
+        {
+          "char": "开",
+          "colorRole": "gold",
+          "title": "开场框架",
+          "desc": "五根柱子撑起信任结构 / 四类塌陷定位组织病灶"
+        },
+        {
+          "char": "案",
+          "colorRole": "teal",
+          "title": "案例拆解",
+          "desc": "遇见小面 · 福喜 · 瑞幸 · AI转型 / 真实企业的信任崩塌路径"
+        },
+        {
+          "char": "具",
+          "colorRole": "rust",
+          "title": "工具落地",
+          "desc": "体检表：五维打分 / 七问：追问机制 / 迁移清单：落地步骤"
+        }
+      ]
+    },
+    {
+      "layout": "grid_canvas",
+      "title": "信任的三层关系：画布",
+      "subtitle": "组织内的三类信任触点，一张纸看清楚",
+      "cells": [
+        {
+          "col": 0,
+          "row": 0,
+          "colorRole": "rust",
+          "label": "取",
+          "big": false,
+          "body": "对客户的信任"
+        },
+        {
+          "col": 1,
+          "row": 0,
+          "colorRole": "gold",
+          "label": "需",
+          "big": true,
+          "body": "能力可靠是信任的基石"
+        },
+        {
+          "col": 2,
+          "row": 0,
+          "colorRole": "teal",
+          "label": "萃",
+          "big": false,
+          "body": "程序公平是信任的保障"
+        },
+        {
+          "col": 0,
+          "row": 1,
+          "colorRole": "indigo",
+          "label": "选",
+          "big": false,
+          "body": "对员工的信任"
+        },
+        {
+          "col": 1,
+          "row": 1,
+          "colorRole": "rose",
+          "label": "用",
+          "big": true,
+          "body": "责任承担是信任的兑现"
+        },
+        {
+          "col": 2,
+          "row": 1,
+          "colorRole": "rust",
+          "label": "取",
+          "big": false,
+          "body": "对伙伴的信任"
+        }
+      ],
+      "footerBar": "每一格都是行动起点：先选一个最近、最痛的触点切入"
+    },
+    {
+      "layout": "three_card_row",
+      "title": "组织信任的四个坑",
+      "cards": [
+        {
+          "char": "坑1",
+          "colorRole": "rose",
+          "title": "把信任当宣传任务",
+          "desc": "贴海报、喊口号、开大会——情绪过去了，信任还在原地"
+        },
+        {
+          "char": "坑2",
+          "colorRole": "rose",
+          "title": "把合规当全部正当性",
+          "desc": "以为通过了审计就等于获得了信任，合规是底线而非上限"
+        },
+        {
+          "char": "坑3",
+          "colorRole": "rose",
+          "title": "只在危机后讨论信任",
+          "desc": "出事了才想起信任建设，平时觉得可有可无"
+        },
+        {
+          "char": "坑4",
+          "colorRole": "rose",
+          "title": "把员工沉默当认同",
+          "desc": "没人提意见不等于大家都认可，可能是防御性沉默"
+        }
+      ]
+    },
+    {
+      "layout": "clarify_list",
+      "badgeChar": "防",
+      "colorRole": "indigo",
+      "tag": "设计选择",
+      "title": "防御心理管理：四个设计选择",
+      "watermarkChar": "防",
+      "items": [
+        "案例做远近搭配 —— 远的案例降低代入防御，近的案例触发真实反思",
+        "讲机制不讲人品 —— 讨论系统问题而非个人道德，避免现场对抗",
+        "收尾故意不点名 —— 给当事人留台阶，保留后续改变的空间",
+        "只给问题不给结论 —— 让学员自己得出答案，接受度高于被告知"
+      ]
+    },
+    {
+      "layout": "quote_emphasis",
+      "quote": "企业真正要管理的，不是舆情，而是权力。",
+      "caption": "信任问题的本质是权力结构问题"
+    },
+    {
+      "layout": "closing",
+      "title": "谢谢",
+      "subtitle": "信任不能被要求，只能被赢得——从下一次真实互动开始",
+      "authorLine": "主讲人 · 版权：罗宏伟"
+    }
+  ]
+}

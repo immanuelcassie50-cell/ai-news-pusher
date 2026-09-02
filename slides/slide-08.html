@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>断裂带详解-认知层</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#F6F3EF; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Top accent bar -->
+<svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+  <rect width="960" height="6" fill="#B81025"/>
+</svg>
+
+<!-- Page title -->
+<p style="position:absolute; top:30px; left:50px; margin:0; font-size:32px; font-weight:700; color:#1A1A1A; letter-spacing:2px;">断裂带详解-认知层</p>
+
+<!-- Subtitle -->
+<p style="position:absolute; top:75px; left:50px; margin:0; font-size:16px; font-weight:400; color:#4A4748;">理解人机决策边界的本质：哪些断裂是真实的，哪些是认知偏差</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:105px; left:50px;" width="120" height="3" aria-hidden="true">
+  <rect width="120" height="3" fill="#B81025"/>
+</svg>
+
+<!-- Left column - What is 断裂带 -->
+<svg style="position:absolute; top:130px; left:50px;" width="400" height="340" viewBox="0 0 400 340">
+  <!-- Card background -->
+  <rect width="400" height="340" rx="8" fill="#FFFFFF" stroke="#D4122B" stroke-width="1"/>
+
+  <!-- Card header -->
+  <rect width="400" height="50" rx="8" fill="#B81025"/>
+  <rect y="42" width="400" height="8" fill="#B81025"/>
+  <text x="200" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">什么是断裂带？</text>
+
+  <!-- Content -->
+  <text x="25" y="75" font-size="13" font-weight="400" fill="#4A4748">断裂带是决策系统中人类与AI责任的</text>
+  <text x="25" y="95" font-size="13" font-weight="700" fill="#1A1A1A">分界线与过渡区</text>
+
+  <!-- Key characteristics -->
+  <text x="25" y="125" font-size="12" font-weight="400" fill="#4A4748">核心特征：</text>
+
+  <!-- Feature 1 -->
+  <rect x="25" y="140" width="8" height="8" fill="#B81025"/>
+  <text x="40" y="148" font-size="12" font-weight="400" fill="#1A1A1A">非连续性：责任转移是跳跃式的</text>
+
+  <!-- Feature 2 -->
+  <rect x="25" y="165" width="8" height="8" fill="#B81025"/>
+  <text x="40" y="173" font-size="12" font-weight="400" fill="#1A1A1A">模糊地带：某些区域责任边界不清</text>
+
+  <!-- Feature 3 -->
+  <rect x="25" y="190" width="8" height="8" fill="#B81025"/>
+  <text x="40" y="198" font-size="12" font-weight="400" fill="#1A1A1A">风险积聚：断裂带处最容易出问题</text>
+
+  <!-- Divider -->
+  <rect x="25" y="220" width="350" height="1" fill="#D4122B" opacity="0.3"/>
+
+  <!-- Insight box -->
+  <rect x="25" y="235" width="350" height="85" rx="4" fill="#F6F3EF"/>
+  <text x="40" y="255" font-size="11" font-weight="700" fill="#B81025">认知陷阱</text>
+  <text x="40" y="275" font-size="11" font-weight="400" fill="#4A4748">人们倾向于：</text>
+  <text x="40" y="293" font-size="11" font-weight="400" fill="#4A4748">1. 高估AI能力 → 把不该AI做的决策交给AI</text>
+  <text x="40" y="310" font-size="11" font-weight="400" fill="#4A4748">2. 低估人类价值 → 放弃本该人类扛的决策</text>
+</svg>
+
+<!-- Right column - Three cognitive fault zones -->
+<svg style="position:absolute; top:130px; left:510px;" width="400" height="340" viewBox="0 0 400 340">
+  <!-- Card background -->
+  <rect width="400" height="340" rx="8" fill="#FFFFFF" stroke="#D4122B" stroke-width="1"/>
+
+  <!-- Card header -->
+  <rect width="400" height="50" rx="8" fill="#1A1A1A"/>
+  <rect y="42" width="400" height="8" fill="#1A1A1A"/>
+  <text x="200" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">三种认知断裂带</text>
+
+  <!-- Zone 1 -->
+  <circle cx="40" cy="90" r="18" fill="#B81025"/>
+  <text x="40" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="70" y="88" font-size="13" font-weight="700" fill="#1A1A1A">能力认知断裂</text>
+  <text x="70" y="105" font-size="11" font-weight="400" fill="#4A4748">不清楚AI和人类各自擅长什么</text>
+
+  <!-- Zone 2 -->
+  <circle cx="40" cy="150" r="18" fill="#D4122B"/>
+  <text x="40" y="155" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="70" y="148" font-size="13" font-weight="700" fill="#1A1A1A">责任认知断裂</text>
+  <text x="70" y="165" font-size="11" font-weight="400" fill="#4A4748">不知道谁该为决策结果负责</text>
+
+  <!-- Zone 3 -->
+  <circle cx="40" cy="210" r="18" fill="#4A4748"/>
+  <text x="40" y="215" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="70" y="208" font-size="13" font-weight="700" fill="#1A1A1A">风险认知断裂</text>
+  <text x="70" y="225" font-size="11" font-weight="400" fill="#4A4748">无法准确评估决策的风险等级</text>
+
+  <!-- Key takeaway -->
+  <rect x="25" y="250" width="350" height="70" rx="4" fill="#B81025" opacity="0.1"/>
+  <text x="40" y="270" font-size="11" font-weight="700" fill="#B81025">认知层解决方案</text>
+  <text x="40" y="290" font-size="11" font-weight="400" fill="#1A1A1A">建立清晰的能力边界认知：</text>
+  <text x="40" y="308" font-size="11" font-weight="400" fill="#4A4748">AI擅长：模式识别、数据处理、规模化</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#B81025"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF">08</text>
+</svg>
+
+</div>
+</body>
+</html>

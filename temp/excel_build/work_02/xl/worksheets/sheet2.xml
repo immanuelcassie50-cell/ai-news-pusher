@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="115" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="30" customHeight="1">
+  <c r="A1" s="4" t="inlineStr"><is><t>下次面谈准备清单（范例填好版）</t></is></c>
+</row>
+  <row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>范例情境：某互联网创业公司产品经理“小周”与团队成员“小马”（高级产品经理）的半年度面谈准备</t></is></c>
+</row>
+  <row r="4" ht="22" customHeight="1">
+  <c r="A4" s="5" t="inlineStr"><is><t>面谈基本信息</t></is></c>
+</row>
+  <row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>项目</t></is></c>
+  <c r="B5" s="14" t="inlineStr"><is><t>内容</t></is></c>
+</row>
+  <row r="6">
+  <c r="A6" s="13" t="inlineStr"><is><t>员工代号</t></is></c>
+  <c r="B6" s="16" t="inlineStr"><is><t>小马</t></is></c>
+</row>
+  <row r="7">
+  <c r="A7" s="13" t="inlineStr"><is><t>岗位</t></is></c>
+  <c r="B7" s="16" t="inlineStr"><is><t>高级产品经理（带2人小组）</t></is></c>
+</row>
+  <row r="8">
+  <c r="A8" s="13" t="inlineStr"><is><t>工龄</t></is></c>
+  <c r="B8" s="16" t="inlineStr"><is><t>4年（本公司2年）</t></is></c>
+</row>
+  <row r="9">
+  <c r="A9" s="13" t="inlineStr"><is><t>考核周期</t></is></c>
+  <c r="B9" s="16" t="inlineStr"><is><t>2025年下半年（7-12月）</t></is></c>
+</row>
+  <row r="10">
+  <c r="A10" s="13" t="inlineStr"><is><t>面谈类型</t></is></c>
+  <c r="B10" s="16" t="inlineStr"><is><t>评估面谈 + 发展面谈合一</t></is></c>
+</row>
+  <row r="11">
+  <c r="A11" s="13" t="inlineStr"><is><t>面谈预计时间</t></is></c>
+  <c r="B11" s="16" t="inlineStr"><is><t>2026年1月15日（周三）下午3:00</t></is></c>
+</row>
+  <row r="12">
+  <c r="A12" s="13" t="inlineStr"><is><t>面谈地点</t></is></c>
+  <c r="B12" s="16" t="inlineStr"><is><t>11楼小会议室A（已预约，已通知小马）</t></is></c>
+</row>
+  <row r="13">
+  <c r="A13" s="13" t="inlineStr"><is><t>提前通知员工了</t></is></c>
+  <c r="B13" s="16" t="inlineStr"><is><t>是（1月8日已通知，说明“半年度面谈+发展方向讨论”）</t></is></c>
+</row>
+  <row r="15" ht="22" customHeight="1">
+  <c r="A15" s="5" t="inlineStr"><is><t>第一区：事实与归因准备（用5-10分钟）</t></is></c>
+</row>
+  <row r="16">
+  <c r="A16" s="2" t="inlineStr"><is><t>金句：事实没填好，后面三区都白填。</t></is></c>
+</row>
+  <row r="17" ht="20" customHeight="1">
+  <c r="A17" s="9" t="inlineStr"><is><t>事实1（最重要的那个）：Q3重点项目“智能推荐”上线后数据未达预期</t></is></c>
+</row>
+  <row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>时间/情境</t></is></c>
+  <c r="B18" s="16" t="inlineStr"><is><t>2025年9月15日上线，原计划12月达成“日活提升15%”目标</t></is></c>
+</row>
+  <row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>具体行为</t></is></c>
+  <c r="B19" s="16" t="inlineStr"><is><t>项目从立项到上线耗时4个月（原计划3个月）；上线时已有“用户反馈功能不够稳定”的内部测试结果，但按原计划发布；上线后第2周发现核心推荐算法的“冷启动”问题</t></is></c>
+</row>
+  <row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>结果/影响</t></is></c>
+  <c r="B20" s="16" t="inlineStr"><is><t>项目DAU提升5%（目标15%）；团队3人4个月工作投入；客户对“AI智能推荐”信心下降，影响下半年销售线索；小马情绪明显低落</t></is></c>
+</row>
+  <row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>归因判断</t></is></c>
+  <c r="B21" s="16" t="inlineStr"><is><t>“AI推荐算法本身的局限”是客观事实，但小马在已知“内部测试结果不稳定”的情况下按原计划发布——这个判断是否合理需共同探索。涉及“判断力”问题，不是“AI能力”问题。</t></is></c>
+</row>
+  <row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>归因是否清晰</t></is></c>
+  <c r="B22" s="16" t="inlineStr"><is><t>模糊（需要在面谈第二步探寻归因时共同探索）</t></is></c>
+</row>
+  <row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>使用F4探寻问题组</t></is></c>
+  <c r="B23" s="16" t="inlineStr"><is><t>第2组：关于过程（重点） + 第3组：关于AI的参与（重点）</t></is></c>
+</row>
+  <row r="24">
+  <c r="A24" s="14" t="inlineStr"><is><t>准备的具体问题</t></is></c>
+  <c r="B24" s="16" t="inlineStr"><is><t>1) 这个项目从立项到上线4个月里，关键决策点有几个？当时你的判断依据是什么？  2) 在知道“内部测试结果不稳定”之后，是什么让你决定按原计划发布？  3) 在这个项目里，AI工具给了你什么建议？你做了哪些AI不能替代的判断？  4) 如果再做一次，你会在哪个环节做不同决定？</t></is></c>
+</row>
+  <row r="26" ht="20" customHeight="1">
+  <c r="A26" s="9" t="inlineStr"><is><t>事实2：Q4主导的“用户调研报告”产出质量获部门好评</t></is></c>
+</row>
+  <row r="27">
+  <c r="A27" s="14" t="inlineStr"><is><t>时间/情境</t></is></c>
+  <c r="B27" s="16" t="inlineStr"><is><t>2025年11月完成的“Z世代用户消费偏好”调研报告</t></is></c>
+</row>
+  <row r="28">
+  <c r="A28" s="14" t="inlineStr"><is><t>具体行为</t></is></c>
+  <c r="B28" s="16" t="inlineStr"><is><t>报告涵盖50个深度访谈、3轮问卷；交付时间比原计划提前2周；“用户分层”和“消费决策路径”被市场部、销售部、CEO引用</t></is></c>
+</row>
+  <row r="29">
+  <c r="A29" s="14" t="inlineStr"><is><t>结果/影响</t></is></c>
+  <c r="B29" s="16" t="inlineStr"><is><t>报告被CEO在Q4全员会上引用；部门内对小马“判断力”评价提升；销售部主动来找小马咨询“Z世代客户开发”问题</t></is></c>
+</row>
+  <row r="30">
+  <c r="A30" s="14" t="inlineStr"><is><t>归因判断</t></is></c>
+  <c r="B30" s="16" t="inlineStr"><is><t>小马的“判断力”明显体现。但我注意到：小马在访谈中大量使用AI做实时转写和初步整理，但“用户分层”的判断明显是手工的。归因相对清晰。</t></is></c>
+</row>
+  <row r="31">
+  <c r="A31" s="14" t="inlineStr"><is><t>是否需要探寻</t></is></c>
+  <c r="B31" s="16" t="inlineStr"><is><t>不需要</t></is></c>
+</row>
+  <row r="33" ht="20" customHeight="1">
+  <c r="A33" s="9" t="inlineStr"><is><t>事实3（备选）：Q3-Q4跨部门协作中的沟通表现</t></is></c>
+</row>
+  <row r="34">
+  <c r="A34" s="14" t="inlineStr"><is><t>时间/情境</t></is></c>
+  <c r="B34" s="16" t="inlineStr"><is><t>2025年Q3，与技术团队的“产品技术方案”沟通会</t></is></c>
+</row>
+  <row r="35">
+  <c r="A35" s="14" t="inlineStr"><is><t>具体行为</t></is></c>
+  <c r="B35" s="16" t="inlineStr"><is><t>沟通会上技术负责人反馈“PRD多次变更，团队工作受影响”；跨部门同事私下评价“小马经常中途改方向”；小马解释“产品需求本来就是迭代的”</t></is></c>
+</row>
+  <row r="36">
+  <c r="A36" s="14" t="inlineStr"><is><t>结果/影响</t></is></c>
+  <c r="B36" s="16" t="inlineStr"><is><t>技术团队对小马“沟通质量”评价降低；跨部门协作效率受影响</t></is></c>
+</row>
+  <row r="37">
+  <c r="A37" s="14" t="inlineStr"><is><t>备注</t></is></c>
+  <c r="B37" s="16" t="inlineStr"><is><t>此项备选——根据面谈时长决定是否展开</t></is></c>
+</row>
+  <row r="39" ht="22" customHeight="1">
+  <c r="A39" s="5" t="inlineStr"><is><t>第二区：预估难点与准备（用5分钟）</t></is></c>
+</row>
+  <row r="40">
+  <c r="A40" s="2" t="inlineStr"><is><t>金句：没准备最坏情况，遇见就崩。</t></is></c>
+</row>
+  <row r="41">
+  <c r="A41" s="14" t="inlineStr"><is><t>预计最难的时刻</t></is></c>
+  <c r="B41" s="16" t="inlineStr"><is><t>当问到“为什么在知道测试结果不稳定后还按原计划发布”时，小马可能防御性归因到“AI推荐算法本身的局限”或“市场压力”。这可能是这次面谈的“最大挑战”</t></is></c>
+</row>
+  <row r="42">
+  <c r="A42" s="14" t="inlineStr"><is><t>难点类型（多选）</t></is></c>
+  <c r="B42" s="16" t="inlineStr"><is><t>员工可能情绪激动（最近状态低落）；AI时代五类特有场景之B类型（方向迷失）+D类型（美化成果）</t></is></c>
+</row>
+  <row r="43">
+  <c r="A43" s="14" t="inlineStr"><is><t>开场白（第一句话）</t></is></c>
+  <c r="B43" s="16" t="inlineStr"><is><t>“小马，谢谢你来。今天我们做半年度面谈。我想先和你一起回顾几个具体的事，然后聊聊下个季度的发展方向。”</t></is></c>
+</row>
+  <row r="44">
+  <c r="A44" s="14" t="inlineStr"><is><t>关键原则</t></is></c>
+  <c r="B44" s="16" t="inlineStr"><is><t>事面为主，正面为辅——所有讨论基于“具体事件”，用“事”打开对话；用“正面”避免含糊</t></is></c>
+</row>
+  <row r="45">
+  <c r="A45" s="14" t="inlineStr"><is><t>备用话术（如员工反驳“AI的局限”）</t></is></c>
+  <c r="B45" s="16" t="inlineStr"><is><t>“我听到了——AI推荐算法确实有自己的局限。但我想具体看：在9月15日发布前，你已经知道内部测试结果不稳定——这个判断是你做的还是算法告诉你的？如果再做一次，你会怎么决定？”</t></is></c>
+</row>
+  <row r="46">
+  <c r="A46" s="14" t="inlineStr"><is><t>最坏情况：完全对抗</t></is></c>
+  <c r="B46" s="16" t="inlineStr"><is><t>“我看到了这件事对你的压力。我们先停一下——这件事我不是要追责。我想和你一起看：哪里出了问题，下个季度怎么调整。”</t></is></c>
+</row>
+  <row r="47">
+  <c r="A47" s="14" t="inlineStr"><is><t>最坏情况：完全沉默</t></is></c>
+  <c r="B47" s="16" t="inlineStr"><is><t>“你可能需要一点时间整理。我们可以先停一两分钟——这场对话对我来说很重要，我想确保我们能在对的状态下继续。”</t></is></c>
+</row>
+  <row r="49" ht="22" customHeight="1">
+  <c r="A49" s="5" t="inlineStr"><is><t>第三区：发展对话规划（用5分钟）</t></is></c>
+</row>
+  <row r="50">
+  <c r="A50" s="2" t="inlineStr"><is><t>金句：评估面谈做得多，发展对话做得少；本表强制你两条腿走。</t></is></c>
+</row>
+  <row r="51">
+  <c r="A51" s="14" t="inlineStr"><is><t>AI协作力</t></is></c>
+  <c r="B51" s="16" t="inlineStr"><is><t>够用——小马AI使用熟练，但存在“AI判断+我的判断”边界不清问题</t></is></c>
+</row>
+  <row r="52">
+  <c r="A52" s="14" t="inlineStr"><is><t>人类深度</t></is></c>
+  <c r="B52" s="16" t="inlineStr"><is><t>够用——判断力在“用户调研报告”中体现明显，但在“产品决策”中体现不足</t></is></c>
+</row>
+  <row r="53">
+  <c r="A53" s="14" t="inlineStr"><is><t>更紧迫的发展轨道</t></is></c>
+  <c r="B53" s="16" t="inlineStr"><is><t>人类深度（理由：在产品决策中判断力需要强化，Q3项目反映的就是这个）</t></is></c>
+</row>
+  <row r="54">
+  <c r="A54" s="14" t="inlineStr"><is><t>最想达到的结果</t></is></c>
+  <c r="B54" s="16" t="inlineStr"><is><t>让小马带走一个方向感：“我的判断力是这里的核心价值——下个季度在“产品决策”上，我要让我的判断更可见。”</t></is></c>
+</row>
+  <row r="55">
+  <c r="A55" s="14" t="inlineStr"><is><t>启动问题选择</t></is></c>
+  <c r="B55" s="16" t="inlineStr"><is><t>启动二（AI时代）：“在你用AI工具最多的那类工作里，你觉得自己做了什么？”</t></is></c>
+</row>
+  <row r="56">
+  <c r="A56" s="14" t="inlineStr"><is><t>为什么选这个</t></is></c>
+  <c r="B56" s="16" t="inlineStr"><is><t>启动二最适合小马——他最近有“方向迷失”倾向，Q3项目让他开始怀疑自己的价值。用“AI工具里的”我””这个问题，可以帮他在“AI时代”重新找到“我的价值”</t></is></c>
+</row>
+  <row r="57">
+  <c r="A57" s="14" t="inlineStr"><is><t>回应A猜+引导</t></is></c>
+  <c r="B57" s="16" t="inlineStr"><is><t>猜“我大部分时间都在让AI帮我判断” → 引导：“我听到你说“让AI帮我判断”——能具体说说是哪部分吗？比如“智能推荐”项目的核心判断，是AI做的还是你做的？”</t></is></c>
+</row>
+  <row r="58">
+  <c r="A58" s="14" t="inlineStr"><is><t>回应B猜+引导</t></is></c>
+  <c r="B58" s="16" t="inlineStr"><is><t>猜“我不知道我的判断体现在哪里” → 引导：“我注意到你那份“Z世代调研报告”里，“用户分层”的判断非常清晰——那是你做的还是AI做的？如果是你做的，那你的判断是真实存在的。”</t></is></c>
+</row>
+  <row r="59">
+  <c r="A59" s="14" t="inlineStr"><is><t>回应C猜+引导</t></is></c>
+  <c r="B59" s="16" t="inlineStr"><is><t>猜“我最近状态不太好，可能影响判断” → 引导：“我听到了——Q3项目后你的状态确实有变化。今天我们不只谈项目，也聊聊你的方向。我关心的是“你在这里还能不能继续成长”。”</t></is></c>
+</row>
+  <row r="60">
+  <c r="A60" s="14" t="inlineStr"><is><t>希望员工带走的方向感</t></is></c>
+  <c r="B60" s="16" t="inlineStr"><is><t>“我的判断力是真实的——AI时代，“我”的部分不是被弱化，是被重新定义。”</t></is></c>
+</row>
+  <row r="62" ht="22" customHeight="1">
+  <c r="A62" s="5" t="inlineStr"><is><t>第四区：四步面谈预演（关键词版，用5-10分钟）</t></is></c>
+</row>
+  <row r="63">
+  <c r="A63" s="2" t="inlineStr"><is><t>金句：写整段话会让你念稿，自然度大降——用关键词版。</t></is></c>
+</row>
+  <row r="64" ht="20" customHeight="1">
+  <c r="A64" s="9" t="inlineStr"><is><t>第一步——共看事实</t></is></c>
+</row>
+  <row r="65">
+  <c r="A65" s="14" t="inlineStr"><is><t>开场语（不超过30字）</t></is></c>
+  <c r="B65" s="16" t="inlineStr"><is><t>“今天我们一起回顾几个具体的事，然后聊聊发展方向。”</t></is></c>
+</row>
+  <row r="66">
+  <c r="A66" s="14" t="inlineStr"><is><t>邀请员工先说的引导句</t></is></c>
+  <c r="B66" s="16" t="inlineStr"><is><t>“我想先听你说——这半年你觉得做得怎么样？”</t></is></c>
+</row>
+  <row r="68" ht="20" customHeight="1">
+  <c r="A68" s="9" t="inlineStr"><is><t>第二步——探寻归因</t></is></c>
+</row>
+  <row r="69">
+  <c r="A69" s="14" t="inlineStr"><is><t>第一个问题</t></is></c>
+  <c r="B69" s="16" t="inlineStr"><is><t>“在Q3的“智能推荐”项目里，关键决策点有几个？你的判断依据是什么？”</t></is></c>
+</row>
+  <row r="70">
+  <c r="A70" s="14" t="inlineStr"><is><t>如员工答“没什么特别的”则接</t></is></c>
+  <c r="B70" s="16" t="inlineStr"><is><t>“我具体问——9月15日发布前，内部测试结果已经显示“功能不够稳定”。你当时的判断是什么？”</t></is></c>
+</row>
+  <row r="71">
+  <c r="A71" s="14" t="inlineStr"><is><t>如听到“AI参与”提法，反应是</t></is></c>
+  <c r="B71" s="16" t="inlineStr"><is><t>“我听到了——AI推荐算法确实有自己的能力边界。我想具体看：在那个关键决策点，是AI告诉你这么做还是你的判断？”</t></is></c>
+</row>
+  <row r="73" ht="20" customHeight="1">
+  <c r="A73" s="9" t="inlineStr"><is><t>第三步——分析缺口</t></is></c>
+</row>
+  <row r="74">
+  <c r="A74" s="14" t="inlineStr"><is><t>事实支撑</t></is></c>
+  <c r="B74" s="16" t="inlineStr"><is><t>“Q3项目从3个月延期到4个月；发布前已知测试结果不稳定；上线后DAU提升5%（目标15%）。”</t></is></c>
+</row>
+  <row r="75">
+  <c r="A75" s="14" t="inlineStr"><is><t>我的结论</t></is></c>
+  <c r="B75" s="16" t="inlineStr"><is><t>“这个项目的核心问题不是AI算法——是产品决策的判断力问题。”</t></is></c>
+</row>
+  <row r="76">
+  <c r="A76" s="14" t="inlineStr"><is><t>回应空间（“你怎么看”）</t></is></c>
+  <c r="B76" s="16" t="inlineStr"><is><t>“你对这件事怎么看？你觉得判断上哪里可以不同？”</t></is></c>
+</row>
+  <row r="78" ht="20" customHeight="1">
+  <c r="A78" s="9" t="inlineStr"><is><t>第四步——共建方向</t></is></c>
+</row>
+  <row r="79">
+  <c r="A79" s="14" t="inlineStr"><is><t>起手问题</t></is></c>
+  <c r="B79" s="16" t="inlineStr"><is><t>“下个季度，在“产品决策的判断力”这件事上，你想怎么调整？”</t></is></c>
+</row>
+  <row r="80">
+  <c r="A80" s="14" t="inlineStr"><is><t>收尾语（含时间点承诺）</t></is></c>
+  <c r="B80" s="16" t="inlineStr"><is><t>“我们今天定的是：下个季度选1-2个“重要产品决策”，做“判断记录”，每月1次30分钟“判断讨论会”。这个我们30天后回顾——具体到时点。”</t></is></c>
+</row>
+  <row r="82">
+  <c r="A82" s="14" t="inlineStr"><is><t>最想做到但以前没做到的一件事</t></is></c>
+  <c r="B82" s="16" t="inlineStr"><is><t>承认小马的“判断力是真实的”，不让他带着“我可能不适合这个岗位”的感觉离开</t></is></c>
+</row>
+  <row r="84" ht="22" customHeight="1">
+  <c r="A84" s="5" t="inlineStr"><is><t>问责伙伴（没有问责伙伴的本表，等于没填）</t></is></c>
+</row>
+  <row r="85">
+  <c r="A85" s="14" t="inlineStr"><is><t>问责伙伴姓名</t></is></c>
+  <c r="B85" s="16" t="inlineStr"><is><t>张磊（同组产品经理，也是课程的同事）</t></is></c>
+</row>
+  <row r="86">
+  <c r="A86" s="14" t="inlineStr"><is><t>联系方式（微信）</t></is></c>
+  <c r="B86" s="16" t="inlineStr"><is><t>zl_2025</t></is></c>
+</row>
+  <row r="87">
+  <c r="A87" s="14" t="inlineStr"><is><t>面谈完成后会告诉张磊</t></is></c>
+  <c r="B87" s="16" t="inlineStr"><is><t>面谈是否发生、小马的反应、我做到了什么、没做到什么</t></is></c>
+</row>
+  <row r="89">
+  <c r="A89" s="14" t="inlineStr"><is><t>30天内要做到的一件事</t></is></c>
+  <c r="B89" s="16" t="inlineStr"><is><t>在和小马的1v1里，做一次“产品决策判断记录”练习（不是正式面谈，是“过程性跟进”）</t></is></c>
+</row>
+  <row r="90">
+  <c r="A90" s="14" t="inlineStr"><is><t>对应员工</t></is></c>
+  <c r="B90" s="16" t="inlineStr"><is><t>小马</t></is></c>
+</row>
+  <row r="91">
+  <c r="A91" s="14" t="inlineStr"><is><t>验证方式</t></is></c>
+  <c r="B91" s="16" t="inlineStr"><is><t>张磊在3周后问小马“你最近和周哥聊了什么”，看小马是否能复述出“判断记录”这件事</t></is></c>
+</row>
+  <row r="93">
+  <c r="A93" s="14" t="inlineStr"><is><t>30天后回看时最想看到</t></is></c>
+  <c r="B93" s="16" t="inlineStr"><is><t>①面谈真实发生了 ②小马的方向感“我的判断力是真实的”被强化了 ③我自己的“情面”原则用得到位——没有因为Q3项目的事而“批判”小马 ④问责伙伴张磊也认可这次面谈</t></is></c>
+</row>
+  <row r="95" ht="22" customHeight="1">
+  <c r="A95" s="5" t="inlineStr"><is><t>30天后回看区（预填）</t></is></c>
+</row>
+  <row r="96">
+  <c r="A96" s="14" t="inlineStr"><is><t>面谈实际发生日期</t></is></c>
+  <c r="B96" s="16" t="inlineStr"><is><t>2026年1月15日（按计划）</t></is></c>
+</row>
+  <row r="97">
+  <c r="A97" s="14" t="inlineStr"><is><t>30天后回顾日期</t></is></c>
+  <c r="B97" s="16" t="inlineStr"><is><t>2026年2月15日</t></is></c>
+</row>
+  <row r="98">
+  <c r="A98" s="14" t="inlineStr"><is><t>30天后回看维度</t></is></c>
+  <c r="B98" s="16" t="inlineStr"><is><t>1) 面谈中最让我意外的是？小马的反应是？ 2) 我有没有用上“先认可AI正当性再回到判断”的话术？ 3) 小马是否带走了“我的判断力是真实的”这个方向感？ 4) 我的“四步预演”在面谈中真的用到了吗？哪里偏离了预演？</t></is></c>
+</row>
+  <row r="100">
+  <c r="A100" s="6" t="inlineStr"><is><t>金句</t></is></c>
+  <c r="B100" s="6" t="inlineStr"><is><t>范例不是答案，是镜子——照出你自己的准备深度。</t></is></c>
+</row>
+  <row r="101">
+  <c r="A101" s="5" t="inlineStr"><is><t>本表配套使用：F1（识别问题）/ F2（自检）/ F3（四步面谈）/ F4（归因问题）/ F5（四原则话术）/ F6（五类场景）/ F7（启动问题）/ F8（双轨评估）/ F9（缺口判断）</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

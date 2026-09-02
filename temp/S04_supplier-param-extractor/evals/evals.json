@@ -1,0 +1,46 @@
+{
+  "test_cases": [
+    {
+      "id": "case-001",
+      "description": "摄像头供应商参数提取",
+      "input": {
+        "folder": "D:/test_data/camera_suppliers",
+        "config": "D:/test_data/camera_params_config.json"
+      },
+      "expected": {
+        "suppliers_count": 3,
+        "parameters": ["工作电压", "工作温度范围", "防护等级", "分辨率", "帧率"],
+        "output_sheets": ["参数对比（主表）", "提取置信度", "原文溯源", "待人工确认"]
+      },
+      "notes": "测试多格式（PDF/Word/Excel）混合处理能力"
+    },
+    {
+      "id": "case-002",
+      "description": "同义词匹配覆盖率测试",
+      "input": {
+        "folder": "D:/test_data/battery_suppliers",
+        "config": "D:/test_data/battery_params_config.json"
+      },
+      "expected": {
+        "suppliers_count": 2,
+        "parameters": ["工作电压", "容量", "充放电倍率", "循环寿命"],
+        "high_confidence_ratio": "> 60%"
+      },
+      "notes": "验证同义词扩展是否能有效提升匹配覆盖率"
+    },
+    {
+      "id": "case-003",
+      "description": "低置信度与待确认项识别",
+      "input": {
+        "folder": "D:/test_data/mixed_quality_suppliers",
+        "config": "D:/test_data/generic_params_config.json"
+      },
+      "expected": {
+        "review_items_count": "> 0",
+        "low_confidence_params": ["功耗", "响应时间"],
+        "missing_params": ["EMC等级"]
+      },
+      "notes": "测试置信度判断逻辑和待确认项识别准确性"
+    }
+  ]
+}

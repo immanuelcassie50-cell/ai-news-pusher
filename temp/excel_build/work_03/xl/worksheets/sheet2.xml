@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="C5" activePane="bottomRight" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="6" customWidth="1"/>
+    <col min="2" max="2" width="11" customWidth="1"/>
+    <col min="3" max="3" width="10" customWidth="1"/>
+    <col min="4" max="4" width="16" customWidth="1"/>
+    <col min="5" max="5" width="12" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="14" customWidth="1"/>
+    <col min="8" max="8" width="14" customWidth="1"/>
+    <col min="9" max="9" width="14" customWidth="1"/>
+    <col min="10" max="10" width="13" customWidth="1"/>
+    <col min="11" max="11" width="11" customWidth="1"/>
+    <col min="12" max="12" width="12" customWidth="1"/>
+    <col min="13" max="13" width="12" customWidth="1"/>
+    <col min="14" max="14" width="14" customWidth="1"/>
+    <col min="15" max="15" width="13" customWidth="1"/>
+    <col min="16" max="16" width="11" customWidth="1"/>
+    <col min="17" max="17" width="10" customWidth="1"/>
+    <col min="18" max="18" width="30" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="28" customHeight="1">
+  <c r="A1" s="4" t="inlineStr"><is><t>团队双轨胜任度评估汇总（12人范例）</t></is></c>
+</row>
+  <row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>评估周期：2025年下半年 | 评估人：各部门负责人 | 评估日期：2026年1月 | 数据可编辑；右侧公式自动计算总分/标准化/象限</t></is></c>
+</row>
+  <row r="4" ht="42" customHeight="1">
+  <c r="A4" s="9" t="inlineStr"><is><t>序号</t></is></c>
+  <c r="B4" s="9" t="inlineStr"><is><t>员工姓名</t></is></c>
+  <c r="C4" s="9" t="inlineStr"><is><t>部门</t></is></c>
+  <c r="D4" s="9" t="inlineStr"><is><t>岗位</t></is></c>
+  <c r="E4" s="9" t="inlineStr"><is><t>评估日期</t></is></c>
+  <c r="F4" s="9" t="inlineStr"><is><t>AI-1 识别适合AI的工作</t></is></c>
+  <c r="G4" s="9" t="inlineStr"><is><t>AI-2 设计有效提示</t></is></c>
+  <c r="H4" s="9" t="inlineStr"><is><t>AI-3 评估AI输出</t></is></c>
+  <c r="I4" s="9" t="inlineStr"><is><t>AI-4 整合进工作流程</t></is></c>
+  <c r="J4" s="9" t="inlineStr"><is><t>AI协作力总分/20</t></is></c>
+  <c r="K4" s="9" t="inlineStr"><is><t>AI标准化/5</t></is></c>
+  <c r="L4" s="9" t="inlineStr"><is><t>人类-判断力</t></is></c>
+  <c r="M4" s="9" t="inlineStr"><is><t>人类-关系力</t></is></c>
+  <c r="N4" s="9" t="inlineStr"><is><t>人类-领域深度</t></is></c>
+  <c r="O4" s="9" t="inlineStr"><is><t>人类深度总分/15</t></is></c>
+  <c r="P4" s="9" t="inlineStr"><is><t>人类标准化/5</t></is></c>
+  <c r="Q4" s="9" t="inlineStr"><is><t>双轨象限</t></is></c>
+  <c r="R4" s="9" t="inlineStr"><is><t>下一步建议</t></is></c>
+</row>
+  <row r="5">
+  <c r="A5" s="23"><v>1</v></c>
+  <c r="B5" s="13" t="inlineStr"><is><t>王晓</t></is></c>
+  <c r="C5" s="13" t="inlineStr"><is><t>产品部</t></is></c>
+  <c r="D5" s="13" t="inlineStr"><is><t>高级产品经理</t></is></c>
+  <c r="E5" s="13" t="inlineStr"><is><t>2026-01-08</t></is></c>
+  <c r="F5" s="23"><v>5</v></c>
+  <c r="G5" s="23"><v>4</v></c>
+  <c r="H5" s="23"><v>5</v></c>
+  <c r="I5" s="23"><v>4</v></c>
+  <c r="J5" s="21"><f>SUM(F5:I5)</f><v></v></c>
+  <c r="K5" s="21"><f>J5/20*5</f><v></v></c>
+  <c r="L5" s="23"><v>5</v></c>
+  <c r="M5" s="23"><v>4</v></c>
+  <c r="N5" s="23"><v>5</v></c>
+  <c r="O5" s="21"><f>SUM(L5:N5)</f><v></v></c>
+  <c r="P5" s="21"><f>O5/15*5</f><v></v></c>
+  <c r="Q5" s="24"><f>IF(AND(K5&gt;=3,P5&gt;=3),"领先型",IF(AND(K5&gt;=3,P5&lt;3),"漂移型",IF(AND(K5&lt;3,P5&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R5" s="16"><f>IF(Q5="领先型","挑战型发展/横向带教",IF(Q5="漂移型","重点发展人类深度",IF(Q5="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="6">
+  <c r="A6" s="23"><v>2</v></c>
+  <c r="B6" s="13" t="inlineStr"><is><t>张磊</t></is></c>
+  <c r="C6" s="13" t="inlineStr"><is><t>产品部</t></is></c>
+  <c r="D6" s="13" t="inlineStr"><is><t>产品经理</t></is></c>
+  <c r="E6" s="13" t="inlineStr"><is><t>2026-01-08</t></is></c>
+  <c r="F6" s="23"><v>4</v></c>
+  <c r="G6" s="23"><v>4</v></c>
+  <c r="H6" s="23"><v>4</v></c>
+  <c r="I6" s="23"><v>4</v></c>
+  <c r="J6" s="21"><f>SUM(F6:I6)</f><v></v></c>
+  <c r="K6" s="21"><f>J6/20*5</f><v></v></c>
+  <c r="L6" s="23"><v>4</v></c>
+  <c r="M6" s="23"><v>3</v></c>
+  <c r="N6" s="23"><v>4</v></c>
+  <c r="O6" s="21"><f>SUM(L6:N6)</f><v></v></c>
+  <c r="P6" s="21"><f>O6/15*5</f><v></v></c>
+  <c r="Q6" s="24"><f>IF(AND(K6&gt;=3,P6&gt;=3),"领先型",IF(AND(K6&gt;=3,P6&lt;3),"漂移型",IF(AND(K6&lt;3,P6&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R6" s="16"><f>IF(Q6="领先型","挑战型发展/横向带教",IF(Q6="漂移型","重点发展人类深度",IF(Q6="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="7">
+  <c r="A7" s="23"><v>3</v></c>
+  <c r="B7" s="13" t="inlineStr"><is><t>陈静</t></is></c>
+  <c r="C7" s="13" t="inlineStr"><is><t>设计部</t></is></c>
+  <c r="D7" s="13" t="inlineStr"><is><t>资深UI设计师</t></is></c>
+  <c r="E7" s="13" t="inlineStr"><is><t>2026-01-09</t></is></c>
+  <c r="F7" s="23"><v>3</v></c>
+  <c r="G7" s="23"><v>3</v></c>
+  <c r="H7" s="23"><v>3</v></c>
+  <c r="I7" s="23"><v>3</v></c>
+  <c r="J7" s="21"><f>SUM(F7:I7)</f><v></v></c>
+  <c r="K7" s="21"><f>J7/20*5</f><v></v></c>
+  <c r="L7" s="23"><v>5</v></c>
+  <c r="M7" s="23"><v>4</v></c>
+  <c r="N7" s="23"><v>5</v></c>
+  <c r="O7" s="21"><f>SUM(L7:N7)</f><v></v></c>
+  <c r="P7" s="21"><f>O7/15*5</f><v></v></c>
+  <c r="Q7" s="24"><f>IF(AND(K7&gt;=3,P7&gt;=3),"领先型",IF(AND(K7&gt;=3,P7&lt;3),"漂移型",IF(AND(K7&lt;3,P7&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R7" s="16"><f>IF(Q7="领先型","挑战型发展/横向带教",IF(Q7="漂移型","重点发展人类深度",IF(Q7="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="8">
+  <c r="A8" s="23"><v>4</v></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>刘洋</t></is></c>
+  <c r="C8" s="13" t="inlineStr"><is><t>技术部</t></is></c>
+  <c r="D8" s="13" t="inlineStr"><is><t>前端工程师</t></is></c>
+  <c r="E8" s="13" t="inlineStr"><is><t>2026-01-09</t></is></c>
+  <c r="F8" s="23"><v>5</v></c>
+  <c r="G8" s="23"><v>5</v></c>
+  <c r="H8" s="23"><v>4</v></c>
+  <c r="I8" s="23"><v>5</v></c>
+  <c r="J8" s="21"><f>SUM(F8:I8)</f><v></v></c>
+  <c r="K8" s="21"><f>J8/20*5</f><v></v></c>
+  <c r="L8" s="23"><v>2</v></c>
+  <c r="M8" s="23"><v>2</v></c>
+  <c r="N8" s="23"><v>3</v></c>
+  <c r="O8" s="21"><f>SUM(L8:N8)</f><v></v></c>
+  <c r="P8" s="21"><f>O8/15*5</f><v></v></c>
+  <c r="Q8" s="24"><f>IF(AND(K8&gt;=3,P8&gt;=3),"领先型",IF(AND(K8&gt;=3,P8&lt;3),"漂移型",IF(AND(K8&lt;3,P8&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R8" s="16"><f>IF(Q8="领先型","挑战型发展/横向带教",IF(Q8="漂移型","重点发展人类深度",IF(Q8="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="9">
+  <c r="A9" s="23"><v>5</v></c>
+  <c r="B9" s="13" t="inlineStr"><is><t>赵敏</t></is></c>
+  <c r="C9" s="13" t="inlineStr"><is><t>市场部</t></is></c>
+  <c r="D9" s="13" t="inlineStr"><is><t>内容运营</t></is></c>
+  <c r="E9" s="13" t="inlineStr"><is><t>2026-01-10</t></is></c>
+  <c r="F9" s="23"><v>4</v></c>
+  <c r="G9" s="23"><v>3</v></c>
+  <c r="H9" s="23"><v>3</v></c>
+  <c r="I9" s="23"><v>4</v></c>
+  <c r="J9" s="21"><f>SUM(F9:I9)</f><v></v></c>
+  <c r="K9" s="21"><f>J9/20*5</f><v></v></c>
+  <c r="L9" s="23"><v>3</v></c>
+  <c r="M9" s="23"><v>4</v></c>
+  <c r="N9" s="23"><v>3</v></c>
+  <c r="O9" s="21"><f>SUM(L9:N9)</f><v></v></c>
+  <c r="P9" s="21"><f>O9/15*5</f><v></v></c>
+  <c r="Q9" s="24"><f>IF(AND(K9&gt;=3,P9&gt;=3),"领先型",IF(AND(K9&gt;=3,P9&lt;3),"漂移型",IF(AND(K9&lt;3,P9&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R9" s="16"><f>IF(Q9="领先型","挑战型发展/横向带教",IF(Q9="漂移型","重点发展人类深度",IF(Q9="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="10">
+  <c r="A10" s="23"><v>6</v></c>
+  <c r="B10" s="13" t="inlineStr"><is><t>孙浩</t></is></c>
+  <c r="C10" s="13" t="inlineStr"><is><t>市场部</t></is></c>
+  <c r="D10" s="13" t="inlineStr"><is><t>SEM专员</t></is></c>
+  <c r="E10" s="13" t="inlineStr"><is><t>2026-01-10</t></is></c>
+  <c r="F10" s="23"><v>2</v></c>
+  <c r="G10" s="23"><v>2</v></c>
+  <c r="H10" s="23"><v>2</v></c>
+  <c r="I10" s="23"><v>1</v></c>
+  <c r="J10" s="21"><f>SUM(F10:I10)</f><v></v></c>
+  <c r="K10" s="21"><f>J10/20*5</f><v></v></c>
+  <c r="L10" s="23"><v>3</v></c>
+  <c r="M10" s="23"><v>2</v></c>
+  <c r="N10" s="23"><v>3</v></c>
+  <c r="O10" s="21"><f>SUM(L10:N10)</f><v></v></c>
+  <c r="P10" s="21"><f>O10/15*5</f><v></v></c>
+  <c r="Q10" s="24"><f>IF(AND(K10&gt;=3,P10&gt;=3),"领先型",IF(AND(K10&gt;=3,P10&lt;3),"漂移型",IF(AND(K10&lt;3,P10&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R10" s="16"><f>IF(Q10="领先型","挑战型发展/横向带教",IF(Q10="漂移型","重点发展人类深度",IF(Q10="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="11">
+  <c r="A11" s="23"><v>7</v></c>
+  <c r="B11" s="13" t="inlineStr"><is><t>周琳</t></is></c>
+  <c r="C11" s="13" t="inlineStr"><is><t>客户成功部</t></is></c>
+  <c r="D11" s="13" t="inlineStr"><is><t>客户经理</t></is></c>
+  <c r="E11" s="13" t="inlineStr"><is><t>2026-01-11</t></is></c>
+  <c r="F11" s="23"><v>2</v></c>
+  <c r="G11" s="23"><v>1</v></c>
+  <c r="H11" s="23"><v>2</v></c>
+  <c r="I11" s="23"><v>2</v></c>
+  <c r="J11" s="21"><f>SUM(F11:I11)</f><v></v></c>
+  <c r="K11" s="21"><f>J11/20*5</f><v></v></c>
+  <c r="L11" s="23"><v>4</v></c>
+  <c r="M11" s="23"><v>5</v></c>
+  <c r="N11" s="23"><v>4</v></c>
+  <c r="O11" s="21"><f>SUM(L11:N11)</f><v></v></c>
+  <c r="P11" s="21"><f>O11/15*5</f><v></v></c>
+  <c r="Q11" s="24"><f>IF(AND(K11&gt;=3,P11&gt;=3),"领先型",IF(AND(K11&gt;=3,P11&lt;3),"漂移型",IF(AND(K11&lt;3,P11&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R11" s="16"><f>IF(Q11="领先型","挑战型发展/横向带教",IF(Q11="漂移型","重点发展人类深度",IF(Q11="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="12">
+  <c r="A12" s="23"><v>8</v></c>
+  <c r="B12" s="13" t="inlineStr"><is><t>吴凡</t></is></c>
+  <c r="C12" s="13" t="inlineStr"><is><t>技术部</t></is></c>
+  <c r="D12" s="13" t="inlineStr"><is><t>后端工程师</t></is></c>
+  <c r="E12" s="13" t="inlineStr"><is><t>2026-01-11</t></is></c>
+  <c r="F12" s="23"><v>3</v></c>
+  <c r="G12" s="23"><v>3</v></c>
+  <c r="H12" s="23"><v>3</v></c>
+  <c r="I12" s="23"><v>3</v></c>
+  <c r="J12" s="21"><f>SUM(F12:I12)</f><v></v></c>
+  <c r="K12" s="21"><f>J12/20*5</f><v></v></c>
+  <c r="L12" s="23"><v>3</v></c>
+  <c r="M12" s="23"><v>2</v></c>
+  <c r="N12" s="23"><v>4</v></c>
+  <c r="O12" s="21"><f>SUM(L12:N12)</f><v></v></c>
+  <c r="P12" s="21"><f>O12/15*5</f><v></v></c>
+  <c r="Q12" s="24"><f>IF(AND(K12&gt;=3,P12&gt;=3),"领先型",IF(AND(K12&gt;=3,P12&lt;3),"漂移型",IF(AND(K12&lt;3,P12&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R12" s="16"><f>IF(Q12="领先型","挑战型发展/横向带教",IF(Q12="漂移型","重点发展人类深度",IF(Q12="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="13">
+  <c r="A13" s="23"><v>9</v></c>
+  <c r="B13" s="13" t="inlineStr"><is><t>郑华</t></is></c>
+  <c r="C13" s="13" t="inlineStr"><is><t>产品部</t></is></c>
+  <c r="D13" s="13" t="inlineStr"><is><t>产品助理</t></is></c>
+  <c r="E13" s="13" t="inlineStr"><is><t>2026-01-12</t></is></c>
+  <c r="F13" s="23"><v>2</v></c>
+  <c r="G13" s="23"><v>2</v></c>
+  <c r="H13" s="23"><v>1</v></c>
+  <c r="I13" s="23"><v>2</v></c>
+  <c r="J13" s="21"><f>SUM(F13:I13)</f><v></v></c>
+  <c r="K13" s="21"><f>J13/20*5</f><v></v></c>
+  <c r="L13" s="23"><v>2</v></c>
+  <c r="M13" s="23"><v>2</v></c>
+  <c r="N13" s="23"><v>2</v></c>
+  <c r="O13" s="21"><f>SUM(L13:N13)</f><v></v></c>
+  <c r="P13" s="21"><f>O13/15*5</f><v></v></c>
+  <c r="Q13" s="24"><f>IF(AND(K13&gt;=3,P13&gt;=3),"领先型",IF(AND(K13&gt;=3,P13&lt;3),"漂移型",IF(AND(K13&lt;3,P13&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R13" s="16"><f>IF(Q13="领先型","挑战型发展/横向带教",IF(Q13="漂移型","重点发展人类深度",IF(Q13="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="14">
+  <c r="A14" s="23"><v>10</v></c>
+  <c r="B14" s="13" t="inlineStr"><is><t>马莉</t></is></c>
+  <c r="C14" s="13" t="inlineStr"><is><t>设计部</t></is></c>
+  <c r="D14" s="13" t="inlineStr"><is><t>UX研究员</t></is></c>
+  <c r="E14" s="13" t="inlineStr"><is><t>2026-01-12</t></is></c>
+  <c r="F14" s="23"><v>4</v></c>
+  <c r="G14" s="23"><v>3</v></c>
+  <c r="H14" s="23"><v>4</v></c>
+  <c r="I14" s="23"><v>3</v></c>
+  <c r="J14" s="21"><f>SUM(F14:I14)</f><v></v></c>
+  <c r="K14" s="21"><f>J14/20*5</f><v></v></c>
+  <c r="L14" s="23"><v>5</v></c>
+  <c r="M14" s="23"><v>4</v></c>
+  <c r="N14" s="23"><v>4</v></c>
+  <c r="O14" s="21"><f>SUM(L14:N14)</f><v></v></c>
+  <c r="P14" s="21"><f>O14/15*5</f><v></v></c>
+  <c r="Q14" s="24"><f>IF(AND(K14&gt;=3,P14&gt;=3),"领先型",IF(AND(K14&gt;=3,P14&lt;3),"漂移型",IF(AND(K14&lt;3,P14&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R14" s="16"><f>IF(Q14="领先型","挑战型发展/横向带教",IF(Q14="漂移型","重点发展人类深度",IF(Q14="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="15">
+  <c r="A15" s="23"><v>11</v></c>
+  <c r="B15" s="13" t="inlineStr"><is><t>黄强</t></is></c>
+  <c r="C15" s="13" t="inlineStr"><is><t>销售部</t></is></c>
+  <c r="D15" s="13" t="inlineStr"><is><t>大客户经理</t></is></c>
+  <c r="E15" s="13" t="inlineStr"><is><t>2026-01-13</t></is></c>
+  <c r="F15" s="23"><v>3</v></c>
+  <c r="G15" s="23"><v>2</v></c>
+  <c r="H15" s="23"><v>2</v></c>
+  <c r="I15" s="23"><v>2</v></c>
+  <c r="J15" s="21"><f>SUM(F15:I15)</f><v></v></c>
+  <c r="K15" s="21"><f>J15/20*5</f><v></v></c>
+  <c r="L15" s="23"><v>4</v></c>
+  <c r="M15" s="23"><v>5</v></c>
+  <c r="N15" s="23"><v>5</v></c>
+  <c r="O15" s="21"><f>SUM(L15:N15)</f><v></v></c>
+  <c r="P15" s="21"><f>O15/15*5</f><v></v></c>
+  <c r="Q15" s="24"><f>IF(AND(K15&gt;=3,P15&gt;=3),"领先型",IF(AND(K15&gt;=3,P15&lt;3),"漂移型",IF(AND(K15&lt;3,P15&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R15" s="16"><f>IF(Q15="领先型","挑战型发展/横向带教",IF(Q15="漂移型","重点发展人类深度",IF(Q15="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="16">
+  <c r="A16" s="23"><v>12</v></c>
+  <c r="B16" s="13" t="inlineStr"><is><t>林涛</t></is></c>
+  <c r="C16" s="13" t="inlineStr"><is><t>技术部</t></is></c>
+  <c r="D16" s="13" t="inlineStr"><is><t>架构师</t></is></c>
+  <c r="E16" s="13" t="inlineStr"><is><t>2026-01-13</t></is></c>
+  <c r="F16" s="23"><v>5</v></c>
+  <c r="G16" s="23"><v>4</v></c>
+  <c r="H16" s="23"><v>4</v></c>
+  <c r="I16" s="23"><v>4</v></c>
+  <c r="J16" s="21"><f>SUM(F16:I16)</f><v></v></c>
+  <c r="K16" s="21"><f>J16/20*5</f><v></v></c>
+  <c r="L16" s="23"><v>5</v></c>
+  <c r="M16" s="23"><v>3</v></c>
+  <c r="N16" s="23"><v>5</v></c>
+  <c r="O16" s="21"><f>SUM(L16:N16)</f><v></v></c>
+  <c r="P16" s="21"><f>O16/15*5</f><v></v></c>
+  <c r="Q16" s="24"><f>IF(AND(K16&gt;=3,P16&gt;=3),"领先型",IF(AND(K16&gt;=3,P16&lt;3),"漂移型",IF(AND(K16&lt;3,P16&gt;=3),"保守型","困境型")))</f><v></v></c>
+  <c r="R16" s="16"><f>IF(Q16="领先型","挑战型发展/横向带教",IF(Q16="漂移型","重点发展人类深度",IF(Q16="保守型","优先发展AI协作力","接F6类型B+系统诊断")))</f><v></v></c>
+</row>
+  <row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>团队平均</t></is></c>
+  <c r="B18" s="14"/>
+  <c r="C18" s="14"/>
+  <c r="D18" s="14"/>
+  <c r="E18" s="14"/>
+  <c r="F18" s="22"><f>AVERAGE(F5:F16)</f><v></v></c>
+  <c r="G18" s="22"><f>AVERAGE(G5:G16)</f><v></v></c>
+  <c r="H18" s="22"><f>AVERAGE(H5:H16)</f><v></v></c>
+  <c r="I18" s="22"><f>AVERAGE(I5:I16)</f><v></v></c>
+  <c r="J18" s="22"><f>AVERAGE(J5:J16)</f><v></v></c>
+  <c r="K18" s="22"><f>AVERAGE(K5:K16)</f><v></v></c>
+  <c r="L18" s="22"><f>AVERAGE(L5:L16)</f><v></v></c>
+  <c r="M18" s="22"><f>AVERAGE(M5:M16)</f><v></v></c>
+  <c r="N18" s="22"><f>AVERAGE(N5:N16)</f><v></v></c>
+  <c r="O18" s="22"><f>AVERAGE(O5:O16)</f><v></v></c>
+  <c r="P18" s="22"><f>AVERAGE(P5:P16)</f><v></v></c>
+  <c r="Q18" s="14" t="inlineStr"><is><t>团队AI均值</t></is></c>
+  <c r="R18" s="16"><f>AVERAGE(K5:K16)&amp;" / "&amp;AVERAGE(P5:P16)</f><v></v></c>
+</row>
+  <row r="20" ht="22" customHeight="1">
+  <c r="A20" s="5" t="inlineStr"><is><t>四象限人数统计（基于 Q 列判定）</t></is></c>
+</row>
+  <row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>象限</t></is></c>
+  <c r="B21" s="14" t="inlineStr"><is><t>判定条件</t></is></c>
+  <c r="C21" s="14" t="inlineStr"><is><t>人数</t></is></c>
+  <c r="D21" s="14" t="inlineStr"><is><t>占比</t></is></c>
+</row>
+  <row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>领先型</t></is></c>
+  <c r="B22" s="16" t="inlineStr"><is><t></t></is></c>
+  <c r="C22" s="23"><f>COUNTIF(Q5:Q16,"领先型")</f><v></v></c>
+  <c r="D22" s="23"><f>C22/12</f><v></v></c>
+</row>
+  <row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>漂移型</t></is></c>
+  <c r="B23" s="16" t="inlineStr"><is><t></t></is></c>
+  <c r="C23" s="23"><f>COUNTIF(Q5:Q16,"漂移型")</f><v></v></c>
+  <c r="D23" s="23"><f>C23/12</f><v></v></c>
+</row>
+  <row r="24">
+  <c r="A24" s="14" t="inlineStr"><is><t>保守型</t></is></c>
+  <c r="B24" s="16" t="inlineStr"><is><t></t></is></c>
+  <c r="C24" s="23"><f>COUNTIF(Q5:Q16,"保守型")</f><v></v></c>
+  <c r="D24" s="23"><f>C24/12</f><v></v></c>
+</row>
+  <row r="25">
+  <c r="A25" s="14" t="inlineStr"><is><t>困境型</t></is></c>
+  <c r="B25" s="16" t="inlineStr"><is><t></t></is></c>
+  <c r="C25" s="23"><f>COUNTIF(Q5:Q16,"困境型")</f><v></v></c>
+  <c r="D25" s="23"><f>C25/12</f><v></v></c>
+</row>
+  <row r="27">
+  <c r="A27" s="6" t="inlineStr"><is><t>金句</t></is></c>
+  <c r="B27" s="6" t="inlineStr"><is><t>缺一就失衡——AI时代评估胜任度，看两条轨道。</t></is></c>
+</row>
+  <row r="28">
+  <c r="A28" s="5" t="inlineStr"><is><t>配套使用：F7（启动问题听员工视角）/ F9（缺口判断）/ F10（结论纳入下次面谈清单）</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

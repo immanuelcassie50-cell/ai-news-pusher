@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="1" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="20" customWidth="1"/>
+    <col min="2" max="2" width="12" customWidth="1"/>
+    <col min="3" max="3" width="12" customWidth="1"/>
+    <col min="4" max="4" width="12" customWidth="1"/>
+    <col min="5" max="5" width="12" customWidth="1"/>
+    <col min="6" max="6" width="12" customWidth="1"/>
+    <col min="7" max="7" width="12" customWidth="1"/>
+    <col min="8" max="8" width="12" customWidth="1"/>
+    <col min="9" max="9" width="12" customWidth="1"/>
+    <col min="10" max="10" width="12" customWidth="1"/>
+    <col min="11" max="11" width="12" customWidth="1"/>
+    <col min="12" max="12" width="12" customWidth="1"/>
+    <col min="13" max="13" width="12" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="32" customHeight="1">
+      <c r="A1" t="s" s="4"><v>150</v></c>
+    </row>
+    <row r="2" ht="20" customHeight="1">
+      <c r="A2" t="s" s="1"><v>151</v></c>
+      <c r="B2" s="11"><v>2026</v></c>
+    </row>
+    <row r="3" ht="20" customHeight="1">
+      <c r="A3" t="s" s="4"><v>152</v></c>
+      <c r="B3" t="s" s="4"><v>153</v></c>
+      <c r="C3" t="s" s="4"><v>154</v></c>
+      <c r="D3" t="s" s="4"><v>155</v></c>
+      <c r="E3" t="s" s="4"><v>156</v></c>
+      <c r="F3" t="s" s="4"><v>157</v></c>
+      <c r="G3" t="s" s="4"><v>158</v></c>
+      <c r="H3" t="s" s="4"><v>159</v></c>
+      <c r="I3" t="s" s="4"><v>160</v></c>
+      <c r="J3" t="s" s="4"><v>161</v></c>
+      <c r="K3" t="s" s="4"><v>162</v></c>
+      <c r="L3" t="s" s="4"><v>163</v></c>
+      <c r="M3" t="s" s="4"><v>164</v></c>
+    </row>
+    <row r="4" ht="20" customHeight="1">
+      <c r="A4" t="s" s="4"><v>165</v></c>
+      <c r="B4" t="s" s="1"><v>人才盘点启动</v></c>
+      <c r="C4"/>
+      <c r="D4" t="s" s="1"><v>九宫格评估</v></c>
+      <c r="E4"/>
+      <c r="F4" t="s" s="1"><v>继任计划制定</v></c>
+      <c r="G4"/>
+      <c r="H4" t="s" s="1"><v>发展计划实施</v></c>
+      <c r="I4"/>
+      <c r="J4" t="s" s="1"><v>中期回顾</v></c>
+      <c r="K4"/>
+      <c r="L4" t="s" s="1"><v>盘点总结</v></c>
+      <c r="M4"/>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" t="s" s="4"><v>166</v></c>
+      <c r="B5" t="s" s="8"><v>173</v></c>
+      <c r="C5"/>
+      <c r="D5" t="s" s="12"><v>172</v></c>
+      <c r="E5"/>
+      <c r="F5" t="s" s="1"><v>69</v></c>
+      <c r="G5"/>
+      <c r="H5" t="s" s="12"><v>172</v></c>
+      <c r="I5"/>
+      <c r="J5" t="s" s="12"><v>172</v></c>
+      <c r="K5"/>
+      <c r="L5" t="s" s="1"><v>69</v></c>
+      <c r="M5"/>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" t="s" s="4"><v>167</v></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" t="s" s="4"><v>169</v></c>
+      <c r="B8" t="s" s="4"><v>时间</v></c>
+      <c r="C8" t="s" s="4"><v>168</v></c>
+      <c r="D8" t="s" s="4"><v>170</v></c>
+    </row>
+    <row r="9" ht="20" customHeight="1">
+      <c r="A9" t="s" s="1"><v>年度人才盘点启动大会</v></c>
+      <c r="B9" t="s" s="1"><v>1月</v></c>
+      <c r="C9" t="s" s="1"><v>张总</v></c>
+      <c r="D9" t="s" s="12"><v>171</v></c>
+    </row>
+    <row r="10" ht="20" customHeight="1">
+      <c r="A10" t="s" s="1"><v>全员九宫格评估完成</v></c>
+      <c r="B10" t="s" s="1"><v>3月</v></c>
+      <c r="C10" t="s" s="1"><v>HR陈静</v></c>
+      <c r="D10" t="s" s="12"><v>173</v></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" t="s" s="1"><v>继任计划确认</v></c>
+      <c r="B11" t="s" s="1"><v>5月</v></c>
+      <c r="C11" t="s" s="1"><v>张总</v></c>
+      <c r="D11" t="s" s="12"><v>172</v></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" t="s" s="1"><v>核心人才培养启动</v></c>
+      <c r="B12" t="s" s="1"><v>6月</v></c>
+      <c r="C12" t="s" s="1"><v>HR陈静</v></c>
+      <c r="D12" t="s" s="12"><v>69</v></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" t="s" s="1"><v>年中盘点与计划调整</v></c>
+      <c r="B13" t="s" s="1"><v>7月</v></c>
+      <c r="C13" t="s" s="1"><v>张总</v></c>
+      <c r="D13" t="s" s="12"><v>69</v></c>
+    </row>
+    <row r="14" ht="20" customHeight="1">
+      <c r="A14" t="s" s="1"><v>年度盘点总结报告</v></c>
+      <c r="B14" t="s" s="1"><v>12月</v></c>
+      <c r="C14" t="s" s="1"><v>张总</v></c>
+      <c r="D14" t="s" s="12"><v>69</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

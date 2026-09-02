@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动机的心理机制</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const scaleX = window.innerWidth / 960;
+  const scaleY = window.innerHeight / 540;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = '960px';
+  slide.style.height = '540px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#fefae0;">
+  <div style="position:absolute; top:40px; left:80px; right:80px;">
+    <h2 style="margin:0; font-family:'Times New Roman', serif; font-size:32px; font-weight:700; color:#264653;">动机的心理机制</h2>
+    <svg width="60" height="3" style="margin-top:8px;">
+      <rect width="60" height="3" fill="#2a9d8f"/>
+    </svg>
+  </div>
+  <div style="position:absolute; top:120px; left:80px; right:80px;">
+    <div style="display:flex; justify-content:center; align-items:center; margin-bottom:40px;">
+      <svg width="800" height="120" aria-hidden="true">
+        <rect x="0" y="40" width="180" height="60" rx="8" fill="#264653"/>
+        <text x="90" y="70" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">需要 Need</text>
+        <path d="M190 70 L260 70" stroke="#264653" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+        <polygon points="265,70 255,65 255,75" fill="#264653"/>
+        <rect x="270" y="40" width="180" height="60" rx="8" fill="#2a9d8f"/>
+        <text x="360" y="70" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">动机 Motive</text>
+        <path d="M460 70 L530 70" stroke="#2a9d8f" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+        <polygon points="535,70 525,65 525,75" fill="#2a9d8f"/>
+        <rect x="540" y="40" width="180" height="60" rx="8" fill="#e9c46a"/>
+        <text x="630" y="70" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#264653">行为 Behavior</text>
+        <path d="M730 70 L800 70" stroke="#e9c46a" stroke-width="2" fill="none" stroke-dasharray="6,4"/>
+        <polygon points="805,70 795,65 795,75" fill="#e9c46a"/>
+      </svg>
+    </div>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+      <div style="background:#ffffff; border-radius:12px; padding:24px; border-left:4px solid #264653;">
+        <p style="margin:0 0 12px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#264653;">需要的层次理论</p>
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#264653; opacity:0.8; line-height:1.7;">
+          马斯洛需求层次：生理→安全→归属→尊重→自我实现。低级需要满足后，高级需要成为主导动机。
+        </p>
+      </div>
+      <div style="background:#ffffff; border-radius:12px; padding:24px; border-left:4px solid #2a9d8f;">
+        <p style="margin:0 0 12px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#264653;">动机的认知理论</p>
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#264653; opacity:0.8; line-height:1.7;">
+          期望-价值理论：动机强度 = 期望程度 × 目标价值。自我效能感影响动机强度与持续性。
+        </p>
+      </div>
+      <div style="background:#ffffff; border-radius:12px; padding:24px; border-left:4px solid #e9c46a;">
+        <p style="margin:0 0 12px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#264653;">动机的强化理论</p>
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#264653; opacity:0.8; line-height:1.7;">
+          行为的结果强化动机：正强化（奖励）增加行为概率；负强化（逃避痛苦）同样增强行为。
+        </p>
+      </div>
+      <div style="background:#ffffff; border-radius:12px; padding:24px; border-left:4px solid #f4a261;">
+        <p style="margin:0 0 12px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#264653;">动机的归因理论</p>
+        <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#264653; opacity:0.8; line-height:1.7;">
+          韦纳归因理论：将成功/失败归因于能力、努力、任务难度、运气等因素，影响后续动机。
+        </p>
+      </div>
+    </div>
+  </div>
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36">
+    <circle cx="18" cy="18" r="18" fill="#264653"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">5</text>
+  </svg>
+</div>
+</body>
+</html>

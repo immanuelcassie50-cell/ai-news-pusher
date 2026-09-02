@@ -1,0 +1,33 @@
+{
+  "title": "互动方法工具箱卡牌",
+  "type": "minimal",
+  "author": "课程开发组",
+  "date": "2026",
+  "accent": "#C41E3A",
+  "content": [
+    {"type": "h1", "text": "课堂互动方法库"},
+    {"type": "callout", "text": "不同教学方法组合使用效果最佳，请根据内容选择合适的方法"},
+    {"type": "h2", "text": "小组讨论法"},
+    {"type": "bullet", "text": "适用：需要集思广益的问题"},
+    {"type": "bullet", "text": "操作：3-5人一组，限时讨论，汇总分享"},
+    {"type": "bullet", "text": "要点：明确讨论主题，控制时间"},
+    {"type": "h2", "text": "角色扮演法"},
+    {"type": "bullet", "text": "适用：需要体验不同立场的场景"},
+    {"type": "bullet", "text": "操作：分配角色，模拟情境，角色发言"},
+    {"type": "bullet", "text": "要点：情境要真实，角色要投入"},
+    {"type": "h2", "text": "案例分析法"},
+    {"type": "bullet", "text": "适用：需要从经验中学习的场景"},
+    {"type": "bullet", "text": "操作：展示案例，分析原因，总结规律"},
+    {"type": "bullet", "text": "要点：案例要有代表性，分析要有深度"},
+    {"type": "h2", "text": "实操演练法"},
+    {"type": "bullet", "text": "适用：需要掌握具体技能的环节"},
+    {"type": "bullet", "text": "操作：示范 - 模仿 - 练习 - 反馈"},
+    {"type": "bullet", "text": "要点：步骤分解，及时纠错"},
+    {"type": "h2", "text": "师徒对练法"},
+    {"type": "bullet", "text": "适用：需要一对一指导的场景"},
+    {"type": "bullet", "text": "操作：师傅示范，徒弟观摩，徒弟实践，师傅点评"},
+    {"type": "bullet", "text": "要点：建立信任，及时鼓励"},
+    {"type": "divider"},
+    {"type": "body", "text": "背面使用说明：本卡片提供五种常用互动方法。在实际教学中，可以根据内容特点和学员情况灵活组合使用，通常2-3种方法配合效果更好。"}
+  ]
+}

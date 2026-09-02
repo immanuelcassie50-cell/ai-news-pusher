@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="14" customWidth="1"/>
+    <col min="2" max="2" width="30" customWidth="1"/>
+    <col min="3" max="3" width="12" customWidth="1"/>
+    <col min="4" max="4" width="12" customWidth="1"/>
+    <col min="5" max="5" width="20" customWidth="1"/>
+    <col min="6" max="6" width="16" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="22" customHeight="1">
+      <c r="A1" t="s" s="4"><v>64</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="4"><v>65</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="4"><v>68</v></c>
+      <c r="B3" t="s" s="4"><v>69</v></c>
+      <c r="C3" t="s" s="4"><v>70</v></c>
+      <c r="D3" t="s" s="4"><v>71</v></c>
+      <c r="E3" t="s" s="4"><v>72</v></c>
+      <c r="F3" t="s" s="4"><v>73</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="1"><v>74</v></c>
+      <c r="B4" t="s" s="1"><v>=(营收-成本)/营收</v></c>
+      <c r="C4" s="5"/>
+      <c r="D4" s="8"><f>C4</f><v></v></c>
+      <c r="E4" t="s" s="1"><v>行业平均30%-50%</v></c>
+      <c r="F4" t="s" s="1"><v>高于行业=竞争优势</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="1"><v>75</v></c>
+      <c r="B5" t="s" s="1"><v>=净利润/营收</v></c>
+      <c r="C5" s="5"/>
+      <c r="D5" s="8"><f>C5</f><v></v></c>
+      <c r="E5" t="s" s="1"><v>参考值5%-20%</v></c>
+      <c r="F5" t="s" s="1"><v>结合行业特性判断</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="1"><v>76</v></c>
+      <c r="B6" t="s" s="1"><v>=净利润/净资产</v></c>
+      <c r="C6" s="5"/>
+      <c r="D6" s="8"><f>C6</f><v></v></c>
+      <c r="E6" t="s" s="1"><v>参考值10%-20%</v></c>
+      <c r="F6" t="s" s="1"><v>高于15%为优质公司</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="1"><v>77</v></c>
+      <c r="B7" t="s" s="1"><v>=净利润/股本</v></c>
+      <c r="C7" s="5"/>
+      <c r="D7" s="8"><f>C7</f><v></v></c>
+      <c r="E7" t="s" s="1"><v>参考值0.5-2元/股</v></c>
+      <c r="F7" t="s" s="1"><v>需与行业平均对比</v></c>
+    </row>
+    <row r="8">
+      <c r="A8" t="s" s="4"><v>66</v></c>
+    </row>
+    <row r="9">
+      <c r="A9" t="s" s="4"><v>68</v></c>
+      <c r="B9" t="s" s="4"><v>69</v></c>
+      <c r="C9" t="s" s="4"><v>70</v></c>
+      <c r="D9" t="s" s="4"><v>71</v></c>
+      <c r="E9" t="s" s="4"><v>72</v></c>
+      <c r="F9" t="s" s="4"><v>73</v></c>
+    </row>
+    <row r="10">
+      <c r="A10" t="s" s="1"><v>78</v></c>
+      <c r="B10" t="s" s="1"><v>=负债/资产</v></c>
+      <c r="C10" s="7"/>
+      <c r="D10" s="8"><f>C10</f><v></v></c>
+      <c r="E10" t="s" s="1"><v>参考值40%-60%</v></c>
+      <c r="F10" t="s" s="1"><v>高于70%为高风险</v></c>
+    </row>
+    <row r="11">
+      <c r="A11" t="s" s="1"><v>79</v></c>
+      <c r="B11" t="s" s="1"><v>=流动资产/流动负债</v></c>
+      <c r="C11" s="5"/>
+      <c r="D11" s="6"><f>C11</f><v></v></c>
+      <c r="E11" t="s" s="1"><v>参考值1.5-2倍</v></c>
+      <c r="F11" t="s" s="1"><v>低于1倍短期偿债危机</v></c>
+    </row>
+    <row r="12">
+      <c r="A12" t="s" s="1"><v>80</v></c>
+      <c r="B12" t="s" s="1"><v>=(流动资产-存货)/流动负债</v></c>
+      <c r="C12" s="5"/>
+      <c r="D12" s="6"><f>C12</f><v></v></c>
+      <c r="E12" t="s" s="1"><v>参考值&gt;1倍</v></c>
+      <c r="F12" t="s" s="1"><v>排除存货流动性影响</v></c>
+    </row>
+    <row r="13">
+      <c r="A13" t="s" s="1"><v>81</v></c>
+      <c r="B13" t="s" s="1"><v>=EBIT/利息支出</v></c>
+      <c r="C13" s="5"/>
+      <c r="D13" s="6"><f>C13</f><v></v></c>
+      <c r="E13" t="s" s="1"><v>参考值&gt;3倍</v></c>
+      <c r="F13" t="s" s="1"><v>低于1倍偿债能力堪忧</v></c>
+    </row>
+    <row r="14">
+      <c r="A14" t="s" s="4"><v>67</v></c>
+    </row>
+    <row r="15">
+      <c r="A15" t="s" s="4"><v>68</v></c>
+      <c r="B15" t="s" s="4"><v>69</v></c>
+      <c r="C15" t="s" s="4"><v>70</v></c>
+      <c r="D15" t="s" s="4"><v>71</v></c>
+      <c r="E15" t="s" s="4"><v>72</v></c>
+      <c r="F15" t="s" s="4"><v>73</v></c>
+    </row>
+    <row r="16">
+      <c r="A16" t="s" s="1"><v>82</v></c>
+      <c r="B16" t="s" s="1"><v>=营收/存货</v></c>
+      <c r="C16" s="5"/>
+      <c r="D16" s="6"><f>C16</f><v></v></c>
+      <c r="E16" t="s" s="1"><v>参考值6-12次</v></c>
+      <c r="F16" t="s" s="1"><v>持续下降警惕滞销风险</v></c>
+    </row>
+    <row r="17">
+      <c r="A17" t="s" s="1"><v>83</v></c>
+      <c r="B17" t="s" s="1"><v>=营收/应收账款</v></c>
+      <c r="C17" s="5"/>
+      <c r="D17" s="6"><f>C17</f><v></v></c>
+      <c r="E17" t="s" s="1"><v>参考值6-10次</v></c>
+      <c r="F17" t="s" s="1"><v>持续下降警惕回收风险</v></c>
+    </row>
+    <row r="18">
+      <c r="A18" t="s" s="1"><v>84</v></c>
+      <c r="B18" t="s" s="1"><v>=营收/总资产</v></c>
+      <c r="C18" s="5"/>
+      <c r="D18" s="6"><f>C18</f><v></v></c>
+      <c r="E18" t="s" s="1"><v>参考值0.5-1.5次</v></c>
+      <c r="F18" t="s" s="1"><v>反映资产整体运营效率</v></c>
+    </row>
+    <row r="19">
+      <c r="A19" t="s" s="1"><v>85</v></c>
+      <c r="B19" t="s" s="1"><v>=营收/固定资产</v></c>
+      <c r="C19" s="5"/>
+      <c r="D19" s="6"><f>C19</f><v></v></c>
+      <c r="E19" t="s" s="1"><v>参考值2-5次</v></c>
+      <c r="F19" t="s" s="1"><v>反映固定资产利用效率</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

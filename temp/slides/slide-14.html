@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>讲授话术参考</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+  background: #F5F5F5;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+  <!-- Top accent bar -->
+  <svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+    <rect width="960" height="6" fill="#8B0000"/>
+  </svg>
+
+  <!-- Title -->
+  <p style="position:absolute; left:60px; top:40px; margin:0; font-size:28px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">讲授话术参考</p>
+
+  <!-- Speech cards -->
+  <div style="position:absolute; left:60px; top:100px; width:840px;">
+    <!-- Quote 1 -->
+    <div style="background:#FFFFFF; border-radius:8px; padding:20px 24px; margin-bottom:16px; border-left:4px solid #8B0000;">
+      <p style="margin:0 0 12px 0; font-size:14px; color:#999999; font-family:'Microsoft YaHei', Arial;">家长常见想法</p>
+      <p style="margin:0; font-size:16px; color:#333333; font-family:'Microsoft YaHei', Arial; font-style:italic;">"分数够什么就学什么，志愿不就是这么填的吗？"</p>
+    </div>
+
+    <!-- Quote 2 -->
+    <div style="background:#FFFFFF; border-radius:8px; padding:20px 24px; margin-bottom:16px; border-left:4px solid #C41E3A;">
+      <p style="margin:0 0 12px 0; font-size:14px; color:#999999; font-family:'Microsoft YaHei', Arial;">讲师回应</p>
+      <p style="margin:0; font-size:16px; color:#333333; font-family:'Microsoft YaHei', Arial; font-style:italic;">"这张表格排得越漂亮，越是在把一个错误的方向，包装成一个'科学的选择'"</p>
+    </div>
+
+    <!-- Quote 3 -->
+    <div style="background:#8B0000; border-radius:8px; padding:20px 24px; margin-bottom:16px;">
+      <p style="margin:0 0 12px 0; font-size:14px; color:#FFFFFF; opacity:0.7; font-family:'Microsoft YaHei', Arial;">核心金句</p>
+      <p style="margin:0; font-size:18px; color:#FFFFFF; font-family:'Microsoft YaHei', Arial; font-weight:600;">"冲稳保负责把答案安全地落地，不负责生成答案"</p>
+    </div>
+  </div>
+
+  <!-- Notes section -->
+  <div style="position:absolute; left:60px; top:380px; width:840px; border:1px dashed #CCCCCC; border-radius:8px; padding:16px 20px;">
+    <p style="margin:0 0 8px 0; font-size:14px; font-weight:600; color:#8B0000; font-family:'Microsoft YaHei', Arial;">备课笔记空间</p>
+    <p style="margin:0; font-size:13px; color:#999999; font-family:'Microsoft YaHei', Arial;">记录现场学员反馈、补充案例、调整讲法...</p>
+  </div>
+
+  <!-- Page number badge -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#8B0000"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">14</text>
+  </svg>
+</div>
+</body>
+</html>

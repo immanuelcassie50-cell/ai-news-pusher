@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheets>
+    <sheet name="快速导航" sheetId="1" r:id="rId1"/>
+    <sheet name="重点科目核对清单" sheetId="2" r:id="rId4"/>
+    <sheet name="财务比率计算" sheetId="3" r:id="rId5"/>
+    <sheet name="异常信号预警" sheetId="4" r:id="rId6"/>
+    <sheet name="行业对比模板" sheetId="5" r:id="rId7"/>
+  </sheets>
+</workbook>

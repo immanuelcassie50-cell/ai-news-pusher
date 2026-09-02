@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="6" customWidth="1"/><col min="2" max="2" width="18" customWidth="1"/><col min="3" max="3" width="22" customWidth="1"/><col min="4" max="4" width="32" customWidth="1"/><col min="5" max="5" width="32" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>F9 缺口判断决策树 — 四步判定工作表</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表是核心工作表：每行填一个员工的判定结果。第 3 行是表头；第 4 行起为数据行（可向下复制）。</t></is></c>
+  <c r="B2" s="0"/>
+  <c r="C2" s="0"/>
+  <c r="D2" s="0"/>
+  <c r="E2" s="0"/>
+  <c r="F2" s="0"/>
+  <c r="G2" s="0"/>
+  <c r="H2" s="0"/>
+  <c r="I2" s="0"/>
+  <c r="J2" s="0"/>
+  <c r="K2" s="0"/>
+</row>
+<row r="3" ht="36" customHeight="1">
+  <c r="A3" s="14" t="inlineStr"><is><t>序号</t></is></c>
+  <c r="B3" s="14" t="inlineStr"><is><t>员工姓名</t></is></c>
+  <c r="C3" s="14" t="inlineStr"><is><t>事实/差距</t></is></c>
+  <c r="D3" s="14" t="inlineStr"><is><t>① 缺口类型</t></is></c>
+  <c r="E3" s="14" t="inlineStr"><is><t>② AI可补还是人发展</t></is></c>
+  <c r="F3" s="14" t="inlineStr"><is><t>③ 发展路径</t></is></c>
+  <c r="G3" s="14" t="inlineStr"><is><t>④ 紧迫度（高/中/低）</t></is></c>
+  <c r="H3" s="14" t="inlineStr"><is><t>推荐启动问题</t></is></c>
+  <c r="I3" s="14" t="inlineStr"><is><t>实际采用</t></is></c>
+  <c r="J3" s="14" t="inlineStr"><is><t>话术草稿</t></is></c>
+  <c r="K3" s="14" t="inlineStr"><is><t>30天回看</t></is></c>
+</row>
+<row r="4" ht="64" customHeight="1">
+  <c r="A4" s="17" t="inlineStr"><is><t>1</t></is></c>
+  <c r="B4" s="13" t="inlineStr"><is><t>小马</t></is></c>
+  <c r="C4" s="13" t="inlineStr"><is><t>智能推荐项目上线后DAU仅提升5%（目标15%）；知道测试结果不稳定但按原计划发布</t></is></c>
+  <c r="D4" s="7" t="inlineStr"><is><t>行为</t></is></c>
+  <c r="E4" s="7" t="inlineStr"><is><t>必须人发展</t></is></c>
+  <c r="F4" s="7" t="inlineStr"><is><t>实战+反馈</t></is></c>
+  <c r="G4" s="7" t="inlineStr"><is><t>高</t></is></c>
+  <c r="H4" s="19"><f>IF(E4="AI可补","F7 启动二",IF(E4="必须人发展",IF(D4="认知","F7 启动一","F7 启动三"),IF(E4="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I4" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J4" s="13" t="inlineStr"><is><t>“在我最近的工作里，如果让你自己说，你最满意的判断是什么？下次打算把它做得更深还是更广？”</t></is></c>
+  <c r="K4" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="5" ht="64" customHeight="1">
+  <c r="A5" s="17" t="inlineStr"><is><t>2</t></is></c>
+  <c r="B5" s="13" t="inlineStr"><is><t>王晓</t></is></c>
+  <c r="C5" s="13" t="inlineStr"><is><t>不会写汇报PPT，每次自己熬夜做</t></is></c>
+  <c r="D5" s="7" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="E5" s="7" t="inlineStr"><is><t>AI可补</t></is></c>
+  <c r="F5" s="7" t="inlineStr"><is><t>学+练</t></is></c>
+  <c r="G5" s="7" t="inlineStr"><is><t>中</t></is></c>
+  <c r="H5" s="19"><f>IF(E5="AI可补","F7 启动二",IF(E5="必须人发展",IF(D5="认知","F7 启动一","F7 启动三"),IF(E5="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I5" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J5" s="13" t="inlineStr"><is><t>“在你用AI最多的那类工作里，你觉得自己做了什么？你希望把精力放在哪里？”</t></is></c>
+  <c r="K5" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="6" ht="64" customHeight="1">
+  <c r="A6" s="17" t="inlineStr"><is><t>3</t></is></c>
+  <c r="B6" s="13" t="inlineStr"><is><t>张磊</t></is></c>
+  <c r="C6" s="13" t="inlineStr"><is><t>和客户沟通时过于技术化，客户关系不深</t></is></c>
+  <c r="D6" s="7" t="inlineStr"><is><t>认知</t></is></c>
+  <c r="E6" s="7" t="inlineStr"><is><t>必须人发展</t></is></c>
+  <c r="F6" s="7" t="inlineStr"><is><t>对齐+反馈</t></is></c>
+  <c r="G6" s="7" t="inlineStr"><is><t>高</t></is></c>
+  <c r="H6" s="19"><f>IF(E6="AI可补","F7 启动二",IF(E6="必须人发展",IF(D6="认知","F7 启动一","F7 启动三"),IF(E6="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I6" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J6" s="13" t="inlineStr"><is><t>“这个周期你最满意的成长是什么？哪里还可以不一样？”</t></is></c>
+  <c r="K6" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="7" ht="64" customHeight="1">
+  <c r="A7" s="17" t="inlineStr"><is><t>4</t></is></c>
+  <c r="B7" s="13" t="inlineStr"><is><t>刘洋</t></is></c>
+  <c r="C7" s="13" t="inlineStr"><is><t>用AI生成报告很快，但自己不会评估AI输出</t></is></c>
+  <c r="D7" s="7" t="inlineStr"><is><t>AI工具</t></is></c>
+  <c r="E7" s="7" t="inlineStr"><is><t>AI可补</t></is></c>
+  <c r="F7" s="7" t="inlineStr"><is><t>练</t></is></c>
+  <c r="G7" s="7" t="inlineStr"><is><t>高</t></is></c>
+  <c r="H7" s="19"><f>IF(E7="AI可补","F7 启动二",IF(E7="必须人发展",IF(D7="认知","F7 启动一","F7 启动三"),IF(E7="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I7" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J7" s="13" t="inlineStr"><is><t>“在你用AI最多的工作里……你希望把精力放在更有深度的部分，是哪部分？”</t></is></c>
+  <c r="K7" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="8" ht="64" customHeight="1">
+  <c r="A8" s="17" t="inlineStr"><is><t>5</t></is></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>周琳</t></is></c>
+  <c r="C8" s="13" t="inlineStr"><is><t>数据整理用AI但业务判断需要更深</t></is></c>
+  <c r="D8" s="7" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="E8" s="7" t="inlineStr"><is><t>两者都有</t></is></c>
+  <c r="F8" s="7" t="inlineStr"><is><t>先发展业务判断</t></is></c>
+  <c r="G8" s="7" t="inlineStr"><is><t>中</t></is></c>
+  <c r="H8" s="19"><f>IF(E8="AI可补","F7 启动二",IF(E8="必须人发展",IF(D8="认知","F7 启动一","F7 启动三"),IF(E8="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I8" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J8" s="13" t="inlineStr"><is><t>“在你用AI最多的那类工作里……“（先用启动一稳一下，再用启动二展开双轨）</t></is></c>
+  <c r="K8" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="9" ht="32" customHeight="1">
+  <c r="A9" s="17" t="inlineStr"><is><t>6</t></is></c>
+  <c r="B9" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C9" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H9" s="19"><f>IF(E9="AI可补","F7 启动二",IF(E9="必须人发展",IF(D9="认知","F7 启动一","F7 启动三"),IF(E9="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I9" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J9" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K9" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="10" ht="32" customHeight="1">
+  <c r="A10" s="17" t="inlineStr"><is><t>7</t></is></c>
+  <c r="B10" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C10" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H10" s="19"><f>IF(E10="AI可补","F7 启动二",IF(E10="必须人发展",IF(D10="认知","F7 启动一","F7 启动三"),IF(E10="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I10" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J10" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K10" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="11" ht="32" customHeight="1">
+  <c r="A11" s="17" t="inlineStr"><is><t>8</t></is></c>
+  <c r="B11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H11" s="19"><f>IF(E11="AI可补","F7 启动二",IF(E11="必须人发展",IF(D11="认知","F7 启动一","F7 启动三"),IF(E11="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K11" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="12" ht="32" customHeight="1">
+  <c r="A12" s="17" t="inlineStr"><is><t>9</t></is></c>
+  <c r="B12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H12" s="19"><f>IF(E12="AI可补","F7 启动二",IF(E12="必须人发展",IF(D12="认知","F7 启动一","F7 启动三"),IF(E12="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K12" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="13" ht="32" customHeight="1">
+  <c r="A13" s="17" t="inlineStr"><is><t>10</t></is></c>
+  <c r="B13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H13" s="19"><f>IF(E13="AI可补","F7 启动二",IF(E13="必须人发展",IF(D13="认知","F7 启动一","F7 启动三"),IF(E13="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K13" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="14" ht="32" customHeight="1">
+  <c r="A14" s="17" t="inlineStr"><is><t>11</t></is></c>
+  <c r="B14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H14" s="19"><f>IF(E14="AI可补","F7 启动二",IF(E14="必须人发展",IF(D14="认知","F7 启动一","F7 启动三"),IF(E14="两者都有","F7 启动一+二","—")))</f><v></v></c>
+  <c r="I14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="J14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="K14" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="16" ht="22" customHeight="1">
+  <c r="A16" s="4" t="inlineStr"><is><t>H列推荐启动问题 的公式规则（参考）</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="14" t="inlineStr"><is><t>如果 E = &quot;AI可补&quot;</t></is></c>
+  <c r="C17" s="14" t="inlineStr"><is><t>→ 推荐&quot;F7 启动二&quot;（直接进入双轨讨论）</t></is></c>
+</row>
+<row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>如果 E = &quot;必须人发展&quot; 且 D = &quot;认知&quot;</t></is></c>
+  <c r="C18" s="14" t="inlineStr"><is><t>→ 推荐&quot;F7 启动一&quot;（通用开场最稳）</t></is></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>如果 E = &quot;必须人发展&quot; 且 D ≠ &quot;认知&quot;</t></is></c>
+  <c r="C19" s="14" t="inlineStr"><is><t>→ 推荐&quot;F7 启动三&quot;（具体化已有深度）</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>如果 E = &quot;两者都有&quot;</t></is></c>
+  <c r="C20" s="14" t="inlineStr"><is><t>→ 推荐&quot;F7 启动一+二&quot;（先稳后展）</t></is></c>
+</row>
+<row r="22" ht="22" customHeight="1">
+  <c r="A22" s="4" t="inlineStr"><is><t>使用提示</t></is></c>
+</row>
+<row r="23">
+  <c r="A23" s="13" t="inlineStr"><is><t>① 本表第 4-8 行是范例，请参照范例从第 9 行开始填自己的员工</t></is></c>
+</row>
+<row r="24">
+  <c r="A24" s="13" t="inlineStr"><is><t>② D/E/F/G 列是手动输入（蓝色字），H 列是公式（黑色字加粗），可手动覆盖到 I 列</t></is></c>
+</row>
+<row r="25">
+  <c r="A25" s="13" t="inlineStr"><is><t>③ 填完一行后，选中第 4-8 行的数据区，复制 → 在下方新行粘贴，公式会自动延续</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="13" t="inlineStr"><is><t>④ 30 天回看时在 K 列记录&quot;实际发展如何&quot;——形成个人案例库</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="13" t="inlineStr"><is><t>⑤ 公式仅在&quot;判定选项&quot;严格一致时才会正确（不要写&quot;AI可补 &quot;带空格的写法）</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

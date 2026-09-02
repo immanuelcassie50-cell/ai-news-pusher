@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="14" customWidth="1"/>
+    <col min="2" max="2" width="18" customWidth="1"/>
+    <col min="3" max="3" width="22" customWidth="1"/>
+    <col min="4" max="4" width="12" customWidth="1"/>
+    <col min="5" max="5" width="10" customWidth="1"/>
+    <col min="6" max="6" width="30" customWidth="1"/>
+  </cols>
+  <autoFilter ref="A2:F20"/>
+  <sheetData>
+    <!-- Row 1: Title -->
+    <row r="1" ht="22" customHeight="1">
+      <c r="A1" t="s" s="4"><v>35</v></c>
+    </row>
+    <!-- Row 2: Headers -->
+    <row r="2">
+      <c r="A2" t="s" s="4"><v>4</v></c>
+      <c r="B2" t="s" s="4"><v>36</v></c>
+      <c r="C2" t="s" s="4"><v>37</v></c>
+      <c r="D2" t="s" s="4"><v>38</v></c>
+      <c r="E2" t="s" s="4"><v>39</v></c>
+      <c r="F2" t="s" s="4"><v>40</v></c>
+    </row>
+    <!-- Row 3: 营收与利润匹配性 -->
+    <row r="3">
+      <c r="A3" t="s" s="4"><v>41</v></c>
+      <c r="B3" t="s" s="1"><v>42</v></c>
+      <c r="C3" t="s" s="1"><v>净利润为正且与营收变动趋势一致</v></c>
+      <c r="D3" s="5"/>
+      <c r="E3" t="s" s="1"><v>是/否</v></c>
+      <c r="F3" t="s" s="1"><v>若不匹配需深入分析原因</v></c>
+    </row>
+    <!-- Row 4: 经营性现金流净额 -->
+    <row r="4">
+      <c r="A4" t="s" s="4"><v>41</v></c>
+      <c r="B4" t="s" s="1"><v>43</v></c>
+      <c r="C4" t="s" s="1"><v>净利润为正时经营现金流应为正</v></c>
+      <c r="D4" s="5"/>
+      <c r="E4" t="s" s="1"><v>是/否</v></c>
+      <c r="F4" t="s" s="1"><v>长期背离需警惕盈余管理</v></c>
+    </row>
+    <!-- Row 5: 存货周转情况 -->
+    <row r="5">
+      <c r="A5" t="s" s="4"><v>41</v></c>
+      <c r="B5" t="s" s="1"><v>44</v></c>
+      <c r="C5" t="s" s="1"><v>存货周转天数无明显上升趋势</v></c>
+      <c r="D5" s="5"/>
+      <c r="E5" t="s" s="1"><v>是/否</v></c>
+      <c r="F5" t="s" s="1"><v>周转天数持续上升警惕滞销</v></c>
+    </row>
+    <!-- Row 6: 应收账款账龄 -->
+    <row r="6">
+      <c r="A6" t="s" s="4"><v>41</v></c>
+      <c r="B6" t="s" s="1"><v>45</v></c>
+      <c r="C6" t="s" s="1"><v>一年以内应收账款占比大于70%</v></c>
+      <c r="D6" s="5"/>
+      <c r="E6" t="s" s="1"><v>是/否</v></c>
+      <c r="F6" t="s" s="1"><v>长账龄占比高警惕回收风险</v></c>
+    </row>
+    <!-- Row 7: 货币资金真实性 -->
+    <row r="7">
+      <c r="A7" t="s" s="4"><v>41</v></c>
+      <c r="B7" t="s" s="1"><v>46</v></c>
+      <c r="C7" t="s" s="1"><v>货币资金与短期借款比例合理</v></c>
+      <c r="D7" s="5"/>
+      <c r="E7" t="s" s="1"><v>是/否</v></c>
+      <c r="F7" t="s" s="1"><v>存贷双高可能隐含风险</v></c>
+    </row>
+    <!-- Row 8: 固定资产变动合理性 -->
+    <row r="8">
+      <c r="A8" t="s" s="4"><v>41</v></c>
+      <c r="B8" t="s" s="1"><v>47</v></c>
+      <c r="C8" t="s" s="1"><v>固定资产原值变化有合理解释</v></c>
+      <c r="D8" s="5"/>
+      <c r="E8" t="s" s="1"><v>是/否</v></c>
+      <c r="F8" t="s" s="1"><v>关注产能利用率和减值</v></c>
+    </row>
+    <!-- Row 9: 无形资产真实性 -->
+    <row r="9">
+      <c r="A9" t="s" s="4"><v>41</v></c>
+      <c r="B9" t="s" s="1"><v>48</v></c>
+      <c r="C9" t="s" s="1"><v>无形资产主要来自外购而非内部研发</v></c>
+      <c r="D9" s="5"/>
+      <c r="E9" t="s" s="1"><v>是/否</v></c>
+      <c r="F9" t="s" s="1"><v>关注减值准备计提</v></c>
+    </row>
+    <!-- Row 10: 应付账款变动趋势 -->
+    <row r="10">
+      <c r="A10" t="s" s="4"><v>41</v></c>
+      <c r="B10" t="s" s="1"><v>49</v></c>
+      <c r="C10" t="s" s="1"><v>应付账款账期无异常延长</v></c>
+      <c r="D10" s="5"/>
+      <c r="E10" t="s" s="1"><v>是/否</v></c>
+      <c r="F10" t="s" s="1"><v>延长可能反映资金紧张</v></c>
+    </row>
+    <!-- Row 11: 短期借款真实性 -->
+    <row r="11">
+      <c r="A11" t="s" s="4"><v>41</v></c>
+      <c r="B11" t="s" s="1"><v>50</v></c>
+      <c r="C11" t="s" s="1"><v>短期借款与经营需求匹配</v></c>
+      <c r="D11" s="5"/>
+      <c r="E11" t="s" s="1"><v>是/否</v></c>
+      <c r="F11" t="s" s="1"><v>关注银行授信额度</v></c>
+    </row>
+    <!-- Row 12: 长期借款变动趋势 -->
+    <row r="12">
+      <c r="A12" t="s" s="4"><v>41</v></c>
+      <c r="B12" t="s" s="1"><v>51</v></c>
+      <c r="C12" t="s" s="1"><v>长期借款期限结构合理</v></c>
+      <c r="D12" s="5"/>
+      <c r="E12" t="s" s="1"><v>是/否</v></c>
+      <c r="F12" t="s" s="1"><v>关注集中到期风险</v></c>
+    </row>
+    <!-- Row 13: 实收资本变动 -->
+    <row r="13">
+      <c r="A13" t="s" s="4"><v>41</v></c>
+      <c r="B13" t="s" s="1"><v>52</v></c>
+      <c r="C13" t="s" s="1"><v>实收资本变化有融资活动支持</v></c>
+      <c r="D13" s="5"/>
+      <c r="E13" t="s" s="1"><v>是/否</v></c>
+      <c r="F13" t="s" s="1"><v>关注增资扩股背景</v></c>
+    </row>
+    <!-- Row 14: 未分配利润变动 -->
+    <row r="14">
+      <c r="A14" t="s" s="4"><v>41</v></c>
+      <c r="B14" t="s" s="1"><v>53</v></c>
+      <c r="C14" t="s" s="1"><v>未分配利润持续增长</v></c>
+      <c r="D14" s="5"/>
+      <c r="E14" t="s" s="1"><v>是/否</v></c>
+      <c r="F14" t="s" s="1"><v>持续下降需分析原因</v></c>
+    </row>
+    <!-- Row 15: 毛利率波动 -->
+    <row r="15">
+      <c r="A15" t="s" s="4"><v>41</v></c>
+      <c r="B15" t="s" s="1"><v>54</v></c>
+      <c r="C15" t="s" s="1"><v>毛利率波动小于5个百分点</v></c>
+      <c r="D15" s="5"/>
+      <c r="E15" t="s" s="1"><v>是/否</v></c>
+      <c r="F15" t="s" s="1"><v>大幅波动需分析原因</v></c>
+    </row>
+    <!-- Row 16: 净利率波动 -->
+    <row r="16">
+      <c r="A16" t="s" s="4"><v>41</v></c>
+      <c r="B16" t="s" s="1"><v>55</v></c>
+      <c r="C16" t="s" s="1"><v>净利率波动小于3个百分点</v></c>
+      <c r="D16" s="5"/>
+      <c r="E16" t="s" s="1"><v>是/否</v></c>
+      <c r="F16" t="s" s="1"><v>大幅波动需分析原因</v></c>
+    </row>
+    <!-- Row 17: ROE波动 -->
+    <row r="17">
+      <c r="A17" t="s" s="4"><v>41</v></c>
+      <c r="B17" t="s" s="1"><v>56</v></c>
+      <c r="C17" t="s" s="1"><v>ROE波动小于5个百分点</v></c>
+      <c r="D17" s="5"/>
+      <c r="E17" t="s" s="1"><v>是/否</v></c>
+      <c r="F17" t="s" s="1"><v>持续下降需关注盈利能力</v></c>
+    </row>
+    <!-- Row 18: 利息保障倍数 -->
+    <row r="18">
+      <c r="A18" t="s" s="4"><v>41</v></c>
+      <c r="B18" t="s" s="1"><v>57</v></c>
+      <c r="C18" t="s" s="1"><v>利息保障倍数大于3倍</v></c>
+      <c r="D18" s="5"/>
+      <c r="E18" t="s" s="1"><v>是/否</v></c>
+      <c r="F18" t="s" s="1"><v>低于1倍可能面临偿债危机</v></c>
+    </row>
+    <!-- Row 19: 资产负债率 -->
+    <row r="19">
+      <c r="A19" t="s" s="4"><v>41</v></c>
+      <c r="B19" t="s" s="1"><v>58</v></c>
+      <c r="C19" t="s" s="1"><v>资产负债率低于70%</v></c>
+      <c r="D19" s="5"/>
+      <c r="E19" t="s" s="1"><v>是/否</v></c>
+      <c r="F19" t="s" s="1"><v>高负债率增加财务风险</v></c>
+    </row>
+    <!-- Row 20: 流动比率 -->
+    <row r="20">
+      <c r="A20" t="s" s="4"><v>41</v></c>
+      <c r="B20" t="s" s="1"><v>59</v></c>
+      <c r="C20" t="s" s="1"><v>流动比率大于1.5倍</v></c>
+      <c r="D20" s="5"/>
+      <c r="E20" t="s" s="1"><v>是/否</v></c>
+      <c r="F20" t="s" s="1"><v>低于1倍短期偿债压力较大</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

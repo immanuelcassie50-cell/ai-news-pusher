@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="7" topLeftCell="A8" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>30项自检 · 单次填写（面谈后当天用30分钟完成）</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>请填本次面谈的员工信息，然后给 30 个检查项打分（0-4分）。维度小计和总分自动计算。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="22" customHeight="1">
+  <c r="A4" s="14" t="inlineStr"><is><t>员工姓名</t></is></c>
+  <c r="B4" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D4" s="14" t="inlineStr"><is><t>面谈日期</t></is></c>
+  <c r="E4" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="G4" s="14" t="inlineStr"><is><t>面谈类型</t></is></c>
+  <c r="H4" s="13" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>员工岗位</t></is></c>
+  <c r="B5" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D5" s="14" t="inlineStr"><is><t>面谈时长(分钟)</t></is></c>
+  <c r="E5" s="13" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="0"/>
+</row>
+<row r="7" ht="24" customHeight="1">
+  <c r="A7" s="14" t="inlineStr"><is><t>检查项编号</t></is></c>
+  <c r="B7" s="14" t="inlineStr"><is><t>检查项内容</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>本次得分（0-4）</t></is></c>
+  <c r="D7" s="14" t="inlineStr"><is><t>上次得分</t></is></c>
+  <c r="E7" s="14" t="inlineStr"><is><t>进步 / 退步</t></is></c>
+</row>
+<row r="8" ht="22" customHeight="1">
+  <c r="A8" s="14" t="inlineStr"><is><t>A1</t></is></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>【A1-1】在面谈前，我已经准备好要讨论的具体事实（不是&quot;印象&quot;）</t></is></c>
+  <c r="C8" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D8" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E8" s="19"><f>IF(C8="","",C8-D8)</f><v></v></c>
+</row>
+<row r="9" ht="22" customHeight="1">
+  <c r="A9" s="14" t="inlineStr"><is><t>A1</t></is></c>
+  <c r="B9" s="13" t="inlineStr"><is><t>【A1-2】开场时我邀请员工先说，而不是我先讲</t></is></c>
+  <c r="C9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D9" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E9" s="19"><f>IF(C9="","",C9-D9)</f><v></v></c>
+</row>
+<row r="10" ht="22" customHeight="1">
+  <c r="A10" s="14" t="inlineStr"><is><t>A1</t></is></c>
+  <c r="B10" s="13" t="inlineStr"><is><t>【A1-3】讨论的事实有具体的时间、情境、行为</t></is></c>
+  <c r="C10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D10" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E10" s="19"><f>IF(C10="","",C10-D10)</f><v></v></c>
+</row>
+<row r="11" ht="22" customHeight="1">
+  <c r="A11" s="14" t="inlineStr"><is><t>A1</t></is></c>
+  <c r="B11" s="13" t="inlineStr"><is><t>【A1-4】我没有在第一步就给出评价性判断</t></is></c>
+  <c r="C11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E11" s="19"><f>IF(C11="","",C11-D11)</f><v></v></c>
+</row>
+<row r="12" ht="22" customHeight="1">
+  <c r="A12" s="14" t="inlineStr"><is><t>A2</t></is></c>
+  <c r="B12" s="13" t="inlineStr"><is><t>【A2-1】我至少问了一个&quot;探寻归因&quot;的问题</t></is></c>
+  <c r="C12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E12" s="19"><f>IF(C12="","",C12-D12)</f><v></v></c>
+</row>
+<row r="13" ht="22" customHeight="1">
+  <c r="A13" s="14" t="inlineStr"><is><t>A2</t></is></c>
+  <c r="B13" s="13" t="inlineStr"><is><t>【A2-2】我等待员工的回答，没有抢答</t></is></c>
+  <c r="C13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E13" s="19"><f>IF(C13="","",C13-D13)</f><v></v></c>
+</row>
+<row r="14" ht="22" customHeight="1">
+  <c r="A14" s="14" t="inlineStr"><is><t>A2</t></is></c>
+  <c r="B14" s="13" t="inlineStr"><is><t>【A2-3】我探寻了员工的人类贡献（不只问&quot;结果是什么&quot;）</t></is></c>
+  <c r="C14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E14" s="19"><f>IF(C14="","",C14-D14)</f><v></v></c>
+</row>
+<row r="15" ht="22" customHeight="1">
+  <c r="A15" s="14" t="inlineStr"><is><t>A2</t></is></c>
+  <c r="B15" s="13" t="inlineStr"><is><t>【A2-4】在AI时代面谈中，我关注了AI的参与程度</t></is></c>
+  <c r="C15" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D15" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E15" s="19"><f>IF(C15="","",C15-D15)</f><v></v></c>
+</row>
+<row r="16" ht="22" customHeight="1">
+  <c r="A16" s="14" t="inlineStr"><is><t>B1</t></is></c>
+  <c r="B16" s="13" t="inlineStr"><is><t>【B1-1】我直接说出了问题（没有用暗示代替直说）</t></is></c>
+  <c r="C16" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D16" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E16" s="19"><f>IF(C16="","",C16-D16)</f><v></v></c>
+</row>
+<row r="17" ht="22" customHeight="1">
+  <c r="A17" s="14" t="inlineStr"><is><t>B1</t></is></c>
+  <c r="B17" s="13" t="inlineStr"><is><t>【B1-2】我面对面说出问题（不通过传言）</t></is></c>
+  <c r="C17" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D17" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E17" s="19"><f>IF(C17="","",C17-D17)</f><v></v></c>
+</row>
+<row r="18" ht="22" customHeight="1">
+  <c r="A18" s="14" t="inlineStr"><is><t>B1</t></is></c>
+  <c r="B18" s="13" t="inlineStr"><is><t>【B1-3】我的反馈有勇气，但不攻击人</t></is></c>
+  <c r="C18" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D18" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E18" s="19"><f>IF(C18="","",C18-D18)</f><v></v></c>
+</row>
+<row r="19" ht="22" customHeight="1">
+  <c r="A19" s="14" t="inlineStr"><is><t>B1</t></is></c>
+  <c r="B19" s="13" t="inlineStr"><is><t>【B1-4】在AI时代，我&quot;正面&quot;之前完成了归因探寻</t></is></c>
+  <c r="C19" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D19" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E19" s="19"><f>IF(C19="","",C19-D19)</f><v></v></c>
+</row>
+<row r="20" ht="22" customHeight="1">
+  <c r="A20" s="14" t="inlineStr"><is><t>B2</t></is></c>
+  <c r="B20" s="13" t="inlineStr"><is><t>【B2-1】我同时看到了员工做到的和没做到的</t></is></c>
+  <c r="C20" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D20" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E20" s="19"><f>IF(C20="","",C20-D20)</f><v></v></c>
+</row>
+<row r="21" ht="22" customHeight="1">
+  <c r="A21" s="14" t="inlineStr"><is><t>B2</t></is></c>
+  <c r="B21" s="13" t="inlineStr"><is><t>【B2-2】我没有用单一事件给员工下定论</t></is></c>
+  <c r="C21" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D21" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E21" s="19"><f>IF(C21="","",C21-D21)</f><v></v></c>
+</row>
+<row r="22" ht="22" customHeight="1">
+  <c r="A22" s="14" t="inlineStr"><is><t>B2</t></is></c>
+  <c r="B22" s="13" t="inlineStr"><is><t>【B2-3】我考虑了外部因素（包括AI工具的影响）</t></is></c>
+  <c r="C22" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D22" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E22" s="19"><f>IF(C22="","",C22-D22)</f><v></v></c>
+</row>
+<row r="23" ht="22" customHeight="1">
+  <c r="A23" s="14" t="inlineStr"><is><t>B2</t></is></c>
+  <c r="B23" s="13" t="inlineStr"><is><t>【B2-4】我没有因为有AI就忽视员工真实的人类贡献</t></is></c>
+  <c r="C23" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D23" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E23" s="19"><f>IF(C23="","",C23-D23)</f><v></v></c>
+</row>
+<row r="24" ht="22" customHeight="1">
+  <c r="A24" s="14" t="inlineStr"><is><t>C1</t></is></c>
+  <c r="B24" s="13" t="inlineStr"><is><t>【C1-1】我先认可了&quot;用AI是正当的&quot;，再回到&quot;判断贡献&quot;</t></is></c>
+  <c r="C24" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D24" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E24" s="19"><f>IF(C24="","",C24-D24)</f><v></v></c>
+</row>
+<row r="25" ht="22" customHeight="1">
+  <c r="A25" s="14" t="inlineStr"><is><t>C1</t></is></c>
+  <c r="B25" s="13" t="inlineStr"><is><t>【C1-2】我没有立即反驳员工的&quot;AI做的&quot;陈述</t></is></c>
+  <c r="C25" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D25" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E25" s="19"><f>IF(C25="","",C25-D25)</f><v></v></c>
+</row>
+<row r="26" ht="22" customHeight="1">
+  <c r="A26" s="14" t="inlineStr"><is><t>C1</t></is></c>
+  <c r="B26" s="13" t="inlineStr"><is><t>【C1-3】我让员工具体化&quot;判断贡献&quot;</t></is></c>
+  <c r="C26" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D26" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E26" s="19"><f>IF(C26="","",C26-D26)</f><v></v></c>
+</row>
+<row r="27" ht="22" customHeight="1">
+  <c r="A27" s="14" t="inlineStr"><is><t>C2</t></is></c>
+  <c r="B27" s="13" t="inlineStr"><is><t>【C2-1】我承认了困惑的真实（不是员工&quot;心态不好&quot;）</t></is></c>
+  <c r="C27" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D27" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E27" s="19"><f>IF(C27="","",C27-D27)</f><v></v></c>
+</row>
+<row r="28" ht="22" customHeight="1">
+  <c r="A28" s="14" t="inlineStr"><is><t>C2</t></is></c>
+  <c r="B28" s="13" t="inlineStr"><is><t>【C2-2】我帮助员工识别当前工作里仍属于他的人类贡献</t></is></c>
+  <c r="C28" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D28" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E28" s="19"><f>IF(C28="","",C28-D28)</f><v></v></c>
+</row>
+<row r="29" ht="22" customHeight="1">
+  <c r="A29" s="14" t="inlineStr"><is><t>C2</t></is></c>
+  <c r="B29" s="13" t="inlineStr"><is><t>【C2-3】我引导到了双轨发展讨论</t></is></c>
+  <c r="C29" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D29" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E29" s="19"><f>IF(C29="","",C29-D29)</f><v></v></c>
+</row>
+<row r="30" ht="22" customHeight="1">
+  <c r="A30" s="14" t="inlineStr"><is><t>C3</t></is></c>
+  <c r="B30" s="13" t="inlineStr"><is><t>【C3-1】我没有直接指控&quot;你用AI糊弄了我&quot;</t></is></c>
+  <c r="C30" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D30" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E30" s="19"><f>IF(C30="","",C30-D30)</f><v></v></c>
+</row>
+<row r="31" ht="22" customHeight="1">
+  <c r="A31" s="14" t="inlineStr"><is><t>C3</t></is></c>
+  <c r="B31" s="13" t="inlineStr"><is><t>【C3-2】我从具体能力表现出发（不是从产出指控）</t></is></c>
+  <c r="C31" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D31" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E31" s="19"><f>IF(C31="","",C31-D31)</f><v></v></c>
+</row>
+<row r="32" ht="22" customHeight="1">
+  <c r="A32" s="14" t="inlineStr"><is><t>D1</t></is></c>
+  <c r="B32" s="13" t="inlineStr"><is><t>【D1-1】我用了&quot;启动问题&quot;开场（三个之一）</t></is></c>
+  <c r="C32" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D32" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E32" s="19"><f>IF(C32="","",C32-D32)</f><v></v></c>
+</row>
+<row r="33" ht="22" customHeight="1">
+  <c r="A33" s="14" t="inlineStr"><is><t>D1</t></is></c>
+  <c r="B33" s="13" t="inlineStr"><is><t>【D1-2】我先听了员工的想法，再补充我的分析</t></is></c>
+  <c r="C33" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D33" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E33" s="19"><f>IF(C33="","",C33-D33)</f><v></v></c>
+</row>
+<row r="34" ht="22" customHeight="1">
+  <c r="A34" s="14" t="inlineStr"><is><t>D1</t></is></c>
+  <c r="B34" s="13" t="inlineStr"><is><t>【D1-3】发展对话有具体的方向感（不是行动清单）</t></is></c>
+  <c r="C34" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D34" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E34" s="19"><f>IF(C34="","",C34-D34)</f><v></v></c>
+</row>
+<row r="35" ht="22" customHeight="1">
+  <c r="A35" s="14" t="inlineStr"><is><t>D2</t></is></c>
+  <c r="B35" s="13" t="inlineStr"><is><t>【D2-1】我评估了员工的AI协作力状态</t></is></c>
+  <c r="C35" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D35" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E35" s="19"><f>IF(C35="","",C35-D35)</f><v></v></c>
+</row>
+<row r="36" ht="22" customHeight="1">
+  <c r="A36" s="14" t="inlineStr"><is><t>D2</t></is></c>
+  <c r="B36" s="13" t="inlineStr"><is><t>【D2-2】我评估了员工的人类深度状态</t></is></c>
+  <c r="C36" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D36" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E36" s="19"><f>IF(C36="","",C36-D36)</f><v></v></c>
+</row>
+<row r="37" ht="22" customHeight="1">
+  <c r="A37" s="14" t="inlineStr"><is><t>D2</t></is></c>
+  <c r="B37" s="13" t="inlineStr"><is><t>【D2-3】我识别了更紧迫的发展轨道</t></is></c>
+  <c r="C37" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="D37" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E37" s="19"><f>IF(C37="","",C37-D37)</f><v></v></c>
+</row>
+<row r="39" ht="22" customHeight="1">
+  <c r="A39" s="4" t="inlineStr"><is><t>维度小计（公式自动）</t></is></c>
+</row>
+<row r="40" ht="22" customHeight="1">
+  <c r="A40" s="14" t="inlineStr"><is><t>维度</t></is></c>
+  <c r="B40" s="14" t="inlineStr"><is><t>满分</t></is></c>
+  <c r="C40" s="14" t="inlineStr"><is><t>实际得分</t></is></c>
+  <c r="D40" s="14" t="inlineStr"><is><t>百分比</t></is></c>
+  <c r="E40" s="14" t="inlineStr"><is><t>评价</t></is></c>
+</row>
+<row r="41">
+  <c r="A41" s="14" t="inlineStr"><is><t>A 四步面谈法</t></is></c>
+  <c r="B41" s="14" t="inlineStr"><is><t>32</t></is></c>
+  <c r="C41" s="19"><f>SUM(C8:C15)</f><v></v></c>
+  <c r="D41" s="19"><f>C41/32</f><v></v></c>
+  <c r="E41" s="19"><f>IF(D41&gt;=0.85,"优秀",IF(D41&gt;=0.7,"合格",IF(D41&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+</row>
+<row r="42">
+  <c r="A42" s="14" t="inlineStr"><is><t>B 正面·全面·情面·事面</t></is></c>
+  <c r="B42" s="14" t="inlineStr"><is><t>32</t></is></c>
+  <c r="C42" s="19"><f>SUM(C16:C23)</f><v></v></c>
+  <c r="D42" s="19"><f>C42/32</f><v></v></c>
+  <c r="E42" s="19"><f>IF(D42&gt;=0.85,"优秀",IF(D42&gt;=0.7,"合格",IF(D42&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+</row>
+<row r="43">
+  <c r="A43" s="14" t="inlineStr"><is><t>C AI时代场景处理</t></is></c>
+  <c r="B43" s="14" t="inlineStr"><is><t>32</t></is></c>
+  <c r="C43" s="19"><f>SUM(C24:C31)</f><v></v></c>
+  <c r="D43" s="19"><f>C43/32</f><v></v></c>
+  <c r="E43" s="19"><f>IF(D43&gt;=0.85,"优秀",IF(D43&gt;=0.7,"合格",IF(D43&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+</row>
+<row r="44">
+  <c r="A44" s="14" t="inlineStr"><is><t>D 发展对话与双轨</t></is></c>
+  <c r="B44" s="14" t="inlineStr"><is><t>24</t></is></c>
+  <c r="C44" s="19"><f>SUM(C32:C37)</f><v></v></c>
+  <c r="D44" s="19"><f>C44/24</f><v></v></c>
+  <c r="E44" s="19"><f>IF(D44&gt;=0.85,"优秀",IF(D44&gt;=0.7,"合格",IF(D44&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+</row>
+<row r="45">
+  <c r="A45" s="4" t="inlineStr"><is><t>总分</t></is></c>
+  <c r="B45" s="14" t="inlineStr"><is><t>120</t></is></c>
+  <c r="C45" s="19"><f>SUM(C8:C37)</f><v></v></c>
+  <c r="D45" s="19"><f>C45/120</f><v></v></c>
+  <c r="E45" s="19"><f>IF(D45&gt;=0.85,"优秀面谈",IF(D45&gt;=0.67,"基本合格",IF(D45&gt;=0.5,"明显弱项","重大问题")))</f><v></v></c>
+</row>
+<row r="46">
+  <c r="A46" s="0"/>
+</row>
+<row r="47" ht="22" customHeight="1">
+  <c r="A47" s="4" t="inlineStr"><is><t>使用提示</t></is></c>
+</row>
+<row r="48">
+  <c r="A48" s="13" t="inlineStr"><is><t>① C 列（本次得分）和 D 列（上次得分）填 0-4 整数，E 列自动算进步/退步</t></is></c>
+</row>
+<row r="49">
+  <c r="A49" s="13" t="inlineStr"><is><t>② 维度小计自动求和；百分比 = 实际得分 / 满分</t></is></c>
+</row>
+<row r="50">
+  <c r="A50" s="13" t="inlineStr"><is><t>③ 评价规则：≥85% 优秀 / ≥67% 合格 / ≥50% 待改善 / &lt;50% 重大问题</t></is></c>
+</row>
+<row r="51">
+  <c r="A51" s="13" t="inlineStr"><is><t>④ D 列&quot;上次得分&quot;非必填——只在你想做进步追踪时填</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

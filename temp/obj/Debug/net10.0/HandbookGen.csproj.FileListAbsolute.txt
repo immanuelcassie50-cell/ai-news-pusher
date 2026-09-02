@@ -1,0 +1,6 @@
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.csproj.AssemblyReference.cache
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.AssemblyInfoInputs.cache
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.AssemblyInfo.cs
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.csproj.CoreCompileInputs.cache
+D:\CC\temp\obj\Debug\net10.0\HandbookGen.sourcelink.json

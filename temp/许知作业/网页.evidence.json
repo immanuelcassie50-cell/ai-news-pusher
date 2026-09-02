@@ -1,0 +1,225 @@
+{
+  "file": "D:\\2026年课程\\顺造科技\\AI\\专家领军&后备第三次作业\\许知作业\\许知作业\\AI落地课题操作手册 - 原材料行情-铜铝碳酸锂日数据汇总分析 _ 顺造科技.html",
+  "char_count_no_whitespace": 4440,
+  "ai_flavor_word_hits": [
+    {
+      "sentence_index": 29,
+      "sentence": "知识沉淀方式",
+      "matched_words": [
+        "沉淀"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 36,
+      "sentence": "无法形成知识沉淀，人员变动后分析能力无法传承",
+      "matched_words": [
+        "沉淀"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 42,
+      "sentence": "AI识别非结构化数据，转化为标准格式",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 56,
+      "sentence": "├─ AI批量扫描 → 数据结构化提取",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 111,
+      "sentence": "AI数据 结构化",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 135,
+      "sentence": "AI数据结构化提取",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 146,
+      "sentence": "调用提示词3+4，AI生成结构化简报（概览/预警/趋势/建议/风险）",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 170,
+      "sentence": "提示词 1 — 数据结构化提取",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 171,
+      "sentence": "你是 有色金属价格数据结构化专家",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 214,
+      "sentence": "3 提示词1：数据结构化 必选",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 230,
+      "sentence": "AI数据结构化 — 粘贴提示词1，AI返回标准Markdown表格 ✓ 3品种齐全 ✓ 日期正确",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 234,
+      "sentence": "AI趋势分析 — 使用提示词3+4，AI生成结构化简报",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 248,
+      "sentence": "09:05-09:07 步骤3 AI数据结构化提取 2min",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    },
+    {
+      "sentence_index": 299,
+      "sentence": "数据录入 手动逐行填写 AI结构化+一键粘贴 效率提升80%",
+      "matched_words": [
+        "结构化"
+      ],
+      "multi_word_flag": false
+    }
+  ],
+  "section_symmetry": {
+    "section_count": 0,
+    "note": "小节数不足3个，不做对称性统计（样本太少，统计没有意义）"
+  },
+  "numbers_without_source_hedge": [
+    {
+      "matched_number": "60%",
+      "context": "p; Background Pain Points              ≥60%   时间节省效率   25-40min → 10-15min       ≈0"
+    },
+    {
+      "matched_number": "40分钟",
+      "context": " ⚡   现状痛点分析      每日人工采集铜、铝、碳酸锂价格数据，耗时25-40分钟/人   手动复制粘贴极易出错——小数点错位导致分析偏差   分析高度依赖个人经"
+    },
+    {
+      "matched_number": "0.83%",
+      "context": "Standards              铜 Cu   72,550   +0.83% ▲   1#电解铜现货价 · 日更新 核心采购品类，价格敏感度最高      "
+    },
+    {
+      "matched_number": "0.44%",
+      "context": "新 核心采购品类，价格敏感度最高       铝 Al   20,380   -0.44% ▼   A00铝锭现货价 · 日更新 大宗采购品类，价格波动影响大      "
+    },
+    {
+      "matched_number": "1.50%",
+      "context": "品类，价格波动影响大       碳酸锂 Li₂CO₃   98,500   -1.50% ▼   电池级碳酸锂 · 日更新 新能源核心材料，价格波动剧烈        "
+    },
+    {
+      "matched_number": "0.83%",
+      "context": " 数值，2位小数 72,550.00 合理区间校验   涨跌幅 百分比，2位 +0.83% ≤10%为正常波动   数据来源 固定值 SMM 不可更改          "
+    },
+    {
+      "matched_number": "10%",
+      "context": "数 72,550.00 合理区间校验   涨跌幅 百分比，2位 +0.83% ≤10%为正常波动   数据来源 固定值 SMM 不可更改               "
+    },
+    {
+      "matched_number": "3%",
+      "context": "        品种 正常波动 触发预警 合理区间(元/吨)       铜 ±3% ±5% 50,000-90,000   铝 ±2% ±4% 15,000-25"
+    },
+    {
+      "matched_number": "5%",
+      "context": "    品种 正常波动 触发预警 合理区间(元/吨)       铜 ±3% ±5% 50,000-90,000   铝 ±2% ±4% 15,000-25,000"
+    },
+    {
+      "matched_number": "2%",
+      "context": "元/吨)       铜 ±3% ±5% 50,000-90,000   铝 ±2% ±4% 15,000-25,000   碳酸锂 ±5% ±8% 50,000-"
+    },
+    {
+      "matched_number": "4%",
+      "context": "       铜 ±3% ±5% 50,000-90,000   铝 ±2% ±4% 15,000-25,000   碳酸锂 ±5% ±8% 50,000-300,"
+    },
+    {
+      "matched_number": "5%",
+      "context": "90,000   铝 ±2% ±4% 15,000-25,000   碳酸锂 ±5% ±8% 50,000-300,000         ⚡   连续3个交易日数"
+    },
+    {
+      "matched_number": "8%",
+      "context": "00   铝 ±2% ±4% 15,000-25,000   碳酸锂 ±5% ±8% 50,000-300,000         ⚡   连续3个交易日数据缺失触"
+    },
+    {
+      "matched_number": "3%",
+      "context": "分化，需关注宏观经济影响。   二、异动预警 暂无触发预警阈值的品种。铜价接近±3%波动上限，需持续关注。   三、趋势研判 铜：连续3日上涨，累计涨幅2.1%，短"
+    },
+    {
+      "matched_number": "2.1%",
+      "context": "价接近±3%波动上限，需持续关注。   三、趋势研判 铜：连续3日上涨，累计涨幅2.1%，短期偏强运行，关注73,000阻力位... 铝：震荡整理，周均价环比持平，下游"
+    },
+    {
+      "matched_number": "0.00%",
+      "context": "号分隔   4. 涨跌额：涨用+跌用-，持平写0.00   5. 涨跌幅格式：+0.00% 或 -0.00%   6. 日期格式：YYYY-MM-DD   7. 缺少品种"
+    },
+    {
+      "matched_number": "0.00%",
+      "context": "涨跌额：涨用+跌用-，持平写0.00   5. 涨跌幅格式：+0.00% 或 -0.00%   6. 日期格式：YYYY-MM-DD   7. 缺少品种标注\"数据缺失\" "
+    },
+    {
+      "matched_number": "8分钟",
+      "context": "   人工审核修正 — 修正2处（铜价阻力位判断、碳酸锂采购建议），总审核时间约8分钟            顺造科技 · 供应链 · 采购部   AI落地课题操作手"
+    },
+    {
+      "matched_number": "25分钟",
+      "context": "0-09:25 步骤6 报告分发与存档 5min         💡   全程约25分钟，确保供应链管理层在上午10:00前收到行情简报              👥 "
+    },
+    {
+      "matched_number": "3分钟",
+      "context": "中补充近期行业动态背景      Q: AI响应缓慢或超时？   A: 等待2-3分钟重试，或准备备用AI平台（如WorkBuddy）                "
+    },
+    {
+      "matched_number": "40分钟",
+      "context": "度 优化前（纯人工） 优化后（AI辅助） 提升幅度       单日耗时 25-40分钟/人 10-15分钟/人 ≥60%   数据录入 手动逐行填写 AI结构化+一键"
+    },
+    {
+      "matched_number": "15分钟",
+      "context": " 优化后（AI辅助） 提升幅度       单日耗时 25-40分钟/人 10-15分钟/人 ≥60%   数据录入 手动逐行填写 AI结构化+一键粘贴 效率提升80%"
+    },
+    {
+      "matched_number": "60%",
+      "context": "助） 提升幅度       单日耗时 25-40分钟/人 10-15分钟/人 ≥60%   数据录入 手动逐行填写 AI结构化+一键粘贴 效率提升80%   数据清洗"
+    },
+    {
+      "matched_number": "80%",
+      "context": "5分钟/人 ≥60%   数据录入 手动逐行填写 AI结构化+一键粘贴 效率提升80%   数据清洗 人工逐项检查 AI自动检测异常 覆盖率100%   趋势分析 凭"
+    },
+    {
+      "matched_number": "100%",
+      "context": "+一键粘贴 效率提升80%   数据清洗 人工逐项检查 AI自动检测异常 覆盖率100%   趋势分析 凭个人经验撰写 AI初稿+人工修正 质量标准化   错误率 每月"
+    }
+  ],
+  "filename_candidates": {}
+}

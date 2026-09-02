@@ -1,0 +1,15 @@
+# Corporate Geometry
+
+## Design Philosophy
+
+**Space as Authority**: In corporate visual communication, space is not emptiness—it is the breathing room that commands attention. Negative space here functions like the pause in a deliberate speech: what is not said amplifies what remains. The composition leverages vast warm-white fields, allowing a single crimson numeral to anchor the entire visual hierarchy. Every millimeter of空白 is purposefully allocated, the product of countless iterations toward effortless clarity.
+
+**Form Through Restraint**: Geometric precision defines the language. Horizontal lines slice through the composition with surgical accuracy—thick red bars, thin dark rules—that create visual rhythm without decoration. Circles and rectangles appear not as embellishment but as structural necessity. The angular red numeral "04" stands monolithic, its bold weight balanced against clean geometric accents. This is design that whispers power through reduction, each element earning its place through meticulous positioning.
+
+**Color as Hierarchy**: The palette speaks in whispers until the red breaks silence. Warm white (#F6F3EF) establishes calm professionalism; dark gray (#1A1A1A) conveys authority without aggression; medium gray (#4A4A4A) supports without competing. Then crimson (#B81025) detonates—the section number not merely labeled but announced, a bold typographic gesture that declares importance. Color relationships are calibrated with the precision of master craftspeople who understand that chromatic tension creates visual energy.
+
+**Typography as Architecture**: Text here is structure, not decoration. The section title "高频场景AI改造（二）" rises in dark gray, its weight and scale calculated to anchor meaning. Below it, the subtitle "绩效面谈、跨部门协调、会议纪要" whispers in medium gray, providing context without competing for attention. Typography is positioned as visual architecture—left-aligned geometry, generous leading, proportions that guide the eye in a deliberate path. Every kerning decision reflects painstaking refinement.
+
+**Composition as Narrative**: The layout tells a story of sequential progress. The bold "04" occupies the visual stage like a protagonist claiming presence, while geometric accents—horizontal bars, subtle lines—create rhythm and movement across the warm white canvas. Asymmetric balance replaces symmetry; tension replaces predictability. The result feels like a magazine cover from a premium publication—authoritative yet accessible, designed with the obsessive attention of someone who has spent decades perfecting the art of visual communication.
+
+**Mastery Through Elimination**: True expertise reveals itself through what is removed. No gradients obscure. No shadows distract. No decorative elements clutter. The design achieves its impact through radical reduction—each remaining element so precisely considered and positioned that adding or removing anything would diminish the whole. This is not simplicity; this is the culmination of deep expertise applied with painstaking care to achieve visual perfection.

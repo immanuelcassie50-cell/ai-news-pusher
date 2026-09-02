@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>总结与行动</title>
+<style>
+html, body { margin:0; padding:0; width:100%; height:100%; overflow:hidden; display:flex; justify-content:center; align-items:center; background:#000; }
+.slide-content { width:960px; height:540px; position:relative; transform-origin:center center; }
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const scaleX = window.innerWidth / 960;
+  const scaleY = window.innerHeight / 540;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = '960px';
+  slide.style.height = '540px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653;">
+  <!-- Decorative circles -->
+  <svg style="position:absolute; top:0; right:0;" width="300" height="300" aria-hidden="true">
+    <circle cx="250" cy="50" r="150" fill="#2a9d8f" opacity="0.2"/>
+    <circle cx="300" cy="100" r="100" fill="#e9c46a" opacity="0.15"/>
+  </svg>
+
+  <!-- Title area -->
+  <div style="position:absolute; top:60px; left:80px;">
+    <h2 style="margin:0; font-family:'Times New Roman', serif; font-size:40px; font-weight:700; color:#ffffff;">总结与行动</h2>
+    <p style="margin:8px 0 0 0; font-family:'Times New Roman', serif; font-size:18px; color:#e9c46a;">Summary & Action Items</p>
+  </div>
+
+  <svg width="800" height="2" style="position:absolute; top:140px; left:80px;" aria-hidden="true">
+    <rect width="800" height="2" fill="#ffffff" opacity="0.1"/>
+  </svg>
+
+  <!-- Three takeaway cards -->
+  <div style="position:absolute; top:180px; left:80px; width:240px;">
+    <div style="width:56px; height:56px; background:#2a9d8f; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+      <span style="font-family:'Times New Roman', serif; font-size:24px; font-weight:700; color:#ffffff;">1</span>
+    </div>
+    <p style="margin:0 0 8px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#e9c46a;">理解动机机制</p>
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#ffffff; opacity:0.8; line-height:1.6;">
+      动机由需求、目标、预期和反馈共同驱动，内外动机相互作用影响学习效果
+    </p>
+  </div>
+
+  <div style="position:absolute; top:180px; left:360px; width:240px;">
+    <div style="width:56px; height:56px; background:#e9c46a; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+      <span style="font-family:'Times New Roman', serif; font-size:24px; font-weight:700; color:#264653;">2</span>
+    </div>
+    <p style="margin:0 0 8px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#e9c46a;">重视心理安全感</p>
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#ffffff; opacity:0.8; line-height:1.6;">
+      心理安全感是学习动机的催化剂，让学习者敢于冒险、敢于表达、敢于创新
+    </p>
+  </div>
+
+  <div style="position:absolute; top:180px; left:640px; width:240px;">
+    <div style="width:56px; height:56px; background:#e76f51; border-radius:12px; display:flex; align-items:center; justify-content:center; margin-bottom:16px;">
+      <span style="font-family:'Times New Roman', serif; font-size:24px; font-weight:700; color:#ffffff;">3</span>
+    </div>
+    <p style="margin:0 0 8px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#e76f51;">实践应用</p>
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:13px; color:#ffffff; opacity:0.8; line-height:1.6;">
+      在学习中主动创造心理安全环境，将外在动机转化为持久的内在动力
+    </p>
+  </div>
+
+  <!-- Call to action box -->
+  <div style="position:absolute; bottom:80px; left:80px; right:80px; background:rgba(255,255,255,0.1); border-radius:12px; padding:24px 32px; border-left:4px solid #e9c46a;">
+    <p style="margin:0 0 8px 0; font-family:'Times New Roman', serif; font-size:16px; font-weight:600; color:#e9c46a;">下一步行动</p>
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:14px; color:#ffffff; opacity:0.9; line-height:1.6;">
+      思考：在你的学习或工作环境中，如何提升心理安全感？哪些做法可以激发更持久的内在学习动机？
+    </p>
+  </div>
+
+  <!-- Bottom decorative -->
+  <div style="position:absolute; bottom:40px; right:80px;">
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:14px; color:#ffffff; opacity:0.5;">教学文档 01</p>
+  </div>
+
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36">
+    <circle cx="18" cy="18" r="18" fill="#2a9d8f"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-family:"Times New Roman" font-size="14" font-weight="600" fill="#ffffff">8</text>
+  </svg>
+</div>
+</body>
+</html>

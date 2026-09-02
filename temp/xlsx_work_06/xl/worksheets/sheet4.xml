@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>协作成熟</v></c>
+      <c r="B2" t="s" s="0"><v>您的跨职能协作能力成熟，能够有效推动跨部门合作。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>沟通待提升</v></c>
+      <c r="B3" t="s" s="0"><v>您的沟通适配能力需要加强，注意用对方语言表达。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>标准待对齐</v></c>
+      <c r="B4" t="s" s="0"><v>您需要加强跨部门标准对齐意识。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>时机待把握</v></c>
+      <c r="B5" t="s" s="0"><v>您需要更好地判断跨职能协作的介入时机。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>冲突处理弱</v></c>
+      <c r="B6" t="s" s="0"><v>您需要提升冲突处理和推动共识的能力。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

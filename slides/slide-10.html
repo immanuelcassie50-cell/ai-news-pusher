@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>断裂带详解-动态层</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#F6F3EF; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Top accent bar -->
+<svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+  <rect width="960" height="6" fill="#B81025"/>
+</svg>
+
+<!-- Page title -->
+<p style="position:absolute; top:30px; left:50px; margin:0; font-size:32px; font-weight:700; color:#1A1A1A; letter-spacing:2px;">断裂带详解-动态层</p>
+
+<!-- Subtitle -->
+<p style="position:absolute; top:75px; left:50px; margin:0; font-size:16px; font-weight:400; color:#4A4748;">断裂带随时间和环境变化的动态特性与管理策略</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:105px; left:50px;" width="120" height="3" aria-hidden="true">
+  <rect width="120" height="3" fill="#B81025"/>
+</svg>
+
+<!-- Left: Dynamic fault zone characteristics -->
+<svg style="position:absolute; top:130px; left:50px;" width="420" height="360" viewBox="0 0 420 360">
+  <!-- Main card -->
+  <rect width="420" height="360" rx="8" fill="#FFFFFF" stroke="#B81025" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect width="420" height="50" rx="8" fill="#B81025"/>
+  <rect y="42" width="420" height="8" fill="#B81025"/>
+  <text x="210" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">动态断裂带的三大特性</text>
+
+  <!-- Characteristic 1: Time-varying -->
+  <rect x="20" y="65" width="180" height="120" rx="6" fill="#F6F3EF"/>
+  <circle cx="40" cy="90" r="16" fill="#B81025"/>
+  <text x="40" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="65" y="88" font-size="12" font-weight="700" fill="#1A1A1A">时变性</text>
+  <text x="30" y="115" font-size="10" font-weight="400" fill="#4A4748">断裂带位置随:</text>
+  <text x="30" y="132" font-size="10" font-weight="400" fill="#4A4748">- AI能力进化而移动</text>
+  <text x="30" y="149" font-size="10" font-weight="400" fill="#4A4748">- 组织成熟度变化</text>
+  <text x="30" y="166" font-size="10" font-weight="400" fill="#4A4748">- 外部环境改变</text>
+
+  <!-- Characteristic 2: Scenario-dependent -->
+  <rect x="220" y="65" width="180" height="120" rx="6" fill="#F6F3EF"/>
+  <circle cx="240" cy="90" r="16" fill="#D4122B"/>
+  <text x="240" y="95" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="265" y="88" font-size="12" font-weight="700" fill="#1A1A1A">场景依赖</text>
+  <text x="230" y="115" font-size="10" font-weight="400" fill="#4A4748">不同业务场景下:</text>
+  <text x="230" y="132" font-size="10" font-weight="400" fill="#4A4748">- 风险等级不同</text>
+  <text x="230" y="149" font-size="10" font-weight="400" fill="#4A4748">- 决策逻辑不同</text>
+  <text x="230" y="166" font-size="10" font-weight="400" fill="#4A4748">- 人机分工不同</text>
+
+  <!-- Characteristic 3: Hidden danger -->
+  <rect x="20" y="200" width="380" height="80" rx="6" fill="#1A1A1A"/>
+  <circle cx="50" cy="240" r="16" fill="#FFFFFF"/>
+  <text x="50" y="245" text-anchor="middle" font-size="14" font-weight="700" fill="#1A1A1A">3</text>
+  <text x="80" y="232" font-size="12" font-weight="700" fill="#FFFFFF">隐蔽性</text>
+  <text x="80" y="252" font-size="10" font-weight="400" fill="#8d99ae">断裂带往往在出问题前不可见</text>
+  <text x="140" y="268" font-size="10" font-weight="700" fill="#B81025">需要主动探测机制</text>
+
+  <!-- Timeline indicator -->
+  <text x="20" y="300" font-size="11" font-weight="700" fill="#1A1A1A">断裂带生命周期</text>
+  <rect x="20" y="315" width="380" height="30" rx="4" fill="#F6F3EF"/>
+  <rect x="20" y="315" width="95" height="30" rx="4" fill="#B81025"/>
+  <text x="67" y="333" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">潜伏期</text>
+  <rect x="115" y="315" width="95" height="30" fill="#D4122B"/>
+  <text x="162" y="333" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">显现期</text>
+  <rect x="210" y="315" width="95" height="30" fill="#B81025" opacity="0.6"/>
+  <text x="257" y="333" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">爆发期</text>
+  <rect x="305" y="315" width="95" height="30" rx="0 4 4 0" fill="#4A4748"/>
+  <text x="352" y="333" text-anchor="middle" font-size="9" font-weight="700" fill="#FFFFFF">修复期</text>
+</svg>
+
+<!-- Right: Dynamic management strategy -->
+<svg style="position:absolute; top:130px; left:490px;" width="420" height="360" viewBox="0 0 420 360">
+  <!-- Main card -->
+  <rect width="420" height="360" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect width="420" height="50" rx="8" fill="#1A1A1A"/>
+  <rect y="42" width="420" height="8" fill="#1A1A1A"/>
+  <text x="210" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">动态层管理策略</text>
+
+  <!-- Strategy 1: Monitor -->
+  <rect x="20" y="65" width="180" height="85" rx="6" fill="#F6F3EF"/>
+  <rect x="20" y="65" width="180" height="30" rx="6" fill="#B81025"/>
+  <rect x="20" y="87" width="180" height="8" fill="#B81025"/>
+  <text x="110" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">监测机制</text>
+  <text x="35" y="115" font-size="10" font-weight="400" fill="#4A4748">建立断裂带预警指标</text>
+  <text x="35" y="132" font-size="10" font-weight="400" fill="#4A4748">定期评估人机协作效果</text>
+
+  <!-- Strategy 2: Adapt -->
+  <rect x="220" y="65" width="180" height="85" rx="6" fill="#F6F3EF"/>
+  <rect x="220" y="65" width="180" height="30" rx="6" fill="#D4122B"/>
+  <rect x="220" y="87" width="180" height="8" fill="#D4122B"/>
+  <text x="310" y="85" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">敏捷调整</text>
+  <text x="235" y="115" font-size="10" font-weight="400" fill="#4A4748">根据监测结果快速迭代</text>
+  <text x="235" y="132" font-size="10" font-weight="400" fill="#4A4748">人机边界动态优化</text>
+
+  <!-- Strategy 3: Learn -->
+  <rect x="20" y="165" width="380" height="85" rx="6" fill="#F6F3EF"/>
+  <rect x="20" y="165" width="380" height="30" rx="6" fill="#4A4748"/>
+  <rect x="20" y="187" width="380" height="8" fill="#4A4748"/>
+  <text x="210" y="185" text-anchor="middle" font-size="13" font-weight="700" fill="#FFFFFF">持续学习</text>
+  <text x="35" y="215" font-size="10" font-weight="400" fill="#4A4748">建立案例库，记录断裂带事件</text>
+  <text x="35" y="232" font-size="10" font-weight="400" fill="#4A4748">组织复盘，推动能力进化</text>
+
+  <!-- Key insight box -->
+  <rect x="20" y="265" width="380" height="80" rx="4" fill="#B81025" opacity="0.1"/>
+  <text x="35" y="285" font-size="11" font-weight="700" fill="#B81025">动态层核心原则</text>
+  <text x="35" y="305" font-size="10" font-weight="400" fill="#1A1A1A">断裂带不是静态的边界，而是需要</text>
+  <text x="35" y="322" font-size="10" font-weight="700" fill="#B81025">持续监测、敏捷响应、主动进化</text>
+  <text x="35" y="339" font-size="10" font-weight="400" fill="#4A4748">的动态系统</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#B81025"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF">10</text>
+</svg>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>高焦虑高行为</v></c>
+      <c r="B2" t="s" s="0"><v>您对知识更新有焦虑感，但也在积极学习。这是健康的成长状态。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>高焦虑低行为</v></c>
+      <c r="B3" t="s" s="0"><v>您对知识更新感到焦虑，但学习行动不足。需要立即行动来缓解焦虑。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>低焦虑高行为</v></c>
+      <c r="B4" t="s" s="0"><v>您积极学习但焦虑感低。这是理想的学习状态。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>低焦虑低行为</v></c>
+      <c r="B5" t="s" s="0"><v>您对知识更新既不焦虑也不积极学习。需要警惕 complacency。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>效能感高</v></c>
+      <c r="B6" t="s" s="0"><v>您的技术学习自信心强，能够有效整合新知识。</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="0"><v>效能感低</v></c>
+      <c r="B7" t="s" s="0"><v>您对技术学习存在一定畏难情绪，需要建立信心。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

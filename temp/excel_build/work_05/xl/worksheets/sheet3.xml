@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="6" customWidth="1"/><col min="2" max="2" width="14" customWidth="1"/><col min="3" max="3" width="12" customWidth="1"/><col min="4" max="4" width="11" customWidth="1"/><col min="5" max="5" width="11" customWidth="1"/><col min="6" max="6" width="11" customWidth="1"/><col min="7" max="7" width="11" customWidth="1"/><col min="8" max="8" width="11" customWidth="1"/><col min="9" max="9" width="9" customWidth="1"/><col min="10" max="10" width="11" customWidth="1"/><col min="11" max="11" width="24" customWidth="1"/><col min="12" max="12" width="24" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>多次面谈 · 趋势追踪（横向看成长曲线）</t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>本表横向追踪 10 次面谈的得分变化。每次面谈后把总分和 4 维度得分从&quot;30项自检&quot;表登记过来。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4" ht="36" customHeight="1">
+  <c r="A4" s="14" t="inlineStr"><is><t>次数</t></is></c>
+  <c r="B4" s="14" t="inlineStr"><is><t>面谈日期</t></is></c>
+  <c r="C4" s="14" t="inlineStr"><is><t>员工姓名</t></is></c>
+  <c r="D4" s="14" t="inlineStr"><is><t>A 维度（/32）</t></is></c>
+  <c r="E4" s="14" t="inlineStr"><is><t>B 维度（/32）</t></is></c>
+  <c r="F4" s="14" t="inlineStr"><is><t>C 维度（/32）</t></is></c>
+  <c r="G4" s="14" t="inlineStr"><is><t>D 维度（/24）</t></is></c>
+  <c r="H4" s="14" t="inlineStr"><is><t>总分（/120）</t></is></c>
+  <c r="I4" s="14" t="inlineStr"><is><t>百分比</t></is></c>
+  <c r="J4" s="14" t="inlineStr"><is><t>评价</t></is></c>
+  <c r="K4" s="14" t="inlineStr"><is><t>本次最大亮点</t></is></c>
+  <c r="L4" s="14" t="inlineStr"><is><t>本次最大弱项</t></is></c>
+</row>
+<row r="5" ht="24" customHeight="1">
+  <c r="A5" s="17" t="inlineStr"><is><t>1</t></is></c>
+  <c r="B5" s="13" t="inlineStr"><is><t>2026-01-08</t></is></c>
+  <c r="C5" s="13" t="inlineStr"><is><t>小马</t></is></c>
+  <c r="D5" s="7" t="inlineStr"><is><t>22</t></is></c>
+  <c r="E5" s="7" t="inlineStr"><is><t>20</t></is></c>
+  <c r="F5" s="7" t="inlineStr"><is><t>18</t></is></c>
+  <c r="G5" s="7" t="inlineStr"><is><t>14</t></is></c>
+  <c r="H5" s="19"><f>D5+E5+F5+G5</f><v></v></c>
+  <c r="I5" s="19"><f>H5/120</f><v></v></c>
+  <c r="J5" s="19"><f>IF(I5&gt;=0.85,"优秀",IF(I5&gt;=0.67,"合格",IF(I5&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K5" s="13" t="inlineStr"><is><t>产品决策面谈，第一次用F3四步</t></is></c>
+  <c r="L5" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="6" ht="24" customHeight="1">
+  <c r="A6" s="17" t="inlineStr"><is><t>2</t></is></c>
+  <c r="B6" s="13" t="inlineStr"><is><t>2026-01-15</t></is></c>
+  <c r="C6" s="13" t="inlineStr"><is><t>小马</t></is></c>
+  <c r="D6" s="7" t="inlineStr"><is><t>25</t></is></c>
+  <c r="E6" s="7" t="inlineStr"><is><t>23</t></is></c>
+  <c r="F6" s="7" t="inlineStr"><is><t>22</t></is></c>
+  <c r="G6" s="7" t="inlineStr"><is><t>16</t></is></c>
+  <c r="H6" s="19"><f>D6+E6+F6+G6</f><v></v></c>
+  <c r="I6" s="19"><f>H6/120</f><v></v></c>
+  <c r="J6" s="19"><f>IF(I6&gt;=0.85,"优秀",IF(I6&gt;=0.67,"合格",IF(I6&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K6" s="13" t="inlineStr"><is><t>双轨讨论较自然</t></is></c>
+  <c r="L6" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="7" ht="24" customHeight="1">
+  <c r="A7" s="17" t="inlineStr"><is><t>3</t></is></c>
+  <c r="B7" s="13" t="inlineStr"><is><t>2026-01-22</t></is></c>
+  <c r="C7" s="13" t="inlineStr"><is><t>小陈</t></is></c>
+  <c r="D7" s="7" t="inlineStr"><is><t>20</t></is></c>
+  <c r="E7" s="7" t="inlineStr"><is><t>19</t></is></c>
+  <c r="F7" s="7" t="inlineStr"><is><t>14</t></is></c>
+  <c r="G7" s="7" t="inlineStr"><is><t>12</t></is></c>
+  <c r="H7" s="19"><f>D7+E7+F7+G7</f><v></v></c>
+  <c r="I7" s="19"><f>H7/120</f><v></v></c>
+  <c r="J7" s="19"><f>IF(I7&gt;=0.85,"优秀",IF(I7&gt;=0.67,"合格",IF(I7&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K7" s="13" t="inlineStr"><is><t>AI场景处理不熟</t></is></c>
+  <c r="L7" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="8" ht="24" customHeight="1">
+  <c r="A8" s="17" t="inlineStr"><is><t>4</t></is></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>2026-02-05</t></is></c>
+  <c r="C8" s="13" t="inlineStr"><is><t>小王</t></is></c>
+  <c r="D8" s="7" t="inlineStr"><is><t>24</t></is></c>
+  <c r="E8" s="7" t="inlineStr"><is><t>22</t></is></c>
+  <c r="F8" s="7" t="inlineStr"><is><t>23</t></is></c>
+  <c r="G8" s="7" t="inlineStr"><is><t>17</t></is></c>
+  <c r="H8" s="19"><f>D8+E8+F8+G8</f><v></v></c>
+  <c r="I8" s="19"><f>H8/120</f><v></v></c>
+  <c r="J8" s="19"><f>IF(I8&gt;=0.85,"优秀",IF(I8&gt;=0.67,"合格",IF(I8&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K8" s="13" t="inlineStr"><is><t>PPT技能缺口·AI补</t></is></c>
+  <c r="L8" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="9" ht="24" customHeight="1">
+  <c r="A9" s="17" t="inlineStr"><is><t>5</t></is></c>
+  <c r="B9" s="13" t="inlineStr"><is><t>2026-02-19</t></is></c>
+  <c r="C9" s="13" t="inlineStr"><is><t>小李</t></is></c>
+  <c r="D9" s="7" t="inlineStr"><is><t>27</t></is></c>
+  <c r="E9" s="7" t="inlineStr"><is><t>25</t></is></c>
+  <c r="F9" s="7" t="inlineStr"><is><t>25</t></is></c>
+  <c r="G9" s="7" t="inlineStr"><is><t>19</t></is></c>
+  <c r="H9" s="19"><f>D9+E9+F9+G9</f><v></v></c>
+  <c r="I9" s="19"><f>H9/120</f><v></v></c>
+  <c r="J9" s="19"><f>IF(I9&gt;=0.85,"优秀",IF(I9&gt;=0.67,"合格",IF(I9&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K9" s="13" t="inlineStr"><is><t>双轨案例·优秀</t></is></c>
+  <c r="L9" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="10" ht="24" customHeight="1">
+  <c r="A10" s="17" t="inlineStr"><is><t>6</t></is></c>
+  <c r="B10" s="13" t="inlineStr"><is><t>2026-03-04</t></is></c>
+  <c r="C10" s="13" t="inlineStr"><is><t>小周</t></is></c>
+  <c r="D10" s="7" t="inlineStr"><is><t>28</t></is></c>
+  <c r="E10" s="7" t="inlineStr"><is><t>26</t></is></c>
+  <c r="F10" s="7" t="inlineStr"><is><t>26</t></is></c>
+  <c r="G10" s="7" t="inlineStr"><is><t>20</t></is></c>
+  <c r="H10" s="19"><f>D10+E10+F10+G10</f><v></v></c>
+  <c r="I10" s="19"><f>H10/120</f><v></v></c>
+  <c r="J10" s="19"><f>IF(I10&gt;=0.85,"优秀",IF(I10&gt;=0.67,"合格",IF(I10&gt;=0.5,"待改善","重大问题")))</f><v></v></c>
+  <c r="K10" s="13" t="inlineStr"><is><t>AI工具用得浅·启动二</t></is></c>
+  <c r="L10" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="11">
+  <c r="A11" s="17" t="inlineStr"><is><t>7</t></is></c>
+  <c r="B11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G11" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H11" s="19"><f>IF(D11="","",D11+E11+F11+G11)</f><v></v></c>
+  <c r="I11" s="19"><f>IF(H11="","",H11/120)</f><v></v></c>
+  <c r="J11" s="19"><f>IF(I11="","",IF(I11&gt;=0.85,"优秀",IF(I11&gt;=0.67,"合格",IF(I11&gt;=0.5,"待改善","重大问题"))))</f><v></v></c>
+  <c r="K11" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="L11" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="12">
+  <c r="A12" s="17" t="inlineStr"><is><t>8</t></is></c>
+  <c r="B12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G12" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H12" s="19"><f>IF(D12="","",D12+E12+F12+G12)</f><v></v></c>
+  <c r="I12" s="19"><f>IF(H12="","",H12/120)</f><v></v></c>
+  <c r="J12" s="19"><f>IF(I12="","",IF(I12&gt;=0.85,"优秀",IF(I12&gt;=0.67,"合格",IF(I12&gt;=0.5,"待改善","重大问题"))))</f><v></v></c>
+  <c r="K12" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="L12" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="17" t="inlineStr"><is><t>9</t></is></c>
+  <c r="B13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G13" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H13" s="19"><f>IF(D13="","",D13+E13+F13+G13)</f><v></v></c>
+  <c r="I13" s="19"><f>IF(H13="","",H13/120)</f><v></v></c>
+  <c r="J13" s="19"><f>IF(I13="","",IF(I13&gt;=0.85,"优秀",IF(I13&gt;=0.67,"合格",IF(I13&gt;=0.5,"待改善","重大问题"))))</f><v></v></c>
+  <c r="K13" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="L13" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="17" t="inlineStr"><is><t>10</t></is></c>
+  <c r="B14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="C14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="D14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="E14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="F14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="G14" s="7" t="inlineStr"><is><t></t></is></c>
+  <c r="H14" s="19"><f>IF(D14="","",D14+E14+F14+G14)</f><v></v></c>
+  <c r="I14" s="19"><f>IF(H14="","",H14/120)</f><v></v></c>
+  <c r="J14" s="19"><f>IF(I14="","",IF(I14&gt;=0.85,"优秀",IF(I14&gt;=0.67,"合格",IF(I14&gt;=0.5,"待改善","重大问题"))))</f><v></v></c>
+  <c r="K14" s="13" t="inlineStr"><is><t></t></is></c>
+  <c r="L14" s="0" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="16" ht="22" customHeight="1">
+  <c r="A16" s="4" t="inlineStr"><is><t>趋势统计（公式自动）</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="14" t="inlineStr"><is><t>指标</t></is></c>
+  <c r="B17" s="14" t="inlineStr"><is><t>当前值</t></is></c>
+  <c r="C17" s="14" t="inlineStr"><is><t>历史最高</t></is></c>
+  <c r="D17" s="14" t="inlineStr"><is><t>历史最低</t></is></c>
+  <c r="E17" s="14" t="inlineStr"><is><t>平均值</t></is></c>
+</row>
+<row r="18">
+  <c r="A18" s="14" t="inlineStr"><is><t>A 维度（/32）</t></is></c>
+  <c r="B18" s="19"><f>IFERROR(INDEX(D5:D14,COUNTA(D5:D14)),"")</f><v></v></c>
+  <c r="C18" s="19"><f>IFERROR(MAX(D5:D14),"")</f><v></v></c>
+  <c r="D18" s="19"><f>IFERROR(MIN(D5:D14),"")</f><v></v></c>
+  <c r="E18" s="19"><f>IFERROR(AVERAGE(D5:D14),"")</f><v></v></c>
+</row>
+<row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>B 维度（/32）</t></is></c>
+  <c r="B19" s="19"><f>IFERROR(INDEX(E5:E14,COUNTA(E5:E14)),"")</f><v></v></c>
+  <c r="C19" s="19"><f>IFERROR(MAX(E5:E14),"")</f><v></v></c>
+  <c r="D19" s="19"><f>IFERROR(MIN(E5:E14),"")</f><v></v></c>
+  <c r="E19" s="19"><f>IFERROR(AVERAGE(E5:E14),"")</f><v></v></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>C 维度（/32）</t></is></c>
+  <c r="B20" s="19"><f>IFERROR(INDEX(F5:F14,COUNTA(F5:F14)),"")</f><v></v></c>
+  <c r="C20" s="19"><f>IFERROR(MAX(F5:F14),"")</f><v></v></c>
+  <c r="D20" s="19"><f>IFERROR(MIN(F5:F14),"")</f><v></v></c>
+  <c r="E20" s="19"><f>IFERROR(AVERAGE(F5:F14),"")</f><v></v></c>
+</row>
+<row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>D 维度（/24）</t></is></c>
+  <c r="B21" s="19"><f>IFERROR(INDEX(G5:G14,COUNTA(G5:G14)),"")</f><v></v></c>
+  <c r="C21" s="19"><f>IFERROR(MAX(G5:G14),"")</f><v></v></c>
+  <c r="D21" s="19"><f>IFERROR(MIN(G5:G14),"")</f><v></v></c>
+  <c r="E21" s="19"><f>IFERROR(AVERAGE(G5:G14),"")</f><v></v></c>
+</row>
+<row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>总分（/120）</t></is></c>
+  <c r="B22" s="19"><f>IFERROR(INDEX(H5:H14,COUNTA(H5:H14)),"")</f><v></v></c>
+  <c r="C22" s="19"><f>IFERROR(MAX(H5:H14),"")</f><v></v></c>
+  <c r="D22" s="19"><f>IFERROR(MIN(H5:H14),"")</f><v></v></c>
+  <c r="E22" s="19"><f>IFERROR(AVERAGE(H5:H14),"")</f><v></v></c>
+</row>
+<row r="24" ht="22" customHeight="1">
+  <c r="A24" s="4" t="inlineStr"><is><t>使用提示</t></is></c>
+</row>
+<row r="25">
+  <c r="A25" s="13" t="inlineStr"><is><t>① 每次面谈后，把&quot;30项自检&quot;表的总分和4维度得分登记到对应行</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="13" t="inlineStr"><is><t>② H/I/J 列是公式自动算的——你只要填 D-G 列</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="13" t="inlineStr"><is><t>③ 趋势统计会自动给出&quot;当前值/历史最高/历史最低/平均&quot;——看成长曲线</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="13" t="inlineStr"><is><t>④ J 列&quot;评价&quot;实时显示，帮助你快速判断&quot;这次面谈水平&quot;</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="13" t="inlineStr"><is><t>⑤ 范例数据可覆盖：选中第 5-10 行的数据，删除；然后填入自己的数据</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

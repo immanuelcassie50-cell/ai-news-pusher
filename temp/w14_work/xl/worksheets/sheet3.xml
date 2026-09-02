@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet
+  xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="10" topLeftCell="A11" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="20" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="26" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="5" width="14" customWidth="1"/>
+    <col min="6" max="7" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="32" customHeight="1">
+      <c r="A1" t="s" s="15"><v>56</v></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" t="s" s="0"><v>86</v></c>
+    </row>
+    <row r="3" ht="22" customHeight="1">
+      <c r="A3" t="s" s="1"><v>87</v></c>
+      <c r="B3" t="s" s="0"><v>57</v></c>
+    </row>
+    <row r="4"/>
+    <row r="5" ht="22" customHeight="1">
+      <c r="A5" t="s" s="15"><v>32</v></c>
+    </row>
+    <row r="6" ht="22" customHeight="1">
+      <c r="A6" t="s" s="4"><v>65</v></c>
+      <c r="B6" t="s" s="0"><v>73</v></c>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" t="s" s="4"><v>66</v></c>
+      <c r="B7" t="s" s="0"><v>74</v></c>
+    </row>
+    <row r="8" ht="22" customHeight="1">
+      <c r="A8" t="s" s="4"><v>67</v></c>
+      <c r="B8" t="s" s="0"><v>75</v></c>
+    </row>
+    <row r="9"/>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" t="s" s="15"><v>71</v></c>
+    </row>
+    <row r="11" ht="24" customHeight="1">
+      <c r="A11" t="s" s="4"><v>76</v></c>
+      <c r="B11" t="s" s="4"><v>48</v></c>
+      <c r="C11" t="s" s="4"><v>77</v></c>
+      <c r="D11" t="s" s="4"><v>78</v></c>
+      <c r="E11" t="s" s="4"><v>79</v></c>
+    </row>
+    <row r="12">
+      <c r="A12" t="s" s="1"><v>58</v></c>
+      <c r="B12" s="7"><v>0.30</v></c>
+      <c r="C12" s="9"><v>7</v></c>
+      <c r="D12" s="9"><v>9</v></c>
+      <c r="E12" s="9"><v>8</v></c>
+    </row>
+    <row r="13">
+      <c r="A13" t="s" s="1"><v>59</v></c>
+      <c r="B13" s="7"><v>0.15</v></c>
+      <c r="C13" s="9"><v>9</v></c>
+      <c r="D13" s="9"><v>5</v></c>
+      <c r="E13" s="9"><v>4</v></c>
+    </row>
+    <row r="14">
+      <c r="A14" t="s" s="1"><v>60</v></c>
+      <c r="B14" s="7"><v>0.10</v></c>
+      <c r="C14" s="9"><v>8</v></c>
+      <c r="D14" s="9"><v>6</v></c>
+      <c r="E14" s="9"><v>5</v></c>
+    </row>
+    <row r="15">
+      <c r="A15" t="s" s="1"><v>61</v></c>
+      <c r="B15" s="7"><v>0.15</v></c>
+      <c r="C15" s="9"><v>8</v></c>
+      <c r="D15" s="9"><v>6</v></c>
+      <c r="E15" s="9"><v>7</v></c>
+    </row>
+    <row r="16">
+      <c r="A16" t="s" s="1"><v>62</v></c>
+      <c r="B16" s="7"><v>0.15</v></c>
+      <c r="C16" s="9"><v>7</v></c>
+      <c r="D16" s="9"><v>8</v></c>
+      <c r="E16" s="9"><v>6</v></c>
+    </row>
+    <row r="17">
+      <c r="A17" t="s" s="1"><v>63</v></c>
+      <c r="B17" s="7"><v>0.10</v></c>
+      <c r="C17" s="9"><v>6</v></c>
+      <c r="D17" s="9"><v>9</v></c>
+      <c r="E17" s="9"><v>8</v></c>
+    </row>
+    <row r="18">
+      <c r="A18" t="s" s="1"><v>64</v></c>
+      <c r="B18" s="7"><v>0.05</v></c>
+      <c r="C18" s="9"><v>7</v></c>
+      <c r="D18" s="9"><v>7</v></c>
+      <c r="E18" s="9"><v>5</v></c>
+    </row>
+    <row r="19" ht="22" customHeight="1">
+      <c r="A19" t="s" s="4"><v>81</v></c>
+      <c r="B19" s="8"><f>SUM(B12:B18)</f><v></v></c>
+    </row>
+    <row r="20" ht="24" customHeight="1">
+      <c r="A20" t="s" s="4"><v>80</v></c>
+      <c r="C20" s="13"><f>SUMPRODUCT(B12:B18,C12:C18)</f><v></v></c>
+      <c r="D20" s="13"><f>SUMPRODUCT(B12:B18,D12:D18)</f><v></v></c>
+      <c r="E20" s="13"><f>SUMPRODUCT(B12:B18,E12:E18)</f><v></v></c>
+    </row>
+    <row r="21"/>
+    <row r="22" ht="22" customHeight="1">
+      <c r="A22" t="s" s="15"><v>85</v></c>
+    </row>
+    <row r="23" ht="22" customHeight="1">
+      <c r="A23" t="s" s="0"><v>68</v></c>
+    </row>
+    <row r="24" ht="22" customHeight="1">
+      <c r="A24" t="s" s="0"><v>69</v></c>
+    </row>
+    <row r="25" ht="22" customHeight="1">
+      <c r="A25" t="s" s="0"><v>70</v></c>
+    </row>
+    <row r="26"/>
+    <row r="27" ht="22" customHeight="1">
+      <c r="A27" t="s" s="15"><v>52</v></c>
+    </row>
+    <row r="28" ht="22" customHeight="1">
+      <c r="A28" t="s" s="4"><v>82</v></c>
+    </row>
+    <row r="29" ht="22" customHeight="1">
+      <c r="A29" t="s" s="4"><v>83</v></c>
+    </row>
+    <row r="30" ht="22" customHeight="1">
+      <c r="A30" t="s" s="1"><v>55</v></c>
+      <c r="B30" t="s" s="12"><v>84</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+  <pageSetup orientation="landscape" paperSize="9"/>
+  <printOptions horizontalCentered="1"/>
+</worksheet>

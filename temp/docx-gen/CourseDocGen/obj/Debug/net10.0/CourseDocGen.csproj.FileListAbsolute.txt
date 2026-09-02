@@ -1,0 +1,6 @@
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.csproj.AssemblyReference.cache
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.AssemblyInfoInputs.cache
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.AssemblyInfo.cs
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.csproj.CoreCompileInputs.cache
+D:\CC\temp\docx-gen\CourseDocGen\obj\Debug\net10.0\CourseDocGen.sourcelink.json

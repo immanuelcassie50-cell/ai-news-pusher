@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="5" topLeftCell="A6" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="16" customWidth="1"/>
+    <col min="2" max="2" width="20" customWidth="1"/>
+    <col min="3" max="3" width="38" customWidth="1"/>
+    <col min="4" max="4" width="38" customWidth="1"/>
+    <col min="5" max="5" width="18" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>财务比率计算</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>填入数据后自动计算各项比率</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="8"/>
+    <row r="5" ht="26" customHeight="1">
+      <c r="A5" s="8" t="inlineStr"><is><t>比率类型</t></is></c>
+      <c r="B5" s="8" t="inlineStr"><is><t>比率名称</t></is></c>
+      <c r="C5" s="8" t="inlineStr"><is><t>计算公式</t></is></c>
+      <c r="D5" s="8" t="inlineStr"><is><t>说明</t></is></c>
+      <c r="E5" s="8" t="inlineStr"><is><t>参考值</t></is></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" s="9" t="inlineStr"><is><t>盈利能力比率</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>毛利率</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>(营业收入-营业成本)/营业收入</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>反映产品或服务的基础盈利能力</t></is></c>
+      <c r="E6" s="6" t="inlineStr"><is><t>30%-60%</t></is></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" s="6"/>
+      <c r="B7" s="6" t="inlineStr"><is><t>净利率</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>净利润/营业收入</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>反映最终获利能力</t></is></c>
+      <c r="E7" s="6" t="inlineStr"><is><t>5%-20%</t></is></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" s="6"/>
+      <c r="B8" s="6" t="inlineStr"><is><t>净资产收益率(ROE)</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>净利润/平均所有者权益</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>反映股东权益的回报水平</t></is></c>
+      <c r="E8" s="6" t="inlineStr"><is><t>10%-20%</t></is></c>
+    </row>
+    <row r="9" ht="20" customHeight="1">
+      <c r="A9" s="6"/>
+      <c r="B9" s="6" t="inlineStr"><is><t>总资产收益率(ROA)</t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>净利润/平均总资产</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>反映企业整体资产的获利能力</t></is></c>
+      <c r="E9" s="6" t="inlineStr"><is><t>5%-10%</t></is></c>
+    </row>
+    <row r="10" ht="8"/>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" s="10" t="inlineStr"><is><t>偿债能力比率</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t>流动比率</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>流动资产/流动负债</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>反映短期偿债能力</t></is></c>
+      <c r="E11" s="6" t="inlineStr"><is><t>1.5-2.0</t></is></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" s="6"/>
+      <c r="B12" s="6" t="inlineStr"><is><t>速动比率</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>(流动资产-存货)/流动负债</t></is></c>
+      <c r="D12" s="6" t="inlineStr"><is><t>剔除存货后的短期偿债能力</t></is></c>
+      <c r="E12" s="6" t="inlineStr"><is><t>1.0-1.5</t></is></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" s="6"/>
+      <c r="B13" s="6" t="inlineStr"><is><t>资产负债率</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>负债总额/资产总额</t></is></c>
+      <c r="D13" s="6" t="inlineStr"><is><t>反映总体负债水平</t></is></c>
+      <c r="E13" s="6" t="inlineStr"><is><t>40%-60%</t></is></c>
+    </row>
+    <row r="14" ht="8"/>
+    <row r="15" ht="20" customHeight="1">
+      <c r="A15" s="9" t="inlineStr"><is><t>运营能力比率</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t>存货周转率</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>营业成本/平均存货</t></is></c>
+      <c r="D15" s="6" t="inlineStr"><is><t>反映存货周转速度</t></is></c>
+      <c r="E15" s="6" t="inlineStr"><is><t>4-8次</t></is></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" s="6"/>
+      <c r="B16" s="6" t="inlineStr"><is><t>应收账款周转率</t></is></c>
+      <c r="C16" s="6" t="inlineStr"><is><t>营业收入/平均应收账款</t></is></c>
+      <c r="D16" s="6" t="inlineStr"><is><t>反映应收账款周转速度</t></is></c>
+      <c r="E16" s="6" t="inlineStr"><is><t>6-12次</t></is></c>
+    </row>
+    <row r="17" ht="20" customHeight="1">
+      <c r="A17" s="6"/>
+      <c r="B17" s="6" t="inlineStr"><is><t>总资产周转率</t></is></c>
+      <c r="C17" s="6" t="inlineStr"><is><t>营业收入/平均总资产</t></is></c>
+      <c r="D17" s="6" t="inlineStr"><is><t>反映资产使用效率</t></is></c>
+      <c r="E17" s="6" t="inlineStr"><is><t>0.5-2.0次</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

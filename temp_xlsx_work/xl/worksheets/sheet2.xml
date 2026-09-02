@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView tabSelected="0" workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="38" customWidth="1"/>
+    <col min="3" max="3" width="18" customWidth="1"/>
+    <col min="4" max="4" width="20" customWidth="1"/>
+    <col min="5" max="5" width="18" customWidth="1"/>
+    <col min="6" max="6" width="16" customWidth="1"/>
+    <col min="7" max="7" width="18" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="28" customHeight="1">
+    <c r="A1" t="s" s="4"><v>45</v></c>
+  </row>
+  <row r="2">
+    <c r="A2" t="s" s="0"><v>46</v></c>
+  </row>
+  <row r="3">
+    <c r="A3" t="s" s="0"><v>47</v></c>
+  </row>
+  <row r="4">
+  </row>
+  <row r="5" ht="18" customHeight="1">
+    <c r="A5" t="s" s="4"><v>53</v></c>
+    <c r="B5" t="s" s="4"><v>54</v></c>
+    <c r="C5" t="s" s="4"><v>55</v></c>
+    <c r="D5" t="s" s="4"><v>56</v></c>
+    <c r="E5" t="s" s="4"><v>57</v></c>
+    <c r="F5" t="s" s="4"><v>58</v></c>
+    <c r="G5" t="s" s="4"><v>59</v></c>
+  </row>
+  <row r="6">
+    <c r="A6" t="s" s="4"><v>愉悦/满足系列</v></c>
+    <c r="B6" t="s" s="0"><v>开心、快乐、欣喜、兴奋、满足、幸福、陶醉、感激、宁静、轻松、温暖、雀跃、愉快</v></c>
+    <c r="C6" t="s" s="0"><v>60</v></c>
+    <c r="D6" t="s" s="0"><v>61</v></c>
+    <c r="E6" t="s" s="0"><v>62</v></c>
+    <c r="F6" t="s" s="0"><v>63</v></c>
+    <c r="G6" t="s" s="0"><v>64</v></c>
+  </row>
+  <row r="7">
+    <c r="A7" t="s" s="4"><v>期待/渴望系列</v></c>
+    <c r="B7" t="s" s="0"><v>好奇、期待、热情、渴望、跃跃欲试、憧憬、兴致勃勃</v></c>
+    <c r="C7" t="s" s="0"><v>69</v></c>
+    <c r="D7" t="s" s="0"><v>70</v></c>
+    <c r="E7" t="s" s="0"><v>71</v></c>
+    <c r="F7" t="s" s="0"><v>72</v></c>
+    <c r="G7" t="s" s="0"><v>73</v></c>
+  </row>
+  <row r="8">
+    <c r="A8" t="s" s="4"><v>信任/连接系列</v></c>
+    <c r="B8" t="s" s="0"><v>接纳、安心、信任、崇拜、亲近、被理解、归属感</v></c>
+    <c r="C8" t="s" s="0"><v>78</v></c>
+    <c r="D8" t="s" s="0"><v>79</v></c>
+    <c r="E8" t="s" s="0"><v>80</v></c>
+    <c r="F8" t="s" s="0"><v>81</v></c>
+    <c r="G8" t="s" s="0"><v>82</v></c>
+  </row>
+  <row r="9">
+    <c r="A9" t="s" s="4"><v>恐惧/不安系列</v></c>
+    <c r="B9" t="s" s="0"><v>不安、担心、忧虑、焦虑、恐惧、惊慌、提心吊胆、如坐针毡</v></c>
+    <c r="C9" t="s" s="0"><v>87</v></c>
+    <c r="D9" t="s" s="0"><v>88</v></c>
+    <c r="E9" t="s" s="0"><v>89</v></c>
+    <c r="F9" t="s" s="0"><v>90</v></c>
+    <c r="G9" t="s" s="0"><v>91</v></c>
+  </row>
+  <row r="10">
+    <c r="A10" t="s" s="4"><v>惊讶/困惑系列</v></c>
+    <c r="B10" t="s" s="0"><v>困惑、意外、不知所措、震惊、茫然</v></c>
+    <c r="C10" t="s" s="0"><v>96</v></c>
+    <c r="D10" t="s" s="0"><v>97</v></c>
+    <c r="E10" t="s" s="0"><v>98</v></c>
+    <c r="F10" t="s" s="0"><v>99</v></c>
+    <c r="G10" t="s" s="0"><v>100</v></c>
+  </row>
+  <row r="11">
+    <c r="A11" t="s" s="4"><v>悲伤/失落系列</v></c>
+    <c r="B11" t="s" s="0"><v>低落、失落、落寞、伤感、惆怅、悲伤、哀痛、心如死灰、绝望、委屈</v></c>
+    <c r="C11" t="s" s="0"><v>105</v></c>
+    <c r="D11" t="s" s="0"><v>106</v></c>
+    <c r="E11" t="s" s="0"><v>107</v></c>
+    <c r="F11" t="s" s="0"><v>108</v></c>
+    <c r="G11" t="s" s="0"><v>109</v></c>
+  </row>
+  <row r="12">
+    <c r="A12" t="s" s="4"><v>愤怒/不满系列</v></c>
+    <c r="B12" t="s" s="0"><v>烦躁、不耐烦、不满、郁闷、生气、愤怒、憋屈、暴怒、义愤填膺</v></c>
+    <c r="C12" t="s" s="0"><v>114</v></c>
+    <c r="D12" t="s" s="0"><v>115</v></c>
+    <c r="E12" t="s" s="0"><v>116</v></c>
+    <c r="F12" t="s" s="0"><v>117</v></c>
+    <c r="G12" t="s" s="0"><v>118</v></c>
+  </row>
+  <row r="13">
+    <c r="A13" t="s" s="4"><v>厌倦/回避系列</v></c>
+    <c r="B13" t="s" s="0"><v>无聊、厌倦、冷漠、疲惫、提不起劲、心灰意冷</v></c>
+    <c r="C13" t="s" s="0"><v>123</v></c>
+    <c r="D13" t="s" s="0"><v>124</v></c>
+    <c r="E13" t="s" s="0"><v>125</v></c>
+    <c r="F13" t="s" s="0"><v>126</v></c>
+    <c r="G13" t="s" s="0"><v>127</v></c>
+  </row>
+  <row r="14">
+    <c r="A14" t="s" s="4"><v>复杂情绪系列</v></c>
+    <c r="B14" t="s" s="0"><v>自责、内疚、羞耻、尴尬、被忽视的失落感、夹杂自我怀疑的焦虑、因期待落空的失望</v></c>
+    <c r="C14" t="s" s="0"><v>132</v></c>
+    <c r="D14" t="s" s="0"><v>133</v></c>
+    <c r="E14" t="s" s="0"><v>134</v></c>
+    <c r="F14" t="s" s="0"><v>135</v></c>
+    <c r="G14" t="s" s="0"><v>136</v></c>
+  </row>
+  <row r="15">
+  </row>
+  <row r="16">
+    <c r="A16" t="s" s="4"><v>48</v></c>
+  </row>
+  <row r="17" ht="18" customHeight="1">
+    <c r="A17" t="s" s="4"><v>141</v></c>
+    <c r="D17" t="s" s="4"><v>49</v></c>
+    <c r="E17" t="s" s="4"><v>50</v></c>
+    <c r="F17" t="s" s="4"><v>51</v></c>
+    <c r="G17" t="s" s="4"><v>52</v></c>
+  </row>
+  <row r="18">
+    <c r="A18" t="s" s="0"><v>142</v></c>
+    <c r="B18" t="s" s="0"><v>143</v></c>
+    <c r="C18" t="s" s="0"><v>144</v></c>
+    <c r="D18" t="s" s="0"><v>145</v></c>
+    <c r="E18" t="s" s="0"><v>146</v></c>
+    <c r="F18" t="s" s="0"><v>147</v></c>
+    <c r="G18" t="s" s="0"><v>148</v></c>
+  </row>
+  <row r="19">
+    <c r="A19" t="s" s="0"><v>156</v></c>
+    <c r="B19" t="s" s="0"><v>157</v></c>
+    <c r="C19" t="s" s="0"><v>158</v></c>
+    <c r="D19" t="s" s="0"><v>159</v></c>
+    <c r="E19" t="s" s="0"><v>160</v></c>
+    <c r="F19" t="s" s="0"><v>161</v></c>
+    <c r="G19" t="s" s="0"><v>162</v></c>
+  </row>
+  <row r="20">
+    <c r="A20" t="s" s="0"><v>170</v></c>
+    <c r="B20" t="s" s="0"><v>171</v></c>
+    <c r="C20" t="s" s="0"><v>172</v></c>
+    <c r="D20" t="s" s="0"><v>173</v></c>
+    <c r="E20" t="s" s="0"><v>174</v></c>
+    <c r="F20" t="s" s="0"><v>175</v></c>
+    <c r="G20" t="s" s="0"><v>176</v></c>
+  </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

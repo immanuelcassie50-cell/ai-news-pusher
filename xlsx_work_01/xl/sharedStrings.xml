@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="32" uniqueCount="32">
+  <si><t>客户需求挖掘记录表</t></si>
+  <si><t>客户名称</t></si>
+  <si><t>联系人</t></si>
+  <si><t>职务</t></si>
+  <si><t>电话</t></si>
+  <si><t>行业</t></si>
+  <si><t>记录日期</t></si>
+  <si><t>销售顾问</t></si>
+  <si><t>四步法探挖引验</t></si>
+  <si><t>探（探索）</t></si>
+  <si><t>表面诉求</t></si>
+  <si><t>挖（挖掘）</t></si>
+  <si><t>深层需求</t></si>
+  <si><t>引（引导）</t></si>
+  <si><t>价值认知</t></si>
+  <si><t>验（验证）</t></si>
+  <si><t>承诺意愿</t></si>
+  <si><t>关键洞察</t></si>
+  <si><t>客户痛点</t></si>
+  <si><t>潜在顾虑</t></si>
+  <si><t>购买动机</t></si>
+  <si><t>后续行动计划</t></si>
+  <si><t>行动事项</t></si>
+  <si><t>负责人</t></si>
+  <si><t>完成日期</t></si>
+  <si><t>备注</t></si>
+  <si><t>序号</t></si>
+  <si><t>问题记录</t></si>
+  <si><t>客户回答</t></si>
+  <si><t>技巧应用</t></si>
+  <si><t>效果评估</t></si>
+  <si><t>A很好</t></si>
+  <si><t>B一般</t></si>
+  <si><t>C较差</t></si>
+</sst>

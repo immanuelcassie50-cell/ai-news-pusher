@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="28" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="80" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1" ht="28" customHeight="1">
+  <c r="A1" s="4" t="inlineStr"><is><t>F8 双轨胜任度评估表（个人详细评估范例：王晓）</t></is></c>
+</row>
+  <row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>范例情境：产品部高级产品经理王晓，4年工龄，双轨打分结果为AI协作力18/20 + 人类深度14/15 = 领先型</t></is></c>
+</row>
+  <row r="4" ht="22" customHeight="1">
+  <c r="A4" s="5" t="inlineStr"><is><t>评估对象信息</t></is></c>
+</row>
+  <row r="5">
+  <c r="A5" s="14" t="inlineStr"><is><t>员工姓名</t></is></c>
+  <c r="B5" s="16" t="inlineStr"><is><t>王晓</t></is></c>
+  <c r="C5" s="14" t="inlineStr"><is><t>部门</t></is></c>
+  <c r="D5" s="16" t="inlineStr"><is><t>产品部</t></is></c>
+</row>
+  <row r="6">
+  <c r="A6" s="14" t="inlineStr"><is><t>岗位</t></is></c>
+  <c r="B6" s="16" t="inlineStr"><is><t>高级产品经理</t></is></c>
+  <c r="C6" s="14" t="inlineStr"><is><t>工龄</t></is></c>
+  <c r="D6" s="16" t="inlineStr"><is><t>4年</t></is></c>
+</row>
+  <row r="7">
+  <c r="A7" s="14" t="inlineStr"><is><t>评估周期</t></is></c>
+  <c r="B7" s="16" t="inlineStr"><is><t>2025年下半年</t></is></c>
+  <c r="C7" s="14" t="inlineStr"><is><t>评估日期</t></is></c>
+  <c r="D7" s="16" t="inlineStr"><is><t>2026-01-08</t></is></c>
+</row>
+  <row r="8">
+  <c r="A8" s="14" t="inlineStr"><is><t>评估人</t></is></c>
+  <c r="B8" s="16" t="inlineStr"><is><t>产品总监 张明</t></is></c>
+  <c r="C8" s="14" t="inlineStr"><is><t>面谈日期</t></is></c>
+  <c r="D8" s="16" t="inlineStr"><is><t>2026-01-15</t></is></c>
+</row>
+  <row r="10" ht="22" customHeight="1">
+  <c r="A10" s="5" t="inlineStr"><is><t>一、AI协作力轨道（4个能力，满分20）</t></is></c>
+</row>
+  <row r="11">
+  <c r="A11" s="14" t="inlineStr"><is><t>能力</t></is></c>
+  <c r="B11" s="14" t="inlineStr"><is><t>评分</t></is></c>
+  <c r="C11" s="14" t="inlineStr"><is><t>事实观察（具体场景）</t></is></c>
+</row>
+  <row r="12">
+  <c r="A12" s="13" t="inlineStr"><is><t>1. 识别适合AI承接的工作</t></is></c>
+  <c r="B12" s="23"><v>5</v></c>
+  <c r="C12" s="16" t="inlineStr"><is><t>Q3的“智能推荐”项目里，能准确判断“冷启动数据标注”适合AI批量做，“推荐策略调整”由人决策</t></is></c>
+</row>
+  <row r="13">
+  <c r="A13" s="13" t="inlineStr"><is><t>2. 设计有效提示</t></is></c>
+  <c r="B13" s="23"><v>4</v></c>
+  <c r="C13" s="16" t="inlineStr"><is><t>对AI的提示从模糊的“写个PRD”，迭代为分步提示“先写用户故事→再写验收标准→再写异常分支”</t></is></c>
+</row>
+  <row r="14">
+  <c r="A14" s="13" t="inlineStr"><is><t>3. 评估AI输出</t></is></c>
+  <c r="B14" s="23"><v>5</v></c>
+  <c r="C14" s="16" t="inlineStr"><is><t>能识别AI输出的“看似对但实际有问题”：发现AI生成的“Z世代画像”缺了三线城市的样本偏差</t></is></c>
+</row>
+  <row r="15">
+  <c r="A15" s="13" t="inlineStr"><is><t>4. 整合进工作流程</t></is></c>
+  <c r="B15" s="23"><v>4</v></c>
+  <c r="C15" s="16" t="inlineStr"><is><t>在PRD/SOP里加入“AI协作环节”（初稿AI/判断人/审核人），团队2名产品助理已采用</t></is></c>
+</row>
+  <row r="16">
+  <c r="A16" s="14" t="inlineStr"><is><t>AI协作力总分</t></is></c>
+  <c r="B16" s="21"><f>SUM(B12:B15)</f><v></v></c>
+  <c r="C16" s="14" t="inlineStr"><is><t>/20  →  标准化 ÷20×5 = 4.5</t></is></c>
+</row>
+  <row r="18" ht="22" customHeight="1">
+  <c r="A18" s="5" t="inlineStr"><is><t>二、人类深度轨道（3类能力，满分15）</t></is></c>
+</row>
+  <row r="19">
+  <c r="A19" s="14" t="inlineStr"><is><t>能力</t></is></c>
+  <c r="B19" s="14" t="inlineStr"><is><t>评分</t></is></c>
+  <c r="C19" s="14" t="inlineStr"><is><t>事实观察</t></is></c>
+</row>
+  <row r="20">
+  <c r="A20" s="13" t="inlineStr"><is><t>A. 判断力</t></is></c>
+  <c r="B20" s="23"><v>5</v></c>
+  <c r="C20" s="16" t="inlineStr"><is><t>Q4的“是否砍掉老年用户群体”决策中，在数据不完整情况下做出“保留并做差异化运营”的判断，3个月后DAU反涨8%</t></is></c>
+</row>
+  <row r="21">
+  <c r="A21" s="13" t="inlineStr"><is><t>B. 关系力</t></is></c>
+  <c r="B21" s="23"><v>4</v></c>
+  <c r="C21" s="16" t="inlineStr"><is><t>跨部门会议中能把技术、销售的分歧转化为“我们共同的问题”；销售部主动找她咨询客户开发</t></is></c>
+</row>
+  <row r="22">
+  <c r="A22" s="13" t="inlineStr"><is><t>C. 领域深度</t></is></c>
+  <c r="B22" s="23"><v>5</v></c>
+  <c r="C22" s="16" t="inlineStr"><is><t>本领域有专家级判断：能识别“老年用户“的隐性需求，提出“大字版+远程协助”的产品方案，被CEO在Q4全员会上引用</t></is></c>
+</row>
+  <row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>人类深度总分</t></is></c>
+  <c r="B23" s="21"><f>SUM(B20:B22)</f><v></v></c>
+  <c r="C23" s="14" t="inlineStr"><is><t>/15  →  标准化 ÷15×5 = 4.67</t></is></c>
+</row>
+  <row r="25" ht="22" customHeight="1">
+  <c r="A25" s="5" t="inlineStr"><is><t>三、双轨状态判断</t></is></c>
+</row>
+  <row r="26">
+  <c r="A26" s="14" t="inlineStr"><is><t>轨道</t></is></c>
+  <c r="B26" s="14" t="inlineStr"><is><t>原始分</t></is></c>
+  <c r="C26" s="14" t="inlineStr"><is><t>标准化/5</t></is></c>
+</row>
+  <row r="27">
+  <c r="A27" s="13" t="inlineStr"><is><t>AI协作力</t></is></c>
+  <c r="B27" s="21"><f>B16</f><v></v></c>
+  <c r="C27" s="21"><f>B16/20*5</f><v></v></c>
+</row>
+  <row r="28">
+  <c r="A28" s="13" t="inlineStr"><is><t>人类深度</t></is></c>
+  <c r="B28" s="21"><f>B23</f><v></v></c>
+  <c r="C28" s="21"><f>B23/15*5</f><v></v></c>
+</row>
+  <row r="29">
+  <c r="A29" s="14" t="inlineStr"><is><t>双轨象限</t></is></c>
+  <c r="B29" s="24"><f>IF(AND(C27&gt;=3,C28&gt;=3),"领先型",IF(AND(C27&gt;=3,C28&lt;3),"漂移型",IF(AND(C27&lt;3,C28&gt;=3),"保守型","困境型"))))</f><v></v></c>
+  <c r="C29" s="16" t="inlineStr"><is><t></t></is></c>
+</row>
+  <row r="31" ht="22" customHeight="1">
+  <c r="A31" s="5" t="inlineStr"><is><t>四、整体结论（写给员工的话）</t></is></c>
+</row>
+  <row r="32">
+  <c r="A32" s="16" t="inlineStr"><is><t>“王晓，从这次评估看，你在两条轨道上都表现突出：AI协作力4.5/5，能把AI真正整合进工作流；人类深度4.67/5，判断力和领域深度都已是专家级。“最满意的成长”是你对“老年用户群体”的差异化判断。下个季度的重点：把双轨优势放大——带团队其他人一起用AI、给更难的产品决策。”</t></is></c>
+</row>
+  <row r="34" ht="22" customHeight="1">
+  <c r="A34" s="5" t="inlineStr"><is><t>五、配套：F7 启动问题选择（用启动一+启动二组合）</t></is></c>
+</row>
+  <row r="35">
+  <c r="A35" s="14" t="inlineStr"><is><t>启动一</t></is></c>
+  <c r="B35" s="16" t="inlineStr"><is><t>“这个周期结束，如果让你自己来说，你最满意的成长是什么？”</t></is></c>
+</row>
+  <row r="36">
+  <c r="A36" s="14" t="inlineStr"><is><t>启动二</t></is></c>
+  <c r="B36" s="16" t="inlineStr"><is><t>“在你用AI工具最多的那类工作里，你觉得自己做了什么？你希望在哪方面变得更有能力？”</t></is></c>
+</row>
+  <row r="37">
+  <c r="A37" s="14" t="inlineStr"><is><t>为什么组合</t></is></c>
+  <c r="B37" s="16" t="inlineStr"><is><t>王晓双轨都强——先启动一稳一下，再用启动二展开双轨讨论，让她自己看到“已有人类深度”这个事实</t></is></c>
+</row>
+  <row r="39">
+  <c r="A39" s="6" t="inlineStr"><is><t>金句</t></is></c>
+  <c r="B39" s="6" t="inlineStr"><is><t>AI时代，评估一个人的胜任度要看两条轨道——AI协作力+人类深度，缺一就失衡。</t></is></c>
+</row>
+  <row r="40">
+  <c r="A40" s="5" t="inlineStr"><is><t>配套使用：F7（启动问题）/ F9（缺口判断）/ F10（结论纳入下次面谈清单）</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

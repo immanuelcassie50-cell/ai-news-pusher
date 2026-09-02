@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <selection activeCell="A1" sqref="A1"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="5" customWidth="1"/>
+    <col min="2" max="2" width="28" customWidth="1"/>
+    <col min="3" max="3" width="18" customWidth="1"/>
+    <col min="4" max="4" width="18" customWidth="1"/>
+    <col min="5" max="5" width="18" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="36" customHeight="1">
+      <c r="A1" s="1" t="inlineStr"><is><t>临场应变能力自评表</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>课程名称：临场应变实战：AI准备之外真正决定输赢的能力</t></is></c>
+    </row>
+    <row r="3" ht="16"/>
+    <row r="4" ht="26" customHeight="1">
+      <c r="A4" s="4" t="inlineStr"><is><t>序号</t></is></c>
+      <c r="B4" s="4" t="inlineStr"><is><t>能力维度</t></is></c>
+      <c r="C4" s="4" t="inlineStr"><is><t>课前自评 (1-10)</t></is></c>
+      <c r="D4" s="4" t="inlineStr"><is><t>课后自评 (1-10)</t></is></c>
+      <c r="E4" s="4" t="inlineStr"><is><t>分数变化</t></is></c>
+    </row>
+    <row r="5" ht="24" customHeight="1">
+      <c r="A5" s="5" t="inlineStr"><is><t>1</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>快速反应能力 - 对方提出意外观点时，能否迅速组织回应</t></is></c>
+      <c r="C5" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="D5" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="E5" s="8"><f>D5-C5</f><v>0</v></c>
+    </row>
+    <row r="6" ht="24" customHeight="1">
+      <c r="A6" s="5" t="inlineStr"><is><t>2</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>逻辑转换能力 - 能否快速切换论证角度，保持论证连贯性</t></is></c>
+      <c r="C6" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="D6" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="E6" s="8"><f>D6-C6</f><v>0</v></c>
+    </row>
+    <row r="7" ht="24" customHeight="1">
+      <c r="A7" s="5" t="inlineStr"><is><t>3</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t>情绪掌控能力 - 面对攻击性观点时，能否保持冷静并有效回应</t></is></c>
+      <c r="C7" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="D7" s="7" t="inlineStr"><is><t></t></is></c>
+      <c r="E7" s="8"><f>D7-C7</f><v>0</v></c>
+    </row>
+    <row r="8" ht="18"/>
+    <row r="9" ht="26" customHeight="1">
+      <c r="A9" s="4" t="inlineStr"><is><t>综合评估</t></is></c>
+    </row>
+    <row r="10" ht="24" customHeight="1">
+      <c r="A10" s="5" t="inlineStr"><is><t>课前总分</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C10" s="8"><f>SUM(C5:C7)</f><v>0</v></c>
+    </row>
+    <row r="11" ht="24" customHeight="1">
+      <c r="A11" s="5" t="inlineStr"><is><t>课后总分</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C11" s="8"><f>SUM(D5:D7)</f><v>0</v></c>
+    </row>
+    <row r="12" ht="24" customHeight="1">
+      <c r="A12" s="5" t="inlineStr"><is><t>总分变化</t></is></c>
+      <c r="B12" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C12" s="8"><f>C11-C10</f><v>0</v></c>
+    </row>
+    <row r="13" ht="24" customHeight="1">
+      <c r="A13" s="5" t="inlineStr"><is><t>平均变化</t></is></c>
+      <c r="B13" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C13" s="8"><f>C12/3</f><v>0</v></c>
+    </row>
+    <row r="14" ht="18"/>
+    <row r="15" ht="26" customHeight="1">
+      <c r="A15" s="4" t="inlineStr"><is><t>填写说明</t></is></c>
+    </row>
+    <row r="16" ht="22" customHeight="1">
+      <c r="A16" s="6" t="inlineStr"><is><t>1. 课前自评：请在课程开始前，根据自己的实际能力打分（1-10分）</t></is></c>
+    </row>
+    <row r="17" ht="22" customHeight="1">
+      <c r="A17" s="6" t="inlineStr"><is><t>2. 课后自评：课程结束后再次打分，对比学习前后的变化</t></is></c>
+    </row>
+    <row r="18" ht="22" customHeight="1">
+      <c r="A18" s="6" t="inlineStr"><is><t>3. 分数变化：自动计算，正数表示进步，负数表示需继续加强</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="38" customWidth="1"/>
+    <col min="3" max="3" width="38" customWidth="1"/>
+    <col min="4" max="4" width="22" customWidth="1"/>
+    <col min="5" max="5" width="20" customWidth="1"/>
+    <col min="6" max="6" width="20" customWidth="1"/>
+    <col min="7" max="7" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1">
+    <c r="A1" t="s" s="4"><v>四步故事结构工作表</v></c>
+    <c r="B1" t="s" s="1"><v>课程/模块名称：</v></c>
+    <c r="C1" s="1"><v></v></c>
+    <c r="D1" t="s" s="1"><v>姓名：</v></c>
+    <c r="E1" s="1"><v></v></c>
+    <c r="F1" t="s" s="1"><v>日期：</v></c>
+    <c r="G1" s="1"><v></v></c>
+  </row>
+  <row r="2">
+    <c r="A2" t="s" s="4"><v>第一步：时空锚定</v></c>
+    <c r="B2" t="s" s="4"><v>时间（When）</v></c>
+    <c r="C2" t="s" s="4"><v>地点（Where）</v></c>
+    <c r="D2" t="s" s="4"><v>人物（Who）</v></c>
+    <c r="E2" t="s" s="4"><v>我当时的角色</v></c>
+    <c r="F2" t="s" s="4"><v>关键背景</v></c>
+  </row>
+  <row r="3" ht="32" customHeight="1">
+    <c r="A3" s="1"><v></v></c>
+    <c r="B3" s="1"><v></v></c>
+    <c r="C3" s="1"><v></v></c>
+    <c r="D3" s="1"><v></v></c>
+    <c r="E3" s="1"><v></v></c>
+    <c r="F3" s="1"><v></v></c>
+  </row>
+  <row r="4">
+    <c r="A4" t="s" s="4"><v>第二步：张力触发</v></c>
+    <c r="B4" t="s" s="4"><v>那个"不对劲"的时刻是什么</v></c>
+    <c r="C4" s="1"><v></v></c>
+    <c r="D4" s="1"><v></v></c>
+  </row>
+  <row r="5" ht="36" customHeight="1">
+    <c r="A5" s="1"><v></v></c>
+    <c r="B5" s="1"><v></v></c>
+    <c r="C5" s="1"><v></v></c>
+    <c r="D5" s="1"><v></v></c>
+  </row>
+  <row r="6">
+    <c r="A6" t="s" s="4"><v>第三步：行动转化</v></c>
+    <c r="B6" t="s" s="4"><v>有人做了什么吗？</v></c>
+    <c r="C6" t="s" s="4"><v>变化是怎样发生的</v></c>
+    <c r="D6" t="s" s="4"><v>关键转折点</v></c>
+  </row>
+  <row r="7" ht="36" customHeight="1">
+    <c r="A7" s="1"><v></v></c>
+    <c r="B7" s="1"><v></v></c>
+    <c r="C7" s="1"><v></v></c>
+    <c r="D7" s="1"><v></v></c>
+  </row>
+  <row r="8">
+    <c r="A8" t="s" s="4"><v>第四步：意义落点</v></c>
+    <c r="B8" t="s" s="4"><v>这个故事说明了什么道理</v></c>
+    <c r="C8" s="1"><v></v></c>
+  </row>
+  <row r="9" ht="32" customHeight="1">
+    <c r="A9" s="1"><v></v></c>
+    <c r="B9" s="1"><v></v></c>
+    <c r="C9" s="1"><v></v></c>
+  </row>
+  <row r="10">
+    <c r="A10" t="s" s="4"><v>三句话测试</v></c>
+    <c r="B10" t="s" s="4"><v>第一句（时空+张力）</v></c>
+    <c r="C10" s="1"><v></v></c>
+  </row>
+  <row r="11" ht="28" customHeight="1">
+    <c r="A11" s="1"><v></v></c>
+    <c r="B11" s="1"><v></v></c>
+    <c r="C11" s="1"><v></v></c>
+  </row>
+  <row r="12">
+    <c r="A12" t="s" s="4"><v></v></c>
+    <c r="B12" t="s" s="4"><v>第二句（行动+转化）</v></c>
+    <c r="C12" s="1"><v></v></c>
+  </row>
+  <row r="13" ht="28" customHeight="1">
+    <c r="A13" s="1"><v></v></c>
+    <c r="B13" s="1"><v></v></c>
+    <c r="C13" s="1"><v></v></c>
+  </row>
+  <row r="14">
+    <c r="A14" t="s" s="4"><v></v></c>
+    <c r="B14" t="s" s="4"><v>第三句（意义落点）</v></c>
+    <c r="C14" s="1"><v></v></c>
+  </row>
+  <row r="15" ht="28" customHeight="1">
+    <c r="A15" s="1"><v></v></c>
+    <c r="B15" s="1"><v></v></c>
+    <c r="C15" s="1"><v></v></c>
+  </row>
+  <row r="16">
+    <c r="A16" t="s" s="4"><v>测试结果</v></c>
+    <c r="B16" t="s" s="1"><v>□ 清楚，可以继续    □ 需要调整，调整步骤：第____步</v></c>
+  </row>
+  <row r="17">
+    <c r="A17" t="s" s="4"><v>扩展两步（可选）</v></c>
+    <c r="B17" t="s" s="4"><v>感官细节补充</v></c>
+    <c r="C17" t="s" s="4"><v>环境氛围描写</v></c>
+  </row>
+  <row r="18" ht="32" customHeight="1">
+    <c r="A18" s="1"><v></v></c>
+    <c r="B18" s="1"><v></v></c>
+    <c r="C18" s="1"><v></v></c>
+  </row>
+  <row r="19">
+    <c r="A19" t="s" s="4"><v>后续追踪</v></c>
+    <c r="B19" t="s" s="4"><v>计划使用场景</v></c>
+    <c r="C19" t="s" s="4"><v>更新时间</v></c>
+  </row>
+  <row r="20">
+    <c r="A20" s="1"><v></v></c>
+    <c r="B20" s="1"><v></v></c>
+    <c r="C20" s="1"><v></v></c>
+  </row>
+  </sheetData>
+    <mergeCells count="1">
+    <mergeCell ref="A1:G1"/>
+  </mergeCells>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

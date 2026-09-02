@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="30" uniqueCount="30">
+  <si><t>容错成本量化计算表</t></si>
+  <si><t>成本类型</t></si>
+  <si><t>计算依据</t></si>
+  <si><t>金额（万元）</t></si>
+  <si><t>说明</t></si>
+  <si><t>一、变革失败成本（Error Cost）</t></si>
+  <si><t>直接成本损失</t></si>
+  <si><t>系统投资+实施+培训费用</t></si>
+  <si><t>间接成本损失</t></si>
+  <si><t>机会成本+时间成本</t></si>
+  <si><t>声誉成本损失</t></si>
+  <si><t>项目失败对团队士气影响</t></si>
+  <si><t>最坏情况成本</t></si>
+  <si><t>假设完全失败的极端情况</t></si>
+  <si><t>小计</t></si>
+  <si><t>二、不变革成本（Inaction Cost）</t></si>
+  <si><t>效率损失</t></si>
+  <si><t>竞争对手每年领先幅度估算</t></si>
+  <si><t>能力损失</t></si>
+  <si><t>团队学习机会的丧失</t></si>
+  <si><t>市场损失</t></si>
+  <si><t>客户需求未被满足的损失</t></si>
+  <si><t>战略损失</t></si>
+  <si><t>未来转型成本增加</t></si>
+  <si><t>小计</t></si>
+  <si><t>三、综合计算</t></si>
+  <si><t>变革净收益</t></si>
+  <si><t>变革收益 - 变革成本×失败概率 - 不变革成本</t></si>
+  <si><t>授权价值</t></si>
+  <si><t>争取到的容错空间价值</t></si>
+</sst>

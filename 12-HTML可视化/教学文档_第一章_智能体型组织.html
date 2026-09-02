@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第一章：智能体型组织的本质 · 组织统筹能力</title>
+<style>
+:root {
+  --primary: #1A5F7A;
+  --primary-light: #2A7A9A;
+  --primary-dark: #0F4A5F;
+  --accent: #C45C3E;
+  --warm: #F6F3EF;
+  --bg: #FBFAF8;
+  --surface: #FFFFFF;
+  --ink: #1A1A1A;
+  --gray-70: #4A4748;
+  --gray-50: #7A7678;
+  --gray-30: #B8B4B5;
+  --gray-10: #EAE6E4;
+  --font-serif: 'Didot','Bodoni MT','Bodoni 72','Times New Roman',Georgia,serif;
+  --font-body: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei','Helvetica Neue',Helvetica,sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  background: var(--warm);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 0 48px; }
+.eyebrow {
+  font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase;
+  font-weight: 700; color: var(--primary); display: flex; align-items: center; gap: 10px;
+}
+.eyebrow::before {
+  content: ''; display: block; width: 24px; height: 1.5px; background: var(--primary);
+}
+.serif { font-family: var(--font-serif); }
+
+/* HERO */
+.hero {
+  background: var(--surface);
+  padding: 0;
+  position: relative;
+  border-bottom: 1px solid var(--gray-10);
+}
+.hero-stripe {
+  position: absolute; top: 0; left: 0;
+  width: 5px; height: 100%; background: var(--primary);
+}
+.hero-inner {
+  padding: 64px 48px 72px;
+  max-width: 1100px; margin: 0 auto;
+}
+.hero-top {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 56px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--gray-10);
+}
+.brand-badge { display: flex; align-items: center; gap: 0; }
+.brand-rect {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 7px 16px; line-height: 1;
+}
+.brand-en {
+  font-size: 10px; letter-spacing: .12em; color: var(--gray-50);
+  text-transform: uppercase; padding-left: 14px;
+  border-left: 1px solid var(--gray-10); margin-left: 14px;
+  line-height: 1.5;
+}
+.hero-tag {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .08em;
+  border: 1px solid var(--gray-10); padding: 6px 14px; border-radius: 2px;
+}
+.hero-body {
+  display: grid; grid-template-columns: 1fr auto; gap: 64px; align-items: end;
+}
+.hero-h1 {
+  font-family: var(--font-serif);
+  font-size: 42px; font-weight: 400; line-height: 1.25;
+  color: var(--ink); margin-bottom: 18px; letter-spacing: -.01em;
+}
+.hero-h1 em { font-style: normal; color: var(--primary); }
+.hero-lead {
+  font-size: 15px; color: var(--gray-50); max-width: 560px; line-height: 1.85;
+}
+.hero-metrics {
+  display: flex; flex-direction: column; gap: 0;
+  align-self: stretch; justify-content: flex-end;
+  border-left: 1px solid var(--gray-10); padding-left: 48px;
+}
+.metric {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--gray-10);
+  text-align: right;
+}
+.metric:last-child { border-bottom: none; }
+.metric-val {
+  font-family: var(--font-serif);
+  font-size: 52px; font-weight: 400; color: var(--primary);
+  line-height: 1; display: block; letter-spacing: -.02em;
+}
+.metric-lbl {
+  font-size: 11px; color: var(--gray-50); letter-spacing: .06em; margin-top: 4px; display: block;
+}
+
+/* INSIGHT */
+.insight {
+  background: var(--primary-dark); color: #fff;
+  padding: 88px 0;
+  position: relative; overflow: hidden;
+}
+.insight::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, var(--accent) 0%, transparent 60%);
+}
+.insight-grid {
+  display: grid; grid-template-columns: 5fr 4fr; gap: 80px; align-items: center;
+}
+.insight-quote {
+  font-family: var(--font-serif);
+  font-size: 26px; line-height: 1.55; color: #fff;
+  font-weight: 400;
+  position: relative; padding-left: 28px;
+}
+.insight-quote::before {
+  content: '';
+  position: absolute; left: 0; top: 4px; bottom: 4px;
+  width: 3px; background: var(--accent);
+}
+.insight-list { display: flex; flex-direction: column; gap: 28px; }
+.insight-item { display: flex; gap: 18px; }
+.insight-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: var(--accent); flex-shrink: 0; margin-top: 10px;
+}
+.insight-text { font-size: 14px; color: rgba(255,255,255,.65); line-height: 1.85; }
+.insight-text strong { color: rgba(255,255,255,.92); }
+
+/* SECTIONS */
+.section { padding: 88px 0; }
+.section-alt { background: var(--surface); }
+.section-warm { background: var(--warm); }
+.section-head { margin-bottom: 48px; }
+.section-head h2 {
+  font-family: var(--font-serif); font-size: 30px; font-weight: 400;
+  color: var(--ink); margin: 14px 0 10px; line-height: 1.35;
+}
+.section-head p { font-size: 14px; color: var(--gray-50); }
+
+/* AGENT TYPE CARDS */
+.agent-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;
+}
+.agent-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 32px 28px;
+  border: 1px solid var(--gray-10);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow .3s var(--ease), transform .3s var(--ease);
+  cursor: pointer;
+}
+.agent-card:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,.08);
+  transform: translateY(-2px);
+}
+.agent-card::after {
+  content: ''; position: absolute;
+  top: 0; left: 0; right: 0; height: 3px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .3s var(--ease);
+}
+.agent-card:hover::after { transform: scaleX(1); }
+.agent-icon {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(26,95,122,.1); display: flex;
+  align-items: center; justify-content: center;
+  margin-bottom: 20px;
+}
+.agent-icon svg { width: 24px; height: 24px; fill: var(--primary); }
+.agent-name {
+  font-size: 15px; font-weight: 700; color: var(--ink);
+  margin-bottom: 8px;
+}
+.agent-desc {
+  font-size: 13px; color: var(--gray-50); line-height: 1.75;
+  margin-bottom: 16px;
+}
+.agent-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.agent-tag {
+  font-size: 11px; padding: 4px 10px; border-radius: 12px;
+  background: var(--warm); color: var(--gray-70);
+  border: 1px solid var(--gray-10);
+}
+
+/* COMPARISON TABLE */
+.compare-table {
+  background: var(--surface);
+  border-radius: 4px;
+  border: 1px solid var(--gray-10);
+  overflow: hidden;
+}
+.compare-header {
+  display: grid; grid-template-columns: 180px 1fr 1fr;
+  background: var(--ink); color: #fff;
+  font-size: 11px; letter-spacing: .1em; text-transform: uppercase;
+  font-weight: 700;
+}
+.compare-header span {
+  padding: 16px 20px;
+  border-right: 1px solid rgba(255,255,255,.1);
+}
+.compare-header span:last-child { border-right: none; }
+.compare-row {
+  display: grid; grid-template-columns: 180px 1fr 1fr;
+  border-bottom: 1px solid var(--gray-10);
+  transition: background .25s var(--ease);
+}
+.compare-row:last-child { border-bottom: none; }
+.compare-row:hover { background: rgba(26,95,122,.03); }
+.compare-row span {
+  padding: 18px 20px;
+  font-size: 13px;
+  border-right: 1px solid var(--gray-10);
+  display: flex; align-items: center;
+}
+.compare-row span:last-child { border-right: none; }
+.compare-row span:first-child {
+  font-weight: 700; color: var(--ink);
+  background: var(--warm);
+}
+.human-col { color: var(--accent); }
+.agent-col { color: var(--primary); }
+
+/* FEATURE LIST */
+.feature-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
+}
+.feature-card {
+  background: var(--surface);
+  border-radius: 4px;
+  padding: 28px 24px;
+  border: 1px solid var(--gray-10);
+  text-align: center;
+  transition: border-color .3s var(--ease), transform .3s var(--ease);
+}
+.feature-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.feature-icon {
+  width: 48px; height: 48px; border-radius: 50%;
+  background: rgba(26,95,122,.1);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px;
+}
+.feature-icon svg { width: 22px; height: 22px; fill: var(--primary); }
+.feature-name {
+  font-size: 13px; font-weight: 700; color: var(--ink);
+  margin-bottom: 6px;
+}
+.feature-desc {
+  font-size: 11.5px; color: var(--gray-50); line-height: 1.6;
+}
+
+/* EXPANDABLE */
+.expand-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 20px 24px;
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .25s var(--ease);
+}
+.expand-header:hover { background: var(--warm); }
+.expand-header h3 {
+  font-size: 14px; font-weight: 700; color: var(--ink);
+  display: flex; align-items: center; gap: 12px;
+}
+.expand-icon {
+  width: 24px; height: 24px; border-radius: 50%;
+  background: var(--primary); display: flex;
+  align-items: center; justify-content: center;
+  transition: transform .3s var(--ease);
+}
+.expand-icon svg { width: 12px; height: 12px; fill: #fff; }
+.expand-icon.open { transform: rotate(45deg); }
+.expand-content {
+  max-height: 0; overflow: hidden;
+  transition: max-height .4s var(--ease);
+  background: var(--surface);
+  border: 1px solid var(--gray-10);
+  border-top: none;
+  border-radius: 0 0 4px 4px;
+}
+.expand-content.open { max-height: 600px; }
+.expand-inner { padding: 24px; }
+.expand-inner p { font-size: 13.5px; color: var(--gray-70); line-height: 1.8; margin-bottom: 12px; }
+.expand-inner p:last-child { margin-bottom: 0; }
+.expand-inner ul { margin: 12px 0; padding-left: 20px; }
+.expand-inner li { font-size: 13px; color: var(--gray-70); margin-bottom: 8px; }
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  padding-left: 32px;
+}
+.timeline::before {
+  content: '';
+  position: absolute; left: 6px; top: 0; bottom: 0;
+  width: 2px; background: linear-gradient(180deg, var(--primary) 0%, var(--gray-10) 100%);
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 40px;
+}
+.timeline-item:last-child { margin-bottom: 0; }
+.timeline-dot {
+  position: absolute; left: -32px; top: 6px;
+  width: 14px; height: 14px; border-radius: 50%;
+  background: var(--primary); border: 3px solid var(--warm);
+  box-shadow: 0 0 0 2px var(--primary);
+}
+.timeline-time {
+  font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase;
+  color: var(--primary); font-weight: 700; margin-bottom: 6px;
+  display: block;
+}
+.timeline-title {
+  font-size: 15px; font-weight: 700; color: var(--ink);
+  line-height: 1.4; margin-bottom: 8px;
+}
+.timeline-content {
+  font-size: 13px; color: var(--gray-50); line-height: 1.8;
+  background: var(--surface);
+  padding: 16px 20px;
+  border-radius: 4px;
+  border: 1px solid var(--gray-10);
+}
+.timeline-content li { margin-bottom: 6px; }
+.timeline-content li:last-child { margin-bottom: 0; }
+
+/* KEY POINT */
+.key-point {
+  background: var(--primary); color: #fff;
+  border-radius: 4px;
+  padding: 36px 32px;
+}
+.key-point-lbl {
+  font-size: 10px; letter-spacing: .2em; text-transform: uppercase;
+  color: rgba(255,255,255,.55); margin-bottom: 16px; font-weight: 700;
+}
+.key-point-text {
+  font-family: var(--font-serif); font-size: 22px; line-height: 1.5;
+  color: #fff; font-weight: 400;
+}
+
+/* FOOTER */
+.foot {
+  background: var(--ink); padding: 56px 0;
+}
+.foot-inner {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.foot-left { display: flex; align-items: center; gap: 20px; }
+.foot-mark {
+  background: var(--primary); color: #fff;
+  font-size: 13px; font-weight: 700; letter-spacing: .06em;
+  padding: 8px 18px; border-radius: 2px;
+}
+.foot-title { font-size: 14px; font-weight: 700; color: rgba(255,255,255,.85); margin-bottom: 3px; }
+.foot-sub { font-size: 12px; color: rgba(255,255,255,.35); letter-spacing: .04em; }
+.foot-note {
+  text-align: right; font-size: 11.5px; color: rgba(255,255,255,.28); line-height: 1.8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 860px) {
+  .container, .hero-inner { padding-left: 24px; padding-right: 24px; }
+  .hero-body { grid-template-columns: 1fr; }
+  .hero-metrics { flex-direction: row; border-left: none; padding-left: 0; border-top: 1px solid var(--gray-10); padding-top: 32px; margin-top: 32px; }
+  .metric { padding: 0 24px 0 0; border-bottom: none; text-align: left; }
+  .insight-grid { grid-template-columns: 1fr; gap: 48px; }
+  .agent-grid { grid-template-columns: 1fr; }
+  .compare-header, .compare-row { grid-template-columns: 120px 1fr 1fr; }
+  .feature-grid { grid-template-columns: 1fr 1fr; }
+  .foot-inner { flex-direction: column; gap: 28px; align-items: flex-start; }
+  .foot-note { text-align: left; }
+}
+
+/* PRINT */
+@media print {
+  @page { size: A3 landscape; margin: 15mm; }
+  body { background: #fff; font-size: 11pt; }
+  .hero { border: none; box-shadow: none; }
+  .insight { background: #f5f5f5; color: #000; }
+  .insight-text { color: #333; }
+  .foot { background: #333; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .compare-header { background: #333 !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .compare-row:hover { background: rgba(26,95,122,.05) !important; }
+  .agent-card:hover, .feature-card:hover { transform: none; box-shadow: none; }
+  .key-point { background: var(--primary) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-stripe"></div>
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="brand-badge">
+        <div class="brand-rect">组织统筹</div>
+        <div class="brand-en">课7 · 企业文化<br>智能体型组织</div>
+      </div>
+      <div class="hero-tag">第一章</div>
+    </div>
+    <div class="hero-body">
+      <div>
+        <p class="eyebrow">智能体型组织的本质</p>
+        <h1 class="hero-h1 serif">
+          理解<span style="color: var(--accent)">"统筹"</span>为何成为<br>新的领导力核心
+        </h1>
+        <p class="hero-lead">基于德勤2026年全球人力资本趋势报告、麦肯锡智能体型组织分析、IBM人机混合团队领导力研究</p>
+      </div>
+      <div class="hero-metrics">
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">智能体类型</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">4</span>
+          <span class="metric-lbl">人类核心优势</span>
+        </div>
+        <div class="metric">
+          <span class="metric-val serif">5</span>
+          <span class="metric-lbl">组织新特征</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- INSIGHT -->
+<section class="insight">
+  <div class="container">
+    <div class="insight-grid">
+      <blockquote class="insight-quote serif">
+        统筹能力之所以成为新的领导力核心，<br>是因为它决定了人类与智能体能否真正协同创造价值
+      </blockquote>
+      <div class="insight-list">
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>德勤2026趋势：</strong>89%的全球企业已开始部署AI智能体，但仅12%建立了有效的人机协作机制</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>麦肯锡洞察：</strong>未来十年，管理者最重要的能力是"判断何时用智能体、何时用人"的统筹能力</p>
+        </div>
+        <div class="insight-item">
+          <div class="insight-dot"></div>
+          <p class="insight-text"><strong>IBM研究：</strong>高效人机混合团队的领导者，都具备出色的语境建立和任务分配能力</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- AGENT TYPES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">智能体的类型</p>
+      <h2 class="serif">四类智能体的能力边界</h2>
+      <p>不同类型的智能体有不同的能力边界和适用场景</p>
+    </div>
+    <div class="agent-grid">
+      <div class="agent-card">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14H7v-2h5v2zm5-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+        </div>
+        <h3 class="agent-name">执行型智能体</h3>
+        <p class="agent-desc">按照预设规则和流程执行重复性任务，如数据录入、报表生成、客服应答</p>
+        <div class="agent-tags">
+          <span class="agent-tag">高确定性</span>
+          <span class="agent-tag">低创造性</span>
+          <span class="agent-tag">7x24可用</span>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/></svg>
+        </div>
+        <h3 class="agent-name">分析型智能体</h3>
+        <p class="agent-desc">处理大量数据、识别模式、生成洞察，如市场分析、风险评估、趋势预测</p>
+        <div class="agent-tags">
+          <span class="agent-tag">数据密集</span>
+          <span class="agent-tag">高吞吐量</span>
+          <span class="agent-tag">客观中立</span>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 9 6.5 9 8 9.67 8 10.5 7.33 12 6.5 12zm3-4C8.67 8 8 7.33 8 6.5S8.67 5 9.5 5s1.5.67 1.5 1.5S10.33 8 9.5 8zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 5 14.5 5s1.5.67 1.5 1.5S15.33 8 14.5 8zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 9 17.5 9s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+        </div>
+        <h3 class="agent-name">创造型智能体</h3>
+        <p class="agent-desc">生成新内容、提出创意方案，如文案创作、设计生成、代码编写</p>
+        <div class="agent-tags">
+          <span class="agent-tag">高创造性</span>
+          <span class="agent-tag">需要引导</span>
+          <span class="agent-tag">迭代优化</span>
+        </div>
+      </div>
+      <div class="agent-card">
+        <div class="agent-icon">
+          <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+        </div>
+        <h3 class="agent-name">社交型智能体</h3>
+        <p class="agent-desc">模拟人际交互、进行协调沟通，如团队协调、客户关系、会议主持</p>
+        <div class="agent-tags">
+          <span class="agent-tag">高情商模拟</span>
+          <span class="agent-tag">关系维护</span>
+          <span class="agent-tag">需监督</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HUMAN VS AGENT -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">核心差异</p>
+      <h2 class="serif">人类与智能体的本质区别</h2>
+      <p>理解差异是有效统筹的前提</p>
+    </div>
+    <div class="compare-table">
+      <div class="compare-header">
+        <span>能力维度</span>
+        <span style="color: var(--accent)">人类优势</span>
+        <span style="color: var(--primary)">智能体局限</span>
+      </div>
+      <div class="compare-row">
+        <span>判断力</span>
+        <span class="human-col">在模糊、不完整信息下做出价值判断</span>
+        <span class="agent-col">依赖清晰的目标函数和充足的训练数据</span>
+      </div>
+      <div class="compare-row">
+        <span>创造力</span>
+        <span class="human-col">跨越领域建立新连接，产生原创性想法</span>
+        <span class="agent-col">在已有模式基础上重组，难以真正"跳出框架"</span>
+      </div>
+      <div class="compare-row">
+        <span>情感智能</span>
+        <span class="human-col">理解深层动机、进行情感共鸣、建立信任</span>
+        <span class="agent-col">可以模拟情感表达，但无法真正"感受"</span>
+      </div>
+      <div class="compare-row">
+        <span>伦理思考</span>
+        <span class="human-col">在利益冲突中进行价值权衡、承担责任</span>
+        <span class="agent-col">可以识别伦理问题，但无法做最终的伦理判断</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ORGANIZATION FEATURES -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">组织特征</p>
+      <h2 class="serif">智能体型组织的五个新特征</h2>
+      <p>这些特征要求领导者具备全新的统筹能力</p>
+    </div>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <p class="feature-name">弹性</p>
+        <p class="feature-desc">根据任务需求动态调整人机比例，快速扩展或收缩</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z"/></svg>
+        </div>
+        <p class="feature-name">Scale</p>
+        <p class="feature-desc">智能体可快速复制和扩展，处理海量并发任务</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
+        </div>
+        <p class="feature-name">实时学习</p>
+        <p class="feature-desc">智能体从每次交互中持续优化，人类提供方向性指导</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+        </div>
+        <p class="feature-name">涌现效应</p>
+        <p class="feature-desc">人机协作产生超越单一能力的整体智能</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+        </div>
+        <p class="feature-name">信任网络</p>
+        <p class="feature-desc">人类与智能体之间建立透明的信任机制</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY COORDINATION -->
+<section class="section section-warm">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">核心洞察</p>
+      <h2 class="serif">为什么"统筹"成为新的领导力核心</h2>
+      <p>这不是管理技能，而是全新的领导力维度</p>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-time">传统领导力</span>
+        <h3 class="timeline-title">计划、组织、控制——以人为对象</h3>
+        <ul class="timeline-content">
+          <li>工业化时代的管理范式：人是最主要的执行者和资源</li>
+          <li>领导者需要协调不同人的工作分配和时间安排</li>
+          <li>核心挑战：人的有限理性、沟通成本、激励问题</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-time">智能体时代</span>
+        <h3 class="timeline-title">语境、分配、信任——以人机系统为对象</h3>
+        <ul class="timeline-content">
+          <li>新增维度：判断哪些任务适合智能体、哪些需要人类判断</li>
+          <li>核心挑战：建立共同语境、在人机之间建立信任、管理混合团队节奏</li>
+          <li>统筹能力 = 人类智能 + 机器智能的最大化协同</li>
+        </ul>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <span class="timeline-time">关键转变</span>
+        <h3 class="timeline-title">从"管人"到"统筹人机"</h3>
+        <ul class="timeline-content">
+          <li>不再只是"人员管理"，而是"能力组合管理"</li>
+          <li>领导者需要理解智能体的能力和局限，才能做出正确分配</li>
+          <li>成功的统筹者 = 懂业务 + 懂技术 + 懂人性</li>
+        </ul>
+      </div>
+    </div>
+    <div class="key-point" style="margin-top: 48px;">
+      <p class="key-point-lbl">核心观点</p>
+      <p class="key-point-text">统筹能力不是"让机器取代人"，而是"让合适的人做合适的事，让合适的机器做合适的事"——这是智能体时代领导力的本质</p>
+    </div>
+  </div>
+</section>
+
+<!-- LEARNING SUMMARY -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">章节小结</p>
+      <h2 class="serif">本章要点</h2>
+    </div>
+    <div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">1</span>
+          智能体的四种类型
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>执行型智能体擅长重复性任务；分析型智能体擅长数据处理和模式识别；创造型智能体擅长内容生成但需要人类引导；社交型智能体擅长协调沟通但需要监督。</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">2</span>
+          人类的四项核心优势
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>判断力：在不完整信息下做价值决策；创造力：跨越领域建立新连接；情感智能：理解深层动机并建立信任；伦理思考：在利益冲突中做出价值权衡。</p>
+        </div>
+      </div>
+      <div style="height: 12px;"></div>
+      <div class="expand-header" onclick="toggleExpand(this)">
+        <h3>
+          <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 700;">3</span>
+          统筹能力的本质
+        </h3>
+        <div class="expand-icon"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></div>
+      </div>
+      <div class="expand-content">
+        <div class="expand-inner">
+          <p>统筹能力 = 判断"何时用智能体、何时用人" + 建立共同语境 + 在人机之间建立信任 + 管理混合团队节奏。这是智能体时代领导力的核心差异化的能力。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="container">
+    <div class="foot-inner">
+      <div class="foot-left">
+        <div class="foot-mark">组织统筹</div>
+        <div>
+          <p class="foot-title">第一章：智能体型组织的本质</p>
+          <p class="foot-sub">课7 · 企业文化模块 · 组织统筹能力</p>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>基于德勤2026年全球人力资本趋势报告</p>
+        <p>麦肯锡智能体型组织分析 · IBM人机混合团队领导力研究</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+function toggleExpand(header) {
+  const content = header.nextElementSibling;
+  const icon = header.querySelector('.expand-icon');
+  content.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+
+document.querySelectorAll('.agent-card').forEach(function(card) {
+  card.addEventListener('click', function() {
+    this.querySelector('.agent-card-content') && this.querySelector('.agent-card-content').classList.toggle('show');
+  });
+});
+</script>
+</body>
+</html>

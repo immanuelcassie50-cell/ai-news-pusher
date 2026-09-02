@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheets>
+    <sheet name="工具表单总览" sheetId="1" r:id="rId1"/>
+    <sheet name="H1术语速查卡使用指南" sheetId="2" r:id="rId4"/>
+    <sheet name="H2开户检查清单使用指南" sheetId="3" r:id="rId5"/>
+    <sheet name="H3技术分析工作表使用指南" sheetId="4" r:id="rId6"/>
+    <sheet name="H4-H10使用指南" sheetId="5" r:id="rId7"/>
+    <sheet name="讲师操作提示" sheetId="6" r:id="rId8"/>
+  </sheets>
+</workbook>

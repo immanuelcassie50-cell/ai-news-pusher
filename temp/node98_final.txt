@@ -1,0 +1,9 @@
+=== Lines 36-39 ===
+L36:"    { label:\"背景\", content:\"华为有完善的\\\"讲师荣誉体系\\\",内训师被称为\\\"内部专家\" },\r"
+L37:"    { label:\"核心机制\", content:\"积分制,积分可兑换外部培训/晋升加分/奖金\" },\r"
+L38:"    { label:\"激励运营\", content:\"每月\\\"讲师沙龙\",每季\\\"课程发布会\",每年\\\"讲师盛典\" },\r"
+L39:"    { label:\"关键洞察\", content:\"激励需要仪式感,让内训师有\\\"被看见\\\"的机会\" }\r"
+=== File encoding check ===
+First 50 chars: "// slide-98.js - 激励机制设计案例 - 华为\r\nconst pptxgen = re"
+vm.Script: ERROR Invalid or unexpected token
+require: ERROR Invalid or unexpected token

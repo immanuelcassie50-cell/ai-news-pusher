@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "WorkplaceWritingInput",
+  "type": "object",
+  "properties": {
+    "scene_type": {
+      "type": "string",
+      "enum": ["weekly_report", "meeting_minutes", "work_plan", "proposal", "retro_report", "annual_review", "application", "public_speech"],
+      "description": "文体类型"
+    },
+    "author": {
+      "type": "string",
+      "description": "作者/撰写人"
+    },
+    "audience": {
+      "type": "string",
+      "description": "受众/读者（谁会看到这份文档）"
+    },
+    "goal": {
+      "type": "string",
+      "description": "写作目标（这份文档要达成什么）"
+    },
+    "key_info": {
+      "type": "object",
+      "description": "关键信息（根据文体类型不同，包含不同的字段）",
+      "properties": {
+        "completed": {
+          "type": "array",
+          "description": "已完成事项（周报用）"
+        },
+        "in_progress": {
+          "type": "array",
+          "description": "进行中事项（周报用）"
+        },
+        "next_plan": {
+          "type": "array",
+          "description": "下周计划（周报用）"
+        },
+        "decisions": {
+          "type": "array",
+          "description": "会议决策（纪要用）"
+        },
+        "todos": {
+          "type": "array",
+          "description": "待办事项（纪要用）"
+        },
+        "background": {
+          "type": "string",
+          "description": "背景描述（申请/方案用）"
+        },
+        "request": {
+          "type": "string",
+          "description": "申请内容（申请报告用）"
+        },
+        "achievements": {
+          "type": "array",
+          "description": "核心成果（年终/竞聘用）"
+        },
+        "plan": {
+          "type": "array",
+          "description": "规划内容（年终/竞聘用）"
+        }
+      }
+    },
+    "deadline": {
+      "type": "string",
+      "description": "截止时间（YYYY-MM-DD格式）"
+    }
+  },
+  "required": ["scene_type", "author", "audience", "goal"]
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="21" uniqueCount="21">
+  <si><t>出海经验沉淀模板</t></si>
+  <si><t>单次经验记录模板</t></si>
+  <si><t>基本信息</t></si>
+  <si><t>事件名称</t></si>
+  <si><t>发生市场</t></si>
+  <si><t>发生日期</t></si>
+  <si><t>记录人</t></si>
+  <si><t>事件类型</t></si>
+  <si><t>事件描述</t></si>
+  <si><t>决策逻辑</t></si>
+  <si><t>结果呈现</t></si>
+  <si><t>经验提炼</t></si>
+  <si><t>知识沉淀三层机制</t></si>
+  <si><t>捕捉：即时记录（事不超过24小时）</t></si>
+  <si><t>流通：定期复盘（周/月维度）</t></si>
+  <si><t>提炼：结构化沉淀（季度/项目维度）</t></si>
+  <si><t>[填写]</t></si>
+  <si><t>[详细描述事件背景、经过、涉及的人员和决策点]</t></si>
+  <si><t>[当时做决策的核心考量是什么？依据哪些信息？]</t></si>
+  <si><t>[最终结果如何？好/坏/中性？量化指标？]</t></si>
+  <si><t>[可复用的原则或教训是什么？适用于哪些场景？]</t></si>
+</sst>

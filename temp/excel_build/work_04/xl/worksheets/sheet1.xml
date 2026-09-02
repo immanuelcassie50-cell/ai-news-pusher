@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView tabSelected="1" workbookViewId="0"/>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols><col min="1" max="1" width="22" customWidth="1"/><col min="2" max="2" width="80" customWidth="1"/></cols>
+  <sheetData>
+  <row r="1" ht="32" customHeight="1">
+  <c r="A1" s="24" t="inlineStr"><is><t>F9 缺口判断决策树 · Excel 化版本 — 使用说明</t></is></c>
+</row>
+<row r="2" ht="22" customHeight="1">
+  <c r="A2" s="2" t="inlineStr"><is><t>本工具是 F9 决策树的 Excel 配套表单：管理者在面谈中走完四步后，把判定结果填入本表——形成可追溯、可复用的发展依据。</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="0"/>
+</row>
+<row r="4">
+  <c r="A4" s="5" t="inlineStr"><is><t>一、四个工作表的功能</t></is></c>
+</row>
+<row r="5">
+  <c r="A5" s="0" t="inlineStr"><is><t>工作表</t></is></c>
+  <c r="B5" s="0" t="inlineStr"><is><t>功能</t></is></c>
+</row>
+<row r="6">
+  <c r="A6" s="13" t="inlineStr"><is><t>使用说明（本表）</t></is></c>
+  <c r="B6" s="13" t="inlineStr"><is><t>告诉你这份文件怎么用、四步怎么走</t></is></c>
+</row>
+<row r="7">
+  <c r="A7" s="13" t="inlineStr"><is><t>决策树四步判定</t></is></c>
+  <c r="B7" s="13" t="inlineStr"><is><t>核心工作表：每行填一个员工的判定结果，公式自动给出推荐启动问题</t></is></c>
+</row>
+<row r="8">
+  <c r="A8" s="13" t="inlineStr"><is><t>5个完整场景示例</t></is></c>
+  <c r="B8" s="13" t="inlineStr"><is><t>F9 原文的 5 个案例完整填写，演示&quot;判定→启动问题&quot;的转化</t></is></c>
+</row>
+<row r="9">
+  <c r="A9" s="13" t="inlineStr"><is><t>缺口类型与发展路径速查</t></is></c>
+  <c r="B9" s="13" t="inlineStr"><is><t>纯查询表：按&quot;缺口类型+轨道&quot;快速找&quot;发展路径+启动问题&quot;</t></is></c>
+</row>
+<row r="10">
+  <c r="A10" s="0"/>
+</row>
+<row r="11">
+  <c r="A11" s="5" t="inlineStr"><is><t>二、四步走的核心逻辑（与 F9 原文一致）</t></is></c>
+</row>
+<row r="12">
+  <c r="A12" s="0" t="inlineStr"><is><t>步骤</t></is></c>
+  <c r="B12" s="0" t="inlineStr"><is><t>核心问题</t></is></c>
+  <c r="C12" s="0" t="inlineStr"><is><t>本表中的填写方式</t></is></c>
+</row>
+<row r="13">
+  <c r="A13" s="13" t="inlineStr"><is><t>第一步</t></is></c>
+  <c r="B13" s="13" t="inlineStr"><is><t>员工”会不会做”这件事？</t></is></c>
+  <c r="C13" s="13" t="inlineStr"><is><t>从&quot;技能/行为/认知/AI工具&quot;中选 1 个（列 D 限定选项）</t></is></c>
+</row>
+<row r="14">
+  <c r="A14" s="13" t="inlineStr"><is><t>第二步</t></is></c>
+  <c r="B14" s="13" t="inlineStr"><is><t>“AI 工具能补”还是”必须人发展”？</t></is></c>
+  <c r="C14" s="13" t="inlineStr"><is><t>选&quot;AI可补/必须人发展/两者都有&quot;（列 E 限定选项）</t></is></c>
+</row>
+<row r="15">
+  <c r="A15" s="13" t="inlineStr"><is><t>第三步</t></is></c>
+  <c r="B15" s="13" t="inlineStr"><is><t>具体发展路径是什么？</t></is></c>
+  <c r="C15" s="13" t="inlineStr"><is><t>从下方速查表（学/练/带/反馈/实战/对齐）选 1 个（列 F）</t></is></c>
+</row>
+<row r="16">
+  <c r="A16" s="13" t="inlineStr"><is><t>第四步</t></is></c>
+  <c r="B16" s="13" t="inlineStr"><is><t>用 F7 哪个启动问题？</t></is></c>
+  <c r="C16" s="13" t="inlineStr"><is><t>公式根据前 3 步自动推荐（列 H）；可手动覆盖（列 I）</t></is></c>
+</row>
+<row r="17">
+  <c r="A17" s="0"/>
+</row>
+<row r="18">
+  <c r="A18" s="5" t="inlineStr"><is><t>三、判定选项说明（务必看一遍再开始填）</t></is></c>
+</row>
+<row r="19" ht="22" customHeight="1">
+  <c r="A19" s="4" t="inlineStr"><is><t>第一步 · 缺口类型（D列）</t></is></c>
+  <c r="C19" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="20">
+  <c r="A20" s="14" t="inlineStr"><is><t>技能</t></is></c>
+  <c r="C20" s="14" t="inlineStr"><is><t>员工说”我不太会”；给他任务明显吃力、频繁问基础问题</t></is></c>
+</row>
+<row r="21">
+  <c r="A21" s="14" t="inlineStr"><is><t>行为</t></is></c>
+  <c r="C21" s="14" t="inlineStr"><is><t>员工知道怎么做；被提醒后能做对；没提醒时就不做——一致性差</t></is></c>
+</row>
+<row r="22">
+  <c r="A22" s="14" t="inlineStr"><is><t>认知</t></is></c>
+  <c r="C22" s="14" t="inlineStr"><is><t>员工理解的”好”和标准不一样；反复”做完了”但不符合预期</t></is></c>
+</row>
+<row r="23">
+  <c r="A23" s="14" t="inlineStr"><is><t>AI工具</t></is></c>
+  <c r="C23" s="14" t="inlineStr"><is><t>没用过/用得浅/用错/依赖但不会评估AI输出</t></is></c>
+</row>
+<row r="24">
+  <c r="A24" s="0"/>
+</row>
+<row r="25" ht="22" customHeight="1">
+  <c r="A25" s="4" t="inlineStr"><is><t>第二步 · AI可补 vs 人发展（E列）</t></is></c>
+  <c r="C25" s="4" t="inlineStr"><is><t>说明</t></is></c>
+</row>
+<row r="26">
+  <c r="A26" s="14" t="inlineStr"><is><t>AI可补</t></is></c>
+  <c r="C26" s="14" t="inlineStr"><is><t>AI做出来能直接用或略改能用；1-2周上手；不会降低判断标准</t></is></c>
+</row>
+<row r="27">
+  <c r="A27" s="14" t="inlineStr"><is><t>必须人发展</t></is></c>
+  <c r="C27" s="14" t="inlineStr"><is><t>AI做不了关键判断；关于人和人的关系；专业领域深度</t></is></c>
+</row>
+<row r="28">
+  <c r="A28" s="14" t="inlineStr"><is><t>两者都有</t></is></c>
+  <c r="C28" s="14" t="inlineStr"><is><t>有些部分AI能帮+有些部分必须人做；先发展更紧迫的轨</t></is></c>
+</row>
+<row r="29">
+  <c r="A29" s="0"/>
+</row>
+<row r="30">
+  <c r="A30" s="5" t="inlineStr"><is><t>四、使用流程（建议）</t></is></c>
+</row>
+<row r="31">
+  <c r="A31" s="13" t="inlineStr"><is><t>① 打开“决策树四步判定”表，从第 4 行开始填：员工姓名/事实/缺口类型/双轨分叉/发展路径</t></is></c>
+</row>
+<row r="32">
+  <c r="A32" s="13" t="inlineStr"><is><t>② 填完前 3 步后，列 H（自动推荐启动问题）会自动出现，列 I 是手动覆盖位</t></is></c>
+</row>
+<row r="33">
+  <c r="A33" s="13" t="inlineStr"><is><t>③ 列 J 是给员工的话术草稿；列 K 是 30 天后回看位</t></is></c>
+</row>
+<row r="34">
+  <c r="A34" s="13" t="inlineStr"><is><t>④ 如需查&quot;特定缺口+轨道&quot;的最佳发展路径，翻“速查”表</t></is></c>
+</row>
+<row r="35">
+  <c r="A35" s="13" t="inlineStr"><is><t>⑤ 范例参考“5个完整场景示例”表</t></is></c>
+</row>
+<row r="36">
+  <c r="A36" s="0"/>
+</row>
+<row r="37">
+  <c r="A37" s="5" t="inlineStr"><is><t>五、本表配套使用</t></is></c>
+</row>
+<row r="38">
+  <c r="A38" s="13" t="inlineStr"><is><t>上接：F8（双轨状态判断）/ F5（事面原则）/ F6（场景识别）</t></is></c>
+</row>
+<row r="39">
+  <c r="A39" s="13" t="inlineStr"><is><t>下接：F7（启动问题）/ F10（结论纳入下次面谈清单）</t></is></c>
+</row>
+<row r="40">
+  <c r="A40" s="13" t="inlineStr"><is><t>配套：F3 四步面谈法——决策树用于 F3 的第三步&quot;分析缺口&quot;</t></is></c>
+</row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

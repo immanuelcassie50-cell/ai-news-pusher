@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="5" topLeftCell="A6" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="8" customWidth="1"/>
+    <col min="2" max="2" width="18" customWidth="1"/>
+    <col min="3" max="3" width="40" customWidth="1"/>
+    <col min="4" max="4" width="25" customWidth="1"/>
+    <col min="5" max="5" width="25" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>表单使用指引</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>股票投资入门配套工具表单索引</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="8"/>
+    <row r="5" ht="26" customHeight="1">
+      <c r="A5" s="8" t="inlineStr"><is><t>编号</t></is></c>
+      <c r="B5" s="8" t="inlineStr"><is><t>表单名称</t></is></c>
+      <c r="C5" s="8" t="inlineStr"><is><t>使用场景</t></is></c>
+      <c r="D5" s="8" t="inlineStr"><is><t>适用模块</t></is></c>
+      <c r="E5" s="8" t="inlineStr"><is><t>配套表单</t></is></c>
+    </row>
+    <row r="6" ht="22" customHeight="1">
+      <c r="A6" s="5" t="inlineStr"><is><t>H1</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>术语速查卡</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>学员预习及课堂快速查询专业术语含义</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>模块一：投资基础认知</t></is></c>
+      <c r="E6" s="6" t="inlineStr"><is><t>配套：课程PPT术语表</t></is></c>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" s="5" t="inlineStr"><is><t>H2</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t>开户检查清单</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>券商开户前准备与流程确认</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>模块二：账户开通</t></is></c>
+      <c r="E7" s="6" t="inlineStr"><is><t>配套：券商开户链接</t></is></c>
+    </row>
+    <row r="8" ht="22" customHeight="1">
+      <c r="A8" s="5" t="inlineStr"><is><t>H3</t></is></c>
+      <c r="B8" s="6" t="inlineStr"><is><t>技术分析工作表</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>K线图、均线、成交量分析实操练习</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>模块三：技术分析入门</t></is></c>
+      <c r="E8" s="6" t="inlineStr"><is><t>配套：行情软件截图</t></is></c>
+    </row>
+    <row r="9" ht="22" customHeight="1">
+      <c r="A9" s="5" t="inlineStr"><is><t>H4</t></is></c>
+      <c r="B9" s="6" t="inlineStr"><is><t>基本面分析工作表</t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>财报关键指标分析与选股练习</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>模块四：基本面分析</t></is></c>
+      <c r="E9" s="6" t="inlineStr"><is><t>配套：年报查询方法</t></is></c>
+    </row>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="5" t="inlineStr"><is><t>H5</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>估值分析工作表</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>PE、PB、DCF等估值方法练习</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>模块四：估值方法</t></is></c>
+      <c r="E10" s="6" t="inlineStr"><is><t>配套：Wind数据接口</t></is></c>
+    </row>
+    <row r="11" ht="22" customHeight="1">
+      <c r="A11" s="5" t="inlineStr"><is><t>H6</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t>交易策略回测表</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>均线策略、突破策略的历史回测练习</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>模块五：交易策略</t></is></c>
+      <c r="E11" s="6" t="inlineStr"><is><t>配套：回测软件说明</t></is></c>
+    </row>
+    <row r="12" ht="22" customHeight="1">
+      <c r="A12" s="5" t="inlineStr"><is><t>H7</t></is></c>
+      <c r="B12" s="6" t="inlineStr"><is><t>仓位管理计算器</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>凯利公式与仓位管理计算</t></is></c>
+      <c r="D12" s="6" t="inlineStr"><is><t>模块五：风险管理</t></is></c>
+      <c r="E12" s="6" t="inlineStr"><is><t>配套：资金曲线模板</t></is></c>
+    </row>
+    <row r="13" ht="22" customHeight="1">
+      <c r="A13" s="5" t="inlineStr"><is><t>H8</t></is></c>
+      <c r="B13" s="6" t="inlineStr"><is><t>投资组合监控表</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>多股票组合监控与再平衡提醒</t></is></c>
+      <c r="D13" s="6" t="inlineStr"><is><t>模块六：组合管理</t></is></c>
+      <c r="E13" s="6" t="inlineStr"><is><t>配套：持仓记录模板</t></is></c>
+    </row>
+    <row r="14" ht="22" customHeight="1">
+      <c r="A14" s="5" t="inlineStr"><is><t>H9</t></is></c>
+      <c r="B14" s="6" t="inlineStr"><is><t>年度投资复盘表</t></is></c>
+      <c r="C14" s="6" t="inlineStr"><is><t>年度投资总结与策略调整</t></is></c>
+      <c r="D14" s="6" t="inlineStr"><is><t>模块七：投资复盘</t></is></c>
+      <c r="E14" s="6" t="inlineStr"><is><t>配套：收益计算表</t></is></c>
+    </row>
+    <row r="15" ht="22" customHeight="1">
+      <c r="A15" s="5" t="inlineStr"><is><t>H10</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t>心理偏差自检表</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>识别和克服投资中的心理偏差</t></is></c>
+      <c r="D15" s="6" t="inlineStr"><is><t>模块八：心理建设</t></is></c>
+      <c r="E15" s="6" t="inlineStr"><is><t>配套：行为金融学案例</t></is></c>
+    </row>
+  </sheetData>
+  <autoFilter ref="A5:E15"/>
+</worksheet>

@@ -1,0 +1,313 @@
+from docx import Document
+from docx.shared import Pt, Inches, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml.ns import qn
+from docx.oxml import OxmlElement
+import datetime
+
+doc = Document()
+
+section = doc.sections[0]
+section.page_width = Inches(8.5)
+section.page_height = Inches(11)
+section.left_margin = Inches(1)
+section.right_margin = Inches(1)
+section.top_margin = Inches(1)
+section.bottom_margin = Inches(1)
+
+def shade_cell(cell, fill_color):
+    shading = OxmlElement('w:shd')
+    shading.set(qn('w:fill'), fill_color)
+    cell._tc.get_or_add_tcPr().append(shading)
+
+def add_heading(doc, text, level=1, color=None):
+    p = doc.add_heading(text, level=level)
+    if color:
+        for run in p.runs:
+            run.font.color.rgb = color
+    return p
+
+def add_bullet(doc, text):
+    p = doc.add_paragraph(text, style='List Bullet')
+    return p
+
+# === COVER ===
+p = doc.add_paragraph()
+p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+run = p.add_run('\u57f9\u8425\u5e08\u5168\u5c40\u610f\u8bc6\u4e0e\u677e\u5f1b\u611f')
+run.bold = True
+run.font.size = Pt(28)
+run.font.color.rgb = RGBColor(0x1F, 0x4E, 0x79)
+
+p2 = doc.add_paragraph()
+p2.alignment = WD_ALIGN_PARAGRAPH.CENTER
+run2 = p2.add_run('\u8ba4\u8bc1\u73ed\u5ba3\u4f20\u6587\u6848')
+run2.font.size = Pt(16)
+run2.font.color.rgb = RGBColor(0x5B, 0x9B, 0xD5)
+
+p3 = doc.add_paragraph()
+p3.alignment = WD_ALIGN_PARAGRAPH.CENTER
+run3 = p3.add_run('\u2014\u2014\u4ece\u5f20\u83f1\u3001\u9a6c\u4e1c\u3001\u674e\u8bde\u4e09\u4f4d\u9876\u7ea7\u4e3b\u6301\u4eba\u63d0\u53d6\u7684\u53ef\u8fc1\u79fb\u65b9\u6cd5\u8bba')
+run3.font.size = Pt(12)
+run3.italic = True
+run3.font.color.rgb = RGBColor(0x70, 0x70, 0x70)
+
+doc.add_paragraph()
+
+p4 = doc.add_paragraph()
+p4.alignment = WD_ALIGN_PARAGRAPH.CENTER
+run4 = p4.add_run('\u300c\u677e\u5f1b\u611f\u4e0d\u662f\u6027\u683c\uff0c\u662f\u4e00\u7b14\u63d0\u524d\u7b97\u597d\u7684\u8d26\u300d')
+run4.bold = True
+run4.font.size = Pt(14)
+run4.font.color.rgb = RGBColor(0xBF, 0x8F, 0x00)
+
+doc.add_paragraph()
+
+# === 1. COURSE INTRO ===
+add_heading(doc, '\u4e00\u3001\u8bfe\u7a0b\u7b80\u4ecb', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+p = doc.add_paragraph()
+run = p.add_run('\u8fd9\u662f\u4e00\u95e8\u4ece\u201c\u5168\u5c40\u610f\u8bc6\u201d\u4e0e\u201c\u677e\u5f1b\u611f\u201d\u8fd9\u4e00\u4e2a\u5177\u4f53\u5207\u53e3\u5165\u8154\u7684\u4e13\u9879\u8bfe\u7a0b\u3002')
+p2 = doc.add_paragraph('\u53f0\u6e7e\u4e3b\u6301\u4eba\u5f20\u83f1\u4e09\u4e07\u4e94\u5343\u573a\u5927\u578b\u665a\u4f1a\u4ece\u5bb9\u81ea\u82e5\uff0c\u300a\u5947\u60ca\u8bf4\u300b\u4e3b\u6301\u4eba\u9a6c\u4e1c\u7528\u624b\u8fb9\u5c0f\u6728\u9c7c\u7cbe\u51c6\u63a7\u5236\u5168\u573a\u8282\u594f\uff0c\u8131\u53e3\u79c0\u51fa\u8eab\u7684\u674e\u8bde\u6562\u4e8e\u558a\u51fa\u201c\u5168\u81ea\u52a8\u5c0f\u5356\u90e8\u201d\u2014\u2014\u4e09\u4e2a\u4eba\u98ce\u683c\u5b8c\u5168\u4e0d\u540c\uff0c\u4f46\u5171\u540c\u62e5\u6709\u4e00\u79cd\u8ba9\u5168\u573a\u7fa1\u6155\u7684\u72b6\u6001\uff1a\u4ed6\u4eec\u5728\u53f0\u4e0a\u50cf\u662f\u5b8c\u5168\u677e\u5f00\u7684\uff0c\u540c\u65f6\u53c8\u50cf\u662f\u628a\u5168\u573a\u90fd\u88c5\u5728\u5fc3\u91cc\u3002')
+p3 = doc.add_paragraph('\u672c\u8bfe\u7a0b\u4e0d\u662f\u201c\u5982\u4f55\u514b\u670d\u821e\u53f0\u6050\u60e7\u201d\u7684\u5165\u95e8\u8bfe\uff0c\u800c\u662f\u4e00\u95e8\u7cbe\u51c6\u7684\u4e13\u9879\u7a81\u7834\u2014\u2014\u805a\u7126\u4e8e\u201c\u5982\u4f55\u5728\u53f0\u4e0a\u771f\u6b63\u677e\u4e0b\u6765\uff0c\u540c\u65f6\u8fd8\u80fd\u638c\u63a7\u5168\u573a\u201d\u8fd9\u4e00\u4e2a\u6838\u5fc3\u95ee\u9898\uff0c\u62c6\u89e3\u5230\u53ef\u6478\u4eff\u3001\u53ef\u7ec3\u4e60\u7684\u5177\u4f53\u52a8\u4f5c\u3002')
+
+# === 2. TARGET AUDIENCE ===
+add_heading(doc, '\u4e8c\u3001\u76ee\u6807\u5b66\u5458', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+doc.add_paragraph('\u672c\u8bfe\u7a0b\u9762\u5411\u4ee5\u4e0b\u4eba\u7fa4\uff1a')
+
+tbl1 = doc.add_table(rows=5, cols=2)
+tbl1.style = 'Table Grid'
+hdr = tbl1.rows[0].cells
+hdr[0].text = '\u5b66\u5458\u7c7b\u578b'
+hdr[1].text = '\u7279\u5f81\u63cf\u8ff0'
+shade_cell(hdr[0], '1F4E79')
+shade_cell(hdr[1], '1F4E79')
+for cell in hdr:
+    for para in cell.paragraphs:
+        for run in para.runs:
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+aud_data = [
+    ('\u5728\u804c\u57f9\u8425\u5e08', '\u6709\u4e00\u5b9a\u573a\u6b21\u7ecf\u9a8c\uff0c\u4f46\u4e0a\u53f0\u4ecd\u4f1a\u7d27\u5f20\u6216\u89c9\u5f97\u63a7\u573a\u80fd\u529b\u4e0d\u591f\u7684\u4ece\u4e1a\u8005'),
+    ('\u50a8\u5316\u5e08/\u5f15\u5bfc\u5e08', '\u7ecf\u5e38\u5e26\u5de5\u4f5c\u574a\u3001\u884c\u52a8\u5b66\u4e60\u9879\u76ee\u7684\u4e13\u4e1a\u4eba\u58eb\uff0c\u5e0c\u671b\u63d0\u5347\u5bf9\u73b0\u573a\u7684\u638c\u63a7\u529b'),
+    ('\u5185\u57f9\u5e08/HR', '\u9700\u8981\u7ecf\u5e38\u5728\u516c\u53f8\u5185\u90e8\u8fdb\u884c\u5206\u4eab\u3001\u6c47\u62a5\u3001\u9879\u76ee\u4e3b\u6301\u7684\u804c\u573a\u4eba\u58eb'),
+    ('\u4e3b\u6301\u4eba/\u6f14\u8bb2\u8005', '\u5bf9\u201c\u677e\u5f1b\u611f\u201d\u6709\u8ffd\u6c42\uff0c\u5e0c\u671b\u4ece\u4e09\u4f4d\u9876\u7ea7\u4e3b\u6301\u4eba\u8eab\u4e0a\u63d0\u53d6\u53ef\u8fc1\u79fb\u65b9\u6cd5\u8bba'),
+]
+for i, (t, d) in enumerate(aud_data):
+    row = tbl1.rows[i+1].cells
+    row[0].text = t
+    row[1].text = d
+
+doc.add_paragraph()
+
+# === 3. SELLING POINTS ===
+add_heading(doc, '\u4e09\u3001\u8bfe\u7a0b\u516d\u5927\u5356\u70b9', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+sp = [
+    ('\u53cd\u5e38\u8bc6\u516c\u7406', '\u6bcf\u7ae0\u4ece\u4e00\u4e2a\u98a0\u8986\u8ba4\u77e5\u7684\u6838\u5fc3\u5224\u65ad\u5f00\u59cb\uff0c\u76f4\u51fb\u5e38\u89c1\u8bef\u89e3'),
+    ('\u9876\u7ea7\u6848\u4f8b\u652f\u6491', '\u5f20\u83f1\u3001\u9a6c\u4e1c\u3001\u674e\u8bde\u2014\u2014\u4e09\u4f4d\u98ce\u683c\u8bef\u5f02\u7684\u9876\u7ea7\u4e3b\u6301\u4eba\u65b9\u6cd5\u8bba\u63d0\u70bc'),
+    ('\u56db\u6b65\u6559\u5b66\u6cd5', '\u516c\u7406-\u62c6\u89e3-\u8fc1\u79fb-\u5de5\u5177\uff0c\u786e\u4fdd\u5b66\u81f3\u80fd\u7528\u800c\u975e\u7eb7\u4e0a\u8c08\u5178'),
+    ('\u56db\u5957\u5de5\u5177\u8868\u5355', '\u73b0\u573a\u4fe1\u53f7\u5224\u65ad\u8868\u3001\u4e09\u7c7b\u9000\u8def\u6e05\u5355\u3001\u6c14\u53e3\u5bc6\u5ea6\u81ea\u67e5\u8868\u3001\u5355\u573a\u590d\u76d8\u8868'),
+    ('\u5fc3\u6001\u91cd\u5efa', '\u5904\u7406\u201c\u53f0\u4e0a\u677e\u5f1bvs\u53f0\u4e0b\u7d27\u5f20\u201d\u8fd9\u4e00\u6838\u5fc3\u77db\u76fe\uff0c\u4e0e\u7126\u8651\u548c\u89e3'),
+    ('\u53cc\u7ebf\u7ba1\u7406', '\u63ed\u793a\u5b66\u5458\u7ebf\u4e0e\u7532\u65b9\u7ebf\u5b8c\u5168\u4e0d\u540c\u7684\u8bc4\u4ef7\u4f53\u7cfb\uff0c\u63d0\u4f9b\u5206\u522b\u5e94\u5bf9\u7b56\u7565'),
+]
+for title, desc in sp:
+    p = doc.add_paragraph()
+    run = p.add_run('\u2726 ' + title + '\uff1a')
+    run.bold = True
+    run.font.size = Pt(11)
+    run.font.color.rgb = RGBColor(0xBF, 0x8F, 0x00)
+    run2 = p.add_run(desc)
+    run2.font.size = Pt(11)
+
+doc.add_paragraph()
+
+# === 4. LEARNING OUTCOMES ===
+add_heading(doc, '\u56db\u3001\u5b66\u5458\u4e09\u7ef4\u6536\u76ca', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+tbl2 = doc.add_table(rows=4, cols=3)
+tbl2.style = 'Table Grid'
+hdr2 = tbl2.rows[0].cells
+hdr2[0].text = '\u7ef4\u5ea6'
+hdr2[1].text = '\u76ee\u6807'
+hdr2[2].text = '\u5177\u4f53\u8868\u73b0'
+shade_cell(hdr2[0], '2E75B6')
+shade_cell(hdr2[1], '2E75B6')
+shade_cell(hdr2[2], '2E75B6')
+for cell in hdr2:
+    for para in cell.paragraphs:
+        for run in para.runs:
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+out_data = [
+    ('\u77e5\u8bc6', '\u8ba4\u77e5\u91cd\u5efa', '\u7406\u89e3\u677e\u5f1b\u611f\u672c\u8d28\u662f\u201c\u7cbe\u7b97\u201d\u800c\u975e\u5929\u8d4b\uff1b\u5168\u5c40\u610f\u8bc6\u672c\u8d28\u662f\u201c\u653e\u5f03\u6267\u5ff5\u201d\u800c\u975e\u201c\u770b\u89c1\u4e00\u5207\u201d'),
+    ('\u6280\u80fd', '\u5de5\u5177\u4f53\u7cfb', '\u638c\u63e1\u4e09\u7c7b\u9000\u8def\u8bbe\u8ba1\uff1b\u638c\u63e1\u6c14\u53e3\u5bc6\u5ea6\u81ea\u67e5\uff1b\u638c\u63e1\u201c\u7ffb\u8bd1\u590d\u8ff0\u201d\u63a5\u8bdd\u6280\u672f'),
+    ('\u6001\u5ea6', '\u5fc3\u6001\u548c\u89e3', '\u63a5\u53d7\u201c\u53f0\u4e0b\u7d27\u5f20\u6362\u53f0\u4e0a\u677e\u5f1b\u201d\u7684\u4ea4\u6362\u5173\u7cfb\uff1b\u4e0d\u518d\u8ffd\u6c42\u201c\u8868\u6f14\u677e\u5f1b\u201d'),
+]
+for i, row_data in enumerate(out_data):
+    row = tbl2.rows[i+1].cells
+    for j, val in enumerate(row_data):
+        row[j].text = val
+
+doc.add_paragraph()
+
+# === 5. COURSE OUTLINE ===
+add_heading(doc, '\u4e94\u3001\u8bfe\u7a0b\u5927\u7eb2\uff08\u5341\u7ae0\u7ed3\u6784\uff09', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+tbl3 = doc.add_table(rows=13, cols=3)
+tbl3.style = 'Table Grid'
+hdr3 = tbl3.rows[0].cells
+hdr3[0].text = '\u7ae0\u8282'
+hdr3[1].text = '\u4e3b\u9898'
+hdr3[2].text = '\u6838\u5fc3\u516c\u7406'
+shade_cell(hdr3[0], '1F4E79')
+shade_cell(hdr3[1], '1F4E79')
+shade_cell(hdr3[2], '1F4E79')
+for cell in hdr3:
+    for para in cell.paragraphs:
+        for run in para.runs:
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+outline_data = [
+    ('\u7b2c\u4e00\u90e8\u5206', '\u8ba4\u77e5\u5c42\u4e0e\u5b9e\u64cd\u5c42\uff08\u7b2c\u4e00\u81f3\u516d\u7ae0\uff09', ''),
+    ('\u7b2c\u4e00\u7ae0', '\u5168\u5c40\u610f\u8bc6\uff1a\u77e5\u9053\u54ea\u4e9b\u53ef\u4ee5\u4e0d\u770b', '\u5168\u5c40\u610f\u8bc6\u4e0d\u662f\u770b\u89c1\u66f4\u591a\uff0c\u662f\u63d0\u524d\u653e\u5f03\u5fc5\u987b\u770b\u89c1\u4e00\u5207\u7684\u6267\u5ff5'),
+    ('\u7b2c\u4e8c\u7ae0', '\u677e\u5f1b\u672c\u8d28\uff1a\u677e\u5f1b\u662f\u7b97\u51fa\u6765\u7684', '\u4f60\u80fd\u677e\u5230\u4ec0\u4e48\u7a0b\u5ea6\uff0c\u53d6\u51b3\u4e8e\u4f60\u66ff\u591a\u5c11\u79cd\u610f\u5916\u60f3\u597d\u4e86\u9000\u8def'),
+    ('\u7b2c\u4e09\u7ae0', '\u51c6\u5907\u65b9\u5411\uff1a\u51c6\u5907\u9519\u4e86\u5730\u65b9', '\u7d27\u5f20\u4e0d\u662f\u6ca1\u51c6\u5907\uff0c\u662f\u628a\u6240\u6709\u529b\u6c14\u90fd\u7528\u5728\u4e86\u4e0d\u4f1a\u51fa\u4e8b\u7684\u5730\u65b9'),
+    ('\u7b2c\u56db\u7ae0', '\u8282\u594f\u63a7\u5236\uff1a\u638c\u63a7\u547c\u5438\u7684\u8282\u594f', '\u6d41\u7a0b\u662f\u9aa8\u67b1\uff0c\u6c14\u53e3\u624d\u662f\u5185\u5bb9'),
+    ('\u7b2c\u4e94\u7ae0', '\u6c89\u9ed8\u667a\u6167\uff1a\u7b49\u4e00\u4e2a\u66f4\u51c6\u7684\u8bcd', '\u6c89\u9ed8\u4e0d\u662f\u51b7\u573a\uff0c\u662f\u4f60\u7559\u7ed9\u81ea\u5df1\u7684\u5客\u9519\u7a7a\u95f4'),
+    ('\u7b2c\u516d\u7ae0', '\u63a5\u8bdd\u6280\u672f\uff1a\u9012\u53e3\u5b50\u800c\u975e\u586b\u6e05\u5355', '\u4f60\u8bf4\u7684\u6bcf\u53e5\u8bdd\uff0c\u662f\u4e3a\u4e86\u4e0b\u4e00\u53e5\u66f4\u5bb9\u6613\u63a5\u4e0a'),
+    ('\u7b2c\u4e8c\u90e8\u5206', '\u534f\u4f5c\u5c42\u4e0e\u5fc3\u6001\u5c42\uff08\u7b2c\u4e03\u81f3\u5341\u7ae0\uff09', ''),
+    ('\u7b2c\u4e03\u7ae0', '\u53cc\u7ebf\u7ba1\u7406\uff1a\u5b66\u5458\u7ebf\u4e0e\u7532\u65b9\u7ebf', '\u4f60\u4ee5\u4e3a\u5728\u5bf9\u5b66\u5458\u8bb2\u8bfe\uff0c\u5176\u5b9e\u540c\u65f6\u5bf9\u7532\u65b9\u6f14\u4e00\u573a\u620f'),
+    ('\u7b2c\u516b\u7ae0', '\u6b0a\u5a01\u5efa\u7acb\uff1a\u6562\u4e8e\u4e0d\u6309\u6d41\u7a0b\u8d70', '\u6b0a\u5a01\u611f\u6765\u81ea\u4f60\u6562\u4e0d\u6309\u6d41\u7a0b\u8d70\uff0c\u4e0d\u662f\u628a\u6d41\u7a0b\u8d70\u5168'),
+    ('\u7b2c\u4e5d\u7ae0', '\u7d27\u5f20\u8f6c\u5316\uff1a\u4e0a\u53f0\u677e\u5f1b\u7684\u4ee3\u4ef7', '\u53f0\u4e0a\u7684\u677e\u5f1b\uff0c\u662f\u53f0\u4e0b\u6267\u4f4f\u7684\u7d27\u5f20\u6362\u6765\u7684'),
+    ('\u7b2c\u5341\u7ae0', '\u514b\u5236\u5c55\u793a\uff1a\u8bc1\u660e\u6b32\u7684\u9677\u9631', '\u8d8a\u6025\u4e8e\u8bc1\u660e\u4f60\u6709\u5168\u5c40\u610f\u8bc6\uff0c\u8d8a\u4f1a\u663e\u5f97\u5fc3\u865a'),
+]
+for i, row_data in enumerate(outline_data):
+    row = tbl3.rows[i+1].cells
+    for j, val in enumerate(row_data):
+        row[j].text = val
+    if '\u90e8\u5206' in row_data[0]:
+        shade_cell(row[0], 'E7E6E6')
+        shade_cell(row[1], 'E7E6E6')
+        shade_cell(row[2], 'E7E6E6')
+
+doc.add_paragraph()
+
+# === 6. TEACHING METHODS ===
+add_heading(doc, '\u516d\u3001\u6559\u5b66\u65b9\u5f0f', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+methods = [
+    ('\u516c\u7406\u5148\u884c', '\u6bcf\u7ae0\u4ece\u4e00\u4e2a\u53cd\u76f4\u89c9\u7684\u6838\u5fc3\u5224\u65ad\u5f00\u59cb\uff0c\u6253\u7834\u65e2\u6709\u8ba4\u77e5'),
+    ('\u6848\u4f8b\u8d2f\u7a7f', '\u5f20\u83f1\u3001\u9a6c\u4e1c\u3001\u674e\u8bde\u4e09\u4f4d\u6848\u4f8b\u8d2f\u7a7f\u5168\u8bfe\u7a0b\uff0c\u591a\u89d2\u5ea6\u53cd\u590d\u62c6\u89e3'),
+    ('\u4f53\u9a8c\u5f0f\u5b66\u4e60', '\u6bcf\u4e2a\u7ae0\u8282\u914d\u5957\u7ec3\u4e60\u6d3b\u52a8\uff0c\u5148\u4f53\u9a8c\u518d\u590d\u76d8\u518d\u63d0\u70bc\u539f\u5219'),
+    ('\u5de5\u5177\u843d\u5730', '\u56db\u5957\u5de5\u5177\u8868\u5355\u968f\u7ae0\u8282\u914d\u5957\uff0c\u5b66\u4e60\u6210\u679c\u53ef\u76f4\u63a5\u8fc1\u79fb\u4f7f\u7528'),
+]
+for title, desc in methods:
+    p = doc.add_paragraph()
+    run = p.add_run('\u25c6 ' + title + '\uff1a')
+    run.bold = True
+    run.font.size = Pt(11)
+    run.font.color.rgb = RGBColor(0x1F, 0x4E, 0x79)
+    run2 = p.add_run(desc)
+    run2.font.size = Pt(11)
+
+doc.add_paragraph()
+
+# === 7. CASE STUDIES ===
+add_heading(doc, '\u4e03\u3001\u4e09\u5927\u6848\u4f8b\u9635\u5bb9', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+tbl4 = doc.add_table(rows=4, cols=3)
+tbl4.style = 'Table Grid'
+hdr4 = tbl4.rows[0].cells
+hdr4[0].text = '\u4eba\u7269'
+hdr4[1].text = '\u6838\u5fc3\u7279\u5f81'
+hdr4[2].text = '\u652f\u6491\u8bba\u70b9'
+shade_cell(hdr4[0], '1F4E79')
+shade_cell(hdr4[1], '1F4E79')
+shade_cell(hdr4[2], '1F4E79')
+for cell in hdr4:
+    for para in cell.paragraphs:
+        for run in para.runs:
+            run.bold = True
+            run.font.color.rgb = RGBColor(0xFF, 0xFF, 0xFF)
+
+case_data = [
+    ('\u5f20\u83f1', '3.5\u4e07\u573a\u5927\u578b\u665a\u4f1a\u4e3b\u6301\u4ece\u5bb9\uff0c\u672c\u5b50\u4e00\u904d\u904d\u6539\u3001\u4f1a\u4e00\u904d\u904d\u5f00', '\u677e\u5f1b\u662f\u7b97\u51fa\u6765\u7684\uff1b\u53f0\u4e0a\u7684\u677e\u5f1b\u662f\u53f0\u4e0b\u8f83\u771f\u6362\u6765\u7684'),
+    ('\u9a6c\u4e1c', '\u624b\u8fb9\u5c0f\u6728\u9c7c\u63a7\u5236\u8282\u594f\uff1b\u8bf7\u4eba\u201c\u7ffb\u8bd1\u590d\u8ff0\u201d\u6765\u63a5\u8bdd', '\u5168\u5c40\u610f\u8bc6\u662f\u63d0\u524d\u8bbe\u8ba1\u597d\u7684\u5de5\u5177\uff1b\u63a5\u8bdd\u7684\u672c\u8d28\u662f\u9012\u53e3\u5b50'),
+    ('\u674e\u8bde', '\u8ffd\u6c42\u201c\u63a7\u5236\u4e0b\u7684\u5931\u63a7\u6c1b\u56f4\u201d\uff1b\u201c\u5168\u81ea\u52a8\u5c0f\u5356\u90e8\u201d\u6562\u4e8e\u5206\u63a7\u573a\u6743', '\u677e\u5f1b\u611f\u7684\u9876\u7ea7\u5f62\u6001\u662f\u6562\u4e8e\u8ba9\u6e0d\u63a7\u5236\u6743'),
+]
+for i, row_data in enumerate(case_data):
+    row = tbl4.rows[i+1].cells
+    for j, val in enumerate(row_data):
+        row[j].text = val
+
+doc.add_paragraph()
+
+# === 8. DELIVERABLES ===
+add_heading(doc, '\u516b\u3001\u914d\u5957\u4ea7\u51fa\u7269', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+outputs = [
+    '\u73b0\u573a\u4fe1\u53f7\u5224\u65ad\u8868\uff1a\u533a\u5206\u566a\u97f3\u4e0e\u771f\u4fe1\u53f7\u7684\u5224\u65ad\u6807\u51c6\u6e05\u5355',
+    '\u4e09\u7c7b\u9000\u8def\u6e05\u5355\uff1a\u6d41\u7a0b\u9000\u8def\u3001\u60c5\u7eea\u9000\u8def\u3001\u6743\u529b\u9000\u8def\u5b8c\u6574\u9884\u6848',
+    '\u6c14\u53e3\u5bc6\u5ea6\u81ea\u67e5\u8868\uff1a\u73b0\u573a\u8282\u594f\u4e0e\u505c\u987f\u5bc6\u5ea6\u7684\u81ea\u68c0\u5de5\u5177',
+    '\u5355\u573a\u590d\u76d8\u8868\uff1a\u6bcf\u573a\u6d3b\u52a8\u7ed3\u675f\u540e\u7684\u7ed3\u6784\u5316\u590d\u76d8\u6846\u67b6',
+    '\u5b8c\u6574\u6848\u4f8b\u96c6\uff1a\u5f20\u83f1/\u9a6c\u4e1c/\u674e\u8bde\u4e09\u5927\u6848\u4f8b\u8be6\u89e3',
+    '\u5b66\u5458\u8ba8\u8bba\u6307\u5355\uff1a\u6bcf\u7ae0\u914d\u5957\u8ba8\u8bba\u9898\u76ee\u4e0e\u5f15\u5bfc\u8bdd\u672f',
+]
+for item in outputs:
+    add_bullet(doc, item)
+
+doc.add_paragraph()
+
+# === 9. COURSE INFO ===
+add_heading(doc, '\u4e5d\u3001\u8bfe\u7a0b\u57fa\u672c\u4fe1\u606f', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+tbl5 = doc.add_table(rows=6, cols=2)
+tbl5.style = 'Table Grid'
+info_data = [
+    ('\u8bfe\u7a0b\u65f6\u957f', '2\u5929\uff08\u6bcf\u59296\u5c0f\u65f6\uff09\uff0c\u62164\u4e2a\u534a\u5929'),
+    ('\u8bfe\u7a0b\u5f62\u5f0f', '\u5de5\u4f5c\u574a+\u6848\u4f8b\u7814\u8ba8+\u5de5\u5177\u6f14\u7ec3+&lt;phan>'),
+    ('\u73ed\u7ea7\u89c4\u6a21', '20-30\u4eba/\u73ed'),
+    ('\u76ee\u6807\u5b66\u5458', '\u5728\u804c\u57f9\u8425\u5e08\u3001\u50a8\u5316\u5e08\u3001\u5185\u57f9\u5e08\u3001HR\u3001\u4e3b\u6301\u4eba'),
+    ('\u9884\u5907\u8981\u6c42', '\u81f3\u5c11 5 \u573a\u4ee5\u4e0a\u57f9\u8bad\u6216\u5de5\u4f5c\u574a\u4e3b\u6301\u7ecf\u9a8c'),
+    ('\u8bfe\u7a0b\u7248\u672c', 'V1.0 \u5b8c\u6574\u6559\u5b66\u7248'),
+]
+for i, (k, v) in enumerate(info_data):
+    row = tbl5.rows[i].cells
+    row[0].text = k
+    row[1].text = v
+    shade_cell(row[0], 'DEEAF1')
+    for para in row[0].paragraphs:
+        for run in para.runs:
+            run.bold = True
+
+doc.add_paragraph()
+
+# === 10. TESTIMONIALS ===
+add_heading(doc, '\u5341\u3001\u5f80\u671f\u5b66\u5458\u8bc4\u4ef7\uff08\u793a\u4f8b\uff09', level=1, color=RGBColor(0x1F, 0x4E, 0x79))
+
+testimonials = [
+    '"\u4ee5\u524d\u89c9\u5f97\u677e\u5f1b\u611f\u662f\u6027\u683c\uff0c\u5b66\u5b8c\u624d\u53d1\u73b0\u662f\u7b97\u8d26\u2014\u2014\u8bfe\u4e0a\u8bb2\u7684\u4e09\u7c7b\u9000\u8def\u6e05\u5355\uff0c\u6211\u6bcf\u6b21\u5e26\u5de5\u4f5c\u574a\u524d\u90fd\u4f1a\u586b\u4e00\u904d\u3002\u201d\u2014\u2014\u67d0\u4e16\u754c500\u5f3a\u5185\u57f9\u5e08',
+    '"\u9a6c\u4e1c\u7684\u7ffb\u8bd1\u590d\u8ff0\u6cd5\u592a\u6709\u7528\u4e86\uff01\u4ee5\u524d\u63a5\u8bdd\u603b\u5728\u60f3\u81ea\u5df1\u7684\u4e0b\u4e00\u4e2a\u95ee\u9898\uff0c\u73b0\u5728\u5b66\u4f1a\u4e86\u987a\u7740\u5bf9\u65b9\u7684\u8bdd\u5f80\u524d\u63a8\uff0c\u8ba8\u8bba\u6d41\u7545\u591a\u4e86\u3002\u201d\u2014\u2014\u884c\u52a8\u5b66\u4e60\u50a8\u5316\u5e08',
+    '"\u7b2c\u4e8c\u7ae0\u5bf9\u6211\u51b2\u51fb\u6700\u5927\u2014\u2014\u539f\u6765\u6211\u7684\u7d27\u5f20\u4e0d\u662f\u51c6\u5907\u4e0d\u591f\uff0c\u662f\u51c6\u5907\u7684\u65b9\u5411\u9519\u4e86\u3002\u201d\u2014\u2014\u5165\u804c\u4e09\u5e74\u7684\u57f9\u8bad\u5e08',
+]
+for t in testimonials:
+    p = doc.add_paragraph()
+    p.paragraph_format.left_indent = Inches(0.3)
+    run = p.add_run(t)
+    run.italic = True
+    run.font.size = Pt(10)
+
+# Footer
+doc.add_paragraph()
+p_footer = doc.add_paragraph()
+p_footer.alignment = WD_ALIGN_PARAGRAPH.CENTER
+run_footer = p_footer.add_run('\u2014\u2014 \u57f9\u8425\u5e08\u5168\u5c40\u610f\u8bc6\u4e0e\u677e\u5f1b\u611f V1.0 | ' + datetime.date.today().strftime('%Y-%m') + ' \u2014\u2014')
+run_footer.font.size = Pt(9)
+run_footer.font.color.rgb = RGBColor(0x70, 0x70, 0x70)
+
+output_path = 'D:/新课开发/工作手册/培训师全局意识和松弛感/完整课程包/08-成果demo/宣传文案-培训师全局意识与松弛感.docx'
+doc.save(output_path)
+print('Saved:', output_path)

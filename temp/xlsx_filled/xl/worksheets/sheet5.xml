@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="2" xSplit="0" topLeftCell="A3" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="12" customWidth="1"/>
+    <col min="2" max="2" width="10" customWidth="1"/>
+    <col min="3" max="3" width="10" customWidth="1"/>
+    <col min="4" max="4" width="10" customWidth="1"/>
+    <col min="5" max="5" width="10" customWidth="1"/>
+    <col min="6" max="6" width="10" customWidth="1"/>
+    <col min="7" max="7" width="10" customWidth="1"/>
+  </cols>
+
+  <sheetData>
+<row r="1"><c r="A1" t="s" s="4"><v>55</v></c></row>
+<row r="2"><c r="A2" t="s" s="4"><v>56</v></c><c r="B2" t="s" s="4"><v>57</v></c><c r="C2" t="s" s="4"><v>58</v></c><c r="D2" t="s" s="4"><v>59</v></c><c r="E2" t="s" s="4"><v>60</v></c><c r="F2" t="s" s="4"><v>61</v></c><c r="G2" t="s" s="4"><v>62</v></c></row>
+<row r="3"><c r="A3" t="s" s="0"><v>201</v></c><c r="B3" s="0"><v>85</v></c><c r="C3" s="0"><v>82</v></c><c r="D3" s="0"><v>88</v></c><c r="E3" s="0"><v>85</v></c><c r="F3" s="0"><v>83</v></c><c r="G3" s="0"><v>87</v></c></row>
+<row r="4"><c r="A4" t="s" s="0"><v>202</v></c><c r="B4" s="0"><v>82</v></c><c r="C4" s="0"><v>80</v></c><c r="D4" s="0"><v>85</v></c><c r="E4" s="0"><v>83</v></c><c r="F4" s="0"><v>80</v></c><c r="G4" s="0"><v>82</v></c></row>
+<row r="5"><c r="A5" t="s" s="0"><v>203</v></c><c r="B5" s="0"><v>78</v></c><c r="C5" s="0"><v>75</v></c><c r="D5" s="0"><v>80</v></c><c r="E5" s="0"><v>82</v></c><c r="F5" s="0"><v>76</v></c><c r="G5" s="0"><v>77</v></c></row>
+<row r="6"><c r="A6" t="s" s="0"><v>204</v></c><c r="B6" s="0"><v>72</v></c><c r="C6" s="0"><v>70</v></c><c r="D6" s="0"><v>75</v></c><c r="E6" s="0"><v>74</v></c><c r="F6" s="0"><v>70</v></c><c r="G6" s="0"><v>71</v></c></row>
+<row r="7"><c r="A7" t="s" s="0"><v>205</v></c><c r="B7" s="0"><v>68</v></c><c r="C7" s="0"><v>65</v></c><c r="D7" s="0"><v>70</v></c><c r="E7" s="0"><v>72</v></c><c r="F7" s="0"><v>65</v></c><c r="G7" s="0"><v>68</v></c></row>
+<row r="8"><c r="A8" t="s" s="0"><v>206</v></c><c r="B8" s="0"><v>75</v></c><c r="C8" s="0"><v>72</v></c><c r="D8" s="0"><v>78</v></c><c r="E8" s="0"><v>77</v></c><c r="F8" s="0"><v>73</v></c><c r="G8" s="0"><v>75</v></c></row>
+  </sheetData>
+  
+  <conditionalFormatting sqref="B3:B17">
+  <cfRule type="cellIs" operator="between" priority="1" dxfId="0"><formula>90</formula><formula>100</formula></cfRule>
+  <cfRule type="cellIs" operator="between" priority="2" dxfId="1"><formula>70</formula><formula>89</formula></cfRule>
+  <cfRule type="cellIs" operator="between" priority="3" dxfId="2"><formula>0</formula><formula>69</formula></cfRule>
+</conditionalFormatting>
+</worksheet>

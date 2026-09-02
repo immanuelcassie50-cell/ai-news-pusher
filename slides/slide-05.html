@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>课程内容概览</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#f8f9fa; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Title -->
+<p style="position:absolute; top:30px; left:60px; margin:0; font-size:36px; font-weight:700; color:#2b2d42; letter-spacing:3px;">课程内容概览</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:75px; left:60px;" width="60" height="4" aria-hidden="true">
+  <rect width="60" height="4" fill="#ef233c"/>
+</svg>
+
+<!-- Module 1 -->
+<svg style="position:absolute; top:100px; left:60px;" width="260" height="320" viewBox="0 0 260 320">
+  <rect width="260" height="320" rx="10" fill="#2b2d42"/>
+  <!-- Number badge -->
+  <rect width="260" height="50" rx="10" fill="#ef233c"/>
+  <text x="130" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#edf2f4">模块一</text>
+  <!-- Title -->
+  <text x="20" y="80" font-size="16" font-weight="600" fill="#edf2f4">认知重塑</text>
+  <!-- Divider -->
+  <rect x="20" y="95" width="60" height="2" fill="#ef233c"/>
+  <!-- Topics -->
+  <text x="20" y="125" font-size="12" font-weight="400" fill="#8d99ae">- 冲稳保是语法不是方法</text>
+  <text x="20" y="150" font-size="12" font-weight="400" fill="#8d99ae">- 分数是最后一个变量</text>
+  <text x="20" y="175" font-size="12" font-weight="400" fill="#8d99ae">- 信息收集</text>
+  <text x="20" y="200" font-size="12" font-weight="400" fill="#8d99ae">- 产业判断</text>
+  <text x="20" y="225" font-size="12" font-weight="400" fill="#8d99ae">- 倒推规划</text>
+  <text x="20" y="250" font-size="12" font-weight="400" fill="#8d99ae">- AI分工</text>
+  <!-- Chapter range -->
+  <text x="20" y="295" font-size="11" font-weight="400" fill="#8d99ae">第1-6章</text>
+</svg>
+
+<!-- Module 2 -->
+<svg style="position:absolute; top:100px; left:350px;" width="260" height="320" viewBox="0 0 260 320">
+  <rect width="260" height="320" rx="10" fill="#2b2d42"/>
+  <!-- Number badge -->
+  <rect width="260" height="50" rx="10" fill="#ef233c"/>
+  <text x="130" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#edf2f4">模块二</text>
+  <!-- Title -->
+  <text x="20" y="80" font-size="16" font-weight="600" fill="#edf2f4">协作与沟通</text>
+  <!-- Divider -->
+  <rect x="20" y="95" width="60" height="2" fill="#ef233c"/>
+  <!-- Topics -->
+  <text x="20" y="125" font-size="12" font-weight="400" fill="#8d99ae">- 风险偏好翻译</text>
+  <text x="20" y="150" font-size="12" font-weight="400" fill="#8d99ae">- 志愿表的意义</text>
+  <text x="20" y="175" font-size="12" font-weight="400" fill="#8d99ae">- 家长沟通</text>
+  <text x="20" y="200" font-size="12" font-weight="400" fill="#8d99ae">- 冲突处理</text>
+  <text x="20" y="225" font-size="12" font-weight="400" fill="#8d99ae">- 案例证伪</text>
+  <!-- Chapter range -->
+  <text x="20" y="295" font-size="11" font-weight="400" fill="#8d99ae">第7-11章</text>
+</svg>
+
+<!-- Module 3 -->
+<svg style="position:absolute; top:100px; left:640px;" width="260" height="320" viewBox="0 0 260 320">
+  <rect width="260" height="320" rx="10" fill="#2b2d42"/>
+  <!-- Number badge -->
+  <rect width="260" height="50" rx="10" fill="#ef233c"/>
+  <text x="130" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#edf2f4">模块三</text>
+  <!-- Title -->
+  <text x="20" y="80" font-size="16" font-weight="600" fill="#edf2f4">职业心态</text>
+  <!-- Divider -->
+  <rect x="20" y="95" width="60" height="2" fill="#ef233c"/>
+  <!-- Topics -->
+  <text x="20" y="125" font-size="12" font-weight="400" fill="#8d99ae">- 替人做决定的风险</text>
+  <text x="20" y="150" font-size="12" font-weight="400" fill="#8d99ae">- 口碑与转介绍</text>
+  <text x="20" y="175" font-size="12" font-weight="400" fill="#8d99ae">- AI时代发展</text>
+  <text x="20" y="200" font-size="12" font-weight="400" fill="#8d99ae">- 新手到专家</text>
+  <!-- Chapter range -->
+  <text x="20" y="295" font-size="11" font-weight="400" fill="#8d99ae">第12-15章</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#2b2d42"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#edf2f4">5</text>
+</svg>
+
+</div>
+</body>
+</html>

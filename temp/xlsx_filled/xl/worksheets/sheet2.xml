@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+  xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="2" xSplit="0" topLeftCell="A3" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25"
+    xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="12" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="30" customWidth="1"/>
+    <col min="4" max="4" width="20" customWidth="1"/>
+    <col min="5" max="5" width="20" customWidth="1"/>
+    <col min="6" max="6" width="10" customWidth="1"/>
+  </cols>
+
+  <sheetData>
+<row r="1"><c r="A1" t="s" s="4"><v>19</v></c></row>
+<row r="2"><c r="A2" t="s" s="4"><v>20</v></c><c r="B2" t="s" s="4"><v>21</v></c><c r="C2" t="s" s="4"><v>22</v></c><c r="D2" t="s" s="4"><v>23</v></c><c r="E2" t="s" s="4"><v>24</v></c><c r="F2" t="s" s="4"><v>25</v></c></row>
+<row r="3"><c r="A3" t="s" s="0"><v>119</v></c><c r="B3" t="s" s="0"><v>150</v></c><c r="C3" t="s" s="0"><v>121</v></c><c r="D3" t="s" s="0"><v>122</v></c><c r="E3" t="s" s="0"><v>123</v></c><c r="F3" t="s" s="0"><v>39</v></c></row>
+<row r="4"><c r="A4" t="s" s="0"><v>124</v></c><c r="B4" t="s" s="0"><v>160</v></c><c r="C4" t="s" s="0"><v>126</v></c><c r="D4" t="s" s="0"><v>127</v></c><c r="E4" t="s" s="0"><v>128</v></c><c r="F4" t="s" s="0"><v>38</v></c></row>
+<row r="5"><c r="A5" t="s" s="0"><v>129</v></c><c r="B5" t="s" s="0"><v>145</v></c><c r="C5" t="s" s="0"><v>131</v></c><c r="D5" t="s" s="0"><v>132</v></c><c r="E5" t="s" s="0"><v>133</v></c><c r="F5" t="s" s="0"><v>38</v></c></row>
+<row r="6"><c r="A6" t="s" s="0"><v>134</v></c><c r="B6" t="s" s="0"><v>135</v></c><c r="C6" t="s" s="0"><v>136</v></c><c r="D6" t="s" s="0"><v>137</v></c><c r="E6" t="s" s="0"><v>138</v></c><c r="F6" t="s" s="0"><v>38</v></c></row>
+<row r="7"><c r="A7" t="s" s="0"><v>139</v></c><c r="B7" t="s" s="0"><v>140</v></c><c r="C7" t="s" s="0"><v>141</v></c><c r="D7" t="s" s="0"><v>142</v></c><c r="E7" t="s" s="0"><v>143</v></c><c r="F7" t="s" s="0"><v>39</v></c></row>
+<row r="8"><c r="A8" t="s" s="0"><v>144</v></c><c r="B8" t="s" s="0"><v>145</v></c><c r="C8" t="s" s="0"><v>146</v></c><c r="D8" t="s" s="0"><v>147</v></c><c r="E8" t="s" s="0"><v>148</v></c><c r="F8" t="s" s="0"><v>38</v></c></row>
+<row r="9"><c r="A9" t="s" s="0"><v>149</v></c><c r="B9" t="s" s="0"><v>150</v></c><c r="C9" t="s" s="0"><v>151</v></c><c r="D9" t="s" s="0"><v>152</v></c><c r="E9" t="s" s="0"><v>153</v></c><c r="F9" t="s" s="0"><v>37</v></c></row>
+<row r="10"><c r="A10" t="s" s="0"><v>245</v></c><c r="B10" t="s" s="0"><v>155</v></c><c r="C10" t="s" s="0"><v>156</v></c><c r="D10" t="s" s="0"><v>157</v></c><c r="E10" t="s" s="0"><v>158</v></c><c r="F10" t="s" s="0"><v>39</v></c></row>
+<row r="11"><c r="A11" t="s" s="0"><v>159</v></c><c r="B11" t="s" s="0"><v>160</v></c><c r="C11" t="s" s="0"><v>161</v></c><c r="D11" t="s" s="0"><v>162</v></c><c r="E11" t="s" s="0"><v>163</v></c><c r="F11" t="s" s="0"><v>38</v></c></row>
+<row r="12"><c r="A12" t="s" s="0"><v>164</v></c><c r="B12" t="s" s="0"><v>165</v></c><c r="C12" t="s" s="0"><v>166</v></c><c r="D12" t="s" s="0"><v>167</v></c><c r="E12" t="s" s="0"><v>168</v></c><c r="F12" t="s" s="0"><v>39</v></c></row>
+  </sheetData>
+  <dataValidations>
+  <dataValidation type="list" sqref="F3:F22"><formula1>"待处理,处理中,已解决"</formula1></dataValidation>
+</dataValidations>
+  
+</worksheet>

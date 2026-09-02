@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "score": 19,
+  "issues": [
+    {
+      "type": "orphan_a_clues",
+      "severity": "warning",
+      "message": "7 条 A 类线索未在推理链中使用"
+    },
+    {
+      "type": "insufficient_motive_clues",
+      "severity": "warning",
+      "character": "三姨太",
+      "message": "凶手 三姨太 动机相关线索仅 1 条"
+    }
+  ]
+}

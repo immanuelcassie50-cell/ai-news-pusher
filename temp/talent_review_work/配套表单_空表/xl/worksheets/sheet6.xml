@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="1" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="22" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="14" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+    <col min="5" max="5" width="14" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="32" customHeight="1">
+      <c r="A1" t="s" s="4"><v>180</v></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" t="s" s="4"><v>181</v></c>
+      <c r="B2" t="s" s="4"><v>182</v></c>
+      <c r="C2" t="s" s="4"><v>183</v></c>
+      <c r="D2" t="s" s="4"><v>184</v></c>
+      <c r="E2" t="s" s="4"><v>185</v></c>
+      <c r="F2" t="s" s="4"><v>186</v></c>
+      <c r="G2" t="s" s="4"><v>187</v></c>
+    </row>
+    <row r="3" ht="20" customHeight="1">
+      <c r="A3" t="s" s="2"><v>188</v></c>
+      <c r="B3" s="9"><v>5</v></c>
+      <c r="C3" s="9"><v>3</v></c>
+      <c r="D3" s="9"><v>2</v></c>
+      <c r="E3" s="9"><v>0</v></c>
+      <c r="F3" s="8"><f>(C3+D3)/B3</f><v></v></c>
+      <c r="G3" t="s" s="1"><v>193</v></c>
+    </row>
+    <row r="4" ht="20" customHeight="1">
+      <c r="A4" t="s" s="2"><v>189</v></c>
+      <c r="B4" s="9"><v>12</v></c>
+      <c r="C4" s="9"><v>7</v></c>
+      <c r="D4" s="9"><v>4</v></c>
+      <c r="E4" s="9"><v>1</v></c>
+      <c r="F4" s="8"><f>(C4+D4)/B4</f><v></v></c>
+      <c r="G4" t="s" s="12"><v>192</v></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" t="s" s="2"><v>190</v></c>
+      <c r="B5" s="9"><v>25</v></c>
+      <c r="C5" s="9"><v>18</v></c>
+      <c r="D5" s="9"><v>5</v></c>
+      <c r="E5" s="9"><v>2</v></c>
+      <c r="F5" s="8"><f>(C5+D5)/B5</f><v></v></c>
+      <c r="G5" t="s" s="8"><v>194</v></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" t="s" s="2"><v>191</v></c>
+      <c r="B6" s="9"><v>40</v></c>
+      <c r="C6" s="9"><v>30</v></c>
+      <c r="D6" s="9"><v>8</v></c>
+      <c r="E6" s="9"><v>2</v></c>
+      <c r="F6" s="8"><f>(C6+D6)/B6</f><v></v></c>
+      <c r="G6" t="s" s="8"><v>194</v></c>
+    </row>
+    <row r="7" ht="24" customHeight="1">
+      <c r="A7" t="s" s="4"><v>合计</v></c>
+      <c r="B7" s="10"><f>SUM(B3:B6)</f><v></v></c>
+      <c r="C7" s="10"><f>SUM(C3:C6)</f><v></v></c>
+      <c r="D7" s="10"><f>SUM(D3:D6)</f><v></v></c>
+      <c r="E7" s="10"><f>SUM(E3:E6)</f><v></v></c>
+      <c r="F7" s="8"><f>(C7+D7)/B7</f><v></v></c>
+    </row>
+    <row r="9" ht="24" customHeight="1">
+      <c r="A9" t="s" s="4"><v>关键岗位详情</v></c>
+    </row>
+    <row r="10" ht="20" customHeight="1">
+      <c r="A10" t="s" s="4"><v>195</v></c>
+      <c r="B10" t="s" s="4"><v>196</v></c>
+      <c r="C10" t="s" s="4"><v>181</v></c>
+      <c r="D10" t="s" s="4"><v>187</v></c>
+      <c r="E10" t="s" s="4"><v>197</v></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" t="s" s="1"><v>技术总监</v></c>
+      <c r="B11" t="s" s="1"><v>张明</v></c>
+      <c r="C11" t="s" s="1"><v>188</v></c>
+      <c r="D11" t="s" s="12"><v>192</v></c>
+      <c r="E11" t="s" s="1"><v>加快继任者培养</v></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" t="s" s="1"><v>产品总监</v></c>
+      <c r="B12" t="s" s="1"><v>刘芳</v></c>
+      <c r="C12" t="s" s="1"><v>188</v></c>
+      <c r="D12" t="s" s="1"><v>193</v></c>
+      <c r="E12" t="s" s="1"><v>安排轮岗学习</v></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" t="s" s="1"><v>运营总监</v></c>
+      <c r="B13" t="s" s="1"><v>陈静</v></c>
+      <c r="C13" t="s" s="1"><v>188</v></c>
+      <c r="D13" t="s" s="12"><v>192</v></c>
+      <c r="E13" t="s" s="1"><v>急需外部招聘</v></c>
+    </row>
+    <row r="14" ht="20" customHeight="1">
+      <c r="A14" t="s" s="1"><v>财务总监</v></c>
+      <c r="B14" t="s" s="1"><v>李娜</v></c>
+      <c r="C14" t="s" s="1"><v>188</v></c>
+      <c r="D14" t="s" s="8"><v>194</v></c>
+      <c r="E14" t="s" s="1"><v>继任者已就位</v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

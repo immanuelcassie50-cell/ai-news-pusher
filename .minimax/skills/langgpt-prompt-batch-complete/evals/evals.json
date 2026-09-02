@@ -1,0 +1,66 @@
+{
+  "skill_name": "langgpt-prompt-batch-complete",
+  "skill_version": "1.0.0",
+  "description": "LangGPT批量扫描补全专家：将文件夹扫描→缺口分析→批量生成→质量验证串联成完整流水线",
+  "evals": [
+    {
+      "id": 1,
+      "name": "空文件夹批量补全",
+      "prompt": "扫描 D:/CC/.minimax/skills/langgpt-prompt-batch-complete/test_data 这个文件夹，分析每个子分类缺什么，然后批量补全。",
+      "expected_output": "1. 扫描报告（每个子文件夹状态）+ 2. 缺口分析（每个分类的建议列表）+ 3. 批量生成的.md文件（2000-5000字/个）+ 4. 验证报告（质量评分）",
+      "files": ["test_data/内容创作/.gitkeep", "test_data/职场/.gitkeep"],
+      "test_folder_structure": {
+        "内容创作": [],
+        "职场": [],
+        "营销": ["01_金句炼制专家.md"]
+      }
+    },
+    {
+      "id": 2,
+      "name": "稀疏文件夹精准补全",
+      "prompt": "帮我扫描这个目录，看看哪些分类已经有了一些prompt，哪些还缺，缺的话帮我补上。路径是 D:/CC/.minimax/skills/langgpt-prompt-batch-complete/test_data",
+      "expected_output": "对已有内容稀疏的文件夹（1-3个）精准补充，对空文件夹建立骨架，对成熟文件夹不强制补全",
+      "files": [],
+      "test_folder_structure": {
+        "内容创作": ["01_爆款标题生成器.md"],
+        "职场": ["01_简历优化专家.md", "02_面试模拟教练.md"],
+        "营销": ["01_金句炼制专家.md", "02_活动策划生成器.md", "03_用户增长专家.md"]
+      }
+    },
+    {
+      "id": 3,
+      "name": "带序号续接的批量生成",
+      "prompt": "D:/CC/.minimax/skills/langgpt-prompt-batch-complete/test_data 这个目录里面，职场文件夹已经有01和02了，我需要你帮我生成03-05，序号要接上，不要重复也不要跳号。",
+      "expected_output": "生成的文件序号为03、04、05，接续现有序号，无冲突",
+      "files": [],
+      "test_folder_structure": {
+        "职场": ["01_简历优化专家.md", "02_面试模拟教练.md"]
+      }
+    },
+    {
+      "id": 4,
+      "name": "质量验证与问题报告",
+      "prompt": "扫描并补全 D:/CC/.minimax/skills/langgpt-prompt-batch-complete/test_data，完成后给出每个文件的验证报告。",
+      "expected_output": "1. 扫描+缺口分析+批量生成全流程 + 2. 验证报告显示每个文件的模块完整性、字数、占位符扫描、模糊表述扫描 + 3. error级别问题数量 = 0",
+      "files": [],
+      "test_folder_structure": {
+        "创意生成": [],
+        "销售": ["01_话术生成.md"]
+      }
+    },
+    {
+      "id": 5,
+      "name": "多分类混合场景",
+      "prompt": "我想让你帮我把 D:/CC/.minimax/skills/langgpt-prompt-batch-complete/test_data 这个文件夹里的所有子文件夹都扫一遍，告诉我每个分类缺什么，然后我来确认，确认完你再生成。",
+      "expected_output": "1. 先展示扫描结果 + 缺口分析（全部分类） + 2. 等待用户确认后生成 + 3. 验证通过后交付",
+      "files": [],
+      "test_folder_structure": {
+        "内容创作": [],
+        "职场": ["01_简历优化.md"],
+        "销售": [],
+        "心理成长": ["01_目标分解教练.md"],
+        "通用": []
+      }
+    }
+  ]
+}

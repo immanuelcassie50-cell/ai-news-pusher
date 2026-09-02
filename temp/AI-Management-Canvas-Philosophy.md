@@ -1,0 +1,13 @@
+# Structured Clarity
+
+## Design Philosophy
+
+**Form as Structure**: The visual language speaks through ordered geometry and deliberate spatial hierarchy. Shapes are not decorative—they are organizational instruments, creating visual rhythm through repetition and variation. Circles, rectangles, and lines interlock like the齿轮 (gears) of precise machinery, suggesting systematic thinking and methodical management. Every form is placed with the precision of architectural drafting, as if the composition were a blueprint for organizational excellence.
+
+**Color as Communication**: The palette operates as a restrained communication system. Warm white (#F6F3EF) provides the foundation—calm, approachable, professional. Deep charcoal (#1A1A1A) anchors the composition with authority. The crimson accent (#B81025) functions as strategic emphasis, appearing only where attention must crystallize. Color never decorates; it directs focus and establishes visual hierarchy. The chromatic restraint itself communicates seriousness of purpose, the product of painstaking calibration by someone at the absolute top of their field.
+
+**Space as呼吸 (Breathing Room)**: Negative space is not emptiness but active composition. The warm white canvas breathes with intentional pauses, allowing geometric elements to exist with clarity and dignity. Margins are generous, proportions harmonious—every element given room to exist fully. This spatial generosity transforms a simple cover into something that feels unhurried, considered, worthy of management attention. Text floats in space with the confidence of ideas that need no argument.
+
+**Typography as Architecture**: Letters become structural elements, their placement governed by the same geometric principles as the shapes around them. The title dominates with quiet authority—large but not aggressive, present but not demanding. Supporting text is subordinate, clearly differentiated through scale and weight. The typographic hierarchy is immediately apparent, requiring no explanation. Each letterform is positioned as if hours of refinement determined its exact coordinates.
+
+**Integration as Philosophy**: The AI+management concept manifests not through literal representation but through visual analogy. Geometric interlocking suggests systems thinking. Ordered repetition implies process optimization. Clean lines and precise alignment embody the efficiency that AI brings to management. The abstract becomes meaningful through careful composition—meticulously crafted, labored over with care, the work of master-level execution. This is design as proof: that complex ideas can be communicated through pure visual form, that clarity is the highest form of sophistication.

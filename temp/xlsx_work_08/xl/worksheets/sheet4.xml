@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>优秀</v></c>
+      <c r="B2" t="s" s="0"><v>您的技术文档和知识传递能力优秀，是团队的知识桥梁。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>知识外化强</v></c>
+      <c r="B3" t="s" s="0"><v>您擅长将技术知识外化为文档，知识外化能力强。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>知识传授强</v></c>
+      <c r="B4" t="s" s="0"><v>您擅长传授技术知识，帮助他人成长做得好。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>知识更新强</v></c>
+      <c r="B5" t="s" s="0"><v>您擅长追踪和更新技术知识，保持知识新鲜度。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>整体待提升</v></c>
+      <c r="B6" t="s" s="0"><v>您的技术文档和知识传递能力有较大提升空间。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

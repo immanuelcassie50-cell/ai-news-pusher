@@ -1,0 +1,29 @@
+{
+  "page": {
+    "width": 11906,
+    "height": 16838,
+    "margin": { "top": 1440, "bottom": 1440, "left": 1800, "right": 1800 }
+  },
+  "fonts": {
+    "body_cn": "仿宋_GB2312",
+    "body_en": "Times New Roman",
+    "heading_cn": "黑体"
+  },
+  "colors": {
+    "accent": "2C3E50",
+    "body": "000000",
+    "case_shading": "F2F2F2"
+  },
+  "sizes": {
+    "cover_title": 44,
+    "cover_subtitle": 28,
+    "heading1": 32,
+    "heading2": 28,
+    "heading3": 24,
+    "body": 24,
+    "quickcard": 21
+  },
+  "defaults": {
+    "author": "罗宏伟"
+  }
+}

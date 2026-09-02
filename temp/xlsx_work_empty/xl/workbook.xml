@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main"
+          xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheets>
+    <sheet name="业委会信息台账" sheetId="1" r:id="rId1"/>
+    <sheet name="沟通记录表" sheetId="2" r:id="rId4"/>
+    <sheet name="冲突记录表" sheetId="3" r:id="rId5"/>
+    <sheet name="决议事项台账" sheetId="4" r:id="rId6"/>
+    <sheet name="关系评分历史" sheetId="5" r:id="rId7"/>
+    <sheet name="谈判准备表" sheetId="6" r:id="rId8"/>
+    <sheet name="行动计划表" sheetId="7" r:id="rId9"/>
+    <sheet name="自我评估表" sheetId="8" r:id="rId10"/>
+  </sheets>
+</workbook>

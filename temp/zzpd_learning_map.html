@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>政治判断力情景决策训练营 · 课程学习地图</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0A1628;
+  --navy-mid: #132040;
+  --navy-light: #1E3A5F;
+  --gold: #C9A84C;
+  --gold-light: #E8C96A;
+  --gold-dim: #8B7355;
+  --cream: #F5F0E8;
+  --cream-dark: #E8E0D0;
+  --text-dark: #1A1A1A;
+  --text-mid: #3A3A3A;
+  --text-light: #6A6A6A;
+  --accent-red: #B84040;
+  --accent-teal: #2A7A7A;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans SC', 'Microsoft YaHei', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+@page {
+  size: A3 landscape;
+  margin: 0;
+}
+
+.container {
+  width: 420mm;
+  height: 297mm;
+  background: linear-gradient(135deg, #0A1628 0%, #132040 50%, #0A1628 100%);
+  position: relative;
+  overflow: hidden;
+  page-break-after: always;
+  page-break-inside: avoid;
+}
+
+/* Background grid texture */
+.container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(201,168,76,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201,168,76,0.03) 1px, transparent 1px);
+  background-size: 20px 20px;
+  pointer-events: none;
+}
+
+/* Diagonal accent line */
+.container::after {
+  content: '';
+  position: absolute;
+  top: 0; right: 0;
+  border-style: solid;
+  border-width: 0 80px 80px 0;
+  border-color: transparent var(--gold) transparent transparent;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 18mm 20mm 10mm 20mm;
+  position: relative;
+  z-index: 2;
+}
+
+.header-left .tag {
+  font-family: 'Noto Sans SC', sans-serif;
+  font-size: 9pt;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 6px;
+}
+
+.header-left h1 {
+  font-family: 'Noto Serif SC', 'Microsoft YaHei', serif;
+  font-size: 28pt;
+  font-weight: 900;
+  color: #FFFFFF;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.header-left h1 span {
+  color: var(--gold);
+}
+
+.header-left .subtitle {
+  font-size: 11pt;
+  color: rgba(255,255,255,0.6);
+  margin-top: 6px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-right .meta {
+  font-size: 8pt;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+}
+
+.header-right .logo-mark {
+  width: 48px;
+  height: 48px;
+  background: var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-bottom: 8px;
+}
+
+.header-right .logo-mark span {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 18pt;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+/* Divider */
+.divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold-dim), transparent);
+  margin: 0 20mm;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ability Progression Path */
+.ability-section {
+  padding: 10mm 20mm 8mm 20mm;
+  position: relative;
+  z-index: 2;
+}
+
+.ability-section .section-label {
+  font-size: 8pt;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold-dim);
+  margin-bottom: 8px;
+}
+
+.ability-path {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+.ability-node {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.ability-node .num {
+  width: 28px;
+  height: 28px;
+  background: var(--navy-light);
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10pt;
+  font-weight: 700;
+  color: var(--gold);
+  margin-bottom: 5px;
+  position: relative;
+  z-index: 2;
+}
+
+.ability-node.active .num {
+  background: var(--gold);
+  color: var(--navy);
+}
+
+.ability-node .label {
+  font-size: 9pt;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+  text-align: center;
+  line-height: 1.3;
+}
+
+.ability-node .sublabel {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.35);
+  text-align: center;
+  margin-top: 2px;
+}
+
+.ability-connector {
+  flex: 0 0 30px;
+  height: 1px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-dim));
+  position: relative;
+  top: -10px;
+}
+
+.ability-connector::after {
+  content: '›';
+  position: absolute;
+  right: -2px;
+  top: -7px;
+  color: var(--gold);
+  font-size: 12pt;
+  font-weight: bold;
+}
+
+/* Main Content Grid */
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 12mm;
+  padding: 10mm 20mm 14mm 20mm;
+  position: relative;
+  z-index: 2;
+  height: 178mm;
+}
+
+/* Module Cards - Left Column */
+.modules-left {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modules-right {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.module-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  padding: 8px 10px;
+  position: relative;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.2s;
+}
+
+.module-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 3px;
+  background: var(--gold);
+  opacity: 0.6;
+}
+
+.module-card.highlight {
+  background: rgba(201,168,76,0.08);
+  border-color: rgba(201,168,76,0.4);
+}
+
+.module-card.highlight::before {
+  opacity: 1;
+}
+
+.module-card .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.module-card .module-num {
+  font-size: 7pt;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.module-card .module-hours {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.35);
+}
+
+.module-card .module-title {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 11pt;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 3px;
+  letter-spacing: 0.5px;
+}
+
+.module-card .module-desc {
+  font-size: 8pt;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.4;
+  flex: 1;
+}
+
+.module-card .module-tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.tag {
+  font-size: 6.5pt;
+  padding: 1px 6px;
+  border-radius: 2px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+}
+
+.tag-outline {
+  border: 1px solid rgba(201,168,76,0.4);
+  color: var(--gold-dim);
+}
+
+.tag-solid {
+  background: rgba(201,168,76,0.15);
+  color: var(--gold-light);
+}
+
+/* Gate Cards (Scenario Cards) */
+.gate-section {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 4px;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.gate-section .gate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gate-section .gate-title {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.gate-section .gate-count {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.35);
+}
+
+.gate-chips {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.gate-chip {
+  font-size: 7pt;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-weight: 500;
+  background: rgba(255,255,255,0.06);
+  color: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.gate-chip.level-1 { border-color: rgba(42,122,122,0.5); color: #5DBFBF; }
+.gate-chip.level-2 { border-color: rgba(201,168,76,0.5); color: var(--gold-light); }
+.gate-chip.level-3 { border-color: rgba(184,64,64,0.5); color: #E07070; }
+
+/* Time Allocation */
+.time-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.time-section .time-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2px;
+}
+
+.time-section .time-title {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.time-section .time-total {
+  font-size: 8pt;
+  color: var(--gold-light);
+  font-weight: 600;
+}
+
+.time-bar {
+  height: 6px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+}
+
+.time-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.time-bar-fill.am { background: linear-gradient(90deg, #2A7A7A, #3AADAD); flex: 1; }
+.time-bar-fill.pm { background: linear-gradient(90deg, var(--gold-dim), var(--gold)); flex: 1; }
+
+.time-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 6.5pt;
+  color: rgba(255,255,255,0.35);
+  padding: 0 2px;
+  margin-top: 1px;
+}
+
+/* Right Panel - Big Diagram */
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.structure-diagram {
+  flex: 1;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 4px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagram-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.diagram-title {
+  font-size: 8pt;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.diagram-legend {
+  display: flex;
+  gap: 10px;
+  font-size: 6.5pt;
+  color: rgba(255,255,255,0.4);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.legend-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+}
+
+.legend-dot.easy { background: #2A7A7A; }
+.legend-dot.medium { background: var(--gold-dim); }
+.legend-dot.hard { background: var(--accent-red); }
+
+/* Flow Diagram */
+.flow-diagram {
+  flex: 1;
+  position: relative;
+}
+
+.flow-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.flow-row:last-child { margin-bottom: 0; }
+
+.flow-node {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-size: 8pt;
+  font-weight: 600;
+  color: #fff;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.flow-node.primary { background: var(--navy-light); border: 1px solid var(--gold); color: var(--gold); }
+.flow-node.easy { background: rgba(42,122,122,0.3); border: 1px solid #2A7A7A; }
+.flow-node.medium { background: rgba(139,115,85,0.3); border: 1px solid var(--gold-dim); }
+.flow-node.hard { background: rgba(184,64,64,0.3); border: 1px solid var(--accent-red); color: #E07070; }
+.flow-node.highlight { background: rgba(201,168,76,0.15); border: 1px solid var(--gold); }
+
+.flow-connector {
+  color: var(--gold-dim);
+  font-size: 10pt;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.flow-time {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.3);
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Value Props */
+.value-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.value-card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 3px;
+  padding: 6px 8px;
+  text-align: center;
+}
+
+.value-card .value-num {
+  font-family: 'Noto Serif SC', serif;
+  font-size: 16pt;
+  font-weight: 900;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 3px;
+}
+
+.value-card .value-label {
+  font-size: 7.5pt;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.3;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  padding: 6mm 20mm;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.footer-left {
+  font-size: 7pt;
+  color: rgba(255,255,255,0.25);
+  letter-spacing: 0.5px;
+}
+
+.footer-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.footer-badge {
+  font-size: 7pt;
+  padding: 2px 8px;
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 10px;
+  color: rgba(201,168,76,0.6);
+  letter-spacing: 0.5px;
+}
+
+/* Print optimizations */
+@media print {
+  .container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="header-left">
+      <div class="tag">Party &amp; Business Integration · Capability Training</div>
+      <h1>政治判断力<span>情景决策训练营</span></h1>
+      <div class="subtitle">在两难抉择中显性化你的判断力 · 课程学习地图</div>
+    </div>
+    <div class="header-right">
+      <div class="logo-mark"><span>政</span></div>
+      <div class="meta">
+        课时：7课时（420分钟）<br>
+        人数：24人以内<br>
+        形式：情景沉浸 + 追问复盘
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Ability Progression Path -->
+  <div class="ability-section">
+    <div class="section-label">能力递进路径 · Competency Progression</div>
+    <div class="ability-path">
+      <div class="ability-node active">
+        <div class="num">1</div>
+        <div class="label">全局意识</div>
+        <div class="sublabel">跳出局部看整体</div>
+      </div>
+      <div class="ability-connector"></div>
+      <div class="ability-node">
+        <div class="num">2</div>
+        <div class="label">底线意识</div>
+        <div class="sublabel">压力下守红线</div>
+      </div>
+      <div class="ability-connector"></div>
+      <div class="ability-node">
+        <div class="num">3</div>
+        <div class="label">分寸感</div>
+        <div class="sublabel">原则与灵活之间</div>
+      </div>
+      <div class="ability-connector"></div>
+      <div class="ability-node">
+        <div class="num">4</div>
+        <div class="label">舆情敏感度</div>
+        <div class="sublabel">预判舆论反应</div>
+      </div>
+      <div class="ability-connector"></div>
+      <div class="ability-node">
+        <div class="num">5</div>
+        <div class="label">请示汇报时机</div>
+        <div class="sublabel">自己扛 vs 及时上报</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+
+    <!-- Left Column: Module Cards + Time -->
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+
+      <!-- Module Cards -->
+      <div style="display: grid; grid-template-rows: repeat(3, 1fr); gap: 5px; flex: 1;">
+        <div class="module-card">
+          <div class="card-header">
+            <span class="module-num">Module 01</span>
+            <span class="module-hours">1课时</span>
+          </div>
+          <div class="module-title">开场导入</div>
+          <div class="module-desc">破冰、课程定位、五维能力模型讲解、规则说明，建立安全的训练氛围</div>
+          <div class="module-tags">
+            <span class="tag tag-outline">破冰</span>
+            <span class="tag tag-outline">能力模型</span>
+            <span class="tag tag-solid">规则契约</span>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="card-header">
+            <span class="module-num">Module 02</span>
+            <span class="module-hours">1.5课时</span>
+          </div>
+          <div class="module-title">初级关卡热身</div>
+          <div class="module-desc">2个初级关卡，建立信心和参与感，体验"没有标准答案"的决策场景</div>
+          <div class="module-tags">
+            <span class="tag tag-outline">ZZPD-01</span>
+            <span class="tag tag-outline">ZZPD-02</span>
+            <span class="tag tag-solid">全局意识</span>
+          </div>
+        </div>
+
+        <div class="module-card highlight">
+          <div class="card-header">
+            <span class="module-num">Module 03</span>
+            <span class="module-hours">1课时</span>
+          </div>
+          <div class="module-title">中级关卡第一组</div>
+          <div class="module-desc">2个中级关卡，开始叠加多种压力源，真正暴露判断逻辑差异</div>
+          <div class="module-tags">
+            <span class="tag tag-outline">ZZPD-03</span>
+            <span class="tag tag-outline">ZZPD-04</span>
+            <span class="tag tag-solid">请示汇报</span>
+            <span class="tag tag-solid">底线意识</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Time Allocation Bar -->
+      <div class="time-section">
+        <div class="time-header">
+          <span class="time-title">课时分配</span>
+          <span class="time-total">7课时 · 420分钟</span>
+        </div>
+        <div class="time-bar">
+          <div class="time-bar-fill am" style="width: 50%;"></div>
+          <div class="time-bar-fill pm" style="width: 50%;"></div>
+        </div>
+        <div class="time-labels">
+          <span>上午 3.5课时 / 210分钟</span>
+          <span>下午 3.5课时 / 210分钟</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Middle Column: Module Cards Continued + Gate Summary -->
+    <div style="display: flex; flex-direction: column; gap: 8px;">
+
+      <div style="display: grid; grid-template-rows: repeat(3, 1fr); gap: 5px; flex: 1;">
+        <div class="module-card">
+          <div class="card-header">
+            <span class="module-num">Module 04</span>
+            <span class="module-hours">1.5课时</span>
+          </div>
+          <div class="module-title">中级关卡第二组</div>
+          <div class="module-desc">2个中级关卡，价值密度最高部分，深入暴露学员在多个维度的判断倾向</div>
+          <div class="module-tags">
+            <span class="tag tag-outline">ZZPD-05~09</span>
+            <span class="tag tag-solid">舆情敏感度</span>
+            <span class="tag tag-solid">分寸感</span>
+          </div>
+        </div>
+
+        <div class="module-card highlight">
+          <div class="card-header">
+            <span class="module-num">Module 05</span>
+            <span class="module-hours">1.5课时</span>
+          </div>
+          <div class="module-title">高级关卡</div>
+          <div class="module-desc">2-3个两难张力最强的关卡，全天高潮。任何选择都有明显代价，逼迫两害相权取其轻</div>
+          <div class="module-tags">
+            <span class="tag tag-outline">ZZPD-10</span>
+            <span class="tag tag-outline">ZZPD-11</span>
+            <span class="tag tag-outline">ZZPD-12</span>
+            <span class="tag tag-solid">上下级冲突</span>
+            <span class="tag tag-solid">三重压力叠加</span>
+          </div>
+        </div>
+
+        <div class="module-card">
+          <div class="card-header">
+            <span class="module-num">Module 06</span>
+            <span class="module-hours">0.5课时</span>
+          </div>
+          <div class="module-title">结营复盘</div>
+          <div class="module-desc">每位学员提炼个人"判断力自检清单"——今天发现的1-2个最容易踩的坑 + 未来原则句</div>
+          <div class="module-tags">
+            <span class="tag tag-solid">自检清单</span>
+            <span class="tag tag-solid">能力迁移</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gate Summary -->
+      <div class="gate-section">
+        <div class="gate-header">
+          <span class="gate-title">情景关卡库 · 12关</span>
+          <span class="gate-count">ZZPD-01 ~ ZZPD-12</span>
+        </div>
+        <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+          <div style="display: flex; flex-direction: column; gap: 3px; flex: 1;">
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.35); margin-bottom: 1px;">初级 · 2关</div>
+            <div style="display: flex; gap: 3px; flex-wrap: wrap;">
+              <span class="gate-chip level-1">ZZPD-01</span>
+              <span class="gate-chip level-1">ZZPD-02</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 3px; flex: 2;">
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.35); margin-bottom: 1px;">中级 · 7关</div>
+            <div style="display: flex; gap: 3px; flex-wrap: wrap;">
+              <span class="gate-chip level-2">ZZPD-03</span>
+              <span class="gate-chip level-2">ZZPD-04</span>
+              <span class="gate-chip level-2">ZZPD-05</span>
+              <span class="gate-chip level-2">ZZPD-06</span>
+              <span class="gate-chip level-2">ZZPD-07</span>
+              <span class="gate-chip level-2">ZZPD-08</span>
+              <span class="gate-chip level-2">ZZPD-09</span>
+            </div>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 3px; flex: 1;">
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.35); margin-bottom: 1px;">高级 · 3关</div>
+            <div style="display: flex; gap: 3px; flex-wrap: wrap;">
+              <span class="gate-chip level-3">ZZPD-10</span>
+              <span class="gate-chip level-3">ZZPD-11</span>
+              <span class="gate-chip level-3">ZZPD-12</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column: Structure Flow + Value Props -->
+    <div class="right-panel">
+
+      <!-- Structure Flow Diagram -->
+      <div class="structure-diagram">
+        <div class="diagram-header">
+          <span class="diagram-title">课程结构流 · Learning Flow</span>
+          <div class="diagram-legend">
+            <div class="legend-item"><div class="legend-dot easy"></div>初级</div>
+            <div class="legend-item"><div class="legend-dot medium"></div>中级</div>
+            <div class="legend-item"><div class="legend-dot hard"></div>高级</div>
+          </div>
+        </div>
+        <div class="flow-diagram">
+          <!-- Row 1 -->
+          <div class="flow-row">
+            <div class="flow-node primary" style="flex: 0 0 100px;">开场导入</div>
+            <div class="flow-connector">→</div>
+            <div class="flow-node easy" style="flex: 0 0 90px;">初级热身</div>
+            <div class="flow-connector">→</div>
+            <div class="flow-node medium">中级第一组</div>
+            <div class="flow-connector">→</div>
+            <div class="flow-node medium">中级第二组</div>
+            <div class="flow-connector">→</div>
+            <div class="flow-node hard">高级关卡</div>
+            <div class="flow-connector">→</div>
+            <div class="flow-node highlight">结营复盘</div>
+          </div>
+          <!-- Row 2 -->
+          <div class="flow-row" style="margin-top: 3px;">
+            <div class="flow-node" style="flex: 0 0 100px; font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">60分钟</div>
+            <div class="flow-connector" style="opacity: 0.3;">→</div>
+            <div class="flow-node" style="flex: 0 0 90px; font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">90分钟</div>
+            <div class="flow-connector" style="opacity: 0.3;">→</div>
+            <div class="flow-node" style="font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">60分钟</div>
+            <div class="flow-connector" style="opacity: 0.3;">→</div>
+            <div class="flow-node" style="font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">90分钟</div>
+            <div class="flow-connector" style="opacity: 0.3;">→</div>
+            <div class="flow-node" style="font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">90分钟</div>
+            <div class="flow-connector" style="opacity: 0.3;">→</div>
+            <div class="flow-node" style="font-size: 7pt; color: rgba(255,255,255,0.4); background: none; border: none;">30分钟</div>
+          </div>
+          <!-- Row 3 -->
+          <div class="flow-row" style="margin-top: 6px;">
+            <div class="flow-node easy" style="flex: 1;">ZZPD-01<br><span style="font-size:6pt;opacity:0.6">优秀员工名额分配</span></div>
+            <div class="flow-node easy" style="flex: 1;">ZZPD-02<br><span style="font-size:6pt;opacity:0.6">老领导合规边缘</span></div>
+            <div class="flow-node medium" style="flex: 1;">ZZPD-03<br><span style="font-size:6pt;opacity:0.6">信息不全紧急签批</span></div>
+            <div class="flow-node medium" style="flex: 1;">ZZPD-04<br><span style="font-size:6pt;opacity:0.6">供应商感谢费</span></div>
+            <div class="flow-node medium" style="flex: 1;">ZZPD-05/06<br><span style="font-size:6pt;opacity:0.6">慰问金/编制</span></div>
+            <div class="flow-node medium" style="flex: 1;">ZZPD-07/08/09<br><span style="font-size:6pt;opacity:0.6">老部下/舆情/变更</span></div>
+          </div>
+          <!-- Row 4 -->
+          <div class="flow-row" style="margin-top: 6px;">
+            <div class="flow-node hard" style="flex: 1;">ZZPD-10<br><span style="font-size:6pt;opacity:0.7">领导软钉子</span></div>
+            <div class="flow-node hard" style="flex: 1;">ZZPD-11<br><span style="font-size:6pt;opacity:0.7">截访还是依法</span></div>
+            <div class="flow-node hard" style="flex: 1;">ZZPD-12<br><span style="font-size:6pt;opacity:0.7">补贴发放灵活处理</span></div>
+            <div class="flow-node" style="flex: 2; background: none; border: none; color: rgba(255,255,255,0.35); font-size: 7pt; justify-content: center;">追问复盘 · 贯穿全程</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Value Props + Questioning Tech -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px; flex: 0 0 auto;">
+        <div class="value-section" style="grid-template-columns: 1fr; gap: 4px;">
+          <div style="font-size: 7pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px;">追问技术 · 三层递进</div>
+          <div class="value-card" style="text-align: left; padding: 5px 8px;">
+            <div style="font-size: 7pt; color: var(--gold-light); font-weight: 700; margin-bottom: 2px;">第一层 · 还原逻辑</div>
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.5);">"你为什么选这个而不是那个？"</div>
+          </div>
+          <div class="value-card" style="text-align: left; padding: 5px 8px;">
+            <div style="font-size: 7pt; color: var(--gold-light); font-weight: 700; margin-bottom: 2px;">第二层 · 暴露盲区</div>
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.5);">"如果还有这个信息你没想到呢？"</div>
+          </div>
+          <div class="value-card" style="text-align: left; padding: 5px 8px;">
+            <div style="font-size: 7pt; color: var(--gold-light); font-weight: 700; margin-bottom: 2px;">第三层 · 迁移内化</div>
+            <div style="font-size: 6.5pt; color: rgba(255,255,255,0.5);">"以后遇到类似情况用什么原则？"</div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px;">
+          <div style="font-size: 7pt; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--gold); margin-bottom: 2px;">核心价值主张</div>
+          <div class="value-card" style="flex: 1; text-align: left; display: flex; flex-direction: column; justify-content: center; gap: 4px; padding: 8px;">
+            <div style="display: flex; gap: 8px; align-items: flex-start;">
+              <div style="font-family: 'Noto Serif SC'; font-size: 14pt; font-weight: 900; color: var(--gold); line-height: 1;">12</div>
+              <div style="font-size: 7.5pt; color: rgba(255,255,255,0.6); line-height: 1.4;">个真实两难情景关卡<br><span style="color: rgba(255,255,255,0.35);">覆盖6种典型决策类型</span></div>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;">
+              <div style="font-family: 'Noto Serif SC'; font-size: 14pt; font-weight: 900; color: var(--gold); line-height: 1;">5</div>
+              <div style="font-size: 7.5pt; color: rgba(255,255,255,0.6); line-height: 1.4;">个可训练能力维度<br><span style="color: rgba(255,255,255,0.35);">政治判断力可测量、可训练</span></div>
+            </div>
+            <div style="display: flex; gap: 8px; align-items: flex-start;">
+              <div style="font-family: 'Noto Serif SC'; font-size: 14pt; font-weight: 900; color: var(--gold); line-height: 1;">1</div>
+              <div style="font-size: 7.5pt; color: rgba(255,255,255,0.6); line-height: 1.4;">份个人判断力自检清单<br><span style="color: rgba(255,255,255,0.35);">带走可迁移的判断原则</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="footer-left">
+      版权说明：本课程为党业融合能力训练系列课程，与廉政风险情景决策课、双带头人破局课分属不同能力训练层次
+    </div>
+    <div class="footer-right">
+      <span class="footer-badge">无标准答案</span>
+      <span class="footer-badge">压力叠加</span>
+      <span class="footer-badge">追问纠偏</span>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

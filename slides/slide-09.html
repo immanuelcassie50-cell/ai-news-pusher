@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>断裂带详解-工程层</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#F6F3EF; font-family:'Microsoft YaHei','Arial',sans-serif;">
+
+<!-- Top accent bar -->
+<svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+  <rect width="960" height="6" fill="#B81025"/>
+</svg>
+
+<!-- Page title -->
+<p style="position:absolute; top:30px; left:50px; margin:0; font-size:32px; font-weight:700; color:#1A1A1A; letter-spacing:2px;">断裂带详解-工程层</p>
+
+<!-- Subtitle -->
+<p style="position:absolute; top:75px; left:50px; margin:0; font-size:16px; font-weight:400; color:#4A4748;">从制度设计到流程落地的关键路径</p>
+
+<!-- Decorative line -->
+<svg style="position:absolute; top:105px; left:50px;" width="120" height="3" aria-hidden="true">
+  <rect width="120" height="3" fill="#B81025"/>
+</svg>
+
+<!-- Left side: Three engineering fault zones in vertical layout -->
+<svg style="position:absolute; top:130px; left:50px;" width="280" height="360" viewBox="0 0 280 360">
+  <!-- Zone 1 -->
+  <rect width="280" height="100" rx="6" fill="#FFFFFF" stroke="#B81025" stroke-width="1"/>
+  <rect width="280" height="36" rx="6" fill="#B81025"/>
+  <rect y="28" width="280" height="8" fill="#B81025"/>
+  <text x="140" y="24" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">制度断裂带</text>
+  <text x="15" y="58" font-size="11" font-weight="400" fill="#4A4748">决策权限边界模糊</text>
+  <text x="15" y="75" font-size="11" font-weight="400" fill="#4A4748">人机责任划分不清</text>
+  <text x="15" y="92" font-size="11" font-weight="700" fill="#B81025">→ 建立明确的权限矩阵</text>
+
+  <!-- Zone 2 -->
+  <rect y="115" width="280" height="100" rx="6" fill="#FFFFFF" stroke="#D4122B" stroke-width="1"/>
+  <rect y="115" width="280" height="36" rx="6" fill="#D4122B"/>
+  <rect y="147" width="280" height="8" fill="#D4122B"/>
+  <text x="140" y="139" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">流程断裂带</text>
+  <text x="15" y="173" font-size="11" font-weight="400" fill="#4A4748">人机协作节点缺失</text>
+  <text x="15" y="190" font-size="11" font-weight="400" fill="#4A4748">交接标准不统一</text>
+  <text x="15" y="207" font-size="11" font-weight="700" fill="#D4122B">→ 设计标准化的交接流程</text>
+
+  <!-- Zone 3 -->
+  <rect y="230" width="280" height="100" rx="6" fill="#FFFFFF" stroke="#4A4748" stroke-width="1"/>
+  <rect y="230" width="280" height="36" rx="6" fill="#4A4748"/>
+  <rect y="258" width="280" height="8" fill="#4A4748"/>
+  <text x="140" y="254" text-anchor="middle" font-size="14" font-weight="700" fill="#FFFFFF">技术断裂带</text>
+  <text x="15" y="288" font-size="11" font-weight="400" fill="#4A4748">系统接口不兼容</text>
+  <text x="15" y="305" font-size="11" font-weight="400" fill="#4A4748">数据孤岛导致决策偏差</text>
+  <text x="15" y="322" font-size="11" font-weight="700" fill="#4A4748">→ 构建统一的技术标准</text>
+</svg>
+
+<!-- Right side: Engineering layer solution framework -->
+<svg style="position:absolute; top:130px; left:370px;" width="540" height="360" viewBox="0 0 540 360">
+  <!-- Main card -->
+  <rect width="540" height="360" rx="8" fill="#FFFFFF" stroke="#1A1A1A" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect width="540" height="50" rx="8" fill="#1A1A1A"/>
+  <rect y="42" width="540" height="8" fill="#1A1A1A"/>
+  <text x="270" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#FFFFFF">工程层解决方案：三步法</text>
+
+  <!-- Step 1 -->
+  <circle cx="60" cy="100" r="24" fill="#B81025"/>
+  <text x="60" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="95" y="95" font-size="14" font-weight="700" fill="#1A1A1A">边界定义</text>
+  <text x="95" y="112" font-size="11" font-weight="400" fill="#4A4748">明确哪些决策必须人类做</text>
+  <text x="95" y="128" font-size="11" font-weight="400" fill="#4A4748">哪些可以交给AI执行</text>
+
+  <!-- Arrow 1 -->
+  <path d="M160 105 L200 105" stroke="#B81025" stroke-width="2" fill="none"/>
+  <path d="M195 100 L205 105 L195 110" stroke="#B81025" stroke-width="2" fill="none"/>
+
+  <!-- Step 2 -->
+  <circle cx="260" cy="100" r="24" fill="#D4122B"/>
+  <text x="260" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="295" y="95" font-size="14" font-weight="700" fill="#1A1A1A">流程嵌入</text>
+  <text x="295" y="112" font-size="11" font-weight="400" fill="#4A4748">在人机交接点设置检查点</text>
+  <text x="295" y="128" font-size="11" font-weight="400" fill="#4A4748">确保责任可追溯</text>
+
+  <!-- Arrow 2 -->
+  <path d="M360 105 L400 105" stroke="#D4122B" stroke-width="2" fill="none"/>
+  <path d="M395 100 L405 105 L395 110" stroke="#D4122B" stroke-width="2" fill="none"/>
+
+  <!-- Step 3 -->
+  <circle cx="460" cy="100" r="24" fill="#4A4748"/>
+  <text x="460" y="105" text-anchor="middle" font-size="20" font-weight="700" fill="#FFFFFF">3</text>
+  <text x="495" y="95" font-size="14" font-weight="700" fill="#1A1A1A">技术保障</text>
+  <text x="495" y="112" font-size="11" font-weight="400" fill="#4A4748">建立统一数据标准</text>
+  <text x="495" y="128" font-size="11" font-weight="400" fill="#4A4748">确保系统互联互通</text>
+
+  <!-- Divider -->
+  <rect x="30" y="155" width="480" height="2" fill="#B81025" opacity="0.2"/>
+
+  <!-- Key metrics section -->
+  <text x="30" y="180" font-size="13" font-weight="700" fill="#1A1A1A">工程层核心指标</text>
+
+  <!-- Metric 1 -->
+  <rect x="30" y="195" width="150" height="60" rx="4" fill="#F6F3EF"/>
+  <text x="105" y="215" text-anchor="middle" font-size="24" font-weight="700" fill="#B81025">100%</text>
+  <text x="105" y="240" text-anchor="middle" font-size="10" font-weight="400" fill="#4A4748">权限边界覆盖率</text>
+
+  <!-- Metric 2 -->
+  <rect x="195" y="195" width="150" height="60" rx="4" fill="#F6F3EF"/>
+  <text x="270" y="215" text-anchor="middle" font-size="24" font-weight="700" fill="#D4122B">3层</text>
+  <text x="270" y="240" text-anchor="middle" font-size="10" font-weight="400" fill="#4A4748">流程检查点数量</text>
+
+  <!-- Metric 3 -->
+  <rect x="360" y="195" width="150" height="60" rx="4" fill="#F6F3EF"/>
+  <text x="435" y="215" text-anchor="middle" font-size="24" font-weight="700" fill="#4A4748">0</text>
+  <text x="435" y="240" text-anchor="middle" font-size="10" font-weight="400" fill="#4A4748">数据孤岛数量</text>
+
+  <!-- Warning box -->
+  <rect x="30" y="270" width="480" height="70" rx="4" fill="#B81025" opacity="0.08"/>
+  <text x="45" y="290" font-size="11" font-weight="700" fill="#B81025">工程层常见错误</text>
+  <text x="45" y="308" font-size="10" font-weight="400" fill="#4A4748">1. 只设计制度不设计流程 → 制度无法落地</text>
+  <text x="45" y="325" font-size="10" font-weight="400" fill="#4A4748">2. 流程设计但无技术保障 → 信息传递失真</text>
+</svg>
+
+<!-- Page number badge -->
+<svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+  <circle cx="18" cy="18" r="18" fill="#B81025"/>
+  <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF">09</text>
+</svg>
+
+</div>
+</body>
+</html>

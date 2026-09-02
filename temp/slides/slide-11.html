@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>冲稳保的本质</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+  background: #F5F5F5;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+  <!-- Top accent bar -->
+  <svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+    <rect width="960" height="6" fill="#8B0000"/>
+  </svg>
+
+  <!-- Title -->
+  <p style="position:absolute; left:60px; top:40px; margin:0; font-size:28px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">冲稳保的本质</p>
+
+  <!-- Subtitle -->
+  <p style="position:absolute; left:60px; top:80px; margin:0; font-size:16px; color:#999999; font-family:'Microsoft YaHei', Arial;">核心观点</p>
+
+  <!-- Main quote - highlighted -->
+  <div style="position:absolute; left:60px; top:120px; width:840px; background:#8B0000; padding:24px 30px; box-sizing:border-box;">
+    <p style="margin:0; font-size:22px; font-weight:700; color:#FFFFFF; font-family:'Microsoft YaHei', Arial; text-align:center;">"冲稳保不是志愿填报的思想，是它的标点符号"</p>
+  </div>
+
+  <!-- Supporting points -->
+  <div style="position:absolute; left:60px; top:200px; width:840px;">
+    <div style="margin-bottom:20px; padding:16px 20px; background:#FFFFFF; border-left:3px solid #C41E3A;">
+      <p style="margin:0; font-size:16px; color:#333333; font-family:'Microsoft YaHei', Arial;">冲稳保学得再精，也只是把"答案"排成一张好看的表</p>
+    </div>
+
+    <div style="margin-bottom:20px; padding:16px 20px; background:#FFFFFF; border-left:3px solid #C41E3A;">
+      <p style="margin:0; font-size:16px; color:#333333; font-family:'Microsoft YaHei', Arial;">真正决定方向的是前面那道题——这个人该往哪走</p>
+    </div>
+
+    <div style="padding:16px 20px; background:#FFFFFF; border-left:3px solid #C41E3A;">
+      <p style="margin:0; font-size:16px; color:#333333; font-family:'Microsoft YaHei', Arial;">这道题，冲稳保从来不负责回答</p>
+    </div>
+  </div>
+
+  <!-- Visual element - diagram -->
+  <svg style="position:absolute; right:60px; bottom:100px;" width="200" height="120" viewBox="0 0 200 120" aria-hidden="true">
+    <rect x="10" y="10" width="60" height="40" rx="4" fill="#8B0000" opacity="0.8"/>
+    <text x="40" y="35" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">方向</text>
+
+    <path d="M75 30 L100 30 M100 30 L100 60" stroke="#333333" stroke-width="2" fill="none"/>
+    <polygon points="100,65 95,55 105,55" fill="#333333"/>
+
+    <rect x="105" y="60" width="60" height="40" rx="4" fill="#999999" opacity="0.8"/>
+    <text x="135" y="85" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">表格</text>
+
+    <text x="40" y="110" text-anchor="middle" font-size="10" fill="#999999" font-family:'Microsoft YaHei', Arial;">冲稳保负责落地</text>
+  </svg>
+
+  <!-- Page number badge -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#8B0000"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">11</text>
+  </svg>
+</div>
+</body>
+</html>

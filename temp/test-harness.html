@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Test Harness</title>
+</head>
+<body>
+<script>
+// 预填充 localStorage
+localStorage.setItem('al_tracker_profile', JSON.stringify({
+  name: '测试用户',
+  config: 'standard',
+  projectStartDate: '2026-06-01',
+  projectEndDate: '2026-08-30',
+  firstMeetingDate: '2026-06-01',
+  meetingDates: ['2026-06-01','2026-06-15','2026-06-29','2026-07-13','2026-07-27','2026-08-10'],
+  createdAt: '2026-06-01T00:00:00Z',
+  version: 1
+}));
+localStorage.setItem('al_tracker_commitments', JSON.stringify([
+  { id: 'c1', createdAt: '2026-06-01', meetingNumber: 1, what: '测试承诺A — 与张经理对话', deadline: '2026-06-20', successCriteria: '完成4次', status: 'active', completedAt: null, dropReason: null, dropLearning: null, blockers: [
+    { id: 'b1', description: '张总出差', rootCause: '没提前约', needsGroupDiscussion: true, recordedAt: '2026-06-10' }
+  ]},
+  { id: 'c2', createdAt: '2026-06-01', meetingNumber: 1, what: '测试承诺B — 读完一本书', deadline: '2026-06-15', successCriteria: '前三章', status: 'done', completedAt: '2026-06-10', dropReason: null, dropLearning: null, blockers: []},
+  { id: 'c3', createdAt: '2026-06-01', meetingNumber: 1, what: '测试承诺C — 已被放弃', deadline: '2026-06-15', successCriteria: null, status: 'dropped', completedAt: null, dropReason: '目标不切实际', dropLearning: 'SMART 原则很重要', blockers: []}
+]));
+localStorage.setItem('al_tracker_reflections', JSON.stringify([
+  { id: 'r1', date: '2026-06-04', weekNumber: 1, type: 'daily', milestoneLabel: null,
+    answers: { q1_action: '今天做了A行动', q2_blocker: '遇到B障碍', q3_discovery: '发现自己C', q4_adjust: '需要调整D' },
+    mood: 4, wordCount: 200, createdAt: '2026-06-04' },
+  { id: 'r2', date: '2026-06-05', weekNumber: 1, type: 'daily', milestoneLabel: null,
+    answers: { q1_action: '第二天做了A2', q2_blocker: '障碍还在', q3_discovery: '更深层发现' },
+    mood: 3, wordCount: 150, createdAt: '2026-06-05' }
+]));
+
+// 用 fetch 加载主应用（受 jsdom CORS 限制时回退到内嵌）
+fetch('action-tracker.html').then(r => r.text()).then(html => {
+  // 提取 <style> 和 <script>，注入到当前文档
+  const styleMatch = html.match(/<style>([\s\S]*?)<\/style>/);
+  const scriptMatch = html.match(/<script>([\s\S]*?)<\/script>/);
+  if (styleMatch) {
+    const s = document.createElement('style');
+    s.textContent = styleMatch[1];
+    document.head.appendChild(s);
+  }
+  if (scriptMatch) {
+    // 还需要 app 的 HTML 结构
+    const bodyMatch = html.match(/<body>([\s\S]*?)<\/body>/);
+    if (bodyMatch) {
+      document.body.innerHTML = bodyMatch[1].replace(/<style[\s\S]*?<\/style>/, '').replace(/<script[\s\S]*?<\/script>/, '');
+    }
+    // 字体 @import 也会被加载，但我们已经在测试模式
+    const s = document.createElement('script');
+    s.textContent = scriptMatch[1];
+    document.body.appendChild(s);
+    window.__testReady = true;
+  }
+});
+</script>
+</body>
+</html>

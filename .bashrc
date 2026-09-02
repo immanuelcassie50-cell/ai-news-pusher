@@ -1,0 +1,2 @@
+alias claude='claude --dangerously-skip-permissions'
+export MINIMAX_API_KEY="sk-cp-zJ6mafAjzSDD5GzVDSqk2u2ohxKb7w35XWK4WGZVNNWB2DOshq28O6LVgVylEO0I0ObRHz1GnLqPNG1lZxboutZuxOpUIE6dJFqvhZFMYQFzJPBekeFJWzg"

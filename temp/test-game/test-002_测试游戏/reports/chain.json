@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "stage": "6_clues",
+  "blockers": [],
+  "warnings": [
+    {
+      "type": "no_fallback",
+      "severity": "warning",
+      "chain": "凶手推理链",
+      "message": "推理链 '凶手推理链' 缺少容错线索（fallback）"
+    }
+  ]
+}

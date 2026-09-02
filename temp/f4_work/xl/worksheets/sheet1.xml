@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+<sheetViews><sheetView workbookViewId="0"><selection activeCell="A1" sqref="A1"/></sheetView></sheetViews>
+<sheetFormatPr baseColWidth="8" defaultRowHeight="15"/>
+<cols><col min="1" max="1" width="8" customWidth="1"/><col min="2" max="2" width="18" customWidth="1"/><col min="3" max="3" width="15" customWidth="1"/><col min="4" max="4" width="15" customWidth="1"/><col min="5" max="5" width="15" customWidth="1"/><col min="6" max="6" width="15" customWidth="1"/><col min="7" max="7" width="15" customWidth="1"/><col min="8" max="8" width="10" customWidth="1"/><col min="9" max="9" width="10" customWidth="1"/></cols>
+<sheetData>
+<row r="1">
+  <c r="A1" s="1" t="inlineStr"><is><t>个人信任建立90天计划</t></is></c>
+  <c r="B1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="C1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="D1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="E1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="F1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="G1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="H1" s="1" t="inlineStr"><is><t></t></is></c>
+  <c r="I1" s="1" t="inlineStr"><is><t></t></is></c>
+</row>
+<row r="2">
+  <c r="A2" s="2" t="inlineStr"><is><t>阶段</t></is></c>
+  <c r="B2" s="2" t="inlineStr"><is><t>周次</t></is></c>
+  <c r="C2" s="2" t="inlineStr"><is><t>目标</t></is></c>
+  <c r="D2" s="2" t="inlineStr"><is><t>行动1</t></is></c>
+  <c r="E2" s="2" t="inlineStr"><is><t>行动2</t></is></c>
+  <c r="F2" s="2" t="inlineStr"><is><t>行动3</t></is></c>
+  <c r="G2" s="2" t="inlineStr"><is><t>检验点</t></is></c>
+  <c r="H2" s="2" t="inlineStr"><is><t>完成</t></is></c>
+  <c r="I2" s="2" t="inlineStr"><is><t>备注</t></is></c>
+</row>
+<row r="3">
+  <c r="A3" s="5" t="inlineStr"><is><t>第一阶段</t></is></c>
+  <c r="B3" s="6" t="inlineStr"><is><t>第1周</t></is></c>
+  <c r="C3" s="4" t="inlineStr"><is><t>了解信任的重要性</t></is></c>
+  <c r="D3" s="4" t="inlineStr"><is><t>阅读信任相关资料</t></is></c>
+  <c r="E3" s="4" t="inlineStr"><is><t>列出自己的信任行为</t></is></c>
+  <c r="F3" s="4" t="inlineStr"><is><t>制定个人承诺</t></is></c>
+  <c r="G3" s="4" t="inlineStr"><is><t>自我评估</t></is></c>
+  <c r="H3" s="7"/>
+  <c r="I3" s="4"/>
+</row>
+<row r="4">
+  <c r="A4" s="5" t="inlineStr"><is><t>第一阶段</t></is></c>
+  <c r="B4" s="6" t="inlineStr"><is><t>第2周</t></is></c>
+  <c r="C4" s="4" t="inlineStr"><is><t>践行透明沟通</t></is></c>
+  <c r="D4" s="4" t="inlineStr"><is><t>主动分享工作进展</t></is></c>
+  <c r="E4" s="4" t="inlineStr"><is><t>诚实表达想法</t></is></c>
+  <c r="F4" s="4" t="inlineStr"><is><t>倾听他人反馈</t></is></c>
+  <c r="G4" s="4" t="inlineStr"><is><t>同事反馈</t></is></c>
+  <c r="H4" s="7"/>
+  <c r="I4" s="4"/>
+</row>
+<row r="5">
+  <c r="A5" s="5" t="inlineStr"><is><t>第一阶段</t></is></c>
+  <c r="B5" s="6" t="inlineStr"><is><t>第3周</t></is></c>
+  <c r="C5" s="4" t="inlineStr"><is><t>兑现承诺</t></is></c>
+  <c r="D5" s="4" t="inlineStr"><is><t>对小事说到做到</t></is></c>
+  <c r="E5" s="4" t="inlineStr"><is><t>记录承诺清单</t></is></c>
+  <c r="F5" s="4" t="inlineStr"><is><t>及时跟进</t></is></c>
+  <c r="G5" s="4" t="inlineStr"><is><t>承诺完成率</t></is></c>
+  <c r="H5" s="7"/>
+  <c r="I5" s="4"/>
+</row>
+<row r="6">
+  <c r="A6" s="5" t="inlineStr"><is><t>第一阶段</t></is></c>
+  <c r="B6" s="6" t="inlineStr"><is><t>第4周</t></is></c>
+  <c r="C6" s="4" t="inlineStr"><is><t>承认错误并修正</t></is></c>
+  <c r="D6" s="4" t="inlineStr"><is><t>勇于认错</t></is></c>
+  <c r="E6" s="4" t="inlineStr"><is><t>分析错误原因</t></is></c>
+  <c r="F6" s="4" t="inlineStr"><is><t>制定改进措施</t></is></c>
+  <c r="G6" s="4" t="inlineStr"><is><t>错误复发率</t></is></c>
+  <c r="H6" s="7"/>
+  <c r="I6" s="4"/>
+</row>
+<row r="7">
+  <c r="A7" s="5" t="inlineStr"><is><t>第二阶段</t></is></c>
+  <c r="B7" s="6" t="inlineStr"><is><t>第5周</t></is></c>
+  <c r="C7" s="4" t="inlineStr"><is><t>主动支持他人</t></is></c>
+  <c r="D7" s="4" t="inlineStr"><is><t>主动询问同事需求</t></is></c>
+  <c r="E7" s="4" t="inlineStr"><is><t>提供实际帮助</t></is></c>
+  <c r="F7" s="4" t="inlineStr"><is><t>记录支持案例</t></is></c>
+  <c r="G7" s="4" t="inlineStr"><is><t>互助次数</t></is></c>
+  <c r="H7" s="7"/>
+  <c r="I7" s="4"/>
+</row>
+<row r="8">
+  <c r="A8" s="5" t="inlineStr"><is><t>第二阶段</t></is></c>
+  <c r="B8" s="6" t="inlineStr"><is><t>第6周</t></is></c>
+  <c r="C8" s="4" t="inlineStr"><is><t>给予建设性反馈</t></is></c>
+  <c r="D8" s="4" t="inlineStr"><is><t>学习反馈技巧</t></is></c>
+  <c r="E8" s="4" t="inlineStr"><is><t>真诚表达意见</t></is></c>
+  <c r="F8" s="4" t="inlineStr"><is><t>关注对方感受</t></is></c>
+  <c r="G8" s="4" t="inlineStr"><is><t>反馈满意度</t></is></c>
+  <c r="H8" s="7"/>
+  <c r="I8" s="4"/>
+</row>
+<row r="9">
+  <c r="A9" s="5" t="inlineStr"><is><t>第二阶段</t></is></c>
+  <c r="B9" s="6" t="inlineStr"><is><t>第7周</t></is></c>
+  <c r="C9" s="4" t="inlineStr"><is><t>保持一致性</t></is></c>
+  <c r="D9" s="4" t="inlineStr"><is><t>言行一致</t></is></c>
+  <c r="E9" s="4" t="inlineStr"><is><t>情绪稳定</t></is></c>
+  <c r="F9" s="4" t="inlineStr"><is><t>公平对待他人</t></is></c>
+  <c r="G9" s="4" t="inlineStr"><is><t>他人评价</t></is></c>
+  <c r="H9" s="7"/>
+  <c r="I9" s="4"/>
+</row>
+<row r="10">
+  <c r="A10" s="5" t="inlineStr"><is><t>第二阶段</t></is></c>
+  <c r="B10" s="6" t="inlineStr"><is><t>第8周</t></is></c>
+  <c r="C10" s="4" t="inlineStr"><is><t>建立信任机制</t></is></c>
+  <c r="D10" s="4" t="inlineStr"><is><t>制定信任承诺</t></is></c>
+  <c r="E10" s="4" t="inlineStr"><is><t>约定检验方式</t></is></c>
+  <c r="F10" s="4" t="inlineStr"><is><t>定期回顾调整</t></is></c>
+  <c r="G10" s="4" t="inlineStr"><is><t>机制有效性</t></is></c>
+  <c r="H10" s="7"/>
+  <c r="I10" s="4"/>
+</row>
+<row r="11">
+  <c r="A11" s="5" t="inlineStr"><is><t>第三阶段</t></is></c>
+  <c r="B11" s="6" t="inlineStr"><is><t>第9周</t></is></c>
+  <c r="C11" s="4" t="inlineStr"><is><t>扩展信任圈</t></is></c>
+  <c r="D11" s="4" t="inlineStr"><is><t>与新同事建立联系</t></is></c>
+  <c r="E11" s="4" t="inlineStr"><is><t>参加团队活动</t></is></c>
+  <c r="F11" s="4" t="inlineStr"><is><t>主动介绍自己</t></is></c>
+  <c r="G11" s="4" t="inlineStr"><is><t>新联系人数量</t></is></c>
+  <c r="H11" s="7"/>
+  <c r="I11" s="4"/>
+</row>
+<row r="12">
+  <c r="A12" s="5" t="inlineStr"><is><t>第三阶段</t></is></c>
+  <c r="B12" s="6" t="inlineStr"><is><t>第10周</t></is></c>
+  <c r="C12" s="4" t="inlineStr"><is><t>分享经验</t></is></c>
+  <c r="D12" s="4" t="inlineStr"><is><t>总结信任建立方法</t></is></c>
+  <c r="E12" s="4" t="inlineStr"><is><t>分享给团队</t></is></c>
+  <c r="F12" s="4" t="inlineStr"><is><t>帮助新人</t></is></c>
+  <c r="G12" s="4" t="inlineStr"><is><t>分享反馈</t></is></c>
+  <c r="H12" s="7"/>
+  <c r="I12" s="4"/>
+</row>
+<row r="13">
+  <c r="A13" s="5" t="inlineStr"><is><t>第三阶段</t></is></c>
+  <c r="B13" s="6" t="inlineStr"><is><t>第11周</t></is></c>
+  <c r="C13" s="4" t="inlineStr"><is><t>应对信任挑战</t></is></c>
+  <c r="D13" s="4" t="inlineStr"><is><t>识别信任危机信号</t></is></c>
+  <c r="E13" s="4" t="inlineStr"><is><t>及时沟通澄清</t></is></c>
+  <c r="F13" s="4" t="inlineStr"><is><t>修复受损关系</t></is></c>
+  <c r="G13" s="4" t="inlineStr"><is><t>危机处理效果</t></is></c>
+  <c r="H13" s="7"/>
+  <c r="I13" s="4"/>
+</row>
+<row r="14">
+  <c r="A14" s="5" t="inlineStr"><is><t>第三阶段</t></is></c>
+  <c r="B14" s="6" t="inlineStr"><is><t>第12周</t></is></c>
+  <c r="C14" s="4" t="inlineStr"><is><t>总结与展望</t></is></c>
+  <c r="D14" s="4" t="inlineStr"><is><t>回顾90天收获</t></is></c>
+  <c r="E14" s="4" t="inlineStr"><is><t>制定下一阶段目标</t></is></c>
+  <c r="F14" s="4" t="inlineStr"><is><t>建立持续改进计划</t></is></c>
+  <c r="G14" s="4" t="inlineStr"><is><t>目标达成率</t></is></c>
+  <c r="H14" s="7"/>
+  <c r="I14" s="4"/>
+</row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

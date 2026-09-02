@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="5" topLeftCell="A6" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="5" customWidth="1"/>
+    <col min="2" max="2" width="22" customWidth="1"/>
+    <col min="3" max="3" width="45" customWidth="1"/>
+    <col min="4" max="4" width="10" customWidth="1"/>
+    <col min="5" max="5" width="22" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>重点科目核对清单</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>核对日期：</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="8"/>
+    <row r="5" ht="26" customHeight="1">
+      <c r="A5" s="8" t="inlineStr"><is><t>编号</t></is></c>
+      <c r="B5" s="8" t="inlineStr"><is><t>核对项目</t></is></c>
+      <c r="C5" s="8" t="inlineStr"><is><t>核对内容</t></is></c>
+      <c r="D5" s="8" t="inlineStr"><is><t>是否异常</t></is></c>
+      <c r="E5" s="8" t="inlineStr"><is><t>备注</t></is></c>
+    </row>
+    <row r="6" ht="22" customHeight="1">
+      <c r="A6" s="5" t="inlineStr"><is><t>1</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>资产负债表-资产类</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>货币资金</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>检查货币资金规模是否与经营规模匹配，注意受限资金</t></is></c>
+      <c r="D6" s="6"/>
+      <c r="E6" s="6"/>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" s="5" t="inlineStr"><is><t>2</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>交易性金融资产</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>关注其构成和变动，是否有操纵利润嫌疑</t></is></c>
+      <c r="D7" s="6"/>
+      <c r="E7" s="6"/>
+    </row>
+    <row r="8" ht="22" customHeight="1">
+      <c r="A8" s="5" t="inlineStr"><is><t>3</t></is></c>
+      <c r="B8" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>应收账款</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>应收账款增速是否超过营业收入增速，账龄结构是否合理</t></is></c>
+      <c r="D8" s="6"/>
+      <c r="E8" s="6"/>
+    </row>
+    <row r="9" ht="22" customHeight="1">
+      <c r="A9" s="5" t="inlineStr"><is><t>4</t></is></c>
+      <c r="B9" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>预付款项</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>预付款项异常增高可能存在关联方占用或虚构利润</t></is></c>
+      <c r="D9" s="6"/>
+      <c r="E9" s="6"/>
+    </row>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="5" t="inlineStr"><is><t>5</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>存货</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>存货周转是否正常，是否存在积压或虚增</t></is></c>
+      <c r="D10" s="6"/>
+      <c r="E10" s="6"/>
+    </row>
+    <row r="11" ht="22" customHeight="1">
+      <c r="A11" s="5" t="inlineStr"><is><t>6</t></is></c>
+      <c r="B11" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>固定资产</t></is></c>
+      <c r="D11" s="6" t="inlineStr"><is><t>固定资产原值增长是否合理，是否存在过度投资</t></is></c>
+      <c r="D11" s="6"/>
+      <c r="E11" s="6"/>
+    </row>
+    <row r="12" ht="22" customHeight="1">
+      <c r="A12" s="5" t="inlineStr"><is><t>7</t></is></c>
+      <c r="B12" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>无形资产</t></is></c>
+      <c r="D12" s="6" t="inlineStr"><is><t>无形资产构成是否合理，摊销政策是否一致</t></is></c>
+      <c r="D12" s="6"/>
+      <c r="E12" s="6"/>
+    </row>
+    <row r="13" ht="22" customHeight="1">
+      <c r="A13" s="5" t="inlineStr"><is><t>8</t></is></c>
+      <c r="B13" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>长期股权投资</t></is></c>
+      <c r="D13" s="6" t="inlineStr"><is><t>关注投资标的和投资收益质量</t></is></c>
+      <c r="D13" s="6"/>
+      <c r="E13" s="6"/>
+    </row>
+    <row r="14" ht="22" customHeight="1">
+      <c r="A14" s="5" t="inlineStr"><is><t>9</t></is></c>
+      <c r="B14" s="6" t="inlineStr"><is><t>资产负债表-负债类</t></is></c>
+      <c r="C14" s="6" t="inlineStr"><is><t>短期借款</t></is></c>
+      <c r="D14" s="6" t="inlineStr"><is><t>短期借款占比过高可能存在资金压力</t></is></c>
+      <c r="D14" s="6"/>
+      <c r="E14" s="6"/>
+    </row>
+    <row r="15" ht="22" customHeight="1">
+      <c r="A15" s="5" t="inlineStr"><is><t>10</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>应付账款</t></is></c>
+      <c r="D15" s="6" t="inlineStr"><is><t>应付账款增速是否与采购规模匹配</t></is></c>
+      <c r="D15" s="6"/>
+      <c r="E15" s="6"/>
+    </row>
+    <row r="16" ht="22" customHeight="1">
+      <c r="A16" s="5" t="inlineStr"><is><t>11</t></is></c>
+      <c r="B16" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C16" s="6" t="inlineStr"><is><t>长期借款</t></is></c>
+      <c r="D16" s="6" t="inlineStr"><is><t>关注借款期限结构和利率风险</t></is></c>
+      <c r="D16" s="6"/>
+      <c r="E16" s="6"/>
+    </row>
+    <row r="17" ht="22" customHeight="1">
+      <c r="A17" s="5" t="inlineStr"><is><t>12</t></is></c>
+      <c r="B17" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C17" s="6" t="inlineStr"><is><t>应付债券</t></is></c>
+      <c r="D17" s="6" t="inlineStr"><is><t>关注债券期限和还款安排</t></is></c>
+      <c r="D17" s="6"/>
+      <c r="E17" s="6"/>
+    </row>
+    <row r="18" ht="22" customHeight="1">
+      <c r="A18" s="5" t="inlineStr"><is><t>13</t></is></c>
+      <c r="B18" s="6" t="inlineStr"><is><t>资产负债表-权益类</t></is></c>
+      <c r="C18" s="6" t="inlineStr"><is><t>实收资本</t></is></c>
+      <c r="D18" s="6" t="inlineStr"><is><t>实收资本变动是否合理</t></is></c>
+      <c r="D18" s="6"/>
+      <c r="E18" s="6"/>
+    </row>
+    <row r="19" ht="22" customHeight="1">
+      <c r="A19" s="5" t="inlineStr"><is><t>14</t></is></c>
+      <c r="B19" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C19" s="6" t="inlineStr"><is><t>未分配利润</t></is></c>
+      <c r="D19" s="6" t="inlineStr"><is><t>未分配利润是否为负，是否存在巨额亏损</t></is></c>
+      <c r="D19" s="6"/>
+      <c r="E19" s="6"/>
+    </row>
+    <row r="20" ht="22" customHeight="1">
+      <c r="A20" s="5" t="inlineStr"><is><t>15</t></is></c>
+      <c r="B20" s="6" t="inlineStr"><is><t>利润表核对</t></is></c>
+      <c r="C20" s="6" t="inlineStr"><is><t>营业收入</t></is></c>
+      <c r="D20" s="6" t="inlineStr"><is><t>收入确认政策是否合理，收入增速是否正常</t></is></c>
+      <c r="D20" s="6"/>
+      <c r="E20" s="6"/>
+    </row>
+    <row r="21" ht="22" customHeight="1">
+      <c r="A21" s="5" t="inlineStr"><is><t>16</t></is></c>
+      <c r="B21" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C21" s="6" t="inlineStr"><is><t>营业成本</t></is></c>
+      <c r="D21" s="6" t="inlineStr"><is><t>成本与收入是否匹配，毛利率是否异常</t></is></c>
+      <c r="D21" s="6"/>
+      <c r="E21" s="6"/>
+    </row>
+    <row r="22" ht="22" customHeight="1">
+      <c r="A22" s="5" t="inlineStr"><is><t>17</t></is></c>
+      <c r="B22" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C22" s="6" t="inlineStr"><is><t>销售费用</t></is></c>
+      <c r="D22" s="6" t="inlineStr"><is><t>销售费用率是否在合理范围，变动原因是否合理</t></is></c>
+      <c r="D22" s="6"/>
+      <c r="E22" s="6"/>
+    </row>
+    <row r="23" ht="22" customHeight="1">
+      <c r="A23" s="5" t="inlineStr"><is><t>18</t></is></c>
+      <c r="B23" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C23" s="6" t="inlineStr"><is><t>管理费用</t></is></c>
+      <c r="D23" s="6" t="inlineStr"><is><t>管理费用率是否过高，是否存在浪费</t></is></c>
+      <c r="D23" s="6"/>
+      <c r="E23" s="6"/>
+    </row>
+    <row r="24" ht="22" customHeight="1">
+      <c r="A24" s="5" t="inlineStr"><is><t>19</t></is></c>
+      <c r="B24" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C24" s="6" t="inlineStr"><is><t>财务费用</t></is></c>
+      <c r="D24" s="6" t="inlineStr"><is><t>财务费用与负债规模是否匹配</t></is></c>
+      <c r="D24" s="6"/>
+      <c r="E24" s="6"/>
+    </row>
+    <row r="25" ht="22" customHeight="1">
+      <c r="A25" s="5" t="inlineStr"><is><t>20</t></is></c>
+      <c r="B25" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C25" s="6" t="inlineStr"><is><t>投资收益</t></is></c>
+      <c r="D25" s="6" t="inlineStr"><is><t>投资收益的可持续性，是否为经常性收益</t></is></c>
+      <c r="D25" s="6"/>
+      <c r="E25" s="6"/>
+    </row>
+    <row r="26" ht="22" customHeight="1">
+      <c r="A26" s="5" t="inlineStr"><is><t>21</t></is></c>
+      <c r="B26" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C26" s="6" t="inlineStr"><is><t>营业利润</t></is></c>
+      <c r="D26" s="6" t="inlineStr"><is><t>营业利润与营业收入比例是否合理</t></is></c>
+      <c r="D26" s="6"/>
+      <c r="E26" s="6"/>
+    </row>
+    <row r="27" ht="22" customHeight="1">
+      <c r="A27" s="5" t="inlineStr"><is><t>22</t></is></c>
+      <c r="B27" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C27" s="6" t="inlineStr"><is><t>净利润</t></is></c>
+      <c r="D27" s="6" t="inlineStr"><is><t>净利润是否为正，是否存在大幅波动</t></is></c>
+      <c r="D27" s="6"/>
+      <c r="E27" s="6"/>
+    </row>
+    <row r="28" ht="22" customHeight="1">
+      <c r="A28" s="5" t="inlineStr"><is><t>23</t></is></c>
+      <c r="B28" s="6" t="inlineStr"><is><t>现金流量表核对</t></is></c>
+      <c r="C28" s="6" t="inlineStr"><is><t>经营活动现金流</t></is></c>
+      <c r="D28" s="6" t="inlineStr"><is><t>经营活动现金流是否为正，是否与净利润匹配</t></is></c>
+      <c r="D28" s="6"/>
+      <c r="E28" s="6"/>
+    </row>
+    <row r="29" ht="22" customHeight="1">
+      <c r="A29" s="5" t="inlineStr"><is><t>24</t></is></c>
+      <c r="B29" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C29" s="6" t="inlineStr"><is><t>销售商品收到的现金</t></is></c>
+      <c r="D29" s="6" t="inlineStr"><is><t>收到的现金与收入比例是否正常</t></is></c>
+      <c r="D29" s="6"/>
+      <c r="E29" s="6"/>
+    </row>
+    <row r="30" ht="22" customHeight="1">
+      <c r="A30" s="5" t="inlineStr"><is><t>25</t></is></c>
+      <c r="B30" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C30" s="6" t="inlineStr"><is><t>购买商品支付的现金</t></is></c>
+      <c r="D30" s="6" t="inlineStr"><is><t>支付的现金与成本比例是否正常</t></is></c>
+      <c r="D30" s="6"/>
+      <c r="E30" s="6"/>
+    </row>
+    <row r="31" ht="22" customHeight="1">
+      <c r="A31" s="5" t="inlineStr"><is><t>26</t></is></c>
+      <c r="B31" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C31" s="6" t="inlineStr"><is><t>支付给职工的现金</t></is></c>
+      <c r="D31" s="6" t="inlineStr"><is><t>支付的现金与员工规模是否匹配</t></is></c>
+      <c r="D31" s="6"/>
+      <c r="E31" s="6"/>
+    </row>
+    <row r="32" ht="22" customHeight="1">
+      <c r="A32" s="5" t="inlineStr"><is><t>27</t></is></c>
+      <c r="B32" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C32" s="6" t="inlineStr"><is><t>支付的各项税费</t></is></c>
+      <c r="D32" s="6" t="inlineStr"><is><t>税费支出与利润表税费用是否匹配</t></is></c>
+      <c r="D32" s="6"/>
+      <c r="E32" s="6"/>
+    </row>
+    <row r="33" ht="22" customHeight="1">
+      <c r="A33" s="5" t="inlineStr"><is><t>28</t></is></c>
+      <c r="B33" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C33" s="6" t="inlineStr"><is><t>投资活动现金流</t></is></c>
+      <c r="D33" s="6" t="inlineStr"><is><t>投资活动现金流反映公司扩张或收缩战略</t></is></c>
+      <c r="D33" s="6"/>
+      <c r="E33" s="6"/>
+    </row>
+    <row r="34" ht="22" customHeight="1">
+      <c r="A34" s="5" t="inlineStr"><is><t>29</t></is></c>
+      <c r="B34" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C34" s="6" t="inlineStr"><is><t>购建固定资产支付的现金</t></is></c>
+      <c r="D34" s="6" t="inlineStr"><is><t>资本支出是否合理，是否存在过度投资</t></is></c>
+      <c r="D34" s="6"/>
+      <c r="E34" s="6"/>
+    </row>
+    <row r="35" ht="22" customHeight="1">
+      <c r="A35" s="5" t="inlineStr"><is><t>30</t></is></c>
+      <c r="B35" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C35" s="6" t="inlineStr"><is><t>筹资活动现金流</t></is></c>
+      <c r="D35" s="6" t="inlineStr"><is><t>筹资活动反映公司融资策略</t></is></c>
+      <c r="D35" s="6"/>
+      <c r="E35" s="6"/>
+    </row>
+    <row r="36" ht="22" customHeight="1">
+      <c r="A36" s="5" t="inlineStr"><is><t>31</t></is></c>
+      <c r="B36" s="6" t="inlineStr"><is><t></t></is></c>
+      <c r="C36" s="6" t="inlineStr"><is><t>分配股利支付的现金</t></is></c>
+      <c r="D36" s="6" t="inlineStr"><is><t>分红政策是否可持续</t></is></c>
+      <c r="D36" s="6"/>
+      <c r="E36" s="6"/>
+    </row>
+  </sheetData>
+  <autoFilter ref="A5:E36"/>
+</worksheet>

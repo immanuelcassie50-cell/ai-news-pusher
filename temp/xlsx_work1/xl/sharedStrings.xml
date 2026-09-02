@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="12" uniqueCount="12">
+  <si><t>沟通漏斗与失效类型分析表</t></si>
+  <si><t>环节</t></si>
+  <si><t>原始信息</t></si>
+  <si><t>信息传递</t></si>
+  <si><t>接收理解</t></si>
+  <si><t>确认记忆</t></si>
+  <si><t>行动转化</t></si>
+  <si><t>传递效率</t></si>
+  <si><t>失效类型</t></si>
+  <si><t>原因分析</t></si>
+  <si><t>改进措施</t></si>
+  <si><t>案例</t></si>
+</sst>

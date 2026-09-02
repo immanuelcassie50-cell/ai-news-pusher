@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>Kaizen践行者</v></c>
+      <c r="B2" t="s" s="0"><v>您具备持续改进的意识和方法论，是团队改进的推动者。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>问题感知强</v></c>
+      <c r="B3" t="s" s="0"><v>您对问题感知敏锐，能够发现潜在改进点。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>实验意愿强</v></c>
+      <c r="B4" t="s" s="0"><v>您愿意尝试新方案并承担失败风险。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>失败接受度高</v></c>
+      <c r="B5" t="s" s="0"><v>您能够从失败中学习，不惧怕失败。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>归纳习惯好</v></c>
+      <c r="B6" t="s" s="0"><v>您擅长将改进经验系统化并分享。</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="0"><v>待开发</v></c>
+      <c r="B7" t="s" s="0"><v>您需要加强持续改进的意识和方法。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

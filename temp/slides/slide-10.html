@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>第一章 冲稳保是语法，不是方法</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+  background: #F5F5F5;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = `scale(${scale})`;
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content">
+  <!-- Top accent bar -->
+  <svg style="position:absolute; top:0; left:0;" width="960" height="6" viewBox="0 0 960 6">
+    <rect width="960" height="6" fill="#8B0000"/>
+  </svg>
+
+  <!-- Chapter indicator -->
+  <svg style="position:absolute; top:30px; right:60px;" width="80" height="28" viewBox="0 0 80 28">
+    <rect width="80" height="28" rx="4" fill="#8B0000"/>
+    <text x="40" y="18" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">教学设计</text>
+  </svg>
+
+  <!-- Title -->
+  <p style="position:absolute; left:60px; top:50px; margin:0; font-size:32px; font-weight:700; color:#333333; font-family:'Microsoft YaHei', Arial;">第一章</p>
+  <p style="position:absolute; left:60px; top:90px; margin:0; font-size:28px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">冲稳保是语法，不是方法</p>
+
+  <!-- Main content area - two column layout -->
+  <!-- Left column: 教学要点 -->
+  <div style="position:absolute; left:60px; top:160px; width:380px;">
+    <p style="margin:0 0 16px 0; font-size:16px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">教学要点范围</p>
+    <ul style="margin:0; padding-left:20px; font-size:14px; color:#333333; font-family:'Microsoft YaHei', Arial; line-height:2;">
+      <li>冲稳保的本质</li>
+      <li>常见误区</li>
+      <li>核心理念</li>
+    </ul>
+  </div>
+
+  <!-- Right column: 其他信息 -->
+  <div style="position:absolute; right:60px; top:160px; width:380px;">
+    <p style="margin:0 0 16px 0; font-size:16px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">授课信息</p>
+    <ul style="margin:0; padding-left:20px; font-size:14px; color:#333333; font-family:'Microsoft YaHei', Arial; line-height:2;">
+      <li><span style="color:#999999;">授课方式</span> 讲授+案例分析</li>
+      <li><span style="color:#999999;">时长</span> 约45分钟</li>
+      <li><span style="color:#999999;">使用道具</span> 案例对比表、梯度表示例</li>
+    </ul>
+  </div>
+
+  <!-- Key focus section -->
+  <div style="position:absolute; left:60px; top:340px; width:840px; background:#FFFFFF; border-left:4px solid #8B0000; padding:16px 20px; box-sizing:border-box;">
+    <p style="margin:0 0 8px 0; font-size:14px; font-weight:700; color:#8B0000; font-family:'Microsoft YaHei', Arial;">重难点</p>
+    <p style="margin:0; font-size:14px; color:#333333; font-family:'Microsoft YaHei', Arial;">理解冲稳保只是标点符号，不是思想体系</p>
+  </div>
+
+  <!-- Decorative element -->
+  <svg style="position:absolute; right:60px; bottom:80px;" width="120" height="60" viewBox="0 0 120 60" aria-hidden="true">
+    <rect x="0" y="0" width="40" height="40" fill="#8B0000" opacity="0.1"/>
+    <rect x="50" y="10" width="30" height="30" fill="#C41E3A" opacity="0.2"/>
+    <rect x="90" y="20" width="20" height="20" fill="#8B0000" opacity="0.15"/>
+  </svg>
+
+  <!-- Page number badge -->
+  <svg style="position:absolute; right:32px; bottom:24px;" width="36" height="36" viewBox="0 0 36 36">
+    <circle cx="18" cy="18" r="18" fill="#8B0000"/>
+    <text x="18" y="18" text-anchor="middle" dominant-baseline="central" font-size="14" font-weight="600" fill="#FFFFFF" font-family:'Microsoft YaHei', Arial;">10</text>
+  </svg>
+</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "title": "开篇认知自测卡",
+  "type": "minimal",
+  "author": "课程开发组",
+  "date": "2026",
+  "accent": "#C41E3A",
+  "content": [
+    {"type": "h1", "text": "课程开始前的自我评估"},
+    {"type": "callout", "text": "在开始学习之前，请认真评估自己的现状，这将帮助您明确学习重点"},
+    {"type": "h2", "text": "评估维度一：教学经验"},
+    {"type": "bullet", "text": "从未做过带教工作（1分）"},
+    {"type": "bullet", "text": "偶尔带教新人（2分）"},
+    {"type": "bullet", "text": "有一定带教经验（3分）"},
+    {"type": "bullet", "text": "经常负责带教工作（4分）"},
+    {"type": "bullet", "text": "带教过多个新人/团队（5分）"},
+    {"type": "h2", "text": "评估维度二：带教意识"},
+    {"type": "bullet", "text": "不知道为什么要系统化带教（1分）"},
+    {"type": "bullet", "text": "意识到带教需要方法（2分）"},
+    {"type": "bullet", "text": "有尝试但不成体系（3分）"},
+    {"type": "bullet", "text": "有自己的一套方法（4分）"},
+    {"type": "bullet", "text": "方法成熟且可复制（5分）"},
+    {"type": "h2", "text": "评估维度三：方法认知"},
+    {"type": "bullet", "text": "完全不了解带教方法（1分）"},
+    {"type": "bullet", "text": "知道一些零散技巧（2分）"},
+    {"type": "bullet", "text": "了解常规带教方法（3分）"},
+    {"type": "bullet", "text": "掌握多种带教技巧（4分）"},
+    {"type": "bullet", "text": "能根据场景灵活选择方法（5分）"},
+    {"type": "divider"},
+    {"type": "callout", "text": "评分标准：6-10分 需要基础学习；11-15分 可以快速提升；16-25分 可以学习高阶技巧"},
+    {"type": "spacer", "pt": 20},
+    {"type": "body", "text": "背面使用说明：本卡片用于课前自我评估，请根据实际情况如实打分。建议保存评估结果，在课程结束后重新评估以检验学习效果。"}
+  ]
+}

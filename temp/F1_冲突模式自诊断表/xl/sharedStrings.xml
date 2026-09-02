@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="25" uniqueCount="25">
+  <si><t>总部-属地冲突模式自诊断表</t></si>
+  <si><t>评分说明：1分=从不这样 2分=偶尔 3分=有时 4分=经常 5分=总是</t></si>
+  <si><t>【遥控器失灵型】</t></si>
+  <si><t>评分项</t></si>
+  <si><t>总分</t></si>
+  <si><t>总部发出的指令到属地后经常被变形执行</t></si>
+  <si><t>属地团队常说"总部的决策不切实际"</t></si>
+  <si><t>总部觉得属地"不听话"，属地觉得总部"管太多"</t></si>
+  <si><t>权力边界不清晰，该管的没管到，不该管的管太细</t></si>
+  <si><t>双方对"谁能决定什么"没有共识</t></si>
+  <si><t>【信息黑洞型】</t></si>
+  <si><t>【资源饥渴型】</t></si>
+  <si><t>【双重标准型】</t></si>
+  <si><t>诊断结果：最高分模式为：____</t></si>
+</sst>

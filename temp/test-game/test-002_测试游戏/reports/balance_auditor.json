@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "score": 22,
+  "issues": [
+    {
+      "type": "insufficient_suspects",
+      "severity": "warning",
+      "message": "只有 1 个其他角色有疑似动机（建议至少 2 个）"
+    }
+  ]
+}

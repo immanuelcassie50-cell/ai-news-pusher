@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="18" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+<cols><col min="1" max="1" width="22" customWidth="1"/><col min="2" max="2" width="42" customWidth="1"/><col min="3" max="3" width="36" customWidth="1"/></cols>
+<sheetData>
+<row r="1" ht="28" customHeight="1"><c r="A1" t="s" s="5"><v>20</v></c><c r="B1" t="s" s="5"><v>20</v></c><c r="C1" t="s" s="5"><v>20</v></c></row>
+<row r="2" ht="22" customHeight="1"><c r="A2" t="inlineStr" s="4"><is><t xml:space="preserve">项目</t></is></c><c r="B2" t="inlineStr" s="4"><is><t xml:space="preserve">填写</t></is></c><c r="C2" t="inlineStr" s="4"><is><t xml:space="preserve">示例</t></is></c></row>
+<row r="3" ht="24" customHeight="1"><c r="A3" t="inlineStr" s="11"><is><t xml:space="preserve">员工代号</t></is></c><c r="B3" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C3" t="inlineStr" s="6"><is><t xml:space="preserve">如：ZS-007 / 小李 / 产品组-王</t></is></c></row>
+<row r="4" ht="24" customHeight="1"><c r="A4" t="inlineStr" s="11"><is><t xml:space="preserve">岗位</t></is></c><c r="B4" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C4" t="inlineStr" s="6"><is><t xml:space="preserve">如：高级产品经理 / 客户经理 / 工程师</t></is></c></row>
+<row r="5" ht="24" customHeight="1"><c r="A5" t="inlineStr" s="11"><is><t xml:space="preserve">面谈预计时间</t></is></c><c r="B5" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C5" t="inlineStr" s="6"><is><t xml:space="preserve">2026/1/15 15:00</t></is></c></row>
+<row r="6" ht="24" customHeight="1"><c r="A6" t="inlineStr" s="11"><is><t xml:space="preserve">面谈地点</t></is></c><c r="B6" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C6" t="inlineStr" s="6"><is><t xml:space="preserve">11楼小会议室A / 腾讯会议号</t></is></c></row>
+<row r="7" ht="24" customHeight="1"><c r="A7" t="inlineStr" s="11"><is><t xml:space="preserve">考核周期</t></is></c><c r="B7" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C7" t="inlineStr" s="6"><is><t xml:space="preserve">2025下半年 / 2025Q4</t></is></c></row>
+<row r="8" ht="24" customHeight="1"><c r="A8" t="inlineStr" s="11"><is><t xml:space="preserve">提前通知员工了？</t></is></c><c r="B8" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c><c r="C8" t="inlineStr" s="6"><is><t xml:space="preserve">是 / 否 / 今天就通知</t></is></c></row>
+<row r="10" ht="24" customHeight="1"><c r="A10" t="inlineStr" s="4"><is><t xml:space="preserve">面谈前 7 天准备事项</t></is></c></row>
+<row r="11" ht="22" customHeight="1"><c r="A11" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B11" t="inlineStr" s="2"><is><t xml:space="preserve">提前 7 天通知员工（明确『半年度面谈+发展方向讨论』）</t></is></c><c r="C11" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="12" ht="22" customHeight="1"><c r="A12" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B12" t="inlineStr" s="2"><is><t xml:space="preserve">收集员工自评/季度总结</t></is></c><c r="C12" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="13" ht="22" customHeight="1"><c r="A13" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B13" t="inlineStr" s="2"><is><t xml:space="preserve">回顾上次面谈的承诺完成情况</t></is></c><c r="C13" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="14" ht="22" customHeight="1"><c r="A14" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B14" t="inlineStr" s="2"><is><t xml:space="preserve">准备好 2-3 个具体事实（含时间/情境/行为/影响）</t></is></c><c r="C14" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="15" ht="22" customHeight="1"><c r="A15" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B15" t="inlineStr" s="2"><is><t xml:space="preserve">用 F8 评估员工的双轨状态</t></is></c><c r="C15" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="16" ht="22" customHeight="1"><c r="A16" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B16" t="inlineStr" s="2"><is><t xml:space="preserve">选好启动问题（F7 三选一）</t></is></c><c r="C16" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+<row r="17" ht="22" customHeight="1"><c r="A17" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B17" t="inlineStr" s="2"><is><t xml:space="preserve">打印本表带去面谈</t></is></c><c r="C17" t="inlineStr" s="4"><is><t xml:space="preserve">完成日期</t></is></c></row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

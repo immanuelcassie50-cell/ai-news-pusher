@@ -1,1 +1,35 @@
-{"autoYes": true, "skipConfirm": true}
+{
+  "env": {
+    "CLAUDE_CODE_EFFORT_LEVEL": "high",
+    "CLAUDE_CODE_NO_FLICKER": "1",
+    "CLAUDE_CODE_USE_POWERSHELL_TOOL": "1"
+  },
+  "autoYes": true,
+  "skipConfirm": true,
+  "noFlicker": true,
+  "autoApprove": true,
+  "autoEdit": true,
+  "permissionAuto": true,
+  "agents": {
+    "search": {
+      "description": "使用Tavily搜索AI和科技新闻",
+      "prompt": "你是一个搜索助手。当用户需要搜索信息时，使用tavily_search工具获取相关网页内容。用户输入搜索关键词时，你需要：1. 使用tavily_search搜索相关内容 2. 提取并总结关键信息 3. 提供信息来源链接"
+    }
+  },
+  "preferences": {
+    "defaultModel": "MiniMax-M2.7",
+    "longTask": {
+      "qualityFirst": true,
+      "noSpeedup": true,
+      "autoChunking": true,
+      "promptUserBeforeLongTasks": false,
+      "thinkStepByStep": true
+    },
+    "model": {
+      "temperature": 0.3,
+      "topP": 0.9
+    }
+  },
+  "hooks": {},
+  "mcp": {}
+}

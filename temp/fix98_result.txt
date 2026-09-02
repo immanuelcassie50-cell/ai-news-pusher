@@ -1,0 +1,10 @@
+File size: 3416
+First 5 bytes: 2f2f20736c
+Latin-1 decoded length: 3416
+UTF-8 re-encoded size: 3836
+Verified UTF-8 first 80: '// slide-98.js - æ¿\x80å\x8a±æ\x9cºå\x88¶è®¾è®¡æ¡\x88ä¾\x8b - å\x8d\x8eä¸º\n\nconst pptxgen = require("ppt'
+Line 36: ''
+Line 38: ''
+Line 1: '// slide-98.js - æ¿\x80å\x8a±æ\x9cºå\x88¶è®¾è®¡æ¡\x88ä¾\x8b - å\x8d\x8eä¸º'
+Backup saved to: D:\新课开发\内训师和表达\系列进阶课\12-内训项目运营：选师、建课、认证、应用与激励机制设计\授课PPT\slides\slide-98.js.bak
+Original file rewritten as UTF-8

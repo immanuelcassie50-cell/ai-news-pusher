@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>绿灯-低风险</v></c>
+      <c r="B2" t="s" s="0"><v>您的职业倦怠风险较低，目前状态良好。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>黄灯-需要注意</v></c>
+      <c r="B3" t="s" s="0"><v>您显示出一些倦怠早期信号，需要关注和调整。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>红灯-高风险</v></c>
+      <c r="B4" t="s" s="0"><v>您的倦怠风险较高，建议立即采取干预措施。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>意义感低</v></c>
+      <c r="B5" t="s" s="0"><v>您对技术工作的意义感有所下降，需要重新找到技术工作的价值。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>精力消耗高</v></c>
+      <c r="B6" t="s" s="0"><v>您感到精力消耗过度，需要注意工作生活平衡。</v></c>
+    </row>
+    <row r="7">
+      <c r="A7" t="s" s="0"><v>身份稳定低</v></c>
+      <c r="B7" t="s" s="0"><v>您对技术职业身份有些迷茫，需要重新规划技术职业路径。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

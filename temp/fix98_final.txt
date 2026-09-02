@@ -1,0 +1,6 @@
+File size: 3324
+Has BOM: True
+Total lines: 113
+Line 1: '\ufeff// slide-98.js - 激励机制设计案例 - 华为'
+Line 36: '    { label:"背景", content:"华为有完善的"讲师荣誉体系",内训师被称为"内部专家"" },'
+Line 38: '    { label:"激励运营", content:"每月"讲师沙龙",每季"课程发布会",每年"讲师盛典"" },'

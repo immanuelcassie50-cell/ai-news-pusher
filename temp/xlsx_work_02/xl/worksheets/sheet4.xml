@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="0" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="18" customWidth="1"/>
+    <col min="2" max="2" width="75" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="18" customHeight="1">
+      <c r="A1" t="s" s="4"><v>8</v></c>
+      <c r="B1" t="s" s="4"><v>9</v></c>
+    </row>
+    <row r="2">
+      <c r="A2" t="s" s="0"><v>均衡型</v></c>
+      <c r="B2" t="s" s="0"><v>您的业务意识四个维度发展均衡，具备全面的业务翻译能力。</v></c>
+    </row>
+    <row r="3">
+      <c r="A3" t="s" s="0"><v>理解偏弱</v></c>
+      <c r="B3" t="s" s="0"><v>您的业务逻辑理解维度需要加强，建议多追问'为什么做'。</v></c>
+    </row>
+    <row r="4">
+      <c r="A4" t="s" s="0"><v>量化偏弱</v></c>
+      <c r="B4" t="s" s="0"><v>您的价值量化意识需要提升，尝试用业务指标表达技术价值。</v></c>
+    </row>
+    <row r="5">
+      <c r="A5" t="s" s="0"><v>沟通偏弱</v></c>
+      <c r="B5" t="s" s="0"><v>您的跨角色沟通能力需要加强，练习用对方语言表达技术。</v></c>
+    </row>
+    <row r="6">
+      <c r="A6" t="s" s="0"><v>溯源偏弱</v></c>
+      <c r="B6" t="s" s="0"><v>您的需求溯源能力较弱，注意追问需求的来源和真正目的。</v></c>
+    </row>
+  </sheetData>
+</worksheet>

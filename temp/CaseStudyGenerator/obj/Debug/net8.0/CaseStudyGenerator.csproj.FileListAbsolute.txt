@@ -1,0 +1,6 @@
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.csproj.AssemblyReference.cache
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.GeneratedMSBuildEditorConfig.editorconfig
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.AssemblyInfoInputs.cache
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.AssemblyInfo.cs
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.csproj.CoreCompileInputs.cache
+D:\CC\temp\CaseStudyGenerator\obj\Debug\net8.0\CaseStudyGenerator.sourcelink.json

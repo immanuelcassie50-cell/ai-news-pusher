@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title} - 财务风险与内部控制</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-red: #C41E3A;
+            --primary-red-light: #E8344D;
+            --primary-red-dark: #9A1830;
+            --text-gray: #4A4A4A;
+            --text-gray-light: #666666;
+            --bg-white: #FFFFFF;
+            --bg-gray: #F8F9FA;
+            --bg-gray-light: #F2F3F4;
+            --border-gray: #E0E0E0;
+            --border-gray-light: #EBEBEB;
+            --code-bg: #F5F5F5;
+            --info-bg: #E8F4FD;
+            --info-border: #2196F3;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: var(--bg-white);
+            min-height: 100vh;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
+        }
+        .nav-header {
+            background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-dark) 100%);
+            color: white;
+            padding: 20px 30px;
+            margin: -20px -20px 30px -20px;
+        }
+        .nav-header h1 { margin: 0 0 10px 0; font-size: 1.5rem; font-weight: 500; }
+        .nav-header .course-title { font-size: 1.1rem; opacity: 0.9; margin-bottom: 15px; }
+        .nav-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 15px; }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            background: rgba(255,255,255,0.15);
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+        .nav-links a:hover { background: rgba(255,255,255,0.25); text-decoration: none; }
+        h1, h2, h3, h4, h5, h6 { color: var(--text-gray); margin-top: 2em; margin-bottom: 0.8em; font-weight: 500; line-height: 1.4; }
+        h1 { font-size: 2rem; color: var(--primary-red); border-bottom: 3px solid var(--primary-red); padding-bottom: 15px; margin-top: 0; }
+        h2 { font-size: 1.5rem; color: var(--primary-red); border-left: 4px solid var(--primary-red); padding-left: 15px; margin-top: 2.5em; }
+        h3 { font-size: 1.25rem; color: var(--text-gray); border-bottom: 1px solid var(--border-gray); padding-bottom: 8px; }
+        h4 { font-size: 1.1rem; color: var(--text-gray-light); }
+        p { margin: 1em 0; }
+        hr { border: none; border-top: 1px solid var(--border-gray); margin: 2em 0; }
+        a { color: var(--primary-red); text-decoration: none; }
+        a:hover { color: var(--primary-red-dark); text-decoration: underline; }
+        table { width: 100%; border-collapse: collapse; margin: 1.5em 0; font-size: 0.95rem; }
+        th { background-color: var(--primary-red); color: white; padding: 12px 15px; text-align: left; font-weight: 500; }
+        td { padding: 12px 15px; border-bottom: 1px solid var(--border-gray-light); }
+        tr:nth-child(even) { background-color: var(--bg-gray); }
+        tr:hover { background-color: var(--bg-gray-light); }
+        blockquote { margin: 1.5em 0; padding: 15px 20px; background-color: var(--bg-gray-light); border-left: 4px solid var(--primary-red); border-radius: 0 8px 8px 0; }
+        blockquote p { margin: 0.5em 0; }
+        blockquote p:first-child { margin-top: 0; }
+        blockquote p:last-child { margin-bottom: 0; }
+        .info-box { background-color: var(--info-bg); border-left: 4px solid var(--info-border); padding: 15px 20px; margin: 1.5em 0; border-radius: 0 8px 8px 0; }
+        code { font-family: 'Consolas', 'Monaco', 'Courier New', monospace; background-color: var(--code-bg); padding: 2px 6px; border-radius: 4px; font-size: 0.9em; color: var(--primary-red-dark); }
+        pre { background-color: var(--code-bg); padding: 15px 20px; border-radius: 8px; overflow-x: auto; margin: 1.5em 0; border: 1px solid var(--border-gray); }
+        pre code { background: none; padding: 0; color: var(--text-gray); font-size: 0.9rem; line-height: 1.6; }
+        ul, ol { margin: 1em 0; padding-left: 1.5em; }
+        li { margin: 0.5em 0; }
+        .case-box { background-color: var(--bg-white); border: 1px solid var(--border-gray); border-radius: 8px; padding: 20px 25px; margin: 1.5em 0; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+        .case-box h4 { margin-top: 0; color: var(--primary-red); font-size: 1.1rem; }
+        .exercise-box { background-color: var(--info-bg); border: 2px solid var(--info-border); border-radius: 8px; padding: 20px 25px; margin: 1.5em 0; }
+        .exercise-box h4 { margin-top: 0; color: var(--info-border); font-size: 1.1rem; }
+        .key-point { background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-red-light) 100%); color: white; padding: 20px 25px; border-radius: 8px; margin: 1.5em 0; }
+        .key-point h4 { margin-top: 0; color: white; font-size: 1.1rem; }
+        .key-point p { margin: 0.5em 0; opacity: 0.95; }
+        @media screen and (max-width: 768px) { body { font-size: 15px; } .container { padding: 15px; } h1 { font-size: 1.6rem; } h2 { font-size: 1.3rem; } table { font-size: 0.85rem; } th, td { padding: 8px 10px; } .nav-header { padding: 15px 20px; margin: -15px -15px 20px -15px; } }
+        @media print { body { background: white; font-size: 12pt; } .container { max-width: 100%; padding: 0; box-shadow: none; } .nav-header { background: var(--primary-red) !important; color: white !important; margin: 0 0 30px 0; padding: 15px 20px; -webkit-print-color-adjust: exact; print-color-adjust: exact; } h1 { font-size: 1.5rem; page-break-after: avoid; } h2 { font-size: 1.2rem; page-break-after: avoid; } h3 { font-size: 1rem; page-break-after: avoid; } table { font-size: 9pt; } pre { page-break-inside: avoid; } .case-box, .exercise-box { page-break-inside: avoid; } a { color: var(--text-gray); text-decoration: none; } .nav-links { display: none; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-header">
+            <h1>{title}</h1>
+            <div class="course-title">财务风险与内部控制：把问题消灭在出事之前</div>
+            <div class="nav-links">
+                <a href="00-课程总览与场景卡.html">课程总览</a>
+                <a href="01-第一部分-风险认知：为什么问题总在事后爆发.html">第一部分</a>
+                <a href="02-第二部分-风险识别：哪些信号提示危险正在靠近.html">第二部分</a>
+                <a href="03-第三部分-风险预警：让数据开口说话.html">第三部分</a>
+                <a href="04-第四部分-控制点设计：把防线建在业务流程里.html">第四部分</a>
+                <a href="05-第五部分-异常追踪：从发现到闭环的完整链路.html">第五部分</a>
+                <a href="06-第六部分-责任闭环：让风控真正落地的关键.html">第六部分</a>
+                <a href="07-第七部分-综合演练与总结.html">第七部分</a>
+            </div>
+        </nav>
+        <div class="content">{content}</div>
+    </div>
+</body>
+</html>

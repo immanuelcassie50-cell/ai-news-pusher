@@ -1,0 +1,5 @@
+鉁� slide-36.js FAILED: missing ) after argument list
+鉁� slide-67.js FAILED: missing ) after argument list
+鉁� slide-76.js FAILED: missing ) after argument list
+鉁� slide-97.js FAILED: Invalid or unexpected token
+鉁� slide-98.js FAILED: Unexpected string

@@ -1,0 +1,42 @@
+{
+  "total_score": 87.4,
+  "rating": "B",
+  "grade": "良好",
+  "passed": true,
+  "results": [
+    {
+      "name": "故事完整性",
+      "script": "timeline_consistency_checker.py",
+      "score": 22,
+      "weight": 0.3,
+      "weighted": 26.4,
+      "passed": true
+    },
+    {
+      "name": "角色平衡性",
+      "script": "balance_auditor.py",
+      "score": 22,
+      "weight": 0.25,
+      "weighted": 22.0,
+      "passed": true
+    },
+    {
+      "name": "线索与推理",
+      "script": "logic_validator.py",
+      "score": 19,
+      "weight": 0.25,
+      "weighted": 19.0,
+      "passed": true
+    },
+    {
+      "name": "信息分布",
+      "script": "info_distribution_analyzer.py",
+      "score": 25,
+      "weight": 0.2,
+      "weighted": 20.0,
+      "passed": true
+    }
+  ],
+  "blockers_count": 0,
+  "blockers": []
+}

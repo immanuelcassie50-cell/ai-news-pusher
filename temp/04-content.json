@@ -1,0 +1,30 @@
+{
+  "title": "提问设计工具卡",
+  "type": "minimal",
+  "author": "课程开发组",
+  "date": "2026",
+  "accent": "#C41E3A",
+  "content": [
+    {"type": "h1", "text": "核心提问公式"},
+    {"type": "callout", "text": "好的提问是带教成功的一半，不同类型的问题用不同的公式"},
+    {"type": "h2", "text": "开放式提问公式"},
+    {"type": "body", "text": "核心词 + 场景 + 探索词"},
+    {"type": "bullet", "text": "例子：在这个情况下，你会考虑哪些因素？"},
+    {"type": "bullet", "text": "例子：为什么你认为这个方案最合适？"},
+    {"type": "h2", "text": "封闭式提问公式"},
+    {"type": "body", "text": "确认事实 + 缩小范围"},
+    {"type": "bullet", "text": "例子：这个流程是在每周一执行吗？"},
+    {"type": "bullet", "text": "例子：上次遇到这个问题时你是怎么处理的？"},
+    {"type": "h2", "text": "追问技巧公式"},
+    {"type": "body", "text": "继续 + 深挖 + 验证"},
+    {"type": "bullet", "text": "例子：请继续说，还有呢？"},
+    {"type": "bullet", "text": "例子：能具体说说当时发生了什么吗？"},
+    {"type": "h2", "text": "苏格拉底法提问链"},
+    {"type": "numbered", "text": "事实问题：这个情况具体是怎样的？"},
+    {"type": "numbered", "text": "分析问题：为什么会发生这种情况？"},
+    {"type": "numbered", "text": "判断问题：这个处理方式合理吗？"},
+    {"type": "numbered", "text": "行动问题：你打算如何改进？"},
+    {"type": "divider"},
+    {"type": "body", "text": "背面使用说明：本卡片提供四种核心提问公式。开放式提问用于收集信息，封闭式提问用于确认事实，追问用于深入挖掘，苏格拉底法用于引导思考。"}
+  ]
+}

@@ -1,0 +1,37 @@
+课  题  定  位  表
+Course Positioning Table
+拟开发的课题名称Course Name：设备管理岗新员工-修理单据审核经验-分享
+
+开 发 人Course Developer：刘思杨             预估时长Estimated Duration：0.8   H
+拟开发的课题名称Course Name：设备管理岗新员工-修理单据审核经验-分享
+
+开 发 人Course Developer：刘思杨             预估时长Estimated Duration：0.8   H
+课程背景Course Background（为什么要开发这个课程？）：
+课程背景Course Background（为什么要开发这个课程？）：
+Expectation-针对本课题，公司的期望是：
+设备管理岗员工掌握修理单据上传结算前的自查、自行审核方法，做到"自己审过的单子，心里有底"
+Existing problem-目前存在的问题如下：
+修理单据经出现简单错误，导致审核工作量大                                                                                                      
+
+学员对象描述Participant Description： 
+本课程的受众对象包括：设备管理岗
+主要侧重的对象是（必修学员）：设备管理岗新员工
+Characteristics of participants-本次课程学员对象的特点是： 
+年龄：22-55
+学历：初中-硕士
+主题认知：中等
+学习意愿：中等
+其他：无
+Challenges-本次课程学员对象在课堂上可能给
+培训师带来的挑战主要有：
+1、受众基础差异大，内容深浅难平衡
+2、内容偏流程规范，天然枯燥，工友注意力难集中
+3、从"听懂"到"会用"转化难，培训效果难落地
+重点学习目标Study Goal（完成本次课程后，学员能够）：
+After completing this course, participants can gain:
+重点学习目标Study Goal（完成本次课程后，学员能够）：
+After completing this course, participants can gain:
+让你拿到一张修理单，知道"看哪里、怎么看、看出问题怎么办"。
+核心内容：修理单据审核"三段九步法"修理单据审核分三个阶段——询价、验收、结算，每个阶段三步，共九步。
+让你拿到一张修理单，知道"看哪里、怎么看、看出问题怎么办"。
+核心内容：修理单据审核"三段九步法"修理单据审核分三个阶段——询价、验收、结算，每个阶段三步，共九步。

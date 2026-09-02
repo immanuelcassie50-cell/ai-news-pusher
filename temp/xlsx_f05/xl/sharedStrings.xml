@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="18" uniqueCount="18">
+  <si><t>最小授权争取策略表</t></si>
+  <si><t>授权维度</t></si>
+  <si><t>说明</t></si>
+  <si><t>争取策略</t></si>
+  <si><t>底线</t></si>
+  <si><t>范围授权</t></si>
+  <si><t>项目边界的清晰定义</t></si>
+  <si><t>从小范围试点开始</t></si>
+  <si><t>时间授权</t></si>
+  <si><t>试点周期的明确约定</t></si>
+  <si><t>分阶段节点验收</t></si>
+  <si><t>资源授权</t></si>
+  <si><t>预算和人力的明确额度</t></si>
+  <si><t>用最小资源启动</t></si>
+  <si><t>决策授权</t></si>
+  <si><t>哪些决策可以自己做，哪些需要上报</t></si>
+  <si><t>建立定期汇报机制</t></si>
+  <si><t>分阶段授权策略</t></si>
+</sst>

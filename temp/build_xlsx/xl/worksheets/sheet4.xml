@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="5" topLeftCell="A6" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="16" customWidth="1"/>
+    <col min="2" max="2" width="22" customWidth="1"/>
+    <col min="3" max="3" width="32" customWidth="1"/>
+    <col min="4" max="4" width="35" customWidth="1"/>
+    <col min="5" max="5" width="35" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>异常信号预警</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>发现这些信号需进一步深入分析</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="8"/>
+    <row r="5" ht="26" customHeight="1">
+      <c r="A5" s="8" t="inlineStr"><is><t>预警类型</t></is></c>
+      <c r="B5" s="8" t="inlineStr"><is><t>预警指标</t></is></c>
+      <c r="C5" s="8" t="inlineStr"><is><t>判断标准</t></is></c>
+      <c r="D5" s="8" t="inlineStr"><is><t>可能原因</t></is></c>
+      <c r="E5" s="8" t="inlineStr"><is><t>关注事项</t></is></c>
+    </row>
+    <row r="6" ht="28" customHeight="1">
+      <c r="A6" s="6" t="inlineStr"><is><t>货币资金异常</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>货币资金/总资产</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>占比低于5%或高于50%</t></is></c>
+      <c r="D6" s="6" t="inlineStr"><is><t>资金闲置或资金链紧张</t></is></c>
+      <c r="E6" s="6" t="inlineStr"><is><t>关注资金使用效率和受限情况</t></is></c>
+    </row>
+    <row r="7" ht="28" customHeight="1">
+      <c r="A7" s="6" t="inlineStr"><is><t>应收账款过大</t></is></c>
+      <c r="B7" s="6" t="inlineStr"><is><t>应收账款/营业收入</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>占比超过30%</t></is></c>
+      <c r="D7" s="6" t="inlineStr"><is><t>放宽信用政策或虚构收入</t></is></c>
+      <c r="E7" s="6" t="inlineStr"><is><t>检查应收账款账龄和客户结构</t></is></c>
+    </row>
+    <row r="8" ht="28" customHeight="1">
+      <c r="A8" s="6" t="inlineStr"><is><t>存货异常增长</t></is></c>
+      <c r="B8" s="6" t="inlineStr"><is><t>存货增长率-收入增长率</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>连续2年差值超过20%</t></is></c>
+      <c r="D8" s="6" t="inlineStr"><is><t>产品滞销或虚构存货</t></is></c>
+      <c r="E8" s="6" t="inlineStr"><is><t>检查存货周转和跌价准备</t></is></c>
+    </row>
+    <row r="9" ht="28" customHeight="1">
+      <c r="A9" s="6" t="inlineStr"><is><t>关联交易异常</t></is></c>
+      <c r="B9" s="6" t="inlineStr"><is><t>关联交易占比</t></is></c>
+      <c r="C9" s="6" t="inlineStr"><is><t>占比超过20%且呈上升趋势</t></is></c>
+      <c r="D9" s="6" t="inlineStr"><is><t>利益输送或利润操纵</t></is></c>
+      <c r="E9" s="6" t="inlineStr"><is><t>核查交易价格公允性</t></is></c>
+    </row>
+    <row r="10" ht="28" customHeight="1">
+      <c r="A10" s="6" t="inlineStr"><is><t>利润与现金流背离</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>经营活动现金流/净利润</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>连续3年小于1</t></is></c>
+      <c r="D10" s="6" t="inlineStr"><is><t>利润质量差，可能虚增利润</t></is></c>
+      <c r="E10" s="6" t="inlineStr"><is><t>检查收现比和应收应付变动</t></is></c>
+    </row>
+  </sheetData>
+  <autoFilter ref="A5:E10"/>
+</worksheet>

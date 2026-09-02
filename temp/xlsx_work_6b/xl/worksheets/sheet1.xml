@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="1" topLeftCell="A2" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="24" customWidth="1"/>
+    <col min="2" max="2" width="64" customWidth="1"/>
+    <col min="3" max="5" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+  <row r="1">
+    <c r="A1" t="s" s="4"><v>故事植入方案表</v></c>
+  </row>
+  <row r="2">
+    <c r="A2" t="s" s="4"><v>课程/模块信息</v></c>
+    <c r="B2" t="s" s="4"><v>课程名称/模块名称</v></c>
+    <c r="C2" t="s" s="4"><v>核心知识点</v></c>
+    <c r="D2" t="s" s="4"><v>目标学员</v></c>
+    <c r="E2" t="s" s="4"><v>预计时长</v></c>
+  </row>
+  <row r="3" ht="28" customHeight="1">
+    <c r="A3" s="1"><v></v></c>
+    <c r="B3" s="1"><v></v></c>
+    <c r="C3" s="1"><v></v></c>
+    <c r="D3" s="1"><v></v></c>
+    <c r="E3" s="1"><v></v></c>
+  </row>
+  <row r="4">
+    <c r="A4" t="s" s="4"><v>故事点位选择</v></c>
+    <c r="B4" t="s" s="1"><v>□ 概念抽象型  □ 错误高发区  □ 动机薄弱区  □ 章节转折点  □ 开场/收尾型</v></c>
+  </row>
+  <row r="5">
+    <c r="A5" t="s" s="4"><v>故事类型</v></c>
+    <c r="B5" t="s" s="1"><v>□ 亲历型  □ 见证型  □ 失败场景型  □ 成功场景型  □ 转折故事型  □ 体验型</v></c>
+  </row>
+  <row r="6">
+    <c r="A6" t="s" s="4"><v>四步草稿</v></c>
+    <c r="B6" t="s" s="4"><v>内容</v></c>
+  </row>
+  <row r="7" ht="28" customHeight="1">
+    <c r="A7" t="s" s="1"><v>第一步：时空锚定</v></c>
+    <c r="B7" s="1"><v></v></c>
+  </row>
+  <row r="8" ht="40" customHeight="1">
+    <c r="A8" t="s" s="1"><v>第二步：张力触发</v></c>
+    <c r="B8" s="1"><v></v></c>
+  </row>
+  <row r="9" ht="40" customHeight="1">
+    <c r="A9" t="s" s="1"><v>第三步：行动转化</v></c>
+    <c r="B9" s="1"><v></v></c>
+  </row>
+  <row r="10" ht="28" customHeight="1">
+    <c r="A10" t="s" s="1"><v>第四步：意义落点</v></c>
+    <c r="B10" s="1"><v></v></c>
+  </row>
+  <row r="11">
+    <c r="A11" t="s" s="4"><v>放置位置</v></c>
+    <c r="B11" t="s" s="1"><v>□ 前面（前置引入）</v></c>
+  </row>
+  <row r="12">
+    <c r="A12" t="s" s="4"><v></v></c>
+    <c r="B12" t="s" s="1"><v>□ 后面（后置强化）</v></c>
+  </row>
+  <row r="13">
+    <c r="A13" t="s" s="4"><v></v></c>
+    <c r="B13" t="s" s="1"><v>□ 夹心结构</v></c>
+  </row>
+  <row r="14" ht="25" customHeight="1">
+    <c r="A14" t="s" s="4"><v>放置原因</v></c>
+    <c r="B14" s="1"><v></v></c>
+  </row>
+  <row r="15">
+    <c r="A15" t="s" s="4"><v>衔接方式</v></c>
+    <c r="B15" t="s" s="4"><v>从故事进入知识点的转接语（写出具体台词）</v></c>
+  </row>
+  <row r="16" ht="32" customHeight="1">
+    <c r="A16" s="1"><v></v></c>
+    <c r="B16" s="1"><v></v></c>
+  </row>
+  <row r="17">
+    <c r="A17" t="s" s="4"><v>定制化考虑</v></c>
+    <c r="B17" t="s" s="4"><v>调整方向</v></c>
+  </row>
+  <row r="18" ht="25" customHeight="1">
+    <c r="A18" t="s" s="1"><v>行业/职能背景</v></c>
+    <c r="B18" s="1"><v></v></c>
+  </row>
+  <row r="19" ht="25" customHeight="1">
+    <c r="A19" t="s" s="1"><v>年资/经验层次</v></c>
+    <c r="B19" s="1"><v></v></c>
+  </row>
+  <row r="20" ht="25" customHeight="1">
+    <c r="A20" t="s" s="1"><v>当下关切/痛点</v></c>
+    <c r="B20" s="1"><v></v></c>
+  </row>
+  </sheetData>
+    <mergeCells count="6">
+    <mergeCell ref="A1:E1"/>
+    <mergeCell ref="A2:E2"/>
+    <mergeCell ref="A4:E4"/>
+    <mergeCell ref="A6:B6"/>
+    <mergeCell ref="A15:B15"/>
+    <mergeCell ref="A17:B17"/>
+  </mergeCells>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

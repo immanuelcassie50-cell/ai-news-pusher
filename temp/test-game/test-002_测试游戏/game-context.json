@@ -1,0 +1,210 @@
+{
+  "meta": {
+    "game_id": "test-002",
+    "game_name": "古宅谜影",
+    "created_at": "2026-06-06T00:46:31",
+    "updated_at": "2026-06-06T00:50:00",
+    "version": "1.0"
+  },
+  "stage_status": {
+    "1_requirement": "completed",
+    "2_concept": "completed",
+    "3_story": "completed",
+    "4_characters": "completed",
+    "5_mechanism": "completed",
+    "6_clues": "completed",
+    "7_output": "in_progress",
+    "8_qa": "pending"
+  },
+  "requirements": {
+    "game_type": "还原型",
+    "player_count": 6,
+    "duration_minutes": 180,
+    "audience": {"experience_level": "intermediate"}
+  },
+  "concept": {
+    "selected_concept": {
+      "name": "古宅谜影",
+      "tagline": "古宅夜雨，谁在暗处"
+    }
+  },
+  "story": {
+    "one_liner": "一座百年古宅，藏着不为人知的秘密",
+    "background": "民国年间，苏州一座百年古宅，老宅主人在寿宴上暴毙",
+    "core_conflict": "继承人之间错综复杂的财产与情感纠葛",
+    "causal_chain": [
+      {"step": 1, "event": "张老爷寿宴开始"},
+      {"step": 2, "event": "次子张三当众揭发大哥的私情"},
+      {"step": 3, "event": "老爷勃然大怒，扬言要改遗嘱"},
+      {"step": 4, "event": "三姨太借酒离席"},
+      {"step": 5, "event": "老爷暴毙于太师椅"},
+      {"step": 6, "event": "下人发现时已经断气"},
+      {"step": 7, "event": "所有人都成为嫌疑人"},
+      {"step": 8, "event": "真相浮出水面"}
+    ],
+    "timeline": [
+      {"time": "17:00", "event": "宾客陆续到场"},
+      {"time": "18:00", "event": "寿宴开始"},
+      {"time": "19:30", "event": "次子张三揭发大哥"},
+      {"time": "20:00", "event": "老爷离席回书房"},
+      {"time": "20:30", "event": "老爷暴毙"},
+      {"time": "21:00", "event": "下人发现"},
+      {"time": "21:30", "event": "警察封锁现场"}
+    ],
+    "crime_window": {"start": "20:00", "end": "21:00"}
+  },
+  "characters": {
+    "characters": [
+      {
+        "id": "char_001",
+        "name": "张老爷",
+        "is_culprit": false,
+        "public_identity": {"gender": "男", "age": 70, "occupation": "古宅主人"},
+        "public_relationship": "古宅主人，寿宴主角",
+        "public_background": "张老爷是苏州有名的丝绸商人",
+        "public_secrets": ["年轻时做过一些不光彩的事", "与三姨太有私情"],
+        "motivations": {"real": "保护家族名誉", "victory_main": "维护家族和谐", "victory_secondary": "揭发真凶"},
+        "hidden_background": "年轻时曾陷害过竞争对手",
+        "secret_core": "20年前的一桩命案与古宅有关"
+      },
+      {
+        "id": "char_002",
+        "name": "长子张一",
+        "is_culprit": false,
+        "public_identity": {"gender": "男", "age": 45, "occupation": "长子"},
+        "public_relationship": "张老爷长子",
+        "public_background": "张一性格沉稳，是张老爷的左膀右臂",
+        "public_secrets": ["与弟妹有染", "私吞过家族财产"],
+        "motivations": {"real": "继承家业", "victory_main": "证明清白", "victory_secondary": "找出真凶"},
+        "hidden_background": "与弟妹有染被张三发现",
+        "secret_core": "私吞的财产足够让他杀人"
+      },
+      {
+        "id": "char_003",
+        "name": "次子张三",
+        "is_culprit": false,
+        "public_identity": {"gender": "男", "age": 40, "occupation": "次子"},
+        "public_relationship": "张老爷次子",
+        "public_background": "张三性格冲动，与大哥不和",
+        "public_secrets": ["对父亲有恨", "曾经欠下巨债"],
+        "motivations": {"real": "争夺家产", "victory_main": "揭露家族秘密", "victory_secondary": "报复大哥"},
+        "hidden_background": "张三恨父亲当年偏心",
+        "secret_core": "知道大哥私吞的事，想借刀杀人"
+      },
+      {
+        "id": "char_004",
+        "name": "三姨太",
+        "is_culprit": true,
+        "public_identity": {"gender": "女", "age": 35, "occupation": "姨太太"},
+        "public_relationship": "张老爷三姨太",
+        "public_background": "三姨太出身书香门第",
+        "public_secrets": ["与张老爷感情不和", "曾经有过一段情"],
+        "motivations": {"real": "自保", "victory_main": "隐藏真相", "victory_secondary": "让长子张一成为替罪羊"},
+        "hidden_background": "三姨太与管家有染",
+        "secret_core": "她因绝望而毒死张老爷，并栽赃给长子"
+      },
+      {
+        "id": "char_005",
+        "name": "管家",
+        "is_culprit": false,
+        "public_identity": {"gender": "男", "age": 50, "occupation": "管家"},
+        "public_relationship": "张老爷的管家",
+        "public_background": "管家跟随张老爷多年",
+        "public_secrets": ["知道一些秘密", "对三姨太有感情"],
+        "motivations": {"real": "保护三姨太", "victory_main": "为三姨太脱罪", "victory_secondary": "保全自己"},
+        "hidden_background": "管家一直暗恋三姨太",
+        "secret_core": "他帮三姨太掩盖了真相"
+      },
+      {
+        "id": "char_006",
+        "name": "大嫂",
+        "is_culprit": false,
+        "public_identity": {"gender": "女", "age": 42, "occupation": "长媳"},
+        "public_relationship": "张一大嫂",
+        "public_background": "大嫂出身贫寒",
+        "public_secrets": ["与张三有暧昧", "知道张家一些秘密"],
+        "motivations": {"real": "自保", "victory_main": "不被牵连", "victory_secondary": "揭露所有人"},
+        "hidden_background": "大嫂与张三有暧昧关系",
+        "secret_core": "她知道张三想杀父亲"
+      }
+    ],
+    "relationships": [
+      {"from": "char_001", "to": "char_002", "type": "父子"},
+      {"from": "char_001", "to": "char_003", "type": "父子"},
+      {"from": "char_001", "to": "char_004", "type": "夫妻"},
+      {"from": "char_002", "to": "char_006", "type": "夫妻"},
+      {"from": "char_003", "to": "char_006", "type": "暧昧"},
+      {"from": "char_004", "to": "char_005", "type": "情人"},
+      {"from": "char_002", "to": "char_003", "type": "兄弟不和"}
+    ]
+  },
+  "mechanism": {
+    "total_minutes": 180,
+    "game_type": "还原型",
+    "phases": [
+      {"id": "phase_01_opening", "name": "开场引导", "minutes": 15, "host_actions": ["宣读开场白"]},
+      {"id": "phase_02_search_1", "name": "第一轮搜证", "minutes": 30, "host_actions": ["监督"]},
+      {"id": "phase_03_discussion_1", "name": "第一轮讨论", "minutes": 30, "host_actions": ["引导"]},
+      {"id": "phase_04_search_2", "name": "第二轮搜证", "minutes": 25, "host_actions": ["解锁新区域"]},
+      {"id": "phase_05_final_discussion", "name": "最终讨论", "minutes": 50, "host_actions": ["维护秩序"]},
+      {"id": "phase_06_voting", "name": "投票揭秘", "minutes": 30, "host_actions": ["唱票"]}
+    ]
+  },
+  "clues": {
+    "total_count": 24,
+    "by_type": {"A": 10, "B": 5, "C": 6, "D": 3},
+    "clues": [
+      {"id": "clue_001", "type": "A", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "书房门从内侧锁着", "reveals": "凶手在屋内作案", "source": "现场"},
+      {"id": "clue_002", "type": "A", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "茶杯里有毒物残留", "reveals": "毒杀", "source": "现场"},
+      {"id": "clue_003", "type": "A", "holder_or_location": "char_002", "discovery_method": "initial_hold", "content": "长子账本有 3 万大洋亏空", "reveals": "长子动机", "source": "受害者提供"},
+      {"id": "clue_004", "type": "A", "holder_or_location": "char_004", "discovery_method": "initial_hold", "content": "三姨太有管家送的金锁片", "reveals": "三姨太与管家关系", "source": "下人提供"},
+      {"id": "clue_005", "type": "A", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "老爷遗书日期是寿宴前一天", "reveals": "凶手可能提前知道", "source": "现场"},
+      {"id": "clue_006", "type": "A", "holder_or_location": "char_003", "discovery_method": "initial_hold", "content": "张三案发时在偏院", "reveals": "张三不在场", "source": "张三自述"},
+      {"id": "clue_007", "type": "A", "holder_or_location": "char_005", "discovery_method": "initial_hold", "content": "管家是最后离开厨房的人", "reveals": "管家有机会下毒", "source": "管家自述"},
+      {"id": "clue_008", "type": "A", "holder_or_location": "厨房", "discovery_method": "scene_search", "content": "毒药瓶是西洋进口的", "reveals": "凶手有外部渠道", "source": "现场"},
+      {"id": "clue_009", "type": "A", "holder_or_location": "客厅", "discovery_method": "scene_search", "content": "遗书上有三姨太的指纹", "reveals": "三姨太接触过遗书", "source": "现场"},
+      {"id": "clue_010", "type": "A", "holder_or_location": "后院", "discovery_method": "scene_search", "content": "后院有西装外套", "reveals": "有人藏过物品", "source": "现场"},
+      {"id": "clue_011", "type": "B", "holder_or_location": "客厅", "discovery_method": "scene_search", "content": "家族合影", "reveals": "家族历史", "source": "装饰"},
+      {"id": "clue_012", "type": "B", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "老爷日记", "reveals": "心理状态", "source": "现场"},
+      {"id": "clue_013", "type": "B", "holder_or_location": "客厅", "discovery_method": "scene_search", "content": "10 年前的新闻剪报", "reveals": "背景事件", "source": "装饰"},
+      {"id": "clue_014", "type": "B", "holder_or_location": "char_001", "discovery_method": "initial_hold", "content": "老爷的遗嘱副本", "reveals": "遗产分配", "source": "家族"},
+      {"id": "clue_015", "type": "B", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "佛经", "reveals": "信仰", "source": "现场"},
+      {"id": "clue_016", "type": "C", "holder_or_location": "char_002", "discovery_method": "initial_hold", "content": "长子与三姨太通信", "reveals": "长子与三姨太关系", "source": "长子提供", "related_character": "char_002"},
+      {"id": "clue_017", "type": "C", "holder_or_location": "char_003", "discovery_method": "initial_hold", "content": "张三的赌债借据", "reveals": "张三财务问题", "source": "张三提供", "related_character": "char_003"},
+      {"id": "clue_018", "type": "C", "holder_or_location": "char_004", "discovery_method": "initial_hold", "content": "三姨太的私人日记", "reveals": "三姨太心理", "source": "三姨太提供", "related_character": "char_004"},
+      {"id": "clue_019", "type": "C", "holder_or_location": "char_005", "discovery_method": "initial_hold", "content": "管家的钥匙清单", "reveals": "管家权限", "source": "管家提供", "related_character": "char_005"},
+      {"id": "clue_020", "type": "C", "holder_or_location": "char_006", "discovery_method": "initial_hold", "content": "大嫂与张三的合照", "reveals": "暧昧关系", "source": "大嫂提供", "related_character": "char_006"},
+      {"id": "clue_021", "type": "C", "holder_or_location": "char_001", "discovery_method": "initial_hold", "content": "老爷的密信", "reveals": "老爷知道真相", "source": "老爷提供", "related_character": "char_001"},
+      {"id": "clue_022", "type": "D", "holder_or_location": "书房", "discovery_method": "scene_search", "content": "长子的手套", "actual_explanation": "长子案发前借给张三用", "narrative_function": "栽赃长子", "source": "现场"},
+      {"id": "clue_023", "type": "D", "holder_or_location": "客厅", "discovery_method": "scene_search", "content": "张三威胁信", "actual_explanation": "张三写给情人的", "narrative_function": "栽赃张三", "source": "现场"},
+      {"id": "clue_024", "type": "D", "holder_or_location": "后院", "discovery_method": "scene_search", "content": "神秘脚印", "actual_explanation": "管家的鞋底", "narrative_function": "制造悬念", "source": "现场"}
+    ],
+    "reasoning_chains": [
+      {
+        "name": "凶手推理链",
+        "destination": "三姨太是凶手",
+        "nodes": [
+          {"node_id": "n1", "type": "starting_point", "content": "案发时间 20:00-21:00"},
+          {"node_id": "n2", "type": "clue", "content": "书房门从内侧锁着", "required_clues": ["clue_001"], "fallback_clues": []},
+          {"node_id": "n3", "type": "conclusion", "content": "凶手在屋内作案"},
+          {"node_id": "n4", "type": "clue", "content": "茶杯有毒物", "required_clues": ["clue_002"], "fallback_clues": []},
+          {"node_id": "n5", "type": "conclusion", "content": "凶手使用毒杀"},
+          {"node_id": "n6", "type": "clue", "content": "三姨太与管家关系", "required_clues": ["clue_004"], "fallback_clues": []},
+          {"node_id": "n7", "type": "conclusion", "content": "三姨太有动机和能力"},
+          {"node_id": "n8", "type": "终点", "content": "三姨太是凶手"}
+        ]
+      }
+    ],
+    "red_herrings": [
+      {"name": "长子的手套", "actual_explanation": "长子案发前借给张三用", "debunked_by": "张三证词", "narrative_function": "栽赃长子"},
+      {"name": "张三威胁信", "actual_explanation": "张三写给情人的", "debunked_by": "笔迹鉴定", "narrative_function": "栽赃张三"},
+      {"name": "神秘脚印", "actual_explanation": "管家的鞋底", "debunked_by": "鞋底比对", "narrative_function": "制造悬念"}
+    ],
+    "difficulty_versions": {
+      "easy": {"a_clue_count": 13, "d_clue_count": 1},
+      "standard": {"a_clue_count": 10, "d_clue_count": 3},
+      "hard": {"a_clue_count": 7, "d_clue_count": 5}
+    }
+  },
+  "qa": {}
+}

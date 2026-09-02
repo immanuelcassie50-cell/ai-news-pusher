@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>动机的定义与心理安全感</title>
+<style>
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.slide-content {
+  width: 960px;
+  height: 540px;
+  position: relative;
+  transform-origin: center center;
+}
+</style>
+<script>
+function scaleSlide() {
+  const slide = document.querySelector('.slide-content');
+  if (!slide) return;
+  const slideWidth = 960;
+  const slideHeight = 540;
+  const scaleX = window.innerWidth / slideWidth;
+  const scaleY = window.innerHeight / slideHeight;
+  const scale = Math.min(scaleX, scaleY);
+  slide.style.width = slideWidth + 'px';
+  slide.style.height = slideHeight + 'px';
+  slide.style.transform = 'scale(' + scale + ')';
+  slide.style.transformOrigin = 'center center';
+  slide.style.flexShrink = '0';
+}
+window.addEventListener('load', scaleSlide);
+window.addEventListener('resize', scaleSlide);
+</script>
+</head>
+<body>
+<div class="slide-content" style="background:#264653;">
+  <svg style="position:absolute; top:0; right:0;" width="400" height="400" aria-hidden="true">
+    <circle cx="350" cy="50" r="180" fill="#2a9d8f" opacity="0.3"/>
+    <circle cx="420" cy="120" r="120" fill="#e9c46a" opacity="0.2"/>
+  </svg>
+  <svg style="position:absolute; bottom:0; left:0;" width="300" height="300" aria-hidden="true">
+    <circle cx="50" cy="400" r="150" fill="#2a9d8f" opacity="0.2"/>
+    <circle cx="120" cy="450" r="100" fill="#e76f51" opacity="0.15"/>
+  </svg>
+  <div style="position:absolute; top:160px; left:80px; width:700px;">
+    <h1 style="margin:0; font-family:'Times New Roman', serif; font-size:56px; font-weight:700; color:#ffffff; line-height:1.2;">
+      动机的定义<br>与心理安全感
+    </h1>
+    <svg width="120" height="4" style="margin-top:24px;">
+      <rect width="120" height="4" fill="#e9c46a"/>
+    </svg>
+    <p style="margin-top:28px; font-family:'Times New Roman', serif; font-size:22px; color:#e9c46a;">
+      Definition of Motivation and Psychological Safety
+    </p>
+  </div>
+  <div style="position:absolute; bottom:40px; left:80px;">
+    <p style="margin:0; font-family:'Times New Roman', serif; font-size:16px; color:#ffffff; opacity:0.7;">
+      教学文档 01
+    </p>
+  </div>
+</div>
+</body>
+</html>

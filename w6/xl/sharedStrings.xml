@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="39" uniqueCount="39">
+  <si><t>F6 AI依赖度自检卡</t></si>
+  <si><t>自检问题清单</t></si>
+  <si><t>请逐项评估您的AI使用情况</t></si>
+  <si><t></t></si>
+  <si><t>问题</t></si>
+  <si><t>评分(1-5)</t></si>
+  <si><t>说明</t></si>
+  <si><t>1. 我在引导过程中是否过度依赖AI？</t></si>
+  <si><t></t></si>
+  <si><t>2. 当AI无法使用时，我是否感到无所适从？</t></si>
+  <si><t></t></si>
+  <si><t>3. 我是否能判断AI何时该介入、何时该退场？</t></si>
+  <si><t></t></si>
+  <si><t>4. 我是否在使用AI时保持了引导师的核心能力？</t></si>
+  <si><t></t></si>
+  <si><t>5. 我是否对AI的建议进行独立思考和判断？</t></si>
+  <si><t></t></si>
+  <si><t>6. 我的引导效果是否因为使用AI而真正提升？</t></si>
+  <si><t></t></si>
+  <si><t>7. 我是否建立了适合自己的AI使用边界？</t></si>
+  <si><t></t></si>
+  <si><t>评分计算表</t></si>
+  <si><t>总得分</t></si>
+  <si><t>评价</t></si>
+  <si><t>依赖度等级</t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t>改进建议区</t></si>
+  <si><t>需要改进的方面</t></si>
+  <si><t>具体措施</t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+  <si><t></t></si>
+</sst>

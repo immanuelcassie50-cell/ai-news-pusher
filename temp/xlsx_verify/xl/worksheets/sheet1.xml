@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetPr><tabColor rgb="001B4F9B"/></sheetPr>
+  <dimension ref="A1:E26"/>
+  <sheetViews><sheetView workbookViewId="0"><pane ySplit="3" topLeftCell="A4" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" customHeight="1"/>
+  <cols>
+    <col min="1" max="1" width="8" customWidth="1"/>
+    <col min="2" max="2" width="28" customWidth="1"/>
+    <col min="3" max="3" width="18" customWidth="1"/>
+    <col min="4" max="4" width="16" customWidth="1"/>
+    <col min="5" max="5" width="22" customWidth="1"/>
+  </cols>
+  <sheetData><row r="1" ht="40" customHeight="1">
+    <c r="A1" s="1" t="inlineStr"><is><t>AI时代经验传承：岗位手册批量开发工作坊</t></is></c>
+    <c r="B1" s="1" t="inlineStr"><is><t>配套表单集（空白版）</t></is></c>
+  </row>
+<row r="2">
+    <c r="A2" s="0" t="inlineStr"><is><t></t></is></c>
+  </row>
+<row r="3" ht="28" customHeight="1">
+    <c r="A3" s="2" t="inlineStr"><is><t>编号</t></is></c>
+    <c r="B3" s="2" t="inlineStr"><is><t>表单名称</t></is></c>
+    <c r="C3" s="2" t="inlineStr"><is><t>使用阶段</t></is></c>
+    <c r="D3" s="2" t="inlineStr"><is><t>主要填写人</t></is></c>
+    <c r="E3" s="2" t="inlineStr"><is><t>工作表页码</t></is></c>
+  </row>
+<row r="4" ht="22" customHeight="1">
+    <c r="A4" s="3" t="inlineStr"><is><t>1</t></is></c>
+    <c r="B4" s="3" t="inlineStr"><is><t>课前准备清单</t></is></c>
+    <c r="C4" s="3" t="inlineStr"><is><t>工作坊开始前</t></is></c>
+    <c r="D4" s="3" t="inlineStr"><is><t>全体学员</t></is></c>
+    <c r="E4" s="3" t="inlineStr"><is><t>Form0-课前准备检查表</t></is></c>
+  </row>
+<row r="5" ht="22" customHeight="1">
+    <c r="A5" s="4" t="inlineStr"><is><t>2</t></is></c>
+    <c r="B5" s="4" t="inlineStr"><is><t>手册类型判断表</t></is></c>
+    <c r="C5" s="4" t="inlineStr"><is><t>第一天上午</t></is></c>
+    <c r="D5" s="4" t="inlineStr"><is><t>全组讨论</t></is></c>
+    <c r="E5" s="4" t="inlineStr"><is><t>Form1-手册类型判断</t></is></c>
+  </row>
+<row r="6" ht="22" customHeight="1">
+    <c r="A6" s="3" t="inlineStr"><is><t>3</t></is></c>
+    <c r="B6" s="3" t="inlineStr"><is><t>课题定位表</t></is></c>
+    <c r="C6" s="3" t="inlineStr"><is><t>第一天上午</t></is></c>
+    <c r="D6" s="3" t="inlineStr"><is><t>三类人群确认</t></is></c>
+    <c r="E6" s="3" t="inlineStr"><is><t>Form2-课题定位表</t></is></c>
+  </row>
+<row r="7" ht="22" customHeight="1">
+    <c r="A7" s="4" t="inlineStr"><is><t>4</t></is></c>
+    <c r="B7" s="4" t="inlineStr"><is><t>访谈准备清单</t></is></c>
+    <c r="C7" s="4" t="inlineStr"><is><t>访谈开始前</t></is></c>
+    <c r="D7" s="4" t="inlineStr"><is><t>访谈组织者</t></is></c>
+    <c r="E7" s="4" t="inlineStr"><is><t>Form3-访谈准备清单</t></is></c>
+  </row>
+<row r="8" ht="22" customHeight="1">
+    <c r="A8" s="3" t="inlineStr"><is><t>5</t></is></c>
+    <c r="B8" s="3" t="inlineStr"><is><t>角色A访谈记录表</t></is></c>
+    <c r="C8" s="3" t="inlineStr"><is><t>第一天下午</t></is></c>
+    <c r="D8" s="3" t="inlineStr"><is><t>角色本人或访谈者</t></is></c>
+    <c r="E8" s="3" t="inlineStr"><is><t>Form4-A角色访谈记录</t></is></c>
+  </row>
+<row r="9" ht="22" customHeight="1">
+    <c r="A9" s="4" t="inlineStr"><is><t>6</t></is></c>
+    <c r="B9" s="4" t="inlineStr"><is><t>角色B访谈记录表</t></is></c>
+    <c r="C9" s="4" t="inlineStr"><is><t>第一天下午</t></is></c>
+    <c r="D9" s="4" t="inlineStr"><is><t>角色本人或访谈者</t></is></c>
+    <c r="E9" s="4" t="inlineStr"><is><t>Form5-B角色访谈记录</t></is></c>
+  </row>
+<row r="10" ht="22" customHeight="1">
+    <c r="A10" s="3" t="inlineStr"><is><t>7</t></is></c>
+    <c r="B10" s="3" t="inlineStr"><is><t>角色C访谈记录表</t></is></c>
+    <c r="C10" s="3" t="inlineStr"><is><t>第一天下午</t></is></c>
+    <c r="D10" s="3" t="inlineStr"><is><t>角色本人或访谈者</t></is></c>
+    <c r="E10" s="3" t="inlineStr"><is><t>Form6-C角色访谈记录</t></is></c>
+  </row>
+<row r="11" ht="22" customHeight="1">
+    <c r="A11" s="4" t="inlineStr"><is><t>8</t></is></c>
+    <c r="B11" s="4" t="inlineStr"><is><t>操作手册材料组织表</t></is></c>
+    <c r="C11" s="4" t="inlineStr"><is><t>第一天下午末</t></is></c>
+    <c r="D11" s="4" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E11" s="4" t="inlineStr"><is><t>Form7-操作手册素材整理</t></is></c>
+  </row>
+<row r="12" ht="22" customHeight="1">
+    <c r="A12" s="3" t="inlineStr"><is><t>9</t></is></c>
+    <c r="B12" s="3" t="inlineStr"><is><t>带教手册材料组织表</t></is></c>
+    <c r="C12" s="3" t="inlineStr"><is><t>第一天下午末</t></is></c>
+    <c r="D12" s="3" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E12" s="3" t="inlineStr"><is><t>Form8-带教手册素材整理</t></is></c>
+  </row>
+<row r="13" ht="22" customHeight="1">
+    <c r="A13" s="4" t="inlineStr"><is><t>10</t></is></c>
+    <c r="B13" s="4" t="inlineStr"><is><t>应知应会手册材料组织表</t></is></c>
+    <c r="C13" s="4" t="inlineStr"><is><t>第一天下午末</t></is></c>
+    <c r="D13" s="4" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E13" s="4" t="inlineStr"><is><t>Form9-应知应会素材整理</t></is></c>
+  </row>
+<row r="14" ht="22" customHeight="1">
+    <c r="A14" s="3" t="inlineStr"><is><t>11</t></is></c>
+    <c r="B14" s="3" t="inlineStr"><is><t>提交前三检查</t></is></c>
+    <c r="C14" s="3" t="inlineStr"><is><t>提交Skill前</t></is></c>
+    <c r="D14" s="3" t="inlineStr"><is><t>素材整理负责人</t></is></c>
+    <c r="E14" s="3" t="inlineStr"><is><t>Form10-Skill提交前自查</t></is></c>
+  </row>
+<row r="15" ht="22" customHeight="1">
+    <c r="A15" s="4" t="inlineStr"><is><t>12</t></is></c>
+    <c r="B15" s="4" t="inlineStr"><is><t>初稿速览检查</t></is></c>
+    <c r="C15" s="4" t="inlineStr"><is><t>收到初稿后</t></is></c>
+    <c r="D15" s="4" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E15" s="4" t="inlineStr"><is><t>Form11-初稿速览检查</t></is></c>
+  </row>
+<row r="16" ht="22" customHeight="1">
+    <c r="A16" s="3" t="inlineStr"><is><t>13</t></is></c>
+    <c r="B16" s="3" t="inlineStr"><is><t>角色A初稿标记记录表</t></is></c>
+    <c r="C16" s="3" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D16" s="3" t="inlineStr"><is><t>角色A</t></is></c>
+    <c r="E16" s="3" t="inlineStr"><is><t>Form12-A角色审阅记录</t></is></c>
+  </row>
+<row r="17" ht="22" customHeight="1">
+    <c r="A17" s="4" t="inlineStr"><is><t>14</t></is></c>
+    <c r="B17" s="4" t="inlineStr"><is><t>角色B初稿标记记录表</t></is></c>
+    <c r="C17" s="4" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D17" s="4" t="inlineStr"><is><t>角色B</t></is></c>
+    <c r="E17" s="4" t="inlineStr"><is><t>Form13-B角色审阅记录</t></is></c>
+  </row>
+<row r="18" ht="22" customHeight="1">
+    <c r="A18" s="3" t="inlineStr"><is><t>15</t></is></c>
+    <c r="B18" s="3" t="inlineStr"><is><t>角色C初稿标记记录表</t></is></c>
+    <c r="C18" s="3" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D18" s="3" t="inlineStr"><is><t>角色C</t></is></c>
+    <c r="E18" s="3" t="inlineStr"><is><t>Form14-C角色审阅记录</t></is></c>
+  </row>
+<row r="19" ht="22" customHeight="1">
+    <c r="A19" s="4" t="inlineStr"><is><t>16</t></is></c>
+    <c r="B19" s="4" t="inlineStr"><is><t>优先级排序汇总表</t></is></c>
+    <c r="C19" s="4" t="inlineStr"><is><t>第二天上午末</t></is></c>
+    <c r="D19" s="4" t="inlineStr"><is><t>全组汇总</t></is></c>
+    <c r="E19" s="4" t="inlineStr"><is><t>Form15-优先级排序汇总</t></is></c>
+  </row>
+<row r="20" ht="22" customHeight="1">
+    <c r="A20" s="3" t="inlineStr"><is><t>17</t></is></c>
+    <c r="B20" s="3" t="inlineStr"><is><t>操作手册深度校验清单</t></is></c>
+    <c r="C20" s="3" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D20" s="3" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E20" s="3" t="inlineStr"><is><t>Form16-操作手册校验清单</t></is></c>
+  </row>
+<row r="21" ht="22" customHeight="1">
+    <c r="A21" s="4" t="inlineStr"><is><t>18</t></is></c>
+    <c r="B21" s="4" t="inlineStr"><is><t>带教手册深度校验清单</t></is></c>
+    <c r="C21" s="4" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D21" s="4" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E21" s="4" t="inlineStr"><is><t>Form17-带教手册校验清单</t></is></c>
+  </row>
+<row r="22" ht="22" customHeight="1">
+    <c r="A22" s="3" t="inlineStr"><is><t>19</t></is></c>
+    <c r="B22" s="3" t="inlineStr"><is><t>应知应会手册深度校验清单</t></is></c>
+    <c r="C22" s="3" t="inlineStr"><is><t>第二天上午</t></is></c>
+    <c r="D22" s="3" t="inlineStr"><is><t>小组协作</t></is></c>
+    <c r="E22" s="3" t="inlineStr"><is><t>Form18-应知应会校验清单</t></is></c>
+  </row>
+<row r="23" ht="22" customHeight="1">
+    <c r="A23" s="4" t="inlineStr"><is><t>20</t></is></c>
+    <c r="B23" s="4" t="inlineStr"><is><t>五步优化工作表</t></is></c>
+    <c r="C23" s="4" t="inlineStr"><is><t>第二天下午</t></is></c>
+    <c r="D23" s="4" t="inlineStr"><is><t>手册负责人</t></is></c>
+    <c r="E23" s="4" t="inlineStr"><is><t>Form19-五步优化工作表</t></is></c>
+  </row>
+<row r="24" ht="22" customHeight="1">
+    <c r="A24" s="3" t="inlineStr"><is><t>21</t></is></c>
+    <c r="B24" s="3" t="inlineStr"><is><t>跨手册交叉审阅表</t></is></c>
+    <c r="C24" s="3" t="inlineStr"><is><t>第二天下午</t></is></c>
+    <c r="D24" s="3" t="inlineStr"><is><t>评审双方</t></is></c>
+    <c r="E24" s="3" t="inlineStr"><is><t>Form20-跨手册交叉审阅</t></is></c>
+  </row>
+<row r="25" ht="22" customHeight="1">
+    <c r="A25" s="4" t="inlineStr"><is><t>22</t></is></c>
+    <c r="B25" s="4" t="inlineStr"><is><t>课后迭代计划表</t></is></c>
+    <c r="C25" s="4" t="inlineStr"><is><t>工作坊收尾</t></is></c>
+    <c r="D25" s="4" t="inlineStr"><is><t>课题负责人</t></is></c>
+    <c r="E25" s="4" t="inlineStr"><is><t>Form21-课后迭代计划表</t></is></c>
+  </row></sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75"/>
+  <printOptions horizontalCentered="1"/>
+  <pageSetup orientation="portrait" useFirstPageNumber="1" fitToPage="1"/>
+</worksheet>

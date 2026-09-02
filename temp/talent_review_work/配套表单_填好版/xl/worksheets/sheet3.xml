@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <sheetViews><sheetView tabSelected="1" workbookViewId="0"/></sheetViews>
+  <sheetFormatPr defaultRowHeight="15" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+  <cols>
+    <col min="1" max="1" width="20" customWidth="1"/>
+    <col min="2" max="2" width="12" customWidth="1"/>
+    <col min="3" max="3" width="12" customWidth="1"/>
+    <col min="4" max="4" width="18" customWidth="1"/>
+    <col min="5" max="5" width="18" customWidth="1"/>
+    <col min="6" max="6" width="18" customWidth="1"/>
+    <col min="7" max="7" width="12" customWidth="1"/>
+    <col min="8" max="8" width="20" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="32" customHeight="1">
+      <c r="A1" t="s" s="4"><v>75</v></c>
+    </row>
+    <row r="2" ht="24" customHeight="1">
+      <c r="A2" t="s" s="4"><v>84</v></c>
+      <c r="B2" t="s" s="4"><v>76</v></c>
+      <c r="C2" t="s" s="4"><v>85</v></c>
+      <c r="D2" t="s" s="4"><v>79</v></c>
+      <c r="E2" t="s" s="4"><v>80</v></c>
+      <c r="F2" t="s" s="4"><v>81</v></c>
+      <c r="G2" t="s" s="4"><v>88</v></c>
+      <c r="H2" t="s" s="4"><v>83</v></c>
+    </row>
+    <row r="3" ht="20" customHeight="1">
+      <c r="A3" t="s" s="1"><v>P001</v></c>
+      <c r="B3" t="s" s="1"><v>技术总监</v></c>
+      <c r="C3" t="s" s="1"><v>张明</v></c>
+      <c r="D3" t="s" s="1"><v>王强</v></c>
+      <c r="E3" t="s" s="1"><v>李华</v></c>
+      <c r="F3" t="s" s="1"><v>陈伟</v></c>
+      <c r="G3" t="s" s="12"><v>89</v></c>
+      <c r="H3" t="s" s="1"><v>加强战略思维培训</v></c>
+    </row>
+    <row r="4" ht="20" customHeight="1">
+      <c r="A4" t="s" s="1"><v>P002</v></c>
+      <c r="B4" t="s" s="1"><v>产品总监</v></c>
+      <c r="C4" t="s" s="1"><v>刘芳</v></c>
+      <c r="D4" t="s" s="1"><v>赵敏</v></c>
+      <c r="E4" t="s" s="1"><v>孙杰</v></c>
+      <c r="F4" t="s" s="1"><v>周琳</v></c>
+      <c r="G4" t="s" s="12"><v>90</v></c>
+      <c r="H4" t="s" s="1"><v>安排跨部门轮岗</v></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" t="s" s="1"><v>P003</v></c>
+      <c r="B5" t="s" s="1"><v>运营总监</v></c>
+      <c r="C5" t="s" s="1"><v>陈静</v></c>
+      <c r="D5" t="s" s="1"><v>黄磊</v></c>
+      <c r="E5" t="s" s="1"><v>吴涛</v></c>
+      <c r="F5" t="s" s="1"><v>郑杰</v></c>
+      <c r="G5" t="s" s="12"><v>91</v></c>
+      <c r="H5" t="s" s="1"><v>急需加速培养</v></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" t="s" s="1"><v>P004</v></c>
+      <c r="B6" t="s" s="1"><v>财务总监</v></c>
+      <c r="C6" t="s" s="1"><v>李娜</v></c>
+      <c r="D6" t="s" s="1"><v>杨帆</v></c>
+      <c r="E6" t="s" s="1"><v>林峰</v></c>
+      <c r="F6" t="s" s="1"><v>何晨</v></c>
+      <c r="G6" t="s" s="12"><v>89</v></c>
+      <c r="H6" t="s" s="1"><v>已就位</v></c>
+    </row>
+    <row r="7" ht="22" customHeight="1">
+      <c r="A7" t="s" s="4"><v>汇总</v></c>
+      <c r="B7" t="s" s="4"><v>关键岗位总数</v></c>
+      <c r="C7" s="10"><f>COUNTA(A3:A6)</f><v></v></c>
+      <c r="D7" t="s" s="4"><v>已就位</v></c>
+      <c r="E7" s="10"><f>COUNTIF(G3:G6,"已就位")</f><v></v></c>
+      <c r="F7" t="s" s="4"><v>准备中</v></c>
+      <c r="G7" s="10"><f>COUNTIF(G3:G6,"准备中")</f><v></v></c>
+      <c r="H7" t="s" s="4"><v>需加速培养</v></c>
+      <c r="I7" s="10"><f>COUNTIF(G3:G6,"需加速培养")</f><v></v></c>
+    </row>
+  </sheetData>
+  <pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

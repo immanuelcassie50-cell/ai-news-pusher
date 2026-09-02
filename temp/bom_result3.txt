@@ -1,0 +1,2 @@
+vm:ERR:Invalid or unexpected token
+require:ERR:Invalid or unexpected token

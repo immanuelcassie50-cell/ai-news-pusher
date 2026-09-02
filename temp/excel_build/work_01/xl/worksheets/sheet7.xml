@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+<sheetViews><sheetView workbookViewId="0"><pane ySplit="2" topLeftCell="A3" activePane="bottomLeft" state="frozen"/></sheetView></sheetViews>
+<sheetFormatPr defaultRowHeight="18" x14ac:dyDescent="0.25" xmlns:x14ac="http://schemas.microsoft.com/office/spreadsheetml/2009/9/ac"/>
+<cols><col min="1" max="1" width="28" customWidth="1"/><col min="2" max="2" width="50" customWidth="1"/><col min="3" max="3" width="22" customWidth="1"/><col min="4" max="4" width="22" customWidth="1"/></cols>
+<sheetData>
+<row r="1" ht="28" customHeight="1"><c r="A1" t="s" s="5"><v>170</v></c><c r="B1" t="s" s="5"><v>170</v></c></row>
+<row r="2" ht="24" customHeight="1"><c r="A2" t="inlineStr" s="4"><is><t xml:space="preserve">【问责伙伴】与【30天承诺】</t></is></c></row>
+<row r="3" ht="22" customHeight="1"><c r="A3" t="s" s="6"><v>171</v></c></row>
+<row r="4" ht="22" customHeight="1"><c r="A4" t="s" s="11"><v>172</v></c></row>
+<row r="5" ht="24" customHeight="1"><c r="A5" t="s" s="11"><v>172</v></c><c r="B5" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="6" ht="24" customHeight="1"><c r="A6" t="s" s="11"><v>173</v></c><c r="B6" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="7" ht="22" customHeight="1"><c r="A7" t="s" s="11"><v>174</v></c></row>
+<row r="8" ht="44" customHeight="1"><c r="A7" t="s" s="11"><v>174</v></c><c r="A8" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="10" ht="22" customHeight="1"><c r="A10" t="s" s="11"><v>175</v></c></row>
+<row r="11" ht="22" customHeight="1"><c r="A11" t="s" s="6"><v>176</v></c></row>
+<row r="12" ht="44" customHeight="1"><c r="A12" t="s" s="11"><v>177</v></c><c r="B12" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="13" ht="24" customHeight="1"><c r="A13" t="s" s="11"><v>178</v></c><c r="B13" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="14" ht="44" customHeight="1"><c r="A14" t="s" s="11"><v>179</v></c><c r="B14" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="16" ht="22" customHeight="1"><c r="A16" t="s" s="11"><v>180</v></c></row>
+<row r="17" ht="44" customHeight="1"><c r="A17" t="s" s="11"><v>180</v></c><c r="B17" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="19" ht="24" customHeight="1"><c r="A19" t="s" s="4"><v>181</v></c></row>
+<row r="20" ht="22" customHeight="1"><c r="A20" t="s" s="11"><v>182</v></c></row>
+<row r="21" ht="24" customHeight="1"><c r="A21" t="s" s="12"><v>182</v></c><c r="B21" t="inlineStr" s="12"><is><t xml:space="preserve"></t></is></c></row>
+<row r="22" ht="24" customHeight="1"><c r="A22" t="s" s="12"><v>183</v></c><c r="B22" t="inlineStr" s="12"><is><t xml:space="preserve"></t></is></c></row>
+<row r="24" ht="22" customHeight="1"><c r="A24" t="s" s="11"><v>184</v></c></row>
+<row r="25" ht="24" customHeight="1"><c r="A25" t="s" s="4"><v>188</v></c><c r="B25" t="s" s="4"><v>189</v></c><c r="C25" t="s" s="4"><v>190</v></c><c r="D25" t="s" s="4"><v>191</v></c></row>
+<row r="26" ht="32" customHeight="1"><c r="A26" t="s" s="11"><v>185</v></c><c r="B26" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="C26" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="D26" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c></row>
+<row r="27" ht="32" customHeight="1"><c r="A27" t="s" s="11"><v>186</v></c><c r="B27" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="C27" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="D27" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c></row>
+<row r="28" ht="32" customHeight="1"><c r="A28" t="s" s="11"><v>187</v></c><c r="B28" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="C28" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c><c r="D28" t="inlineStr" s="2"><is><t xml:space="preserve"></t></is></c></row>
+<row r="30" ht="22" customHeight="1"><c r="A30" t="s" s="11"><v>192</v></c></row>
+<row r="31" ht="22" customHeight="1"><c r="A31" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B31" t="s" s="2"><v>193</v></c></row>
+<row r="32" ht="22" customHeight="1"><c r="A32" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B32" t="s" s="2"><v>194</v></c></row>
+<row r="33" ht="22" customHeight="1"><c r="A33" t="inlineStr" s="10"><is><t xml:space="preserve">□</t></is></c><c r="B33" t="s" s="2"><v>195</v></c></row>
+<row r="35" ht="22" customHeight="1"><c r="A35" t="s" s="11"><v>196</v></c></row>
+<row r="36" ht="44" customHeight="1"><c r="A36" t="s" s="11"><v>196</v></c><c r="B36" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="38" ht="22" customHeight="1"><c r="A38" t="s" s="11"><v>197</v></c></row>
+<row r="39" ht="44" customHeight="1"><c r="A39" t="s" s="11"><v>197</v></c><c r="B39" t="inlineStr" s="1"><is><t xml:space="preserve"></t></is></c></row>
+<row r="41" ht="22" customHeight="1"><c r="A41" t="inlineStr" s="4"><is><t xml:space="preserve">校验：问责伙伴是否填写</t></is></c></row>
+<row r="42" ht="24" customHeight="1"><c r="A42" t="inlineStr" s="11"><is><t xml:space="preserve">问责伙伴姓名（≥2 字）</t></is></c><c r="B42" s="2"><f>IF(LEN(B5)&gt;=2,"OK","请填写")</f><v></v></c></row>
+</sheetData>
+<pageMargins left="0.7" right="0.7" top="0.75" bottom="0.75" header="0.3" footer="0.3"/>
+</worksheet>

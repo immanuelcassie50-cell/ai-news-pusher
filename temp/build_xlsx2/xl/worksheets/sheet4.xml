@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="4" topLeftCell="A5" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="12" customWidth="1"/>
+    <col min="2" max="2" width="40" customWidth="1"/>
+    <col min="3" max="3" width="40" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>H3技术分析工作表使用指南</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="2" t="inlineStr"><is><t>编号：H3 | 用途：K线图、均线、成交量分析实操练习</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="22" customHeight="1">
+      <c r="A4" s="8" t="inlineStr"><is><t>项目</t></is></c>
+      <c r="B4" s="8" t="inlineStr"><is><t>内容</t></is></c>
+      <c r="C4" s="8" t="inlineStr"><is><t>说明</t></is></c>
+    </row>
+    <row r="5" ht="20" customHeight="1">
+      <c r="A5" s="9" t="inlineStr"><is><t>适用场景</t></is></c>
+      <c r="B5" s="6" t="inlineStr"><is><t>模块三：技术分析入门 | 课后作业 | 实操练习</t></is></c>
+      <c r="C5" s="6" t="inlineStr"><is><t>学员选取一只股票，完成技术分析填表练习</t></is></c>
+    </row>
+    <row r="6" ht="20" customHeight="1">
+      <c r="A6" s="9" t="inlineStr"><is><t>填写范例</t></is></c>
+      <c r="B6" s="6" t="inlineStr"><is><t>股票：贵州茅台（600519）| 分析日期：2024-01-15</t></is></c>
+      <c r="C6" s="6" t="inlineStr"><is><t>选取熟悉的股票进行分析</t></is></c>
+    </row>
+    <row r="7" ht="20" customHeight="1">
+      <c r="A7" s="6"/>
+      <c r="B7" s="6" t="inlineStr"><is><t>K线形态：锤子线（下影线是实体的2倍以上）</t></is></c>
+      <c r="C7" s="6" t="inlineStr"><is><t>参考课程中的K线识别章节</t></is></c>
+    </row>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" s="6"/>
+      <c r="B8" s="6" t="inlineStr"><is><t>均线状态：5日均线上穿10日均线，金叉信号</t></is></c>
+      <c r="C8" s="6" t="inlineStr"><is><t>记录均线交叉和排列情况</t></is></c>
+    </row>
+    <row r="9" ht="10"/>
+    <row r="10" ht="22" customHeight="1">
+      <c r="A10" s="8" t="inlineStr"><is><t>常见错误</t></is></c>
+      <c r="B10" s="6" t="inlineStr"><is><t>错误1：只凭单一指标下单</t></is></c>
+      <c r="C10" s="6" t="inlineStr"><is><t>正确：需结合K线形态+均线+成交量+MACD等多指标确认</t></is></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" s="6"/>
+      <c r="B11" s="6" t="inlineStr"><is><t>错误2：忽视成交量的配合</t></is></c>
+      <c r="C11" s="6" t="inlineStr"><is><t>正确：突破需放量确认，否则可能是假突破</t></is></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" s="6"/>
+      <c r="B12" s="6" t="inlineStr"><is><t>错误3：持仓周期与策略不匹配</t></is></c>
+      <c r="C12" s="6" t="inlineStr"><is><t>正确：短线策略看分时图，长线策略看周线月线</t></is></c>
+    </row>
+    <row r="13" ht="20" customHeight="1">
+      <c r="A13" s="6"/>
+      <c r="B13" s="6" t="inlineStr"><is><t>错误4：不止损，扛单等待解套</t></is></c>
+      <c r="C13" s="6" t="inlineStr"><is><t>正确：技术分析必须配合止损纪律</t></is></c>
+    </row>
+    <row r="14" ht="10"/>
+    <row r="15" ht="22" customHeight="1">
+      <c r="A15" s="8" t="inlineStr"><is><t>课堂使用建议</t></is></c>
+      <c r="B15" s="6" t="inlineStr"><is><t>讲师演示：打开行情软件，演示一只股票的技术分析过程</t></is></c>
+      <c r="C15" s="6" t="inlineStr"><is><t>从选股到分析到得出结论的完整链条</t></is></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" s="6"/>
+      <c r="B16" s="6" t="inlineStr"><is><t>引导话术："现在就打开H3工作表，用刚才教的方法分析你自选股里的一只，15分钟后分享"</t></is></c>
+      <c r="C16" s="6" t="inlineStr"><is><t>学员独立操作，讲师巡视指导</t></is></c>
+    </row>
+  </sheetData>
+</worksheet>

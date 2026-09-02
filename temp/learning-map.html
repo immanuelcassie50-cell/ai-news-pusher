@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>销售复杂决策链地图与导航 - 学习地图</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2c5282;
+      --accent: #ed8936;
+      --light: #bee3f8;
+      --bg: #f7fafc;
+      --text: #1a202c;
+      --text-light: #4a5568;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A3 landscape;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Noto Sans SC', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      padding: 40px;
+    }
+
+    .page {
+      width: 297mm;
+      min-height: 210mm;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 30px 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media print {
+      body { padding: 0; background: white; }
+      .page { box-shadow: none; page-break-after: always; }
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid var(--primary);
+      position: relative;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 120px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .course-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--primary);
+      letter-spacing: 2px;
+    }
+
+    .course-subtitle {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-top: 6px;
+      font-weight: 300;
+    }
+
+    .course-meta {
+      text-align: right;
+      font-size: 12px;
+      color: var(--text-light);
+    }
+
+    .course-meta .author {
+      font-size: 14px;
+      color: var(--secondary);
+      font-weight: 500;
+    }
+
+    /* Core Axiom */
+    .core-axiom {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+      color: white;
+      padding: 16px 24px;
+      border-radius: 8px;
+      margin-bottom: 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .core-axiom::before {
+      content: '"';
+      position: absolute;
+      left: 12px;
+      top: -10px;
+      font-size: 80px;
+      opacity: 0.1;
+      font-family: 'Noto Serif SC', serif;
+    }
+
+    .core-axiom .label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      opacity: 0.7;
+      margin-bottom: 6px;
+    }
+
+    .core-axiom .text {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    /* Four Layer Framework */
+    .framework-section {
+      margin-bottom: 28px;
+    }
+
+    .framework-title {
+      font-size: 12px;
+      color: var(--accent);
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .framework-title::before {
+      content: '';
+      width: 20px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+    }
+
+    .framework-card {
+      background: linear-gradient(180deg, var(--primary) 0%, #234876 100%);
+      color: white;
+      padding: 14px;
+      border-radius: 6px;
+      text-align: center;
+      position: relative;
+    }
+
+    .framework-card::before {
+      content: attr(data-layer);
+      position: absolute;
+      top: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent);
+      color: white;
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 10px;
+      border-radius: 10px;
+    }
+
+    .framework-card h4 {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+      margin-top: 4px;
+    }
+
+    .framework-card p {
+      font-size: 11px;
+      opacity: 0.8;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+    /* Main Content */
+    .main-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .part {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .part-header {
+      padding: 14px 18px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .part-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      color: white;
+    }
+
+    .part-1 .part-num { background: var(--primary); }
+    .part-2 .part-num { background: var(--secondary); }
+
+    .part-title {
+      font-family: 'Noto Serif SC', serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .part-1 .part-title { color: var(--primary); }
+    .part-2 .part-title { color: var(--secondary); }
+
+    .part-subtitle {
+      font-size: 11px;
+      color: var(--text-light);
+      font-weight: 300;
+    }
+
+    .part-body {
+      padding: 0 18px 18px;
+    }
+
+    /* Chapter List */
+    .chapter-list {
+      list-style: none;
+    }
+
+    .chapter-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px dashed #e2e8f0;
+      position: relative;
+    }
+
+    .chapter-item:last-child {
+      border-bottom: none;
+    }
+
+    .chapter-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--light);
+      color: var(--primary);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .part-2 .chapter-num {
+      background: #fed7aa;
+      color: var(--secondary);
+    }
+
+    .chapter-title {
+      font-size: 12px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+
+    /* Flow Arrow */
+    .flow-indicator {
+      position: absolute;
+      right: -15px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 30px;
+      height: 30px;
+      background: var(--accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 14px;
+      z-index: 10;
+      box-shadow: 0 2px 8px rgba(237, 137, 54, 0.4);
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 20px;
+      padding-top: 16px;
+      border-top: 1px solid #e2e8f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 10px;
+      color: var(--text-light);
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .footer-logo span {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* Page 2 */
+    .page-2 {
+      display: none;
+    }
+
+    @media print {
+      .page-2 { display: block; }
+    }
+
+    /* Print page break */
+    .page-break {
+      display: none;
+    }
+
+    @media print {
+      .page-break {
+        display: block;
+        page-break-before: always;
+      }
+    }
+
+    /* Page 2 - Case Studies Overview */
+    .case-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-top: 20px;
+    }
+
+    .case-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 14px;
+      border-left: 3px solid var(--accent);
+    }
+
+    .case-card h4 {
+      font-size: 12px;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+
+    .case-card p {
+      font-size: 10px;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .case-ref {
+      font-size: 9px;
+      color: var(--accent);
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    /* Tools Section */
+    .tools-section {
+      margin-top: 24px;
+      background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+      border-radius: 8px;
+      padding: 18px;
+    }
+
+    .tools-title {
+      font-size: 12px;
+      color: var(--secondary);
+      font-weight: 700;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tools-title::before {
+      content: '';
+      width: 4px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    .tool-item {
+      background: white;
+      padding: 12px;
+      border-radius: 4px;
+      text-align: center;
+      border: 1px solid #e2e8f0;
+    }
+
+    .tool-item h5 {
+      font-size: 11px;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .tool-item p {
+      font-size: 9px;
+      color: var(--text-light);
+    }
+  </style>
+</head>
+<body>
+  <!-- Page 1: Learning Map -->
+  <div class="page">
+    <header class="header">
+      <div>
+        <h1 class="course-title">销售复杂决策链地图与导航</h1>
+        <p class="course-subtitle">学习地图与课程结构</p>
+      </div>
+      <div class="course-meta">
+        <div class="author">罗宏伟</div>
+        <div>2天 / 12小时</div>
+      </div>
+    </header>
+
+    <div class="core-axiom">
+      <div class="label">核心公理</div>
+      <div class="text">复杂决策链里没有"决策人"，只有在不同阶段轮流掌握否决权的人。</div>
+    </div>
+
+    <section class="framework-section">
+      <div class="framework-title">决策链地图四层框架</div>
+      <div class="framework-grid">
+        <div class="framework-card" data-layer="第一层">
+          <h4>谁买单</h4>
+          <p>真正需要为预算结果负责的人</p>
+        </div>
+        <div class="framework-card" data-layer="第二层">
+          <h4>谁拍板</h4>
+          <p>业务方向上的决策者</p>
+        </div>
+        <div class="framework-card" data-layer="第三层">
+          <h4>谁把关</h4>
+          <p>法务、合规、安全评估</p>
+        </div>
+        <div class="framework-card" data-layer="第四层">
+          <h4>谁使绊子</h4>
+          <p>边缘利益方、竞争对手关系者</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="main-content">
+      <div class="part part-1">
+        <div class="part-header">
+          <div class="part-num">1</div>
+          <div>
+            <div class="part-title">PART 1 认知层</div>
+            <div class="part-subtitle">理解复杂决策链的本质与运作机制 / 7小时</div>
+          </div>
+        </div>
+        <div class="part-body">
+          <ul class="chapter-list">
+            <li class="chapter-item">
+              <span class="chapter-num">1</span>
+              <span class="chapter-title">复杂决策链里没有"决策人"，只有轮流掌握否决权的人</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">2</span>
+              <span class="chapter-title">你交的朋友，是否决权已经过期的那批人</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">3</span>
+              <span class="chapter-title">你手里的联系人名单，是一张假地图</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">4</span>
+              <span class="chapter-title">决策链地图的四层：谁买单、谁拍板、谁把关、谁使绊子</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">5</span>
+              <span class="chapter-title">找到那个不承认自己有权力的人</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">6</span>
+              <span class="chapter-title">预算审批不是一道关卡，是一条河</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">7</span>
+              <span class="chapter-title">技术评估节点否决的不是方案，是风险</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">8</span>
+              <span class="chapter-title">同一件事，对不同的人要讲不同的故事</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">9</span>
+              <span class="chapter-title">该等的时候别推，该推的时候别等</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">10</span>
+              <span class="chapter-title">内部推荐人不是你的盟友，是你的翻译官</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">11</span>
+              <span class="chapter-title">向决策链顶端汇报时，你卖的不是方案</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="part part-2" style="position: relative;">
+        <div class="flow-indicator">→</div>
+        <div class="part-header">
+          <div class="part-num">2</div>
+          <div>
+            <div class="part-title">PART 2 心态层</div>
+            <div class="part-subtitle">复盘方法、长期关系、权力认知 / 4小时</div>
+          </div>
+        </div>
+        <div class="part-body">
+          <ul class="chapter-list">
+            <li class="chapter-item">
+              <span class="chapter-num">1</span>
+              <span class="chapter-title">复盘不是写你为什么赢了，是写你把地图停在了哪一天</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">2</span>
+              <span class="chapter-title">丢单不是因为不够努力，是因为地图没有更新</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">3</span>
+              <span class="chapter-title">那个帮你说话的人，值得比这一单活得更久的关系</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">4</span>
+              <span class="chapter-title">你把否决人判断错了，团队会怎么看你</span>
+            </li>
+            <li class="chapter-item">
+              <span class="chapter-num">5</span>
+              <span class="chapter-title">这份工作练的是看清权力，不是讨好人</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <span></span>
+        <span>销售复杂决策链地图与导航</span>
+      </div>
+      <div>© 罗宏伟 版权所有</div>
+    </footer>
+  </div>
+
+  <!-- Page Break -->
+
+  <!-- Page 2: Case Studies & Tools -->
+  <div class="page page-2">
+    <header class="header">
+      <div>
+        <h1 class="course-title">销售复杂决策链地图与导航</h1>
+        <p class="course-subtitle">案例索引与工具清单</p>
+      </div>
+      <div class="course-meta">
+        <div class="author">罗宏伟</div>
+        <div>配套资源</div>
+      </div>
+    </header>
+
+    <section class="framework-section">
+      <div class="framework-title">课程核心案例</div>
+      <div class="case-grid">
+        <div class="case-card">
+          <h4>案例1: 八个月丢单</h4>
+          <p>信息安全负责人一句话让项目重新回到起点，揭示"找关键人"方法的认知陷阱</p>
+          <div class="case-ref">→ PART 1 第一章</div>
+        </div>
+        <div class="case-card">
+          <h4>案例2: 业务负责人以为自己能拍板</h4>
+          <p>采购介入后才发现业务部门只是"技术上认可"这一环，离最终拍板还差好几棒</p>
+          <div class="case-ref">→ PART 1 第一章</div>
+        </div>
+        <div class="case-card">
+          <h4>案例3: 角落里最沉默的人</h4>
+          <p>会后被认为"打酱油"的参会者，三周后卡住了数据接口安全评估</p>
+          <div class="case-ref">→ PART 1 第五章</div>
+        </div>
+        <div class="case-card">
+          <h4>案例4: 预算批了，流程还没完</h4>
+          <p>"预算已批"指的是业务部门预算池，真正拨付还需走财务审批和集团比价</p>
+          <div class="case-ref">→ PART 1 第六章</div>
+        </div>
+        <div class="case-card">
+          <h4>案例5: 赢了但赢得侥幸</h4>
+          <p>复盘总结"良好关系"为成功原因，实际是合规负责人休产假导致流程宽松</p>
+          <div class="case-ref">→ PART 2 第一章</div>
+        </div>
+        <div class="case-card">
+          <h4>案例6: 架构调整后的决策链变化</h4>
+          <p>采购职能从分散收归集团采购中心，销售仍在跟已失去部分权力的角色沟通</p>
+          <div class="case-ref">→ PART 2 第二章</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tools-section">
+      <div class="tools-title">学员带走工具包</div>
+      <div class="tools-grid">
+        <div class="tool-item">
+          <h5>决策链地图模板</h5>
+          <p>四层框架标准化绘制工具</p>
+        </div>
+        <div class="tool-item">
+          <h5>联系人地图诊断表</h5>
+          <p>识别真假地图的判断标准</p>
+        </div>
+        <div class="tool-item">
+          <h5>预算流程探测清单</h5>
+          <p>判断预算河长度的关键问题</p>
+        </div>
+        <div class="tool-item">
+          <h5>角色关切点清单</h5>
+          <p>差异化叙述的入口和重点</p>
+        </div>
+        <div class="tool-item">
+          <h5>话术模板</h5>
+          <p>技术评估前、高层汇报开场</p>
+        </div>
+        <div class="tool-item">
+          <h5>赢单复盘检查表</h5>
+          <p>识别侥幸型胜利的结构化工具</p>
+        </div>
+        <div class="tool-item">
+          <h5>关系诊断检查点</h5>
+          <p>推荐人关系健康度评估</p>
+        </div>
+        <div class="tool-item">
+          <h5>长期关系维护计划</h5>
+          <p>推荐人维系行动模板</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <span></span>
+        <span>销售复杂决策链地图与导航</span>
+      </div>
+      <div>© 罗宏伟 版权所有</div>
+    </footer>
+  </div>
+</body>
+</html>

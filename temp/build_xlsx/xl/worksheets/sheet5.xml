@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<worksheet xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main">
+  <sheetViews>
+    <sheetView workbookViewId="0">
+      <pane ySplit="7" topLeftCell="A8" activePane="bottomLeft" state="frozen"/>
+    </sheetView>
+  </sheetViews>
+  <sheetFormatPr defaultRowHeight="18"/>
+  <cols>
+    <col min="1" max="1" width="16" customWidth="1"/>
+    <col min="2" max="2" width="14" customWidth="1"/>
+    <col min="3" max="3" width="14" customWidth="1"/>
+    <col min="4" max="4" width="14" customWidth="1"/>
+    <col min="5" max="5" width="14" customWidth="1"/>
+    <col min="6" max="6" width="14" customWidth="1"/>
+    <col min="7" max="7" width="14" customWidth="1"/>
+  </cols>
+  <sheetData>
+    <row r="1" ht="30" customHeight="1">
+      <c r="A1" s="2" t="inlineStr"><is><t>行业对比模板</t></is></c>
+    </row>
+    <row r="2" ht="22" customHeight="1">
+      <c r="A2" s="6" t="inlineStr"><is><t>输入同业公司数据，自动计算行业平均值</t></is></c>
+    </row>
+    <row r="3" ht="8"/>
+    <row r="4" ht="22" customHeight="1">
+      <c r="A4" s="6" t="inlineStr"><is><t>公司名称</t></is></c>
+      <c r="B4" s="5"/>
+      <c r="C4" s="5"/>
+      <c r="D4" s="5"/>
+      <c r="E4" s="5"/>
+      <c r="F4" s="5"/>
+    </row>
+    <row r="5" ht="8"/>
+    <row r="6" ht="22" customHeight="1">
+      <c r="A6" s="8" t="inlineStr"><is><t>指标类别</t></is></c>
+      <c r="B6" s="8" t="inlineStr"><is><t>指标名称</t></is></c>
+      <c r="C6" s="8" t="inlineStr"><is><t>公司A</t></is></c>
+      <c r="D6" s="8" t="inlineStr"><is><t>公司B</t></is></c>
+      <c r="E6" s="8" t="inlineStr"><is><t>公司C</t></is></c>
+      <c r="F6" s="8" t="inlineStr"><is><t>公司D</t></is></c>
+      <c r="G6" s="8" t="inlineStr"><is><t>行业平均</t></is></c>
+    </row>
+    <row r="7" ht="8"/>
+    <row r="8" ht="20" customHeight="1">
+      <c r="A8" s="9" t="inlineStr"><is><t>盈利能力</t></is></c>
+    </row>
+    <row r="9" ht="20" customHeight="1">
+      <c r="A9" s="6"/>
+      <c r="B9" s="6" t="inlineStr"><is><t>毛利率</t></is></c>
+      <c r="C9" s="5"/>
+      <c r="D9" s="5"/>
+      <c r="E9" s="5"/>
+      <c r="F9" s="5"/>
+      <c r="G9" s="6"><f>IFERROR(AVERAGE(C9:F9),0)</f><v></v></c>
+    </row>
+    <row r="10" ht="20" customHeight="1">
+      <c r="A10" s="6"/>
+      <c r="B10" s="6" t="inlineStr"><is><t>净利率</t></is></c>
+      <c r="C10" s="5"/>
+      <c r="D10" s="5"/>
+      <c r="E10" s="5"/>
+      <c r="F10" s="5"/>
+      <c r="G10" s="6"><f>IFERROR(AVERAGE(C10:F10),0)</f><v></v></c>
+    </row>
+    <row r="11" ht="20" customHeight="1">
+      <c r="A11" s="6"/>
+      <c r="B11" s="6" t="inlineStr"><is><t>ROE</t></is></c>
+      <c r="C11" s="5"/>
+      <c r="D11" s="5"/>
+      <c r="E11" s="5"/>
+      <c r="F11" s="5"/>
+      <c r="G11" s="6"><f>IFERROR(AVERAGE(C11:F11),0)</f><v></v></c>
+    </row>
+    <row r="12" ht="20" customHeight="1">
+      <c r="A12" s="6"/>
+      <c r="B12" s="6" t="inlineStr"><is><t>ROA</t></is></c>
+      <c r="C12" s="5"/>
+      <c r="D12" s="5"/>
+      <c r="E12" s="5"/>
+      <c r="F12" s="5"/>
+      <c r="G12" s="6"><f>IFERROR(AVERAGE(C12:F12),0)</f><v></v></c>
+    </row>
+    <row r="13" ht="8"/>
+    <row r="14" ht="20" customHeight="1">
+      <c r="A14" s="9" t="inlineStr"><is><t>偿债能力</t></is></c>
+    </row>
+    <row r="15" ht="20" customHeight="1">
+      <c r="A15" s="6"/>
+      <c r="B15" s="6" t="inlineStr"><is><t>流动比率</t></is></c>
+      <c r="C15" s="5"/>
+      <c r="D15" s="5"/>
+      <c r="E15" s="5"/>
+      <c r="F15" s="5"/>
+      <c r="G15" s="6"><f>IFERROR(AVERAGE(C15:F15),0)</f><v></v></c>
+    </row>
+    <row r="16" ht="20" customHeight="1">
+      <c r="A16" s="6"/>
+      <c r="B16" s="6" t="inlineStr"><is><t>速动比率</t></is></c>
+      <c r="C16" s="5"/>
+      <c r="D16" s="5"/>
+      <c r="E16" s="5"/>
+      <c r="F16" s="5"/>
+      <c r="G16" s="6"><f>IFERROR(AVERAGE(C16:F16),0)</f><v></v></c>
+    </row>
+    <row r="17" ht="20" customHeight="1">
+      <c r="A17" s="6"/>
+      <c r="B17" s="6" t="inlineStr"><is><t>资产负债率</t></is></c>
+      <c r="C17" s="5"/>
+      <c r="D17" s="5"/>
+      <c r="E17" s="5"/>
+      <c r="F17" s="5"/>
+      <c r="G17" s="6"><f>IFERROR(AVERAGE(C17:F17),0)</f><v></v></c>
+    </row>
+    <row r="18" ht="8"/>
+    <row r="19" ht="20" customHeight="1">
+      <c r="A19" s="9" t="inlineStr"><is><t>运营能力</t></is></c>
+    </row>
+    <row r="20" ht="20" customHeight="1">
+      <c r="A20" s="6"/>
+      <c r="B20" s="6" t="inlineStr"><is><t>存货周转率</t></is></c>
+      <c r="C20" s="5"/>
+      <c r="D20" s="5"/>
+      <c r="E20" s="5"/>
+      <c r="F20" s="5"/>
+      <c r="G20" s="6"><f>IFERROR(AVERAGE(C20:F20),0)</f><v></v></c>
+    </row>
+    <row r="21" ht="20" customHeight="1">
+      <c r="A21" s="6"/>
+      <c r="B21" s="6" t="inlineStr"><is><t>应收账款周转率</t></is></c>
+      <c r="C21" s="5"/>
+      <c r="D21" s="5"/>
+      <c r="E21" s="5"/>
+      <c r="F21" s="5"/>
+      <c r="G21" s="6"><f>IFERROR(AVERAGE(C21:F21),0)</f><v></v></c>
+    </row>
+    <row r="22" ht="20" customHeight="1">
+      <c r="A22" s="6"/>
+      <c r="B22" s="6" t="inlineStr"><is><t>总资产周转率</t></is></c>
+      <c r="C22" s="5"/>
+      <c r="D22" s="5"/>
+      <c r="E22" s="5"/>
+      <c r="F22" s="5"/>
+      <c r="G22" s="6"><f>IFERROR(AVERAGE(C22:F22),0)</f><v></v></c>
+    </row>
+  </sheetData>
+  <autoFilter ref="A6:G22"/>
+</worksheet>

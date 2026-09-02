@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<workbook xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
+  <fileVersion appName="xl" lastEdited="7" lowestEdited="7"/>
+  <workbookPr defaultThemeVersion="166925"/>
+  <bookViews><workbookView xWindow="0" yWindow="0" windowWidth="20140" windowHeight="10960"/></bookViews>
+  <sheets>
+    <sheet name="工具导航" sheetId="1" r:id="rId1"/>
+    <sheet name="F1客户画像分析卡" sheetId="2" r:id="rId4"/>
+    <sheet name="F2决策链分析表" sheetId="3" r:id="rId5"/>
+    <sheet name="F3需求挖掘SPIN" sheetId="4" r:id="rId6"/>
+    <sheet name="F4价值呈现FABE" sheetId="5" r:id="rId7"/>
+    <sheet name="F5异议处理话术" sheetId="6" r:id="rId8"/>
+    <sheet name="F6成交检查清单" sheetId="7" r:id="rId9"/>
+    <sheet name="F7客户跟进计划" sheetId="8" r:id="rId10"/>
+    <sheet name="F8销售复盘模板" sheetId="9" r:id="rId11"/>
+  </sheets>
+  <calcPr calcId="191029"/>
+</workbook>
